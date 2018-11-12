@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PathwayGames.App">
+    <Application.Resources>
+        <ResourceDictionary>
+            <!--  colors  -->
+            <Color x:Key="primary">#009688</Color>
+            <Color x:Key="primary_dark">#00796B</Color>
+            <Color x:Key="primary_light">#B2DFDB</Color>
+            <Color x:Key="accent">#FF5722</Color>
+            <Color x:Key="primary_text">#212121</Color>
+            <Color x:Key="secondary_text">#757575</Color>
+            <Color x:Key="icons">#FFFFFF</Color>
+            <Color x:Key="divider">#BDBDBD</Color>
+        </ResourceDictionary>
+    </Application.Resources>
+
+</Application>
