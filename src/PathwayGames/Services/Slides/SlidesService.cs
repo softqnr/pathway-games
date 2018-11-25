@@ -17,36 +17,56 @@ namespace PathwayGames.Services.Slides
                 // X
                 for (int i = 0; i < 30; i++)
                 {
-                    SlideCollection.Add(new Slide(SlideType.X) { Name = "Mickey Mouse " + i, DisplayDuration = 1.2, Image = "Mickey_Mouse.png" });
+                    SlideCollection.Add(new Slide(SlideType.X, 1.5) { Name = "Mickey Mouse " + i,Image = "mickey.jpg" });
                 }
-                //Distractor
+                // DistractorY
                 for (int i = 0; i < 30; i++)
                 {
-                    SlideCollection.Add(new Slide(SlideType.DistractorY) { Name = "Red car " + i, DisplayDuration = 1.2, Image = "f1.jpg" });
+                    SlideCollection.Add(new Slide(SlideType.Y, 1.5) { Name = "Donald " + i, Image = "donald.jpg" });
+                }
+                // Reward
+                for (int i = 0; i < 10; i++)
+                {
+                    SlideCollection.Add(new Slide(SlideType.Reward, 1.5) { Name = "Reward " + i, Image = "reward.jpg" });
                 }
                 return SlideCollection;
             }
         }
 
-        public IList<Slide> Generate(GameType gameType, string randomSeed)
+        public IList<Slide> Generate(GameType gameType, GameSettings gameSettings, string randomSeed)
         {
             // Generate random number generator
             Random random = randomSeed != "" ? new Random(randomSeed.GetHashCode()) : new Random();
-            // TODO: Calculate slide distribution
-            int xCount = 15;
-            int distractorCount = 5;
-            // Pick slides
+              // Pick slides
             var slides = Slides.Where(x => x.SlideType == SlideType.X)
                     .OrderBy(i => random.Next())
-                    .Take(xCount)
+                    .Take(gameSettings.SlideCount / 2)
                 .Concat<Slide>(
-                    Slides.Where(x => x.SlideType == SlideType.DistractorY)
+                    Slides.Where(x => x.SlideType == SlideType.Y)
                     .OrderBy(i => random.Next())
-                    .Take(distractorCount)
+                    .Take(gameSettings.SlideCount / 2)
                 ).OrderBy(i => random.Next())
                 .ToList<Slide>();
+            // Add blank slides between
+            slides = slides.SelectMany(
+                x => new[] { x, new Slide(SlideType.Blank, GetRandomNumber(new[] { 1, 1.2 })) })
+                .ToList();
 
             return slides;
+        }
+        public Slide GetBlankSlide()
+        {
+            Random random = new Random();
+            var slide = new Slide(SlideType.Blank, GetRandomNumber(new[] { 1, 1.2 }));
+            return slide;
+        }
+        public Slide GetRandomRewardSlide()
+        {
+            Random random = new Random();
+            var slide = Slides.Where(x => x.SlideType == SlideType.Reward)
+                    .OrderBy(i => random.Next())
+                    .First();
+            return slide;
         }
         public Game Load(string filePath)
         {
@@ -62,6 +82,54 @@ namespace PathwayGames.Services.Slides
             {
                 sw.Write(json);
             }
+        }
+        public double CalculateGameScoreAndPercentage(Game game)
+        {
+            //percentage: correct-wrong/total-slides * 100
+            return 100;
+        }
+        public bool EvaluateSlideResponse(Slide slide)
+        {
+            bool result = false;
+            if (slide.ButtonPresses.Count > 0)
+            {
+                // Calculate response time
+                slide.ResponseTime = slide.ButtonPresses[0].Time - slide.SlideDisplayed;
+            }
+            switch (slide.SlideType)
+            {
+                case SlideType.X:
+                    if (slide.ButtonPresses.Count > 0)
+                    {
+
+                    }
+                    break;
+                case SlideType.Y:
+                    break;
+                case SlideType.A:
+                    break;
+                case SlideType.B:
+                    break;
+                case SlideType.Reward:
+                    break;
+                case SlideType.Blank:
+                    if (slide.ButtonPresses.Count == 0)
+                    {
+                        slide.ResponseOutcome = ResponseOutcome.CorrectOmission;
+                        slide.Points = 1;
+                    }
+                    break;
+                default:
+                    break;
+            }
+            return result;
+        }
+
+        private static double GetRandomNumber(double[] values)
+        {
+            Random random = new Random();
+            int index = random.Next(0, values.Count());
+            return values[index];
         }
     }
 }

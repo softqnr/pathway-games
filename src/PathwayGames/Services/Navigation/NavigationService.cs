@@ -28,7 +28,7 @@ namespace PathwayGames.Services.Navigation
         {
             //if (await _authenticationService.UserIsAuthenticatedAndValidAsync())
             //{
-            await NavigateToAsync<MainViewModel>();
+            await NavigateToAsync<GameSelectionViewModel>();
             //}
             //else
             //{
@@ -90,7 +90,7 @@ namespace PathwayGames.Services.Navigation
         {
             Page page = CreateAndBindPage(viewModelType, parameter);
 
-            if (page is MainView)
+            if (page is MasterDetailView && page is ContentPage)
             {
                 CurrentApplication.MainPage = new CustomNavigationPage(page);
             }

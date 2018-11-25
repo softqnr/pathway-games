@@ -10,14 +10,18 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Assets\Images\donald.jpg" />
     <None Remove="Assets\Images\f1.jpg" />
     <None Remove="Assets\Images\lemon.jpg" />
-    <None Remove="Assets\Images\Mickey_Mouse.png" />
+    <None Remove="Assets\Images\mickey.jpg" />
+    <None Remove="Assets\Images\reward.jpg" />
   </ItemGroup>
 
   <ItemGroup>
+    <EmbeddedResource Include="Assets\Images\donald.jpg" />
     <EmbeddedResource Include="Assets\Images\f1.jpg" />
-    <EmbeddedResource Include="Assets\Images\Mickey_Mouse.png" />
+    <EmbeddedResource Include="Assets\Images\mickey.jpg" />
+    <EmbeddedResource Include="Assets\Images\reward.jpg" />
   </ItemGroup>
 
   <ItemGroup>
@@ -39,15 +43,34 @@
 
   <ItemGroup>
     <Folder Include="Assets\Sounds\" />
+    <Folder Include="Services\Share\" />
     <Folder Include="Utils\" />
   </ItemGroup>
 
   <ItemGroup>
+    <Compile Update="Views\GameSelectionView.xaml.cs">
+      <DependentUpon>GameSelectionView.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\MasterDetailView.xaml.cs">
+      <DependentUpon>MasterDetailView.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\MasterView.xaml.cs">
+      <DependentUpon>MasterView.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\UsersView.xaml.cs">
+      <DependentUpon>UsersView.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\SensorsView.xaml.cs">
+      <DependentUpon>SensorsView.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\SessionDataView.xaml.cs">
+      <DependentUpon>SessionDataView.xaml</DependentUpon>
+    </Compile>
     <Compile Update="Views\GameView.xaml.cs">
       <DependentUpon>GameView.xaml</DependentUpon>
     </Compile>
-    <Compile Update="Views\MainView.xaml.cs">
-      <DependentUpon>MainView.xaml</DependentUpon>
+    <Compile Update="Views\ThankYouView.xaml.cs">
+      <DependentUpon>ThankYouView.xaml</DependentUpon>
     </Compile>
     <Compile Update="Views\SettingsView.xaml.cs">
       <DependentUpon>SettingsView.xaml</DependentUpon>
@@ -56,6 +79,12 @@
 
   <ItemGroup>
     <EmbeddedResource Update="Views\GameView.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\MasterDetailView.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\MasterView.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Views\SettingsView.xaml">

@@ -13,5 +13,9 @@ namespace PathwayGames.Models
         public DateTime StartDate { get; set; }
         public DateTime? EndDate { get; set; }
         public double Score { get; set; }
+        public double ScorePercentage { get; set; }
+        public double AverageResponseTime { get; set; }
+        public double AverageResponseTimeCorrect { get; set; }
+        public double AverageResponseTimeMistake { get; set; }
     }
 }

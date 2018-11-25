@@ -9,6 +9,8 @@ using Unity.ServiceLocation;
 using Unity.Lifetime;
 using CommonServiceLocator;
 using PathwayGames.Services.Slides;
+using PathwayGames.Services.Sound;
+using PathwayGames.Services.Sensors;
 
 [assembly: XamlCompilation(XamlCompilationOptions.Compile)]
 namespace PathwayGames
@@ -24,14 +26,19 @@ namespace PathwayGames
             // Init DI
             InitializeDI();
 
+            MainPage = new MasterDetailView();
         }
 
         private async Task InitializeNavigation()
         {
-            NavigationService.Configure(typeof(MainViewModel), typeof(MainView));
+            NavigationService.Configure(typeof(MasterViewModel), typeof(MasterView));
+            NavigationService.Configure(typeof(GameSelectionViewModel), typeof(GameSelectionView));
             NavigationService.Configure(typeof(GameViewModel), typeof(GameView));
             NavigationService.Configure(typeof(SettingsViewModel), typeof(SettingsView));
-            //NavigationService.Configure(typeof(AboutViewModel), typeof(AboutView));
+            NavigationService.Configure(typeof(ThankYouViewModel), typeof(ThankYouView));
+            NavigationService.Configure(typeof(SessionDataViewModel), typeof(SessionDataView));
+            NavigationService.Configure(typeof(SensorsViewModel), typeof(SensorsView));
+            NavigationService.Configure(typeof(UsersViewModel), typeof(UsersView));
             await NavigationService.InitializeAsync();
         }
 
@@ -41,16 +48,23 @@ namespace PathwayGames
 
             // Services
             Container.RegisterInstance(NavigationService, new ContainerControlledLifetimeManager());
+            Container.RegisterType<ISoundService, SoundService>();
             //Container.RegisterType<IDialogService, DialogService>();
 
             // Data services
             Container.RegisterType<ISlidesService, SlidesService>();
+            Container.RegisterType<ISensorsService, SensorsService>();
 
             // View models
+            Container.RegisterType<MasterViewModel>();
             Container.RegisterType<MainViewModel>();
+            Container.RegisterType<GameSelectionViewModel>();
             Container.RegisterType<GameViewModel>();
             Container.RegisterType<SettingsViewModel>();
-            //Container.RegisterType<AboutViewModel>();
+            Container.RegisterType<ThankYouViewModel>();
+            Container.RegisterType<SessionDataViewModel>();
+            Container.RegisterType<SensorsViewModel>();
+            Container.RegisterType<UsersViewModel>();
 
             // Set as service locator provider
             var unityServiceLocator = new UnityServiceLocator(Container);

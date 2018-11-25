@@ -2,9 +2,9 @@
 
 namespace PathwayGames.Views
 {
-    public partial class MainView : ContentPage
+    public partial class GameSelectionView : ContentPage
     {
-        public MainView()
+        public GameSelectionView()
         {
             InitializeComponent();
         }

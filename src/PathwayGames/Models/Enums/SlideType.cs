@@ -5,5 +5,5 @@ using System.Text;
 namespace PathwayGames.Models.Enums
 {
     public enum SlideType
-    { X, Reward, Blank, DistractorY }
+    { X, Y, A, B, Reward, Blank }
 }

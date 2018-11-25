@@ -3,7 +3,7 @@ using Xamarin.Forms;
 
 namespace PathwayGames.Services.Sound
 {
-    public class SoundService
+    public class SoundService : ISoundService
     {
         private ISoundService _soundProvider;
         public SoundService()
