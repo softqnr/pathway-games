@@ -19,6 +19,9 @@ namespace PathwayGames.Droid.Services.Share
             // Map ContentTypes
             switch (extension)
             {
+                case ".xlsx":
+                    contentType = "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet";
+                    break;
                 case ".pdf":
                     contentType = "application/pdf";
                     break;

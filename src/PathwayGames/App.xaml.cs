@@ -11,6 +11,8 @@ using CommonServiceLocator;
 using PathwayGames.Services.Slides;
 using PathwayGames.Services.Sound;
 using PathwayGames.Services.Sensors;
+using PathwayGames.Services.Excel;
+using PathwayGames.Services.Engangement;
 
 [assembly: XamlCompilation(XamlCompilationOptions.Compile)]
 namespace PathwayGames
@@ -54,6 +56,8 @@ namespace PathwayGames
             // Data services
             Container.RegisterType<ISlidesService, SlidesService>();
             Container.RegisterType<ISensorsService, SensorsService>();
+            Container.RegisterType<IEngangementService, EngangementService>();
+            Container.RegisterType<IExcelService, ExcelService>();
 
             // View models
             Container.RegisterType<MasterViewModel>();

@@ -10,11 +10,12 @@ namespace PathwayGames.Models
         public SlideType SlideType { get; set; }
         public string Name { get; set; }
         public double DisplayDuration { get; set; }
+        public double BlankDuration { get; set; }
         public string Image { get; set; }
         public string Sound { get; set; }
 
         public DateTime SlideDisplayed { get; set; }
-        public DateTime SlideHidden { get; set; }
+        public DateTime? SlideHidden { get; set; }
         public List<ButtonPress> ButtonPresses { get; set; }
         public ResponseOutcome ResponseOutcome { get; set; }
         public TimeSpan ResponseTime { get; set; }

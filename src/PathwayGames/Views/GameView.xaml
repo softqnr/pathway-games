@@ -4,17 +4,27 @@
              xmlns:g="clr-namespace:PathwayGames.Gestures;assembly=PathwayGames"
              xmlns:ffimageloading="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
              x:Class="PathwayGames.Views.GameView"
-             Title = "Type X Game">
+             Title = "Type X CPT">
     <ContentPage.Content>
-        <StackLayout Padding="10, 10">
+        <Grid Padding="10, 10">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="120"/>
+                <RowDefinition Height="20"/>
+            </Grid.RowDefinitions>
+ 
+            <ffimageloading:CachedImage x:Name="image" Source="{Binding SlideImageSource}" SuccessCommand="{Binding SlideDisplayedCommand}" 
+                                        Aspect="AspectFit" VerticalOptions="Center" HeightRequest="400" Grid.Column="0" Grid.Row="0" />
 
-            <ffimageloading:CachedImage x:Name="image" Source="{Binding ImageSource}" IsVisible="{Binding IsVisible}" Aspect="AspectFit" VerticalOptions="Center" HeightRequest="400"
-                                        SuccessCommand="{Binding SlideTimeoutCommand}"/>
+            <Image Source="{Binding ButtonImageSource}" g:Gesture.Tapped="{Binding ButtonTappedCommand}" 
+                   WidthRequest="160" VerticalOptions="EndAndExpand" Grid.Column="0" Grid.Row="1"/>
 
-            <Image Source="{Binding ButtonImageSource}" g:Gesture.Tapped="{Binding ButtonTappedCommand}" WidthRequest="160" VerticalOptions="EndAndExpand"/>
-            
-            <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
-                <Label HorizontalOptions="Center" HorizontalTextAlignment="Center" VerticalOptions="EndAndExpand">
+            <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand" Grid.Column="0" Grid.Row="2">
+                <Image Source="{Binding EngangementImageSource}" WidthRequest="18" />
+                <Label >
                     <Label.FormattedText>
                         <FormattedString>
                             <Span Text="Slide " FontSize="Small" />
@@ -32,7 +42,7 @@
                 </Label>
                 <Image Source="{Binding RecordingImageSource}" WidthRequest="18" />
             </StackLayout>
-        </StackLayout>
+        </Grid>
     </ContentPage.Content>
 
 </ContentPage>

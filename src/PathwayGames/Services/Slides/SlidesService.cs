@@ -27,7 +27,7 @@ namespace PathwayGames.Services.Slides
                 // Reward
                 for (int i = 0; i < 10; i++)
                 {
-                    SlideCollection.Add(new Slide(SlideType.Reward, 1.5) { Name = "Reward " + i, Image = "reward.jpg" });
+                    SlideCollection.Add(new Slide(SlideType.Reward, 2) { Name = "Reward " + i, Image = "reward.jpg", Sound = "reward.mp3" });
                 }
                 return SlideCollection;
             }
@@ -40,25 +40,20 @@ namespace PathwayGames.Services.Slides
               // Pick slides
             var slides = Slides.Where(x => x.SlideType == SlideType.X)
                     .OrderBy(i => random.Next())
-                    .Take(gameSettings.SlideCount / 2)
+                    .Take((int)(gameSettings.SlideCount * 0.7))
                 .Concat<Slide>(
                     Slides.Where(x => x.SlideType == SlideType.Y)
                     .OrderBy(i => random.Next())
-                    .Take(gameSettings.SlideCount / 2)
+                    .Take((int)(gameSettings.SlideCount * 0.3))
                 ).OrderBy(i => random.Next())
+                .Select(x => { x.BlankDuration = GetRandomNumber(gameSettings.BlankSlideDisplayTimes); return x; })
                 .ToList<Slide>();
             // Add blank slides between
-            slides = slides.SelectMany(
-                x => new[] { x, new Slide(SlideType.Blank, GetRandomNumber(new[] { 1, 1.2 })) })
-                .ToList();
+            //slides = slides.SelectMany(
+            //    x => new[] { x, new Slide(SlideType.Blank, GetRandomNumber(new[] { 1, 1.2 })) })
+            //    .ToList();
 
             return slides;
-        }
-        public Slide GetBlankSlide()
-        {
-            Random random = new Random();
-            var slide = new Slide(SlideType.Blank, GetRandomNumber(new[] { 1, 1.2 }));
-            return slide;
         }
         public Slide GetRandomRewardSlide()
         {
@@ -83,14 +78,13 @@ namespace PathwayGames.Services.Slides
                 sw.Write(json);
             }
         }
-        public double CalculateGameScoreAndPercentage(Game game)
+        public double CalculateGameScoreAndStats(Game game)
         {
             //percentage: correct-wrong/total-slides * 100
             return 100;
         }
-        public bool EvaluateSlideResponse(Slide slide)
+        public ResponseOutcome EvaluateSlideResponse(Slide slide)
         {
-            bool result = false;
             if (slide.ButtonPresses.Count > 0)
             {
                 // Calculate response time
@@ -101,28 +95,35 @@ namespace PathwayGames.Services.Slides
                 case SlideType.X:
                     if (slide.ButtonPresses.Count > 0)
                     {
-
+                        slide.ResponseOutcome = ResponseOutcome.CorrectCommission;
+                        slide.Points = 2;
+                    }
+                    else
+                    {
+                        slide.ResponseOutcome = ResponseOutcome.WrongOmission;
+                        slide.Points = -1;
                     }
                     break;
                 case SlideType.Y:
-                    break;
-                case SlideType.A:
-                    break;
-                case SlideType.B:
-                    break;
-                case SlideType.Reward:
-                    break;
-                case SlideType.Blank:
                     if (slide.ButtonPresses.Count == 0)
                     {
                         slide.ResponseOutcome = ResponseOutcome.CorrectOmission;
                         slide.Points = 1;
                     }
+                    else
+                    {
+                        slide.ResponseOutcome = ResponseOutcome.WrongCommission;
+                        slide.Points = -2;
+                    }
+                    break;
+                case SlideType.A:
+                    break;
+                case SlideType.B:
                     break;
                 default:
                     break;
             }
-            return result;
+            return slide.ResponseOutcome;
         }
 
         private static double GetRandomNumber(double[] values)
