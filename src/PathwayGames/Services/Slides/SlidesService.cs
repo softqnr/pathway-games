@@ -17,7 +17,7 @@ namespace PathwayGames.Services.Slides
                 // X
                 for (int i = 0; i < 30; i++)
                 {
-                    SlideCollection.Add(new Slide(SlideType.X, 1.5) { Name = "Mickey Mouse " + i,Image = "mickey.jpg" });
+                    SlideCollection.Add(new Slide(SlideType.X, 1.5) { Name = "Mickey Mouse " + i, Image = "mickey.jpg" });
                 }
                 // DistractorY
                 for (int i = 0; i < 30; i++)
@@ -37,7 +37,7 @@ namespace PathwayGames.Services.Slides
         {
             // Generate random number generator
             Random random = randomSeed != "" ? new Random(randomSeed.GetHashCode()) : new Random();
-              // Pick slides
+            // Pick slides
             var slides = Slides.Where(x => x.SlideType == SlideType.X)
                     .OrderBy(i => random.Next())
                     .Take((int)(gameSettings.SlideCount * 0.7))
@@ -78,22 +78,47 @@ namespace PathwayGames.Services.Slides
                 sw.Write(json);
             }
         }
-        public double CalculateGameScoreAndStats(Game game)
+        public void CalculateGameScoreAndStats(Game game)
         {
-            //percentage: correct-wrong/total-slides * 100
-            return 100;
+            // Score
+            game.Score = game.Slides.Select(x => x.Points).Sum();
+            // ScorePercentage
+            int correctCount = game.Slides.Where(x => x.ResponseOutcome == ResponseOutcome.CorrectCommission ||
+                                                      x.ResponseOutcome == ResponseOutcome.CorrectOmission).Count();
+            int wrongCount = game.Slides.Count - correctCount;
+            game.ScorePercentage = ((correctCount - wrongCount) / game.Slides.Count) * 100;
+            // Average Response Time
+            game.AverageResponseTime = TimeSpan.FromMilliseconds(game.Slides.Select(x => x.ResponseTime.TotalMilliseconds).Average());
+            //Average Response Time Correct
+            if (correctCount > 0)
+            {
+                game.AverageResponseTimeCorrect = TimeSpan.FromMilliseconds(game.Slides.
+                    Where(x => x.ResponseOutcome == ResponseOutcome.CorrectCommission)
+                    .Select(x => x.ResponseTime.TotalMilliseconds).Average());
+            }
+            // Average Response Time Wrong
+            if (wrongCount > 0)
+            {
+                game.AverageResponseTimeWrong = TimeSpan.FromMilliseconds(game.Slides.
+                Where(x => x.ResponseOutcome == ResponseOutcome.WrongCommission)
+                .Select(x => x.ResponseTime.TotalMilliseconds).Average());
+            }
         }
-        public ResponseOutcome EvaluateSlideResponse(Slide slide)
+        public ResponseOutcome EvaluateSlideResponse(Game game, Slide slide)
         {
-            if (slide.ButtonPresses.Count > 0)
+            Int32? slideIndex = game.Slides.IndexOf(slide);
+
+            var firstButtonPress = game.ButtonPresses.Where(x => x.SlideIndex == slideIndex).FirstOrDefault();
+
+            if (firstButtonPress != null)
             {
                 // Calculate response time
-                slide.ResponseTime = slide.ButtonPresses[0].Time - slide.SlideDisplayed;
+                slide.ResponseTime = firstButtonPress.Time.Subtract(slide.SlideDisplayed);
             }
             switch (slide.SlideType)
             {
                 case SlideType.X:
-                    if (slide.ButtonPresses.Count > 0)
+                    if (firstButtonPress != null)
                     {
                         slide.ResponseOutcome = ResponseOutcome.CorrectCommission;
                         slide.Points = 2;
@@ -105,7 +130,7 @@ namespace PathwayGames.Services.Slides
                     }
                     break;
                 case SlideType.Y:
-                    if (slide.ButtonPresses.Count == 0)
+                    if (firstButtonPress == null)
                     {
                         slide.ResponseOutcome = ResponseOutcome.CorrectOmission;
                         slide.Points = 1;

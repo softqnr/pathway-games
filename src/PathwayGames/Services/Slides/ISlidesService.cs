@@ -10,8 +10,8 @@ namespace PathwayGames.Services.Slides
     {
         IList<Slide> Generate(GameType gameType, GameSettings gameSettings, string randomSeed);
         Slide GetRandomRewardSlide();
-        double CalculateGameScoreAndStats(Game game);
-        ResponseOutcome EvaluateSlideResponse(Slide slide);
+        void CalculateGameScoreAndStats(Game game);
+        ResponseOutcome EvaluateSlideResponse(Game game, Slide slide);
         Game Load(string filePath);
         void Save(Game game);
     }

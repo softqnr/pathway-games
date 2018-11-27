@@ -5,6 +5,7 @@ namespace PathwayGames.Models
 {
     public class ButtonPress
     {
+        public int? SlideIndex { get; set; }
         public DateTime Time { get; set; }
         public Point Coordinates { get; set; }
 

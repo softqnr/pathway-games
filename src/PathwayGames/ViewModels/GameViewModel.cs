@@ -1,5 +1,6 @@
 ﻿using PathwayGames.Models;
 using PathwayGames.Models.Enums;
+using PathwayGames.Services.Engangement;
 using PathwayGames.Services.Sensors;
 using PathwayGames.Services.Slides;
 using PathwayGames.Services.Sound;
@@ -16,6 +17,7 @@ namespace PathwayGames.ViewModels
         private ISlidesService _slidesService;
         private ISensorsService _sensorsService;
         private ISoundService _soundService;
+        private IEngangementService _engangementService;
 
         private bool _showReward;
         private int? _slideIndex;
@@ -95,11 +97,15 @@ namespace PathwayGames.ViewModels
         }
 
         //CTor
-        public GameViewModel(ISlidesService slidesService, ISoundService soundService, ISensorsService sensorsService)
+        public GameViewModel(ISlidesService slidesService, 
+            ISoundService soundService, 
+            ISensorsService sensorsService, 
+            IEngangementService engangementService )
         {
             _slidesService = slidesService;
             _sensorsService = sensorsService;
             _soundService = soundService;
+            _engangementService = engangementService;
 
             EngangementImageSource = ImageSource.FromFile("icon_engangement_absent.png");
             ButtonImageSource = ImageSource.FromFile("button.jpg");
@@ -109,10 +115,11 @@ namespace PathwayGames.ViewModels
         }
         
         public async Task OnButtonTapped(Point p)
-        {
-            CurrentSlide.ButtonPresses.Add(new ButtonPress() { Coordinates = p, Time = DateTime.Now });
+        {    
+            Int32? slideIndex = (CurrentSlide.SlideType == SlideType.Reward) ? (Int32?)null : _game.Slides.IndexOf(CurrentSlide);
+            _game.ButtonPresses.Add(new ButtonPress() { Coordinates = p, Time = DateTime.Now, SlideIndex = slideIndex });
             // Evaluate user response
-            ResponseOutcome outcome = _slidesService.EvaluateSlideResponse(CurrentSlide);
+            ResponseOutcome outcome = _slidesService.EvaluateSlideResponse(_game, CurrentSlide);
             // On blank and on correct commision response
             if (outcome == ResponseOutcome.CorrectCommission)
             {
@@ -155,6 +162,11 @@ namespace PathwayGames.ViewModels
         {
             if (SlideIndex < SlideCount)
             {
+                // Evaluate current slide
+                if (SlideIndex > 0) { 
+                    _slidesService.EvaluateSlideResponse(_game, _game.Slides[_slideIndex.Value - 1]);
+                }
+                // Render next slide
                 SlideIndex++;
                 CurrentSlide = _game.Slides[_slideIndex.Value - 1];
                 await RenderSlide(CurrentSlide);
@@ -163,9 +175,10 @@ namespace PathwayGames.ViewModels
                 _sensorsService.StopRecording();
                 RecordingImageSource = ImageSource.FromFile("rec_off.png");
                 // Calculate game stats
+                _slidesService.CalculateGameScoreAndStats(_game);
                 // _slidesService.Save(_game);
                 // Navigate to thank you view
-                await NavigationService.NavigateToAsync<ThankYouViewModel>();
+                await NavigationService.NavigateToAsync<ThankYouViewModel>(_game);
                 await NavigationService.RemoveLastFromBackStackAsync();
             }
         }

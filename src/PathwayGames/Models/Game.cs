@@ -12,10 +12,16 @@ namespace PathwayGames.Models
         public IList<Slide> Slides { get; set; }
         public DateTime StartDate { get; set; }
         public DateTime? EndDate { get; set; }
+        public List<ButtonPress> ButtonPresses { get; set; }
         public double Score { get; set; }
         public double ScorePercentage { get; set; }
-        public double AverageResponseTime { get; set; }
-        public double AverageResponseTimeCorrect { get; set; }
-        public double AverageResponseTimeMistake { get; set; }
+        public TimeSpan AverageResponseTime { get; set; }
+        public TimeSpan AverageResponseTimeCorrect { get; set; }
+        public TimeSpan AverageResponseTimeWrong { get; set; }
+
+        public Game()
+        {
+            ButtonPresses = new List<ButtonPress>();
+        }
     }
 }
