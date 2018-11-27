@@ -10,25 +10,12 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="Assets\Images\donald.jpg" />
-    <None Remove="Assets\Images\lemon.jpg" />
-    <None Remove="Assets\Images\mickey.jpg" />
-    <None Remove="Assets\Images\reward.jpg" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <EmbeddedResource Include="Assets\Images\donald.jpg" />
-    <EmbeddedResource Include="Assets\Images\mickey.jpg" />
-    <EmbeddedResource Include="Assets\Images\reward.jpg" />
-  </ItemGroup>
-
-  <ItemGroup>
     <PackageReference Include="DocumentFormat.OpenXml" Version="2.8.1" />
     <PackageReference Include="Newtonsoft.Json" Version="11.0.2" />
-    <PackageReference Include="Rg.Plugins.Popup" Version="1.1.4.168" />
+    <PackageReference Include="Rg.Plugins.Popup" Version="1.1.5.180" />
     <PackageReference Include="Unity" Version="5.8.11" />
-    <PackageReference Include="Xamarin.FFImageLoading.Forms" Version="2.4.3.840" />
-    <PackageReference Include="Xamarin.Forms" Version="3.3.0.967583" />
+    <PackageReference Include="Xamarin.FFImageLoading.Forms" Version="2.4.4.859" />
+    <PackageReference Include="Xamarin.Forms" Version="3.4.0.1008975" />
   </ItemGroup>
 
   <ItemGroup>
@@ -41,7 +28,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Assets\Sounds\" />
     <Folder Include="Services\Share\" />
     <Folder Include="Utils\" />
   </ItemGroup>

@@ -1,15 +1,11 @@
-﻿using FFImageLoading;
-using FFImageLoading.Forms;
-using PathwayGames.Models;
+﻿using PathwayGames.Models;
 using PathwayGames.Models.Enums;
 using PathwayGames.Services.Sensors;
 using PathwayGames.Services.Slides;
 using PathwayGames.Services.Sound;
 using System;
-using System.Collections.Generic;
 using System.Threading;
 using System.Threading.Tasks;
-using System.Windows.Input;
 using Xamarin.Forms;
 
 namespace PathwayGames.ViewModels
@@ -24,15 +20,13 @@ namespace PathwayGames.ViewModels
         private bool _showReward;
         private int? _slideIndex;
         private int? _slideCount;
-        private string _slideImage;
-        private CachedImage _slideCachedImage;
         private ImageSource _slideImageSource;
         private ImageSource _engangementImageSource;
         private ImageSource _buttonImageSource;
         private ImageSource _recordingImageSource;
         private string _seed;
         private string _userName;
-        private CancellationTokenSource _cts = new System.Threading.CancellationTokenSource();
+        private CancellationTokenSource _cts = new CancellationTokenSource();
 
         private Slide CurrentSlide { get; set; }
 
@@ -47,11 +41,6 @@ namespace PathwayGames.ViewModels
             get => _slideCount;
             set => SetProperty(ref _slideCount, value);
         }
-        public string SlideImage
-        {
-            get => _slideImage;
-            set => SetProperty(ref _slideImage, value);
-        }
         public ImageSource SlideImageSource
         {
             get => _slideImageSource;
@@ -61,11 +50,6 @@ namespace PathwayGames.ViewModels
         {
             get => _engangementImageSource;
             set => SetProperty(ref _engangementImageSource, value);
-        }
-        public CachedImage SlideCachedImage
-        {
-            get => _slideCachedImage;
-            set => SetProperty(ref _slideCachedImage, value);
         }
         public string UserName
         {
@@ -121,20 +105,22 @@ namespace PathwayGames.ViewModels
             ButtonImageSource = ImageSource.FromFile("button.jpg");
             // TODO: This should come from parameters
             _userName = "Quest";
-            _seed = "HJSND";
+            _seed = "DADADA";
         }
         
         public async Task OnButtonTapped(Point p)
         {
             CurrentSlide.ButtonPresses.Add(new ButtonPress() { Coordinates = p, Time = DateTime.Now });
-            // Evaluate response
+            // Evaluate user response
             ResponseOutcome outcome = _slidesService.EvaluateSlideResponse(CurrentSlide);
             // On blank and on correct commision response
             if (outcome == ResponseOutcome.CorrectCommission)
             {
+                // if within normal slide duration
                 if (CurrentSlide.SlideHidden.HasValue)
                 {
                     Console.WriteLine("Correct Commission in blank");
+                    // Cancel blank slide delay
                     _cts.Cancel();
                 }
                 else
@@ -142,13 +128,20 @@ namespace PathwayGames.ViewModels
                     _showReward = true;
                 }
             }
+            // TODO: Calculate engangement
+
+            await ShowButtonPressEffect();
+        }
+
+        private async Task ShowButtonPressEffect()
+        {
             // Button press effect
             ButtonImageSource = ImageSource.FromFile("button_pressed.jpg");
             await Task.Delay(100);
             ButtonImageSource = ImageSource.FromFile("button.jpg");
         }
 
-        private void CreateGame(GameType gameType)
+        private void CreateCPT(GameType gameType)
         {
             _game = new Game();
             _game.Slides = _slidesService.Generate(gameType, new GameSettings() {
@@ -179,6 +172,7 @@ namespace PathwayGames.ViewModels
 
         public async Task ShowRewardSlide()
         {
+            _showReward = false;
             CurrentSlide = _slidesService.GetRandomRewardSlide();
             await RenderSlide(CurrentSlide);
         }
@@ -197,7 +191,7 @@ namespace PathwayGames.ViewModels
             }
             catch (TaskCanceledException)
             {
-                // if cancelled show reward
+                // if delay is cancelled then show reward
                 await ShowRewardSlide();
             }
         }
@@ -205,11 +199,10 @@ namespace PathwayGames.ViewModels
         private async Task RenderSlide(Slide slide)
         {
             Console.WriteLine(slide.Image);
-            // Slide image
-            SlideImageSource = ImageSource.FromResource($"PathwayGames.Assets.Images.{slide.Image}");
-            //SlideImageSource = ImageSource.FromFile($"slide_{slide.Image}");
-
-            // Slide sound
+            // Display elide image
+            SlideImageSource = ImageSource.FromFile($"slide_{slide.Image}");
+            
+            // Play slide sound
             if (!String.IsNullOrEmpty(slide.Sound))
             {
                 await _soundService.PlaySoundAsync(slide.Sound);
@@ -227,10 +220,10 @@ namespace PathwayGames.ViewModels
                 await Task.Delay(TimeSpan.FromSeconds(CurrentSlide.DisplayDuration));
                 // Set slide hidden time
                 CurrentSlide.SlideHidden = DateTime.Now;
-                // Check if we allready have a correct answer
+                // Check if user gave correct answer within normal slide time
+                // in that case show reward slide without showing blank first
                 if (_showReward)
                 {
-                    _showReward = false;
                     await ShowRewardSlide();
                 }
                 else
@@ -247,10 +240,10 @@ namespace PathwayGames.ViewModels
             }
         }
 
-        public async Task StartGame(GameType gameType)
+        public async Task StartCPT(GameType gameType)
         {
             // Create game
-            CreateGame(gameType);
+            CreateCPT(gameType);
             // Start sensor recording
             _sensorsService.StartRecording();
             RecordingImageSource = ImageSource.FromFile("rec.png");
@@ -263,7 +256,7 @@ namespace PathwayGames.ViewModels
             if (navigationData != null &&
                 Enum.TryParse<GameType>(navigationData.ToString(), out var gameType))
             {
-                await StartGame(gameType);
+                await StartCPT(gameType);
             }
         }
     }

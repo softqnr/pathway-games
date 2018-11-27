@@ -43,7 +43,7 @@
           <ViewCell>
             <Grid Padding="5,10">
                 <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="30"/>
+                    <ColumnDefinition Width="18"/>
                     <ColumnDefinition Width="*" />
                 </Grid.ColumnDefinitions>
                 <Image Source="{Binding IconSource}" />
