@@ -11,7 +11,7 @@ namespace PathwayGames.Models
 
         public override string ToString()
         {
-            return $"{Time:dd/MM/yyyy HH:mm:ss} - ({Coordinates.X}, {Coordinates.Y} )"; 
+            return $"{Time:dd/MM/yyyy HH:mm:ss.fff} - ({Coordinates.X}, {Coordinates.Y} )"; 
         }
     }
 }

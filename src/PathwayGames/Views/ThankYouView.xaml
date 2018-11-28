@@ -9,7 +9,7 @@
         <Grid RowSpacing="0" ColumnSpacing="0" Margin="0" Padding="0"
             WidthRequest="300"
             HeightRequest="300"
-            VerticalOptions="Center"
+            VerticalOptions="FillAndExpand"
           HorizontalOptions="Fill">
 
             <Grid.ColumnDefinitions>
@@ -19,11 +19,12 @@
             <Grid.RowDefinitions>
                 <RowDefinition Height="*" />
                 <RowDefinition Height="*" />
-                <RowDefinition Height="*" />
+                <RowDefinition Height="60" />
             </Grid.RowDefinitions>
 
             <Label Text="Thank you!" HorizontalTextAlignment="Center" FontSize="Large"  Grid.Column = "0" Grid.Row = "1" />
 
+            <Button Command="{Binding ExportButtonCommand}" Text="Export results" Grid.Column = "0" Grid.Row = "2"/>
 
         </Grid>
     </StackLayout>

@@ -88,21 +88,18 @@ namespace PathwayGames.Services.Slides
             int wrongCount = game.Slides.Count - correctCount;
             game.ScorePercentage = ((correctCount - wrongCount) / game.Slides.Count) * 100;
             // Average Response Time
-            game.AverageResponseTime = TimeSpan.FromMilliseconds(game.Slides.Select(x => x.ResponseTime.TotalMilliseconds).Average());
-            //Average Response Time Correct
-            if (correctCount > 0)
-            {
-                game.AverageResponseTimeCorrect = TimeSpan.FromMilliseconds(game.Slides.
-                    Where(x => x.ResponseOutcome == ResponseOutcome.CorrectCommission)
-                    .Select(x => x.ResponseTime.TotalMilliseconds).Average());
-            }
+            game.AverageResponseTime = TimeSpan.FromMilliseconds(game.Slides.
+                Where(x => x.ResponseOutcome == ResponseOutcome.CorrectCommission || x.ResponseOutcome == ResponseOutcome.WrongCommission)
+                .Select(x => x.ResponseTime.TotalMilliseconds).DefaultIfEmpty().Average());
+            // Average Response Time Correct
+            game.AverageResponseTimeCorrect = TimeSpan.FromMilliseconds(game.Slides.
+                Where(x => x.ResponseOutcome == ResponseOutcome.CorrectCommission)
+                .Select(x => x.ResponseTime.TotalMilliseconds).DefaultIfEmpty().Average());
             // Average Response Time Wrong
-            if (wrongCount > 0)
-            {
-                game.AverageResponseTimeWrong = TimeSpan.FromMilliseconds(game.Slides.
+
+            game.AverageResponseTimeWrong = TimeSpan.FromMilliseconds(game.Slides.
                 Where(x => x.ResponseOutcome == ResponseOutcome.WrongCommission)
-                .Select(x => x.ResponseTime.TotalMilliseconds).Average());
-            }
+                .Select(x => x.ResponseTime.TotalMilliseconds).DefaultIfEmpty().Average());
         }
         public ResponseOutcome EvaluateSlideResponse(Game game, Slide slide)
         {

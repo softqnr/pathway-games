@@ -13,6 +13,7 @@ using PathwayGames.Services.Sound;
 using PathwayGames.Services.Sensors;
 using PathwayGames.Services.Excel;
 using PathwayGames.Services.Engangement;
+using PathwayGames.Services.Dialog;
 
 [assembly: XamlCompilation(XamlCompilationOptions.Compile)]
 namespace PathwayGames
@@ -51,7 +52,7 @@ namespace PathwayGames
             // Services
             Container.RegisterInstance(NavigationService, new ContainerControlledLifetimeManager());
             Container.RegisterType<ISoundService, SoundService>();
-            //Container.RegisterType<IDialogService, DialogService>();
+            Container.RegisterType<IDialogService, DialogService>();
 
             // Data services
             Container.RegisterType<ISlidesService, SlidesService>();

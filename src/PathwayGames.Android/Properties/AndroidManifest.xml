@@ -1,5 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.0" package="com.softqnr.PathwayGames" android:installLocation="preferExternal">
-	<uses-sdk android:minSdkVersion="21" />
-	<application android:label="Pathway+ CPT" android:icon="@mipmap/ic_launcher"></application>
+	<uses-sdk android:minSdkVersion="17" android:targetSdkVersion="22" />
+	<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+	<application android:label="Pathway+ CPT" android:icon="@mipmap/ic_launcher">
+    <provider android:name="android.support.v4.content.FileProvider" android:authorities="${applicationId}.fileprovider" android:exported="false" android:grantUriPermissions="true">
+      <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/provider_paths" />
+    </provider>
+  </application>
 </manifest>
