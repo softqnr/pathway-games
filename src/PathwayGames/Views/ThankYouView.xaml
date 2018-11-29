@@ -22,8 +22,27 @@
                 <RowDefinition Height="60" />
             </Grid.RowDefinitions>
 
-            <Label Text="Thank you!" HorizontalTextAlignment="Center" FontSize="Large"  Grid.Column = "0" Grid.Row = "1" />
-
+            <Label FontSize="Large" Grid.Column = "0" Grid.Row = "0" HorizontalOptions="Center" VerticalOptions="End">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="Thank you " FontSize="Large" />
+                        <Span Text="{Binding UserName, Mode=OneWay}" FontSize="Large" />
+                        <Span Text="!" FontSize="Large" />
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+            
+            <Label FontSize="Large" Grid.Column = "0" Grid.Row = "1" HorizontalOptions="Center">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="Points: " FontSize="Small" />
+                        <Span Text="{Binding Points, Mode=OneWay}" FontSize="Small" />
+                        <Span Text=" Score: " FontSize="Small" />
+                        <Span Text="{Binding Score, Mode=OneWay, StringFormat='\{0\}%'}" FontSize="Small" />
+           
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
             <Button Command="{Binding ExportButtonCommand}" Text="Export results" Grid.Column = "0" Grid.Row = "2"/>
 
         </Grid>

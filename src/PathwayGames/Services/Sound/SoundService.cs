@@ -11,9 +11,9 @@ namespace PathwayGames.Services.Sound
             _soundProvider = DependencyService.Get<ISoundService>();
         }
 
-        public Task PlaySoundAsync(string filename)
+        public async Task PlaySoundAsync(string filename)
         {
-            return _soundProvider.PlaySoundAsync(filename);
+            await _soundProvider.PlaySoundAsync(filename);
         }
     }
 }

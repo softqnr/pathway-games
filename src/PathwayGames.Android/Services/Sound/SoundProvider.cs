@@ -9,13 +9,16 @@ namespace PathwayGames.Droid.Services.Sound
 {
     public class SoundProvider : ISoundService
     {
-        public Task PlaySoundAsync(string filename)
+        MediaPlayer player;
+        public async Task PlaySoundAsync(string filename)
         {
             // Create media player
-            var player = new MediaPlayer();
+            if (player == null)
+            {
+                player = new MediaPlayer();
+            }
 
-            // Create task completion source to support async/await
-            var tcs = new TaskCompletionSource<bool>();
+            player.Reset();
 
             // Open the resource
             var fd = Android.App.Application.Context.Assets.OpenFd(filename);
@@ -26,14 +29,13 @@ namespace PathwayGames.Droid.Services.Sound
             };
 
             player.Completion += (sender, e) => {
-                tcs.SetResult(true);
+                Task.FromResult(true);
             };
 
             // Initialize
-            player.SetDataSource(fd.FileDescriptor);
-            player.Prepare();
+            await player.SetDataSourceAsync(fd.FileDescriptor, fd.StartOffset, fd.Length);
 
-            return tcs.Task;
+            player.PrepareAsync();           
         }
 
     }

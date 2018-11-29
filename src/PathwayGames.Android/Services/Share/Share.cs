@@ -20,7 +20,7 @@ namespace PathwayGames.Droid.Services.Share
             switch (extension)
             {
                 case ".xlsx":
-                    contentType = "application/excel";
+                    contentType = "application/vnd.ms-excel";
                     break;
                 case ".pdf":
                     contentType = "application/pdf";

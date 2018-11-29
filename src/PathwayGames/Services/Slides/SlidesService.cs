@@ -33,12 +33,13 @@ namespace PathwayGames.Services.Slides
             }
         }
 
-        public IList<Slide> Generate(GameType gameType, GameSettings gameSettings, string randomSeed)
+        public Game Generate(GameType gameType, GameSettings gameSettings, string userName, string randomSeed)
         {
+            Game game = new Game() { UserName = userName, Seed = randomSeed };
             // Generate random number generator
             Random random = randomSeed != "" ? new Random(randomSeed.GetHashCode()) : new Random();
             // Pick slides
-            var slides = Slides.Where(x => x.SlideType == SlideType.X)
+            game.Slides = Slides.Where(x => x.SlideType == SlideType.X)
                     .OrderBy(i => random.Next())
                     .Take((int)(gameSettings.SlideCount * 0.7))
                 .Concat<Slide>(
@@ -53,7 +54,7 @@ namespace PathwayGames.Services.Slides
             //    x => new[] { x, new Slide(SlideType.Blank, GetRandomNumber(new[] { 1, 1.2 })) })
             //    .ToList();
 
-            return slides;
+            return game;
         }
         public Slide GetRandomRewardSlide()
         {
@@ -86,7 +87,7 @@ namespace PathwayGames.Services.Slides
             int correctCount = game.Slides.Where(x => x.ResponseOutcome == ResponseOutcome.CorrectCommission ||
                                                       x.ResponseOutcome == ResponseOutcome.CorrectOmission).Count();
             int wrongCount = game.Slides.Count - correctCount;
-            game.ScorePercentage = ((correctCount - wrongCount) / game.Slides.Count) * 100;
+            game.ScorePercentage = ((double)(correctCount - wrongCount) / game.Slides.Count) * 100;
             // Average Response Time
             game.AverageResponseTime = TimeSpan.FromMilliseconds(game.Slides.
                 Where(x => x.ResponseOutcome == ResponseOutcome.CorrectCommission || x.ResponseOutcome == ResponseOutcome.WrongCommission)

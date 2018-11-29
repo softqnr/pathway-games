@@ -21,7 +21,7 @@ namespace PathwayGames.Droid
 
             base.OnCreate(savedInstanceState);
 
-            FFImageLoading.Forms.Platform.CachedImageRenderer.Init(enableFastRenderer: true);
+            CachedImageRenderer.Init(enableFastRenderer: true);
             UserDialogs.Init(this);
             Rg.Plugins.Popup.Popup.Init(this, savedInstanceState);
 

@@ -4,7 +4,7 @@
              xmlns:g="clr-namespace:PathwayGames.Gestures;assembly=PathwayGames"
              xmlns:ffimageloading="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
              x:Class="PathwayGames.Views.GameView"
-             Title = "Type X CPT">
+             Title = "Type X CPT" BackgroundColor="White">
     <ContentPage.Content>
         <Grid Padding="10, 10">
             <Grid.ColumnDefinitions>

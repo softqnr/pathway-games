@@ -5,6 +5,7 @@ using PathwayGames.Services.Sensors;
 using PathwayGames.Services.Slides;
 using PathwayGames.Services.Sound;
 using System;
+using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
 using Xamarin.Forms;
@@ -111,9 +112,15 @@ namespace PathwayGames.ViewModels
             ButtonImageSource = ImageSource.FromFile("button.jpg");
             // TODO: This should come from parameters
             _userName = "Quest";
-            _seed = "DADADA";
+            _seed = RandomString(6);
         }
-        
+        public static string RandomString(int length)
+        {
+            Random random = new Random();
+            const string chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+            return new string(Enumerable.Repeat(chars, length)
+              .Select(s => s[random.Next(s.Length)]).ToArray());
+        }
         public async Task OnButtonTapped(Point p)
         {    
             Int32? slideIndex = (CurrentSlide.SlideType == SlideType.Reward) ? (Int32?)null : _game.Slides.IndexOf(CurrentSlide);
@@ -150,10 +157,9 @@ namespace PathwayGames.ViewModels
 
         private void CreateCPT(GameType gameType)
         {
-            _game = new Game();
-            _game.Slides = _slidesService.Generate(gameType, new GameSettings() {
+            _game = _slidesService.Generate(gameType, new GameSettings() {
                 SlideCount = 10,
-                BlankSlideDisplayTimes = new []{ 1, 1.2} }, _seed);
+                BlankSlideDisplayTimes = new []{ 1, 1.2} }, _userName, _seed);
             _slideIndex = 0;
             SlideCount = _game.Slides.Count;
         }
