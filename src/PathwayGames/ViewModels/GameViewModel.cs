@@ -122,14 +122,18 @@ namespace PathwayGames.ViewModels
               .Select(s => s[random.Next(s.Length)]).ToArray());
         }
         public async Task OnButtonTapped(Point p)
-        {    
+        {
+            // Play ding sound
+            await _soundService.PlaySoundAsync("ding.mp3");
+            // Record response
             Int32? slideIndex = (CurrentSlide.SlideType == SlideType.Reward) ? (Int32?)null : _game.Slides.IndexOf(CurrentSlide);
             _game.ButtonPresses.Add(new ButtonPress() { Coordinates = p, Time = DateTime.Now, SlideIndex = slideIndex });
-            // Evaluate user response
+            // Evaluate response
             ResponseOutcome outcome = _slidesService.EvaluateSlideResponse(_game, CurrentSlide);
-            // On blank and on correct commision response
+            // On correct commision response
             if (outcome == ResponseOutcome.CorrectCommission)
             {
+                //await _soundService.PlaySoundAsync("success.mp3");
                 // if within normal slide duration
                 if (CurrentSlide.SlideHidden.HasValue)
                 {
@@ -141,9 +145,9 @@ namespace PathwayGames.ViewModels
                 {
                     _showReward = true;
                 }
-            }
-            // TODO: Calculate engangement
-
+            }else{
+                await _soundService.PlaySoundAsync("mistake.mp3");
+            }         
             await ShowButtonPressEffect();
         }
 
@@ -180,6 +184,8 @@ namespace PathwayGames.ViewModels
                 // Game finished
                 _sensorsService.StopRecording();
                 RecordingImageSource = ImageSource.FromFile("rec_off.png");
+                // Calculate engangement
+                CalculateEngangement();
                 // Calculate game stats
                 _slidesService.CalculateGameScoreAndStats(_game);
                 // _slidesService.Save(_game);
@@ -226,6 +232,11 @@ namespace PathwayGames.ViewModels
             {
                 await _soundService.PlaySoundAsync(slide.Sound);
             }
+        }
+
+        private void CalculateEngangement()
+        {
+            _game.ConfusionMatrix = _engangementService.CalculateConfusionMatrix(_game.Slides);
         }
 
         private async Task OnSlideDisplayedCommand()

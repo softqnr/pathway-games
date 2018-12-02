@@ -27,7 +27,7 @@ namespace PathwayGames.Services.Slides
                 // Reward
                 for (int i = 0; i < 10; i++)
                 {
-                    SlideCollection.Add(new Slide(SlideType.Reward, 2) { Name = "Reward " + i, Image = "reward.jpg", Sound = "reward.mp3" });
+                    SlideCollection.Add(new Slide(SlideType.Reward, 2) { Name = "Reward " + i, Image = "reward.gif", Sound = "success.mp3" });
                 }
                 return SlideCollection;
             }

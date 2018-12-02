@@ -26,6 +26,7 @@ namespace PathwayGames.Services.Excel
            
             SpreadsheetDocument spreadsheetDocument = SpreadsheetDocument.Create(fullPath, SpreadsheetDocumentType.Workbook);
 
+            // CPT Game Results
             WorkbookPart workbookPart = spreadsheetDocument.AddWorkbookPart();
             workbookPart.Workbook = new Workbook();
 
@@ -36,11 +37,22 @@ namespace PathwayGames.Services.Excel
             Sheet sheet = new Sheet() { Id = workbookPart.GetIdOfPart(worksheetPart), SheetId = 1, Name = "CPT Game Results" };
             sheets.Append(sheet);
 
-            workbookPart.Workbook.Save();
-            //
-            InsertDataIntoSheet(spreadsheetDocument, "CPT Game Results", game);
-            spreadsheetDocument.Close();
+            // Confusion Matrix
+            worksheetPart = workbookPart.AddNewPart<WorksheetPart>();
+            worksheetPart.Worksheet = new Worksheet(new SheetData());
 
+            Sheet sheet2 = new Sheet() { Id = workbookPart.GetIdOfPart(worksheetPart), SheetId = 2, Name = "Confusion Matrix" };
+            sheets.Append(sheet2);
+
+            workbookPart.Workbook.Save();
+
+            // Data
+            InsertDataIntoSheet(spreadsheetDocument, "CPT Game Results", game);
+            // Confusion matrix
+            InsertConfussionMatrixDataIntoSheet(spreadsheetDocument, "Confusion Matrix", game.ConfusionMatrix);
+
+            spreadsheetDocument.Close();
+            
             return fullPath;
         }
 
@@ -111,6 +123,67 @@ namespace PathwayGames.Services.Excel
                 headerRow.Append(cell);
             }
             workbookPart.Workbook.Save();       
+        }
+
+        private void InsertConfussionMatrixDataIntoSheet(SpreadsheetDocument spreadsheetDocument, string sheetName, ConfusionMatrix confusionMatrix)
+        {
+            //Fix for https://github.com/OfficeDev/Open-XML-SDK/issues/221
+            Environment.SetEnvironmentVariable("MONO_URI_DOTNETRELATIVEORABSOLUTE", "true");
+
+            // Open the document for editing       
+            WorkbookPart workbookPart = spreadsheetDocument.WorkbookPart;
+
+            //Set the sheet name on the second sheet
+            Sheets sheets = workbookPart.Workbook.GetFirstChild<Sheets>();
+            Sheet sheet = sheets.Elements<Sheet>().ElementAtOrDefault(1);
+
+            sheet.Name = sheetName;
+
+            WorksheetPart worksheetPart = workbookPart.WorksheetParts.ElementAtOrDefault(1);
+            SheetData sheetData = worksheetPart.Worksheet.Elements<SheetData>().First();
+
+            // CC
+            Row dataRow = sheetData.AppendChild(new Row());
+            Cell cell = ConstructCell("CC", CellValues.String);
+            dataRow.Append(cell);
+            cell = ConstructCell(confusionMatrix.CorrectCommission.ToString(), CellValues.Number);
+            dataRow.Append(cell);
+
+            // WC
+            dataRow = sheetData.AppendChild(new Row());
+            cell = ConstructCell("WC", CellValues.String);
+            dataRow.Append(cell);
+            cell = ConstructCell(confusionMatrix.WrongCommission.ToString(), CellValues.Number);
+            dataRow.Append(cell);
+
+            // WO
+            dataRow = sheetData.AppendChild(new Row());
+            cell = ConstructCell("WO", CellValues.String);
+            dataRow.Append(cell);
+            cell = ConstructCell(confusionMatrix.WrongOmission.ToString(), CellValues.Number);
+            dataRow.Append(cell);
+
+            // CO
+            dataRow = sheetData.AppendChild(new Row());
+            cell = ConstructCell("CO", CellValues.String);
+            dataRow.Append(cell);
+            cell = ConstructCell(confusionMatrix.CorrectOmission.ToString(), CellValues.Number);
+            dataRow.Append(cell);
+            
+            // Total presses
+            dataRow = sheetData.AppendChild(new Row());
+            cell = ConstructCell("Total presses", CellValues.String);
+            dataRow.Append(cell);
+            cell = ConstructCell(confusionMatrix.TotalPresses.ToString(), CellValues.Number);
+            dataRow.Append(cell);
+            // Total omissions
+            dataRow = sheetData.AppendChild(new Row());
+            cell = ConstructCell("Total omissions", CellValues.String);
+            dataRow.Append(cell);
+            cell = ConstructCell(confusionMatrix.TotalOmissions.ToString(), CellValues.Number);
+            dataRow.Append(cell);
+
+            workbookPart.Workbook.Save();
         }
 
         private Cell ConstructCell(string value, CellValues dataType)

@@ -1,10 +1,12 @@
-﻿using System;
+﻿using PathwayGames.Models;
 using System.Collections.Generic;
-using System.Text;
 
 namespace PathwayGames.Services.Engangement
 {
     public interface IEngangementService
     {
+        ConfusionMatrix CalculateConfusionMatrix(List<Slide> slides);
+        (double z, double y) CalculateZValue(double prob);
+
     }
 }

@@ -9,14 +9,11 @@ namespace PathwayGames.Droid.Services.Sound
 {
     public class SoundProvider : ISoundService
     {
-        MediaPlayer player;
+        private MediaPlayer player;
         public async Task PlaySoundAsync(string filename)
         {
             // Create media player
-            if (player == null)
-            {
-                player = new MediaPlayer();
-            }
+            player = player ?? new MediaPlayer();
 
             player.Reset();
 
@@ -34,6 +31,7 @@ namespace PathwayGames.Droid.Services.Sound
 
             // Initialize
             await player.SetDataSourceAsync(fd.FileDescriptor, fd.StartOffset, fd.Length);
+            //player.SetDataSource(fd.FileDescriptor, fd.StartOffset, fd.Length);
 
             player.PrepareAsync();           
         }

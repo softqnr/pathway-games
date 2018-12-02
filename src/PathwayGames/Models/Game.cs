@@ -10,10 +10,11 @@ namespace PathwayGames.Models
         public GameType GameType { get; set; }
         public string UserName { get; set; }
         public string Seed { get; set; }
-        public IList<Slide> Slides { get; set; }
+        public List<Slide> Slides { get; set; }
         public DateTime StartDate { get; set; }
         public DateTime? EndDate { get; set; }
         public List<ButtonPress> ButtonPresses { get; set; }
+        public ConfusionMatrix ConfusionMatrix { get; set; }
         public int Score { get; set; }
         public double ScorePercentage { get; set; }
         public TimeSpan AverageResponseTime { get; set; }
