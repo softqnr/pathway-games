@@ -6,7 +6,7 @@
              x:Class="PathwayGames.Views.GameView"
              Title = "Type X CPT" BackgroundColor="White">
     <ContentPage.Content>
-        <Grid Padding="10, 10">
+        <Grid Padding="16, 16">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
@@ -24,19 +24,19 @@
 
             <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand" Grid.Column="0" Grid.Row="2">
                 <Image Source="{Binding EngangementImageSource}" WidthRequest="18" />
-                <Label >
+                <Label FontSize="Small">
                     <Label.FormattedText>
                         <FormattedString>
-                            <Span Text="Slide " FontSize="Small" />
-                            <Span Text="{Binding SlideIndex, Mode=OneWay}" FontSize="Small" />
-                            <Span Text="/" FontSize="Small" />
-                            <Span Text="{Binding SlideCount, Mode=OneWay}" FontSize="Small" />
-                            <Span Text=" – " FontSize="Small" />
-                            <Span Text="{Binding UserName, Mode=OneWay}" FontSize="Small" />
-                            <Span Text=" – " FontSize="Small" />
+                            <Span Text="Slide "/>
+                            <Span Text="{Binding SlideIndex, Mode=OneWay}" />
+                            <Span Text="/" />
+                            <Span Text="{Binding SlideCount, Mode=OneWay}" />
+                            <Span Text=" – " />
+                            <Span Text="{Binding UserName, Mode=OneWay}" />
+                            <Span Text=" – " />
                             <Span Text="{Binding Source={x:Static x:DateTime.Now}, StringFormat='{}{0:dd/MM/yyyy - hh:mm}'}" />
-                            <Span Text=" – " FontSize="Small" />
-                            <Span Text="{Binding Seed, Mode=OneWay}" FontSize="Small" />
+                            <Span Text=" – " />
+                            <Span Text="{Binding Seed, Mode=OneWay}" />
                         </FormattedString>
                     </Label.FormattedText>
                 </Label>

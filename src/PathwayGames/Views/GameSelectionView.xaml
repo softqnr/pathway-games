@@ -23,32 +23,32 @@
                 <RowDefinition Height="*" />
                 <RowDefinition Height="*" />
             </Grid.RowDefinitions>
-            <Button Text="X" x:Name="TypeXButton1" Image=""
-                    Grid.Column = "0" Grid.Row = "0" Grid.ColumnSpan="2" BorderWidth="1" Margin="0" ContentLayout="Top,10"  Padding="0,50"
+            <Button Text="X" x:Name="TypeXButton1" Image="" FontSize="Large"
+                    Grid.Column = "0" Grid.Row = "0" Grid.ColumnSpan="2" BorderWidth="1" Margin="0" ContentLayout="Top,10"  Padding="0,50" BorderRadius="0"
                     BackgroundColor="{StaticResource primary}" BorderColor="{StaticResource primary_dark}" TextColor="White"
                 Command="{Binding TypeX}"
                 HorizontalOptions="FillAndExpand"
                 VerticalOptions="FillAndExpand" />
-            <Button Text="Seek X" x:Name="TypeXButton" Image=""
-                    Grid.Column = "0" Grid.Row = "1" BorderWidth="1" Margin="0" ContentLayout="Top,10"  Padding="0,50"
+            <Button Text="Seek X" x:Name="TypeXButton" Image="" FontSize="Large"
+                    Grid.Column = "0" Grid.Row = "1" BorderWidth="1" Margin="0" ContentLayout="Top,10"  Padding="0,50" BorderRadius="0"
                     BackgroundColor="{StaticResource primary}" BorderColor="{StaticResource primary_dark}" TextColor="White"
                 Command="{Binding TypeX}"
                 HorizontalOptions="FillAndExpand"
                 VerticalOptions="FillAndExpand" />
-            <Button Text="AX" x:Name="TypeAXButton" Image=""
-                    Grid.Column = "1" Grid.Row = "1" BorderWidth="1" Margin="0" ContentLayout="Top,10"  Padding="0,50"
+            <Button Text="AX" x:Name="TypeAXButton" Image="" FontSize="Large"
+                    Grid.Column = "1" Grid.Row = "1" BorderWidth="1" Margin="0" ContentLayout="Top,10"  Padding="0,50" BorderRadius="0"
                     BackgroundColor="{StaticResource primary}" BorderColor="{StaticResource primary_dark}" TextColor="White"
                 Command="{Binding TypeX}"
                 HorizontalOptions="FillAndExpand"
                 VerticalOptions="FillAndExpand" />
-            <Button Text="Seek AX" x:Name="SeekXButton" Image=""
-                    Grid.Column = "0" Grid.Row = "2" BorderWidth="1" Margin="0" ContentLayout="Top,10"  Padding="0,50"
+            <Button Text="Seek AX" x:Name="SeekXButton" Image="" FontSize="Large"
+                    Grid.Column = "0" Grid.Row = "2" BorderWidth="1" Margin="0" ContentLayout="Top,10"  Padding="0,50" BorderRadius="0"
                     BackgroundColor="{StaticResource primary}" BorderColor="{StaticResource primary_dark}" TextColor="White"
                 Command="{Binding TypeX}"
                 HorizontalOptions="FillAndExpand"
                 VerticalOptions="FillAndExpand" />
-            <Button Text="Seek AX with Quiz" x:Name="SeekAXButton" Image=""
-                    Grid.Column = "1" Grid.Row = "2" BorderWidth="1" Margin="0" ContentLayout="Top,10" Padding="0,50"
+            <Button Text="Seek AX with Quiz" x:Name="SeekAXButton" Image="" FontSize="Large"
+                    Grid.Column = "1" Grid.Row = "2" BorderWidth="1" Margin="0" ContentLayout="Top,10" Padding="0,50" BorderRadius="0"
                     BackgroundColor="{StaticResource primary}" BorderColor="{StaticResource primary_dark}" TextColor="White"
                 Command="{Binding TypeX}"
                 HorizontalOptions="FillAndExpand"

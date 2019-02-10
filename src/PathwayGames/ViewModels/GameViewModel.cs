@@ -123,6 +123,7 @@ namespace PathwayGames.ViewModels
         }
         public async Task OnButtonTapped(Point p)
         {
+            await ShowButtonPressEffect();
             // Play ding sound
             await _soundService.PlaySoundAsync("ding.mp3");
             // Record response
@@ -148,7 +149,6 @@ namespace PathwayGames.ViewModels
             }else{
                 await _soundService.PlaySoundAsync("mistake.mp3");
             }         
-            await ShowButtonPressEffect();
         }
 
         private async Task ShowButtonPressEffect()

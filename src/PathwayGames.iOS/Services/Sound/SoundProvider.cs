@@ -1,6 +1,7 @@
 ﻿using System.IO;
 using System.Threading.Tasks;
 using AVFoundation;
+using CoreFoundation;
 using Foundation;
 using PathwayGames.iOS.Services.Sound;
 using PathwayGames.Services.Sound;
@@ -16,12 +17,23 @@ namespace PathwayGames.iOS.Services.Sound
         public Task PlaySoundAsync(string filename)
         {
             var tcs = new TaskCompletionSource<bool>();
+            
+            // Any existing sound playing?
+            if (_player != null)
+            {
+                //Stop and dispose of any sound
+                _player.Stop();
+                _player.Dispose();
+            }
 
             string path = NSBundle.MainBundle.PathForResource(Path.GetFileNameWithoutExtension(filename),
                 Path.GetExtension(filename));
 
             var url = NSUrl.FromString(path);
+
             _player = AVAudioPlayer.FromUrl(url);
+
+            _player.PrepareToPlay();
 
             _player.FinishedPlaying += (object sender, AVStatusEventArgs e) => {
                 _player = null;
