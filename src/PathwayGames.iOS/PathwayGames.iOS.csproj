@@ -54,15 +54,15 @@
     <WarningLevel>4</WarningLevel>
     <ConsolePause>false</ConsolePause>
     <MtouchArch>ARM64</MtouchArch>
-    <CodesignKey>iPhone Developer: sfradel@gmail.com (5NYS622W79)</CodesignKey>
+    <CodesignKey>iPhone Developer</CodesignKey>
     <MtouchDebug>true</MtouchDebug>
     <CodesignEntitlements>
     </CodesignEntitlements>
-    <CodesignProvision>iOS Team Provisioning Profile: com.softqnr.PathwayGames</CodesignProvision>
+    <CodesignProvision>iOS Team Provisioning Profile: uk.ac.ntu.comp.pathway.games</CodesignProvision>
     <CodesignExtraArgs />
     <CodesignResourceRules />
     <BuildIpa>false</BuildIpa>
-    <IpaPackageName>com.sofrqnr.PathwayGames</IpaPackageName>
+    <IpaPackageName>uk.ac.ntu.comp.pathway.games</IpaPackageName>
     <IOSDebugOverWiFi>true</IOSDebugOverWiFi>
     <IpaIncludeArtwork>false</IpaIncludeArtwork>
   </PropertyGroup>
@@ -74,10 +74,15 @@
     <WarningLevel>4</WarningLevel>
     <MtouchArch>ARM64</MtouchArch>
     <ConsolePause>false</ConsolePause>
-    <CodesignKey>iPhone Developer</CodesignKey>
-    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <CodesignKey>iPhone Developer: Dejan Kocic (S9V4P7UX5L)</CodesignKey>
+    <CodesignEntitlements>
+    </CodesignEntitlements>
     <BuildIpa>true</BuildIpa>
-    <IpaPackageName>com.sofrqnr.PathwayGames</IpaPackageName>
+    <IpaPackageName>uk.ac.ntu.comp.pathway.games</IpaPackageName>
+    <CodesignExtraArgs />
+    <CodesignResourceRules />
+    <CodesignProvision>iOS Team Provisioning Profile: uk.ac.ntu.comp.pathway.games</CodesignProvision>
+    <MtouchLink>None</MtouchLink>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Ad-Hoc|iPhone' ">
     <DebugType>none</DebugType>
@@ -88,10 +93,13 @@
     <ConsolePause>False</ConsolePause>
     <MtouchArch>ARM64</MtouchArch>
     <BuildIpa>True</BuildIpa>
-    <CodesignProvision>iOS Team Provisioning Profile: com.softqnr.PathwayGames</CodesignProvision>
-    <CodesignKey>iPhone Developer: sfradel@gmail.com (5NYS622W79)</CodesignKey>
-    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
-    <IpaPackageName>com.softqnr.PathwayGames</IpaPackageName>
+    <CodesignProvision>iOS Team Provisioning Profile: uk.ac.ntu.comp.pathway.games</CodesignProvision>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <CodesignEntitlements>
+    </CodesignEntitlements>
+    <IpaPackageName>uk.ac.ntu.comp.pathway.games</IpaPackageName>
+    <CodesignExtraArgs />
+    <CodesignResourceRules />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'AppStore|iPhone' ">
     <DebugType>none</DebugType>
@@ -110,10 +118,16 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Effects\TapWithPositionGestureEffect.cs" />
+    <Compile Include="Extensions\IEnumerableExtensions.cs" />
+    <Compile Include="Extensions\NMatrix4Extenstions.cs" />
+    <Compile Include="Extensions\SCNVector3Extensions.cs" />
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
+    <Compile Include="Sensors\EyeDetectionDelegate.cs" />
+    <Compile Include="Sensors\EyeDetectionRenderer.cs" />
     <Compile Include="Services\Share\Share.cs" />
     <Compile Include="Services\Sound\SoundProvider.cs" />
+    <Compile Include="Sensors\SessionDelegate.cs" />
     <None Include="Entitlements.plist" />
     <None Include="Info.plist" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -132,12 +146,12 @@
       <Version>7.0.1</Version>
     </PackageReference>
     <PackageReference Include="Rg.Plugins.Popup">
-      <Version>1.1.5.180</Version>
+      <Version>1.1.5.188</Version>
     </PackageReference>
     <PackageReference Include="Xamarin.FFImageLoading.Forms">
       <Version>2.4.4.859</Version>
     </PackageReference>
-    <PackageReference Include="Xamarin.Forms" Version="3.4.0.1008975" />
+    <PackageReference Include="Xamarin.Forms" Version="3.6.0.264807" />
     <PackageReference Include="System.Reflection.Emit" Version="4.3.0">
       <ExcludeAssets>all</ExcludeAssets>
     </PackageReference>
@@ -334,4 +348,8 @@
   <ItemGroup>
     <BundleResource Include="Resources\success.mp3" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\icon_pathway.png" />
+  </ItemGroup>
+  <ItemGroup />
 </Project>

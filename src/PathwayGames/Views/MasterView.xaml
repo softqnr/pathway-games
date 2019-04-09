@@ -33,7 +33,7 @@
                     <Label.FormattedText>
                         <FormattedString>
                                 <Span Text="Pathway+ CPT " FontSize="Large" Style="{DynamicResource SubtitleStyle}"/>
-                                <Span Text="v1.0" FontSize="Small" />
+                                <Span Text="v1.1" FontSize="Small" />
                         </FormattedString>
                     </Label.FormattedText>
             </Label>
