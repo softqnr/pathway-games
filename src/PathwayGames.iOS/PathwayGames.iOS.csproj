@@ -117,17 +117,17 @@
     <AppExtensionDebugBundleId />
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Controls\EyeGazePreviewRenderer.cs" />
     <Compile Include="Effects\TapWithPositionGestureEffect.cs" />
     <Compile Include="Extensions\IEnumerableExtensions.cs" />
     <Compile Include="Extensions\NMatrix4Extenstions.cs" />
     <Compile Include="Extensions\SCNVector3Extensions.cs" />
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
-    <Compile Include="Sensors\EyeDetectionDelegate.cs" />
-    <Compile Include="Sensors\EyeDetectionRenderer.cs" />
+    <Compile Include="Controls\EyeGazeDetectionDelegate.cs" />
     <Compile Include="Services\Share\Share.cs" />
     <Compile Include="Services\Sound\SoundProvider.cs" />
-    <Compile Include="Sensors\SessionDelegate.cs" />
+    <Compile Include="Controls\SessionDelegate.cs" />
     <None Include="Entitlements.plist" />
     <None Include="Info.plist" />
     <Compile Include="Properties\AssemblyInfo.cs" />

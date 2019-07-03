@@ -2,6 +2,7 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:g="clr-namespace:PathwayGames.Gestures;assembly=PathwayGames"
+             xmlns:c="clr-namespace:PathwayGames.Controls;assembly=PathwayGames"
              xmlns:ffimageloading="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
              x:Class="PathwayGames.Views.GameView"
              Title = "Type X CPT" BackgroundColor="White">
@@ -14,14 +15,15 @@
                 <RowDefinition Height="*"/>
                 <RowDefinition Height="120"/>
                 <RowDefinition Height="20"/>
+                <RowDefinition Height="1"/>
             </Grid.RowDefinitions>
- 
-            <ffimageloading:CachedImage x:Name="image" Source="{Binding SlideImageSource}" SuccessCommand="{Binding SlideDisplayedCommand}" 
+
+            <ffimageloading:CachedImage x:Name="image" Source="{Binding SlideImageSource}" SuccessCommand="{Binding SlideAppearedCommand}" 
                                         Aspect="AspectFit" VerticalOptions="Center" HeightRequest="400" Grid.Column="0" Grid.Row="0" />
 
             <Image Source="{Binding ButtonImageSource}" g:Gesture.Tapped="{Binding ButtonTappedCommand}" 
                    WidthRequest="160" VerticalOptions="EndAndExpand" Grid.Column="0" Grid.Row="1"/>
-
+            
             <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand" Grid.Column="0" Grid.Row="2">
                 <Image Source="{Binding EngangementImageSource}" WidthRequest="18" />
                 <Label FontSize="Small">
@@ -42,6 +44,7 @@
                 </Label>
                 <Image Source="{Binding RecordingImageSource}" WidthRequest="18" />
             </StackLayout>
+            <c:EyeGazePreview Grid.Column="0" Grid.Row="3" WidthRequest="96" HeightRequest="128" />
         </Grid>
     </ContentPage.Content>
 

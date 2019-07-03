@@ -1,7 +1,7 @@
 ﻿using ARKit;
 using System;
 
-namespace PathwayGames.iOS.Sensors
+namespace PathwayGames.iOS.Controls
 {
     public class SessionDelegate : ARSessionDelegate
     {

@@ -33,12 +33,18 @@ namespace PathwayGames.Services.Slides
             }
         }
 
-        public Game Generate(GameType gameType, GameSettings gameSettings, string userName, string randomSeed)
+        public Game Generate(GameType gameType, GameSettings gameSettings, string userName, string seed)
         {
-            Game game = new Game() { UserName = userName, Seed = randomSeed };
+           if (string.IsNullOrWhiteSpace(seed))
+                seed = CreateRandomSeed();
+
             // Generate random number generator
-            Random random = randomSeed != "" ? new Random(randomSeed.GetHashCode()) : new Random();
-            // Pick slides
+            Random random = new Random(seed.GetHashCode());
+
+            // Create game
+            Game game = new Game(gameType, userName, seed);
+
+            // Pick game slides
             game.Slides = Slides.Where(x => x.SlideType == SlideType.X)
                     .OrderBy(i => random.Next())
                     .Take((int)(gameSettings.SlideCount * 0.7))
@@ -56,6 +62,7 @@ namespace PathwayGames.Services.Slides
 
             return game;
         }
+
         public Slide GetRandomRewardSlide()
         {
             Random random = new Random();
@@ -64,10 +71,12 @@ namespace PathwayGames.Services.Slides
                     .First();
             return slide;
         }
+
         public Game Load(string filePath)
         {
             return JsonConvert.DeserializeObject<Game>(filePath);
         }
+
         public void Save(Game game)
         {
             string json = JsonConvert.SerializeObject(game);
@@ -79,6 +88,7 @@ namespace PathwayGames.Services.Slides
                 sw.Write(json);
             }
         }
+
         public void CalculateGameScoreAndStats(Game game)
         {
             // Score
@@ -102,6 +112,7 @@ namespace PathwayGames.Services.Slides
                 Where(x => x.ResponseOutcome == ResponseOutcome.WrongCommission)
                 .Select(x => x.ResponseTime.TotalMilliseconds).DefaultIfEmpty().Average());
         }
+
         public ResponseOutcome EvaluateSlideResponse(Game game, Slide slide)
         {
             Int32? slideIndex = game.Slides.IndexOf(slide);
@@ -154,6 +165,14 @@ namespace PathwayGames.Services.Slides
             Random random = new Random();
             int index = random.Next(0, values.Count());
             return values[index];
+        }
+
+        private string CreateRandomSeed(int length = 6)
+        {
+            Random random = new Random();
+            const string chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+            return new string(Enumerable.Repeat(chars, length)
+              .Select(s => s[random.Next(s.Length)]).ToArray());
         }
     }
 }

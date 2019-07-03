@@ -21,8 +21,12 @@ namespace PathwayGames.Models
         public TimeSpan AverageResponseTimeCorrect { get; set; }
         public TimeSpan AverageResponseTimeWrong { get; set; }
 
-        public Game()
+        public Game(GameType gameType, string userName, string  seed)
         {
+            GameType = gameType;
+            UserName = userName;
+            Seed = seed;
+
             ButtonPresses = new List<ButtonPress>();
         }
     }

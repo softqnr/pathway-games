@@ -8,9 +8,9 @@ using System;
 using System.Linq;
 using UIKit;
 
-namespace PathwayGames.iOS.Sensors
+namespace PathwayGames.iOS.Controls
 {
-    public class EyeDetectionDelegate : ARSCNViewDelegate
+    public class EyeGazeDetectionDelegate : ARSCNViewDelegate
     {
         ARSCNView SceneView;
         SCNNode faceNode = new SCNNode();
@@ -41,10 +41,10 @@ namespace PathwayGames.iOS.Sensors
         nfloat[] eyeLookAtPositionXsTmp = new nfloat[SmoothThresholdNumber];
         nfloat[] eyeLookAtPositionYsTmp = new nfloat[SmoothThresholdNumber];
 
-        public EyeDetectionDelegate(ARSCNView sceneView)
+        public EyeGazeDetectionDelegate(ARSCNView sceneView)
         {
             SceneView = sceneView;
-
+            //sceneView.layer.CornerRadius = 28
             // Virtual screen node
             CreateVirtualScreenNode();
             // Create target    
@@ -52,8 +52,7 @@ namespace PathwayGames.iOS.Sensors
             eyePositionIndicatorView.Layer.CornerRadius = eyePositionIndicatorView.Bounds.Width / 2;
             eyePositionIndicatorView.BackgroundColor = UIColor.Red;//me
             eyePositionIndicatorView.Center = new CGPoint(SceneView.Superview.Frame.Size.Width / 2,
-                             SceneView.Superview.Frame.Size.Height / 2);
-            //sceneView.layer.CornerRadius = 28
+                       SceneView.Superview.Frame.Size.Height / 2);
 
             // Setup Scenegraph
             eyeLNode = CreateEyeNode();
@@ -61,7 +60,7 @@ namespace PathwayGames.iOS.Sensors
 
             // Add eye position indicator to parent view
             SceneView.Superview.AddSubview(eyePositionIndicatorView);
-
+       
             SceneView.Scene.RootNode.AddChildNode(faceNode);
             SceneView.Scene.RootNode.AddChildNode(virtualPhoneNode);
             virtualPhoneNode.AddChildNode(virtualScreenNode);
@@ -189,6 +188,7 @@ namespace PathwayGames.iOS.Sensors
 
             virtualScreenNode = SCNNode.FromGeometry(screenGeometry);
         }
+
         private SCNNode CreateEyeNode()
         {
             // Create A Node To Represent The Eye

@@ -8,7 +8,7 @@ namespace PathwayGames.Services.Slides
 {
     public interface ISlidesService
     {
-        Game Generate(GameType gameType, GameSettings gameSettings, string userName, string randomSeed);
+        Game Generate(GameType gameType, GameSettings gameSettings, string userName, string seed);
         Slide GetRandomRewardSlide();
         void CalculateGameScoreAndStats(Game game);
         ResponseOutcome EvaluateSlideResponse(Game game, Slide slide);

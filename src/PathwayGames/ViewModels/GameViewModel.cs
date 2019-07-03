@@ -76,13 +76,13 @@ namespace PathwayGames.ViewModels
         }
 
         // Commands
-        public Command SlideDisplayedCommand
+        public Command SlideAppearedCommand
         {
             get
             {
                 return new Command(async () =>
                 {
-                    await OnSlideDisplayedCommand();
+                    await OnSlideAppearedCommand();
                 });
             }
         }
@@ -112,23 +112,19 @@ namespace PathwayGames.ViewModels
             ButtonImageSource = ImageSource.FromFile("button.jpg");
             // TODO: This should come from parameters
             _userName = "Quest";
-            _seed = RandomString(6);
+            _seed = "";
         }
-        public static string RandomString(int length)
-        {
-            Random random = new Random();
-            const string chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-            return new string(Enumerable.Repeat(chars, length)
-              .Select(s => s[random.Next(s.Length)]).ToArray());
-        }
+        
         public async Task OnButtonTapped(Point p)
         {
             await ShowButtonPressEffect();
-            // Play ding sound
-            await _soundService.PlaySoundAsync("ding.mp3");
             // Record response
             Int32? slideIndex = (CurrentSlide.SlideType == SlideType.Reward) ? (Int32?)null : _game.Slides.IndexOf(CurrentSlide);
-            _game.ButtonPresses.Add(new ButtonPress() { Coordinates = p, Time = DateTime.Now, SlideIndex = slideIndex });
+            _game.ButtonPresses.Add(new ButtonPress() {
+                Coordinates = p,
+                Time = DateTime.Now,
+                SlideIndex = slideIndex 
+            });
             // Evaluate response
             ResponseOutcome outcome = _slidesService.EvaluateSlideResponse(_game, CurrentSlide);
             // On correct commision response
@@ -157,15 +153,8 @@ namespace PathwayGames.ViewModels
             ButtonImageSource = ImageSource.FromFile("button_pressed.jpg");
             await Task.Delay(100);
             ButtonImageSource = ImageSource.FromFile("button.jpg");
-        }
-
-        private void CreateCPT(GameType gameType)
-        {
-            _game = _slidesService.Generate(gameType, new GameSettings() {
-                SlideCount = 10,
-                BlankSlideDisplayTimes = new []{ 1, 1.2} }, _userName, _seed);
-            _slideIndex = 0;
-            SlideCount = _game.Slides.Count;
+            // Play ding sound
+            await _soundService.PlaySoundAsync("ding.mp3");
         }
 
         public async Task ShowNextSlide()
@@ -182,8 +171,7 @@ namespace PathwayGames.ViewModels
                 await RenderSlide(CurrentSlide);
             }else{
                 // Game finished
-                _sensorsService.StopRecording();
-                RecordingImageSource = ImageSource.FromFile("rec_off.png");
+                StopSensorRecording();
                 // Calculate engangement
                 CalculateEngangement();
                 // Calculate game stats
@@ -239,7 +227,7 @@ namespace PathwayGames.ViewModels
             _game.ConfusionMatrix = _engangementService.CalculateConfusionMatrix(_game.Slides);
         }
 
-        private async Task OnSlideDisplayedCommand()
+        private async Task OnSlideAppearedCommand()
         {
             // Do to record response for reward slides
             if (CurrentSlide.SlideType != SlideType.Reward)
@@ -270,15 +258,32 @@ namespace PathwayGames.ViewModels
             }
         }
 
-        public async Task StartCPT(GameType gameType)
+        public async Task StartGame(GameType gameType)
         {
             // Create game
-            CreateCPT(gameType);
+            _game = _slidesService.Generate(gameType, new GameSettings()
+            {
+                SlideCount = 10,
+                BlankSlideDisplayTimes = new[] { 1, 1.2 }
+            }, _userName, _seed);
+            _slideIndex = 0;
+            SlideCount = _game.Slides.Count;
             // Start sensor recording
+            StartSensorRecording();
+            // Start game
+            await ShowNextSlide();
+        }
+
+        private void StartSensorRecording()
+        {
             _sensorsService.StartRecording();
             RecordingImageSource = ImageSource.FromFile("rec.png");
-            // Start slide show
-            await ShowNextSlide();
+        }
+
+        private void StopSensorRecording()
+        {
+            _sensorsService.StopRecording();
+            RecordingImageSource = ImageSource.FromFile("rec_off.png");
         }
 
         public override async Task InitializeAsync(object navigationData)
@@ -286,7 +291,7 @@ namespace PathwayGames.ViewModels
             if (navigationData != null &&
                 Enum.TryParse<GameType>(navigationData.ToString(), out var gameType))
             {
-                await StartCPT(gameType);
+                await StartGame(gameType);
             }
         }
     }
