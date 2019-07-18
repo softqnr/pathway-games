@@ -3,12 +3,12 @@ using System.Threading.Tasks;
 using AVFoundation;
 using CoreFoundation;
 using Foundation;
-using PathwayGames.iOS.Services.Sound;
-using PathwayGames.Services.Sound;
+using PathwayGames.iOS.Infrastructure.Sound;
+using PathwayGames.Infrastructure.Sound;
 using Xamarin.Forms;
 
 [assembly: Dependency(typeof(SoundProvider))]
-namespace PathwayGames.iOS.Services.Sound
+namespace PathwayGames.iOS.Infrastructure.Sound
 {
     public class SoundProvider : NSObject, ISoundService
     {

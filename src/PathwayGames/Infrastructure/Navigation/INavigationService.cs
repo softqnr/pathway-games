@@ -2,7 +2,7 @@
 using System;
 using System.Threading.Tasks;
 
-namespace PathwayGames.Services.Navigation
+namespace PathwayGames.Infrastructure.Navigation
 {
     public interface INavigationService
     {

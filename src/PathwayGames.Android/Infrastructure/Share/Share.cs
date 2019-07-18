@@ -1,13 +1,13 @@
 ﻿using System.IO;
 using Android.Content;
 using Android.Support.V4.Content;
-using PathwayGames.Droid.Services.Share;
-using PathwayGames.Services.Share;
+using PathwayGames.Droid.Infrastructure.Share;
+using PathwayGames.Infrastructure.Share;
 using Xamarin.Forms;
 
 [assembly: Android.App.Permission(Name = "android.permission.READ_EXTERNAL_STORAGE")]
 [assembly: Dependency(typeof(Share))]
-namespace PathwayGames.Droid.Services.Share
+namespace PathwayGames.Droid.Infrastructure.Share
 {
     public class Share : IShare
     {

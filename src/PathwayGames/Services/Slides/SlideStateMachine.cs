@@ -21,8 +21,8 @@ namespace PathwayGames.Services.Slides
     {
         public event PropertyChangedEventHandler PropertyChanged;
 
-        private TriggerWithParameters<double> _showBlankTrigger;
-        private TriggerWithParameters<double> _showBlankCancelableTrigger;
+        private readonly TriggerWithParameters<double> _showBlankTrigger;
+        private readonly TriggerWithParameters<double> _showBlankCancelableTrigger;
 
         public StateMachine(Func<Task> createGameAction,
             Func<Task> startGameAction,

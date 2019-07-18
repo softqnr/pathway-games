@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using System.Threading.Tasks;
 using Xamarin.Forms;
 
-namespace PathwayGames.Services.Dialog
+namespace PathwayGames.Infrastructure.Dialog
 {
     class DialogService : IDialogService
     {

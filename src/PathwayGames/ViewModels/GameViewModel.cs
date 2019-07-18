@@ -4,7 +4,7 @@ using PathwayGames.Models.Enums;
 using PathwayGames.Services.Engangement;
 using PathwayGames.Services.Sensors;
 using PathwayGames.Services.Slides;
-using PathwayGames.Services.Sound;
+using PathwayGames.Infrastructure.Sound;
 using Stateless;
 using Stateless.Graph;
 using System;

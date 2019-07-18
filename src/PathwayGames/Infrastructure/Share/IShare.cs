@@ -1,6 +1,6 @@
 ﻿using System.Threading.Tasks;
 
-namespace PathwayGames.Services.Share
+namespace PathwayGames.Infrastructure.Share
 {
     public interface IShare
     {

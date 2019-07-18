@@ -6,7 +6,7 @@ using System.Collections.Generic;
 using System.Threading.Tasks;
 using Xamarin.Forms;
 
-namespace PathwayGames.Services.Navigation
+namespace PathwayGames.Infrastructure.Navigation
 {
     public partial class NavigationService : INavigationService
     {

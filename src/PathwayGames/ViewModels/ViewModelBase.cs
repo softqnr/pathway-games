@@ -1,6 +1,6 @@
 ﻿using CommonServiceLocator;
-using PathwayGames.Services.Dialog;
-using PathwayGames.Services.Navigation;
+using PathwayGames.Infrastructure.Dialog;
+using PathwayGames.Infrastructure.Navigation;
 using System.Threading.Tasks;
 
 namespace PathwayGames.ViewModels

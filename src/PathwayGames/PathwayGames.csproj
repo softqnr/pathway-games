@@ -33,8 +33,7 @@
   <ItemGroup>
     <Folder Include="Extensions\" />
     <Folder Include="Helpers\" />
-    <Folder Include="Infrastructure\" />
-    <Folder Include="Services\Share\" />
+    <Folder Include="Infrastructure\Share\" />
   </ItemGroup>
 
   <ItemGroup>

@@ -1,11 +1,11 @@
 ﻿using System.Threading.Tasks;
 using Android.Media;
-using PathwayGames.Droid.Services.Sound;
-using PathwayGames.Services.Sound;
+using PathwayGames.Droid.Infrastructure.Sound;
+using PathwayGames.Infrastructure.Sound;
 using Xamarin.Forms;
 
 [assembly: Dependency(typeof(SoundProvider))]
-namespace PathwayGames.Droid.Services.Sound
+namespace PathwayGames.Droid.Infrastructure.Sound
 {
     public class SoundProvider : ISoundService
     {

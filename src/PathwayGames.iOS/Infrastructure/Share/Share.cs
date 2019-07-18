@@ -1,11 +1,11 @@
 ﻿
 using Foundation;
-using PathwayGames.iOS.Services.Share;
-using PathwayGames.Services.Share;
+using PathwayGames.iOS.Infrastructure.Share;
+using PathwayGames.Infrastructure.Share;
 using UIKit;
 
 [assembly: Xamarin.Forms.Dependency(typeof(Share))]
-namespace PathwayGames.iOS.Services.Share
+namespace PathwayGames.iOS.Infrastructure.Share
 {
     public class Share : IShare
     {

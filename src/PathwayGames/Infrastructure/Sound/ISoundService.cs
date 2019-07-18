@@ -1,6 +1,6 @@
 ﻿using System.Threading.Tasks;
 
-namespace PathwayGames.Services.Sound
+namespace PathwayGames.Infrastructure.Sound
 {
     public interface ISoundService
     {

@@ -1,7 +1,7 @@
 ﻿using System.Threading.Tasks;
 using Xamarin.Forms;
 
-namespace PathwayGames.Services.Sound
+namespace PathwayGames.Infrastructure.Sound
 {
     public class SoundService : ISoundService
     {

@@ -4,7 +4,7 @@ using PathwayGames.ViewModels;
 using System;
 using System.Threading.Tasks;
 
-namespace PathwayGames.Services.Navigation
+namespace PathwayGames.Infrastructure.Navigation
 {
     public partial class NavigationService : INavigationService
     {
