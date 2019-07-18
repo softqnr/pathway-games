@@ -1,4 +1,6 @@
 ﻿using Foundation;
+using System;
+using System.Threading.Tasks;
 using UIKit;
 
 namespace PathwayGames.iOS
@@ -21,9 +23,20 @@ namespace PathwayGames.iOS
             Rg.Plugins.Popup.Popup.Init();
             FFImageLoading.Forms.Platform.CachedImageRenderer.Init();
             global::Xamarin.Forms.Forms.Init();
+            global::Xamarin.Forms.FormsMaterial.Init();
             LoadApplication(new App());
 
+            // Catch unhandled exceptions
+            AppDomain.CurrentDomain.UnhandledException += async (sender, e) => await UnhandledExceptionHandler(sender, e);
+            TaskScheduler.UnobservedTaskException += async (sender, e) => await UnhandledExceptionHandler(sender, e);
+
             return base.FinishedLaunching(app, options);
+        }
+
+        private async Task UnhandledExceptionHandler(object sender, object e)
+        {
+            System.Diagnostics.Debug.WriteLine("UNHANDLED EXCEPTION OCCURED");
+            await Task.FromResult(true);
         }
     }
 }

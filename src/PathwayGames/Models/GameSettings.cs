@@ -6,11 +6,21 @@ namespace PathwayGames.Models
 {
     public class GameSettings
     {
-        public double SlideDisplayDuration { get; set; }
+        public double SlideDisplayDuration { get; set; } = 1.5;
 
-        public int SlideCount { get; set; }
+        public double RewardDisplayDuration { get; set; } = 2;
 
-        public double[] BlankSlideDisplayTimes { get; set; }
+        public int SlideCount { get; set; } = 10;
+
+        public double BlankSlideDisplayTime { get; set; } = 2.0;
+
+        public double BlankSlideDisplayTimeVariation { get; set; } = 0.1;
+
+        public double[] BlankSlideDisplayTimes { get => new double[] { BlankSlideDisplayTime,
+                BlankSlideDisplayTime + BlankSlideDisplayTimeVariation,
+                BlankSlideDisplayTime - BlankSlideDisplayTimeVariation
+            };
+        }
 
         public int SeekGameRows { get; set; }
 

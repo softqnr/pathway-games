@@ -9,10 +9,9 @@ namespace PathwayGames.Services.Engangement
     {
         public ConfusionMatrix CalculateConfusionMatrix(List<Slide> slides)
         {
-            ConfusionMatrix confusionMatrix = new ConfusionMatrix(slides);
-            
-            return confusionMatrix;
+            return new ConfusionMatrix(slides);
         }
+
         public void Calculate(float h, float fa)
         {
             // print('ZH=', z_value(h)[0])

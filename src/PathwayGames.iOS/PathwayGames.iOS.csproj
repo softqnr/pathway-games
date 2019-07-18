@@ -63,7 +63,7 @@
     <CodesignResourceRules />
     <BuildIpa>true</BuildIpa>
     <IpaPackageName>uk.ac.ntu.comp.pathway.games</IpaPackageName>
-    <IOSDebugOverWiFi>true</IOSDebugOverWiFi>
+    <IOSDebugOverWiFi>false</IOSDebugOverWiFi>
     <IpaIncludeArtwork>false</IpaIncludeArtwork>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
@@ -82,7 +82,7 @@
     <CodesignExtraArgs />
     <CodesignResourceRules />
     <CodesignProvision>iOS Team Provisioning Profile: uk.ac.ntu.comp.pathway.games</CodesignProvision>
-    <MtouchLink>None</MtouchLink>
+    <MtouchLink>SdkOnly</MtouchLink>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Ad-Hoc|iPhone' ">
     <DebugType>none</DebugType>
@@ -118,6 +118,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Controls\EyeGazePreviewRenderer.cs" />
+    <Compile Include="Controls\WrappedButtonRenderer.cs" />
     <Compile Include="Effects\TapWithPositionGestureEffect.cs" />
     <Compile Include="Extensions\IEnumerableExtensions.cs" />
     <Compile Include="Extensions\NMatrix4Extenstions.cs" />
@@ -151,9 +152,12 @@
     <PackageReference Include="Xamarin.FFImageLoading.Forms">
       <Version>2.4.11.982</Version>
     </PackageReference>
-    <PackageReference Include="Xamarin.Forms" Version="4.0.0.540366" />
+    <PackageReference Include="Xamarin.Forms" Version="4.1.0.581479" />
     <PackageReference Include="System.Reflection.Emit" Version="4.3.0">
       <ExcludeAssets>all</ExcludeAssets>
+    </PackageReference>
+    <PackageReference Include="Xamarin.Forms.Visual.Material">
+      <Version>4.1.0.581479</Version>
     </PackageReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
@@ -240,24 +244,6 @@
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\rec_off.png">
-      <Generator>MSBuild:UpdateGeneratedFiles</Generator>
-      <SubType>Designer</SubType>
-    </BundleResource>
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\slide_donald.jpg">
-      <Generator>MSBuild:UpdateGeneratedFiles</Generator>
-      <SubType>Designer</SubType>
-    </BundleResource>
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\slide_mickey.jpg">
-      <Generator>MSBuild:UpdateGeneratedFiles</Generator>
-      <SubType>Designer</SubType>
-    </BundleResource>
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\slide_reward.gif">
       <Generator>MSBuild:UpdateGeneratedFiles</Generator>
       <SubType>Designer</SubType>
     </BundleResource>
@@ -351,5 +337,35 @@
   <ItemGroup>
     <BundleResource Include="Resources\icon_pathway.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <BundleResource Include="Resources\casey_the_cat_says_hey.jpg">
+      <Generator>MSBuild:UpdateGeneratedFiles</Generator>
+    </BundleResource>
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\berry_the_dog.jpg">
+      <Generator>MSBuild:UpdateGeneratedFiles</Generator>
+    </BundleResource>
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\casey_the_cat.jpg">
+      <Generator>MSBuild:UpdateGeneratedFiles</Generator>
+    </BundleResource>
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\alex_the_alien.jpg">
+      <Generator>MSBuild:UpdateGeneratedFiles</Generator>
+    </BundleResource>
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\casey_the_cat_thumbs_up.jpg">
+      <Generator>MSBuild:UpdateGeneratedFiles</Generator>
+    </BundleResource>
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\reward_animation_wow.gif" />
+  </ItemGroup>
 </Project>

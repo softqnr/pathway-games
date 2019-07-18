@@ -13,6 +13,11 @@
             <Color x:Key="secondary_text">#757575</Color>
             <Color x:Key="icons">#FFFFFF</Color>
             <Color x:Key="divider">#BDBDBD</Color>
+            <Color x:Key="menu_green">#00b200</Color>
+            <Color x:Key="menu_blue">#0080ff</Color>
+            <Color x:Key="menu_pink">#d900d9</Color>
+            <Color x:Key="menu_purple">#8000ff</Color>
+            <Color x:Key="menu_red">#d90000</Color>
         </ResourceDictionary>
     </Application.Resources>
 

@@ -2,9 +2,9 @@
 
 namespace PathwayGames.Views
 {
-    public partial class ThankYouView : ContentPage
+    public partial class GameResultsView : ContentPage
     {
-        public ThankYouView()
+        public GameResultsView()
         {
             InitializeComponent();
         }

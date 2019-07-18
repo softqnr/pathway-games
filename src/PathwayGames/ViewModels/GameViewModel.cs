@@ -1,74 +1,88 @@
-﻿using PathwayGames.Models;
+﻿using FFImageLoading;
+using PathwayGames.Models;
 using PathwayGames.Models.Enums;
 using PathwayGames.Services.Engangement;
 using PathwayGames.Services.Sensors;
 using PathwayGames.Services.Slides;
 using PathwayGames.Services.Sound;
+using Stateless;
+using Stateless.Graph;
 using System;
 using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
+using System.Windows.Input;
 using Xamarin.Forms;
 
 namespace PathwayGames.ViewModels
 {
     public class GameViewModel : ViewModelBase
     {
+        private GameType _gameType;
         private Game _game;
+        private GameSettings _gameSettings;
+
         private ISlidesService _slidesService;
         private ISensorsService _sensorsService;
         private ISoundService _soundService;
         private IEngangementService _engangementService;
 
-        private bool _showReward;
+        private string _title;
+        private bool _paused;
         private int? _slideIndex;
         private int? _slideCount;
         private ImageSource _slideImageSource;
-        private ImageSource _engangementImageSource;
-        private ImageSource _buttonImageSource;
         private ImageSource _recordingImageSource;
         private string _seed;
         private string _userName;
-        private CancellationTokenSource _cts = new CancellationTokenSource();
+        private CancellationTokenSource _cts;
 
         private Slide CurrentSlide { get; set; }
+        public StateMachine StateMachine { get; private set; }
 
         // Bindable properties
+        public string Title
+        {
+            get => _title;
+            set => SetProperty(ref _title, value);
+        }
+
         public int? SlideIndex
         {
             get => _slideIndex;
             set => SetProperty(ref _slideIndex, value);
         }
+
         public int? SlideCount
         {
             get => _slideCount;
             set => SetProperty(ref _slideCount, value);
         }
+
         public ImageSource SlideImageSource
         {
             get => _slideImageSource;
             set => SetProperty(ref _slideImageSource, value);
         }
-        public ImageSource EngangementImageSource
+
+        public bool Paused
         {
-            get => _engangementImageSource;
-            set => SetProperty(ref _engangementImageSource, value);
+            get => _paused;
+            set => SetProperty(ref _paused, value);
         }
+
         public string UserName
         {
             get => _userName;
             set => SetProperty(ref _userName, value);
         }
+
         public string Seed
         {
             get => _seed;
             set => SetProperty(ref _seed, value);
         }
-        public ImageSource ButtonImageSource
-        {
-            get => _buttonImageSource;
-            set => SetProperty(ref _buttonImageSource, value);
-        }
+
         public ImageSource RecordingImageSource
         {
             get => _recordingImageSource;
@@ -76,16 +90,6 @@ namespace PathwayGames.ViewModels
         }
 
         // Commands
-        public Command SlideAppearedCommand
-        {
-            get
-            {
-                return new Command(async () =>
-                {
-                    await OnSlideAppearedCommand();
-                });
-            }
-        }
         public Command<Point> ButtonTappedCommand
         {
             get
@@ -97,181 +101,229 @@ namespace PathwayGames.ViewModels
             }
         }
 
+        //public ICommand SlideAppearedCommand
+        //{
+        //    get
+        //    {
+        //        return new Command(async () =>
+        //        {
+        //            await OnSlideAppeared();
+        //        });
+        //    }
+        //}
+
         //CTor
-        public GameViewModel(ISlidesService slidesService, 
-            ISoundService soundService, 
-            ISensorsService sensorsService, 
-            IEngangementService engangementService )
+        public GameViewModel(ISlidesService slidesService,
+            ISoundService soundService,
+            ISensorsService sensorsService,
+            IEngangementService engangementService)
         {
             _slidesService = slidesService;
             _sensorsService = sensorsService;
             _soundService = soundService;
             _engangementService = engangementService;
 
-            EngangementImageSource = ImageSource.FromFile("icon_engangement_absent.png");
-            ButtonImageSource = ImageSource.FromFile("button.jpg");
+            // Create StateMachine
+            StateMachine = new StateMachine
+            (
+                createGameAction: async () => await CreateGame(),
+                startGameAction: async () => await StartGame(),
+                nextSlideAction: async () => await GotoNextSlide(),
+                evaluateSlideResponseAction: async () => await EvaluateResponse(),
+                blankSlideAction: async (d) => await ShowBlankSlide(d),
+                blankSlideCancelableAction: async (d) => await ShowBlankSlideCancelable(d),
+                rewardSlideAction: async () => await ShowRewardSlide(),
+                endAction: async () => await EndGame()
+            );
+
+            _userName = App.UserName;
             // TODO: This should come from parameters
-            _userName = "Quest";
-            _seed = "";
+            _seed = "XYZ";
         }
-        
+
         public async Task OnButtonTapped(Point p)
         {
-            await ShowButtonPressEffect();
-            // Record response
-            Int32? slideIndex = (CurrentSlide.SlideType == SlideType.Reward) ? (Int32?)null : _game.Slides.IndexOf(CurrentSlide);
-            _game.ButtonPresses.Add(new ButtonPress() {
-                Coordinates = p,
-                Time = DateTime.Now,
-                SlideIndex = slideIndex 
-            });
-            // Evaluate response
-            ResponseOutcome outcome = _slidesService.EvaluateSlideResponse(_game, CurrentSlide);
-            // On correct commision response
-            if (outcome == ResponseOutcome.CorrectCommission)
+            System.Diagnostics.Debug.WriteLine("({0}/{1}) - {2:HH:mm:ss.fff} - OnButtonTapped()", SlideIndex, SlideCount, DateTime.Now);
+            // Save response
+            SaveResponse(p);
+            // Handle response
+            var response = _slidesService.EvaluateSlideResponse(_game, CurrentSlide);
+            switch (response)
             {
-                //await _soundService.PlaySoundAsync("success.mp3");
-                // if within normal slide duration
-                if (CurrentSlide.SlideHidden.HasValue)
-                {
-                    Console.WriteLine("Correct Commission in blank");
-                    // Cancel blank slide delay
-                    _cts.Cancel();
-                }
-                else
-                {
-                    _showReward = true;
-                }
-            }else{
-                await _soundService.PlaySoundAsync("mistake.mp3");
-            }         
+                case ResponseOutcome.CorrectCommission:
+                    // Play ding sound
+                    await _soundService.PlaySoundAsync("ding.mp3");
+                    await StateMachine.FireAsync(Triggers.CorrectCommision); // Cancel blank immediately
+                    break;
+                case ResponseOutcome.WrongCommission:
+                    // Play mistake sound
+                    await _soundService.PlaySoundAsync("mistake.mp3");
+                    break;
+            }
         }
 
-        private async Task ShowButtonPressEffect()
+        public async Task GotoNextSlide()
         {
-            // Button press effect
-            ButtonImageSource = ImageSource.FromFile("button_pressed.jpg");
-            await Task.Delay(100);
-            ButtonImageSource = ImageSource.FromFile("button.jpg");
-            // Play ding sound
-            await _soundService.PlaySoundAsync("ding.mp3");
-        }
-
-        public async Task ShowNextSlide()
-        {
+            System.Diagnostics.Debug.WriteLine("({0}/{1}) - {2:HH:mm:ss.fff} - ShowNextSlide()", SlideIndex, SlideCount, DateTime.Now);
             if (SlideIndex < SlideCount)
             {
-                // Evaluate current slide
-                if (SlideIndex > 0) { 
-                    _slidesService.EvaluateSlideResponse(_game, _game.Slides[_slideIndex.Value - 1]);
-                }
-                // Render next slide
+                // Forward to next slide
                 SlideIndex++;
                 CurrentSlide = _game.Slides[_slideIndex.Value - 1];
+                // Render slide
                 await RenderSlide(CurrentSlide);
-            }else{
-                // Game finished
-                StopSensorRecording();
-                // Calculate engangement
-                CalculateEngangement();
-                // Calculate game stats
-                _slidesService.CalculateGameScoreAndStats(_game);
-                // _slidesService.Save(_game);
-                // Navigate to thank you view
-                await NavigationService.NavigateToAsync<ThankYouViewModel>(_game);
-                await NavigationService.RemoveLastFromBackStackAsync();
+                await StateMachine.FireAsync(Triggers.SlideFinished);
             }
+            else
+            {
+                await StateMachine.FireAsync(Triggers.NoSlides);
+            }
+        }
+
+        public async Task<ResponseOutcome> EvaluateResponse()
+        {
+            // Evaluate response
+            ResponseOutcome outcome = _slidesService.EvaluateSlideResponse(_game, CurrentSlide);
+
+            // Fire trigger based on outcome
+            switch (outcome)
+            {
+                case ResponseOutcome.CorrectCommission:
+                    // Within normal slide duration
+                    System.Diagnostics.Debug.WriteLine("({0}/{1}) - {2:HH:mm:ss.fff} - Correct Commission", SlideIndex, SlideCount, DateTime.Now);
+                    // 
+                    await StateMachine.FireAsync(Triggers.CorrectCommision);
+                    break;
+                case ResponseOutcome.WrongCommission:
+                    System.Diagnostics.Debug.WriteLine("({0}/{1}) - {2:HH:mm:ss.fff} - Wrong Commission", SlideIndex, SlideCount, DateTime.Now);
+                    //
+                    //await StateMachine.FireAsync(Triggers.WrongCommision);
+                    await StateMachine.ChangeStateToShowBlankSlide(CurrentSlide.BlankDuration);
+                    break;
+                case ResponseOutcome.WrongOmission:
+                case ResponseOutcome.CorrectOmission:
+                    await StateMachine.ChangeStateToShowBlankCancelableSlide(CurrentSlide.BlankDuration);
+                    break;
+            }
+            return outcome;
         }
 
         public async Task ShowRewardSlide()
         {
-            _showReward = false;
-            CurrentSlide = _slidesService.GetRandomRewardSlide();
+            System.Diagnostics.Debug.WriteLine("({0}/{1}) - {2:HH:mm:ss.fff} - ShowRewardSlide()", SlideIndex, SlideCount, DateTime.Now);
+            TimeSpan blankSlideTime = new TimeSpan();
+            blankSlideTime = TimeSpan.FromSeconds(CurrentSlide.BlankDuration);
+            // Cancel blank display if token exists
+            if (_cts != null)
+            {
+                blankSlideTime = _slidesService.CalculateBlankSlideTimeLeft(CurrentSlide);
+                _cts.Cancel();
+            }
+            CurrentSlide = _slidesService.GetRandomRewardSlide(_gameSettings.RewardDisplayDuration);
+
+           
             await RenderSlide(CurrentSlide);
+            System.Diagnostics.Debug.WriteLine("({0}/{1}) - {2:HH:mm:ss.fff} - ShowRewardSlide() Finished {3} Blank delay left", SlideIndex, SlideCount, DateTime.Now, blankSlideTime.TotalSeconds);
+            //
+            await StateMachine.ChangeStateToShowBlankSlide(blankSlideTime.TotalSeconds);
         }
 
-        public async Task ShowBlankSlide()
+        public async Task ShowBlankSlideCancelable(double duration)
         {
+            System.Diagnostics.Debug.WriteLine("({0}/{1}) - {2:HH:mm:ss.fff} - ShowBlankSlideCancelable({3})", SlideIndex, SlideCount, DateTime.Now,
+                duration);
             // Display blank slide / cancelable
             SlideImageSource = null;
-            // Reset Cancellation token
-            _cts.Dispose();
-            _cts = new CancellationTokenSource();
+
             try
             {
-                await Task.Delay(TimeSpan.FromSeconds(CurrentSlide.BlankDuration), _cts.Token);
-                await ShowNextSlide();
+                // Reset Cancellation token
+                _cts = new CancellationTokenSource();
+                await Task.Delay(TimeSpan.FromSeconds(duration), _cts.Token);
+                //
+                await StateMachine.FireAsync(Triggers.NextSlide);
             }
             catch (TaskCanceledException)
             {
-                // if delay is cancelled then show reward
-                await ShowRewardSlide();
+                // Blank display canceled because award slide has to be displayed within
+                _cts.Dispose();
+                _cts = null;
             }
+        }
+
+        public async Task ShowBlankSlide(double duration)
+        {
+            System.Diagnostics.Debug.WriteLine("({0}/{1}) - {2:HH:mm:ss.fff} - ShowBlankSlide({3})", SlideIndex, SlideCount, DateTime.Now,
+               duration);
+            // Display blank slide
+            SlideImageSource = null;
+
+            await Task.Delay(TimeSpan.FromSeconds(duration));
+            //
+            await StateMachine.FireAsync(Triggers.SlideFinished);
         }
 
         private async Task RenderSlide(Slide slide)
         {
-            Console.WriteLine(slide.Image);
-            // Display elide image
-            SlideImageSource = ImageSource.FromFile($"slide_{slide.Image}");
-            
+            var now = DateTime.Now;
+            // Display slide image
+            SlideImageSource = ImageSource.FromFile(slide.Image);
             // Play slide sound
             if (!String.IsNullOrEmpty(slide.Sound))
             {
                 await _soundService.PlaySoundAsync(slide.Sound);
             }
+            System.Diagnostics.Debug.WriteLine("({0}/{1} - {2}) - {3:HH:mm:ss.fff} - RenderSlide()", SlideIndex, SlideCount, CurrentSlide.SlideType.ToString(), now);
+            // Set slide displayed time
+            CurrentSlide.SlideDisplayed = now;
+            // Wait for the slide duration
+            await Task.Delay(TimeSpan.FromSeconds(CurrentSlide.DisplayDuration));
+            // Set slide hidden time
+            CurrentSlide.SlideHidden = DateTime.Now;
         }
 
-        private void CalculateEngangement()
+        public async Task CreateGame()
         {
-            _game.ConfusionMatrix = _engangementService.CalculateConfusionMatrix(_game.Slides);
-        }
-
-        private async Task OnSlideAppearedCommand()
-        {
-            // Do to record response for reward slides
-            if (CurrentSlide.SlideType != SlideType.Reward)
-            {
-                // Set slide displayed time
-                CurrentSlide.SlideDisplayed = DateTime.Now;
-                // Wait slide duration
-                await Task.Delay(TimeSpan.FromSeconds(CurrentSlide.DisplayDuration));
-                // Set slide hidden time
-                CurrentSlide.SlideHidden = DateTime.Now;
-                // Check if user gave correct answer within normal slide time
-                // in that case show reward slide without showing blank first
-                if (_showReward)
-                {
-                    await ShowRewardSlide();
-                }
-                else
-                {
-                    await ShowBlankSlide();
-                }
-            }
-            else
-            {
-                Console.WriteLine("Delay reward");
-                await Task.Delay(TimeSpan.FromSeconds(CurrentSlide.DisplayDuration));
-                // Proceed to next slide
-                await ShowNextSlide();
-            }
-        }
-
-        public async Task StartGame(GameType gameType)
-        {
+            // TODO: Read Settings
+            _gameSettings = new GameSettings(); // Use default
             // Create game
-            _game = _slidesService.Generate(gameType, new GameSettings()
-            {
-                SlideCount = 10,
-                BlankSlideDisplayTimes = new[] { 1, 1.2 }
-            }, _userName, _seed);
-            _slideIndex = 0;
+            _game = _slidesService.Generate(_gameType, _gameSettings, App.UserName, _seed);
+            SlideIndex = 0;
             SlideCount = _game.Slides.Count;
+
+            await Task.FromResult(true);
+        }
+
+        public async Task StartGame()
+        {
+            _game.StartDate = DateTime.Now;
             // Start sensor recording
             StartSensorRecording();
             // Start game
-            await ShowNextSlide();
+            await StateMachine.FireAsync(Triggers.NextSlide);
+        }
+
+        public void PauseGame()
+        {
+
+        }
+
+        public void ResumeGame()
+        {
+
+        }
+
+        public async Task EndGame()
+        {
+            // Game finished
+            StopSensorRecording();
+            _game.EndDate = DateTime.Now;
+            // Calculate engangement
+            CalculateEngangement();
+            // Calculate game stats
+            _slidesService.CalculateGameScoreAndStats(_game);
+            // _slidesService.Save(_game);
+            await Task.FromResult(true);
         }
 
         private void StartSensorRecording()
@@ -286,13 +338,48 @@ namespace PathwayGames.ViewModels
             RecordingImageSource = ImageSource.FromFile("rec_off.png");
         }
 
+        private void SaveResponse(Point p)
+        {
+
+            Int32? slideIndex = (CurrentSlide.SlideType == SlideType.Reward) ? (Int32?)null : _game.Slides.IndexOf(CurrentSlide);
+            _game.RecordButtonPress(slideIndex, p);
+        }
+
+        private void CalculateEngangement()
+        {
+            _game.ConfusionMatrix = _engangementService.CalculateConfusionMatrix(_game.Slides);
+        }
+
+        private async Task PreloadImages()
+        {
+            //await ImageService.Instance.LoadFileFromApplicationBundle("").PreloadAsync();
+        }
+
         public override async Task InitializeAsync(object navigationData)
         {
             if (navigationData != null &&
                 Enum.TryParse<GameType>(navigationData.ToString(), out var gameType))
             {
-                await StartGame(gameType);
+                _gameType = gameType;
+                Title = _gameType.ToString() + " Game";
+
+                await CreateGame();
+                await StateMachine.FireAsync(Triggers.Start);
+                // NavigateToAsync called from Stateless throws null reference exception
+                await WaitEndState();
             }
         }
+
+        private async Task WaitEndState()
+        {
+            while (StateMachine.State != States.End)
+            {
+                await Task.Delay(100);
+            }
+            // Navigate to result view
+            await NavigationService.NavigateToAsync<GameResultsViewModel>(_game);
+            await NavigationService.RemoveLastFromBackStackAsync();
+        }
+
     }
 }

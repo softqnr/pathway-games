@@ -3,9 +3,21 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:g="clr-namespace:PathwayGames.Gestures;assembly=PathwayGames"
              xmlns:c="clr-namespace:PathwayGames.Controls;assembly=PathwayGames"
+             xmlns:b="clr-namespace:PathwayGames.Behaviors;assembly=PathwayGames"
              xmlns:ffimageloading="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
              x:Class="PathwayGames.Views.GameView"
-             Title = "Type X CPT" BackgroundColor="White">
+             Visual="Material" BackgroundColor="White"
+             Title = "{Binding Title}">
+    
+    <NavigationPage.TitleView>
+        <StackLayout Orientation="Horizontal" VerticalOptions="CenterAndExpand" Spacing="10">
+            <Image Source="logo.png" HorizontalOptions="Center" />
+            <Label Text="{Binding Title}" FontSize="16" FontAttributes="Bold" TextColor="Black" HorizontalOptions="CenterAndExpand" VerticalTextAlignment="Center" />
+            <Image Source="icon_engangement_absent.png" HeightRequest="14" HorizontalOptions="End" />
+            <Image Source="{Binding RecordingImageSource}" HeightRequest="14" HorizontalOptions="End" />
+        </StackLayout>
+    </NavigationPage.TitleView>
+    
     <ContentPage.Content>
         <Grid Padding="16, 16">
             <Grid.ColumnDefinitions>
@@ -13,19 +25,23 @@
             </Grid.ColumnDefinitions>
             <Grid.RowDefinitions>
                 <RowDefinition Height="*"/>
-                <RowDefinition Height="120"/>
-                <RowDefinition Height="20"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
                 <RowDefinition Height="1"/>
             </Grid.RowDefinitions>
 
-            <ffimageloading:CachedImage x:Name="image" Source="{Binding SlideImageSource}" SuccessCommand="{Binding SlideAppearedCommand}" 
-                                        Aspect="AspectFit" VerticalOptions="Center" HeightRequest="400" Grid.Column="0" Grid.Row="0" />
+            <ffimageloading:CachedImage x:Name="SlideImage" Source="{Binding SlideImageSource}" 
+                                        FadeAnimationEnabled="False" LoadingDelay="0" 
+                                        Aspect="AspectFit" VerticalOptions="Center" HeightRequest="450" Grid.Column="0" Grid.Row="0" />
 
-            <Image Source="{Binding ButtonImageSource}" g:Gesture.Tapped="{Binding ButtonTappedCommand}" 
-                   WidthRequest="160" VerticalOptions="EndAndExpand" Grid.Column="0" Grid.Row="1"/>
-            
+            <Image Source="button.jpg" g:Gesture.Tapped="{Binding ButtonTappedCommand}" 
+                   WidthRequest="160" VerticalOptions="EndAndExpand" Grid.Column="0" Grid.Row="1">
+                <Image.Behaviors>
+                    <b:ViewTappedButtonBehavior AnimationType="Fade" />
+                </Image.Behaviors>
+            </Image>
+
             <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand" Grid.Column="0" Grid.Row="2">
-                <Image Source="{Binding EngangementImageSource}" WidthRequest="18" />
                 <Label FontSize="Small">
                     <Label.FormattedText>
                         <FormattedString>
@@ -42,7 +58,6 @@
                         </FormattedString>
                     </Label.FormattedText>
                 </Label>
-                <Image Source="{Binding RecordingImageSource}" WidthRequest="18" />
             </StackLayout>
             <c:EyeGazePreview Grid.Column="0" Grid.Row="3" WidthRequest="96" HeightRequest="128" />
         </Grid>

@@ -8,32 +8,37 @@ namespace PathwayGames.Models
     public class ConfusionMatrix
     {
         public int CorrectCommission { get; private set; }
+
         public int WrongCommission { get; private set; }
+
         public int CorrectOmission { get; private set; }
+
         public int WrongOmission { get; private set; }
-        public int TotalPresses { get; private set; }
-        public int TotalOmissions { get; private set; }
+
+        public int TotalPresses
+        {
+            get => CorrectCommission + WrongCommission;
+        }
+
+        public int TotalOmissions
+        {
+            get => CorrectOmission + WrongOmission;
+        }
 
         public double H
         {
-            get
-            {
-                return CorrectCommission / TotalPresses;
-            }
+            get => CorrectCommission / TotalPresses;
         }
         public double FA {
-            get
-            {
-                return WrongCommission / TotalPresses;
-            }
+            get => WrongCommission / TotalPresses;
         }
 
         public ConfusionMatrix(List<Slide> slides)
         {
-            Parse(slides);
+            Calculate(slides);
         }
 
-        private void Parse(List<Slide> slides)
+        private void Calculate(List<Slide> slides)
         {
             foreach (Slide slide in slides)
             {
@@ -41,22 +46,17 @@ namespace PathwayGames.Models
                 {
                     case ResponseOutcome.CorrectCommission:
                         CorrectCommission++;
-                        TotalPresses++;
                         break;
                     case ResponseOutcome.WrongCommission:
                         WrongCommission++;
-                        TotalOmissions++;
                         break;
                     case ResponseOutcome.CorrectOmission:
                         CorrectOmission++;
-                        TotalOmissions++;
                         break;
                     case ResponseOutcome.WrongOmission:
                         WrongOmission++;
-                        TotalPresses++;
                         break;
                 }
-              
             }
         }
     }

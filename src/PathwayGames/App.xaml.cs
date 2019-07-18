@@ -20,6 +20,7 @@ namespace PathwayGames
 {
     public partial class App : Application
     {
+        public static string UserName = "Quest";
         public static UnityContainer Container { get; private set; }
         public readonly static INavigationService NavigationService = new NavigationService();
         public App()
@@ -38,7 +39,7 @@ namespace PathwayGames
             NavigationService.Configure(typeof(GameSelectionViewModel), typeof(GameSelectionView));
             NavigationService.Configure(typeof(GameViewModel), typeof(GameView));
             NavigationService.Configure(typeof(SettingsViewModel), typeof(SettingsView));
-            NavigationService.Configure(typeof(ThankYouViewModel), typeof(ThankYouView));
+            NavigationService.Configure(typeof(GameResultsViewModel), typeof(GameResultsView));
             NavigationService.Configure(typeof(SessionDataViewModel), typeof(SessionDataView));
             NavigationService.Configure(typeof(SensorsViewModel), typeof(SensorsView));
             NavigationService.Configure(typeof(UsersViewModel), typeof(UsersView));
@@ -66,7 +67,7 @@ namespace PathwayGames
             Container.RegisterType<GameSelectionViewModel>();
             Container.RegisterType<GameViewModel>();
             Container.RegisterType<SettingsViewModel>();
-            Container.RegisterType<ThankYouViewModel>();
+            Container.RegisterType<GameResultsViewModel>();
             Container.RegisterType<SessionDataViewModel>();
             Container.RegisterType<SensorsViewModel>();
             Container.RegisterType<UsersViewModel>();
@@ -75,7 +76,6 @@ namespace PathwayGames
             var unityServiceLocator = new UnityServiceLocator(Container);
             ServiceLocator.SetLocatorProvider(() => unityServiceLocator);
         }
-
 
         protected override async void OnStart()
         {

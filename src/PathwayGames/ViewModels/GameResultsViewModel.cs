@@ -7,29 +7,17 @@ using Xamarin.Forms;
 
 namespace PathwayGames.ViewModels
 {
-    public class ThankYouViewModel : ViewModelBase
+    public class GameResultsViewModel : ViewModelBase
     {
         private Game _game;
         private IExcelService _excelService;
 
-        private int _points;
-        private double _score;
-        private string _userName;
-        public int Points
+        public Game Game
         {
-            get => _points;
-            set => SetProperty(ref _points, value);
+            get => _game;
+            set => SetProperty(ref _game, value);
         }
-        public double Score
-        {
-            get => _score;
-            set => SetProperty(ref _score, value);
-        }
-        public string UserName
-        {
-            get => _userName;
-            set => SetProperty(ref _userName, value);
-        }
+
         public ICommand ExportButtonCommand
         {
             get
@@ -40,7 +28,8 @@ namespace PathwayGames.ViewModels
                 });
             }
         }
-        public ThankYouViewModel(IExcelService excelService)
+
+        public GameResultsViewModel(IExcelService excelService)
         {
             _excelService = excelService;
         }
@@ -57,11 +46,9 @@ namespace PathwayGames.ViewModels
         {
             if (navigationData != null)
             {
-                _game = navigationData as Game;
-                UserName = _game.UserName;
-                Points = _game.Score;
-                Score = _game.ScorePercentage;
+                Game = navigationData as Game;
             }
+            await Task.FromResult(true);
         }
     }
 }

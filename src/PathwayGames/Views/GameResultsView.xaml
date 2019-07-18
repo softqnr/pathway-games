@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:PathwayGames"
+             x:Class="PathwayGames.Views.GameResultsView"
+             Title="Summary">
+    <ScrollView Padding="10">
+    <StackLayout Spacing="0">
+        <StackLayout Margin="0" Padding="0"
+            VerticalOptions="Start"
+          HorizontalOptions="FillAndExpand">
+            <Label FontSize="Large" HorizontalOptions="Center" VerticalOptions="End">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="{Binding Game.UserName, Mode=OneWay}" FontSize="Large" />
+                        <Span Text=" - " FontSize="Large" />
+                        <Span Text="{Binding  Game.Seed, Mode=OneWay}" FontSize="Large" />
+                        <Span Text=" - " FontSize="Large" />
+                        <Span Text="{Binding Game.StartDate, Mode=OneWay, StringFormat='{}{0:dd/MM/yyyy}'}" FontSize="Large" />
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+
+            <Label FontSize="Large" HorizontalOptions="Center">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="Points: " FontSize="Small" />
+                        <Span Text="{Binding Game.Score, Mode=OneWay}" FontSize="Small" />
+                        <Span Text=" Score: " FontSize="Small" />
+                        <Span Text="{Binding Game.ScorePercentage, Mode=OneWay}" FontSize="Small" />
+                        <Span Text="%" FontSize="Small" />
+                        </FormattedString>
+                </Label.FormattedText>
+            </Label>
+        </StackLayout>
+        
+        <Grid VerticalOptions="Start">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+            </Grid.ColumnDefinitions>
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+
+            <Label Text="Confusion Matrix" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" HorizontalOptions="Center" FontSize="Title"/>
+            <Label Text="Correct commision" Grid.Row="1" Grid.Column="0" HorizontalOptions="Center"/>
+            <Frame Grid.Row="2" Grid.Column="0" Padding="50" HorizontalOptions="Center" VerticalOptions="Center" BackgroundColor="PaleGreen">
+                <Label Text="{Binding Game.ConfusionMatrix.CorrectCommission}" FontSize="Title"/>
+            </Frame>
+
+            <Label Text="Wrong commision" Grid.Row="1" Grid.Column="1" HorizontalOptions="Center" />
+            <Frame Grid.Row="2" Grid.Column="1" Padding="50" HorizontalOptions="Center" VerticalOptions="Center" BackgroundColor="PaleVioletRed">
+                    <Label Text="{Binding Game.ConfusionMatrix.WrongCommission}" FontSize="Title"/>
+            </Frame>
+
+            <Label Text="Wrong ommisions" Grid.Row="3" Grid.Column="0" HorizontalOptions="Center" />
+            <Frame Grid.Row="4" Grid.Column="0" Padding="50" HorizontalOptions="Center" VerticalOptions="Center" BackgroundColor="PaleVioletRed">
+                    <Label Text="{Binding Game.ConfusionMatrix.WrongOmission}" FontSize="Title"/>
+            </Frame>
+
+            <Label Text="Correct ommisions" Grid.Row="3" Grid.Column="1" HorizontalOptions="Center" />
+            <Frame Grid.Row="4" Grid.Column="1" Padding="50" HorizontalOptions="Center" VerticalOptions="Center" BackgroundColor="PaleGreen">
+                    <Label Text="{Binding Game.ConfusionMatrix.CorrectOmission}" FontSize="Title"/>
+            </Frame>
+        </Grid>
+            <StackLayout>
+                <Label Text="Analysis" HorizontalOptions="Center" FontSize="Title"/>
+                <Label>
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="Average response time: " />
+                            <Span Text="{Binding Game.AverageResponseTime, Mode=OneWay, StringFormat='{}{0:ss\\.fff}'}" />
+                            <Span Text=" seconds" />
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+
+                <Label>
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="Slide display time: " />
+                            <Span Text="{Binding Game.SlideDisplayDuration, Mode=OneWay}" />
+                            <Span Text=" seconds" />
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+            </StackLayout>
+        
+            <Button Command="{Binding ExportButtonCommand}" Text="Export results" />
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

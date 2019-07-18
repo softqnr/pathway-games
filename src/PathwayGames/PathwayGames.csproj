@@ -14,10 +14,11 @@
     <PackageReference Include="DocumentFormat.OpenXml" Version="2.9.1" />
     <PackageReference Include="Newtonsoft.Json" Version="12.0.2" />
     <PackageReference Include="Rg.Plugins.Popup" Version="1.1.5.188" />
+    <PackageReference Include="Stateless" Version="4.2.1" />
     <PackageReference Include="Unity" Version="5.11.1" />
     <PackageReference Include="Unity.ServiceLocation" Version="5.11.1" />
     <PackageReference Include="Xamarin.FFImageLoading.Forms" Version="2.4.11.982" />
-    <PackageReference Include="Xamarin.Forms" Version="4.1.0.555618" />
+    <PackageReference Include="Xamarin.Forms" Version="4.1.0.581479" />
   </ItemGroup>
 
   <ItemGroup>
@@ -30,9 +31,10 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Controls\" />
+    <Folder Include="Extensions\" />
+    <Folder Include="Helpers\" />
+    <Folder Include="Infrastructure\" />
     <Folder Include="Services\Share\" />
-    <Folder Include="Utils\" />
   </ItemGroup>
 
   <ItemGroup>
@@ -57,8 +59,8 @@
     <Compile Update="Views\GameView.xaml.cs">
       <DependentUpon>GameView.xaml</DependentUpon>
     </Compile>
-    <Compile Update="Views\ThankYouView.xaml.cs">
-      <DependentUpon>ThankYouView.xaml</DependentUpon>
+    <Compile Update="Views\GameResultsView.xaml.cs">
+      <DependentUpon>GameResultsView.xaml</DependentUpon>
     </Compile>
     <Compile Update="Views\SettingsView.xaml.cs">
       <DependentUpon>SettingsView.xaml</DependentUpon>
