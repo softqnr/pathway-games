@@ -8,6 +8,6 @@
 
         public bool EEGSensor { get; set; }
 
-        public bool AccelarationSensor { get; set; }
+        public bool AccelerationSensor { get; set; }
     }
 }

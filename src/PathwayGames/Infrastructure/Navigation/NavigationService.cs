@@ -26,14 +26,7 @@ namespace PathwayGames.Infrastructure.Navigation
 
         public async Task InitializeAsync()
         {
-            //if (await _authenticationService.UserIsAuthenticatedAndValidAsync())
-            //{
             await NavigateToAsync<GameSelectionViewModel>();
-            //}
-            //else
-            //{
-            ////await NavigateToAsync<LoginViewModel>();
-            //}
         }
 
         public Task NavigateToAsync<TViewModel>() where TViewModel : ViewModelBase

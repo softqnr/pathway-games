@@ -1,12 +1,22 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="PathwayGames.Views.SettingsView">
+             x:Class="PathwayGames.Views.SettingsView"
+             Title="Settings">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Settings"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
+        <TableView Intent="Settings">
+            <TableRoot>
+                <TableSection Title="Sensor settings">
+                    <SwitchCell Text="True depth camera" On="true"/>
+                    <SwitchCell Text="Muse EEG headband" On="true"/>
+                    <SwitchCell Text="Gyro/ Acceleration" On="true"/>
+                </TableSection>
+                <TableSection Title="Game settings">
+                    <EntryCell Label="Slide display time" />
+                    <EntryCell Label="Blank slide display time"/>
+                    <EntryCell Label="Blank slide variation (+-)"/>
+                </TableSection>
+            </TableRoot>
+        </TableView>
     </ContentPage.Content>
 </ContentPage>

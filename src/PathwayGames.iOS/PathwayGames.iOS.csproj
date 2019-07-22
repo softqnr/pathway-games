@@ -123,6 +123,7 @@
     <Compile Include="Extensions\IEnumerableExtensions.cs" />
     <Compile Include="Extensions\NMatrix4Extenstions.cs" />
     <Compile Include="Extensions\SCNVector3Extensions.cs" />
+    <Compile Include="Infrastructure\File\FileAccessHelper.cs" />
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
     <Compile Include="Controls\EyeGazeDetectionDelegate.cs" />
@@ -132,6 +133,7 @@
     <None Include="Entitlements.plist" />
     <None Include="Info.plist" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <BundleResource Include="Resources\pw.db" />
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="Resources\LaunchScreen.storyboard" />

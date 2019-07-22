@@ -163,7 +163,7 @@ namespace PathwayGames.iOS.Controls
                 var distance = (distanceL.Length() + distanceR.Length()) / 2;
 
                 var distanceInCm = Math.Round(distance * 100, MidpointRounding.AwayFromZero);
-
+                
                 //System.Diagnostics.Debug.WriteLine($"Screen X: {screenX} - Y: {screenY} - Distance: {distanceInCm}cm");
             });
         }

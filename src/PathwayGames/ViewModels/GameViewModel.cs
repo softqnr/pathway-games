@@ -136,7 +136,7 @@ namespace PathwayGames.ViewModels
                 endAction: async () => await EndGame()
             );
 
-            _userName = App.UserName;
+            _userName = App.SelectedUser.UserName;
             // TODO: This should come from parameters
             _seed = "XYZ";
         }
@@ -287,7 +287,7 @@ namespace PathwayGames.ViewModels
             // TODO: Read Settings
             _gameSettings = new GameSettings(); // Use default
             // Create game
-            _game = _slidesService.Generate(_gameType, _gameSettings, App.UserName, _seed);
+            _game = _slidesService.Generate(_gameType, _gameSettings, App.SelectedUser.UserName, _seed);
             SlideIndex = 0;
             SlideCount = _game.Slides.Count;
 

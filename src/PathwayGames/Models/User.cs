@@ -1,11 +1,25 @@
-﻿using System;
+﻿using SQLite;
+using SQLiteNetExtensions.Attributes;
 using System.Collections.Generic;
-using System.Text;
 
 namespace PathwayGames.Models
 {
-    public class User
+    [Table("Users")]
+    public class User : ModelBase
     {
-        public string Name { get; set; }
+        [Indexed]
+        [Collation("NOCASE")]
+        public string UserName { get; set; }
+
+        [Indexed]
+        [Collation("NOCASE")]
+        public string UserType { get; set; }
+
+        public bool IsSelected { get; set; }
+
+        public string PIN { get; set; }
+
+        [OneToMany(CascadeOperations = CascadeOperation.All)]
+        public List<UserGameSession> GameSessions { get; set; }
     }
 }

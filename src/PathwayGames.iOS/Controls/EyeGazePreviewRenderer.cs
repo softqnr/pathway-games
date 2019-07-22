@@ -12,10 +12,11 @@ namespace PathwayGames.iOS.Controls
     public class EyeGazePreviewRenderer : ViewRenderer<EyeGazePreview, ARSCNView>
     {
         private ARSCNView SceneView;
-
+     
         protected override void OnElementChanged(ElementChangedEventArgs<EyeGazePreview> e)
         {
             base.OnElementChanged(e);
+            //e.NewElement.OnEyeGazeChanged.
 
             if (Control == null)
             {
@@ -32,7 +33,7 @@ namespace PathwayGames.iOS.Controls
                     // Frame = new CGRect(View.Frame.X, View.Frame.Y, View.Frame.Width, View.Frame.Height),
                     // ShowsStatistics = true, // Show stats
                 };
-                
+ 
                 SetNativeControl(SceneView);
 
                 SceneView.Delegate = new EyeGazeDetectionDelegate(SceneView);

@@ -1,8 +1,49 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="PathwayGames.Views.UsersView">
-    <Label Text="Users"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+             x:Class="PathwayGames.Views.UsersView"
+             Title="Users">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Add" Command="{Binding AddCommand}"/>
+    </ContentPage.ToolbarItems>
+    <ContentPage.Content>
+        <StackLayout Padding="10,0,10,0">
+            <SearchBar Placeholder="Enter search term" x:Name="UserSearchBar"
+                       SearchCommand="{Binding SearchCommand}" 
+                       SearchCommandParameter="{Binding Source={x:Reference UserSearchBar}, Path=Text}" />
+            <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+                <Label Text="User type:" />
+                <Picker SelectedItem="{Binding SelectedUserType}">
+                    <Picker.Items>
+                        <x:String>All</x:String>
+                        <x:String>Admin</x:String>
+                        <x:String>Learner</x:String>
+                    </Picker.Items>
+                </Picker>
+            </StackLayout>
+            <CollectionView ItemsSource="{Binding Users}" SelectionMode="Single" 
+                            SelectedItem="{Binding SelectedUser}" SelectionChangedCommand="{Binding SelectionChangedCommand}">
+                <CollectionView.EmptyView>
+                    <Label Text="No users found!"/>
+                </CollectionView.EmptyView>
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Grid Padding="0,5,0,5">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="100"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <StackLayout Orientation="Vertical" HeightRequest="60" Grid.Row="0" Grid.Column="0">
+                                <Label Text="{Binding UserName}" FontAttributes="Bold"/>
+                                <Label Text="{Binding UserType}" TextColor="Gray"/>
+                            </StackLayout>
+                            <CheckBox IsChecked="{Binding IsSelected, Mode=TwoWay}" 
+                                      VerticalOptions="Center" Grid.Row="0" Grid.Column="1" HorizontalOptions="End"/>
+                        </Grid>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+            
+        </StackLayout>
+    </ContentPage.Content>
 </ContentPage>

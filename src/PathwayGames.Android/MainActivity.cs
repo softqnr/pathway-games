@@ -26,6 +26,7 @@ namespace PathwayGames.Droid
             UserDialogs.Init(this);
             Rg.Plugins.Popup.Popup.Init(this, savedInstanceState);
 
+            global::Xamarin.Forms.Forms.SetFlags("CollectionView_Experimental");
             global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
             global::Xamarin.Forms.FormsMaterial.Init(this, savedInstanceState);
 

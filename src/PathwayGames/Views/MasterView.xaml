@@ -3,10 +3,11 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:b="clr-namespace:PathwayGames.Behaviors"
              x:Class="PathwayGames.Views.MasterView"
-             Title="Pathway+ CPT Games"
+             x:Name="MasterPage"
+             Title="Pathway+ Games"
              Icon="hamburger.png">
-  <StackLayout>
-    <ListView x:Name="MenuItemsListView"
+    <StackLayout>
+        <ListView x:Name="MenuItemsListView"
               SeparatorVisibility="None"
               HasUnevenRows="true"
               ItemsSource="{Binding MenuItems}">
@@ -24,19 +25,22 @@
           <Grid.RowDefinitions>
             <RowDefinition Height="30"/>
             <RowDefinition Height="80"/>
+            <RowDefinition Height="30"/>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="10"/>
           </Grid.RowDefinitions>
-            <Label TextColor="White"
-              Grid.Column="1"
-              Grid.Row="2">
-                    <Label.FormattedText>
-                        <FormattedString>
-                                <Span Text="Pathway+ CPT " FontSize="Large" Style="{DynamicResource SubtitleStyle}"/>
-                                <Span Text="v1.1" FontSize="Small" />
-                        </FormattedString>
-                    </Label.FormattedText>
-            </Label>
+                    <Label TextColor="White"
+                      Grid.Column="1"
+                      Grid.Row="2">
+                            <Label.FormattedText>
+                                <FormattedString>
+                                        <Span Text="Pathway+ Games" FontSize="Large" Style="{DynamicResource SubtitleStyle}"/>
+                                        <Span Text=" v1.1" FontSize="Small" />
+                                </FormattedString>
+                            </Label.FormattedText>
+                    </Label>
+                    <Label TextColor="White" Grid.Column="1" Grid.Row="3" 
+                           Text="{Binding BindingContext.UserName, Source={x:Reference MasterPage}}" FontAttributes="Bold" />
                 </Grid>
       </ListView.Header>
       <ListView.ItemTemplate>

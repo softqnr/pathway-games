@@ -80,6 +80,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Effects\TapWithPositionGestureEffect.cs" />
+    <Compile Include="Infrastructure\File\FileAccessHelper.cs" />
     <Compile Include="MainActivity.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -87,6 +88,7 @@
     <Compile Include="Infrastructure\Sound\SoundProvider.cs" />
   </ItemGroup>
   <ItemGroup>
+    <AndroidAsset Include="Assets\pw.db" />
     <None Include="Resources\AboutResources.txt" />
     <None Include="Assets\AboutAssets.txt" />
     <None Include="Properties\AndroidManifest.xml" />
