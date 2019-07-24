@@ -69,5 +69,15 @@ namespace PathwayGames.Services.User
         {
             await _repositoryUserSettings.UpdateWithChildrenAsync(gameSettings);
         }
+
+        public async Task CreateUser(string userName, UserType userType)
+        {
+            Models.User user = new Models.User() {
+                UserName = userName,
+                UserType = userType.ToString()
+            };
+
+            await _repositoryUser.InsertWithChildrenAsync(user, true);
+        }
     }
 }

@@ -33,13 +33,13 @@ namespace PathwayGames.Data
             await db.FindWithChildrenAsync<T>(id, recursive);
 
         public async Task InsertWithChildrenAsync(T entity, bool recursive = false) =>
-            await db.InsertWithChildrenAsync(entity);
+            await db.InsertWithChildrenAsync(entity, recursive);
 
         public async Task UpdateWithChildrenAsync(T entity) =>
             await db.UpdateWithChildrenAsync(entity);
 
         public async Task InsertAllWithChildrenAsync(IEnumerable<T> objects, bool recursive = false) =>
-            await db.InsertAllWithChildrenAsync(objects);
+            await db.InsertAllWithChildrenAsync(objects, recursive);
 
         public async Task UpdateWithChildrenAsync(IEnumerable<T> objects) =>
             await db.UpdateWithChildrenAsync(objects);

@@ -20,5 +20,7 @@ namespace PathwayGames.Services.User
         Task<UserGameSettings> GetUserSettings(long userId);
 
         Task UpdateUserSettings(UserGameSettings gameSettings);
+
+        Task CreateUser(string userName, UserType userType);
     }
 }

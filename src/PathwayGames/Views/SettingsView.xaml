@@ -1,11 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:converters="clr-namespace:PathwayGames.Converters"
              x:Class="PathwayGames.Views.SettingsView"
              Title="{Binding Title}">
     <ContentPage.ToolbarItems>
         <ToolbarItem Text="Save" Command="{Binding SaveCommand}"/>
     </ContentPage.ToolbarItems>
+       
     <ContentPage.Content>
         <TableView Intent="Settings">
             <TableRoot>
@@ -15,9 +17,12 @@
                     <SwitchCell Text="Gyro / Acceleration" On="{Binding UserSettings.AccelerationSensor, Mode=TwoWay}"/>
                 </TableSection>
                 <TableSection Title="Game settings">
-                    <EntryCell Label="Slide display time" Text="{Binding UserSettings.SlideDisplayDuration, Mode=TwoWay}" Keyboard="Numeric" />
-                    <EntryCell Label="Blank slide display time" Text="{Binding UserSettings.BlankSlideDisplayTime, Mode=TwoWay}" Keyboard="Numeric" />
-                    <EntryCell Label="Blank slide variation (+-)" Text="{Binding UserSettings.BlankSlideDisplayTimeVariation, Mode=TwoWay}" Keyboard="Numeric" />
+                    <EntryCell Label="Slide display time" 
+                               Text="{Binding UserSettings.SlideDisplayDuration, Mode=TwoWay}" Keyboard="Numeric" />
+                    <EntryCell Label="Blank slide display time" 
+                               Text="{Binding UserSettings.BlankSlideDisplayTime, Mode=TwoWay}" Keyboard="Numeric" />
+                    <EntryCell Label="Blank slide variation (+-)" 
+                               Text="{Binding UserSettings.BlankSlideDisplayTimeVariation, Mode=TwoWay}" Keyboard="Numeric" />
                 </TableSection>
             </TableRoot>
         </TableView>

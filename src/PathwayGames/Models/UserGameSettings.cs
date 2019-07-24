@@ -10,11 +10,11 @@ namespace PathwayGames.Models
         [ForeignKey(typeof(User))]
         public long UserId { get; set; }
 
-        public bool EyeGazeSensor { get; set; }
+        public bool EyeGazeSensor { get; set; } = true;
 
-        public bool EEGSensor { get; set; }
+        public bool EEGSensor { get; set; } = true;
 
-        public bool AccelerationSensor { get; set; }
+        public bool AccelerationSensor { get; set; } = true;
 
         public double SlideDisplayDuration { get; set; } = 1.5;
 

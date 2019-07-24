@@ -17,7 +17,7 @@ namespace PathwayGames.Models
 
         public bool IsSelected { get; set; }
 
-        public string PIN { get; set; }
+        public string PIN { get; set; } = "";
 
         [OneToOne(CascadeOperations = CascadeOperation.All)]
         public UserGameSettings UserSettings { get; set; }
@@ -28,6 +28,7 @@ namespace PathwayGames.Models
         public User()
         {
             GameSessions = new List<UserGameSession>();
+            UserSettings = new UserGameSettings();
         }
 
         public UserGameSession AddGameSession(Game game, string gameDataFile, string sensorDataFile)

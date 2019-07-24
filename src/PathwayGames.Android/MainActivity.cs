@@ -39,6 +39,18 @@ namespace PathwayGames.Droid
             LoadApplication(new App());
         }
 
+        public override void OnBackPressed()
+        {
+            if (Rg.Plugins.Popup.Popup.SendBackPressed(base.OnBackPressed))
+            {
+                System.Diagnostics.Debug.WriteLine("Android back button: There are some pages in the PopupStack");
+            }
+            else
+            {
+                System.Diagnostics.Debug.WriteLine("Android back button: There are not any pages in the PopupStack");
+            }
+        }
+
         public override void OnRequestPermissionsResult(int requestCode, string[] permissions, [GeneratedEnum] Android.Content.PM.Permission[] grantResults)
         {
             Xamarin.Essentials.Platform.OnRequestPermissionsResult(requestCode, permissions, grantResults);

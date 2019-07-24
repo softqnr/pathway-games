@@ -54,6 +54,7 @@ namespace PathwayGames
             NavigationService.Configure(typeof(SessionDataViewModel), typeof(SessionDataView));
             NavigationService.Configure(typeof(SensorsViewModel), typeof(SensorsView));
             NavigationService.Configure(typeof(UsersViewModel), typeof(UsersView));
+            NavigationService.Configure(typeof(UserFormViewModel), typeof(UserFormView));
 
             await NavigationService.InitializeAsync();
         }
@@ -94,6 +95,7 @@ namespace PathwayGames
             Container.RegisterType<SessionDataViewModel>();
             Container.RegisterType<SensorsViewModel>();
             Container.RegisterType<UsersViewModel>();
+            Container.RegisterType<UserFormViewModel>();
 
             // Set as service locator provider
             var unityServiceLocator = new UnityServiceLocator(Container);

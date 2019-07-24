@@ -1,4 +1,5 @@
 ﻿using PathwayGames.Models;
+using PathwayGames.Models.Enums;
 using PathwayGames.Services.User;
 using System.Collections.Generic;
 using System.Threading.Tasks;
@@ -55,10 +56,9 @@ namespace PathwayGames.ViewModels
         {
             get
             {
-                return new Command(() =>
+                return new Command(async () =>
                 {
-                    //await OnSelectionChanged();
-                    DialogService.ShowToast("Add pressed");
+                    await OnAddUser();
                 });
             }
         }
@@ -102,6 +102,11 @@ namespace PathwayGames.ViewModels
                     MessagingCenter.Send(user, "Selected");
                 }
             }
+        }
+
+        public async Task OnAddUser()
+        {
+            await NavigationService.NavigateToAsync<UserFormViewModel>();
         }
 
         private async Task OnGotoUserSessionsCommand(User user)
