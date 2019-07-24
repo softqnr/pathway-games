@@ -1,12 +1,6 @@
-﻿using PathwayGames.Data;
-using PathwayGames.Forms;
-using PathwayGames.Models;
-using PathwayGames.Models.Enums;
+﻿using PathwayGames.Models;
 using PathwayGames.Services.User;
-using System;
 using System.Collections.Generic;
-using System.Collections.ObjectModel;
-using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
 using Xamarin.Forms;

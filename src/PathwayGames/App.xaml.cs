@@ -69,7 +69,7 @@ namespace PathwayGames
 
             // Data repositories
             Container.RegisterType<IRepository<User>, Repository<User>>(new InjectionConstructor(DatabaseFilePath));
-            Container.RegisterType<IRepository<UserSettings>, Repository<UserSettings>>(new InjectionConstructor(DatabaseFilePath));
+            Container.RegisterType<IRepository<UserGameSettings>, Repository<UserGameSettings>>(new InjectionConstructor(DatabaseFilePath));
             Container.RegisterType<IRepository<UserGameSession>, Repository<UserGameSession>>(new InjectionConstructor(DatabaseFilePath));
 
             // Infrastructure

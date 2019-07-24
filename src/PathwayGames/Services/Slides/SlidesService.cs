@@ -16,7 +16,7 @@ namespace PathwayGames.Services.Slides
         const string YDistractorSlideImage = "berry_the_dog.jpg";
         readonly string[] RewardSlideImages = new[] { "reward_animation_wow.gif" };
 
-    public Game Generate(GameType gameType, GameSettings gameSettings, string userName, string seed)
+    public Game Generate(GameType gameType, UserGameSettings gameSettings, string userName, string seed)
         {
            if (string.IsNullOrWhiteSpace(seed))
                 seed = CreateRandomSeed();
@@ -59,7 +59,7 @@ namespace PathwayGames.Services.Slides
             return timeLeft;
         }
 
-        private List<Slide> GenerateTypeXSlideSequence(GameSettings gameSettings, string seed)
+        private List<Slide> GenerateTypeXSlideSequence(UserGameSettings gameSettings, string seed)
         {
              // Create slide collection using the 70%X and 30%Distractor 
             List<Slide> SlideCollection = new List<Slide>();
@@ -87,7 +87,7 @@ namespace PathwayGames.Services.Slides
             return SlideCollection.OrderBy(i => random.Next()).ToList<Slide>();
         }
 
-        private List<Slide> GenerateTypeAXSlideSequence(GameSettings gameSettings, string seed)
+        private List<Slide> GenerateTypeAXSlideSequence(UserGameSettings gameSettings, string seed)
         {
             // Create slide collection using the 70%AX 10%BY 10%AY 10%BX
             List<Slide> SlideCollection = new List<Slide>();

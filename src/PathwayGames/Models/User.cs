@@ -19,11 +19,8 @@ namespace PathwayGames.Models
 
         public string PIN { get; set; }
 
-        [ForeignKey(typeof(UserSettings))]
-        public long? UserSettingId { get; set; }
-
         [OneToOne(CascadeOperations = CascadeOperation.All)]
-        public UserSettings UserSettings { get; set; }
+        public UserGameSettings UserSettings { get; set; }
 
         [OneToMany(CascadeOperations = CascadeOperation.All)]
         public List<UserGameSession> GameSessions { get; set; }

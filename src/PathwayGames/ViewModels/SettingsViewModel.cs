@@ -1,8 +1,5 @@
 ﻿using PathwayGames.Models;
 using PathwayGames.Services.User;
-using System;
-using System.Collections.Generic;
-using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
 using Xamarin.Forms;
@@ -20,9 +17,9 @@ namespace PathwayGames.ViewModels
             set => SetProperty(ref _title, value);
         }
 
-        private UserSettings _userSettings;
+        private UserGameSettings _userSettings;
 
-        public UserSettings UserSettings
+        public UserGameSettings UserSettings
         {
             get => _userSettings;
             set => SetProperty(ref _userSettings, value);
@@ -56,8 +53,9 @@ namespace PathwayGames.ViewModels
 
         private async Task OnSave()
         {
-            //_userService.SaveUserSettings(App.SelectedUser.Id);
-            Task.FromResult(true);
+            await _userService.UpdateUserSettings(_userSettings);
+            App.SelectedUser.UserSettings = _userSettings;
+            DialogService.ShowToast("Settings saved.");
         }
     }
 }

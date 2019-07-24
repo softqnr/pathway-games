@@ -20,7 +20,7 @@ namespace PathwayGames.ViewModels
     {
         private GameType _gameType;
         private Game _game;
-        private GameSettings _gameSettings;
+        private UserGameSettings _gameSettings;
 
         private ISlidesService _slidesService;
         private IUserService _userService;
@@ -294,11 +294,11 @@ namespace PathwayGames.ViewModels
 
         public async Task CreateGame()
         {
-            // TODO: Read Settings
-            _gameSettings = new GameSettings(); // Use default
+            // Read User Game Settings
+            _gameSettings = await _userService.GetUserSettings(App.SelectedUser.Id);
             // Set sensor icons
-            EEGIconImageSource = ImageSource.FromFile("icon_head.png");
-            EyeGazeIconImageSource = ImageSource.FromFile("icon_eye.png");
+            EyeGazeIconImageSource = ImageSource.FromFile(_gameSettings.EyeGazeSensor ? "icon_eye.png" : "icon_eye_off.png");
+            EEGIconImageSource = ImageSource.FromFile(_gameSettings.EEGSensor ? "icon_head.png" : "icon_head_off.png");
             // Create game
             _game = _slidesService.Generate(_gameType, _gameSettings, App.SelectedUser.UserName, _seed);
             SlideIndex = 0;

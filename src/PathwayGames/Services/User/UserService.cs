@@ -10,11 +10,11 @@ namespace PathwayGames.Services.User
     public class UserService : IUserService
     {
         private IRepository<Models.User> _repositoryUser;
-        private IRepository<UserSettings> _repositoryUserSettings;
+        private IRepository<UserGameSettings> _repositoryUserSettings;
         private IRepository<UserGameSession> _repositoryUserGameSession;
 
         public UserService(IRepository<Models.User> repositoryUser,
-            IRepository<UserSettings> repositoryUserSettings,
+            IRepository<UserGameSettings> repositoryUserSettings,
             IRepository<UserGameSession> repositoryUserGameSession)
         {
             _repositoryUser = repositoryUser;
@@ -59,10 +59,15 @@ namespace PathwayGames.Services.User
             return user.GameSessions;
         }
 
-        public async Task<UserSettings> GetUserSettings(long userId)
+        public async Task<UserGameSettings> GetUserSettings(long userId)
         {
-            Models.User user = await _repositoryUser.GetWithChildrenAsync(userId);
+            Models.User user = await _repositoryUser.GetWithChildrenAsync(userId, true);
             return user.UserSettings;
+        }
+
+        public async Task UpdateUserSettings(UserGameSettings gameSettings)
+        {
+            await _repositoryUserSettings.UpdateWithChildrenAsync(gameSettings);
         }
     }
 }

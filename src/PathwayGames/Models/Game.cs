@@ -12,7 +12,7 @@ namespace PathwayGames.Models
         [JsonConverter(typeof(StringEnumConverter))]
         public GameType GameType { get; set; }
 
-        public GameSettings GameSettings { get; set; }
+        public UserGameSettings GameSettings { get; set; }
 
         public string UserName { get; set; }
 
@@ -42,7 +42,7 @@ namespace PathwayGames.Models
 
         public string SensorDataFile { get; set; }
 
-        public Game(GameType gameType,GameSettings gameSettings, string userName, string  seed)
+        public Game(GameType gameType, UserGameSettings gameSettings, string userName, string  seed)
         {
             GameType = gameType;
             GameSettings = gameSettings;

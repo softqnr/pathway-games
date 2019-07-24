@@ -10,14 +10,14 @@
         <TableView Intent="Settings">
             <TableRoot>
                 <TableSection Title="Sensor settings">
-                    <SwitchCell Text="True depth camera" On="{Binding UserSettings.EyeGazeSensor}"/>
-                    <SwitchCell Text="Muse EEG headband" On="{Binding UserSettings.EEGSensor}"/>
-                    <SwitchCell Text="Gyro / Acceleration" On="{Binding UserSettings.AccelerationSensor}"/>
+                    <SwitchCell Text="True depth camera" On="{Binding UserSettings.EyeGazeSensor, Mode=TwoWay}"/>
+                    <SwitchCell Text="Muse EEG headband" On="{Binding UserSettings.EEGSensor, Mode=TwoWay}"/>
+                    <SwitchCell Text="Gyro / Acceleration" On="{Binding UserSettings.AccelerationSensor, Mode=TwoWay}"/>
                 </TableSection>
                 <TableSection Title="Game settings">
-                    <EntryCell Label="Slide display time" Text="{Binding UserSettings.EyeGazeSensor}" />
-                    <EntryCell Label="Blank slide display time" Text="{Binding UserSettings.EEGSensor}" />
-                    <EntryCell Label="Blank slide variation (+-)" Text="{Binding UserSettings.AccelerationSensor}"/>
+                    <EntryCell Label="Slide display time" Text="{Binding UserSettings.SlideDisplayDuration, Mode=TwoWay}" Keyboard="Numeric" />
+                    <EntryCell Label="Blank slide display time" Text="{Binding UserSettings.BlankSlideDisplayTime, Mode=TwoWay}" Keyboard="Numeric" />
+                    <EntryCell Label="Blank slide variation (+-)" Text="{Binding UserSettings.BlankSlideDisplayTimeVariation, Mode=TwoWay}" Keyboard="Numeric" />
                 </TableSection>
             </TableRoot>
         </TableView>
