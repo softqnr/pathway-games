@@ -12,5 +12,11 @@ namespace PathwayGames.Services.User
         Task<Models.User> GetSelectedUser();
 
         Task<Models.User> SetSelectedUser(Models.User user);
+
+        Task SaveGameSessionData(long userId, Game game, string gameDataFile, string sensorDataFile);
+
+        Task<IList<UserGameSession>> GetUserGameSessions(long userId);
+
+        Task<UserSettings> GetUserSettings(long userId);
     }
 }

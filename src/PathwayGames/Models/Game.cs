@@ -1,4 +1,6 @@
-﻿using PathwayGames.Models.Enums;
+﻿using Newtonsoft.Json;
+using Newtonsoft.Json.Converters;
+using PathwayGames.Models.Enums;
 using System;
 using System.Collections.Generic;
 using Xamarin.Forms;
@@ -7,6 +9,7 @@ namespace PathwayGames.Models
 {
     public class Game
     {
+        [JsonConverter(typeof(StringEnumConverter))]
         public GameType GameType { get; set; }
 
         public GameSettings GameSettings { get; set; }
@@ -34,6 +37,10 @@ namespace PathwayGames.Models
         public TimeSpan AverageResponseTimeCorrect { get; set; }
 
         public TimeSpan AverageResponseTimeWrong { get; set; }
+
+        public string GameDataFile { get; set; }
+
+        public string SensorDataFile { get; set; }
 
         public Game(GameType gameType,GameSettings gameSettings, string userName, string  seed)
         {

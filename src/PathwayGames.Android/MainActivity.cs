@@ -22,6 +22,7 @@ namespace PathwayGames.Droid
 
             base.OnCreate(savedInstanceState);
 
+            Xamarin.Essentials.Platform.Init(this, savedInstanceState);
             CachedImageRenderer.Init(enableFastRenderer: true);
             UserDialogs.Init(this);
             Rg.Plugins.Popup.Popup.Init(this, savedInstanceState);
@@ -36,6 +37,13 @@ namespace PathwayGames.Droid
             AndroidEnvironment.UnhandledExceptionRaiser += async (sender, e) => await UnhandledExceptionHandler(sender, e);
 
             LoadApplication(new App());
+        }
+
+        public override void OnRequestPermissionsResult(int requestCode, string[] permissions, [GeneratedEnum] Android.Content.PM.Permission[] grantResults)
+        {
+            Xamarin.Essentials.Platform.OnRequestPermissionsResult(requestCode, permissions, grantResults);
+
+            base.OnRequestPermissionsResult(requestCode, permissions, grantResults);
         }
 
         private async Task UnhandledExceptionHandler(object sender, object e)

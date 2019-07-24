@@ -69,6 +69,8 @@ namespace PathwayGames
 
             // Data repositories
             Container.RegisterType<IRepository<User>, Repository<User>>(new InjectionConstructor(DatabaseFilePath));
+            Container.RegisterType<IRepository<UserSettings>, Repository<UserSettings>>(new InjectionConstructor(DatabaseFilePath));
+            Container.RegisterType<IRepository<UserGameSession>, Repository<UserGameSession>>(new InjectionConstructor(DatabaseFilePath));
 
             // Infrastructure
             Container.RegisterInstance(NavigationService, new ContainerControlledLifetimeManager());
@@ -77,7 +79,7 @@ namespace PathwayGames
 
             // Services
             Container.RegisterType<ISlidesService, SlidesService>();
-            Container.RegisterType<ISensorsService, SensorsService>();
+            Container.RegisterType<ISensorLogWriterService, SensorLogWriterService>();
             Container.RegisterType<IEngangementService, EngangementService>();
             Container.RegisterType<IExcelService, ExcelService>();
             Container.RegisterType<IUserService, UserService>();

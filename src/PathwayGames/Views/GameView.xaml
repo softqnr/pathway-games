@@ -13,8 +13,8 @@
         <StackLayout Orientation="Horizontal" VerticalOptions="CenterAndExpand" Spacing="10">
             <Image Source="logo.png" HorizontalOptions="Center" />
             <Label Text="{Binding Title}" FontSize="16" FontAttributes="Bold" TextColor="Black" HorizontalOptions="CenterAndExpand" VerticalTextAlignment="Center" />
-            <Image Source="icon_engangement_absent.png" HeightRequest="14" HorizontalOptions="End" />
-            <Image Source="{Binding RecordingImageSource}" HeightRequest="14" HorizontalOptions="End" />
+            <Image Source="{Binding EyeGazeIconImageSource}" HeightRequest="20" HorizontalOptions="End" />
+            <Image Source="{Binding EEGIconImageSource}" HeightRequest="20" HorizontalOptions="End" />
         </StackLayout>
     </NavigationPage.TitleView>
     

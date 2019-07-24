@@ -2,19 +2,22 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="PathwayGames.Views.SettingsView"
-             Title="Settings">
+             Title="{Binding Title}">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Save" Command="{Binding SaveCommand}"/>
+    </ContentPage.ToolbarItems>
     <ContentPage.Content>
         <TableView Intent="Settings">
             <TableRoot>
                 <TableSection Title="Sensor settings">
-                    <SwitchCell Text="True depth camera" On="true"/>
-                    <SwitchCell Text="Muse EEG headband" On="true"/>
-                    <SwitchCell Text="Gyro/ Acceleration" On="true"/>
+                    <SwitchCell Text="True depth camera" On="{Binding UserSettings.EyeGazeSensor}"/>
+                    <SwitchCell Text="Muse EEG headband" On="{Binding UserSettings.EEGSensor}"/>
+                    <SwitchCell Text="Gyro / Acceleration" On="{Binding UserSettings.AccelerationSensor}"/>
                 </TableSection>
                 <TableSection Title="Game settings">
-                    <EntryCell Label="Slide display time" />
-                    <EntryCell Label="Blank slide display time"/>
-                    <EntryCell Label="Blank slide variation (+-)"/>
+                    <EntryCell Label="Slide display time" Text="{Binding UserSettings.EyeGazeSensor}" />
+                    <EntryCell Label="Blank slide display time" Text="{Binding UserSettings.EEGSensor}" />
+                    <EntryCell Label="Blank slide variation (+-)" Text="{Binding UserSettings.AccelerationSensor}"/>
                 </TableSection>
             </TableRoot>
         </TableView>

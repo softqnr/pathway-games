@@ -1,11 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace PathwayGames.Models
+﻿namespace PathwayGames.Models
 {
     public class GameSettings
     {
+        public bool EyeGazeSensor{ get; set; }
+
+        public bool EEGSensor  { get; set; }
+
+        public bool AccelerationSensor { get; set; }
+
         public double SlideDisplayDuration { get; set; } = 1.5;
 
         public double RewardDisplayDuration { get; set; } = 2;
@@ -22,8 +24,13 @@ namespace PathwayGames.Models
             };
         }
 
-        public int SeekGameRows { get; set; }
+        public GameSettings(UserSettings userSettings)
+        {
 
-        public int SeekGameColumns { get; set; }
+        }
+
+        public GameSettings()
+        {
+        }
     }
 }

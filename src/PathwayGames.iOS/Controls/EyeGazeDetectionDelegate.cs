@@ -2,11 +2,13 @@
 using CoreFoundation;
 using CoreGraphics;
 using Foundation;
+using PathwayGames.Controls;
 using PathwayGames.iOS.Extensions;
 using SceneKit;
 using System;
 using System.Linq;
 using UIKit;
+using Xamarin.Forms;
 
 namespace PathwayGames.iOS.Controls
 {
@@ -163,7 +165,10 @@ namespace PathwayGames.iOS.Controls
                 var distance = (distanceL.Length() + distanceR.Length()) / 2;
 
                 var distanceInCm = Math.Round(distance * 100, MidpointRounding.AwayFromZero);
-                
+
+                // Send sensor data
+                MessagingCenter.Send<object, EyeGazeData>(this, "EyeSensorReading",  
+                    new EyeGazeData(DateTime.Now, screenX, screenY, distanceInCm));
                 //System.Diagnostics.Debug.WriteLine($"Screen X: {screenX} - Y: {screenY} - Distance: {distanceInCm}cm");
             });
         }

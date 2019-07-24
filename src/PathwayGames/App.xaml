@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Application xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:converters="clr-namespace:PathwayGames.Converters"
              x:Class="PathwayGames.App">
     <Application.Resources>
         <ResourceDictionary>
@@ -18,6 +19,8 @@
             <Color x:Key="menu_pink">#d900d9</Color>
             <Color x:Key="menu_purple">#8000ff</Color>
             <Color x:Key="menu_red">#d90000</Color>
+            <!--  converters  -->
+            <converters:ItemTappedEventArgsConverter x:Key="ItemTappedConverter" />
         </ResourceDictionary>
     </Application.Resources>
 

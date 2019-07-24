@@ -5,7 +5,7 @@
              x:Class="PathwayGames.Views.GameResultsView"
              Title="Summary">
     <ScrollView Padding="10">
-    <StackLayout Spacing="0">
+    <StackLayout Margin="0,5,0,5">
         <StackLayout Margin="0" Padding="0"
             VerticalOptions="Start"
           HorizontalOptions="FillAndExpand">
@@ -33,8 +33,8 @@
                 </Label.FormattedText>
             </Label>
         </StackLayout>
-        
-        <Grid VerticalOptions="Start">
+
+        <Grid VerticalOptions="Start" Margin="0,5,0,5">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="1*"/>
                 <ColumnDefinition Width="1*"/>
@@ -50,26 +50,26 @@
 
             <Label Text="Confusion Matrix" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" HorizontalOptions="Center" FontSize="Title"/>
             <Label Text="Correct commision" Grid.Row="1" Grid.Column="0" HorizontalOptions="Center"/>
-            <Frame Grid.Row="2" Grid.Column="0" Padding="50" HorizontalOptions="Center" VerticalOptions="Center" BackgroundColor="PaleGreen">
+            <Frame Grid.Row="2" Grid.Column="0" Padding="50" HasShadow="False" HorizontalOptions="Center" VerticalOptions="Center" BackgroundColor="PaleGreen">
                 <Label Text="{Binding Game.ConfusionMatrix.CorrectCommission}" FontSize="Title"/>
             </Frame>
 
             <Label Text="Wrong commision" Grid.Row="1" Grid.Column="1" HorizontalOptions="Center" />
-            <Frame Grid.Row="2" Grid.Column="1" Padding="50" HorizontalOptions="Center" VerticalOptions="Center" BackgroundColor="PaleVioletRed">
-                    <Label Text="{Binding Game.ConfusionMatrix.WrongCommission}" FontSize="Title"/>
+            <Frame Grid.Row="2" Grid.Column="1" Padding="50" HasShadow="False" HorizontalOptions="Center" VerticalOptions="Center" BackgroundColor="PaleVioletRed">
+                 <Label Text="{Binding Game.ConfusionMatrix.WrongCommission}" FontSize="Title"/>
             </Frame>
 
             <Label Text="Wrong ommisions" Grid.Row="3" Grid.Column="0" HorizontalOptions="Center" />
-            <Frame Grid.Row="4" Grid.Column="0" Padding="50" HorizontalOptions="Center" VerticalOptions="Center" BackgroundColor="PaleVioletRed">
-                    <Label Text="{Binding Game.ConfusionMatrix.WrongOmission}" FontSize="Title"/>
+            <Frame Grid.Row="4" Grid.Column="0" Padding="50" HasShadow="False" HorizontalOptions="Center" VerticalOptions="Center" BackgroundColor="PaleVioletRed">
+                 <Label Text="{Binding Game.ConfusionMatrix.WrongOmission}" FontSize="Title"/>
             </Frame>
 
             <Label Text="Correct ommisions" Grid.Row="3" Grid.Column="1" HorizontalOptions="Center" />
-            <Frame Grid.Row="4" Grid.Column="1" Padding="50" HorizontalOptions="Center" VerticalOptions="Center" BackgroundColor="PaleGreen">
-                    <Label Text="{Binding Game.ConfusionMatrix.CorrectOmission}" FontSize="Title"/>
+            <Frame Grid.Row="4" Grid.Column="1" Padding="50" HasShadow="False" HorizontalOptions="Center" VerticalOptions="Center" BackgroundColor="PaleGreen">
+                <Label Text="{Binding Game.ConfusionMatrix.CorrectOmission}" FontSize="Title"/>
             </Frame>
         </Grid>
-            <StackLayout>
+            <StackLayout Margin="0,5,0,5">
                 <Label Text="Analysis" HorizontalOptions="Center" FontSize="Title"/>
                 <Label>
                     <Label.FormattedText>
@@ -91,7 +91,8 @@
                     </Label.FormattedText>
                 </Label>
             </StackLayout>
-        
+            <Button Command="{Binding GameDataCommand}" Text="Game data" />
+            <Button Command="{Binding SensorDataCommand}" Text="Sensor data" />
             <Button Command="{Binding ExportButtonCommand}" Text="Export results" />
         </StackLayout>
     </ScrollView>

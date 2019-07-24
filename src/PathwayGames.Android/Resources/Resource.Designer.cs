@@ -63,6 +63,188 @@ namespace PathwayGames.Droid
 			global::AndroidHUD.Resource.Styleable.ProgressWheel_ahText = global::PathwayGames.Droid.Resource.Styleable.ProgressWheel_ahText;
 			global::AndroidHUD.Resource.Styleable.ProgressWheel_ahTextColor = global::PathwayGames.Droid.Resource.Styleable.ProgressWheel_ahTextColor;
 			global::AndroidHUD.Resource.Styleable.ProgressWheel_ahTextSize = global::PathwayGames.Droid.Resource.Styleable.ProgressWheel_ahTextSize;
+			global::Xamarin.Essentials.Resource.Attribute.alpha = global::PathwayGames.Droid.Resource.Attribute.alpha;
+			global::Xamarin.Essentials.Resource.Attribute.coordinatorLayoutStyle = global::PathwayGames.Droid.Resource.Attribute.coordinatorLayoutStyle;
+			global::Xamarin.Essentials.Resource.Attribute.font = global::PathwayGames.Droid.Resource.Attribute.font;
+			global::Xamarin.Essentials.Resource.Attribute.fontProviderAuthority = global::PathwayGames.Droid.Resource.Attribute.fontProviderAuthority;
+			global::Xamarin.Essentials.Resource.Attribute.fontProviderCerts = global::PathwayGames.Droid.Resource.Attribute.fontProviderCerts;
+			global::Xamarin.Essentials.Resource.Attribute.fontProviderFetchStrategy = global::PathwayGames.Droid.Resource.Attribute.fontProviderFetchStrategy;
+			global::Xamarin.Essentials.Resource.Attribute.fontProviderFetchTimeout = global::PathwayGames.Droid.Resource.Attribute.fontProviderFetchTimeout;
+			global::Xamarin.Essentials.Resource.Attribute.fontProviderPackage = global::PathwayGames.Droid.Resource.Attribute.fontProviderPackage;
+			global::Xamarin.Essentials.Resource.Attribute.fontProviderQuery = global::PathwayGames.Droid.Resource.Attribute.fontProviderQuery;
+			global::Xamarin.Essentials.Resource.Attribute.fontStyle = global::PathwayGames.Droid.Resource.Attribute.fontStyle;
+			global::Xamarin.Essentials.Resource.Attribute.fontVariationSettings = global::PathwayGames.Droid.Resource.Attribute.fontVariationSettings;
+			global::Xamarin.Essentials.Resource.Attribute.fontWeight = global::PathwayGames.Droid.Resource.Attribute.fontWeight;
+			global::Xamarin.Essentials.Resource.Attribute.keylines = global::PathwayGames.Droid.Resource.Attribute.keylines;
+			global::Xamarin.Essentials.Resource.Attribute.layout_anchor = global::PathwayGames.Droid.Resource.Attribute.layout_anchor;
+			global::Xamarin.Essentials.Resource.Attribute.layout_anchorGravity = global::PathwayGames.Droid.Resource.Attribute.layout_anchorGravity;
+			global::Xamarin.Essentials.Resource.Attribute.layout_behavior = global::PathwayGames.Droid.Resource.Attribute.layout_behavior;
+			global::Xamarin.Essentials.Resource.Attribute.layout_dodgeInsetEdges = global::PathwayGames.Droid.Resource.Attribute.layout_dodgeInsetEdges;
+			global::Xamarin.Essentials.Resource.Attribute.layout_insetEdge = global::PathwayGames.Droid.Resource.Attribute.layout_insetEdge;
+			global::Xamarin.Essentials.Resource.Attribute.layout_keyline = global::PathwayGames.Droid.Resource.Attribute.layout_keyline;
+			global::Xamarin.Essentials.Resource.Attribute.statusBarBackground = global::PathwayGames.Droid.Resource.Attribute.statusBarBackground;
+			global::Xamarin.Essentials.Resource.Attribute.ttcIndex = global::PathwayGames.Droid.Resource.Attribute.ttcIndex;
+			global::Xamarin.Essentials.Resource.Color.browser_actions_bg_grey = global::PathwayGames.Droid.Resource.Color.browser_actions_bg_grey;
+			global::Xamarin.Essentials.Resource.Color.browser_actions_divider_color = global::PathwayGames.Droid.Resource.Color.browser_actions_divider_color;
+			global::Xamarin.Essentials.Resource.Color.browser_actions_text_color = global::PathwayGames.Droid.Resource.Color.browser_actions_text_color;
+			global::Xamarin.Essentials.Resource.Color.browser_actions_title_color = global::PathwayGames.Droid.Resource.Color.browser_actions_title_color;
+			global::Xamarin.Essentials.Resource.Color.notification_action_color_filter = global::PathwayGames.Droid.Resource.Color.notification_action_color_filter;
+			global::Xamarin.Essentials.Resource.Color.notification_icon_bg_color = global::PathwayGames.Droid.Resource.Color.notification_icon_bg_color;
+			global::Xamarin.Essentials.Resource.Color.ripple_material_light = global::PathwayGames.Droid.Resource.Color.ripple_material_light;
+			global::Xamarin.Essentials.Resource.Color.secondary_text_default_material_light = global::PathwayGames.Droid.Resource.Color.secondary_text_default_material_light;
+			global::Xamarin.Essentials.Resource.Dimension.browser_actions_context_menu_max_width = global::PathwayGames.Droid.Resource.Dimension.browser_actions_context_menu_max_width;
+			global::Xamarin.Essentials.Resource.Dimension.browser_actions_context_menu_min_padding = global::PathwayGames.Droid.Resource.Dimension.browser_actions_context_menu_min_padding;
+			global::Xamarin.Essentials.Resource.Dimension.compat_button_inset_horizontal_material = global::PathwayGames.Droid.Resource.Dimension.compat_button_inset_horizontal_material;
+			global::Xamarin.Essentials.Resource.Dimension.compat_button_inset_vertical_material = global::PathwayGames.Droid.Resource.Dimension.compat_button_inset_vertical_material;
+			global::Xamarin.Essentials.Resource.Dimension.compat_button_padding_horizontal_material = global::PathwayGames.Droid.Resource.Dimension.compat_button_padding_horizontal_material;
+			global::Xamarin.Essentials.Resource.Dimension.compat_button_padding_vertical_material = global::PathwayGames.Droid.Resource.Dimension.compat_button_padding_vertical_material;
+			global::Xamarin.Essentials.Resource.Dimension.compat_control_corner_material = global::PathwayGames.Droid.Resource.Dimension.compat_control_corner_material;
+			global::Xamarin.Essentials.Resource.Dimension.compat_notification_large_icon_max_height = global::PathwayGames.Droid.Resource.Dimension.compat_notification_large_icon_max_height;
+			global::Xamarin.Essentials.Resource.Dimension.compat_notification_large_icon_max_width = global::PathwayGames.Droid.Resource.Dimension.compat_notification_large_icon_max_width;
+			global::Xamarin.Essentials.Resource.Dimension.notification_action_icon_size = global::PathwayGames.Droid.Resource.Dimension.notification_action_icon_size;
+			global::Xamarin.Essentials.Resource.Dimension.notification_action_text_size = global::PathwayGames.Droid.Resource.Dimension.notification_action_text_size;
+			global::Xamarin.Essentials.Resource.Dimension.notification_big_circle_margin = global::PathwayGames.Droid.Resource.Dimension.notification_big_circle_margin;
+			global::Xamarin.Essentials.Resource.Dimension.notification_content_margin_start = global::PathwayGames.Droid.Resource.Dimension.notification_content_margin_start;
+			global::Xamarin.Essentials.Resource.Dimension.notification_large_icon_height = global::PathwayGames.Droid.Resource.Dimension.notification_large_icon_height;
+			global::Xamarin.Essentials.Resource.Dimension.notification_large_icon_width = global::PathwayGames.Droid.Resource.Dimension.notification_large_icon_width;
+			global::Xamarin.Essentials.Resource.Dimension.notification_main_column_padding_top = global::PathwayGames.Droid.Resource.Dimension.notification_main_column_padding_top;
+			global::Xamarin.Essentials.Resource.Dimension.notification_media_narrow_margin = global::PathwayGames.Droid.Resource.Dimension.notification_media_narrow_margin;
+			global::Xamarin.Essentials.Resource.Dimension.notification_right_icon_size = global::PathwayGames.Droid.Resource.Dimension.notification_right_icon_size;
+			global::Xamarin.Essentials.Resource.Dimension.notification_right_side_padding_top = global::PathwayGames.Droid.Resource.Dimension.notification_right_side_padding_top;
+			global::Xamarin.Essentials.Resource.Dimension.notification_small_icon_background_padding = global::PathwayGames.Droid.Resource.Dimension.notification_small_icon_background_padding;
+			global::Xamarin.Essentials.Resource.Dimension.notification_small_icon_size_as_large = global::PathwayGames.Droid.Resource.Dimension.notification_small_icon_size_as_large;
+			global::Xamarin.Essentials.Resource.Dimension.notification_subtext_size = global::PathwayGames.Droid.Resource.Dimension.notification_subtext_size;
+			global::Xamarin.Essentials.Resource.Dimension.notification_top_pad = global::PathwayGames.Droid.Resource.Dimension.notification_top_pad;
+			global::Xamarin.Essentials.Resource.Dimension.notification_top_pad_large_text = global::PathwayGames.Droid.Resource.Dimension.notification_top_pad_large_text;
+			global::Xamarin.Essentials.Resource.Drawable.notification_action_background = global::PathwayGames.Droid.Resource.Drawable.notification_action_background;
+			global::Xamarin.Essentials.Resource.Drawable.notification_bg = global::PathwayGames.Droid.Resource.Drawable.notification_bg;
+			global::Xamarin.Essentials.Resource.Drawable.notification_bg_low = global::PathwayGames.Droid.Resource.Drawable.notification_bg_low;
+			global::Xamarin.Essentials.Resource.Drawable.notification_bg_low_normal = global::PathwayGames.Droid.Resource.Drawable.notification_bg_low_normal;
+			global::Xamarin.Essentials.Resource.Drawable.notification_bg_low_pressed = global::PathwayGames.Droid.Resource.Drawable.notification_bg_low_pressed;
+			global::Xamarin.Essentials.Resource.Drawable.notification_bg_normal = global::PathwayGames.Droid.Resource.Drawable.notification_bg_normal;
+			global::Xamarin.Essentials.Resource.Drawable.notification_bg_normal_pressed = global::PathwayGames.Droid.Resource.Drawable.notification_bg_normal_pressed;
+			global::Xamarin.Essentials.Resource.Drawable.notification_icon_background = global::PathwayGames.Droid.Resource.Drawable.notification_icon_background;
+			global::Xamarin.Essentials.Resource.Drawable.notification_template_icon_bg = global::PathwayGames.Droid.Resource.Drawable.notification_template_icon_bg;
+			global::Xamarin.Essentials.Resource.Drawable.notification_template_icon_low_bg = global::PathwayGames.Droid.Resource.Drawable.notification_template_icon_low_bg;
+			global::Xamarin.Essentials.Resource.Drawable.notification_tile_bg = global::PathwayGames.Droid.Resource.Drawable.notification_tile_bg;
+			global::Xamarin.Essentials.Resource.Drawable.notify_panel_notification_icon_bg = global::PathwayGames.Droid.Resource.Drawable.notify_panel_notification_icon_bg;
+			global::Xamarin.Essentials.Resource.Id.action_container = global::PathwayGames.Droid.Resource.Id.action_container;
+			global::Xamarin.Essentials.Resource.Id.action_divider = global::PathwayGames.Droid.Resource.Id.action_divider;
+			global::Xamarin.Essentials.Resource.Id.action_image = global::PathwayGames.Droid.Resource.Id.action_image;
+			global::Xamarin.Essentials.Resource.Id.action_text = global::PathwayGames.Droid.Resource.Id.action_text;
+			global::Xamarin.Essentials.Resource.Id.actions = global::PathwayGames.Droid.Resource.Id.actions;
+			global::Xamarin.Essentials.Resource.Id.all = global::PathwayGames.Droid.Resource.Id.all;
+			global::Xamarin.Essentials.Resource.Id.async = global::PathwayGames.Droid.Resource.Id.async;
+			global::Xamarin.Essentials.Resource.Id.blocking = global::PathwayGames.Droid.Resource.Id.blocking;
+			global::Xamarin.Essentials.Resource.Id.bottom = global::PathwayGames.Droid.Resource.Id.bottom;
+			global::Xamarin.Essentials.Resource.Id.browser_actions_header_text = global::PathwayGames.Droid.Resource.Id.browser_actions_header_text;
+			global::Xamarin.Essentials.Resource.Id.browser_actions_menu_item_icon = global::PathwayGames.Droid.Resource.Id.browser_actions_menu_item_icon;
+			global::Xamarin.Essentials.Resource.Id.browser_actions_menu_item_text = global::PathwayGames.Droid.Resource.Id.browser_actions_menu_item_text;
+			global::Xamarin.Essentials.Resource.Id.browser_actions_menu_items = global::PathwayGames.Droid.Resource.Id.browser_actions_menu_items;
+			global::Xamarin.Essentials.Resource.Id.browser_actions_menu_view = global::PathwayGames.Droid.Resource.Id.browser_actions_menu_view;
+			global::Xamarin.Essentials.Resource.Id.center = global::PathwayGames.Droid.Resource.Id.center;
+			global::Xamarin.Essentials.Resource.Id.center_horizontal = global::PathwayGames.Droid.Resource.Id.center_horizontal;
+			global::Xamarin.Essentials.Resource.Id.center_vertical = global::PathwayGames.Droid.Resource.Id.center_vertical;
+			global::Xamarin.Essentials.Resource.Id.chronometer = global::PathwayGames.Droid.Resource.Id.chronometer;
+			global::Xamarin.Essentials.Resource.Id.clip_horizontal = global::PathwayGames.Droid.Resource.Id.clip_horizontal;
+			global::Xamarin.Essentials.Resource.Id.clip_vertical = global::PathwayGames.Droid.Resource.Id.clip_vertical;
+			global::Xamarin.Essentials.Resource.Id.end = global::PathwayGames.Droid.Resource.Id.end;
+			global::Xamarin.Essentials.Resource.Id.fill = global::PathwayGames.Droid.Resource.Id.fill;
+			global::Xamarin.Essentials.Resource.Id.fill_horizontal = global::PathwayGames.Droid.Resource.Id.fill_horizontal;
+			global::Xamarin.Essentials.Resource.Id.fill_vertical = global::PathwayGames.Droid.Resource.Id.fill_vertical;
+			global::Xamarin.Essentials.Resource.Id.forever = global::PathwayGames.Droid.Resource.Id.forever;
+			global::Xamarin.Essentials.Resource.Id.icon = global::PathwayGames.Droid.Resource.Id.icon;
+			global::Xamarin.Essentials.Resource.Id.icon_group = global::PathwayGames.Droid.Resource.Id.icon_group;
+			global::Xamarin.Essentials.Resource.Id.info = global::PathwayGames.Droid.Resource.Id.info;
+			global::Xamarin.Essentials.Resource.Id.italic = global::PathwayGames.Droid.Resource.Id.italic;
+			global::Xamarin.Essentials.Resource.Id.left = global::PathwayGames.Droid.Resource.Id.left;
+			global::Xamarin.Essentials.Resource.Id.line1 = global::PathwayGames.Droid.Resource.Id.line1;
+			global::Xamarin.Essentials.Resource.Id.line3 = global::PathwayGames.Droid.Resource.Id.line3;
+			global::Xamarin.Essentials.Resource.Id.none = global::PathwayGames.Droid.Resource.Id.none;
+			global::Xamarin.Essentials.Resource.Id.normal = global::PathwayGames.Droid.Resource.Id.normal;
+			global::Xamarin.Essentials.Resource.Id.notification_background = global::PathwayGames.Droid.Resource.Id.notification_background;
+			global::Xamarin.Essentials.Resource.Id.notification_main_column = global::PathwayGames.Droid.Resource.Id.notification_main_column;
+			global::Xamarin.Essentials.Resource.Id.notification_main_column_container = global::PathwayGames.Droid.Resource.Id.notification_main_column_container;
+			global::Xamarin.Essentials.Resource.Id.right = global::PathwayGames.Droid.Resource.Id.right;
+			global::Xamarin.Essentials.Resource.Id.right_icon = global::PathwayGames.Droid.Resource.Id.right_icon;
+			global::Xamarin.Essentials.Resource.Id.right_side = global::PathwayGames.Droid.Resource.Id.right_side;
+			global::Xamarin.Essentials.Resource.Id.start = global::PathwayGames.Droid.Resource.Id.start;
+			global::Xamarin.Essentials.Resource.Id.tag_transition_group = global::PathwayGames.Droid.Resource.Id.tag_transition_group;
+			global::Xamarin.Essentials.Resource.Id.tag_unhandled_key_event_manager = global::PathwayGames.Droid.Resource.Id.tag_unhandled_key_event_manager;
+			global::Xamarin.Essentials.Resource.Id.tag_unhandled_key_listeners = global::PathwayGames.Droid.Resource.Id.tag_unhandled_key_listeners;
+			global::Xamarin.Essentials.Resource.Id.text = global::PathwayGames.Droid.Resource.Id.text;
+			global::Xamarin.Essentials.Resource.Id.text2 = global::PathwayGames.Droid.Resource.Id.text2;
+			global::Xamarin.Essentials.Resource.Id.time = global::PathwayGames.Droid.Resource.Id.time;
+			global::Xamarin.Essentials.Resource.Id.title = global::PathwayGames.Droid.Resource.Id.title;
+			global::Xamarin.Essentials.Resource.Id.top = global::PathwayGames.Droid.Resource.Id.top;
+			global::Xamarin.Essentials.Resource.Integer.status_bar_notification_info_maxnum = global::PathwayGames.Droid.Resource.Integer.status_bar_notification_info_maxnum;
+			global::Xamarin.Essentials.Resource.Layout.browser_actions_context_menu_page = global::PathwayGames.Droid.Resource.Layout.browser_actions_context_menu_page;
+			global::Xamarin.Essentials.Resource.Layout.browser_actions_context_menu_row = global::PathwayGames.Droid.Resource.Layout.browser_actions_context_menu_row;
+			global::Xamarin.Essentials.Resource.Layout.notification_action = global::PathwayGames.Droid.Resource.Layout.notification_action;
+			global::Xamarin.Essentials.Resource.Layout.notification_action_tombstone = global::PathwayGames.Droid.Resource.Layout.notification_action_tombstone;
+			global::Xamarin.Essentials.Resource.Layout.notification_template_custom_big = global::PathwayGames.Droid.Resource.Layout.notification_template_custom_big;
+			global::Xamarin.Essentials.Resource.Layout.notification_template_icon_group = global::PathwayGames.Droid.Resource.Layout.notification_template_icon_group;
+			global::Xamarin.Essentials.Resource.Layout.notification_template_part_chronometer = global::PathwayGames.Droid.Resource.Layout.notification_template_part_chronometer;
+			global::Xamarin.Essentials.Resource.Layout.notification_template_part_time = global::PathwayGames.Droid.Resource.Layout.notification_template_part_time;
+			global::Xamarin.Essentials.Resource.String.status_bar_notification_info_overflow = global::PathwayGames.Droid.Resource.String.status_bar_notification_info_overflow;
+			global::Xamarin.Essentials.Resource.Style.TextAppearance_Compat_Notification = global::PathwayGames.Droid.Resource.Style.TextAppearance_Compat_Notification;
+			global::Xamarin.Essentials.Resource.Style.TextAppearance_Compat_Notification_Info = global::PathwayGames.Droid.Resource.Style.TextAppearance_Compat_Notification_Info;
+			global::Xamarin.Essentials.Resource.Style.TextAppearance_Compat_Notification_Line2 = global::PathwayGames.Droid.Resource.Style.TextAppearance_Compat_Notification_Line2;
+			global::Xamarin.Essentials.Resource.Style.TextAppearance_Compat_Notification_Time = global::PathwayGames.Droid.Resource.Style.TextAppearance_Compat_Notification_Time;
+			global::Xamarin.Essentials.Resource.Style.TextAppearance_Compat_Notification_Title = global::PathwayGames.Droid.Resource.Style.TextAppearance_Compat_Notification_Title;
+			global::Xamarin.Essentials.Resource.Style.Widget_Compat_NotificationActionContainer = global::PathwayGames.Droid.Resource.Style.Widget_Compat_NotificationActionContainer;
+			global::Xamarin.Essentials.Resource.Style.Widget_Compat_NotificationActionText = global::PathwayGames.Droid.Resource.Style.Widget_Compat_NotificationActionText;
+			global::Xamarin.Essentials.Resource.Style.Widget_Support_CoordinatorLayout = global::PathwayGames.Droid.Resource.Style.Widget_Support_CoordinatorLayout;
+			global::Xamarin.Essentials.Resource.Xml.xamarin_essentials_fileprovider_file_paths = global::PathwayGames.Droid.Resource.Xml.xamarin_essentials_fileprovider_file_paths;
+			global::Xamarin.Essentials.Resource.Styleable.ColorStateListItem = global::PathwayGames.Droid.Resource.Styleable.ColorStateListItem;
+			global::Xamarin.Essentials.Resource.Styleable.ColorStateListItem_alpha = global::PathwayGames.Droid.Resource.Styleable.ColorStateListItem_alpha;
+			global::Xamarin.Essentials.Resource.Styleable.ColorStateListItem_android_alpha = global::PathwayGames.Droid.Resource.Styleable.ColorStateListItem_android_alpha;
+			global::Xamarin.Essentials.Resource.Styleable.ColorStateListItem_android_color = global::PathwayGames.Droid.Resource.Styleable.ColorStateListItem_android_color;
+			global::Xamarin.Essentials.Resource.Styleable.CoordinatorLayout = global::PathwayGames.Droid.Resource.Styleable.CoordinatorLayout;
+			global::Xamarin.Essentials.Resource.Styleable.CoordinatorLayout_keylines = global::PathwayGames.Droid.Resource.Styleable.CoordinatorLayout_keylines;
+			global::Xamarin.Essentials.Resource.Styleable.CoordinatorLayout_statusBarBackground = global::PathwayGames.Droid.Resource.Styleable.CoordinatorLayout_statusBarBackground;
+			global::Xamarin.Essentials.Resource.Styleable.CoordinatorLayout_Layout = global::PathwayGames.Droid.Resource.Styleable.CoordinatorLayout_Layout;
+			global::Xamarin.Essentials.Resource.Styleable.CoordinatorLayout_Layout_android_layout_gravity = global::PathwayGames.Droid.Resource.Styleable.CoordinatorLayout_Layout_android_layout_gravity;
+			global::Xamarin.Essentials.Resource.Styleable.CoordinatorLayout_Layout_layout_anchor = global::PathwayGames.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_anchor;
+			global::Xamarin.Essentials.Resource.Styleable.CoordinatorLayout_Layout_layout_anchorGravity = global::PathwayGames.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_anchorGravity;
+			global::Xamarin.Essentials.Resource.Styleable.CoordinatorLayout_Layout_layout_behavior = global::PathwayGames.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_behavior;
+			global::Xamarin.Essentials.Resource.Styleable.CoordinatorLayout_Layout_layout_dodgeInsetEdges = global::PathwayGames.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_dodgeInsetEdges;
+			global::Xamarin.Essentials.Resource.Styleable.CoordinatorLayout_Layout_layout_insetEdge = global::PathwayGames.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_insetEdge;
+			global::Xamarin.Essentials.Resource.Styleable.CoordinatorLayout_Layout_layout_keyline = global::PathwayGames.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_keyline;
+			global::Xamarin.Essentials.Resource.Styleable.FontFamily = global::PathwayGames.Droid.Resource.Styleable.FontFamily;
+			global::Xamarin.Essentials.Resource.Styleable.FontFamily_fontProviderAuthority = global::PathwayGames.Droid.Resource.Styleable.FontFamily_fontProviderAuthority;
+			global::Xamarin.Essentials.Resource.Styleable.FontFamily_fontProviderCerts = global::PathwayGames.Droid.Resource.Styleable.FontFamily_fontProviderCerts;
+			global::Xamarin.Essentials.Resource.Styleable.FontFamily_fontProviderFetchStrategy = global::PathwayGames.Droid.Resource.Styleable.FontFamily_fontProviderFetchStrategy;
+			global::Xamarin.Essentials.Resource.Styleable.FontFamily_fontProviderFetchTimeout = global::PathwayGames.Droid.Resource.Styleable.FontFamily_fontProviderFetchTimeout;
+			global::Xamarin.Essentials.Resource.Styleable.FontFamily_fontProviderPackage = global::PathwayGames.Droid.Resource.Styleable.FontFamily_fontProviderPackage;
+			global::Xamarin.Essentials.Resource.Styleable.FontFamily_fontProviderQuery = global::PathwayGames.Droid.Resource.Styleable.FontFamily_fontProviderQuery;
+			global::Xamarin.Essentials.Resource.Styleable.FontFamilyFont = global::PathwayGames.Droid.Resource.Styleable.FontFamilyFont;
+			global::Xamarin.Essentials.Resource.Styleable.FontFamilyFont_android_font = global::PathwayGames.Droid.Resource.Styleable.FontFamilyFont_android_font;
+			global::Xamarin.Essentials.Resource.Styleable.FontFamilyFont_android_fontStyle = global::PathwayGames.Droid.Resource.Styleable.FontFamilyFont_android_fontStyle;
+			global::Xamarin.Essentials.Resource.Styleable.FontFamilyFont_android_fontVariationSettings = global::PathwayGames.Droid.Resource.Styleable.FontFamilyFont_android_fontVariationSettings;
+			global::Xamarin.Essentials.Resource.Styleable.FontFamilyFont_android_fontWeight = global::PathwayGames.Droid.Resource.Styleable.FontFamilyFont_android_fontWeight;
+			global::Xamarin.Essentials.Resource.Styleable.FontFamilyFont_android_ttcIndex = global::PathwayGames.Droid.Resource.Styleable.FontFamilyFont_android_ttcIndex;
+			global::Xamarin.Essentials.Resource.Styleable.FontFamilyFont_font = global::PathwayGames.Droid.Resource.Styleable.FontFamilyFont_font;
+			global::Xamarin.Essentials.Resource.Styleable.FontFamilyFont_fontStyle = global::PathwayGames.Droid.Resource.Styleable.FontFamilyFont_fontStyle;
+			global::Xamarin.Essentials.Resource.Styleable.FontFamilyFont_fontVariationSettings = global::PathwayGames.Droid.Resource.Styleable.FontFamilyFont_fontVariationSettings;
+			global::Xamarin.Essentials.Resource.Styleable.FontFamilyFont_fontWeight = global::PathwayGames.Droid.Resource.Styleable.FontFamilyFont_fontWeight;
+			global::Xamarin.Essentials.Resource.Styleable.FontFamilyFont_ttcIndex = global::PathwayGames.Droid.Resource.Styleable.FontFamilyFont_ttcIndex;
+			global::Xamarin.Essentials.Resource.Styleable.GradientColor = global::PathwayGames.Droid.Resource.Styleable.GradientColor;
+			global::Xamarin.Essentials.Resource.Styleable.GradientColor_android_centerColor = global::PathwayGames.Droid.Resource.Styleable.GradientColor_android_centerColor;
+			global::Xamarin.Essentials.Resource.Styleable.GradientColor_android_centerX = global::PathwayGames.Droid.Resource.Styleable.GradientColor_android_centerX;
+			global::Xamarin.Essentials.Resource.Styleable.GradientColor_android_centerY = global::PathwayGames.Droid.Resource.Styleable.GradientColor_android_centerY;
+			global::Xamarin.Essentials.Resource.Styleable.GradientColor_android_endColor = global::PathwayGames.Droid.Resource.Styleable.GradientColor_android_endColor;
+			global::Xamarin.Essentials.Resource.Styleable.GradientColor_android_endX = global::PathwayGames.Droid.Resource.Styleable.GradientColor_android_endX;
+			global::Xamarin.Essentials.Resource.Styleable.GradientColor_android_endY = global::PathwayGames.Droid.Resource.Styleable.GradientColor_android_endY;
+			global::Xamarin.Essentials.Resource.Styleable.GradientColor_android_gradientRadius = global::PathwayGames.Droid.Resource.Styleable.GradientColor_android_gradientRadius;
+			global::Xamarin.Essentials.Resource.Styleable.GradientColor_android_startColor = global::PathwayGames.Droid.Resource.Styleable.GradientColor_android_startColor;
+			global::Xamarin.Essentials.Resource.Styleable.GradientColor_android_startX = global::PathwayGames.Droid.Resource.Styleable.GradientColor_android_startX;
+			global::Xamarin.Essentials.Resource.Styleable.GradientColor_android_startY = global::PathwayGames.Droid.Resource.Styleable.GradientColor_android_startY;
+			global::Xamarin.Essentials.Resource.Styleable.GradientColor_android_tileMode = global::PathwayGames.Droid.Resource.Styleable.GradientColor_android_tileMode;
+			global::Xamarin.Essentials.Resource.Styleable.GradientColor_android_type = global::PathwayGames.Droid.Resource.Styleable.GradientColor_android_type;
+			global::Xamarin.Essentials.Resource.Styleable.GradientColorItem = global::PathwayGames.Droid.Resource.Styleable.GradientColorItem;
+			global::Xamarin.Essentials.Resource.Styleable.GradientColorItem_android_color = global::PathwayGames.Droid.Resource.Styleable.GradientColorItem_android_color;
+			global::Xamarin.Essentials.Resource.Styleable.GradientColorItem_android_offset = global::PathwayGames.Droid.Resource.Styleable.GradientColorItem_android_offset;
 			global::Xamarin.Forms.Material.Android.Resource.Animation.abc_fade_in = global::PathwayGames.Droid.Resource.Animation.abc_fade_in;
 			global::Xamarin.Forms.Material.Android.Resource.Animation.abc_fade_out = global::PathwayGames.Droid.Resource.Animation.abc_fade_out;
 			global::Xamarin.Forms.Material.Android.Resource.Animation.abc_grow_fade_in_from_bottom = global::PathwayGames.Droid.Resource.Animation.abc_grow_fade_in_from_bottom;
@@ -8278,26 +8460,26 @@ namespace PathwayGames.Droid
 			// aapt resource value: 0x7f020055
 			public const int avd_hide_password = 2130837589;
 			
-			// aapt resource value: 0x7f02014f
-			public const int avd_hide_password_1 = 2130837839;
-			
-			// aapt resource value: 0x7f020150
-			public const int avd_hide_password_2 = 2130837840;
-			
 			// aapt resource value: 0x7f020151
-			public const int avd_hide_password_3 = 2130837841;
+			public const int avd_hide_password_1 = 2130837841;
+			
+			// aapt resource value: 0x7f020152
+			public const int avd_hide_password_2 = 2130837842;
+			
+			// aapt resource value: 0x7f020153
+			public const int avd_hide_password_3 = 2130837843;
 			
 			// aapt resource value: 0x7f020056
 			public const int avd_show_password = 2130837590;
 			
-			// aapt resource value: 0x7f020152
-			public const int avd_show_password_1 = 2130837842;
-			
-			// aapt resource value: 0x7f020153
-			public const int avd_show_password_2 = 2130837843;
-			
 			// aapt resource value: 0x7f020154
-			public const int avd_show_password_3 = 2130837844;
+			public const int avd_show_password_1 = 2130837844;
+			
+			// aapt resource value: 0x7f020155
+			public const int avd_show_password_2 = 2130837845;
+			
+			// aapt resource value: 0x7f020156
+			public const int avd_show_password_3 = 2130837846;
 			
 			// aapt resource value: 0x7f020057
 			public const int berry_the_dog = 2130837591;
@@ -8900,148 +9082,154 @@ namespace PathwayGames.Droid
 			public const int icon_engangement_medium = 2130837790;
 			
 			// aapt resource value: 0x7f02011f
-			public const int icon_settings = 2130837791;
+			public const int icon_eye = 2130837791;
 			
 			// aapt resource value: 0x7f020120
-			public const int icon_tests = 2130837792;
+			public const int icon_eye_off = 2130837792;
 			
 			// aapt resource value: 0x7f020121
-			public const int icon_users = 2130837793;
+			public const int icon_head = 2130837793;
 			
 			// aapt resource value: 0x7f020122
-			public const int logo = 2130837794;
+			public const int icon_head_off = 2130837794;
 			
 			// aapt resource value: 0x7f020123
-			public const int MaterialActivityIndicatorBackground = 2130837795;
+			public const int icon_settings = 2130837795;
 			
 			// aapt resource value: 0x7f020124
-			public const int MaterialProgressBar = 2130837796;
+			public const int icon_tests = 2130837796;
 			
 			// aapt resource value: 0x7f020125
-			public const int mr_button_connected_dark = 2130837797;
+			public const int icon_users = 2130837797;
 			
 			// aapt resource value: 0x7f020126
-			public const int mr_button_connected_light = 2130837798;
+			public const int logo = 2130837798;
 			
 			// aapt resource value: 0x7f020127
-			public const int mr_button_connecting_dark = 2130837799;
+			public const int MaterialActivityIndicatorBackground = 2130837799;
 			
 			// aapt resource value: 0x7f020128
-			public const int mr_button_connecting_light = 2130837800;
+			public const int MaterialProgressBar = 2130837800;
 			
 			// aapt resource value: 0x7f020129
-			public const int mr_button_dark = 2130837801;
+			public const int mr_button_connected_dark = 2130837801;
 			
 			// aapt resource value: 0x7f02012a
-			public const int mr_button_light = 2130837802;
+			public const int mr_button_connected_light = 2130837802;
 			
 			// aapt resource value: 0x7f02012b
-			public const int mr_dialog_close_dark = 2130837803;
+			public const int mr_button_connecting_dark = 2130837803;
 			
 			// aapt resource value: 0x7f02012c
-			public const int mr_dialog_close_light = 2130837804;
+			public const int mr_button_connecting_light = 2130837804;
 			
 			// aapt resource value: 0x7f02012d
-			public const int mr_dialog_material_background_dark = 2130837805;
+			public const int mr_button_dark = 2130837805;
 			
 			// aapt resource value: 0x7f02012e
-			public const int mr_dialog_material_background_light = 2130837806;
+			public const int mr_button_light = 2130837806;
 			
 			// aapt resource value: 0x7f02012f
-			public const int mr_group_collapse = 2130837807;
+			public const int mr_dialog_close_dark = 2130837807;
 			
 			// aapt resource value: 0x7f020130
-			public const int mr_group_expand = 2130837808;
+			public const int mr_dialog_close_light = 2130837808;
 			
 			// aapt resource value: 0x7f020131
-			public const int mr_media_pause_dark = 2130837809;
+			public const int mr_dialog_material_background_dark = 2130837809;
 			
 			// aapt resource value: 0x7f020132
-			public const int mr_media_pause_light = 2130837810;
+			public const int mr_dialog_material_background_light = 2130837810;
 			
 			// aapt resource value: 0x7f020133
-			public const int mr_media_play_dark = 2130837811;
+			public const int mr_group_collapse = 2130837811;
 			
 			// aapt resource value: 0x7f020134
-			public const int mr_media_play_light = 2130837812;
+			public const int mr_group_expand = 2130837812;
 			
 			// aapt resource value: 0x7f020135
-			public const int mr_media_stop_dark = 2130837813;
+			public const int mr_media_pause_dark = 2130837813;
 			
 			// aapt resource value: 0x7f020136
-			public const int mr_media_stop_light = 2130837814;
+			public const int mr_media_pause_light = 2130837814;
 			
 			// aapt resource value: 0x7f020137
-			public const int mr_vol_type_audiotrack_dark = 2130837815;
+			public const int mr_media_play_dark = 2130837815;
 			
 			// aapt resource value: 0x7f020138
-			public const int mr_vol_type_audiotrack_light = 2130837816;
+			public const int mr_media_play_light = 2130837816;
 			
 			// aapt resource value: 0x7f020139
-			public const int mtrl_snackbar_background = 2130837817;
+			public const int mr_media_stop_dark = 2130837817;
 			
 			// aapt resource value: 0x7f02013a
-			public const int mtrl_tabs_default_indicator = 2130837818;
+			public const int mr_media_stop_light = 2130837818;
 			
 			// aapt resource value: 0x7f02013b
-			public const int navigation_empty_icon = 2130837819;
+			public const int mr_vol_type_audiotrack_dark = 2130837819;
 			
 			// aapt resource value: 0x7f02013c
-			public const int notification_action_background = 2130837820;
+			public const int mr_vol_type_audiotrack_light = 2130837820;
 			
 			// aapt resource value: 0x7f02013d
-			public const int notification_bg = 2130837821;
+			public const int mtrl_snackbar_background = 2130837821;
 			
 			// aapt resource value: 0x7f02013e
-			public const int notification_bg_low = 2130837822;
+			public const int mtrl_tabs_default_indicator = 2130837822;
 			
 			// aapt resource value: 0x7f02013f
-			public const int notification_bg_low_normal = 2130837823;
+			public const int navigation_empty_icon = 2130837823;
 			
 			// aapt resource value: 0x7f020140
-			public const int notification_bg_low_pressed = 2130837824;
+			public const int notification_action_background = 2130837824;
 			
 			// aapt resource value: 0x7f020141
-			public const int notification_bg_normal = 2130837825;
+			public const int notification_bg = 2130837825;
 			
 			// aapt resource value: 0x7f020142
-			public const int notification_bg_normal_pressed = 2130837826;
+			public const int notification_bg_low = 2130837826;
 			
 			// aapt resource value: 0x7f020143
-			public const int notification_icon_background = 2130837827;
-			
-			// aapt resource value: 0x7f02014d
-			public const int notification_template_icon_bg = 2130837837;
-			
-			// aapt resource value: 0x7f02014e
-			public const int notification_template_icon_low_bg = 2130837838;
+			public const int notification_bg_low_normal = 2130837827;
 			
 			// aapt resource value: 0x7f020144
-			public const int notification_tile_bg = 2130837828;
+			public const int notification_bg_low_pressed = 2130837828;
 			
 			// aapt resource value: 0x7f020145
-			public const int notify_panel_notification_icon_bg = 2130837829;
+			public const int notification_bg_normal = 2130837829;
 			
 			// aapt resource value: 0x7f020146
-			public const int rec = 2130837830;
+			public const int notification_bg_normal_pressed = 2130837830;
 			
 			// aapt resource value: 0x7f020147
-			public const int rec_off = 2130837831;
+			public const int notification_icon_background = 2130837831;
+			
+			// aapt resource value: 0x7f02014f
+			public const int notification_template_icon_bg = 2130837839;
+			
+			// aapt resource value: 0x7f020150
+			public const int notification_template_icon_low_bg = 2130837840;
 			
 			// aapt resource value: 0x7f020148
-			public const int reward_animation_wow = 2130837832;
+			public const int notification_tile_bg = 2130837832;
 			
 			// aapt resource value: 0x7f020149
-			public const int roundedbg = 2130837833;
+			public const int notify_panel_notification_icon_bg = 2130837833;
 			
 			// aapt resource value: 0x7f02014a
-			public const int roundedbgdark = 2130837834;
+			public const int reward_animation_wow = 2130837834;
 			
 			// aapt resource value: 0x7f02014b
-			public const int tooltip_frame_dark = 2130837835;
+			public const int roundedbg = 2130837835;
 			
 			// aapt resource value: 0x7f02014c
-			public const int tooltip_frame_light = 2130837836;
+			public const int roundedbgdark = 2130837836;
+			
+			// aapt resource value: 0x7f02014d
+			public const int tooltip_frame_dark = 2130837837;
+			
+			// aapt resource value: 0x7f02014e
+			public const int tooltip_frame_light = 2130837838;
 			
 			static Drawable()
 			{
@@ -12092,6 +12280,9 @@ namespace PathwayGames.Droid
 			
 			// aapt resource value: 0x7f080000
 			public const int provider_paths = 2131230720;
+			
+			// aapt resource value: 0x7f080001
+			public const int xamarin_essentials_fileprovider_file_paths = 2131230721;
 			
 			static Xml()
 			{

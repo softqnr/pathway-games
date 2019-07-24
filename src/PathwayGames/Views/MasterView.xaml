@@ -2,10 +2,16 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:b="clr-namespace:PathwayGames.Behaviors"
+             xmlns:c="clr-namespace:PathwayGames.Converters"
              x:Class="PathwayGames.Views.MasterView"
              x:Name="MasterPage"
              Title="Pathway+ Games"
              Icon="hamburger.png">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <c:ItemTappedEventArgsConverter x:Key="ItemTappedConverter" />
+        </ResourceDictionary>
+    </ContentPage.Resources>
     <StackLayout>
         <ListView x:Name="MenuItemsListView"
               SeparatorVisibility="None"
@@ -13,7 +19,7 @@
               ItemsSource="{Binding MenuItems}">
             <ListView.Behaviors>
                 <b:EventToCommandBehavior Command="{Binding NavigationItemSelectedCommand}" 
-                                                  EventName="ItemTapped"/>
+                                          EventArgsConverter="{StaticResource ItemTappedConverter}" EventName="ItemTapped"/>
             </ListView.Behaviors>
             <ListView.Header>
         <Grid BackgroundColor="{StaticResource primary_dark}">
@@ -39,8 +45,15 @@
                                 </FormattedString>
                             </Label.FormattedText>
                     </Label>
-                    <Label TextColor="White" Grid.Column="1" Grid.Row="3" 
-                           Text="{Binding BindingContext.UserName, Source={x:Reference MasterPage}}" FontAttributes="Bold" />
+                    <Label TextColor="White" Grid.Column="1" Grid.Row="3" FontAttributes="Bold" >
+                        <Label.FormattedText>
+                            <FormattedString>
+                                <Span Text="{Binding BindingContext.User.UserName, Source={x:Reference MasterPage}}" />
+                                <Span Text=" - " />
+                                <Span Text="{Binding BindingContext.User.UserType, Source={x:Reference MasterPage}}" />
+                            </FormattedString>
+                        </Label.FormattedText>
+                    </Label>
                 </Grid>
       </ListView.Header>
       <ListView.ItemTemplate>

@@ -5,6 +5,8 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Text;
+using Xamarin.Essentials;
 
 namespace PathwayGames.Services.Slides
 {
@@ -131,21 +133,28 @@ namespace PathwayGames.Services.Slides
             };
         }
 
-        public Game Load(string filePath)
+        public Game Load(string fileName)
         {
+            string path = FileSystem.AppDataDirectory;
+            string filePath = Path.Combine(path, fileName);
             return JsonConvert.DeserializeObject<Game>(filePath);
         }
 
-        public void Save(Game game)
+        public string Save(Game game)
         {
-            string json = JsonConvert.SerializeObject(game);
-            string path = Environment.GetFolderPath(Environment.SpecialFolder.Personal);
-            string filePath = Path.Combine(path, "game.json");
+            string path = FileSystem.AppDataDirectory;
+            //string path = Environment.GetFolderPath(Environment.SpecialFolder.Personal);
+            string fileName = Guid.NewGuid().ToString() + ".json";
+            game.GameDataFile = fileName;
+            string filePath = Path.Combine(path, fileName);
             using (var file = File.Open(filePath, FileMode.Create, FileAccess.Write))
-            using (var sw = new StreamWriter(file))
             {
-                sw.Write(json);
+                using (var sw = new StreamWriter(file, Encoding.UTF8))
+                {
+                    sw.Write(JsonConvert.SerializeObject(game));
+                }
             }
+            return fileName;
         }
 
         public void CalculateGameScoreAndStats(Game game)

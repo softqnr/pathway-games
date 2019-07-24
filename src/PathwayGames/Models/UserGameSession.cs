@@ -23,5 +23,21 @@ namespace PathwayGames.Models
         public string GameDataFile { get; set; }
 
         public string SensorDataFile { get; set; }
+
+        public UserGameSession(User user, string gameType, DateTime dateStarted, DateTime dateEnded, string gameDataFile, string sensorDataFile)
+        {
+            UserId = user.Id;
+            User = user;
+            GameType = gameType;
+            DateStarted = dateStarted;
+            DateEnded = dateEnded;
+            GameDataFile = gameDataFile;
+            SensorDataFile = sensorDataFile;
+        }
+
+        public UserGameSession()
+        {
+
+        }
     }
 }

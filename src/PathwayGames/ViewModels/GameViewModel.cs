@@ -8,11 +8,11 @@ using PathwayGames.Infrastructure.Sound;
 using Stateless;
 using Stateless.Graph;
 using System;
-using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Input;
 using Xamarin.Forms;
+using PathwayGames.Services.User;
 
 namespace PathwayGames.ViewModels
 {
@@ -23,7 +23,8 @@ namespace PathwayGames.ViewModels
         private GameSettings _gameSettings;
 
         private ISlidesService _slidesService;
-        private ISensorsService _sensorsService;
+        private IUserService _userService;
+        private ISensorLogWriterService _sensorLowWriterService;
         private ISoundService _soundService;
         private IEngangementService _engangementService;
 
@@ -32,7 +33,8 @@ namespace PathwayGames.ViewModels
         private int? _slideIndex;
         private int? _slideCount;
         private ImageSource _slideImageSource;
-        private ImageSource _recordingImageSource;
+        private ImageSource _eyeGazeIconImageSource;
+        private ImageSource _eegIconImageSource;
         private string _seed;
         private string _userName;
         private CancellationTokenSource _cts;
@@ -82,11 +84,17 @@ namespace PathwayGames.ViewModels
             get => _seed;
             set => SetProperty(ref _seed, value);
         }
-
-        public ImageSource RecordingImageSource
+        
+        public ImageSource EyeGazeIconImageSource
         {
-            get => _recordingImageSource;
-            set => SetProperty(ref _recordingImageSource, value);
+            get => _eyeGazeIconImageSource;
+            set => SetProperty(ref _eyeGazeIconImageSource, value);
+        }
+
+        public ImageSource EEGIconImageSource
+        {
+            get => _eegIconImageSource;
+            set => SetProperty(ref _eegIconImageSource, value);
         }
 
         // Commands
@@ -114,12 +122,14 @@ namespace PathwayGames.ViewModels
 
         //CTor
         public GameViewModel(ISlidesService slidesService,
+            IUserService userService,
             ISoundService soundService,
-            ISensorsService sensorsService,
+            ISensorLogWriterService sensorLowWriterService,
             IEngangementService engangementService)
         {
             _slidesService = slidesService;
-            _sensorsService = sensorsService;
+            _userService = userService;
+            _sensorLowWriterService = sensorLowWriterService;
             _soundService = soundService;
             _engangementService = engangementService;
 
@@ -286,6 +296,9 @@ namespace PathwayGames.ViewModels
         {
             // TODO: Read Settings
             _gameSettings = new GameSettings(); // Use default
+            // Set sensor icons
+            EEGIconImageSource = ImageSource.FromFile("icon_head.png");
+            EyeGazeIconImageSource = ImageSource.FromFile("icon_eye.png");
             // Create game
             _game = _slidesService.Generate(_gameType, _gameSettings, App.SelectedUser.UserName, _seed);
             SlideIndex = 0;
@@ -315,6 +328,8 @@ namespace PathwayGames.ViewModels
 
         public async Task EndGame()
         {
+            // Get sensor filename
+            _game.SensorDataFile = _sensorLowWriterService.FileName;
             // Game finished
             StopSensorRecording();
             _game.EndDate = DateTime.Now;
@@ -322,20 +337,20 @@ namespace PathwayGames.ViewModels
             CalculateEngangement();
             // Calculate game stats
             _slidesService.CalculateGameScoreAndStats(_game);
-            // _slidesService.Save(_game);
-            await Task.FromResult(true);
+            // Save game data to file
+            _game.GameDataFile = _slidesService.Save(_game);
+            // Save game session to db
+            await _userService.SaveGameSessionData(App.SelectedUser.Id, _game, _game.GameDataFile, _game.SensorDataFile);
         }
 
         private void StartSensorRecording()
         {
-            _sensorsService.StartRecording();
-            RecordingImageSource = ImageSource.FromFile("rec.png");
+            _sensorLowWriterService.Start();
         }
 
         private void StopSensorRecording()
         {
-            _sensorsService.StopRecording();
-            RecordingImageSource = ImageSource.FromFile("rec_off.png");
+            _sensorLowWriterService.Stop();
         }
 
         private void SaveResponse(Point p)
@@ -374,7 +389,7 @@ namespace PathwayGames.ViewModels
         {
             while (StateMachine.State != States.End)
             {
-                await Task.Delay(100);
+                await Task.Delay(400);
             }
             // Navigate to result view
             await NavigationService.NavigateToAsync<GameResultsViewModel>(_game);

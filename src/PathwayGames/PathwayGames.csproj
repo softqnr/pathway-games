@@ -19,6 +19,7 @@
     <PackageReference Include="Stateless" Version="4.2.1" />
     <PackageReference Include="Unity" Version="5.11.1" />
     <PackageReference Include="Unity.ServiceLocation" Version="5.11.1" />
+    <PackageReference Include="Xamarin.Essentials" Version="1.2.0" />
     <PackageReference Include="Xamarin.FFImageLoading.Forms" Version="2.4.11.982" />
     <PackageReference Include="Xamarin.Forms" Version="4.1.0.581479" />
   </ItemGroup>

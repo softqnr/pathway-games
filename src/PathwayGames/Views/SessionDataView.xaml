@@ -1,8 +1,35 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="PathwayGames.Views.SessionDataView">
-    <Label Text="Session data"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+             x:Class="PathwayGames.Views.SessionDataView"
+             x:Name="Page"
+             Title="{Binding Title}">
+    <CollectionView ItemsSource="{Binding GameSessions}" Margin="5">
+        <CollectionView.EmptyView>
+            <Label Text="No game sessions found!"/>
+        </CollectionView.EmptyView>
+        <CollectionView.ItemTemplate>
+            <DataTemplate>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="60"/>
+                        <ColumnDefinition Width="60"/>
+                    </Grid.ColumnDefinitions>
+                    <StackLayout Orientation="Vertical" VerticalOptions="Center">
+                        <Label Text="{Binding GameType}" FontAttributes="Bold"/>
+                        <StackLayout Orientation="Horizontal" Grid.Row="0" Grid.Column="0">
+                            <Label Text="{Binding DateStarted, Mode=OneWay, StringFormat='{}{0:dd/MM/yyyy}'}"/>
+                            <Label Text=" - " />
+                            <Label Text="{Binding DateEnded, Mode=OneWay, StringFormat='{}{0:dd/MM/yyyy}'}"/>
+                        </StackLayout>
+                    </StackLayout>
+                    <Button Text="Game data" VerticalOptions="Start" Grid.Row="0" Grid.Column="1" 
+                            Command="{Binding BindingContext.GameDataCommand, Source={x:Reference Page}}" CommandParameter="{Binding GameDataFile}"/>
+                    <Button Text="Sensor data" VerticalOptions="Start" Grid.Row="0" Grid.Column="2" 
+                            Command="{Binding BindingContext.SensorDataCommand, Source={x:Reference Page}}" CommandParameter="{Binding SensorDataFile}"/>
+                </Grid>
+            </DataTemplate>
+        </CollectionView.ItemTemplate>
+    </CollectionView>
 </ContentPage>

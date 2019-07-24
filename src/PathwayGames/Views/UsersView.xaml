@@ -1,19 +1,32 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:b="clr-namespace:PathwayGames.Behaviors"
+             xmlns:c="clr-namespace:PathwayGames.Converters"
+             xmlns:controls="clr-namespace:PathwayGames.Controls"
              x:Class="PathwayGames.Views.UsersView"
+             x:Name="Page"
              Title="Users">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <c:CheckedChangedEventArgsConverter x:Key="CheckedChangedConverter" />
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    
     <ContentPage.ToolbarItems>
-        <ToolbarItem Text="Add" Command="{Binding AddCommand}"/>
+        <controls:HideableToolbarItem Text="Add" Command="{Binding AddCommand}" 
+                                      IsVisible="{Binding CurrentUserIsAdmin}" />
     </ContentPage.ToolbarItems>
+    
     <ContentPage.Content>
         <StackLayout Padding="10,0,10,0">
             <SearchBar Placeholder="Enter search term" x:Name="UserSearchBar"
                        SearchCommand="{Binding SearchCommand}" 
                        SearchCommandParameter="{Binding Source={x:Reference UserSearchBar}, Path=Text}" />
+            
             <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
                 <Label Text="User type:" />
-                <Picker SelectedItem="{Binding SelectedUserType}">
+                <Picker SelectedItem="{Binding SelectedUserType}" WidthRequest="90">
                     <Picker.Items>
                         <x:String>All</x:String>
                         <x:String>Admin</x:String>
@@ -21,8 +34,7 @@
                     </Picker.Items>
                 </Picker>
             </StackLayout>
-            <CollectionView ItemsSource="{Binding Users}" SelectionMode="Single" 
-                            SelectedItem="{Binding SelectedUser}" SelectionChangedCommand="{Binding SelectionChangedCommand}">
+            <CollectionView ItemsSource="{Binding Users}">
                 <CollectionView.EmptyView>
                     <Label Text="No users found!"/>
                 </CollectionView.EmptyView>
@@ -30,15 +42,22 @@
                     <DataTemplate>
                         <Grid Padding="0,5,0,5">
                             <Grid.ColumnDefinitions>
-                                <ColumnDefinition Width="100"/>
                                 <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="90"/>
+                                <ColumnDefinition Width="90"/>
                             </Grid.ColumnDefinitions>
                             <StackLayout Orientation="Vertical" HeightRequest="60" Grid.Row="0" Grid.Column="0">
                                 <Label Text="{Binding UserName}" FontAttributes="Bold"/>
                                 <Label Text="{Binding UserType}" TextColor="Gray"/>
                             </StackLayout>
-                            <CheckBox IsChecked="{Binding IsSelected, Mode=TwoWay}" 
-                                      VerticalOptions="Center" Grid.Row="0" Grid.Column="1" HorizontalOptions="End"/>
+                            
+                            <Button Grid.Row="0" Grid.Column="1" HorizontalOptions="End" Text="Select" WidthRequest="80"
+                                    Command="{Binding BindingContext.UserSelectedCommand, Source={x:Reference Page}}"
+                                    CommandParameter="{Binding .}"/>
+
+                            <Button Grid.Row="0" Grid.Column="2" HorizontalOptions="End" Text="Sessions" WidthRequest="80"
+                                    Command="{Binding BindingContext.GotoUserSessionsCommand, Source={x:Reference Page}}"
+                                    CommandParameter="{Binding .}"/>
                         </Grid>
                     </DataTemplate>
                 </CollectionView.ItemTemplate>

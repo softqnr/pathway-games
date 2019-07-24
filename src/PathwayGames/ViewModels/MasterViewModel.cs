@@ -11,11 +11,11 @@ namespace PathwayGames.ViewModels
 {
     public class MasterViewModel : ViewModelBase
     {
-        private string _userName;
+        private User _user;
 
-        public string UserName {
-            get => _userName;
-            set => SetProperty(ref _userName, value);
+        public User User {
+            get => _user;
+            set => SetProperty(ref _user, value);
         }
 
         private string _title;
@@ -41,10 +41,10 @@ namespace PathwayGames.ViewModels
 
         public MasterViewModel()
         {
-            UserName = App.SelectedUser.UserName;
+            User = App.SelectedUser;
 
             MessagingCenter.Subscribe<User>(this, "Selected", (user) => {
-                UserName = user.UserName;
+                User = user;
             });
 
             MenuItems = new ObservableCollection<NavMenuItem>(new[]

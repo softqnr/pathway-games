@@ -1,7 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
+using System.Globalization;
+using System.Linq;
+using System.Linq.Expressions;
 using System.Reflection;
-using System.Text;
 using System.Windows.Input;
 using Xamarin.Forms;
 
@@ -9,11 +10,14 @@ namespace PathwayGames.Behaviors
 {
     public class EventToCommandBehavior : BehaviorBase<View>
     {
-        Delegate eventHandler;
-        
-        public static readonly BindableProperty EventNameProperty = BindableProperty.Create("EventName", typeof(string), typeof(EventToCommandBehavior), null, propertyChanged: OnEventNameChanged);
-        public static readonly BindableProperty CommandProperty = BindableProperty.Create("Command", typeof(ICommand), typeof(EventToCommandBehavior), null);
-        public static readonly BindableProperty InputConverterProperty = BindableProperty.Create("Converter", typeof(IValueConverter), typeof(EventToCommandBehavior), null);
+        public static readonly BindableProperty EventNameProperty = BindableProperty.Create<EventToCommandBehavior, string>(p => p.EventName, null);
+        public static readonly BindableProperty CommandProperty = BindableProperty.Create<EventToCommandBehavior, ICommand>(p => p.Command, null);
+        public static readonly BindableProperty CommandParameterProperty = BindableProperty.Create<EventToCommandBehavior, object>(p => p.CommandParameter, null);
+        public static readonly BindableProperty EventArgsConverterProperty = BindableProperty.Create<EventToCommandBehavior, IValueConverter>(p => p.EventArgsConverter, null);
+        public static readonly BindableProperty EventArgsConverterParameterProperty = BindableProperty.Create<EventToCommandBehavior, object>(p => p.EventArgsConverterParameter, null);
+
+        private Delegate _handler;
+        private EventInfo _eventInfo;
 
         public string EventName
         {
@@ -27,112 +31,89 @@ namespace PathwayGames.Behaviors
             set { SetValue(CommandProperty, value); }
         }
 
-
-        //EventItemToMenuItemConverter _converter = new EventItemToMenuItemConverter();
-        public IValueConverter Converter
+        public object CommandParameter
         {
-            get
-            {
-                return (IValueConverter)GetValue(InputConverterProperty);
-            }
-            set { SetValue(InputConverterProperty, value); }
+            get { return GetValue(CommandParameterProperty); }
+            set { SetValue(CommandParameterProperty, value); }
         }
 
-        protected override void OnAttachedTo(View bindable)
+        public IValueConverter EventArgsConverter
         {
-            base.OnAttachedTo(bindable);
-            RegisterEvent(EventName);
+            get { return (IValueConverter)GetValue(EventArgsConverterProperty); }
+            set { SetValue(EventArgsConverterProperty, value); }
         }
 
-        protected override void OnDetachingFrom(View bindable)
+        public object EventArgsConverterParameter
         {
-            DeregisterEvent(EventName);
-            base.OnDetachingFrom(bindable);
+            get { return GetValue(EventArgsConverterParameterProperty); }
+            set { SetValue(EventArgsConverterParameterProperty, value); }
         }
 
-        void RegisterEvent(string name)
+        protected override void OnAttachedTo(View visualElement)
         {
-            if (string.IsNullOrWhiteSpace(name))
-            {
-                return;
-            }
+            base.OnAttachedTo(visualElement);
 
-            EventInfo eventInfo = AssociatedObject.GetType().GetRuntimeEvent(name);
-            if (eventInfo == null)
+            var events = AssociatedObject.GetType().GetRuntimeEvents().ToArray();
+            if (events.Any())
             {
-                throw new ArgumentException(string.Format("EventToCommandBehavior: Can't register the '{0}' event.", EventName));
+                _eventInfo = events.FirstOrDefault(e => e.Name == EventName);
+                if (_eventInfo == null)
+                    throw new ArgumentException(String.Format("EventToCommand: Can't find any event named '{0}' on attached type", EventName));
+
+                AddEventHandler(_eventInfo, AssociatedObject, OnFired);
             }
-            MethodInfo methodInfo = typeof(EventToCommandBehavior).GetTypeInfo().GetDeclaredMethod("OnEvent");
-            eventHandler = methodInfo.CreateDelegate(eventInfo.EventHandlerType, this);
-            eventInfo.AddEventHandler(AssociatedObject, eventHandler);
         }
 
-        void DeregisterEvent(string name)
+        protected override void OnDetachingFrom(View view)
         {
-            if (string.IsNullOrWhiteSpace(name))
-            {
-                return;
-            }
+            if (_handler != null)
+                _eventInfo.RemoveEventHandler(AssociatedObject, _handler);
 
-            if (eventHandler == null)
-            {
-                return;
-            }
-            EventInfo eventInfo = AssociatedObject.GetType().GetRuntimeEvent(name);
-            if (eventInfo == null)
-            {
-                throw new ArgumentException(string.Format("EventToCommandBehavior: Can't de-register the '{0}' event.", EventName));
-            }
-            eventInfo.RemoveEventHandler(AssociatedObject, eventHandler);
-            eventHandler = null;
+            base.OnDetachingFrom(view);
         }
 
-        void OnEvent(object sender, object eventArgs)
+        private void AddEventHandler(EventInfo eventInfo, object item, Action<object, EventArgs> action)
         {
-            object resolvedParameter = new object();
+            var eventParameters = eventInfo.EventHandlerType
+                .GetRuntimeMethods().First(m => m.Name == "Invoke")
+                .GetParameters()
+                .Select(p => Expression.Parameter(p.ParameterType))
+                .ToArray();
 
+            var actionInvoke = action.GetType()
+                .GetRuntimeMethods().First(m => m.Name == "Invoke");
+
+            _handler = Expression.Lambda(
+                eventInfo.EventHandlerType,
+                Expression.Call(Expression.Constant(action), actionInvoke, eventParameters[0], eventParameters[1]),
+                eventParameters
+            )
+            .Compile();
+
+            eventInfo.AddEventHandler(item, _handler);
+        }
+
+        private void OnFired(object sender, EventArgs eventArgs)
+        {
             if (Command == null)
                 return;
 
-            else if (Converter != null)
+            var parameter = CommandParameter;
+
+            if (eventArgs != null && eventArgs != EventArgs.Empty)
             {
-                resolvedParameter = Converter.Convert(eventArgs, typeof(object), null, null);
-            }
-            else
-            {
-                var arg = eventArgs as ItemTappedEventArgs;
-                if (arg == null)
+                parameter = eventArgs;
+
+                if (EventArgsConverter != null)
                 {
-                    resolvedParameter = eventArgs;
+                    parameter = EventArgsConverter.Convert(eventArgs, typeof(object), EventArgsConverterParameter, CultureInfo.CurrentUICulture);
                 }
-                else
-                {
-                    resolvedParameter = arg.Item;
-                }
-
-                //resolvedParameter = eventArgs;
             }
 
-            if (Command.CanExecute(resolvedParameter))
+            if (Command.CanExecute(parameter))
             {
-                Command.Execute(resolvedParameter);
+                Command.Execute(parameter);
             }
-        }
-
-
-        static void OnEventNameChanged(BindableObject bindable, object oldValue, object newValue)
-        {
-            var behavior = (EventToCommandBehavior)bindable;
-            if (behavior.AssociatedObject == null)
-            {
-                return;
-            }
-
-            string oldEventName = (string)oldValue;
-            string newEventName = (string)newValue;
-
-            behavior.DeregisterEvent(oldEventName);
-            behavior.RegisterEvent(newEventName);
         }
     }
 }

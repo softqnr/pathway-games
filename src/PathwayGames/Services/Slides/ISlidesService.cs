@@ -11,7 +11,7 @@ namespace PathwayGames.Services.Slides
         void CalculateGameScoreAndStats(Game game);
         ResponseOutcome EvaluateSlideResponse(Game game, Slide slide);
         TimeSpan CalculateBlankSlideTimeLeft(Slide slide);
-        Game Load(string filePath);
-        void Save(Game game);
+        Game Load(string fileName);
+        string Save(Game game);
     }
 }
