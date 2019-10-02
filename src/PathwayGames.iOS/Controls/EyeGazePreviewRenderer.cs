@@ -36,7 +36,7 @@ namespace PathwayGames.iOS.Controls
  
                 SetNativeControl(SceneView);
 
-                //SceneView.Delegate = new EyeGazeDetectionDelegate(SceneView);
+                SceneView.Delegate = new EyeGazeDetectionDelegate(SceneView);
                 SceneView.Session.Delegate = new SessionDelegate();
             }
 

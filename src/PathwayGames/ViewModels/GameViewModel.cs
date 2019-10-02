@@ -367,7 +367,7 @@ namespace PathwayGames.ViewModels
 
         private void CalculateEngangement()
         {
-            _game.ConfusionMatrix = _engangementService.CalculateConfusionMatrix(_game.Slides);
+            _game.Outcome.ConfusionMatrix = _engangementService.CalculateConfusionMatrix(_game.Slides);
         }
 
         private async Task PreloadImages()
