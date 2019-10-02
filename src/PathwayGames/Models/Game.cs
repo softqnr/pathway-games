@@ -30,6 +30,7 @@ namespace PathwayGames.Models
 
         public int Score { get; set; }
 
+        [JsonIgnore]
         public double ScorePercentage { get; set; }
 
         public TimeSpan AverageResponseTime { get; set; }
@@ -38,8 +39,10 @@ namespace PathwayGames.Models
 
         public TimeSpan AverageResponseTimeWrong { get; set; }
 
+        [JsonIgnore]
         public string GameDataFile { get; set; }
 
+        [JsonIgnore]
         public string SensorDataFile { get; set; }
 
         public Game(GameType gameType, UserGameSettings gameSettings, string userName, string  seed)

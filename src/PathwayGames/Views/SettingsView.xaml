@@ -17,6 +17,8 @@
                     <SwitchCell Text="Gyro / Acceleration" On="{Binding UserSettings.AccelerationSensor, Mode=TwoWay}"/>
                 </TableSection>
                 <TableSection Title="Game settings">
+                    <EntryCell Label="Slide count" 
+                               Text="{Binding UserSettings.SlideCount, Mode=TwoWay}" Keyboard="Numeric" />
                     <EntryCell Label="Slide display time" 
                                Text="{Binding UserSettings.SlideDisplayDuration, Mode=TwoWay}" Keyboard="Numeric" />
                     <EntryCell Label="Blank slide display time" 

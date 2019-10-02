@@ -40,19 +40,24 @@
 
             <Button Text="X" x:Name="TypeXButton" Image="" FontSize="Large" Command="{Binding TypeX}" Style="{StaticResource plainButton}"
                 Grid.Column = "0" Grid.Row = "0" Grid.ColumnSpan="2" BackgroundColor="{StaticResource menu_green}"  HorizontalOptions="Center"
-                    WidthRequest="{Binding Source={x:Reference TypeAXButton}, Path=Width}" HeightRequest="{Binding Source={x:Reference TypeXButton}, Path=Width}" />
+                    WidthRequest="{Binding Source={x:Reference TypeAXButton}, Path=Width}" 
+                    HeightRequest="{Binding Source={x:Reference TypeXButton}, Path=Width}" />
 
             <Button Text="Seek X" x:Name="SeekXButton" Image="" FontSize="Large" Command="{Binding TypeX}" Style="{StaticResource plainButton}"
-                    Grid.Column = "0" Grid.Row = "1" BackgroundColor="{StaticResource menu_blue}" HeightRequest="{Binding Source={x:Reference SeekXButton}, Path=Width}" />
+                    Grid.Column = "0" Grid.Row = "1" BackgroundColor="{StaticResource menu_blue}" 
+                    HeightRequest="{Binding Source={x:Reference SeekXButton}, Path=Width}" />
             
             <Button Text="AX" x:Name="TypeAXButton" Image="" FontSize="Large" Command="{Binding TypeAX}" Style="{StaticResource plainButton}"
-                    Grid.Column = "1" Grid.Row = "1" BackgroundColor="{StaticResource menu_pink}" HeightRequest="{Binding Source={x:Reference TypeAXButton}, Path=Width}" />
+                    Grid.Column = "1" Grid.Row = "1" BackgroundColor="{StaticResource menu_pink}" 
+                    HeightRequest="{Binding Source={x:Reference TypeAXButton}, Path=Width}" />
 
             <Button Text="Seek AX" x:Name="SeekAXButton" Image="" FontSize="Large" Command="{Binding TypeX}" Style="{StaticResource plainButton}"
-                    Grid.Column = "0" Grid.Row = "2" BackgroundColor="{StaticResource menu_purple}" HeightRequest="{Binding Source={x:Reference SeekAXButton}, Path=Width}" />
+                    Grid.Column = "0" Grid.Row = "2" BackgroundColor="{StaticResource menu_purple}"
+                    HeightRequest="{Binding Source={x:Reference SeekAXButton}, Path=Width}" />
 
             <Button Text="Seek AX with Quiz" x:Name="SeekAXQuizButton" Image="" FontSize="Large" Command="{Binding TypeX}" Style="{StaticResource plainButton}"
-                    Grid.Column = "1" Grid.Row = "2" BackgroundColor="{StaticResource menu_red}" HeightRequest="{Binding Source={x:Reference SeekAXQuizButton}, Path=Width}" />
+                    Grid.Column = "1" Grid.Row = "2" BackgroundColor="{StaticResource menu_red}" 
+                    HeightRequest="{Binding Source={x:Reference SeekAXQuizButton}, Path=Width}" />
 
         </Grid>
     </StackLayout>

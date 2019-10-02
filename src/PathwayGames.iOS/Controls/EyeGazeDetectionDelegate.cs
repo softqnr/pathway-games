@@ -100,6 +100,8 @@ namespace PathwayGames.iOS.Controls
         public void Update(ARFaceAnchor anchor)
         {
             DispatchQueue.MainQueue.DispatchAsync(() => {
+                if (!anchor.IsTracked)
+                    return;
                 // Render eye rays
                 eyeRNode.Transform = anchor.RightEyeTransform.ToSCNMatrix4();
                 eyeLNode.Transform = anchor.LeftEyeTransform.ToSCNMatrix4();
@@ -166,9 +168,9 @@ namespace PathwayGames.iOS.Controls
 
                 var distanceInCm = Math.Round(distance * 100, MidpointRounding.AwayFromZero);
 
-                // Send sensor data
-                MessagingCenter.Send<object, EyeGazeData>(this, "EyeSensorReading",  
-                    new EyeGazeData(DateTime.Now, screenX, screenY, distanceInCm));
+                // Send sensor data 
+                //MessagingCenter.Send<object, EyeGazeData>(this, "EyeSensorReading",  
+                //    new EyeGazeData(DateTime.Now, screenX, screenY, distanceInCm));
                 //System.Diagnostics.Debug.WriteLine($"Screen X: {screenX} - Y: {screenY} - Distance: {distanceInCm}cm");
             });
         }

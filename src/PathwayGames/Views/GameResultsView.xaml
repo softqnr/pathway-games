@@ -85,7 +85,7 @@
                     <Label.FormattedText>
                         <FormattedString>
                             <Span Text="Slide display time: " />
-                            <Span Text="{Binding Game.SlideDisplayDuration, Mode=OneWay}" />
+                            <Span Text="{Binding Game.GameSettings.SlideDisplayDuration, Mode=OneWay}" />
                             <Span Text=" seconds" />
                         </FormattedString>
                     </Label.FormattedText>

@@ -1,7 +1,7 @@
-﻿using PathwayGames.Controls;
+﻿using PathwayGames.Models;
 using System;
+using System.Collections.Generic;
 using System.IO;
-using System.Text;
 using Xamarin.Essentials;
 using Xamarin.Forms;
 
@@ -9,43 +9,140 @@ namespace PathwayGames.Services.Sensors
 {
     public class SensorLogWriterService : ISensorLogWriterService
     {
-        private StreamWriter _sw;
+        private static Queue<string> LogQueue;
 
-        public string FileName { get; private set; }
+        private int FlushAtAge = 2;
+
+        private int FlushAtQty = 500;
+
+        private DateTime FlushedAt;
+
+        public string MessangingCenterMessage { get; private set; }
+
+        public string LogItemSeparator { get; private set; }
+
+        public string LogPrefix { get; set; }
+
+        public string LogSuffix { get; set; }
+
+        public string LogPath { get; private set; }
+
+        public string LogFile { get; private set; }
+
+        public string LogFilePath { get => Path.Combine(LogPath, LogFile); }
 
         public bool IsMonitoring { get; private set; }
 
-        public void Start()
+        public SensorLogWriterService()
         {
-            string path = FileSystem.AppDataDirectory;
-            FileName = "EyeGaze" + Guid.NewGuid().ToString() + ".json";
-            string filePath = Path.Combine(path, FileName);
+            //Instance = new LogWriter();
+            LogQueue = new Queue<string>();
+            FlushedAt = DateTime.Now;
+        }
+        
+        public void Start(string logFile, string messangingCenterMessage)
+        {
+            Start(logFile, messangingCenterMessage, "");
+        }
+        
+        public void Start(string logFile, string messangingCenterMessage, string logItemSeparator)
+        {
+            LogPath = FileSystem.AppDataDirectory;
+            MessangingCenterMessage = messangingCenterMessage;
+            LogFile = logFile;
+            LogItemSeparator = logItemSeparator;
 
             IsMonitoring = true;
 
-            _sw = new StreamWriter(filePath, true, Encoding.UTF8);
-            
-            MessagingCenter.Subscribe<object, EyeGazeData>( this, "EyeSensorReading", (s, d) => {
-                //Device.BeginInvokeOnMainThread(() =>
-                //{
-                //sw.WriteLine(d.ToString());
-                OnReadingReceived(d);
-                //});
+            if (LogPrefix != "")
+            {
+                WriteToLog(LogPrefix);
+            }
+
+            MessagingCenter.Subscribe<object, FaceAnchorData>( this, MessangingCenterMessage, (s, d) => {
+                WriteToLog(d.ToString() + LogItemSeparator);
             });
         }
 
-        private void OnReadingReceived(EyeGazeData eyeGazeData)
+        private void WriteToLog(string reading)
         {
-            _sw.WriteLine(eyeGazeData.ToString());
+            lock (LogQueue)
+            {
+                // Create log
+                //Log log = new Log(message);
+                LogQueue.Enqueue(reading);
+
+                // Check if should flush
+                if (LogQueue.Count >= FlushAtQty || CheckTimeToFlush())
+                {
+                    FlushLogToFile();
+                }
+            }
         }
 
         public void Stop()
         {
-            MessagingCenter.Unsubscribe<object, EyeGazeData>(this, "EyeSensorReading");
+            MessagingCenter.Unsubscribe<object, FaceAnchorData>(this, MessangingCenterMessage);
             IsMonitoring = false;
-            FileName = "";
-            _sw.Flush();
-            _sw.Close();
+
+            ForceFlush();
+
+            if (LogItemSeparator != "")
+            {
+                RemoveLastSeperatorAndAppendSuffix(LogSuffix);
+            }
+            
+        }
+
+        public void ForceFlush()
+        {
+            FlushLogToFile();
+        }
+
+        private bool CheckTimeToFlush()
+        {
+            TimeSpan time = DateTime.Now - FlushedAt;
+            if (time.TotalSeconds >= FlushAtAge)
+            {
+                FlushedAt = DateTime.Now;
+                return true;
+            }
+            return false;
+        }
+
+        private void FlushLogToFile()
+        {
+            if (LogQueue.Count > 0) {
+                using (var writer = new StreamWriter(LogFilePath, true, System.Text.Encoding.UTF8))
+                {
+                    while (LogQueue.Count > 0) {
+                        // Get entry to log
+                        string reading = LogQueue.Dequeue();
+                        // Log to file
+                        writer.WriteLine(reading);
+                    }
+                }
+            }
+        }
+
+        private void RemoveLastSeperatorAndAppendSuffix(string logSuffix)
+        {
+            using (FileStream fs = new FileStream(LogFilePath, FileMode.Open, FileAccess.ReadWrite))
+            {
+                int seperatorByteCount = System.Text.Encoding.UTF8.GetByteCount(LogItemSeparator + Environment.NewLine);
+                fs.Position = fs.Seek(seperatorByteCount * -1, SeekOrigin.End);
+
+                if (logSuffix != "")
+                {
+                    foreach (byte chr in System.Text.Encoding.UTF8.GetBytes(logSuffix))
+                    {
+                        fs.WriteByte(chr);
+                    }
+                }
+
+                fs.SetLength(fs.Position);
+                fs.Close();
+            }
         }
     }
 }

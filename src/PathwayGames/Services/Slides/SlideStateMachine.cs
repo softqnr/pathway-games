@@ -17,14 +17,14 @@ namespace PathwayGames.Services.Slides
         Start, NextSlide, CorrectCommision, WrongCommision, Omission, NoSlides, SlideFinished, ShowBlank, Pause, Resume
     }
 
-    public class StateMachine : StateMachine<States, Triggers>, INotifyPropertyChanged
+    public class SlideStateMachine : StateMachine<States, Triggers>, INotifyPropertyChanged
     {
         public event PropertyChangedEventHandler PropertyChanged;
 
         private readonly TriggerWithParameters<double> _showBlankTrigger;
         private readonly TriggerWithParameters<double> _showBlankCancelableTrigger;
 
-        public StateMachine(Func<Task> createGameAction,
+        public SlideStateMachine(Func<Task> createGameAction,
             Func<Task> startGameAction,
             Func<Task> nextSlideAction,
             Func<Task> evaluateSlideResponseAction,
@@ -61,6 +61,7 @@ namespace PathwayGames.Services.Slides
             Configure(States.ShowRewardSlide)
                 .OnEntryAsync(async () => await rewardSlideAction())
                 .Permit(Triggers.ShowBlank, States.ShowBlankSlide) //
+                .Ignore(Triggers.NextSlide) ////
                 .Ignore(Triggers.SlideFinished)
                 .Ignore(Triggers.CorrectCommision);
 
@@ -76,15 +77,14 @@ namespace PathwayGames.Services.Slides
                 .Ignore(Triggers.CorrectCommision);
 
             Configure(States.End)
-                .OnEntryAsync(async() => await endAction());
-            
+                //.OnActivateAsync(async() => await endAction())
+                .Ignore(Triggers.CorrectCommision);
+
+
             OnTransitioned
-              (
-                (t) =>
-                {
-                    OnPropertyChanged("State");
-                }
-              );
+            (
+                (t) => { OnPropertyChanged("State"); }
+            );
 
             //used to debug commands and UI components
             OnTransitioned

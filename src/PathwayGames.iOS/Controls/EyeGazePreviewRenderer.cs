@@ -28,7 +28,7 @@ namespace PathwayGames.iOS.Controls
                     ContentMode = UIViewContentMode.ScaleToFill,
                     UserInteractionEnabled = true,
                     TranslatesAutoresizingMaskIntoConstraints = false,
-                    AutomaticallyUpdatesLighting = true,
+                    AutomaticallyUpdatesLighting = true, 
                     // UITapGestureRecognizer =  new UITapGestureRecognizer(),
                     // Frame = new CGRect(View.Frame.X, View.Frame.Y, View.Frame.Width, View.Frame.Height),
                     // ShowsStatistics = true, // Show stats
@@ -36,7 +36,8 @@ namespace PathwayGames.iOS.Controls
  
                 SetNativeControl(SceneView);
 
-                SceneView.Delegate = new EyeGazeDetectionDelegate(SceneView);
+                //SceneView.Delegate = new EyeGazeDetectionDelegate(SceneView);
+                SceneView.Session.Delegate = new SessionDelegate();
             }
 
             if (e.OldElement != null)

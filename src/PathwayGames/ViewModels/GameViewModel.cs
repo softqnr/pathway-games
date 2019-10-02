@@ -40,7 +40,7 @@ namespace PathwayGames.ViewModels
         private CancellationTokenSource _cts;
 
         private Slide CurrentSlide { get; set; }
-        public StateMachine StateMachine { get; private set; }
+        public SlideStateMachine StateMachine { get; private set; }
 
         // Bindable properties
         public string Title
@@ -84,7 +84,7 @@ namespace PathwayGames.ViewModels
             get => _seed;
             set => SetProperty(ref _seed, value);
         }
-        
+
         public ImageSource EyeGazeIconImageSource
         {
             get => _eyeGazeIconImageSource;
@@ -134,7 +134,7 @@ namespace PathwayGames.ViewModels
             _engangementService = engangementService;
 
             // Create StateMachine
-            StateMachine = new StateMachine
+            StateMachine = new SlideStateMachine
             (
                 createGameAction: async () => await CreateGame(),
                 startGameAction: async () => await StartGame(),
@@ -145,30 +145,31 @@ namespace PathwayGames.ViewModels
                 rewardSlideAction: async () => await ShowRewardSlide(),
                 endAction: async () => await EndGame()
             );
-
-            _userName = App.SelectedUser.UserName;
+            //
+            //StateMachine.OnTransitionedAsync((t) => await LogTransitionAsync(t.));
+             _userName = App.SelectedUser.UserName;
             // TODO: This should come from parameters
             _seed = "XYZ";
         }
-
+        //private async Task LogTransitionAsync(StateMachine<State, Trigger>.Transition arg) { }
         public async Task OnButtonTapped(Point p)
         {
             System.Diagnostics.Debug.WriteLine("({0}/{1}) - {2:HH:mm:ss.fff} - OnButtonTapped()", SlideIndex, SlideCount, DateTime.Now);
             // Save response
             SaveResponse(p);
+            // Ommit response for reward slide
+            if (CurrentSlide.SlideType == SlideType.Reward)
+                return;
             // Handle response
             var response = _slidesService.EvaluateSlideResponse(_game, CurrentSlide);
-            switch (response)
+            if (response == ResponseOutcome.CorrectCommission)
             {
-                case ResponseOutcome.CorrectCommission:
-                    // Play ding sound
-                    await _soundService.PlaySoundAsync("ding.mp3");
-                    await StateMachine.FireAsync(Triggers.CorrectCommision); // Cancel blank immediately
-                    break;
-                case ResponseOutcome.WrongCommission:
-                    // Play mistake sound
-                    await _soundService.PlaySoundAsync("mistake.mp3");
-                    break;
+                await StateMachine.FireAsync(Triggers.CorrectCommision); // Cancel blank immediately
+                // Play ding sound
+                await _soundService.PlaySoundAsync("ding.mp3");
+            } else if(response ==  ResponseOutcome.WrongCommission) { 
+                // Play mistake sound
+                await _soundService.PlaySoundAsync("mistake.mp3");
             }
         }
 
@@ -328,24 +329,28 @@ namespace PathwayGames.ViewModels
 
         public async Task EndGame()
         {
-            // Get sensor filename
-            _game.SensorDataFile = _sensorLowWriterService.FileName;
+            System.Diagnostics.Debug.WriteLine("({0}) - {1:HH:mm:ss.fff}", "EndGame()", DateTime.Now);
             // Game finished
             StopSensorRecording();
+            // Set sensor data filename
+            _game.SensorDataFile = _sensorLowWriterService.LogFilePath;
             _game.EndDate = DateTime.Now;
             // Calculate engangement
             CalculateEngangement();
             // Calculate game stats
             _slidesService.CalculateGameScoreAndStats(_game);
             // Save game data to file
-            _game.GameDataFile = _slidesService.Save(_game);
+            _slidesService.Save(_game);
             // Save game session to db
             await _userService.SaveGameSessionData(App.SelectedUser.Id, _game, _game.GameDataFile, _game.SensorDataFile);
         }
 
         private void StartSensorRecording()
         {
-            _sensorLowWriterService.Start();
+            _sensorLowWriterService.LogPrefix = "{\"FaceAnchors\": [";
+            _sensorLowWriterService.LogSuffix = "] }";
+
+            _sensorLowWriterService.Start("sensor_" + Guid.NewGuid().ToString() + ".json", "EyeSensorReading", ",");
         }
 
         private void StopSensorRecording()
@@ -376,7 +381,7 @@ namespace PathwayGames.ViewModels
                 Enum.TryParse<GameType>(navigationData.ToString(), out var gameType))
             {
                 _gameType = gameType;
-                Title = _gameType.ToString() + " Game";
+                Title = $"{_gameType.ToString()} Game";
 
                 await CreateGame();
                 await StateMachine.FireAsync(Triggers.Start);
@@ -391,6 +396,7 @@ namespace PathwayGames.ViewModels
             {
                 await Task.Delay(400);
             }
+            await EndGame();
             // Navigate to result view
             await NavigationService.NavigateToAsync<GameResultsViewModel>(_game);
             await NavigationService.RemoveLastFromBackStackAsync();

@@ -1,11 +1,41 @@
 ﻿using ARKit;
+using CoreFoundation;
+using PathwayGames.Models;
 using System;
+using Xamarin.Forms;
+using PathwayGames.iOS.Extensions;
 
 namespace PathwayGames.iOS.Controls
 {
     public class SessionDelegate : ARSessionDelegate
     {
         public SessionDelegate() { }
+
+        public override void DidUpdateFrame(ARSession session, ARFrame frame)
+        {
+            DispatchQueue.MainQueue.DispatchAsync(() =>
+            {
+                foreach (ARAnchor anchor in frame.Anchors){
+                    var faceAnchor = anchor as ARFaceAnchor;
+                    if (faceAnchor != null) {
+                        //System.Diagnostics.Debug.WriteLine("Reading received: " + DateTime.Now);
+                        // Log
+                        MessagingCenter.Send<object, FaceAnchorData>(this, "EyeSensorReading",
+                            new FaceAnchorData(frame.Timestamp, faceAnchor.Transform.ToFloatMatrix4(),
+                                faceAnchor.LeftEyeTransform.ToFloatMatrix4(),
+                                faceAnchor.RightEyeTransform.ToFloatMatrix4(),
+                                faceAnchor.LookAtPoint.ToFloatVector3(),
+                                faceAnchor.BlendShapes.ToDictionary()
+                            ));
+                   
+                    }
+                }
+                // Important do not remove
+                frame.Dispose();
+            });
+            
+        }
+
         public override void CameraDidChangeTrackingState(ARSession session, ARCamera camera)
         {
             var state = "";
@@ -39,8 +69,7 @@ namespace PathwayGames.iOS.Controls
                     break;
             }
 
-            // Inform user
-            Console.WriteLine("{0} {1}", state, reason);
+            System.Diagnostics.Debug.WriteLine("{0} {1}", state, reason);
         }
     }
 }

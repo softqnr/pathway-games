@@ -27,10 +27,10 @@ namespace PathwayGames.Models
 
         public double H
         {
-            get => CorrectCommission / TotalPresses;
+            get => (TotalPresses > 0) ? CorrectCommission / TotalPresses : 0;
         }
         public double FA {
-            get => WrongCommission / TotalPresses;
+            get => (TotalPresses > 0) ? WrongCommission / TotalPresses : 0;
         }
 
         public ConfusionMatrix(List<Slide> slides)

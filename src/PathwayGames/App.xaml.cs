@@ -29,7 +29,7 @@ namespace PathwayGames
         public static int UserId;
         public static User SelectedUser;
 
-        public static UnityContainer Container { get; private set; }
+        public static IUnityContainer Container { get; private set; }
         public readonly static INavigationService NavigationService = new NavigationService();
         public App()
         {
@@ -66,7 +66,7 @@ namespace PathwayGames
 
         private void InitializeDI()
         {
-            Container = new UnityContainer();
+            Container = new UnityContainer().AddExtension(new ForceActivation()); // IOS bug fix see https://github.com/unitycontainer/container/issues/150
 
             // Data repositories
             Container.RegisterType<IRepository<User>, Repository<User>>(new InjectionConstructor(DatabaseFilePath));

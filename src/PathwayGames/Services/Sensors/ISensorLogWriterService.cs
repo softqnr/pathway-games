@@ -2,11 +2,21 @@
 {
     public interface ISensorLogWriterService
     {
-        string FileName { get; }
+        string LogItemSeparator { get; }
+
+        string LogPath { get; }
+
+        string LogFilePath { get; }
+
+        string LogPrefix { get; set; }
+
+        string LogSuffix { get; set; }
 
         bool IsMonitoring { get; }
 
-        void Start();
+        void Start(string logFile, string messangingCenterMessage);
+
+        void Start(string logFile, string messangingCenterMessage, string separetor);
 
         void Stop();
     }

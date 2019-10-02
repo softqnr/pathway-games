@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using PathwayGames.Infrastructure.Json;
+using System;
 using Xamarin.Forms;
 
 namespace PathwayGames.Models
@@ -6,7 +8,10 @@ namespace PathwayGames.Models
     public class ButtonPress
     {
         public int? SlideIndex { get; set; }
+
+        [JsonConverter(typeof(UnixTimestampConverter))]
         public DateTime Time { get; set; }
+
         public Point Coordinates { get; set; }
 
         public override string ToString()

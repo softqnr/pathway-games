@@ -1,4 +1,5 @@
 ﻿using Newtonsoft.Json;
+using PathwayGames.Infrastructure.Json;
 using PathwayGames.Models;
 using PathwayGames.Models.Enums;
 using System;
@@ -67,7 +68,6 @@ namespace PathwayGames.Services.Slides
             for (int i = 0; i < (int)gameSettings.SlideCount * 0.7; i++)
             {
                 SlideCollection.Add(new Slide(SlideType.X, gameSettings.SlideDisplayDuration) {
-                    Name = "Type X",
                     Image = XSlideImage,
                     BlankDuration = GetRandomNumber(gameSettings.BlankSlideDisplayTimes)
                 });
@@ -76,7 +76,6 @@ namespace PathwayGames.Services.Slides
             for (int i = 0; i < (int)gameSettings.SlideCount * 0.3; i++)
             {
                 SlideCollection.Add(new Slide(SlideType.Y, gameSettings.SlideDisplayDuration) {
-                    Name = "Distractor Y",
                     Image = YDistractorSlideImage,
                     BlankDuration = GetRandomNumber(gameSettings.BlankSlideDisplayTimes)
                 });
@@ -94,26 +93,26 @@ namespace PathwayGames.Services.Slides
             // AX
             for (int i = 0; i < (int)gameSettings.SlideCount * 0.7; i++)
             {
-                SlideCollection.Add(new Slide(SlideType.A, gameSettings.SlideDisplayDuration) { Name = "Type A", Image = "alex_the_alien.jpg", BlankDuration = GetRandomNumber(gameSettings.BlankSlideDisplayTimes) });
-                SlideCollection.Add(new Slide(SlideType.X, gameSettings.SlideDisplayDuration) { Name = "Type X", Image = XSlideImage, BlankDuration = GetRandomNumber(gameSettings.BlankSlideDisplayTimes) });
+                SlideCollection.Add(new Slide(SlideType.A, gameSettings.SlideDisplayDuration) { Image = "alex_the_alien.jpg", BlankDuration = GetRandomNumber(gameSettings.BlankSlideDisplayTimes) });
+                SlideCollection.Add(new Slide(SlideType.X, gameSettings.SlideDisplayDuration) { Image = XSlideImage, BlankDuration = GetRandomNumber(gameSettings.BlankSlideDisplayTimes) });
             }
             // BY
             for (int i = 0; i < (int)gameSettings.SlideCount * 0.1; i++)
             {
-                SlideCollection.Add(new Slide(SlideType.B, gameSettings.SlideDisplayDuration) { Name = "Primer B", Image = "alex_the_alien.jpg", BlankDuration = GetRandomNumber(gameSettings.BlankSlideDisplayTimes) });
-                SlideCollection.Add(new Slide(SlideType.Y, gameSettings.SlideDisplayDuration) { Name = "Type Y", Image = YDistractorSlideImage, BlankDuration = GetRandomNumber(gameSettings.BlankSlideDisplayTimes) });
+                SlideCollection.Add(new Slide(SlideType.B, gameSettings.SlideDisplayDuration) { Image = "alex_the_alien.jpg", BlankDuration = GetRandomNumber(gameSettings.BlankSlideDisplayTimes) });
+                SlideCollection.Add(new Slide(SlideType.Y, gameSettings.SlideDisplayDuration) { Image = YDistractorSlideImage, BlankDuration = GetRandomNumber(gameSettings.BlankSlideDisplayTimes) });
             }
             // AY
             for (int i = 0; i < (int)gameSettings.SlideCount * 0.1; i++)
             {
-                SlideCollection.Add(new Slide(SlideType.A, gameSettings.SlideDisplayDuration) { Name = "Type A", Image = "alex_the_alien.jpg", BlankDuration = GetRandomNumber(gameSettings.BlankSlideDisplayTimes) });
-                SlideCollection.Add(new Slide(SlideType.Y, gameSettings.SlideDisplayDuration) { Name = "Type Y", Image = YDistractorSlideImage, BlankDuration = GetRandomNumber(gameSettings.BlankSlideDisplayTimes) });
+                SlideCollection.Add(new Slide(SlideType.A, gameSettings.SlideDisplayDuration) { Image = "alex_the_alien.jpg", BlankDuration = GetRandomNumber(gameSettings.BlankSlideDisplayTimes) });
+                SlideCollection.Add(new Slide(SlideType.Y, gameSettings.SlideDisplayDuration) { Image = YDistractorSlideImage, BlankDuration = GetRandomNumber(gameSettings.BlankSlideDisplayTimes) });
             }
             // BX
             for (int i = 0; i < (int)gameSettings.SlideCount * 0.1; i++)
             {
-                SlideCollection.Add(new Slide(SlideType.B, gameSettings.SlideDisplayDuration) { Name = "Primer B", Image = "alex_the_alien.jpg", BlankDuration = GetRandomNumber(gameSettings.BlankSlideDisplayTimes) });
-                SlideCollection.Add(new Slide(SlideType.X, gameSettings.SlideDisplayDuration) { Name = "Type X", Image = XSlideImage, BlankDuration = GetRandomNumber(gameSettings.BlankSlideDisplayTimes) });
+                SlideCollection.Add(new Slide(SlideType.B, gameSettings.SlideDisplayDuration) { Image = "alex_the_alien.jpg", BlankDuration = GetRandomNumber(gameSettings.BlankSlideDisplayTimes) });
+                SlideCollection.Add(new Slide(SlideType.X, gameSettings.SlideDisplayDuration) { Image = XSlideImage, BlankDuration = GetRandomNumber(gameSettings.BlankSlideDisplayTimes) });
             }
 
             // Generate random number generator
@@ -127,7 +126,6 @@ namespace PathwayGames.Services.Slides
             Random random = new Random();
            
             return new Slide(SlideType.Reward, displayDuration) {
-                Name = "Reward",
                 Image = RewardSlideImages[random.Next(RewardSlideImages.Length - 1)],
                 Sound = "success.mp3"
             };
@@ -146,12 +144,18 @@ namespace PathwayGames.Services.Slides
             //string path = Environment.GetFolderPath(Environment.SpecialFolder.Personal);
             string fileName = Guid.NewGuid().ToString() + ".json";
             game.GameDataFile = fileName;
+            //game.SensorDataFile
             string filePath = Path.Combine(path, fileName);
             using (var file = File.Open(filePath, FileMode.Create, FileAccess.Write))
             {
                 using (var sw = new StreamWriter(file, Encoding.UTF8))
                 {
-                    sw.Write(JsonConvert.SerializeObject(game));
+                    // Ignore IsEmpty
+                    var settings = new JsonSerializerSettings
+                    {
+                        ContractResolver = ShouldSerializeContractResolver.Instance
+                    };
+                    sw.Write(JsonConvert.SerializeObject(game, Formatting.Indented, settings));
                 }
             }
             return fileName;
