@@ -48,8 +48,9 @@ namespace PathwayGames.Services.Excel
 
             // Data
             InsertDataIntoSheet(spreadsheetDocument, "CPT Game Results", game);
+
             // Confusion matrix
-            InsertConfussionMatrixDataIntoSheet(spreadsheetDocument, "Confusion Matrix", game.ConfusionMatrix);
+            InsertConfussionMatrixDataIntoSheet(spreadsheetDocument, "Confusion Matrix", game.Outcome.ConfusionMatrix);
 
             spreadsheetDocument.Close();
             

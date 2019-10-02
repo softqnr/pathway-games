@@ -164,22 +164,22 @@ namespace PathwayGames.Services.Slides
         public void CalculateGameScoreAndStats(Game game)
         {
             // Score
-            game.Score = game.Slides.Select(x => x.Points).Sum();
+            game.Outcome.Score = game.Slides.Select(x => x.Points).Sum();
             // ScorePercentage
             int correctCount = game.Slides.Where(x => x.ResponseOutcome == ResponseOutcome.CorrectCommission ||
                                                       x.ResponseOutcome == ResponseOutcome.CorrectOmission).Count();
             int wrongCount = game.Slides.Count - correctCount;
-            game.ScorePercentage = ((double)(correctCount - wrongCount) / game.Slides.Count) * 100;
+            game.Outcome.ScorePercentage = ((double)(correctCount - wrongCount) / game.Slides.Count) * 100;
             // Average Response Time
-            game.AverageResponseTime = TimeSpan.FromMilliseconds(game.Slides.
+            game.Outcome.AverageResponseTime = TimeSpan.FromMilliseconds(game.Slides.
                 Where(x => x.ResponseOutcome == ResponseOutcome.CorrectCommission || x.ResponseOutcome == ResponseOutcome.WrongCommission)
                 .Select(x => x.ResponseTime.TotalMilliseconds).DefaultIfEmpty().Average());
             // Average Response Time Correct
-            game.AverageResponseTimeCorrect = TimeSpan.FromMilliseconds(game.Slides.
+            game.Outcome.AverageResponseTimeCorrect = TimeSpan.FromMilliseconds(game.Slides.
                 Where(x => x.ResponseOutcome == ResponseOutcome.CorrectCommission)
                 .Select(x => x.ResponseTime.TotalMilliseconds).DefaultIfEmpty().Average());
             // Average Response Time Wrong
-            game.AverageResponseTimeWrong = TimeSpan.FromMilliseconds(game.Slides.
+            game.Outcome.AverageResponseTimeWrong = TimeSpan.FromMilliseconds(game.Slides.
                 Where(x => x.ResponseOutcome == ResponseOutcome.WrongCommission)
                 .Select(x => x.ResponseTime.TotalMilliseconds).DefaultIfEmpty().Average());
         }

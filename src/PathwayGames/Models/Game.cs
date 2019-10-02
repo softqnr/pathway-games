@@ -14,6 +14,8 @@ namespace PathwayGames.Models
 
         public UserGameSettings GameSettings { get; set; }
 
+        public Outcome Outcome { get; set; }
+
         public string UserName { get; set; }
 
         public string Seed { get; set; }
@@ -26,19 +28,6 @@ namespace PathwayGames.Models
 
         public List<ButtonPress> ButtonPresses { get; set; }
 
-        public ConfusionMatrix ConfusionMatrix { get; set; }
-
-        public int Score { get; set; }
-
-        [JsonIgnore]
-        public double ScorePercentage { get; set; }
-
-        public TimeSpan AverageResponseTime { get; set; }
-
-        public TimeSpan AverageResponseTimeCorrect { get; set; }
-
-        public TimeSpan AverageResponseTimeWrong { get; set; }
-
         [JsonIgnore]
         public string GameDataFile { get; set; }
 
@@ -47,6 +36,8 @@ namespace PathwayGames.Models
 
         public Game(GameType gameType, UserGameSettings gameSettings, string userName, string  seed)
         {
+            Outcome = new Outcome();
+
             GameType = gameType;
             GameSettings = gameSettings;
             UserName = userName;

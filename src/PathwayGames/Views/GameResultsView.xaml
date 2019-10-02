@@ -25,9 +25,9 @@
                 <Label.FormattedText>
                     <FormattedString>
                         <Span Text="Points: " FontSize="Small" />
-                        <Span Text="{Binding Game.Score, Mode=OneWay}" FontSize="Small" />
+                        <Span Text="{Binding Game.Outcome.Score, Mode=OneWay}" FontSize="Small" />
                         <Span Text=" Score: " FontSize="Small" />
-                        <Span Text="{Binding Game.ScorePercentage, Mode=OneWay}" FontSize="Small" />
+                        <Span Text="{Binding Game.Outcome.ScorePercentage, Mode=OneWay}" FontSize="Small" />
                         <Span Text="%" FontSize="Small" />
                         </FormattedString>
                 </Label.FormattedText>
@@ -51,22 +51,22 @@
             <Label Text="Confusion Matrix" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" HorizontalOptions="Center" FontSize="Title"/>
             <Label Text="Correct commision" Grid.Row="1" Grid.Column="0" HorizontalOptions="Center"/>
             <Frame Grid.Row="2" Grid.Column="0" Padding="50" HasShadow="False" HorizontalOptions="Center" VerticalOptions="Center" BackgroundColor="PaleGreen">
-                <Label Text="{Binding Game.ConfusionMatrix.CorrectCommission}" FontSize="Title"/>
+                    <Label Text="{Binding Game.Outcome.ConfusionMatrix.CorrectCommission}" FontSize="Title"/>
             </Frame>
 
             <Label Text="Wrong commision" Grid.Row="1" Grid.Column="1" HorizontalOptions="Center" />
             <Frame Grid.Row="2" Grid.Column="1" Padding="50" HasShadow="False" HorizontalOptions="Center" VerticalOptions="Center" BackgroundColor="PaleVioletRed">
-                 <Label Text="{Binding Game.ConfusionMatrix.WrongCommission}" FontSize="Title"/>
+                    <Label Text="{Binding Game.Outcome.ConfusionMatrix.WrongCommission}" FontSize="Title"/>
             </Frame>
 
             <Label Text="Wrong ommisions" Grid.Row="3" Grid.Column="0" HorizontalOptions="Center" />
             <Frame Grid.Row="4" Grid.Column="0" Padding="50" HasShadow="False" HorizontalOptions="Center" VerticalOptions="Center" BackgroundColor="PaleVioletRed">
-                 <Label Text="{Binding Game.ConfusionMatrix.WrongOmission}" FontSize="Title"/>
+                    <Label Text="{Binding Game.Outcome.ConfusionMatrix.WrongOmission}" FontSize="Title"/>
             </Frame>
 
             <Label Text="Correct ommisions" Grid.Row="3" Grid.Column="1" HorizontalOptions="Center" />
             <Frame Grid.Row="4" Grid.Column="1" Padding="50" HasShadow="False" HorizontalOptions="Center" VerticalOptions="Center" BackgroundColor="PaleGreen">
-                <Label Text="{Binding Game.ConfusionMatrix.CorrectOmission}" FontSize="Title"/>
+                    <Label Text="{Binding Game.Outcome.ConfusionMatrix.CorrectOmission}" FontSize="Title"/>
             </Frame>
         </Grid>
             <StackLayout Margin="0,5,0,5">
@@ -75,7 +75,7 @@
                     <Label.FormattedText>
                         <FormattedString>
                             <Span Text="Average response time: " />
-                            <Span Text="{Binding Game.AverageResponseTime, Mode=OneWay, StringFormat='{}{0:ss\\.fff}'}" />
+                            <Span Text="{Binding Game.Outcome.AverageResponseTime, Mode=OneWay, StringFormat='{}{0:ss\\.fff}'}" />
                             <Span Text=" seconds" />
                         </FormattedString>
                     </Label.FormattedText>
