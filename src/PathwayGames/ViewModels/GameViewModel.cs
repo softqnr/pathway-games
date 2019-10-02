@@ -301,7 +301,7 @@ namespace PathwayGames.ViewModels
             EyeGazeIconImageSource = ImageSource.FromFile(_gameSettings.EyeGazeSensor ? "icon_eye.png" : "icon_eye_off.png");
             EEGIconImageSource = ImageSource.FromFile(_gameSettings.EEGSensor ? "icon_head.png" : "icon_head_off.png");
             // Create game
-            _game = _slidesService.Generate(_gameType, _gameSettings, App.SelectedUser.UserName, _seed);
+            _game = _slidesService.Generate(_gameType, _gameSettings, App.SelectedUser.Id, App.SelectedUser.UserName, _seed);
             SlideIndex = 0;
             SlideCount = _game.Slides.Count;
 
@@ -310,7 +310,7 @@ namespace PathwayGames.ViewModels
 
         public async Task StartGame()
         {
-            _game.StartDate = DateTime.Now;
+            _game.SessionData.StartDate = DateTime.Now;
             // Start sensor recording
             StartSensorRecording();
             // Start game
@@ -334,7 +334,7 @@ namespace PathwayGames.ViewModels
             StopSensorRecording();
             // Set sensor data filename
             _game.SensorDataFile = _sensorLowWriterService.LogFilePath;
-            _game.EndDate = DateTime.Now;
+            _game.SessionData.EndDate = DateTime.Now;
             // Calculate engangement
             CalculateEngangement();
             // Calculate game stats

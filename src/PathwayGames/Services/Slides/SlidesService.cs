@@ -17,13 +17,13 @@ namespace PathwayGames.Services.Slides
         const string YDistractorSlideImage = "berry_the_dog.jpg";
         readonly string[] RewardSlideImages = new[] { "reward_animation_wow.gif" };
 
-    public Game Generate(GameType gameType, UserGameSettings gameSettings, string userName, string seed)
+    public Game Generate(GameType gameType, UserGameSettings gameSettings, long userId, string userName, string seed)
         {
            if (string.IsNullOrWhiteSpace(seed))
                 seed = CreateRandomSeed();
 
             // Create game
-            Game game = new Game(gameType, gameSettings, userName, seed);
+            Game game = new Game(gameType, gameSettings, userId, userName, seed);
 
             // Pick game slides
             switch (gameType)

@@ -1,4 +1,5 @@
-﻿using SQLite;
+﻿using Newtonsoft.Json;
+using SQLite;
 using SQLiteNetExtensions.Attributes;
 
 namespace PathwayGames.Models
@@ -6,6 +7,7 @@ namespace PathwayGames.Models
     [Table("UserGameSettings")]
     public class UserGameSettings : ModelBase
     {
+        [JsonIgnore]
         [Indexed]
         [ForeignKey(typeof(User))]
         public long UserId { get; set; }

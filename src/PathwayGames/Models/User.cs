@@ -34,9 +34,9 @@ namespace PathwayGames.Models
         public UserGameSession AddGameSession(Game game, string gameDataFile, string sensorDataFile)
         {
             UserGameSession gameSession = new UserGameSession(this,
-                game.GameType.ToString(),
-                game.StartDate,
-                game.EndDate.Value,
+                game.SessionData.GameType.ToString(),
+                game.SessionData.StartDate,
+                game.SessionData.EndDate.Value,
                 gameDataFile,
                 sensorDataFile);
 

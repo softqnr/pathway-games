@@ -12,11 +12,11 @@
             <Label FontSize="Large" HorizontalOptions="Center" VerticalOptions="End">
                 <Label.FormattedText>
                     <FormattedString>
-                        <Span Text="{Binding Game.UserName, Mode=OneWay}" FontSize="Large" />
+                            <Span Text="{Binding Game.SessionData.UserName, Mode=OneWay}" FontSize="Large" />
                         <Span Text=" - " FontSize="Large" />
-                        <Span Text="{Binding  Game.Seed, Mode=OneWay}" FontSize="Large" />
+                            <Span Text="{Binding  Game.SessionData.Seed, Mode=OneWay}" FontSize="Large" />
                         <Span Text=" - " FontSize="Large" />
-                        <Span Text="{Binding Game.StartDate, Mode=OneWay, StringFormat='{}{0:dd/MM/yyyy}'}" FontSize="Large" />
+                            <Span Text="{Binding Game.SessionData.StartDate, Mode=OneWay, StringFormat='{}{0:dd/MM/yyyy}'}" FontSize="Large" />
                     </FormattedString>
                 </Label.FormattedText>
             </Label>
