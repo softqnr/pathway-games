@@ -188,7 +188,7 @@ namespace PathwayGames.Services.Slides
         {
             Int32? slideIndex = game.Slides.IndexOf(slide);
 
-            var firstButtonPress = game.ButtonPresses.Where(x => x.SlideIndex == slideIndex).FirstOrDefault();
+            var firstButtonPress = game.SensoryData.ButtonPresses.Where(x => x.SlideIndex == slideIndex).FirstOrDefault();
 
             if (firstButtonPress != null)
             {

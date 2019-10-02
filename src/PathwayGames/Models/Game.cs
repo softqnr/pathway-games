@@ -17,7 +17,7 @@ namespace PathwayGames.Models
 
         public List<Slide> Slides { get; set; }
 
-        public List<ButtonPress> ButtonPresses { get; set; }
+        public SensoryData SensoryData { get; set; }
 
         [JsonIgnore]
         public string GameDataFile { get; set; }
@@ -32,12 +32,12 @@ namespace PathwayGames.Models
             GameSettings = gameSettings;
             SessionData = new SessionData(gameType, userId, userName, seed);
 
-            ButtonPresses = new List<ButtonPress>();
+            SensoryData = new SensoryData();
         }
 
         public void RecordButtonPress(Int32? slideIndex, Point p)
         {
-            ButtonPresses.Add(new ButtonPress()
+            SensoryData.ButtonPresses.Add(new ButtonPress()
             {
                 Coordinates = p,
                 Time = DateTime.Now,

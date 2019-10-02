@@ -103,7 +103,7 @@ namespace PathwayGames.Services.Excel
                 dataRow.Append(cell);
                 // Responses
                 int responseIndex = 1;
-                var responses = game.ButtonPresses.Where(x => x.SlideIndex == slideIndex);
+                var responses = game.SensoryData.ButtonPresses.Where(x => x.SlideIndex == slideIndex);
                 maxResponseCount = (responses.Count() > maxResponseCount) ? responses.Count() : maxResponseCount;
                 foreach (ButtonPress buttonPress in responses)
                 {
