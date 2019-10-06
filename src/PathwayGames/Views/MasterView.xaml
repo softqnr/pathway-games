@@ -41,7 +41,7 @@
                             <Label.FormattedText>
                                 <FormattedString>
                                         <Span Text="Pathway+ Games" FontSize="Large" Style="{DynamicResource SubtitleStyle}"/>
-                                        <Span Text=" v1.1" FontSize="Small" />
+                                        <Span Text="{Binding Version}" FontSize="Small" />
                                 </FormattedString>
                             </Label.FormattedText>
                     </Label>

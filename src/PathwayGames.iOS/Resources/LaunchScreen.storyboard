@@ -28,8 +28,8 @@
                                     <constraint id="726" firstAttribute="width" constant="255"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CPT Tests v.1.1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="266" translatesAutoresizingMaskIntoConstraints="NO" placeholderIntrinsicWidth="124" misplaced="YES">
-                                <rect key="frame" x="142" y="463" width="92" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CPT Games v.1.2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="266" translatesAutoresizingMaskIntoConstraints="NO" placeholderIntrinsicWidth="124" misplaced="YES">
+                                <rect key="frame" x="142" y="463" width="107" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12" weight="medium"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>

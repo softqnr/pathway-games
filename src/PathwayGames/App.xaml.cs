@@ -17,6 +17,7 @@ using Unity;
 using Unity.Injection;
 using Unity.Lifetime;
 using Unity.ServiceLocation;
+using Xamarin.Essentials;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -28,12 +29,16 @@ namespace PathwayGames
         public static string DatabaseFilePath { get; private set; }
         public static int UserId;
         public static User SelectedUser;
+        public static string LocalStorageDirectory = FileSystem.AppDataDirectory;
 
         public static IUnityContainer Container { get; private set; }
         public readonly static INavigationService NavigationService = new NavigationService();
         public App()
         {
             InitializeComponent();
+
+            // Init version tracking
+            VersionTracking.Track();
 
             // Init DB
             InitializeDatabase();
@@ -45,6 +50,7 @@ namespace PathwayGames
         private async Task InitializeNavigation()
         {
             MainPage = new MasterDetailView();
+            ((MasterDetailView)MainPage).MasterBehavior = MasterBehavior.Popover;
 
             NavigationService.Configure(typeof(MasterViewModel), typeof(MasterView));
             NavigationService.Configure(typeof(GameSelectionViewModel), typeof(GameSelectionView));

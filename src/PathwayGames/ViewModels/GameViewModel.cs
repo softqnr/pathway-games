@@ -13,6 +13,7 @@ using System.Threading.Tasks;
 using System.Windows.Input;
 using Xamarin.Forms;
 using PathwayGames.Services.User;
+using Xamarin.Essentials;
 
 namespace PathwayGames.ViewModels
 {
@@ -133,6 +134,11 @@ namespace PathwayGames.ViewModels
             _soundService = soundService;
             _engangementService = engangementService;
 
+            _userName = App.SelectedUser.UserName;
+
+            // TODO: This should come from parameters
+            _seed = "XYZ";
+
             // Create StateMachine
             StateMachine = new SlideStateMachine
             (
@@ -145,12 +151,8 @@ namespace PathwayGames.ViewModels
                 rewardSlideAction: async () => await ShowRewardSlide(),
                 endAction: async () => await EndGame()
             );
-            //
-            //StateMachine.OnTransitionedAsync((t) => await LogTransitionAsync(t.));
-             _userName = App.SelectedUser.UserName;
-            // TODO: This should come from parameters
-            _seed = "XYZ";
         }
+
         //private async Task LogTransitionAsync(StateMachine<State, Trigger>.Transition arg) { }
         public async Task OnButtonTapped(Point p)
         {
@@ -276,17 +278,16 @@ namespace PathwayGames.ViewModels
 
         private async Task RenderSlide(Slide slide)
         {
-            var now = DateTime.Now;
             // Display slide image
             SlideImageSource = ImageSource.FromFile(slide.Image);
+            // Set slide displayed time
+            CurrentSlide.SlideDisplayed = DateTime.Now;
             // Play slide sound
             if (!String.IsNullOrEmpty(slide.Sound))
             {
                 await _soundService.PlaySoundAsync(slide.Sound);
             }
-            System.Diagnostics.Debug.WriteLine("({0}/{1} - {2}) - {3:HH:mm:ss.fff} - RenderSlide()", SlideIndex, SlideCount, CurrentSlide.SlideType.ToString(), now);
-            // Set slide displayed time
-            CurrentSlide.SlideDisplayed = now;
+            System.Diagnostics.Debug.WriteLine("({0}/{1} - {2}) - {3:HH:mm:ss.fff} - RenderSlide()", SlideIndex, SlideCount, CurrentSlide.SlideType.ToString(), CurrentSlide.SlideDisplayed);
             // Wait for the slide duration
             await Task.Delay(TimeSpan.FromSeconds(CurrentSlide.DisplayDuration));
             // Set slide hidden time
@@ -343,12 +344,14 @@ namespace PathwayGames.ViewModels
             _slidesService.Save(_game);
             // Save game session to db
             await _userService.SaveGameSessionData(App.SelectedUser.Id, _game, _game.GameDataFile, _game.SensorDataFile);
+
+            NavigateToResultsView();
         }
 
         private void StartSensorRecording()
         {
-            _sensorLowWriterService.LogPrefix = "{\"FaceAnchors\": [";
-            _sensorLowWriterService.LogSuffix = "] }";
+            _sensorLowWriterService.LogPrefix = "\"FaceAnchors\": [";
+            _sensorLowWriterService.LogSuffix = "] ";
 
             _sensorLowWriterService.Start("sensor_" + Guid.NewGuid().ToString() + ".json", "EyeSensorReading", ",");
         }
@@ -385,22 +388,18 @@ namespace PathwayGames.ViewModels
 
                 await CreateGame();
                 await StateMachine.FireAsync(Triggers.Start);
-                // NavigateToAsync called from Stateless throws null reference exception
-                await WaitEndState();
             }
         }
 
-        private async Task WaitEndState()
+        private void NavigateToResultsView()
         {
-            while (StateMachine.State != States.End)
+            // If called from statemachine has to be run on main thread
+            MainThread.BeginInvokeOnMainThread(async () =>
             {
-                await Task.Delay(400);
-            }
-            await EndGame();
-            // Navigate to result view
-            await NavigationService.NavigateToAsync<GameResultsViewModel>(_game);
-            await NavigationService.RemoveLastFromBackStackAsync();
+                // Navigate to result view
+                await NavigationService.NavigateToAsync<GameResultsViewModel>(_game);
+                await NavigationService.RemoveLastFromBackStackAsync();
+            });
         }
-
     }
 }

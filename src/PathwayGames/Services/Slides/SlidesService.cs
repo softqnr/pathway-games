@@ -7,7 +7,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Text;
-using Xamarin.Essentials;
+using PathwayGames.Extensions;
 
 namespace PathwayGames.Services.Slides
 {
@@ -50,11 +50,10 @@ namespace PathwayGames.Services.Slides
         public TimeSpan CalculateBlankSlideTimeLeft(Slide slide)
         {
             var timeLeft = new TimeSpan();
-            var currentDateTime = DateTime.Now;
             // Check if within blank duration
             if (slide.SlideHidden.HasValue)
             {
-                var blankSlideTimeUsed = (currentDateTime - slide.SlideHidden.Value);
+                var blankSlideTimeUsed = (DateTime.Now - slide.SlideHidden.Value);
                 timeLeft = TimeSpan.FromSeconds(slide.BlankDuration) - blankSlideTimeUsed;
             }
             return timeLeft;
@@ -133,20 +132,28 @@ namespace PathwayGames.Services.Slides
 
         public Game Load(string fileName)
         {
-            string path = FileSystem.AppDataDirectory;
-            string filePath = Path.Combine(path, fileName);
+            string filePath = Path.Combine(App.LocalStorageDirectory, fileName);
             return JsonConvert.DeserializeObject<Game>(filePath);
         }
 
         public string Save(Game game)
         {
-            string path = FileSystem.AppDataDirectory;
-            //string path = Environment.GetFolderPath(Environment.SpecialFolder.Personal);
-            string fileName = Guid.NewGuid().ToString() + ".json";
-            game.GameDataFile = fileName;
-            //game.SensorDataFile
-            string filePath = Path.Combine(path, fileName);
-            using (var file = File.Open(filePath, FileMode.Create, FileAccess.Write))
+            game.GameDataFile = Guid.NewGuid().ToString() + ".json";
+            string filePathName = Path.Combine(App.LocalStorageDirectory, game.GameDataFile);
+ 
+            SaveGameToJson(game, filePathName);
+
+            if (game.SensorDataFile != "")
+            {
+                MergeDataFiles(filePathName, Path.Combine(App.LocalStorageDirectory, game.SensorDataFile));
+            }
+
+            return filePathName;
+        }
+
+        private void SaveGameToJson(Game game, string filePathName)
+        {
+            using (var file = File.Open(filePathName, FileMode.Create, FileAccess.Write))
             {
                 using (var sw = new StreamWriter(file, Encoding.UTF8))
                 {
@@ -158,7 +165,24 @@ namespace PathwayGames.Services.Slides
                     sw.Write(JsonConvert.SerializeObject(game, Formatting.Indented, settings));
                 }
             }
-            return fileName;
+        }
+
+        private void MergeDataFiles(string gameDataFile, string gameSensorFile)
+        {
+            const string FaceAnchorJson = "\"FaceAnchorData\": []";
+            using (var file = File.Open(gameDataFile, FileMode.Open, FileAccess.ReadWrite))
+            {
+                file.Seek(FaceAnchorJson);
+                using (var sw = new StreamWriter(file, Encoding.UTF8))
+                {
+                    using (var sensorFile = File.Open(gameSensorFile, FileMode.Open, FileAccess.Read))
+                    {
+                        sensorFile.CopyTo(file);
+                        file.WriteByte(Convert.ToByte('}'));
+                        file.WriteByte(Convert.ToByte('}'));
+                    }
+                }
+            }
         }
 
         public void CalculateGameScoreAndStats(Game game)

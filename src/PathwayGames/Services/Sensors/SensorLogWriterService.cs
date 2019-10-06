@@ -2,7 +2,6 @@
 using System;
 using System.Collections.Generic;
 using System.IO;
-using Xamarin.Essentials;
 using Xamarin.Forms;
 
 namespace PathwayGames.Services.Sensors
@@ -47,7 +46,7 @@ namespace PathwayGames.Services.Sensors
         
         public void Start(string logFile, string messangingCenterMessage, string logItemSeparator)
         {
-            LogPath = FileSystem.AppDataDirectory;
+            LogPath = App.LocalStorageDirectory;
             MessangingCenterMessage = messangingCenterMessage;
             LogFile = logFile;
             LogItemSeparator = logItemSeparator;

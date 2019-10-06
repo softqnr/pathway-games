@@ -77,7 +77,7 @@ namespace PathwayGames.Services.Slides
                 .Ignore(Triggers.CorrectCommision);
 
             Configure(States.End)
-                //.OnActivateAsync(async() => await endAction())
+                .OnActivateAsync(async() => await endAction())
                 .Ignore(Triggers.CorrectCommision);
 
 

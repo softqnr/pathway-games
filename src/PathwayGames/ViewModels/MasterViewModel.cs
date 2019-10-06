@@ -5,6 +5,7 @@ using System;
 using System.Collections.ObjectModel;
 using System.Threading.Tasks;
 using System.Windows.Input;
+using Xamarin.Essentials;
 using Xamarin.Forms;
 
 namespace PathwayGames.ViewModels
@@ -24,6 +25,11 @@ namespace PathwayGames.ViewModels
         {
             get => _title;
             set => SetProperty(ref _title, value);
+        }
+
+        public string Version
+        {
+            get => $"v.{VersionTracking.CurrentVersion}.{VersionTracking.CurrentBuild}";
         }
 
         public ICommand NavigationItemSelectedCommand
