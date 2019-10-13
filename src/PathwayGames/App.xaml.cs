@@ -30,8 +30,9 @@ namespace PathwayGames
         public static int UserId;
         public static User SelectedUser;
         public static string LocalStorageDirectory = FileSystem.AppDataDirectory;
+        public static string ApplicationVersion = $"{VersionTracking.CurrentVersion}.{VersionTracking.CurrentBuild}";
 
-        public static IUnityContainer Container { get; private set; }
+    public static IUnityContainer Container { get; private set; }
         public readonly static INavigationService NavigationService = new NavigationService();
         public App()
         {

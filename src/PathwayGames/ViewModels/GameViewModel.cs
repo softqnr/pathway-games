@@ -1,19 +1,17 @@
-﻿using FFImageLoading;
+﻿using PathwayGames.Controls;
+using PathwayGames.Infrastructure.Sound;
 using PathwayGames.Models;
 using PathwayGames.Models.Enums;
 using PathwayGames.Services.Engangement;
 using PathwayGames.Services.Sensors;
 using PathwayGames.Services.Slides;
-using PathwayGames.Infrastructure.Sound;
-using Stateless;
-using Stateless.Graph;
+using PathwayGames.Services.User;
 using System;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Input;
-using Xamarin.Forms;
-using PathwayGames.Services.User;
 using Xamarin.Essentials;
+using Xamarin.Forms;
 
 namespace PathwayGames.ViewModels
 {
@@ -33,6 +31,7 @@ namespace PathwayGames.ViewModels
         private bool _paused;
         private int? _slideIndex;
         private int? _slideCount;
+        private bool _eyeGazeTrackingEnabled;
         private ImageSource _slideImageSource;
         private ImageSource _eyeGazeIconImageSource;
         private ImageSource _eegIconImageSource;
@@ -86,6 +85,12 @@ namespace PathwayGames.ViewModels
             set => SetProperty(ref _seed, value);
         }
 
+        public bool EyeGazeTrackingEnabled
+        {
+            get => _eyeGazeTrackingEnabled;
+            set => SetProperty(ref _eyeGazeTrackingEnabled, value);
+        }
+
         public ImageSource EyeGazeIconImageSource
         {
             get => _eyeGazeIconImageSource;
@@ -99,13 +104,24 @@ namespace PathwayGames.ViewModels
         }
 
         // Commands
-        public Command<Point> ButtonTappedCommand
+        public ICommand ButtonTappedCommand
         {
             get
             {
                 return new Command<Point>(async (p) =>
                 {
                     await OnButtonTapped(p);
+                });
+            }
+        }
+
+        public ICommand EyeGazeChangedCommand
+        {
+            get
+            {
+                return new Command<EyeGazeChangedEventArgs>((e) =>
+                {
+                    _sensorLowWriterService.WriteToLog(e.Reading.ToString());
                 });
             }
         }
@@ -142,7 +158,7 @@ namespace PathwayGames.ViewModels
             // Create StateMachine
             StateMachine = new SlideStateMachine
             (
-                createGameAction: async () => await CreateGame(),
+                createGameAction: async () => await CreateGameAndStart(),
                 startGameAction: async () => await StartGame(),
                 nextSlideAction: async () => await GotoNextSlide(),
                 evaluateSlideResponseAction: async () => await EvaluateResponse(),
@@ -153,7 +169,6 @@ namespace PathwayGames.ViewModels
             );
         }
 
-        //private async Task LogTransitionAsync(StateMachine<State, Trigger>.Transition arg) { }
         public async Task OnButtonTapped(Point p)
         {
             System.Diagnostics.Debug.WriteLine("({0}/{1}) - {2:HH:mm:ss.fff} - OnButtonTapped()", SlideIndex, SlideCount, DateTime.Now);
@@ -294,19 +309,15 @@ namespace PathwayGames.ViewModels
             CurrentSlide.SlideHidden = DateTime.Now;
         }
 
-        public async Task CreateGame()
+        public async Task CreateGameAndStart()
         {
-            // Read User Game Settings
-            _gameSettings = await _userService.GetUserSettings(App.SelectedUser.Id);
-            // Set sensor icons
-            EyeGazeIconImageSource = ImageSource.FromFile(_gameSettings.EyeGazeSensor ? "icon_eye.png" : "icon_eye_off.png");
-            EEGIconImageSource = ImageSource.FromFile(_gameSettings.EEGSensor ? "icon_head.png" : "icon_head_off.png");
             // Create game
             _game = _slidesService.Generate(_gameType, _gameSettings, App.SelectedUser.Id, App.SelectedUser.UserName, _seed);
             SlideIndex = 0;
             SlideCount = _game.Slides.Count;
 
-            await Task.FromResult(true);
+            // Triger start game
+            await StateMachine.FireAsync(Triggers.Start);
         }
 
         public async Task StartGame()
@@ -353,7 +364,7 @@ namespace PathwayGames.ViewModels
             _sensorLowWriterService.LogPrefix = "\"FaceAnchors\": [";
             _sensorLowWriterService.LogSuffix = "] ";
 
-            _sensorLowWriterService.Start("sensor_" + Guid.NewGuid().ToString() + ".json", "EyeSensorReading", ",");
+            _sensorLowWriterService.Start("sensor_" + Guid.NewGuid().ToString() + ".json", ",");
         }
 
         private void StopSensorRecording()
@@ -373,11 +384,6 @@ namespace PathwayGames.ViewModels
             _game.Outcome.ConfusionMatrix = _engangementService.CalculateConfusionMatrix(_game.Slides);
         }
 
-        private async Task PreloadImages()
-        {
-            //await ImageService.Instance.LoadFileFromApplicationBundle("").PreloadAsync();
-        }
-
         public override async Task InitializeAsync(object navigationData)
         {
             if (navigationData != null &&
@@ -386,9 +392,21 @@ namespace PathwayGames.ViewModels
                 _gameType = gameType;
                 Title = $"{_gameType.ToString()} Game";
 
-                await CreateGame();
-                await StateMachine.FireAsync(Triggers.Start);
+                // Read User Game Settings
+                _gameSettings = await _userService.GetUserSettings(App.SelectedUser.Id);
+                _eyeGazeTrackingEnabled = _gameSettings.EyeGazeSensor;
+                // Set sensor icons
+                EyeGazeIconImageSource = ImageSource.FromFile(_eyeGazeTrackingEnabled ? "icon_eye.png" : "icon_eye_off.png");
+                EEGIconImageSource = ImageSource.FromFile(_gameSettings.EEGSensor ? "icon_head.png" : "icon_head_off.png");
+
+                await CreateGameAndStart();
             }
+        }
+
+        public override void OnDisappearing()
+        {
+            //base.OnDisappearing();
+            //StateMachine = null;
         }
 
         private void NavigateToResultsView()

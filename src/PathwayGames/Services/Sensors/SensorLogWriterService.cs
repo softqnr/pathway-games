@@ -16,8 +16,6 @@ namespace PathwayGames.Services.Sensors
 
         private DateTime FlushedAt;
 
-        public string MessangingCenterMessage { get; private set; }
-
         public string LogItemSeparator { get; private set; }
 
         public string LogPrefix { get; set; }
@@ -39,15 +37,14 @@ namespace PathwayGames.Services.Sensors
             FlushedAt = DateTime.Now;
         }
         
-        public void Start(string logFile, string messangingCenterMessage)
+        public void Start(string logFile)
         {
-            Start(logFile, messangingCenterMessage, "");
+            Start(logFile, "");
         }
         
-        public void Start(string logFile, string messangingCenterMessage, string logItemSeparator)
+        public void Start(string logFile, string logItemSeparator)
         {
             LogPath = App.LocalStorageDirectory;
-            MessangingCenterMessage = messangingCenterMessage;
             LogFile = logFile;
             LogItemSeparator = logItemSeparator;
 
@@ -55,20 +52,26 @@ namespace PathwayGames.Services.Sensors
 
             if (LogPrefix != "")
             {
-                WriteToLog(LogPrefix);
+                WriteToLog(LogPrefix, false);
             }
-
-            MessagingCenter.Subscribe<object, FaceAnchorData>( this, MessangingCenterMessage, (s, d) => {
-                WriteToLog(d.ToString() + LogItemSeparator);
-            });
         }
 
-        private void WriteToLog(string reading)
+        public void WriteToLog(string reading)
+        {
+            WriteToLog(reading, true);
+        }
+
+        public void WriteToLog(string reading, bool writeSeparator = true)
         {
             lock (LogQueue)
             {
                 // Create log
                 //Log log = new Log(message);
+                if (writeSeparator)
+                {
+                    reading += LogItemSeparator;
+                }
+
                 LogQueue.Enqueue(reading);
 
                 // Check if should flush
@@ -81,7 +84,6 @@ namespace PathwayGames.Services.Sensors
 
         public void Stop()
         {
-            MessagingCenter.Unsubscribe<object, FaceAnchorData>(this, MessangingCenterMessage);
             IsMonitoring = false;
 
             ForceFlush();

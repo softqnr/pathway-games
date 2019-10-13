@@ -1,11 +1,8 @@
 ﻿using PathwayGames.Models;
-using PathwayGames.Models.Enums;
-using PathwayGames.Services.User;
 using System;
 using System.Collections.ObjectModel;
 using System.Threading.Tasks;
 using System.Windows.Input;
-using Xamarin.Essentials;
 using Xamarin.Forms;
 
 namespace PathwayGames.ViewModels
@@ -29,7 +26,7 @@ namespace PathwayGames.ViewModels
 
         public string Version
         {
-            get => $"v.{VersionTracking.CurrentVersion}.{VersionTracking.CurrentBuild}";
+            get => $" v.{App.ApplicationVersion}";
         }
 
         public ICommand NavigationItemSelectedCommand

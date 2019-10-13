@@ -54,7 +54,7 @@
     <WarningLevel>4</WarningLevel>
     <ConsolePause>false</ConsolePause>
     <MtouchArch>ARM64</MtouchArch>
-    <CodesignKey>iPhone Developer</CodesignKey>
+    <CodesignKey>iPhone Developer: Dejan Kocic (S9V4P7UX5L)</CodesignKey>
     <MtouchDebug>true</MtouchDebug>
     <CodesignEntitlements>
     </CodesignEntitlements>
@@ -131,7 +131,6 @@
     <Compile Include="Controls\EyeGazeDetectionDelegate.cs" />
     <Compile Include="Infrastructure\Share\Share.cs" />
     <Compile Include="Infrastructure\Sound\SoundProvider.cs" />
-    <Compile Include="Controls\SessionDelegate.cs" />
     <None Include="Entitlements.plist" />
     <None Include="Info.plist" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -148,7 +147,7 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Acr.UserDialogs">
-      <Version>7.0.30</Version>
+      <Version>7.0.1</Version>
     </PackageReference>
     <PackageReference Include="Rg.Plugins.Popup">
       <Version>1.2.0.223</Version>
@@ -375,5 +374,8 @@
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\icon_eye.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\logo_white.png" />
   </ItemGroup>
 </Project>

@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+<views:ViewBase
+    xmlns:views="clr-namespace:PathwayGames.Views" xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:g="clr-namespace:PathwayGames.Gestures;assembly=PathwayGames"
              xmlns:c="clr-namespace:PathwayGames.Controls;assembly=PathwayGames"
@@ -59,8 +60,10 @@
                     </Label.FormattedText>
                 </Label>
             </StackLayout>
-            <c:EyeGazePreview Grid.Column="0" Grid.Row="3" WidthRequest="96" HeightRequest="128" />
+            <c:EyeGazePreview Grid.Column="0" Grid.Row="3" WidthRequest="96" HeightRequest="128" 
+                              EyeGazeChangedCommand="{Binding EyeGazeChangedCommand}"
+                              IsEnabled="{Binding EyeGazeTrackingEnabled}" />
         </Grid>
     </ContentPage.Content>
 
-</ContentPage>
+</views:ViewBase>

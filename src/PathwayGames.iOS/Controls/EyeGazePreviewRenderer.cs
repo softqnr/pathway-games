@@ -1,7 +1,11 @@
 ﻿using ARKit;
+using CoreFoundation;
 using CoreGraphics;
+using Foundation;
 using PathwayGames.Controls;
 using PathwayGames.iOS.Controls;
+using PathwayGames.iOS.Extensions;
+using PathwayGames.Models;
 using UIKit;
 using Xamarin.Forms;
 using Xamarin.Forms.Platform.iOS;
@@ -9,14 +13,14 @@ using Xamarin.Forms.Platform.iOS;
 [assembly: ExportRenderer(typeof(EyeGazePreview), typeof(EyeGazePreviewRenderer))]
 namespace PathwayGames.iOS.Controls
 {
-    public class EyeGazePreviewRenderer : ViewRenderer<EyeGazePreview, ARSCNView>
+    public class EyeGazePreviewRenderer : ViewRenderer<EyeGazePreview, ARSCNView> , IARSessionDelegate
     {
+        private ISensor sensor;
         private ARSCNView SceneView;
      
         protected override void OnElementChanged(ElementChangedEventArgs<EyeGazePreview> e)
         {
             base.OnElementChanged(e);
-            //e.NewElement.OnEyeGazeChanged.
 
             if (Control == null)
             {
@@ -36,8 +40,9 @@ namespace PathwayGames.iOS.Controls
  
                 SetNativeControl(SceneView);
 
+                SceneView.Session.Delegate = this;
+
                 SceneView.Delegate = new EyeGazeDetectionDelegate(SceneView);
-                SceneView.Session.Delegate = new SessionDelegate();
             }
 
             if (e.OldElement != null)
@@ -59,6 +64,7 @@ namespace PathwayGames.iOS.Controls
                 {
                     LightEstimationEnabled = true
                 };
+                sensor = e.NewElement as ISensor;
                 // Subscribe events
                 // Run the view's session options
                 SceneView.Session.Run(configuration,
@@ -85,6 +91,39 @@ namespace PathwayGames.iOS.Controls
 
             alertController.AddAction(UIAlertAction.Create("OK", UIAlertActionStyle.Default, null));
             this.ViewController.PresentModalViewController(alertController, true);
+        }
+
+        [Export("session:didUpdateFrame:")]
+        public void DidUpdateFrame(ARSession session, ARFrame frame)
+        {
+            DispatchQueue.MainQueue.DispatchAsync(() =>
+            {
+                foreach (ARAnchor anchor in frame.Anchors)
+                {
+                    var faceAnchor = anchor as ARFaceAnchor;
+                    if (faceAnchor != null)
+                    {
+                        //System.Diagnostics.Debug.WriteLine("Reading received: " + DateTime.Now);
+                        // Log
+                        //MessagingCenter.Send<object, FaceAnchorData>(this, "EyeSensorReading",
+                        //    new FaceAnchorData(frame.Timestamp, faceAnchor.Transform.ToFloatMatrix4(),
+                        //        faceAnchor.LeftEyeTransform.ToFloatMatrix4(),
+                        //        faceAnchor.RightEyeTransform.ToFloatMatrix4(),
+                        //        faceAnchor.LookAtPoint.ToFloatVector3(),
+                        //        faceAnchor.BlendShapes.ToDictionary()
+                        //    ));
+                        sensor.OnEyeGazeChanged(new EyeGazeChangedEventArgs(
+                            new FaceAnchorData(frame.Timestamp, faceAnchor.Transform.ToFloatMatrix4(),
+                                faceAnchor.LeftEyeTransform.ToFloatMatrix4(),
+                                faceAnchor.RightEyeTransform.ToFloatMatrix4(),
+                                faceAnchor.LookAtPoint.ToFloatVector3(),
+                                faceAnchor.BlendShapes.ToDictionary()
+                            )));
+                    }
+                }
+                // Important otherwise frame will not be disposed
+                frame.Dispose();
+            });
         }
     }
 }

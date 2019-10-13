@@ -14,9 +14,11 @@
 
         bool IsMonitoring { get; }
 
-        void Start(string logFile, string messangingCenterMessage);
+        void Start(string logFile);
 
-        void Start(string logFile, string messangingCenterMessage, string separetor);
+        void Start(string logFile, string separetor);
+
+        void WriteToLog(string reading);
 
         void Stop();
     }

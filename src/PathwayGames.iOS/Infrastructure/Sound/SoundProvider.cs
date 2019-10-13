@@ -23,7 +23,7 @@ namespace PathwayGames.iOS.Infrastructure.Sound
             {
                 //Stop and dispose of any sound
                 _player.Stop();
-                _player.Dispose();
+                _player = null;
             }
 
             string path = NSBundle.MainBundle.PathForResource(Path.GetFileNameWithoutExtension(filename),

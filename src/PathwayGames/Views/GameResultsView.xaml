@@ -27,7 +27,7 @@
                         <Span Text="Points: " FontSize="Small" />
                         <Span Text="{Binding Game.Outcome.Score, Mode=OneWay}" FontSize="Small" />
                         <Span Text=" Score: " FontSize="Small" />
-                        <Span Text="{Binding Game.Outcome.ScorePercentage, Mode=OneWay}" FontSize="Small" />
+                        <Span Text="{Binding Game.Outcome.ScorePercentage, Mode=OneWay, StringFormat='{}{0:0.##}'}" FontSize="Small" />
                         <Span Text="%" FontSize="Small" />
                         </FormattedString>
                 </Label.FormattedText>

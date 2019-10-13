@@ -10,8 +10,8 @@ using Xamarin.Forms.Xaml;
 namespace PathwayGames.Views
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class GameView : ContentPage
-	{
+	public partial class GameView : ViewBase
+    {
 		public GameView()
 		{
 			InitializeComponent ();

@@ -33,5 +33,19 @@ namespace PathwayGames.ViewModels
         {
             return Task.FromResult(false);
         }
+        public virtual void OnBackButtonPressed()
+        {
+
+        }
+
+        public virtual void OnAppearing()
+        {
+
+        }
+
+        public virtual void OnDisappearing()
+        {
+
+        }
     }
 }

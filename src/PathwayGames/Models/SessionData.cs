@@ -2,6 +2,7 @@
 using Newtonsoft.Json.Converters;
 using PathwayGames.Models.Enums;
 using System;
+using Xamarin.Essentials;
 
 namespace PathwayGames.Models
 {
@@ -20,12 +21,15 @@ namespace PathwayGames.Models
 
         public DateTime? EndDate { get; set; }
 
+        public string ApplicationVersion { get; set; }
+
         public SessionData(GameType gameType, long userId, string userName, string seed)
         {
             GameType = gameType;
             UserId = userId;
             UserName = userName;
             Seed = seed;
+            ApplicationVersion = App.ApplicationVersion;
         }
     }
 }

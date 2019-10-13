@@ -64,7 +64,8 @@ namespace PathwayGames.Services.Slides
              // Create slide collection using the 70%X and 30%Distractor 
             List<Slide> SlideCollection = new List<Slide>();
             // X 
-            for (int i = 0; i < (int)gameSettings.SlideCount * 0.7; i++)
+            int typeXSlideCount = (int)(gameSettings.SlideCount * 0.7);
+            for (int i = 0; i < typeXSlideCount; i++)
             {
                 SlideCollection.Add(new Slide(SlideType.X, gameSettings.SlideDisplayDuration) {
                     Image = XSlideImage,
@@ -72,7 +73,7 @@ namespace PathwayGames.Services.Slides
                 });
             }
             // DistractorY
-            for (int i = 0; i < (int)gameSettings.SlideCount * 0.3; i++)
+            for (int i = 0; i < gameSettings.SlideCount - typeXSlideCount; i++)
             {
                 SlideCollection.Add(new Slide(SlideType.Y, gameSettings.SlideDisplayDuration) {
                     Image = YDistractorSlideImage,
