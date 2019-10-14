@@ -1,6 +1,7 @@
 ﻿using PathwayGames.Models;
 using PathwayGames.Models.Enums;
 using System;
+using System.Collections.Generic;
 
 namespace PathwayGames.Services.Slides
 {
@@ -12,6 +13,8 @@ namespace PathwayGames.Services.Slides
         ResponseOutcome EvaluateSlideResponse(Game game, Slide slide);
         TimeSpan CalculateBlankSlideTimeLeft(Slide slide);
         Game Load(string fileName);
+        ConfusionMatrix CalculateConfusionMatrix(List<Slide> slides);
+        void FinalizeGame(Game game);
         string Save(Game game);
     }
 }

@@ -346,16 +346,10 @@ namespace PathwayGames.ViewModels
             StopSensorRecording();
             // Set sensor data filename
             _game.SensorDataFile = _sensorLowWriterService.LogFilePath;
-            _game.SessionData.EndDate = DateTime.Now;
-            // Calculate engangement
-            CalculateEngangement();
-            // Calculate game stats
-            _slidesService.CalculateGameScoreAndStats(_game);
-            // Save game data to file
-            _slidesService.Save(_game);
+            _slidesService.FinalizeGame(_game);
             // Save game session to db
             await _userService.SaveGameSessionData(App.SelectedUser.Id, _game, _game.GameDataFile, _game.SensorDataFile);
-
+            // Go to results view
             NavigateToResultsView();
         }
 
@@ -377,11 +371,6 @@ namespace PathwayGames.ViewModels
 
             Int32? slideIndex = (CurrentSlide.SlideType == SlideType.Reward) ? (Int32?)null : _game.Slides.IndexOf(CurrentSlide);
             _game.RecordButtonPress(slideIndex, p);
-        }
-
-        private void CalculateEngangement()
-        {
-            _game.Outcome.ConfusionMatrix = _engangementService.CalculateConfusionMatrix(_game.Slides);
         }
 
         public override async Task InitializeAsync(object navigationData)

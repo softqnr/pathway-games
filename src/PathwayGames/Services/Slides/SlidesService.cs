@@ -131,6 +131,22 @@ namespace PathwayGames.Services.Slides
             };
         }
 
+        public void FinalizeGame(Game game)
+        {
+            game.SessionData.EndDate = DateTime.Now;
+            // Calculate game stats
+            CalculateGameScoreAndStats(game);
+            // Calculate engangement
+            game.Outcome.ConfusionMatrix = CalculateConfusionMatrix(game.Slides);  
+            // Save game data to file
+            Save(game);
+        }
+
+        public ConfusionMatrix CalculateConfusionMatrix(List<Slide> slides)
+        {
+            return new ConfusionMatrix(slides);
+        }
+
         public Game Load(string fileName)
         {
             string filePath = Path.Combine(App.LocalStorageDirectory, fileName);
