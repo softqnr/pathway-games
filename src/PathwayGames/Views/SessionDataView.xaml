@@ -13,15 +13,13 @@
                 <Grid>
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="*"/>
-                        <ColumnDefinition Width="60"/>
-                        <ColumnDefinition Width="60"/>
+                        <ColumnDefinition Width="80"/>
+                        <ColumnDefinition Width="90"/>
                     </Grid.ColumnDefinitions>
-                    <StackLayout Orientation="Vertical" VerticalOptions="Center">
+                    <StackLayout Orientation="Vertical" VerticalOptions="Center" Padding="10,10">
                         <Label Text="{Binding GameType}" FontAttributes="Bold"/>
                         <StackLayout Orientation="Horizontal" Grid.Row="0" Grid.Column="0">
-                            <Label Text="{Binding SessionData.DateStarted, Mode=OneWay, StringFormat='{}{0:dd/MM/yyyy}'}"/>
-                            <Label Text=" - " />
-                            <Label Text="{Binding SessionData.DateEnded, Mode=OneWay, StringFormat='{}{0:dd/MM/yyyy}'}"/>
+                            <Label Text="{Binding DateStarted, Mode=OneWay, StringFormat='{}{0:dd/MM/yyyy}'}"/>
                         </StackLayout>
                     </StackLayout>
                     <Button Text="Game data" VerticalOptions="Start" Grid.Row="0" Grid.Column="1" 

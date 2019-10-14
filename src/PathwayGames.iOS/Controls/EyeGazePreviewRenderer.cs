@@ -103,15 +103,7 @@ namespace PathwayGames.iOS.Controls
                     var faceAnchor = anchor as ARFaceAnchor;
                     if (faceAnchor != null)
                     {
-                        //System.Diagnostics.Debug.WriteLine("Reading received: " + DateTime.Now);
                         // Log
-                        //MessagingCenter.Send<object, FaceAnchorData>(this, "EyeSensorReading",
-                        //    new FaceAnchorData(frame.Timestamp, faceAnchor.Transform.ToFloatMatrix4(),
-                        //        faceAnchor.LeftEyeTransform.ToFloatMatrix4(),
-                        //        faceAnchor.RightEyeTransform.ToFloatMatrix4(),
-                        //        faceAnchor.LookAtPoint.ToFloatVector3(),
-                        //        faceAnchor.BlendShapes.ToDictionary()
-                        //    ));
                         sensor.OnEyeGazeChanged(new EyeGazeChangedEventArgs(
                             new FaceAnchorData(frame.Timestamp, faceAnchor.Transform.ToFloatMatrix4(),
                                 faceAnchor.LeftEyeTransform.ToFloatMatrix4(),

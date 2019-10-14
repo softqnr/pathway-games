@@ -4,6 +4,8 @@
     {
         string LogItemSeparator { get; }
 
+        string LogFile { get; }
+
         string LogPath { get; }
 
         string LogFilePath { get; }

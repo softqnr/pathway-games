@@ -5,7 +5,6 @@ using System.Collections.ObjectModel;
 using System.IO;
 using System.Threading.Tasks;
 using System.Windows.Input;
-using Xamarin.Essentials;
 using Xamarin.Forms;
 
 namespace PathwayGames.ViewModels
@@ -46,13 +45,13 @@ namespace PathwayGames.ViewModels
 
         private void ShareGameData(string gameDataFile)
         {
-            string filePath = Path.Combine(FileSystem.AppDataDirectory, gameDataFile);
+            string filePath = Path.Combine(App.LocalStorageDirectory, gameDataFile);
             DependencyService.Get<IShare>().ShareFile("Share game data", "Share game data", filePath);
         }
 
         private void ShareSensorData(string sensorDataFile)
         {
-            string filePath = Path.Combine(FileSystem.AppDataDirectory, sensorDataFile);
+            string filePath = Path.Combine(App.LocalStorageDirectory, sensorDataFile);
             DependencyService.Get<IShare>().ShareFile("Share sensor data", "Share sensor data", filePath);
         }
 

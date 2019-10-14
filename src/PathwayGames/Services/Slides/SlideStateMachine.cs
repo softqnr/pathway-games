@@ -9,12 +9,12 @@ namespace PathwayGames.Services.Slides
 {
     public enum States
     {
-        Inactive, Start, ShowSlide, ShowSlideComplete, ShowRewardSlide, ShowBlankCancelableSlide, ShowBlankSlide, Paused, End
+        Inactive, Start, ShowSlide, ShowSlideComplete, ShowRewardSlide, ShowBlankCancelableSlide, ShowBlankSlide, Paused, End, Exited
     }
 
     public enum Triggers
     {
-        Start, NextSlide, CorrectCommision, WrongCommision, Omission, NoSlides, SlideFinished, ShowBlank, Pause, Resume
+        Start, NextSlide, CorrectCommision, WrongCommision, Omission, NoSlides, SlideFinished, ShowBlank, Pause, Resume, Exit
     }
 
     public class SlideStateMachine : StateMachine<States, Triggers>, INotifyPropertyChanged
@@ -43,10 +43,12 @@ namespace PathwayGames.Services.Slides
             Configure(States.Start)
                 .SubstateOf(States.Inactive)
                 .OnEntryAsync(async () => await startGameAction())
+                .Permit(Triggers.Exit, States.Exited) // Exit
                 .Permit(Triggers.NextSlide, States.ShowSlide);
 
             Configure(States.ShowSlide)
                 .OnEntryAsync(async() => await nextSlideAction())
+                .Permit(Triggers.Exit, States.Exited) // Exit
                 .Permit(Triggers.SlideFinished, States.ShowSlideComplete)
                 .Permit(Triggers.NoSlides, States.End)
                 .Ignore(Triggers.CorrectCommision)
@@ -54,12 +56,14 @@ namespace PathwayGames.Services.Slides
 
             Configure(States.ShowSlideComplete)
                 .OnEntryAsync(async () => await evaluateSlideResponseAction())
+                .Permit(Triggers.Exit, States.Exited) // Exit
                 .Permit(Triggers.CorrectCommision, States.ShowRewardSlide)
                 .Permit(Triggers.ShowBlank, States.ShowBlankSlide) //
                 .Permit(Triggers.Omission, States.ShowBlankCancelableSlide);
 
             Configure(States.ShowRewardSlide)
                 .OnEntryAsync(async () => await rewardSlideAction())
+                .Permit(Triggers.Exit, States.Exited) // Exit
                 .Permit(Triggers.ShowBlank, States.ShowBlankSlide) //
                 .Ignore(Triggers.NextSlide) ////
                 .Ignore(Triggers.SlideFinished)
@@ -67,12 +71,14 @@ namespace PathwayGames.Services.Slides
 
             Configure(States.ShowBlankCancelableSlide)
                 .OnEntryFrom(_showBlankCancelableTrigger, t => blankSlideCancelableAction(t))
+                .Permit(Triggers.Exit, States.Exited) // Exit
                 .Permit(Triggers.CorrectCommision, States.ShowRewardSlide)
                 .Permit(Triggers.NextSlide, States.ShowSlide)
                 .Ignore(Triggers.WrongCommision);
 
             Configure(States.ShowBlankSlide)
                 .OnEntryFrom(_showBlankTrigger, t => blankSlideAction(t))
+                .Permit(Triggers.Exit, States.Exited) // Exit
                 .Permit(Triggers.SlideFinished, States.ShowSlide)
                 .Ignore(Triggers.CorrectCommision);
 
@@ -80,6 +86,8 @@ namespace PathwayGames.Services.Slides
                 .OnActivateAsync(async() => await endAction())
                 .Ignore(Triggers.CorrectCommision);
 
+            Configure(States.Exited)
+                .Ignore(Triggers.SlideFinished);
 
             OnTransitioned
             (

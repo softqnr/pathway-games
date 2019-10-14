@@ -172,7 +172,7 @@ namespace PathwayGames.Services.Slides
         {
             using (var file = File.Open(filePathName, FileMode.Create, FileAccess.Write))
             {
-                using (var sw = new StreamWriter(file, Encoding.UTF8))
+                using (var sw = new StreamWriter(file, new UTF8Encoding(false)))
                 {
                     // Ignore IsEmpty
                     var settings = new JsonSerializerSettings
@@ -190,7 +190,7 @@ namespace PathwayGames.Services.Slides
             using (var file = File.Open(gameDataFile, FileMode.Open, FileAccess.ReadWrite))
             {
                 file.Seek(FaceAnchorJson);
-                using (var sw = new StreamWriter(file, Encoding.UTF8))
+                using (var sw = new StreamWriter(file, new UTF8Encoding(false)))
                 {
                     using (var sensorFile = File.Open(gameSensorFile, FileMode.Open, FileAccess.Read))
                     {

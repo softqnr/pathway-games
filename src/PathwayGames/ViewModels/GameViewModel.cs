@@ -249,7 +249,7 @@ namespace PathwayGames.ViewModels
             }
             CurrentSlide = _slidesService.GetRandomRewardSlide(_gameSettings.RewardDisplayDuration);
 
-           
+            // Render slide
             await RenderSlide(CurrentSlide);
             System.Diagnostics.Debug.WriteLine("({0}/{1}) - {2:HH:mm:ss.fff} - ShowRewardSlide() Finished {3} Blank delay left", SlideIndex, SlideCount, DateTime.Now, blankSlideTime.TotalSeconds);
             //
@@ -342,13 +342,12 @@ namespace PathwayGames.ViewModels
         public async Task EndGame()
         {
             System.Diagnostics.Debug.WriteLine("({0}) - {1:HH:mm:ss.fff}", "EndGame()", DateTime.Now);
-            // Game finished
-            StopSensorRecording();
             // Set sensor data filename
-            _game.SensorDataFile = _sensorLowWriterService.LogFilePath;
+            _game.SensorDataFile = StopSensorRecording();
+            // Finalize game session
             _slidesService.FinalizeGame(_game);
             // Save game session to db
-            await _userService.SaveGameSessionData(App.SelectedUser.Id, _game, _game.GameDataFile, _game.SensorDataFile);
+            await _userService.SaveGameSessionData(_game);
             // Go to results view
             NavigateToResultsView();
         }
@@ -361,9 +360,10 @@ namespace PathwayGames.ViewModels
             _sensorLowWriterService.Start("sensor_" + Guid.NewGuid().ToString() + ".json", ",");
         }
 
-        private void StopSensorRecording()
+        private string StopSensorRecording()
         {
             _sensorLowWriterService.Stop();
+            return _sensorLowWriterService.LogFile;
         }
 
         private void SaveResponse(Point p)
@@ -394,8 +394,11 @@ namespace PathwayGames.ViewModels
 
         public override void OnDisappearing()
         {
-            //base.OnDisappearing();
-            //StateMachine = null;
+            base.OnDisappearing();
+            if (StateMachine.State != States.End)
+            {
+                StateMachine.Fire(Triggers.Exit);
+            }
         }
 
         private void NavigateToResultsView()
