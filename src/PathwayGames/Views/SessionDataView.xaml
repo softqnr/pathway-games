@@ -19,9 +19,9 @@
                     <StackLayout Orientation="Vertical" VerticalOptions="Center">
                         <Label Text="{Binding GameType}" FontAttributes="Bold"/>
                         <StackLayout Orientation="Horizontal" Grid.Row="0" Grid.Column="0">
-                            <Label Text="{Binding DateStarted, Mode=OneWay, StringFormat='{}{0:dd/MM/yyyy}'}"/>
+                            <Label Text="{Binding SessionData.DateStarted, Mode=OneWay, StringFormat='{}{0:dd/MM/yyyy}'}"/>
                             <Label Text=" - " />
-                            <Label Text="{Binding DateEnded, Mode=OneWay, StringFormat='{}{0:dd/MM/yyyy}'}"/>
+                            <Label Text="{Binding SessionData.DateEnded, Mode=OneWay, StringFormat='{}{0:dd/MM/yyyy}'}"/>
                         </StackLayout>
                     </StackLayout>
                     <Button Text="Game data" VerticalOptions="Start" Grid.Row="0" Grid.Column="1" 
