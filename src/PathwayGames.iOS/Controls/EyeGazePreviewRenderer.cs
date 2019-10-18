@@ -41,9 +41,7 @@ namespace PathwayGames.iOS.Controls
                 SetNativeControl(SceneView);
 
                 SceneView.Session.Delegate = this;
-
-                SceneView.Delegate = new EyeGazeDetectionDelegate(SceneView);
-            }
+             }
 
             if (e.OldElement != null)
             {
@@ -64,8 +62,14 @@ namespace PathwayGames.iOS.Controls
                 {
                     LightEstimationEnabled = true
                 };
+
                 sensor = e.NewElement as ISensor;
                 // Subscribe events
+                // Crosshair
+                if (e.NewElement.ShowCrosshair)
+                {
+                    SceneView.Delegate = new EyeGazeDetectionDelegate(SceneView);
+                }
                 // Run the view's session options
                 SceneView.Session.Run(configuration,
                     ARSessionRunOptions.ResetTracking | ARSessionRunOptions.RemoveExistingAnchors);

@@ -1,11 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace PathwayGames.Controls
+﻿namespace PathwayGames.Controls
 {
     public interface ISensor
     {
+        bool RecordingEnabled { get; set; }
         void OnEyeGazeChanged(EyeGazeChangedEventArgs e);
     }
 }

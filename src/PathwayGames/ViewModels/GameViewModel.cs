@@ -20,7 +20,8 @@ namespace PathwayGames.ViewModels
         private GameType _gameType;
         private Game _game;
         private UserGameSettings _gameSettings;
-
+        
+        // Services
         private ISlidesService _slidesService;
         private IUserService _userService;
         private ISensorLogWriterService _sensorLowWriterService;
@@ -29,6 +30,7 @@ namespace PathwayGames.ViewModels
 
         private string _title;
         private bool _paused;
+        private bool _sensorRecording;
         private int? _slideIndex;
         private int? _slideCount;
         private bool _eyeGazeTrackingEnabled;
@@ -71,6 +73,12 @@ namespace PathwayGames.ViewModels
         {
             get => _paused;
             set => SetProperty(ref _paused, value);
+        }
+
+        public bool SensorRecording
+        {
+            get => _sensorRecording;
+            set => SetProperty(ref _sensorRecording, value);
         }
 
         public string UserName
@@ -354,14 +362,16 @@ namespace PathwayGames.ViewModels
 
         private void StartSensorRecording()
         {
-            _sensorLowWriterService.LogPrefix = "\"FaceAnchors\": [";
+            _sensorLowWriterService.LogPrefix = "\"FaceAnchorData\": [";
             _sensorLowWriterService.LogSuffix = "] ";
 
-            _sensorLowWriterService.Start("sensor_" + Guid.NewGuid().ToString() + ".json", ",");
+            _sensorLowWriterService.Start($"sensor_{Guid.NewGuid().ToString()}.json", ",");
+            SensorRecording = true;
         }
 
         private string StopSensorRecording()
         {
+            SensorRecording = false;
             _sensorLowWriterService.Stop();
             return _sensorLowWriterService.LogFile;
         }

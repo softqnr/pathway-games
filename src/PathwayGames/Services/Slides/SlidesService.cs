@@ -174,7 +174,7 @@ namespace PathwayGames.Services.Slides
             {
                 using (var sw = new StreamWriter(file, new UTF8Encoding(false)))
                 {
-                    // Ignore IsEmpty
+                    // Ignore some properties
                     var settings = new JsonSerializerSettings
                     {
                         ContractResolver = ShouldSerializeContractResolver.Instance
@@ -189,14 +189,23 @@ namespace PathwayGames.Services.Slides
             const string FaceAnchorJson = "\"FaceAnchorData\": []";
             using (var file = File.Open(gameDataFile, FileMode.Open, FileAccess.ReadWrite))
             {
-                file.Seek(FaceAnchorJson);
-                using (var sw = new StreamWriter(file, new UTF8Encoding(false)))
+                long faceAnchorPosition = file.Seek(FaceAnchorJson);
+              
+                using (var sensorFile = File.Open(gameSensorFile, FileMode.Open, FileAccess.Read))
                 {
-                    using (var sensorFile = File.Open(gameSensorFile, FileMode.Open, FileAccess.Read))
+                    // Make a copy of last JSON part
+                    file.Seek(faceAnchorPosition + FaceAnchorJson.Length, SeekOrigin.Begin);
+                    using (var sr = new StreamReader(file))
                     {
+                        string text = sr.ReadToEnd();
+                    
+                        // Copy sensor data
+                        file.Seek(faceAnchorPosition, SeekOrigin.Begin);
                         sensorFile.CopyTo(file);
-                        file.WriteByte(Convert.ToByte('}'));
-                        file.WriteByte(Convert.ToByte('}'));
+                        // Copy remaining JSON file contents                       
+                        byte[] textByteArray = Encoding.UTF8.GetBytes(text);
+                        file.Write(textByteArray, 0, textByteArray.Length);
+                        file.SetLength(file.Position);
                     }
                 }
             }

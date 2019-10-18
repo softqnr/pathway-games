@@ -2,6 +2,8 @@
 {
     public interface ISensorLogWriterService
     {
+        long LogItemCount { get; }
+
         string LogItemSeparator { get; }
 
         string LogFile { get; }
