@@ -36,7 +36,6 @@
 
   <ItemGroup>
     <Folder Include="Helpers\" />
-    <Folder Include="Infrastructure\Share\" />
   </ItemGroup>
 
   <ItemGroup>

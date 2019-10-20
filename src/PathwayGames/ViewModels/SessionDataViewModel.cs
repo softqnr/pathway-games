@@ -1,10 +1,10 @@
-﻿using PathwayGames.Infrastructure.Share;
-using PathwayGames.Models;
+﻿using PathwayGames.Models;
 using PathwayGames.Services.User;
 using System.Collections.ObjectModel;
 using System.IO;
 using System.Threading.Tasks;
 using System.Windows.Input;
+using Xamarin.Essentials;
 using Xamarin.Forms;
 
 namespace PathwayGames.ViewModels
@@ -25,9 +25,9 @@ namespace PathwayGames.ViewModels
         {
             get
             {
-                return new Command((s) =>
+                return new Command(async (s) =>
                 {
-                    ShareGameData((string)s);
+                    await ShareGameData((string)s);
                 });
             }
         }
@@ -36,23 +36,37 @@ namespace PathwayGames.ViewModels
         {
             get
             {
-                return new Command((s) =>
+                return new Command(async (s) =>
                 {
-                    ShareSensorData((string)s);
+                    await ShareSensorData((string)s);
                 });
             }
         }
 
-        private void ShareGameData(string gameDataFile)
+        private async Task ShareGameData(string gameDataFile)
         {
-            string filePath = Path.Combine(App.LocalStorageDirectory, gameDataFile);
-            DependencyService.Get<IShare>().ShareFile("Share game data", "Share game data", filePath);
+            var message = new EmailMessage
+            {
+                Subject = "Pathway+ Games - Test results",
+                Body = "",
+            };
+
+            message.Attachments.Add(new EmailAttachment(Path.Combine(App.LocalStorageDirectory, gameDataFile)));
+
+            await Email.ComposeAsync(message);
         }
 
-        private void ShareSensorData(string sensorDataFile)
+        private async Task ShareSensorData(string sensorDataFile)
         {
-            string filePath = Path.Combine(App.LocalStorageDirectory, sensorDataFile);
-            DependencyService.Get<IShare>().ShareFile("Share sensor data", "Share sensor data", filePath);
+            var message = new EmailMessage
+            {
+                Subject = "Pathway+ Games - Sensor data",
+                Body = "",
+            };
+
+            message.Attachments.Add(new EmailAttachment(Path.Combine(App.LocalStorageDirectory, sensorDataFile)));
+
+            await Email.ComposeAsync(message);
         }
 
         public SessionDataViewModel(IUserService userService)

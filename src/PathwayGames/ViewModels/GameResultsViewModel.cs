@@ -1,10 +1,10 @@
 ﻿using PathwayGames.Models;
 using PathwayGames.Services.Excel;
-using PathwayGames.Infrastructure.Share;
 using System.Threading.Tasks;
 using System.Windows.Input;
 using Xamarin.Forms;
 using System.IO;
+using Xamarin.Essentials;
 
 namespace PathwayGames.ViewModels
 {
@@ -23,9 +23,9 @@ namespace PathwayGames.ViewModels
         {
             get
             {
-                return new Command(() =>
+                return new Command(async () =>
                 {
-                    ShareGameData();
+                    await ShareGameData();
                 });
             }
         }
@@ -34,9 +34,9 @@ namespace PathwayGames.ViewModels
         {
             get
             {
-                return new Command(() =>
+                return new Command(async () =>
                 {
-                    ShareSensorData();
+                    await ShareSensorData();
                 });
             }
         }
@@ -61,20 +61,40 @@ namespace PathwayGames.ViewModels
         {
             DialogService.ShowLoading("Generating results …");
             string fileName = await _excelService.ExportAsync(_game);
+
+            await Share.RequestAsync(new ShareFileRequest
+            {
+                Title = "Share results",
+                File = new ShareFile(fileName)
+            });
+
             DialogService.HideLoading();
-            DependencyService.Get<IShare>().ShareFile("Share results", "Share results", fileName);
         }
 
-        private void ShareGameData()
+        private async Task ShareGameData()
         {
-            string filePath = Path.Combine(App.LocalStorageDirectory, _game.GameDataFile);
-            DependencyService.Get<IShare>().ShareFile("Share game data", "Share game data", filePath);
+            var message = new EmailMessage
+            {
+                Subject = "Pathway+ Games - Test results",
+                Body = "",
+            };
+
+            message.Attachments.Add(new EmailAttachment(Path.Combine(App.LocalStorageDirectory, _game.GameDataFile)));
+
+            await Email.ComposeAsync(message);
         }
 
-        private void ShareSensorData()
+        private async Task ShareSensorData()
         {
-            string filePath = Path.Combine(App.LocalStorageDirectory, _game.SensorDataFile);
-            DependencyService.Get<IShare>().ShareFile("Share sensor data", "Share sensor data", filePath);
+            var message = new EmailMessage
+            {
+                Subject = "Pathway+ Games - Sensor data",
+                Body = "",
+            };
+
+            message.Attachments.Add(new EmailAttachment(Path.Combine(App.LocalStorageDirectory, _game.SensorDataFile)));
+
+            await Email.ComposeAsync(message);
         }
 
         public override async Task InitializeAsync(object navigationData)

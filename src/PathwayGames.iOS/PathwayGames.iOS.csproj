@@ -129,7 +129,6 @@
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
     <Compile Include="Controls\EyeGazeDetectionDelegate.cs" />
-    <Compile Include="Infrastructure\Share\Share.cs" />
     <Compile Include="Infrastructure\Sound\SoundProvider.cs" />
     <None Include="Entitlements.plist" />
     <None Include="Info.plist" />

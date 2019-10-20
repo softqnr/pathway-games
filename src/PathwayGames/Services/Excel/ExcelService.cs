@@ -3,10 +3,10 @@ using DocumentFormat.OpenXml.Packaging;
 using DocumentFormat.OpenXml.Spreadsheet;
 using PathwayGames.Models;
 using System;
-using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
+using Xamarin.Essentials;
 
 namespace PathwayGames.Services.Excel
 {
@@ -16,13 +16,14 @@ namespace PathwayGames.Services.Excel
         {
             return await Task.Run(() => Export(game));
         }
+
         public string Export(Game game)
         {
             //Fix for https://github.com/OfficeDev/Open-XML-SDK/issues/221
             Environment.SetEnvironmentVariable("MONO_URI_DOTNETRELATIVEORABSOLUTE", "true");
 
             //Create a new spreadsheet file - remark will overwrite existing ones with the same name!
-            string fullPath = Path.Combine(Path.GetTempPath(), "results.xlsx");
+            string fullPath = Path.Combine(FileSystem.CacheDirectory, "results.xlsx");
            
             SpreadsheetDocument spreadsheetDocument = SpreadsheetDocument.Create(fullPath, SpreadsheetDocumentType.Workbook);
 

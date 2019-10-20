@@ -87,7 +87,6 @@
     <Compile Include="MainActivity.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Infrastructure\Share\Share.cs" />
     <Compile Include="Infrastructure\Sound\SoundProvider.cs" />
   </ItemGroup>
   <ItemGroup>
