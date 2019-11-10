@@ -1,4 +1,6 @@
 ﻿using PathwayGames.ViewModels;
+using System;
+using Xamarin.Essentials;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -7,10 +9,30 @@ namespace PathwayGames.Views
     [XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class ViewBase : ContentPage
 	{
-		public ViewBase ()
+        public event EventHandler<PageOrientationEventArgs> OnOrientationChanged = (e, a) => { };
+        public DisplayOrientation DeviceOrientantion { get; private set; }
+
+        public ViewBase ()
 		{
 			InitializeComponent ();
-		}
+            Init();
+        }
+
+        private void Init()
+        {
+            DeviceOrientantion = DeviceDisplay.MainDisplayInfo.Orientation;
+            DeviceDisplay.MainDisplayInfoChanged += OnMainDisplayInfoChanged;
+        }
+
+        private void OnMainDisplayInfoChanged(object sender, DisplayInfoChangedEventArgs e)
+        {
+            // Has the device been rotated ?
+            if (!Equals(DeviceOrientantion, e.DisplayInfo.Orientation))
+            {
+                DeviceOrientantion = e.DisplayInfo.Orientation;
+                OnOrientationChanged.Invoke(this, new PageOrientationEventArgs(e.DisplayInfo.Orientation));
+            }
+        }
 
         protected override bool OnBackButtonPressed()
         {
@@ -41,5 +63,15 @@ namespace PathwayGames.Views
             if (bindingContext != null)
                 bindingContext.OnDisappearing();
         }
+    }
+
+    public class PageOrientationEventArgs : EventArgs
+    {
+        public PageOrientationEventArgs(DisplayOrientation orientation)
+        {
+            Orientation = orientation;
+        }
+
+        public DisplayOrientation Orientation { get; }
     }
 }

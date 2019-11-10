@@ -9,10 +9,11 @@ namespace PathwayGames.ViewModels
     {
         protected readonly INavigationService NavigationService;
         protected readonly IDialogService DialogService;
+
         public ViewModelBase()
         {
             DialogService = ServiceLocator.Current.GetInstance<IDialogService>();
-            NavigationService = ServiceLocator.Current.GetInstance<INavigationService>(); ;
+            NavigationService = ServiceLocator.Current.GetInstance<INavigationService>();
         }
 
         private bool _isBusy;
@@ -33,6 +34,7 @@ namespace PathwayGames.ViewModels
         {
             return Task.FromResult(false);
         }
+
         public virtual void OnBackButtonPressed()
         {
 

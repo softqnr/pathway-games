@@ -1,13 +1,10 @@
-﻿using System;
-
+﻿using Acr.UserDialogs;
 using Android.App;
 using Android.Content.PM;
-using Android.Runtime;
-using Android.Views;
-using Android.Widget;
 using Android.OS;
+using Android.Runtime;
 using FFImageLoading.Forms.Platform;
-using Acr.UserDialogs;
+using System;
 using System.Threading.Tasks;
 
 namespace PathwayGames.Droid
@@ -27,9 +24,9 @@ namespace PathwayGames.Droid
             UserDialogs.Init(this);
             Rg.Plugins.Popup.Popup.Init(this, savedInstanceState);
 
-            global::Xamarin.Forms.Forms.SetFlags("CollectionView_Experimental");
             global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
             global::Xamarin.Forms.FormsMaterial.Init(this, savedInstanceState);
+            AiForms.Renderers.Droid.SettingsViewInit.Init();
 
             // Catch unhandled exceptions
             AppDomain.CurrentDomain.UnhandledException += async (sender, e) => await UnhandledExceptionHandler(sender, e);

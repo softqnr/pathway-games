@@ -2,11 +2,11 @@
 using PathwayGames.Infrastructure.Sound;
 using PathwayGames.Models;
 using PathwayGames.Models.Enums;
-using PathwayGames.Services.Engangement;
 using PathwayGames.Services.Sensors;
 using PathwayGames.Services.Slides;
 using PathwayGames.Services.User;
 using System;
+using System.Collections.Generic;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Input;
@@ -26,7 +26,6 @@ namespace PathwayGames.ViewModels
         private IUserService _userService;
         private ISensorLogWriterService _sensorLowWriterService;
         private ISoundService _soundService;
-        private IEngangementService _engangementService;
 
         private string _title;
         private bool _paused;
@@ -34,7 +33,8 @@ namespace PathwayGames.ViewModels
         private int? _slideIndex;
         private int? _slideCount;
         private bool _eyeGazeTrackingEnabled;
-        private ImageSource _slideImageSource;
+        private int _imageGridColumns = 1;
+        private IList<string> _slideImages;
         private ImageSource _eyeGazeIconImageSource;
         private ImageSource _eegIconImageSource;
         private string _seed;
@@ -63,16 +63,22 @@ namespace PathwayGames.ViewModels
             set => SetProperty(ref _slideCount, value);
         }
 
-        public ImageSource SlideImageSource
+        public IList<string> SlideImages
         {
-            get => _slideImageSource;
-            set => SetProperty(ref _slideImageSource, value);
+            get => _slideImages;
+            set => SetProperty(ref _slideImages, value);
         }
 
         public bool Paused
         {
             get => _paused;
             set => SetProperty(ref _paused, value);
+        }
+
+        public int ImageGridColumns
+        {
+            get => _imageGridColumns;
+            set => SetProperty(ref _imageGridColumns, value);
         }
 
         public bool SensorRecording
@@ -149,14 +155,12 @@ namespace PathwayGames.ViewModels
         public GameViewModel(ISlidesService slidesService,
             IUserService userService,
             ISoundService soundService,
-            ISensorLogWriterService sensorLowWriterService,
-            IEngangementService engangementService)
+            ISensorLogWriterService sensorLowWriterService)
         {
             _slidesService = slidesService;
             _userService = userService;
             _sensorLowWriterService = sensorLowWriterService;
             _soundService = soundService;
-            _engangementService = engangementService;
 
             _userName = App.SelectedUser.UserName;
 
@@ -256,9 +260,14 @@ namespace PathwayGames.ViewModels
                 _cts.Cancel();
             }
             CurrentSlide = _slidesService.GetRandomRewardSlide(_gameSettings.RewardDisplayDuration);
-
+            // Set span to 1 to display reward slide
+            int GameImageGridColumns = ImageGridColumns;
+            SlideImages = null;
+            ImageGridColumns = 1;
             // Render slide
             await RenderSlide(CurrentSlide);
+            // Restore ImageGridColumns
+            ImageGridColumns = GameImageGridColumns;
             System.Diagnostics.Debug.WriteLine("({0}/{1}) - {2:HH:mm:ss.fff} - ShowRewardSlide() Finished {3} Blank delay left", SlideIndex, SlideCount, DateTime.Now, blankSlideTime.TotalSeconds);
             //
             await StateMachine.ChangeStateToShowBlankSlide(blankSlideTime.TotalSeconds);
@@ -269,7 +278,7 @@ namespace PathwayGames.ViewModels
             System.Diagnostics.Debug.WriteLine("({0}/{1}) - {2:HH:mm:ss.fff} - ShowBlankSlideCancelable({3})", SlideIndex, SlideCount, DateTime.Now,
                 duration);
             // Display blank slide / cancelable
-            SlideImageSource = null;
+            SlideImages = null;
 
             try
             {
@@ -292,7 +301,7 @@ namespace PathwayGames.ViewModels
             System.Diagnostics.Debug.WriteLine("({0}/{1}) - {2:HH:mm:ss.fff} - ShowBlankSlide({3})", SlideIndex, SlideCount, DateTime.Now,
                duration);
             // Display blank slide
-            SlideImageSource = null;
+            SlideImages = null;
 
             await Task.Delay(TimeSpan.FromSeconds(duration));
             //
@@ -302,7 +311,7 @@ namespace PathwayGames.ViewModels
         private async Task RenderSlide(Slide slide)
         {
             // Display slide image
-            SlideImageSource = ImageSource.FromFile(slide.Image);
+            SlideImages = slide.Images;
             // Set slide displayed time
             CurrentSlide.SlideDisplayed = DateTime.Now;
             // Play slide sound
@@ -394,6 +403,11 @@ namespace PathwayGames.ViewModels
                 // Read User Game Settings
                 _gameSettings = await _userService.GetUserSettings(App.SelectedUser.Id);
                 _eyeGazeTrackingEnabled = _gameSettings.EyeGazeSensor;
+                // Set grid columns for images
+                if (gameType == GameType.SeekX)
+                {
+                    ImageGridColumns = _gameSettings.SeekGridOptions.GridColumns;
+                }
                 // Set sensor icons
                 EyeGazeIconImageSource = ImageSource.FromFile(_eyeGazeTrackingEnabled ? "icon_eye.png" : "icon_eye_off.png");
                 EEGIconImageSource = ImageSource.FromFile(_gameSettings.EEGSensor ? "icon_head.png" : "icon_head_off.png");

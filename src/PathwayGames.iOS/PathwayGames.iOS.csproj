@@ -126,6 +126,7 @@
     <Compile Include="Extensions\NVector3Extensions.cs" />
     <Compile Include="Extensions\SCNVector3Extensions.cs" />
     <Compile Include="Infrastructure\File\FileAccessHelper.cs" />
+    <Compile Include="Infrastructure\Keyboard\KeyboardService.cs" />
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
     <Compile Include="Controls\EyeGazeDetectionDelegate.cs" />
@@ -146,7 +147,10 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Acr.UserDialogs">
-      <Version>7.0.1</Version>
+      <Version>7.0.4</Version>
+    </PackageReference>
+    <PackageReference Include="AiForms.SettingsView">
+      <Version>0.5.2</Version>
     </PackageReference>
     <PackageReference Include="Rg.Plugins.Popup">
       <Version>1.2.0.223</Version>
@@ -157,13 +161,13 @@
     <PackageReference Include="Xamarin.FFImageLoading.Forms">
       <Version>2.4.11.982</Version>
     </PackageReference>
-    <PackageReference Include="Xamarin.Forms" Version="4.2.0.848062" />
+    <PackageReference Include="Xamarin.Forms" Version="4.3.0.947036" />
     <PackageReference Include="System.Reflection.Emit" Version="4.6.0">
       <ExcludeAssets>all</ExcludeAssets>
       <IncludeAssets>none</IncludeAssets>
     </PackageReference>
     <PackageReference Include="Xamarin.Forms.Visual.Material">
-      <Version>4.2.0.848062</Version>
+      <Version>4.3.0.947036</Version>
     </PackageReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
@@ -376,5 +380,8 @@
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\logo_white.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\backpack.jpg" />
   </ItemGroup>
 </Project>

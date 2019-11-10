@@ -1,5 +1,8 @@
 ﻿using PathwayGames.Models;
 using PathwayGames.Services.User;
+using System;
+using System.Collections;
+using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.IO;
 using System.Threading.Tasks;
@@ -13,7 +16,13 @@ namespace PathwayGames.ViewModels
     {
         private IUserService _userService;
         private string _title;
-        public ObservableCollection<UserGameSession> GameSessions { get; } = new ObservableCollection<UserGameSession>();
+        private IList<UserGameSession> _gameSessions;
+
+        public IList<UserGameSession> GameSessions
+        {
+            get => _gameSessions;
+            set => SetProperty(ref _gameSessions, value);
+        }
 
         public string Title
         {
@@ -76,17 +85,19 @@ namespace PathwayGames.ViewModels
 
         public override async Task InitializeAsync(object navigationData)
         {
+            DialogService.ShowLoading("Loading …");
             if (navigationData == null)
             {
                 Title = "Session data - " + App.SelectedUser.UserName;
                 // Show current selected users game sessions
-                foreach (var item in await _userService.GetUserGameSessions(App.SelectedUser.Id)) GameSessions.Add(item);
+                GameSessions = await _userService.GetUserGameSessions(App.SelectedUser.Id);
             } else {
                 User user = navigationData as User;
                 Title = "Session data - " + user.UserName;
                 // Show users game sessions
-                foreach (var item in await _userService.GetUserGameSessions(user.Id)) GameSessions.Add(item);
+                GameSessions = await _userService.GetUserGameSessions(user.Id);
             }
+            DialogService.HideLoading();
         }
     }
 }

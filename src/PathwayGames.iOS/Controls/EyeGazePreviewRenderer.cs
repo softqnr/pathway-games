@@ -37,7 +37,9 @@ namespace PathwayGames.iOS.Controls
                     // Frame = new CGRect(View.Frame.X, View.Frame.Y, View.Frame.Width, View.Frame.Height),
                     // ShowsStatistics = true, // Show stats
                 };
- 
+                // Hide camera display
+                SceneView.Scene.Background.Contents = UIColor.White;
+
                 SetNativeControl(SceneView);
 
                 SceneView.Session.Delegate = this;

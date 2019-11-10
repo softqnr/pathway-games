@@ -16,6 +16,17 @@ namespace PathwayGames.ViewModels
             }
         }
 
+        public ICommand SeekX
+        {
+            get
+            {
+                return new Command(async () =>
+                {
+                    await NavigationService.NavigateToAsync<GameViewModel>(GameType.SeekX);
+                });
+            }
+        }
+
         public ICommand TypeAX
         {
             get

@@ -22,8 +22,8 @@ namespace PathwayGames.iOS
         {
             Rg.Plugins.Popup.Popup.Init();
             FFImageLoading.Forms.Platform.CachedImageRenderer.Init();
-            global::Xamarin.Forms.Forms.SetFlags("CollectionView_Experimental");
             global::Xamarin.Forms.Forms.Init();
+            AiForms.Renderers.iOS.SettingsViewInit.Init(); 
             global::Xamarin.Forms.FormsMaterial.Init();
             LoadApplication(new App());
 

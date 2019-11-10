@@ -87,6 +87,8 @@ namespace PathwayGames.Services.Slides
                 .Ignore(Triggers.CorrectCommision);
 
             Configure(States.Exited)
+                .Ignore(Triggers.ShowBlank)
+                .Ignore(Triggers.NextSlide)
                 .Ignore(Triggers.SlideFinished);
 
             OnTransitioned

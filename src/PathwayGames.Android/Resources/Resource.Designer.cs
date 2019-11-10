@@ -63,6 +63,2926 @@ namespace PathwayGames.Droid
 			global::AndroidHUD.Resource.Styleable.ProgressWheel_ahText = global::PathwayGames.Droid.Resource.Styleable.ProgressWheel_ahText;
 			global::AndroidHUD.Resource.Styleable.ProgressWheel_ahTextColor = global::PathwayGames.Droid.Resource.Styleable.ProgressWheel_ahTextColor;
 			global::AndroidHUD.Resource.Styleable.ProgressWheel_ahTextSize = global::PathwayGames.Droid.Resource.Styleable.ProgressWheel_ahTextSize;
+			global::AiForms.Renderers.Droid.Resource.Animation.abc_fade_in = global::PathwayGames.Droid.Resource.Animation.abc_fade_in;
+			global::AiForms.Renderers.Droid.Resource.Animation.abc_fade_out = global::PathwayGames.Droid.Resource.Animation.abc_fade_out;
+			global::AiForms.Renderers.Droid.Resource.Animation.abc_grow_fade_in_from_bottom = global::PathwayGames.Droid.Resource.Animation.abc_grow_fade_in_from_bottom;
+			global::AiForms.Renderers.Droid.Resource.Animation.abc_popup_enter = global::PathwayGames.Droid.Resource.Animation.abc_popup_enter;
+			global::AiForms.Renderers.Droid.Resource.Animation.abc_popup_exit = global::PathwayGames.Droid.Resource.Animation.abc_popup_exit;
+			global::AiForms.Renderers.Droid.Resource.Animation.abc_shrink_fade_out_from_bottom = global::PathwayGames.Droid.Resource.Animation.abc_shrink_fade_out_from_bottom;
+			global::AiForms.Renderers.Droid.Resource.Animation.abc_slide_in_bottom = global::PathwayGames.Droid.Resource.Animation.abc_slide_in_bottom;
+			global::AiForms.Renderers.Droid.Resource.Animation.abc_slide_in_top = global::PathwayGames.Droid.Resource.Animation.abc_slide_in_top;
+			global::AiForms.Renderers.Droid.Resource.Animation.abc_slide_out_bottom = global::PathwayGames.Droid.Resource.Animation.abc_slide_out_bottom;
+			global::AiForms.Renderers.Droid.Resource.Animation.abc_slide_out_top = global::PathwayGames.Droid.Resource.Animation.abc_slide_out_top;
+			global::AiForms.Renderers.Droid.Resource.Animation.abc_tooltip_enter = global::PathwayGames.Droid.Resource.Animation.abc_tooltip_enter;
+			global::AiForms.Renderers.Droid.Resource.Animation.abc_tooltip_exit = global::PathwayGames.Droid.Resource.Animation.abc_tooltip_exit;
+			global::AiForms.Renderers.Droid.Resource.Animation.design_bottom_sheet_slide_in = global::PathwayGames.Droid.Resource.Animation.design_bottom_sheet_slide_in;
+			global::AiForms.Renderers.Droid.Resource.Animation.design_bottom_sheet_slide_out = global::PathwayGames.Droid.Resource.Animation.design_bottom_sheet_slide_out;
+			global::AiForms.Renderers.Droid.Resource.Animation.design_snackbar_in = global::PathwayGames.Droid.Resource.Animation.design_snackbar_in;
+			global::AiForms.Renderers.Droid.Resource.Animation.design_snackbar_out = global::PathwayGames.Droid.Resource.Animation.design_snackbar_out;
+			global::AiForms.Renderers.Droid.Resource.Animation.EnterFromLeft = global::PathwayGames.Droid.Resource.Animation.EnterFromLeft;
+			global::AiForms.Renderers.Droid.Resource.Animation.EnterFromRight = global::PathwayGames.Droid.Resource.Animation.EnterFromRight;
+			global::AiForms.Renderers.Droid.Resource.Animation.ExitToLeft = global::PathwayGames.Droid.Resource.Animation.ExitToLeft;
+			global::AiForms.Renderers.Droid.Resource.Animation.ExitToRight = global::PathwayGames.Droid.Resource.Animation.ExitToRight;
+			global::AiForms.Renderers.Droid.Resource.Animator.design_appbar_state_list_animator = global::PathwayGames.Droid.Resource.Animator.design_appbar_state_list_animator;
+			global::AiForms.Renderers.Droid.Resource.Animator.design_fab_hide_motion_spec = global::PathwayGames.Droid.Resource.Animator.design_fab_hide_motion_spec;
+			global::AiForms.Renderers.Droid.Resource.Animator.design_fab_show_motion_spec = global::PathwayGames.Droid.Resource.Animator.design_fab_show_motion_spec;
+			global::AiForms.Renderers.Droid.Resource.Animator.mtrl_btn_state_list_anim = global::PathwayGames.Droid.Resource.Animator.mtrl_btn_state_list_anim;
+			global::AiForms.Renderers.Droid.Resource.Animator.mtrl_btn_unelevated_state_list_anim = global::PathwayGames.Droid.Resource.Animator.mtrl_btn_unelevated_state_list_anim;
+			global::AiForms.Renderers.Droid.Resource.Animator.mtrl_chip_state_list_anim = global::PathwayGames.Droid.Resource.Animator.mtrl_chip_state_list_anim;
+			global::AiForms.Renderers.Droid.Resource.Animator.mtrl_fab_hide_motion_spec = global::PathwayGames.Droid.Resource.Animator.mtrl_fab_hide_motion_spec;
+			global::AiForms.Renderers.Droid.Resource.Animator.mtrl_fab_show_motion_spec = global::PathwayGames.Droid.Resource.Animator.mtrl_fab_show_motion_spec;
+			global::AiForms.Renderers.Droid.Resource.Animator.mtrl_fab_transformation_sheet_collapse_spec = global::PathwayGames.Droid.Resource.Animator.mtrl_fab_transformation_sheet_collapse_spec;
+			global::AiForms.Renderers.Droid.Resource.Animator.mtrl_fab_transformation_sheet_expand_spec = global::PathwayGames.Droid.Resource.Animator.mtrl_fab_transformation_sheet_expand_spec;
+			global::AiForms.Renderers.Droid.Resource.Attribute.actionBarDivider = global::PathwayGames.Droid.Resource.Attribute.actionBarDivider;
+			global::AiForms.Renderers.Droid.Resource.Attribute.actionBarItemBackground = global::PathwayGames.Droid.Resource.Attribute.actionBarItemBackground;
+			global::AiForms.Renderers.Droid.Resource.Attribute.actionBarPopupTheme = global::PathwayGames.Droid.Resource.Attribute.actionBarPopupTheme;
+			global::AiForms.Renderers.Droid.Resource.Attribute.actionBarSize = global::PathwayGames.Droid.Resource.Attribute.actionBarSize;
+			global::AiForms.Renderers.Droid.Resource.Attribute.actionBarSplitStyle = global::PathwayGames.Droid.Resource.Attribute.actionBarSplitStyle;
+			global::AiForms.Renderers.Droid.Resource.Attribute.actionBarStyle = global::PathwayGames.Droid.Resource.Attribute.actionBarStyle;
+			global::AiForms.Renderers.Droid.Resource.Attribute.actionBarTabBarStyle = global::PathwayGames.Droid.Resource.Attribute.actionBarTabBarStyle;
+			global::AiForms.Renderers.Droid.Resource.Attribute.actionBarTabStyle = global::PathwayGames.Droid.Resource.Attribute.actionBarTabStyle;
+			global::AiForms.Renderers.Droid.Resource.Attribute.actionBarTabTextStyle = global::PathwayGames.Droid.Resource.Attribute.actionBarTabTextStyle;
+			global::AiForms.Renderers.Droid.Resource.Attribute.actionBarTheme = global::PathwayGames.Droid.Resource.Attribute.actionBarTheme;
+			global::AiForms.Renderers.Droid.Resource.Attribute.actionBarWidgetTheme = global::PathwayGames.Droid.Resource.Attribute.actionBarWidgetTheme;
+			global::AiForms.Renderers.Droid.Resource.Attribute.actionButtonStyle = global::PathwayGames.Droid.Resource.Attribute.actionButtonStyle;
+			global::AiForms.Renderers.Droid.Resource.Attribute.actionDropDownStyle = global::PathwayGames.Droid.Resource.Attribute.actionDropDownStyle;
+			global::AiForms.Renderers.Droid.Resource.Attribute.actionLayout = global::PathwayGames.Droid.Resource.Attribute.actionLayout;
+			global::AiForms.Renderers.Droid.Resource.Attribute.actionMenuTextAppearance = global::PathwayGames.Droid.Resource.Attribute.actionMenuTextAppearance;
+			global::AiForms.Renderers.Droid.Resource.Attribute.actionMenuTextColor = global::PathwayGames.Droid.Resource.Attribute.actionMenuTextColor;
+			global::AiForms.Renderers.Droid.Resource.Attribute.actionModeBackground = global::PathwayGames.Droid.Resource.Attribute.actionModeBackground;
+			global::AiForms.Renderers.Droid.Resource.Attribute.actionModeCloseButtonStyle = global::PathwayGames.Droid.Resource.Attribute.actionModeCloseButtonStyle;
+			global::AiForms.Renderers.Droid.Resource.Attribute.actionModeCloseDrawable = global::PathwayGames.Droid.Resource.Attribute.actionModeCloseDrawable;
+			global::AiForms.Renderers.Droid.Resource.Attribute.actionModeCopyDrawable = global::PathwayGames.Droid.Resource.Attribute.actionModeCopyDrawable;
+			global::AiForms.Renderers.Droid.Resource.Attribute.actionModeCutDrawable = global::PathwayGames.Droid.Resource.Attribute.actionModeCutDrawable;
+			global::AiForms.Renderers.Droid.Resource.Attribute.actionModeFindDrawable = global::PathwayGames.Droid.Resource.Attribute.actionModeFindDrawable;
+			global::AiForms.Renderers.Droid.Resource.Attribute.actionModePasteDrawable = global::PathwayGames.Droid.Resource.Attribute.actionModePasteDrawable;
+			global::AiForms.Renderers.Droid.Resource.Attribute.actionModePopupWindowStyle = global::PathwayGames.Droid.Resource.Attribute.actionModePopupWindowStyle;
+			global::AiForms.Renderers.Droid.Resource.Attribute.actionModeSelectAllDrawable = global::PathwayGames.Droid.Resource.Attribute.actionModeSelectAllDrawable;
+			global::AiForms.Renderers.Droid.Resource.Attribute.actionModeShareDrawable = global::PathwayGames.Droid.Resource.Attribute.actionModeShareDrawable;
+			global::AiForms.Renderers.Droid.Resource.Attribute.actionModeSplitBackground = global::PathwayGames.Droid.Resource.Attribute.actionModeSplitBackground;
+			global::AiForms.Renderers.Droid.Resource.Attribute.actionModeStyle = global::PathwayGames.Droid.Resource.Attribute.actionModeStyle;
+			global::AiForms.Renderers.Droid.Resource.Attribute.actionModeWebSearchDrawable = global::PathwayGames.Droid.Resource.Attribute.actionModeWebSearchDrawable;
+			global::AiForms.Renderers.Droid.Resource.Attribute.actionOverflowButtonStyle = global::PathwayGames.Droid.Resource.Attribute.actionOverflowButtonStyle;
+			global::AiForms.Renderers.Droid.Resource.Attribute.actionOverflowMenuStyle = global::PathwayGames.Droid.Resource.Attribute.actionOverflowMenuStyle;
+			global::AiForms.Renderers.Droid.Resource.Attribute.actionProviderClass = global::PathwayGames.Droid.Resource.Attribute.actionProviderClass;
+			global::AiForms.Renderers.Droid.Resource.Attribute.actionViewClass = global::PathwayGames.Droid.Resource.Attribute.actionViewClass;
+			global::AiForms.Renderers.Droid.Resource.Attribute.activityChooserViewStyle = global::PathwayGames.Droid.Resource.Attribute.activityChooserViewStyle;
+			global::AiForms.Renderers.Droid.Resource.Attribute.alertDialogButtonGroupStyle = global::PathwayGames.Droid.Resource.Attribute.alertDialogButtonGroupStyle;
+			global::AiForms.Renderers.Droid.Resource.Attribute.alertDialogCenterButtons = global::PathwayGames.Droid.Resource.Attribute.alertDialogCenterButtons;
+			global::AiForms.Renderers.Droid.Resource.Attribute.alertDialogStyle = global::PathwayGames.Droid.Resource.Attribute.alertDialogStyle;
+			global::AiForms.Renderers.Droid.Resource.Attribute.alertDialogTheme = global::PathwayGames.Droid.Resource.Attribute.alertDialogTheme;
+			global::AiForms.Renderers.Droid.Resource.Attribute.allowStacking = global::PathwayGames.Droid.Resource.Attribute.allowStacking;
+			global::AiForms.Renderers.Droid.Resource.Attribute.alpha = global::PathwayGames.Droid.Resource.Attribute.alpha;
+			global::AiForms.Renderers.Droid.Resource.Attribute.alphabeticModifiers = global::PathwayGames.Droid.Resource.Attribute.alphabeticModifiers;
+			global::AiForms.Renderers.Droid.Resource.Attribute.arrowHeadLength = global::PathwayGames.Droid.Resource.Attribute.arrowHeadLength;
+			global::AiForms.Renderers.Droid.Resource.Attribute.arrowShaftLength = global::PathwayGames.Droid.Resource.Attribute.arrowShaftLength;
+			global::AiForms.Renderers.Droid.Resource.Attribute.autoCompleteTextViewStyle = global::PathwayGames.Droid.Resource.Attribute.autoCompleteTextViewStyle;
+			global::AiForms.Renderers.Droid.Resource.Attribute.autoSizeMaxTextSize = global::PathwayGames.Droid.Resource.Attribute.autoSizeMaxTextSize;
+			global::AiForms.Renderers.Droid.Resource.Attribute.autoSizeMinTextSize = global::PathwayGames.Droid.Resource.Attribute.autoSizeMinTextSize;
+			global::AiForms.Renderers.Droid.Resource.Attribute.autoSizePresetSizes = global::PathwayGames.Droid.Resource.Attribute.autoSizePresetSizes;
+			global::AiForms.Renderers.Droid.Resource.Attribute.autoSizeStepGranularity = global::PathwayGames.Droid.Resource.Attribute.autoSizeStepGranularity;
+			global::AiForms.Renderers.Droid.Resource.Attribute.autoSizeTextType = global::PathwayGames.Droid.Resource.Attribute.autoSizeTextType;
+			global::AiForms.Renderers.Droid.Resource.Attribute.background = global::PathwayGames.Droid.Resource.Attribute.background;
+			global::AiForms.Renderers.Droid.Resource.Attribute.backgroundSplit = global::PathwayGames.Droid.Resource.Attribute.backgroundSplit;
+			global::AiForms.Renderers.Droid.Resource.Attribute.backgroundStacked = global::PathwayGames.Droid.Resource.Attribute.backgroundStacked;
+			global::AiForms.Renderers.Droid.Resource.Attribute.backgroundTint = global::PathwayGames.Droid.Resource.Attribute.backgroundTint;
+			global::AiForms.Renderers.Droid.Resource.Attribute.backgroundTintMode = global::PathwayGames.Droid.Resource.Attribute.backgroundTintMode;
+			global::AiForms.Renderers.Droid.Resource.Attribute.barLength = global::PathwayGames.Droid.Resource.Attribute.barLength;
+			global::AiForms.Renderers.Droid.Resource.Attribute.behavior_autoHide = global::PathwayGames.Droid.Resource.Attribute.behavior_autoHide;
+			global::AiForms.Renderers.Droid.Resource.Attribute.behavior_fitToContents = global::PathwayGames.Droid.Resource.Attribute.behavior_fitToContents;
+			global::AiForms.Renderers.Droid.Resource.Attribute.behavior_hideable = global::PathwayGames.Droid.Resource.Attribute.behavior_hideable;
+			global::AiForms.Renderers.Droid.Resource.Attribute.behavior_overlapTop = global::PathwayGames.Droid.Resource.Attribute.behavior_overlapTop;
+			global::AiForms.Renderers.Droid.Resource.Attribute.behavior_peekHeight = global::PathwayGames.Droid.Resource.Attribute.behavior_peekHeight;
+			global::AiForms.Renderers.Droid.Resource.Attribute.behavior_skipCollapsed = global::PathwayGames.Droid.Resource.Attribute.behavior_skipCollapsed;
+			global::AiForms.Renderers.Droid.Resource.Attribute.borderWidth = global::PathwayGames.Droid.Resource.Attribute.borderWidth;
+			global::AiForms.Renderers.Droid.Resource.Attribute.borderlessButtonStyle = global::PathwayGames.Droid.Resource.Attribute.borderlessButtonStyle;
+			global::AiForms.Renderers.Droid.Resource.Attribute.bottomAppBarStyle = global::PathwayGames.Droid.Resource.Attribute.bottomAppBarStyle;
+			global::AiForms.Renderers.Droid.Resource.Attribute.bottomNavigationStyle = global::PathwayGames.Droid.Resource.Attribute.bottomNavigationStyle;
+			global::AiForms.Renderers.Droid.Resource.Attribute.bottomSheetDialogTheme = global::PathwayGames.Droid.Resource.Attribute.bottomSheetDialogTheme;
+			global::AiForms.Renderers.Droid.Resource.Attribute.bottomSheetStyle = global::PathwayGames.Droid.Resource.Attribute.bottomSheetStyle;
+			global::AiForms.Renderers.Droid.Resource.Attribute.boxBackgroundColor = global::PathwayGames.Droid.Resource.Attribute.boxBackgroundColor;
+			global::AiForms.Renderers.Droid.Resource.Attribute.boxBackgroundMode = global::PathwayGames.Droid.Resource.Attribute.boxBackgroundMode;
+			global::AiForms.Renderers.Droid.Resource.Attribute.boxCollapsedPaddingTop = global::PathwayGames.Droid.Resource.Attribute.boxCollapsedPaddingTop;
+			global::AiForms.Renderers.Droid.Resource.Attribute.boxCornerRadiusBottomEnd = global::PathwayGames.Droid.Resource.Attribute.boxCornerRadiusBottomEnd;
+			global::AiForms.Renderers.Droid.Resource.Attribute.boxCornerRadiusBottomStart = global::PathwayGames.Droid.Resource.Attribute.boxCornerRadiusBottomStart;
+			global::AiForms.Renderers.Droid.Resource.Attribute.boxCornerRadiusTopEnd = global::PathwayGames.Droid.Resource.Attribute.boxCornerRadiusTopEnd;
+			global::AiForms.Renderers.Droid.Resource.Attribute.boxCornerRadiusTopStart = global::PathwayGames.Droid.Resource.Attribute.boxCornerRadiusTopStart;
+			global::AiForms.Renderers.Droid.Resource.Attribute.boxStrokeColor = global::PathwayGames.Droid.Resource.Attribute.boxStrokeColor;
+			global::AiForms.Renderers.Droid.Resource.Attribute.boxStrokeWidth = global::PathwayGames.Droid.Resource.Attribute.boxStrokeWidth;
+			global::AiForms.Renderers.Droid.Resource.Attribute.buttonBarButtonStyle = global::PathwayGames.Droid.Resource.Attribute.buttonBarButtonStyle;
+			global::AiForms.Renderers.Droid.Resource.Attribute.buttonBarNegativeButtonStyle = global::PathwayGames.Droid.Resource.Attribute.buttonBarNegativeButtonStyle;
+			global::AiForms.Renderers.Droid.Resource.Attribute.buttonBarNeutralButtonStyle = global::PathwayGames.Droid.Resource.Attribute.buttonBarNeutralButtonStyle;
+			global::AiForms.Renderers.Droid.Resource.Attribute.buttonBarPositiveButtonStyle = global::PathwayGames.Droid.Resource.Attribute.buttonBarPositiveButtonStyle;
+			global::AiForms.Renderers.Droid.Resource.Attribute.buttonBarStyle = global::PathwayGames.Droid.Resource.Attribute.buttonBarStyle;
+			global::AiForms.Renderers.Droid.Resource.Attribute.buttonGravity = global::PathwayGames.Droid.Resource.Attribute.buttonGravity;
+			global::AiForms.Renderers.Droid.Resource.Attribute.buttonIconDimen = global::PathwayGames.Droid.Resource.Attribute.buttonIconDimen;
+			global::AiForms.Renderers.Droid.Resource.Attribute.buttonPanelSideLayout = global::PathwayGames.Droid.Resource.Attribute.buttonPanelSideLayout;
+			global::AiForms.Renderers.Droid.Resource.Attribute.buttonStyle = global::PathwayGames.Droid.Resource.Attribute.buttonStyle;
+			global::AiForms.Renderers.Droid.Resource.Attribute.buttonStyleSmall = global::PathwayGames.Droid.Resource.Attribute.buttonStyleSmall;
+			global::AiForms.Renderers.Droid.Resource.Attribute.buttonTint = global::PathwayGames.Droid.Resource.Attribute.buttonTint;
+			global::AiForms.Renderers.Droid.Resource.Attribute.buttonTintMode = global::PathwayGames.Droid.Resource.Attribute.buttonTintMode;
+			global::AiForms.Renderers.Droid.Resource.Attribute.cardBackgroundColor = global::PathwayGames.Droid.Resource.Attribute.cardBackgroundColor;
+			global::AiForms.Renderers.Droid.Resource.Attribute.cardCornerRadius = global::PathwayGames.Droid.Resource.Attribute.cardCornerRadius;
+			global::AiForms.Renderers.Droid.Resource.Attribute.cardElevation = global::PathwayGames.Droid.Resource.Attribute.cardElevation;
+			global::AiForms.Renderers.Droid.Resource.Attribute.cardMaxElevation = global::PathwayGames.Droid.Resource.Attribute.cardMaxElevation;
+			global::AiForms.Renderers.Droid.Resource.Attribute.cardPreventCornerOverlap = global::PathwayGames.Droid.Resource.Attribute.cardPreventCornerOverlap;
+			global::AiForms.Renderers.Droid.Resource.Attribute.cardUseCompatPadding = global::PathwayGames.Droid.Resource.Attribute.cardUseCompatPadding;
+			global::AiForms.Renderers.Droid.Resource.Attribute.cardViewStyle = global::PathwayGames.Droid.Resource.Attribute.cardViewStyle;
+			global::AiForms.Renderers.Droid.Resource.Attribute.checkboxStyle = global::PathwayGames.Droid.Resource.Attribute.checkboxStyle;
+			global::AiForms.Renderers.Droid.Resource.Attribute.checkedChip = global::PathwayGames.Droid.Resource.Attribute.checkedChip;
+			global::AiForms.Renderers.Droid.Resource.Attribute.checkedIcon = global::PathwayGames.Droid.Resource.Attribute.checkedIcon;
+			global::AiForms.Renderers.Droid.Resource.Attribute.checkedIconEnabled = global::PathwayGames.Droid.Resource.Attribute.checkedIconEnabled;
+			global::AiForms.Renderers.Droid.Resource.Attribute.checkedIconVisible = global::PathwayGames.Droid.Resource.Attribute.checkedIconVisible;
+			global::AiForms.Renderers.Droid.Resource.Attribute.checkedTextViewStyle = global::PathwayGames.Droid.Resource.Attribute.checkedTextViewStyle;
+			global::AiForms.Renderers.Droid.Resource.Attribute.chipBackgroundColor = global::PathwayGames.Droid.Resource.Attribute.chipBackgroundColor;
+			global::AiForms.Renderers.Droid.Resource.Attribute.chipCornerRadius = global::PathwayGames.Droid.Resource.Attribute.chipCornerRadius;
+			global::AiForms.Renderers.Droid.Resource.Attribute.chipEndPadding = global::PathwayGames.Droid.Resource.Attribute.chipEndPadding;
+			global::AiForms.Renderers.Droid.Resource.Attribute.chipGroupStyle = global::PathwayGames.Droid.Resource.Attribute.chipGroupStyle;
+			global::AiForms.Renderers.Droid.Resource.Attribute.chipIcon = global::PathwayGames.Droid.Resource.Attribute.chipIcon;
+			global::AiForms.Renderers.Droid.Resource.Attribute.chipIconEnabled = global::PathwayGames.Droid.Resource.Attribute.chipIconEnabled;
+			global::AiForms.Renderers.Droid.Resource.Attribute.chipIconSize = global::PathwayGames.Droid.Resource.Attribute.chipIconSize;
+			global::AiForms.Renderers.Droid.Resource.Attribute.chipIconTint = global::PathwayGames.Droid.Resource.Attribute.chipIconTint;
+			global::AiForms.Renderers.Droid.Resource.Attribute.chipIconVisible = global::PathwayGames.Droid.Resource.Attribute.chipIconVisible;
+			global::AiForms.Renderers.Droid.Resource.Attribute.chipMinHeight = global::PathwayGames.Droid.Resource.Attribute.chipMinHeight;
+			global::AiForms.Renderers.Droid.Resource.Attribute.chipSpacing = global::PathwayGames.Droid.Resource.Attribute.chipSpacing;
+			global::AiForms.Renderers.Droid.Resource.Attribute.chipSpacingHorizontal = global::PathwayGames.Droid.Resource.Attribute.chipSpacingHorizontal;
+			global::AiForms.Renderers.Droid.Resource.Attribute.chipSpacingVertical = global::PathwayGames.Droid.Resource.Attribute.chipSpacingVertical;
+			global::AiForms.Renderers.Droid.Resource.Attribute.chipStandaloneStyle = global::PathwayGames.Droid.Resource.Attribute.chipStandaloneStyle;
+			global::AiForms.Renderers.Droid.Resource.Attribute.chipStartPadding = global::PathwayGames.Droid.Resource.Attribute.chipStartPadding;
+			global::AiForms.Renderers.Droid.Resource.Attribute.chipStrokeColor = global::PathwayGames.Droid.Resource.Attribute.chipStrokeColor;
+			global::AiForms.Renderers.Droid.Resource.Attribute.chipStrokeWidth = global::PathwayGames.Droid.Resource.Attribute.chipStrokeWidth;
+			global::AiForms.Renderers.Droid.Resource.Attribute.chipStyle = global::PathwayGames.Droid.Resource.Attribute.chipStyle;
+			global::AiForms.Renderers.Droid.Resource.Attribute.closeIcon = global::PathwayGames.Droid.Resource.Attribute.closeIcon;
+			global::AiForms.Renderers.Droid.Resource.Attribute.closeIconEnabled = global::PathwayGames.Droid.Resource.Attribute.closeIconEnabled;
+			global::AiForms.Renderers.Droid.Resource.Attribute.closeIconEndPadding = global::PathwayGames.Droid.Resource.Attribute.closeIconEndPadding;
+			global::AiForms.Renderers.Droid.Resource.Attribute.closeIconSize = global::PathwayGames.Droid.Resource.Attribute.closeIconSize;
+			global::AiForms.Renderers.Droid.Resource.Attribute.closeIconStartPadding = global::PathwayGames.Droid.Resource.Attribute.closeIconStartPadding;
+			global::AiForms.Renderers.Droid.Resource.Attribute.closeIconTint = global::PathwayGames.Droid.Resource.Attribute.closeIconTint;
+			global::AiForms.Renderers.Droid.Resource.Attribute.closeIconVisible = global::PathwayGames.Droid.Resource.Attribute.closeIconVisible;
+			global::AiForms.Renderers.Droid.Resource.Attribute.closeItemLayout = global::PathwayGames.Droid.Resource.Attribute.closeItemLayout;
+			global::AiForms.Renderers.Droid.Resource.Attribute.collapseContentDescription = global::PathwayGames.Droid.Resource.Attribute.collapseContentDescription;
+			global::AiForms.Renderers.Droid.Resource.Attribute.collapseIcon = global::PathwayGames.Droid.Resource.Attribute.collapseIcon;
+			global::AiForms.Renderers.Droid.Resource.Attribute.collapsedTitleGravity = global::PathwayGames.Droid.Resource.Attribute.collapsedTitleGravity;
+			global::AiForms.Renderers.Droid.Resource.Attribute.collapsedTitleTextAppearance = global::PathwayGames.Droid.Resource.Attribute.collapsedTitleTextAppearance;
+			global::AiForms.Renderers.Droid.Resource.Attribute.color = global::PathwayGames.Droid.Resource.Attribute.color;
+			global::AiForms.Renderers.Droid.Resource.Attribute.colorAccent = global::PathwayGames.Droid.Resource.Attribute.colorAccent;
+			global::AiForms.Renderers.Droid.Resource.Attribute.colorBackgroundFloating = global::PathwayGames.Droid.Resource.Attribute.colorBackgroundFloating;
+			global::AiForms.Renderers.Droid.Resource.Attribute.colorButtonNormal = global::PathwayGames.Droid.Resource.Attribute.colorButtonNormal;
+			global::AiForms.Renderers.Droid.Resource.Attribute.colorControlActivated = global::PathwayGames.Droid.Resource.Attribute.colorControlActivated;
+			global::AiForms.Renderers.Droid.Resource.Attribute.colorControlHighlight = global::PathwayGames.Droid.Resource.Attribute.colorControlHighlight;
+			global::AiForms.Renderers.Droid.Resource.Attribute.colorControlNormal = global::PathwayGames.Droid.Resource.Attribute.colorControlNormal;
+			global::AiForms.Renderers.Droid.Resource.Attribute.colorError = global::PathwayGames.Droid.Resource.Attribute.colorError;
+			global::AiForms.Renderers.Droid.Resource.Attribute.colorPrimary = global::PathwayGames.Droid.Resource.Attribute.colorPrimary;
+			global::AiForms.Renderers.Droid.Resource.Attribute.colorPrimaryDark = global::PathwayGames.Droid.Resource.Attribute.colorPrimaryDark;
+			global::AiForms.Renderers.Droid.Resource.Attribute.colorSecondary = global::PathwayGames.Droid.Resource.Attribute.colorSecondary;
+			global::AiForms.Renderers.Droid.Resource.Attribute.colorSwitchThumbNormal = global::PathwayGames.Droid.Resource.Attribute.colorSwitchThumbNormal;
+			global::AiForms.Renderers.Droid.Resource.Attribute.commitIcon = global::PathwayGames.Droid.Resource.Attribute.commitIcon;
+			global::AiForms.Renderers.Droid.Resource.Attribute.contentDescription = global::PathwayGames.Droid.Resource.Attribute.contentDescription;
+			global::AiForms.Renderers.Droid.Resource.Attribute.contentInsetEnd = global::PathwayGames.Droid.Resource.Attribute.contentInsetEnd;
+			global::AiForms.Renderers.Droid.Resource.Attribute.contentInsetEndWithActions = global::PathwayGames.Droid.Resource.Attribute.contentInsetEndWithActions;
+			global::AiForms.Renderers.Droid.Resource.Attribute.contentInsetLeft = global::PathwayGames.Droid.Resource.Attribute.contentInsetLeft;
+			global::AiForms.Renderers.Droid.Resource.Attribute.contentInsetRight = global::PathwayGames.Droid.Resource.Attribute.contentInsetRight;
+			global::AiForms.Renderers.Droid.Resource.Attribute.contentInsetStart = global::PathwayGames.Droid.Resource.Attribute.contentInsetStart;
+			global::AiForms.Renderers.Droid.Resource.Attribute.contentInsetStartWithNavigation = global::PathwayGames.Droid.Resource.Attribute.contentInsetStartWithNavigation;
+			global::AiForms.Renderers.Droid.Resource.Attribute.contentPadding = global::PathwayGames.Droid.Resource.Attribute.contentPadding;
+			global::AiForms.Renderers.Droid.Resource.Attribute.contentPaddingBottom = global::PathwayGames.Droid.Resource.Attribute.contentPaddingBottom;
+			global::AiForms.Renderers.Droid.Resource.Attribute.contentPaddingLeft = global::PathwayGames.Droid.Resource.Attribute.contentPaddingLeft;
+			global::AiForms.Renderers.Droid.Resource.Attribute.contentPaddingRight = global::PathwayGames.Droid.Resource.Attribute.contentPaddingRight;
+			global::AiForms.Renderers.Droid.Resource.Attribute.contentPaddingTop = global::PathwayGames.Droid.Resource.Attribute.contentPaddingTop;
+			global::AiForms.Renderers.Droid.Resource.Attribute.contentScrim = global::PathwayGames.Droid.Resource.Attribute.contentScrim;
+			global::AiForms.Renderers.Droid.Resource.Attribute.controlBackground = global::PathwayGames.Droid.Resource.Attribute.controlBackground;
+			global::AiForms.Renderers.Droid.Resource.Attribute.coordinatorLayoutStyle = global::PathwayGames.Droid.Resource.Attribute.coordinatorLayoutStyle;
+			global::AiForms.Renderers.Droid.Resource.Attribute.cornerRadius = global::PathwayGames.Droid.Resource.Attribute.cornerRadius;
+			global::AiForms.Renderers.Droid.Resource.Attribute.counterEnabled = global::PathwayGames.Droid.Resource.Attribute.counterEnabled;
+			global::AiForms.Renderers.Droid.Resource.Attribute.counterMaxLength = global::PathwayGames.Droid.Resource.Attribute.counterMaxLength;
+			global::AiForms.Renderers.Droid.Resource.Attribute.counterOverflowTextAppearance = global::PathwayGames.Droid.Resource.Attribute.counterOverflowTextAppearance;
+			global::AiForms.Renderers.Droid.Resource.Attribute.counterTextAppearance = global::PathwayGames.Droid.Resource.Attribute.counterTextAppearance;
+			global::AiForms.Renderers.Droid.Resource.Attribute.customNavigationLayout = global::PathwayGames.Droid.Resource.Attribute.customNavigationLayout;
+			global::AiForms.Renderers.Droid.Resource.Attribute.defaultQueryHint = global::PathwayGames.Droid.Resource.Attribute.defaultQueryHint;
+			global::AiForms.Renderers.Droid.Resource.Attribute.dialogCornerRadius = global::PathwayGames.Droid.Resource.Attribute.dialogCornerRadius;
+			global::AiForms.Renderers.Droid.Resource.Attribute.dialogPreferredPadding = global::PathwayGames.Droid.Resource.Attribute.dialogPreferredPadding;
+			global::AiForms.Renderers.Droid.Resource.Attribute.dialogTheme = global::PathwayGames.Droid.Resource.Attribute.dialogTheme;
+			global::AiForms.Renderers.Droid.Resource.Attribute.displayOptions = global::PathwayGames.Droid.Resource.Attribute.displayOptions;
+			global::AiForms.Renderers.Droid.Resource.Attribute.divider = global::PathwayGames.Droid.Resource.Attribute.divider;
+			global::AiForms.Renderers.Droid.Resource.Attribute.dividerHorizontal = global::PathwayGames.Droid.Resource.Attribute.dividerHorizontal;
+			global::AiForms.Renderers.Droid.Resource.Attribute.dividerPadding = global::PathwayGames.Droid.Resource.Attribute.dividerPadding;
+			global::AiForms.Renderers.Droid.Resource.Attribute.dividerVertical = global::PathwayGames.Droid.Resource.Attribute.dividerVertical;
+			global::AiForms.Renderers.Droid.Resource.Attribute.drawableSize = global::PathwayGames.Droid.Resource.Attribute.drawableSize;
+			global::AiForms.Renderers.Droid.Resource.Attribute.drawerArrowStyle = global::PathwayGames.Droid.Resource.Attribute.drawerArrowStyle;
+			global::AiForms.Renderers.Droid.Resource.Attribute.dropDownListViewStyle = global::PathwayGames.Droid.Resource.Attribute.dropDownListViewStyle;
+			global::AiForms.Renderers.Droid.Resource.Attribute.dropdownListPreferredItemHeight = global::PathwayGames.Droid.Resource.Attribute.dropdownListPreferredItemHeight;
+			global::AiForms.Renderers.Droid.Resource.Attribute.editTextBackground = global::PathwayGames.Droid.Resource.Attribute.editTextBackground;
+			global::AiForms.Renderers.Droid.Resource.Attribute.editTextColor = global::PathwayGames.Droid.Resource.Attribute.editTextColor;
+			global::AiForms.Renderers.Droid.Resource.Attribute.editTextStyle = global::PathwayGames.Droid.Resource.Attribute.editTextStyle;
+			global::AiForms.Renderers.Droid.Resource.Attribute.elevation = global::PathwayGames.Droid.Resource.Attribute.elevation;
+			global::AiForms.Renderers.Droid.Resource.Attribute.enforceMaterialTheme = global::PathwayGames.Droid.Resource.Attribute.enforceMaterialTheme;
+			global::AiForms.Renderers.Droid.Resource.Attribute.enforceTextAppearance = global::PathwayGames.Droid.Resource.Attribute.enforceTextAppearance;
+			global::AiForms.Renderers.Droid.Resource.Attribute.errorEnabled = global::PathwayGames.Droid.Resource.Attribute.errorEnabled;
+			global::AiForms.Renderers.Droid.Resource.Attribute.errorTextAppearance = global::PathwayGames.Droid.Resource.Attribute.errorTextAppearance;
+			global::AiForms.Renderers.Droid.Resource.Attribute.expandActivityOverflowButtonDrawable = global::PathwayGames.Droid.Resource.Attribute.expandActivityOverflowButtonDrawable;
+			global::AiForms.Renderers.Droid.Resource.Attribute.expanded = global::PathwayGames.Droid.Resource.Attribute.expanded;
+			global::AiForms.Renderers.Droid.Resource.Attribute.expandedTitleGravity = global::PathwayGames.Droid.Resource.Attribute.expandedTitleGravity;
+			global::AiForms.Renderers.Droid.Resource.Attribute.expandedTitleMargin = global::PathwayGames.Droid.Resource.Attribute.expandedTitleMargin;
+			global::AiForms.Renderers.Droid.Resource.Attribute.expandedTitleMarginBottom = global::PathwayGames.Droid.Resource.Attribute.expandedTitleMarginBottom;
+			global::AiForms.Renderers.Droid.Resource.Attribute.expandedTitleMarginEnd = global::PathwayGames.Droid.Resource.Attribute.expandedTitleMarginEnd;
+			global::AiForms.Renderers.Droid.Resource.Attribute.expandedTitleMarginStart = global::PathwayGames.Droid.Resource.Attribute.expandedTitleMarginStart;
+			global::AiForms.Renderers.Droid.Resource.Attribute.expandedTitleMarginTop = global::PathwayGames.Droid.Resource.Attribute.expandedTitleMarginTop;
+			global::AiForms.Renderers.Droid.Resource.Attribute.expandedTitleTextAppearance = global::PathwayGames.Droid.Resource.Attribute.expandedTitleTextAppearance;
+			global::AiForms.Renderers.Droid.Resource.Attribute.externalRouteEnabledDrawable = global::PathwayGames.Droid.Resource.Attribute.externalRouteEnabledDrawable;
+			global::AiForms.Renderers.Droid.Resource.Attribute.fabAlignmentMode = global::PathwayGames.Droid.Resource.Attribute.fabAlignmentMode;
+			global::AiForms.Renderers.Droid.Resource.Attribute.fabCradleMargin = global::PathwayGames.Droid.Resource.Attribute.fabCradleMargin;
+			global::AiForms.Renderers.Droid.Resource.Attribute.fabCradleRoundedCornerRadius = global::PathwayGames.Droid.Resource.Attribute.fabCradleRoundedCornerRadius;
+			global::AiForms.Renderers.Droid.Resource.Attribute.fabCradleVerticalOffset = global::PathwayGames.Droid.Resource.Attribute.fabCradleVerticalOffset;
+			global::AiForms.Renderers.Droid.Resource.Attribute.fabCustomSize = global::PathwayGames.Droid.Resource.Attribute.fabCustomSize;
+			global::AiForms.Renderers.Droid.Resource.Attribute.fabSize = global::PathwayGames.Droid.Resource.Attribute.fabSize;
+			global::AiForms.Renderers.Droid.Resource.Attribute.fastScrollEnabled = global::PathwayGames.Droid.Resource.Attribute.fastScrollEnabled;
+			global::AiForms.Renderers.Droid.Resource.Attribute.fastScrollHorizontalThumbDrawable = global::PathwayGames.Droid.Resource.Attribute.fastScrollHorizontalThumbDrawable;
+			global::AiForms.Renderers.Droid.Resource.Attribute.fastScrollHorizontalTrackDrawable = global::PathwayGames.Droid.Resource.Attribute.fastScrollHorizontalTrackDrawable;
+			global::AiForms.Renderers.Droid.Resource.Attribute.fastScrollVerticalThumbDrawable = global::PathwayGames.Droid.Resource.Attribute.fastScrollVerticalThumbDrawable;
+			global::AiForms.Renderers.Droid.Resource.Attribute.fastScrollVerticalTrackDrawable = global::PathwayGames.Droid.Resource.Attribute.fastScrollVerticalTrackDrawable;
+			global::AiForms.Renderers.Droid.Resource.Attribute.firstBaselineToTopHeight = global::PathwayGames.Droid.Resource.Attribute.firstBaselineToTopHeight;
+			global::AiForms.Renderers.Droid.Resource.Attribute.floatingActionButtonStyle = global::PathwayGames.Droid.Resource.Attribute.floatingActionButtonStyle;
+			global::AiForms.Renderers.Droid.Resource.Attribute.font = global::PathwayGames.Droid.Resource.Attribute.font;
+			global::AiForms.Renderers.Droid.Resource.Attribute.fontFamily = global::PathwayGames.Droid.Resource.Attribute.fontFamily;
+			global::AiForms.Renderers.Droid.Resource.Attribute.fontProviderAuthority = global::PathwayGames.Droid.Resource.Attribute.fontProviderAuthority;
+			global::AiForms.Renderers.Droid.Resource.Attribute.fontProviderCerts = global::PathwayGames.Droid.Resource.Attribute.fontProviderCerts;
+			global::AiForms.Renderers.Droid.Resource.Attribute.fontProviderFetchStrategy = global::PathwayGames.Droid.Resource.Attribute.fontProviderFetchStrategy;
+			global::AiForms.Renderers.Droid.Resource.Attribute.fontProviderFetchTimeout = global::PathwayGames.Droid.Resource.Attribute.fontProviderFetchTimeout;
+			global::AiForms.Renderers.Droid.Resource.Attribute.fontProviderPackage = global::PathwayGames.Droid.Resource.Attribute.fontProviderPackage;
+			global::AiForms.Renderers.Droid.Resource.Attribute.fontProviderQuery = global::PathwayGames.Droid.Resource.Attribute.fontProviderQuery;
+			global::AiForms.Renderers.Droid.Resource.Attribute.fontStyle = global::PathwayGames.Droid.Resource.Attribute.fontStyle;
+			global::AiForms.Renderers.Droid.Resource.Attribute.fontVariationSettings = global::PathwayGames.Droid.Resource.Attribute.fontVariationSettings;
+			global::AiForms.Renderers.Droid.Resource.Attribute.fontWeight = global::PathwayGames.Droid.Resource.Attribute.fontWeight;
+			global::AiForms.Renderers.Droid.Resource.Attribute.foregroundInsidePadding = global::PathwayGames.Droid.Resource.Attribute.foregroundInsidePadding;
+			global::AiForms.Renderers.Droid.Resource.Attribute.gapBetweenBars = global::PathwayGames.Droid.Resource.Attribute.gapBetweenBars;
+			global::AiForms.Renderers.Droid.Resource.Attribute.goIcon = global::PathwayGames.Droid.Resource.Attribute.goIcon;
+			global::AiForms.Renderers.Droid.Resource.Attribute.headerLayout = global::PathwayGames.Droid.Resource.Attribute.headerLayout;
+			global::AiForms.Renderers.Droid.Resource.Attribute.height = global::PathwayGames.Droid.Resource.Attribute.height;
+			global::AiForms.Renderers.Droid.Resource.Attribute.helperText = global::PathwayGames.Droid.Resource.Attribute.helperText;
+			global::AiForms.Renderers.Droid.Resource.Attribute.helperTextEnabled = global::PathwayGames.Droid.Resource.Attribute.helperTextEnabled;
+			global::AiForms.Renderers.Droid.Resource.Attribute.helperTextTextAppearance = global::PathwayGames.Droid.Resource.Attribute.helperTextTextAppearance;
+			global::AiForms.Renderers.Droid.Resource.Attribute.hideMotionSpec = global::PathwayGames.Droid.Resource.Attribute.hideMotionSpec;
+			global::AiForms.Renderers.Droid.Resource.Attribute.hideOnContentScroll = global::PathwayGames.Droid.Resource.Attribute.hideOnContentScroll;
+			global::AiForms.Renderers.Droid.Resource.Attribute.hideOnScroll = global::PathwayGames.Droid.Resource.Attribute.hideOnScroll;
+			global::AiForms.Renderers.Droid.Resource.Attribute.hintAnimationEnabled = global::PathwayGames.Droid.Resource.Attribute.hintAnimationEnabled;
+			global::AiForms.Renderers.Droid.Resource.Attribute.hintEnabled = global::PathwayGames.Droid.Resource.Attribute.hintEnabled;
+			global::AiForms.Renderers.Droid.Resource.Attribute.hintTextAppearance = global::PathwayGames.Droid.Resource.Attribute.hintTextAppearance;
+			global::AiForms.Renderers.Droid.Resource.Attribute.homeAsUpIndicator = global::PathwayGames.Droid.Resource.Attribute.homeAsUpIndicator;
+			global::AiForms.Renderers.Droid.Resource.Attribute.homeLayout = global::PathwayGames.Droid.Resource.Attribute.homeLayout;
+			global::AiForms.Renderers.Droid.Resource.Attribute.hoveredFocusedTranslationZ = global::PathwayGames.Droid.Resource.Attribute.hoveredFocusedTranslationZ;
+			global::AiForms.Renderers.Droid.Resource.Attribute.icon = global::PathwayGames.Droid.Resource.Attribute.icon;
+			global::AiForms.Renderers.Droid.Resource.Attribute.iconEndPadding = global::PathwayGames.Droid.Resource.Attribute.iconEndPadding;
+			global::AiForms.Renderers.Droid.Resource.Attribute.iconGravity = global::PathwayGames.Droid.Resource.Attribute.iconGravity;
+			global::AiForms.Renderers.Droid.Resource.Attribute.iconPadding = global::PathwayGames.Droid.Resource.Attribute.iconPadding;
+			global::AiForms.Renderers.Droid.Resource.Attribute.iconSize = global::PathwayGames.Droid.Resource.Attribute.iconSize;
+			global::AiForms.Renderers.Droid.Resource.Attribute.iconStartPadding = global::PathwayGames.Droid.Resource.Attribute.iconStartPadding;
+			global::AiForms.Renderers.Droid.Resource.Attribute.iconTint = global::PathwayGames.Droid.Resource.Attribute.iconTint;
+			global::AiForms.Renderers.Droid.Resource.Attribute.iconTintMode = global::PathwayGames.Droid.Resource.Attribute.iconTintMode;
+			global::AiForms.Renderers.Droid.Resource.Attribute.iconifiedByDefault = global::PathwayGames.Droid.Resource.Attribute.iconifiedByDefault;
+			global::AiForms.Renderers.Droid.Resource.Attribute.imageButtonStyle = global::PathwayGames.Droid.Resource.Attribute.imageButtonStyle;
+			global::AiForms.Renderers.Droid.Resource.Attribute.indeterminateProgressStyle = global::PathwayGames.Droid.Resource.Attribute.indeterminateProgressStyle;
+			global::AiForms.Renderers.Droid.Resource.Attribute.initialActivityCount = global::PathwayGames.Droid.Resource.Attribute.initialActivityCount;
+			global::AiForms.Renderers.Droid.Resource.Attribute.insetForeground = global::PathwayGames.Droid.Resource.Attribute.insetForeground;
+			global::AiForms.Renderers.Droid.Resource.Attribute.isLightTheme = global::PathwayGames.Droid.Resource.Attribute.isLightTheme;
+			global::AiForms.Renderers.Droid.Resource.Attribute.itemBackground = global::PathwayGames.Droid.Resource.Attribute.itemBackground;
+			global::AiForms.Renderers.Droid.Resource.Attribute.itemHorizontalPadding = global::PathwayGames.Droid.Resource.Attribute.itemHorizontalPadding;
+			global::AiForms.Renderers.Droid.Resource.Attribute.itemHorizontalTranslationEnabled = global::PathwayGames.Droid.Resource.Attribute.itemHorizontalTranslationEnabled;
+			global::AiForms.Renderers.Droid.Resource.Attribute.itemIconPadding = global::PathwayGames.Droid.Resource.Attribute.itemIconPadding;
+			global::AiForms.Renderers.Droid.Resource.Attribute.itemIconSize = global::PathwayGames.Droid.Resource.Attribute.itemIconSize;
+			global::AiForms.Renderers.Droid.Resource.Attribute.itemIconTint = global::PathwayGames.Droid.Resource.Attribute.itemIconTint;
+			global::AiForms.Renderers.Droid.Resource.Attribute.itemPadding = global::PathwayGames.Droid.Resource.Attribute.itemPadding;
+			global::AiForms.Renderers.Droid.Resource.Attribute.itemSpacing = global::PathwayGames.Droid.Resource.Attribute.itemSpacing;
+			global::AiForms.Renderers.Droid.Resource.Attribute.itemTextAppearance = global::PathwayGames.Droid.Resource.Attribute.itemTextAppearance;
+			global::AiForms.Renderers.Droid.Resource.Attribute.itemTextAppearanceActive = global::PathwayGames.Droid.Resource.Attribute.itemTextAppearanceActive;
+			global::AiForms.Renderers.Droid.Resource.Attribute.itemTextAppearanceInactive = global::PathwayGames.Droid.Resource.Attribute.itemTextAppearanceInactive;
+			global::AiForms.Renderers.Droid.Resource.Attribute.itemTextColor = global::PathwayGames.Droid.Resource.Attribute.itemTextColor;
+			global::AiForms.Renderers.Droid.Resource.Attribute.keylines = global::PathwayGames.Droid.Resource.Attribute.keylines;
+			global::AiForms.Renderers.Droid.Resource.Attribute.labelVisibilityMode = global::PathwayGames.Droid.Resource.Attribute.labelVisibilityMode;
+			global::AiForms.Renderers.Droid.Resource.Attribute.lastBaselineToBottomHeight = global::PathwayGames.Droid.Resource.Attribute.lastBaselineToBottomHeight;
+			global::AiForms.Renderers.Droid.Resource.Attribute.layout = global::PathwayGames.Droid.Resource.Attribute.layout;
+			global::AiForms.Renderers.Droid.Resource.Attribute.layoutManager = global::PathwayGames.Droid.Resource.Attribute.layoutManager;
+			global::AiForms.Renderers.Droid.Resource.Attribute.layout_anchor = global::PathwayGames.Droid.Resource.Attribute.layout_anchor;
+			global::AiForms.Renderers.Droid.Resource.Attribute.layout_anchorGravity = global::PathwayGames.Droid.Resource.Attribute.layout_anchorGravity;
+			global::AiForms.Renderers.Droid.Resource.Attribute.layout_behavior = global::PathwayGames.Droid.Resource.Attribute.layout_behavior;
+			global::AiForms.Renderers.Droid.Resource.Attribute.layout_collapseMode = global::PathwayGames.Droid.Resource.Attribute.layout_collapseMode;
+			global::AiForms.Renderers.Droid.Resource.Attribute.layout_collapseParallaxMultiplier = global::PathwayGames.Droid.Resource.Attribute.layout_collapseParallaxMultiplier;
+			global::AiForms.Renderers.Droid.Resource.Attribute.layout_dodgeInsetEdges = global::PathwayGames.Droid.Resource.Attribute.layout_dodgeInsetEdges;
+			global::AiForms.Renderers.Droid.Resource.Attribute.layout_insetEdge = global::PathwayGames.Droid.Resource.Attribute.layout_insetEdge;
+			global::AiForms.Renderers.Droid.Resource.Attribute.layout_keyline = global::PathwayGames.Droid.Resource.Attribute.layout_keyline;
+			global::AiForms.Renderers.Droid.Resource.Attribute.layout_scrollFlags = global::PathwayGames.Droid.Resource.Attribute.layout_scrollFlags;
+			global::AiForms.Renderers.Droid.Resource.Attribute.layout_scrollInterpolator = global::PathwayGames.Droid.Resource.Attribute.layout_scrollInterpolator;
+			global::AiForms.Renderers.Droid.Resource.Attribute.liftOnScroll = global::PathwayGames.Droid.Resource.Attribute.liftOnScroll;
+			global::AiForms.Renderers.Droid.Resource.Attribute.lineHeight = global::PathwayGames.Droid.Resource.Attribute.lineHeight;
+			global::AiForms.Renderers.Droid.Resource.Attribute.lineSpacing = global::PathwayGames.Droid.Resource.Attribute.lineSpacing;
+			global::AiForms.Renderers.Droid.Resource.Attribute.listChoiceBackgroundIndicator = global::PathwayGames.Droid.Resource.Attribute.listChoiceBackgroundIndicator;
+			global::AiForms.Renderers.Droid.Resource.Attribute.listDividerAlertDialog = global::PathwayGames.Droid.Resource.Attribute.listDividerAlertDialog;
+			global::AiForms.Renderers.Droid.Resource.Attribute.listItemLayout = global::PathwayGames.Droid.Resource.Attribute.listItemLayout;
+			global::AiForms.Renderers.Droid.Resource.Attribute.listLayout = global::PathwayGames.Droid.Resource.Attribute.listLayout;
+			global::AiForms.Renderers.Droid.Resource.Attribute.listMenuViewStyle = global::PathwayGames.Droid.Resource.Attribute.listMenuViewStyle;
+			global::AiForms.Renderers.Droid.Resource.Attribute.listPopupWindowStyle = global::PathwayGames.Droid.Resource.Attribute.listPopupWindowStyle;
+			global::AiForms.Renderers.Droid.Resource.Attribute.listPreferredItemHeight = global::PathwayGames.Droid.Resource.Attribute.listPreferredItemHeight;
+			global::AiForms.Renderers.Droid.Resource.Attribute.listPreferredItemHeightLarge = global::PathwayGames.Droid.Resource.Attribute.listPreferredItemHeightLarge;
+			global::AiForms.Renderers.Droid.Resource.Attribute.listPreferredItemHeightSmall = global::PathwayGames.Droid.Resource.Attribute.listPreferredItemHeightSmall;
+			global::AiForms.Renderers.Droid.Resource.Attribute.listPreferredItemPaddingLeft = global::PathwayGames.Droid.Resource.Attribute.listPreferredItemPaddingLeft;
+			global::AiForms.Renderers.Droid.Resource.Attribute.listPreferredItemPaddingRight = global::PathwayGames.Droid.Resource.Attribute.listPreferredItemPaddingRight;
+			global::AiForms.Renderers.Droid.Resource.Attribute.logo = global::PathwayGames.Droid.Resource.Attribute.logo;
+			global::AiForms.Renderers.Droid.Resource.Attribute.logoDescription = global::PathwayGames.Droid.Resource.Attribute.logoDescription;
+			global::AiForms.Renderers.Droid.Resource.Attribute.materialButtonStyle = global::PathwayGames.Droid.Resource.Attribute.materialButtonStyle;
+			global::AiForms.Renderers.Droid.Resource.Attribute.materialCardViewStyle = global::PathwayGames.Droid.Resource.Attribute.materialCardViewStyle;
+			global::AiForms.Renderers.Droid.Resource.Attribute.maxActionInlineWidth = global::PathwayGames.Droid.Resource.Attribute.maxActionInlineWidth;
+			global::AiForms.Renderers.Droid.Resource.Attribute.maxButtonHeight = global::PathwayGames.Droid.Resource.Attribute.maxButtonHeight;
+			global::AiForms.Renderers.Droid.Resource.Attribute.maxImageSize = global::PathwayGames.Droid.Resource.Attribute.maxImageSize;
+			global::AiForms.Renderers.Droid.Resource.Attribute.measureWithLargestChild = global::PathwayGames.Droid.Resource.Attribute.measureWithLargestChild;
+			global::AiForms.Renderers.Droid.Resource.Attribute.mediaRouteAudioTrackDrawable = global::PathwayGames.Droid.Resource.Attribute.mediaRouteAudioTrackDrawable;
+			global::AiForms.Renderers.Droid.Resource.Attribute.mediaRouteButtonStyle = global::PathwayGames.Droid.Resource.Attribute.mediaRouteButtonStyle;
+			global::AiForms.Renderers.Droid.Resource.Attribute.mediaRouteButtonTint = global::PathwayGames.Droid.Resource.Attribute.mediaRouteButtonTint;
+			global::AiForms.Renderers.Droid.Resource.Attribute.mediaRouteCloseDrawable = global::PathwayGames.Droid.Resource.Attribute.mediaRouteCloseDrawable;
+			global::AiForms.Renderers.Droid.Resource.Attribute.mediaRouteControlPanelThemeOverlay = global::PathwayGames.Droid.Resource.Attribute.mediaRouteControlPanelThemeOverlay;
+			global::AiForms.Renderers.Droid.Resource.Attribute.mediaRouteDefaultIconDrawable = global::PathwayGames.Droid.Resource.Attribute.mediaRouteDefaultIconDrawable;
+			global::AiForms.Renderers.Droid.Resource.Attribute.mediaRoutePauseDrawable = global::PathwayGames.Droid.Resource.Attribute.mediaRoutePauseDrawable;
+			global::AiForms.Renderers.Droid.Resource.Attribute.mediaRoutePlayDrawable = global::PathwayGames.Droid.Resource.Attribute.mediaRoutePlayDrawable;
+			global::AiForms.Renderers.Droid.Resource.Attribute.mediaRouteSpeakerGroupIconDrawable = global::PathwayGames.Droid.Resource.Attribute.mediaRouteSpeakerGroupIconDrawable;
+			global::AiForms.Renderers.Droid.Resource.Attribute.mediaRouteSpeakerIconDrawable = global::PathwayGames.Droid.Resource.Attribute.mediaRouteSpeakerIconDrawable;
+			global::AiForms.Renderers.Droid.Resource.Attribute.mediaRouteStopDrawable = global::PathwayGames.Droid.Resource.Attribute.mediaRouteStopDrawable;
+			global::AiForms.Renderers.Droid.Resource.Attribute.mediaRouteTheme = global::PathwayGames.Droid.Resource.Attribute.mediaRouteTheme;
+			global::AiForms.Renderers.Droid.Resource.Attribute.mediaRouteTvIconDrawable = global::PathwayGames.Droid.Resource.Attribute.mediaRouteTvIconDrawable;
+			global::AiForms.Renderers.Droid.Resource.Attribute.menu = global::PathwayGames.Droid.Resource.Attribute.menu;
+			global::AiForms.Renderers.Droid.Resource.Attribute.multiChoiceItemLayout = global::PathwayGames.Droid.Resource.Attribute.multiChoiceItemLayout;
+			global::AiForms.Renderers.Droid.Resource.Attribute.navigationContentDescription = global::PathwayGames.Droid.Resource.Attribute.navigationContentDescription;
+			global::AiForms.Renderers.Droid.Resource.Attribute.navigationIcon = global::PathwayGames.Droid.Resource.Attribute.navigationIcon;
+			global::AiForms.Renderers.Droid.Resource.Attribute.navigationMode = global::PathwayGames.Droid.Resource.Attribute.navigationMode;
+			global::AiForms.Renderers.Droid.Resource.Attribute.navigationViewStyle = global::PathwayGames.Droid.Resource.Attribute.navigationViewStyle;
+			global::AiForms.Renderers.Droid.Resource.Attribute.numericModifiers = global::PathwayGames.Droid.Resource.Attribute.numericModifiers;
+			global::AiForms.Renderers.Droid.Resource.Attribute.overlapAnchor = global::PathwayGames.Droid.Resource.Attribute.overlapAnchor;
+			global::AiForms.Renderers.Droid.Resource.Attribute.paddingBottomNoButtons = global::PathwayGames.Droid.Resource.Attribute.paddingBottomNoButtons;
+			global::AiForms.Renderers.Droid.Resource.Attribute.paddingEnd = global::PathwayGames.Droid.Resource.Attribute.paddingEnd;
+			global::AiForms.Renderers.Droid.Resource.Attribute.paddingStart = global::PathwayGames.Droid.Resource.Attribute.paddingStart;
+			global::AiForms.Renderers.Droid.Resource.Attribute.paddingTopNoTitle = global::PathwayGames.Droid.Resource.Attribute.paddingTopNoTitle;
+			global::AiForms.Renderers.Droid.Resource.Attribute.panelBackground = global::PathwayGames.Droid.Resource.Attribute.panelBackground;
+			global::AiForms.Renderers.Droid.Resource.Attribute.panelMenuListTheme = global::PathwayGames.Droid.Resource.Attribute.panelMenuListTheme;
+			global::AiForms.Renderers.Droid.Resource.Attribute.panelMenuListWidth = global::PathwayGames.Droid.Resource.Attribute.panelMenuListWidth;
+			global::AiForms.Renderers.Droid.Resource.Attribute.passwordToggleContentDescription = global::PathwayGames.Droid.Resource.Attribute.passwordToggleContentDescription;
+			global::AiForms.Renderers.Droid.Resource.Attribute.passwordToggleDrawable = global::PathwayGames.Droid.Resource.Attribute.passwordToggleDrawable;
+			global::AiForms.Renderers.Droid.Resource.Attribute.passwordToggleEnabled = global::PathwayGames.Droid.Resource.Attribute.passwordToggleEnabled;
+			global::AiForms.Renderers.Droid.Resource.Attribute.passwordToggleTint = global::PathwayGames.Droid.Resource.Attribute.passwordToggleTint;
+			global::AiForms.Renderers.Droid.Resource.Attribute.passwordToggleTintMode = global::PathwayGames.Droid.Resource.Attribute.passwordToggleTintMode;
+			global::AiForms.Renderers.Droid.Resource.Attribute.popupMenuStyle = global::PathwayGames.Droid.Resource.Attribute.popupMenuStyle;
+			global::AiForms.Renderers.Droid.Resource.Attribute.popupTheme = global::PathwayGames.Droid.Resource.Attribute.popupTheme;
+			global::AiForms.Renderers.Droid.Resource.Attribute.popupWindowStyle = global::PathwayGames.Droid.Resource.Attribute.popupWindowStyle;
+			global::AiForms.Renderers.Droid.Resource.Attribute.preserveIconSpacing = global::PathwayGames.Droid.Resource.Attribute.preserveIconSpacing;
+			global::AiForms.Renderers.Droid.Resource.Attribute.pressedTranslationZ = global::PathwayGames.Droid.Resource.Attribute.pressedTranslationZ;
+			global::AiForms.Renderers.Droid.Resource.Attribute.progressBarPadding = global::PathwayGames.Droid.Resource.Attribute.progressBarPadding;
+			global::AiForms.Renderers.Droid.Resource.Attribute.progressBarStyle = global::PathwayGames.Droid.Resource.Attribute.progressBarStyle;
+			global::AiForms.Renderers.Droid.Resource.Attribute.queryBackground = global::PathwayGames.Droid.Resource.Attribute.queryBackground;
+			global::AiForms.Renderers.Droid.Resource.Attribute.queryHint = global::PathwayGames.Droid.Resource.Attribute.queryHint;
+			global::AiForms.Renderers.Droid.Resource.Attribute.radioButtonStyle = global::PathwayGames.Droid.Resource.Attribute.radioButtonStyle;
+			global::AiForms.Renderers.Droid.Resource.Attribute.ratingBarStyle = global::PathwayGames.Droid.Resource.Attribute.ratingBarStyle;
+			global::AiForms.Renderers.Droid.Resource.Attribute.ratingBarStyleIndicator = global::PathwayGames.Droid.Resource.Attribute.ratingBarStyleIndicator;
+			global::AiForms.Renderers.Droid.Resource.Attribute.ratingBarStyleSmall = global::PathwayGames.Droid.Resource.Attribute.ratingBarStyleSmall;
+			global::AiForms.Renderers.Droid.Resource.Attribute.reverseLayout = global::PathwayGames.Droid.Resource.Attribute.reverseLayout;
+			global::AiForms.Renderers.Droid.Resource.Attribute.rippleColor = global::PathwayGames.Droid.Resource.Attribute.rippleColor;
+			global::AiForms.Renderers.Droid.Resource.Attribute.scrimAnimationDuration = global::PathwayGames.Droid.Resource.Attribute.scrimAnimationDuration;
+			global::AiForms.Renderers.Droid.Resource.Attribute.scrimBackground = global::PathwayGames.Droid.Resource.Attribute.scrimBackground;
+			global::AiForms.Renderers.Droid.Resource.Attribute.scrimVisibleHeightTrigger = global::PathwayGames.Droid.Resource.Attribute.scrimVisibleHeightTrigger;
+			global::AiForms.Renderers.Droid.Resource.Attribute.searchHintIcon = global::PathwayGames.Droid.Resource.Attribute.searchHintIcon;
+			global::AiForms.Renderers.Droid.Resource.Attribute.searchIcon = global::PathwayGames.Droid.Resource.Attribute.searchIcon;
+			global::AiForms.Renderers.Droid.Resource.Attribute.searchViewStyle = global::PathwayGames.Droid.Resource.Attribute.searchViewStyle;
+			global::AiForms.Renderers.Droid.Resource.Attribute.seekBarStyle = global::PathwayGames.Droid.Resource.Attribute.seekBarStyle;
+			global::AiForms.Renderers.Droid.Resource.Attribute.selectableItemBackground = global::PathwayGames.Droid.Resource.Attribute.selectableItemBackground;
+			global::AiForms.Renderers.Droid.Resource.Attribute.selectableItemBackgroundBorderless = global::PathwayGames.Droid.Resource.Attribute.selectableItemBackgroundBorderless;
+			global::AiForms.Renderers.Droid.Resource.Attribute.showAsAction = global::PathwayGames.Droid.Resource.Attribute.showAsAction;
+			global::AiForms.Renderers.Droid.Resource.Attribute.showDividers = global::PathwayGames.Droid.Resource.Attribute.showDividers;
+			global::AiForms.Renderers.Droid.Resource.Attribute.showMotionSpec = global::PathwayGames.Droid.Resource.Attribute.showMotionSpec;
+			global::AiForms.Renderers.Droid.Resource.Attribute.showText = global::PathwayGames.Droid.Resource.Attribute.showText;
+			global::AiForms.Renderers.Droid.Resource.Attribute.showTitle = global::PathwayGames.Droid.Resource.Attribute.showTitle;
+			global::AiForms.Renderers.Droid.Resource.Attribute.singleChoiceItemLayout = global::PathwayGames.Droid.Resource.Attribute.singleChoiceItemLayout;
+			global::AiForms.Renderers.Droid.Resource.Attribute.singleLine = global::PathwayGames.Droid.Resource.Attribute.singleLine;
+			global::AiForms.Renderers.Droid.Resource.Attribute.singleSelection = global::PathwayGames.Droid.Resource.Attribute.singleSelection;
+			global::AiForms.Renderers.Droid.Resource.Attribute.snackbarButtonStyle = global::PathwayGames.Droid.Resource.Attribute.snackbarButtonStyle;
+			global::AiForms.Renderers.Droid.Resource.Attribute.snackbarStyle = global::PathwayGames.Droid.Resource.Attribute.snackbarStyle;
+			global::AiForms.Renderers.Droid.Resource.Attribute.spanCount = global::PathwayGames.Droid.Resource.Attribute.spanCount;
+			global::AiForms.Renderers.Droid.Resource.Attribute.spinBars = global::PathwayGames.Droid.Resource.Attribute.spinBars;
+			global::AiForms.Renderers.Droid.Resource.Attribute.spinnerDropDownItemStyle = global::PathwayGames.Droid.Resource.Attribute.spinnerDropDownItemStyle;
+			global::AiForms.Renderers.Droid.Resource.Attribute.spinnerStyle = global::PathwayGames.Droid.Resource.Attribute.spinnerStyle;
+			global::AiForms.Renderers.Droid.Resource.Attribute.splitTrack = global::PathwayGames.Droid.Resource.Attribute.splitTrack;
+			global::AiForms.Renderers.Droid.Resource.Attribute.srcCompat = global::PathwayGames.Droid.Resource.Attribute.srcCompat;
+			global::AiForms.Renderers.Droid.Resource.Attribute.stackFromEnd = global::PathwayGames.Droid.Resource.Attribute.stackFromEnd;
+			global::AiForms.Renderers.Droid.Resource.Attribute.state_above_anchor = global::PathwayGames.Droid.Resource.Attribute.state_above_anchor;
+			global::AiForms.Renderers.Droid.Resource.Attribute.state_collapsed = global::PathwayGames.Droid.Resource.Attribute.state_collapsed;
+			global::AiForms.Renderers.Droid.Resource.Attribute.state_collapsible = global::PathwayGames.Droid.Resource.Attribute.state_collapsible;
+			global::AiForms.Renderers.Droid.Resource.Attribute.state_liftable = global::PathwayGames.Droid.Resource.Attribute.state_liftable;
+			global::AiForms.Renderers.Droid.Resource.Attribute.state_lifted = global::PathwayGames.Droid.Resource.Attribute.state_lifted;
+			global::AiForms.Renderers.Droid.Resource.Attribute.statusBarBackground = global::PathwayGames.Droid.Resource.Attribute.statusBarBackground;
+			global::AiForms.Renderers.Droid.Resource.Attribute.statusBarScrim = global::PathwayGames.Droid.Resource.Attribute.statusBarScrim;
+			global::AiForms.Renderers.Droid.Resource.Attribute.strokeColor = global::PathwayGames.Droid.Resource.Attribute.strokeColor;
+			global::AiForms.Renderers.Droid.Resource.Attribute.strokeWidth = global::PathwayGames.Droid.Resource.Attribute.strokeWidth;
+			global::AiForms.Renderers.Droid.Resource.Attribute.subMenuArrow = global::PathwayGames.Droid.Resource.Attribute.subMenuArrow;
+			global::AiForms.Renderers.Droid.Resource.Attribute.submitBackground = global::PathwayGames.Droid.Resource.Attribute.submitBackground;
+			global::AiForms.Renderers.Droid.Resource.Attribute.subtitle = global::PathwayGames.Droid.Resource.Attribute.subtitle;
+			global::AiForms.Renderers.Droid.Resource.Attribute.subtitleTextAppearance = global::PathwayGames.Droid.Resource.Attribute.subtitleTextAppearance;
+			global::AiForms.Renderers.Droid.Resource.Attribute.subtitleTextColor = global::PathwayGames.Droid.Resource.Attribute.subtitleTextColor;
+			global::AiForms.Renderers.Droid.Resource.Attribute.subtitleTextStyle = global::PathwayGames.Droid.Resource.Attribute.subtitleTextStyle;
+			global::AiForms.Renderers.Droid.Resource.Attribute.suggestionRowLayout = global::PathwayGames.Droid.Resource.Attribute.suggestionRowLayout;
+			global::AiForms.Renderers.Droid.Resource.Attribute.switchMinWidth = global::PathwayGames.Droid.Resource.Attribute.switchMinWidth;
+			global::AiForms.Renderers.Droid.Resource.Attribute.switchPadding = global::PathwayGames.Droid.Resource.Attribute.switchPadding;
+			global::AiForms.Renderers.Droid.Resource.Attribute.switchStyle = global::PathwayGames.Droid.Resource.Attribute.switchStyle;
+			global::AiForms.Renderers.Droid.Resource.Attribute.switchTextAppearance = global::PathwayGames.Droid.Resource.Attribute.switchTextAppearance;
+			global::AiForms.Renderers.Droid.Resource.Attribute.tabBackground = global::PathwayGames.Droid.Resource.Attribute.tabBackground;
+			global::AiForms.Renderers.Droid.Resource.Attribute.tabContentStart = global::PathwayGames.Droid.Resource.Attribute.tabContentStart;
+			global::AiForms.Renderers.Droid.Resource.Attribute.tabGravity = global::PathwayGames.Droid.Resource.Attribute.tabGravity;
+			global::AiForms.Renderers.Droid.Resource.Attribute.tabIconTint = global::PathwayGames.Droid.Resource.Attribute.tabIconTint;
+			global::AiForms.Renderers.Droid.Resource.Attribute.tabIconTintMode = global::PathwayGames.Droid.Resource.Attribute.tabIconTintMode;
+			global::AiForms.Renderers.Droid.Resource.Attribute.tabIndicator = global::PathwayGames.Droid.Resource.Attribute.tabIndicator;
+			global::AiForms.Renderers.Droid.Resource.Attribute.tabIndicatorAnimationDuration = global::PathwayGames.Droid.Resource.Attribute.tabIndicatorAnimationDuration;
+			global::AiForms.Renderers.Droid.Resource.Attribute.tabIndicatorColor = global::PathwayGames.Droid.Resource.Attribute.tabIndicatorColor;
+			global::AiForms.Renderers.Droid.Resource.Attribute.tabIndicatorFullWidth = global::PathwayGames.Droid.Resource.Attribute.tabIndicatorFullWidth;
+			global::AiForms.Renderers.Droid.Resource.Attribute.tabIndicatorGravity = global::PathwayGames.Droid.Resource.Attribute.tabIndicatorGravity;
+			global::AiForms.Renderers.Droid.Resource.Attribute.tabIndicatorHeight = global::PathwayGames.Droid.Resource.Attribute.tabIndicatorHeight;
+			global::AiForms.Renderers.Droid.Resource.Attribute.tabInlineLabel = global::PathwayGames.Droid.Resource.Attribute.tabInlineLabel;
+			global::AiForms.Renderers.Droid.Resource.Attribute.tabMaxWidth = global::PathwayGames.Droid.Resource.Attribute.tabMaxWidth;
+			global::AiForms.Renderers.Droid.Resource.Attribute.tabMinWidth = global::PathwayGames.Droid.Resource.Attribute.tabMinWidth;
+			global::AiForms.Renderers.Droid.Resource.Attribute.tabMode = global::PathwayGames.Droid.Resource.Attribute.tabMode;
+			global::AiForms.Renderers.Droid.Resource.Attribute.tabPadding = global::PathwayGames.Droid.Resource.Attribute.tabPadding;
+			global::AiForms.Renderers.Droid.Resource.Attribute.tabPaddingBottom = global::PathwayGames.Droid.Resource.Attribute.tabPaddingBottom;
+			global::AiForms.Renderers.Droid.Resource.Attribute.tabPaddingEnd = global::PathwayGames.Droid.Resource.Attribute.tabPaddingEnd;
+			global::AiForms.Renderers.Droid.Resource.Attribute.tabPaddingStart = global::PathwayGames.Droid.Resource.Attribute.tabPaddingStart;
+			global::AiForms.Renderers.Droid.Resource.Attribute.tabPaddingTop = global::PathwayGames.Droid.Resource.Attribute.tabPaddingTop;
+			global::AiForms.Renderers.Droid.Resource.Attribute.tabRippleColor = global::PathwayGames.Droid.Resource.Attribute.tabRippleColor;
+			global::AiForms.Renderers.Droid.Resource.Attribute.tabSelectedTextColor = global::PathwayGames.Droid.Resource.Attribute.tabSelectedTextColor;
+			global::AiForms.Renderers.Droid.Resource.Attribute.tabStyle = global::PathwayGames.Droid.Resource.Attribute.tabStyle;
+			global::AiForms.Renderers.Droid.Resource.Attribute.tabTextAppearance = global::PathwayGames.Droid.Resource.Attribute.tabTextAppearance;
+			global::AiForms.Renderers.Droid.Resource.Attribute.tabTextColor = global::PathwayGames.Droid.Resource.Attribute.tabTextColor;
+			global::AiForms.Renderers.Droid.Resource.Attribute.tabUnboundedRipple = global::PathwayGames.Droid.Resource.Attribute.tabUnboundedRipple;
+			global::AiForms.Renderers.Droid.Resource.Attribute.textAllCaps = global::PathwayGames.Droid.Resource.Attribute.textAllCaps;
+			global::AiForms.Renderers.Droid.Resource.Attribute.textAppearanceBody1 = global::PathwayGames.Droid.Resource.Attribute.textAppearanceBody1;
+			global::AiForms.Renderers.Droid.Resource.Attribute.textAppearanceBody2 = global::PathwayGames.Droid.Resource.Attribute.textAppearanceBody2;
+			global::AiForms.Renderers.Droid.Resource.Attribute.textAppearanceButton = global::PathwayGames.Droid.Resource.Attribute.textAppearanceButton;
+			global::AiForms.Renderers.Droid.Resource.Attribute.textAppearanceCaption = global::PathwayGames.Droid.Resource.Attribute.textAppearanceCaption;
+			global::AiForms.Renderers.Droid.Resource.Attribute.textAppearanceHeadline1 = global::PathwayGames.Droid.Resource.Attribute.textAppearanceHeadline1;
+			global::AiForms.Renderers.Droid.Resource.Attribute.textAppearanceHeadline2 = global::PathwayGames.Droid.Resource.Attribute.textAppearanceHeadline2;
+			global::AiForms.Renderers.Droid.Resource.Attribute.textAppearanceHeadline3 = global::PathwayGames.Droid.Resource.Attribute.textAppearanceHeadline3;
+			global::AiForms.Renderers.Droid.Resource.Attribute.textAppearanceHeadline4 = global::PathwayGames.Droid.Resource.Attribute.textAppearanceHeadline4;
+			global::AiForms.Renderers.Droid.Resource.Attribute.textAppearanceHeadline5 = global::PathwayGames.Droid.Resource.Attribute.textAppearanceHeadline5;
+			global::AiForms.Renderers.Droid.Resource.Attribute.textAppearanceHeadline6 = global::PathwayGames.Droid.Resource.Attribute.textAppearanceHeadline6;
+			global::AiForms.Renderers.Droid.Resource.Attribute.textAppearanceLargePopupMenu = global::PathwayGames.Droid.Resource.Attribute.textAppearanceLargePopupMenu;
+			global::AiForms.Renderers.Droid.Resource.Attribute.textAppearanceListItem = global::PathwayGames.Droid.Resource.Attribute.textAppearanceListItem;
+			global::AiForms.Renderers.Droid.Resource.Attribute.textAppearanceListItemSecondary = global::PathwayGames.Droid.Resource.Attribute.textAppearanceListItemSecondary;
+			global::AiForms.Renderers.Droid.Resource.Attribute.textAppearanceListItemSmall = global::PathwayGames.Droid.Resource.Attribute.textAppearanceListItemSmall;
+			global::AiForms.Renderers.Droid.Resource.Attribute.textAppearanceOverline = global::PathwayGames.Droid.Resource.Attribute.textAppearanceOverline;
+			global::AiForms.Renderers.Droid.Resource.Attribute.textAppearancePopupMenuHeader = global::PathwayGames.Droid.Resource.Attribute.textAppearancePopupMenuHeader;
+			global::AiForms.Renderers.Droid.Resource.Attribute.textAppearanceSearchResultSubtitle = global::PathwayGames.Droid.Resource.Attribute.textAppearanceSearchResultSubtitle;
+			global::AiForms.Renderers.Droid.Resource.Attribute.textAppearanceSearchResultTitle = global::PathwayGames.Droid.Resource.Attribute.textAppearanceSearchResultTitle;
+			global::AiForms.Renderers.Droid.Resource.Attribute.textAppearanceSmallPopupMenu = global::PathwayGames.Droid.Resource.Attribute.textAppearanceSmallPopupMenu;
+			global::AiForms.Renderers.Droid.Resource.Attribute.textAppearanceSubtitle1 = global::PathwayGames.Droid.Resource.Attribute.textAppearanceSubtitle1;
+			global::AiForms.Renderers.Droid.Resource.Attribute.textAppearanceSubtitle2 = global::PathwayGames.Droid.Resource.Attribute.textAppearanceSubtitle2;
+			global::AiForms.Renderers.Droid.Resource.Attribute.textColorAlertDialogListItem = global::PathwayGames.Droid.Resource.Attribute.textColorAlertDialogListItem;
+			global::AiForms.Renderers.Droid.Resource.Attribute.textColorSearchUrl = global::PathwayGames.Droid.Resource.Attribute.textColorSearchUrl;
+			global::AiForms.Renderers.Droid.Resource.Attribute.textEndPadding = global::PathwayGames.Droid.Resource.Attribute.textEndPadding;
+			global::AiForms.Renderers.Droid.Resource.Attribute.textInputStyle = global::PathwayGames.Droid.Resource.Attribute.textInputStyle;
+			global::AiForms.Renderers.Droid.Resource.Attribute.textStartPadding = global::PathwayGames.Droid.Resource.Attribute.textStartPadding;
+			global::AiForms.Renderers.Droid.Resource.Attribute.theme = global::PathwayGames.Droid.Resource.Attribute.theme;
+			global::AiForms.Renderers.Droid.Resource.Attribute.thickness = global::PathwayGames.Droid.Resource.Attribute.thickness;
+			global::AiForms.Renderers.Droid.Resource.Attribute.thumbTextPadding = global::PathwayGames.Droid.Resource.Attribute.thumbTextPadding;
+			global::AiForms.Renderers.Droid.Resource.Attribute.thumbTint = global::PathwayGames.Droid.Resource.Attribute.thumbTint;
+			global::AiForms.Renderers.Droid.Resource.Attribute.thumbTintMode = global::PathwayGames.Droid.Resource.Attribute.thumbTintMode;
+			global::AiForms.Renderers.Droid.Resource.Attribute.tickMark = global::PathwayGames.Droid.Resource.Attribute.tickMark;
+			global::AiForms.Renderers.Droid.Resource.Attribute.tickMarkTint = global::PathwayGames.Droid.Resource.Attribute.tickMarkTint;
+			global::AiForms.Renderers.Droid.Resource.Attribute.tickMarkTintMode = global::PathwayGames.Droid.Resource.Attribute.tickMarkTintMode;
+			global::AiForms.Renderers.Droid.Resource.Attribute.tint = global::PathwayGames.Droid.Resource.Attribute.tint;
+			global::AiForms.Renderers.Droid.Resource.Attribute.tintMode = global::PathwayGames.Droid.Resource.Attribute.tintMode;
+			global::AiForms.Renderers.Droid.Resource.Attribute.title = global::PathwayGames.Droid.Resource.Attribute.title;
+			global::AiForms.Renderers.Droid.Resource.Attribute.titleEnabled = global::PathwayGames.Droid.Resource.Attribute.titleEnabled;
+			global::AiForms.Renderers.Droid.Resource.Attribute.titleMargin = global::PathwayGames.Droid.Resource.Attribute.titleMargin;
+			global::AiForms.Renderers.Droid.Resource.Attribute.titleMarginBottom = global::PathwayGames.Droid.Resource.Attribute.titleMarginBottom;
+			global::AiForms.Renderers.Droid.Resource.Attribute.titleMarginEnd = global::PathwayGames.Droid.Resource.Attribute.titleMarginEnd;
+			global::AiForms.Renderers.Droid.Resource.Attribute.titleMarginStart = global::PathwayGames.Droid.Resource.Attribute.titleMarginStart;
+			global::AiForms.Renderers.Droid.Resource.Attribute.titleMarginTop = global::PathwayGames.Droid.Resource.Attribute.titleMarginTop;
+			global::AiForms.Renderers.Droid.Resource.Attribute.titleMargins = global::PathwayGames.Droid.Resource.Attribute.titleMargins;
+			global::AiForms.Renderers.Droid.Resource.Attribute.titleTextAppearance = global::PathwayGames.Droid.Resource.Attribute.titleTextAppearance;
+			global::AiForms.Renderers.Droid.Resource.Attribute.titleTextColor = global::PathwayGames.Droid.Resource.Attribute.titleTextColor;
+			global::AiForms.Renderers.Droid.Resource.Attribute.titleTextStyle = global::PathwayGames.Droid.Resource.Attribute.titleTextStyle;
+			global::AiForms.Renderers.Droid.Resource.Attribute.toolbarId = global::PathwayGames.Droid.Resource.Attribute.toolbarId;
+			global::AiForms.Renderers.Droid.Resource.Attribute.toolbarNavigationButtonStyle = global::PathwayGames.Droid.Resource.Attribute.toolbarNavigationButtonStyle;
+			global::AiForms.Renderers.Droid.Resource.Attribute.toolbarStyle = global::PathwayGames.Droid.Resource.Attribute.toolbarStyle;
+			global::AiForms.Renderers.Droid.Resource.Attribute.tooltipForegroundColor = global::PathwayGames.Droid.Resource.Attribute.tooltipForegroundColor;
+			global::AiForms.Renderers.Droid.Resource.Attribute.tooltipFrameBackground = global::PathwayGames.Droid.Resource.Attribute.tooltipFrameBackground;
+			global::AiForms.Renderers.Droid.Resource.Attribute.tooltipText = global::PathwayGames.Droid.Resource.Attribute.tooltipText;
+			global::AiForms.Renderers.Droid.Resource.Attribute.track = global::PathwayGames.Droid.Resource.Attribute.track;
+			global::AiForms.Renderers.Droid.Resource.Attribute.trackTint = global::PathwayGames.Droid.Resource.Attribute.trackTint;
+			global::AiForms.Renderers.Droid.Resource.Attribute.trackTintMode = global::PathwayGames.Droid.Resource.Attribute.trackTintMode;
+			global::AiForms.Renderers.Droid.Resource.Attribute.ttcIndex = global::PathwayGames.Droid.Resource.Attribute.ttcIndex;
+			global::AiForms.Renderers.Droid.Resource.Attribute.useCompatPadding = global::PathwayGames.Droid.Resource.Attribute.useCompatPadding;
+			global::AiForms.Renderers.Droid.Resource.Attribute.viewInflaterClass = global::PathwayGames.Droid.Resource.Attribute.viewInflaterClass;
+			global::AiForms.Renderers.Droid.Resource.Attribute.voiceIcon = global::PathwayGames.Droid.Resource.Attribute.voiceIcon;
+			global::AiForms.Renderers.Droid.Resource.Attribute.windowActionBar = global::PathwayGames.Droid.Resource.Attribute.windowActionBar;
+			global::AiForms.Renderers.Droid.Resource.Attribute.windowActionBarOverlay = global::PathwayGames.Droid.Resource.Attribute.windowActionBarOverlay;
+			global::AiForms.Renderers.Droid.Resource.Attribute.windowActionModeOverlay = global::PathwayGames.Droid.Resource.Attribute.windowActionModeOverlay;
+			global::AiForms.Renderers.Droid.Resource.Attribute.windowFixedHeightMajor = global::PathwayGames.Droid.Resource.Attribute.windowFixedHeightMajor;
+			global::AiForms.Renderers.Droid.Resource.Attribute.windowFixedHeightMinor = global::PathwayGames.Droid.Resource.Attribute.windowFixedHeightMinor;
+			global::AiForms.Renderers.Droid.Resource.Attribute.windowFixedWidthMajor = global::PathwayGames.Droid.Resource.Attribute.windowFixedWidthMajor;
+			global::AiForms.Renderers.Droid.Resource.Attribute.windowFixedWidthMinor = global::PathwayGames.Droid.Resource.Attribute.windowFixedWidthMinor;
+			global::AiForms.Renderers.Droid.Resource.Attribute.windowMinWidthMajor = global::PathwayGames.Droid.Resource.Attribute.windowMinWidthMajor;
+			global::AiForms.Renderers.Droid.Resource.Attribute.windowMinWidthMinor = global::PathwayGames.Droid.Resource.Attribute.windowMinWidthMinor;
+			global::AiForms.Renderers.Droid.Resource.Attribute.windowNoTitle = global::PathwayGames.Droid.Resource.Attribute.windowNoTitle;
+			global::AiForms.Renderers.Droid.Resource.Boolean.abc_action_bar_embed_tabs = global::PathwayGames.Droid.Resource.Boolean.abc_action_bar_embed_tabs;
+			global::AiForms.Renderers.Droid.Resource.Boolean.abc_allow_stacked_button_bar = global::PathwayGames.Droid.Resource.Boolean.abc_allow_stacked_button_bar;
+			global::AiForms.Renderers.Droid.Resource.Boolean.abc_config_actionMenuItemAllCaps = global::PathwayGames.Droid.Resource.Boolean.abc_config_actionMenuItemAllCaps;
+			global::AiForms.Renderers.Droid.Resource.Boolean.mtrl_btn_textappearance_all_caps = global::PathwayGames.Droid.Resource.Boolean.mtrl_btn_textappearance_all_caps;
+			global::AiForms.Renderers.Droid.Resource.Color.abc_background_cache_hint_selector_material_dark = global::PathwayGames.Droid.Resource.Color.abc_background_cache_hint_selector_material_dark;
+			global::AiForms.Renderers.Droid.Resource.Color.abc_background_cache_hint_selector_material_light = global::PathwayGames.Droid.Resource.Color.abc_background_cache_hint_selector_material_light;
+			global::AiForms.Renderers.Droid.Resource.Color.abc_btn_colored_borderless_text_material = global::PathwayGames.Droid.Resource.Color.abc_btn_colored_borderless_text_material;
+			global::AiForms.Renderers.Droid.Resource.Color.abc_btn_colored_text_material = global::PathwayGames.Droid.Resource.Color.abc_btn_colored_text_material;
+			global::AiForms.Renderers.Droid.Resource.Color.abc_color_highlight_material = global::PathwayGames.Droid.Resource.Color.abc_color_highlight_material;
+			global::AiForms.Renderers.Droid.Resource.Color.abc_hint_foreground_material_dark = global::PathwayGames.Droid.Resource.Color.abc_hint_foreground_material_dark;
+			global::AiForms.Renderers.Droid.Resource.Color.abc_hint_foreground_material_light = global::PathwayGames.Droid.Resource.Color.abc_hint_foreground_material_light;
+			global::AiForms.Renderers.Droid.Resource.Color.abc_input_method_navigation_guard = global::PathwayGames.Droid.Resource.Color.abc_input_method_navigation_guard;
+			global::AiForms.Renderers.Droid.Resource.Color.abc_primary_text_disable_only_material_dark = global::PathwayGames.Droid.Resource.Color.abc_primary_text_disable_only_material_dark;
+			global::AiForms.Renderers.Droid.Resource.Color.abc_primary_text_disable_only_material_light = global::PathwayGames.Droid.Resource.Color.abc_primary_text_disable_only_material_light;
+			global::AiForms.Renderers.Droid.Resource.Color.abc_primary_text_material_dark = global::PathwayGames.Droid.Resource.Color.abc_primary_text_material_dark;
+			global::AiForms.Renderers.Droid.Resource.Color.abc_primary_text_material_light = global::PathwayGames.Droid.Resource.Color.abc_primary_text_material_light;
+			global::AiForms.Renderers.Droid.Resource.Color.abc_search_url_text = global::PathwayGames.Droid.Resource.Color.abc_search_url_text;
+			global::AiForms.Renderers.Droid.Resource.Color.abc_search_url_text_normal = global::PathwayGames.Droid.Resource.Color.abc_search_url_text_normal;
+			global::AiForms.Renderers.Droid.Resource.Color.abc_search_url_text_pressed = global::PathwayGames.Droid.Resource.Color.abc_search_url_text_pressed;
+			global::AiForms.Renderers.Droid.Resource.Color.abc_search_url_text_selected = global::PathwayGames.Droid.Resource.Color.abc_search_url_text_selected;
+			global::AiForms.Renderers.Droid.Resource.Color.abc_secondary_text_material_dark = global::PathwayGames.Droid.Resource.Color.abc_secondary_text_material_dark;
+			global::AiForms.Renderers.Droid.Resource.Color.abc_secondary_text_material_light = global::PathwayGames.Droid.Resource.Color.abc_secondary_text_material_light;
+			global::AiForms.Renderers.Droid.Resource.Color.abc_tint_btn_checkable = global::PathwayGames.Droid.Resource.Color.abc_tint_btn_checkable;
+			global::AiForms.Renderers.Droid.Resource.Color.abc_tint_default = global::PathwayGames.Droid.Resource.Color.abc_tint_default;
+			global::AiForms.Renderers.Droid.Resource.Color.abc_tint_edittext = global::PathwayGames.Droid.Resource.Color.abc_tint_edittext;
+			global::AiForms.Renderers.Droid.Resource.Color.abc_tint_seek_thumb = global::PathwayGames.Droid.Resource.Color.abc_tint_seek_thumb;
+			global::AiForms.Renderers.Droid.Resource.Color.abc_tint_spinner = global::PathwayGames.Droid.Resource.Color.abc_tint_spinner;
+			global::AiForms.Renderers.Droid.Resource.Color.abc_tint_switch_track = global::PathwayGames.Droid.Resource.Color.abc_tint_switch_track;
+			global::AiForms.Renderers.Droid.Resource.Color.accent_material_dark = global::PathwayGames.Droid.Resource.Color.accent_material_dark;
+			global::AiForms.Renderers.Droid.Resource.Color.accent_material_light = global::PathwayGames.Droid.Resource.Color.accent_material_light;
+			global::AiForms.Renderers.Droid.Resource.Color.background_floating_material_dark = global::PathwayGames.Droid.Resource.Color.background_floating_material_dark;
+			global::AiForms.Renderers.Droid.Resource.Color.background_floating_material_light = global::PathwayGames.Droid.Resource.Color.background_floating_material_light;
+			global::AiForms.Renderers.Droid.Resource.Color.background_material_dark = global::PathwayGames.Droid.Resource.Color.background_material_dark;
+			global::AiForms.Renderers.Droid.Resource.Color.background_material_light = global::PathwayGames.Droid.Resource.Color.background_material_light;
+			global::AiForms.Renderers.Droid.Resource.Color.bright_foreground_disabled_material_dark = global::PathwayGames.Droid.Resource.Color.bright_foreground_disabled_material_dark;
+			global::AiForms.Renderers.Droid.Resource.Color.bright_foreground_disabled_material_light = global::PathwayGames.Droid.Resource.Color.bright_foreground_disabled_material_light;
+			global::AiForms.Renderers.Droid.Resource.Color.bright_foreground_inverse_material_dark = global::PathwayGames.Droid.Resource.Color.bright_foreground_inverse_material_dark;
+			global::AiForms.Renderers.Droid.Resource.Color.bright_foreground_inverse_material_light = global::PathwayGames.Droid.Resource.Color.bright_foreground_inverse_material_light;
+			global::AiForms.Renderers.Droid.Resource.Color.bright_foreground_material_dark = global::PathwayGames.Droid.Resource.Color.bright_foreground_material_dark;
+			global::AiForms.Renderers.Droid.Resource.Color.bright_foreground_material_light = global::PathwayGames.Droid.Resource.Color.bright_foreground_material_light;
+			global::AiForms.Renderers.Droid.Resource.Color.browser_actions_bg_grey = global::PathwayGames.Droid.Resource.Color.browser_actions_bg_grey;
+			global::AiForms.Renderers.Droid.Resource.Color.browser_actions_divider_color = global::PathwayGames.Droid.Resource.Color.browser_actions_divider_color;
+			global::AiForms.Renderers.Droid.Resource.Color.browser_actions_text_color = global::PathwayGames.Droid.Resource.Color.browser_actions_text_color;
+			global::AiForms.Renderers.Droid.Resource.Color.browser_actions_title_color = global::PathwayGames.Droid.Resource.Color.browser_actions_title_color;
+			global::AiForms.Renderers.Droid.Resource.Color.button_material_dark = global::PathwayGames.Droid.Resource.Color.button_material_dark;
+			global::AiForms.Renderers.Droid.Resource.Color.button_material_light = global::PathwayGames.Droid.Resource.Color.button_material_light;
+			global::AiForms.Renderers.Droid.Resource.Color.cardview_dark_background = global::PathwayGames.Droid.Resource.Color.cardview_dark_background;
+			global::AiForms.Renderers.Droid.Resource.Color.cardview_light_background = global::PathwayGames.Droid.Resource.Color.cardview_light_background;
+			global::AiForms.Renderers.Droid.Resource.Color.cardview_shadow_end_color = global::PathwayGames.Droid.Resource.Color.cardview_shadow_end_color;
+			global::AiForms.Renderers.Droid.Resource.Color.cardview_shadow_start_color = global::PathwayGames.Droid.Resource.Color.cardview_shadow_start_color;
+			global::AiForms.Renderers.Droid.Resource.Color.design_bottom_navigation_shadow_color = global::PathwayGames.Droid.Resource.Color.design_bottom_navigation_shadow_color;
+			global::AiForms.Renderers.Droid.Resource.Color.design_default_color_primary = global::PathwayGames.Droid.Resource.Color.design_default_color_primary;
+			global::AiForms.Renderers.Droid.Resource.Color.design_default_color_primary_dark = global::PathwayGames.Droid.Resource.Color.design_default_color_primary_dark;
+			global::AiForms.Renderers.Droid.Resource.Color.design_error = global::PathwayGames.Droid.Resource.Color.design_error;
+			global::AiForms.Renderers.Droid.Resource.Color.design_fab_shadow_end_color = global::PathwayGames.Droid.Resource.Color.design_fab_shadow_end_color;
+			global::AiForms.Renderers.Droid.Resource.Color.design_fab_shadow_mid_color = global::PathwayGames.Droid.Resource.Color.design_fab_shadow_mid_color;
+			global::AiForms.Renderers.Droid.Resource.Color.design_fab_shadow_start_color = global::PathwayGames.Droid.Resource.Color.design_fab_shadow_start_color;
+			global::AiForms.Renderers.Droid.Resource.Color.design_fab_stroke_end_inner_color = global::PathwayGames.Droid.Resource.Color.design_fab_stroke_end_inner_color;
+			global::AiForms.Renderers.Droid.Resource.Color.design_fab_stroke_end_outer_color = global::PathwayGames.Droid.Resource.Color.design_fab_stroke_end_outer_color;
+			global::AiForms.Renderers.Droid.Resource.Color.design_fab_stroke_top_inner_color = global::PathwayGames.Droid.Resource.Color.design_fab_stroke_top_inner_color;
+			global::AiForms.Renderers.Droid.Resource.Color.design_fab_stroke_top_outer_color = global::PathwayGames.Droid.Resource.Color.design_fab_stroke_top_outer_color;
+			global::AiForms.Renderers.Droid.Resource.Color.design_snackbar_background_color = global::PathwayGames.Droid.Resource.Color.design_snackbar_background_color;
+			global::AiForms.Renderers.Droid.Resource.Color.design_tint_password_toggle = global::PathwayGames.Droid.Resource.Color.design_tint_password_toggle;
+			global::AiForms.Renderers.Droid.Resource.Color.dim_foreground_disabled_material_dark = global::PathwayGames.Droid.Resource.Color.dim_foreground_disabled_material_dark;
+			global::AiForms.Renderers.Droid.Resource.Color.dim_foreground_disabled_material_light = global::PathwayGames.Droid.Resource.Color.dim_foreground_disabled_material_light;
+			global::AiForms.Renderers.Droid.Resource.Color.dim_foreground_material_dark = global::PathwayGames.Droid.Resource.Color.dim_foreground_material_dark;
+			global::AiForms.Renderers.Droid.Resource.Color.dim_foreground_material_light = global::PathwayGames.Droid.Resource.Color.dim_foreground_material_light;
+			global::AiForms.Renderers.Droid.Resource.Color.error_color_material_dark = global::PathwayGames.Droid.Resource.Color.error_color_material_dark;
+			global::AiForms.Renderers.Droid.Resource.Color.error_color_material_light = global::PathwayGames.Droid.Resource.Color.error_color_material_light;
+			global::AiForms.Renderers.Droid.Resource.Color.foreground_material_dark = global::PathwayGames.Droid.Resource.Color.foreground_material_dark;
+			global::AiForms.Renderers.Droid.Resource.Color.foreground_material_light = global::PathwayGames.Droid.Resource.Color.foreground_material_light;
+			global::AiForms.Renderers.Droid.Resource.Color.highlighted_text_material_dark = global::PathwayGames.Droid.Resource.Color.highlighted_text_material_dark;
+			global::AiForms.Renderers.Droid.Resource.Color.highlighted_text_material_light = global::PathwayGames.Droid.Resource.Color.highlighted_text_material_light;
+			global::AiForms.Renderers.Droid.Resource.Color.material_blue_grey_800 = global::PathwayGames.Droid.Resource.Color.material_blue_grey_800;
+			global::AiForms.Renderers.Droid.Resource.Color.material_blue_grey_900 = global::PathwayGames.Droid.Resource.Color.material_blue_grey_900;
+			global::AiForms.Renderers.Droid.Resource.Color.material_blue_grey_950 = global::PathwayGames.Droid.Resource.Color.material_blue_grey_950;
+			global::AiForms.Renderers.Droid.Resource.Color.material_deep_teal_200 = global::PathwayGames.Droid.Resource.Color.material_deep_teal_200;
+			global::AiForms.Renderers.Droid.Resource.Color.material_deep_teal_500 = global::PathwayGames.Droid.Resource.Color.material_deep_teal_500;
+			global::AiForms.Renderers.Droid.Resource.Color.material_grey_100 = global::PathwayGames.Droid.Resource.Color.material_grey_100;
+			global::AiForms.Renderers.Droid.Resource.Color.material_grey_300 = global::PathwayGames.Droid.Resource.Color.material_grey_300;
+			global::AiForms.Renderers.Droid.Resource.Color.material_grey_50 = global::PathwayGames.Droid.Resource.Color.material_grey_50;
+			global::AiForms.Renderers.Droid.Resource.Color.material_grey_600 = global::PathwayGames.Droid.Resource.Color.material_grey_600;
+			global::AiForms.Renderers.Droid.Resource.Color.material_grey_800 = global::PathwayGames.Droid.Resource.Color.material_grey_800;
+			global::AiForms.Renderers.Droid.Resource.Color.material_grey_850 = global::PathwayGames.Droid.Resource.Color.material_grey_850;
+			global::AiForms.Renderers.Droid.Resource.Color.material_grey_900 = global::PathwayGames.Droid.Resource.Color.material_grey_900;
+			global::AiForms.Renderers.Droid.Resource.Color.mtrl_bottom_nav_colored_item_tint = global::PathwayGames.Droid.Resource.Color.mtrl_bottom_nav_colored_item_tint;
+			global::AiForms.Renderers.Droid.Resource.Color.mtrl_bottom_nav_item_tint = global::PathwayGames.Droid.Resource.Color.mtrl_bottom_nav_item_tint;
+			global::AiForms.Renderers.Droid.Resource.Color.mtrl_btn_bg_color_disabled = global::PathwayGames.Droid.Resource.Color.mtrl_btn_bg_color_disabled;
+			global::AiForms.Renderers.Droid.Resource.Color.mtrl_btn_bg_color_selector = global::PathwayGames.Droid.Resource.Color.mtrl_btn_bg_color_selector;
+			global::AiForms.Renderers.Droid.Resource.Color.mtrl_btn_ripple_color = global::PathwayGames.Droid.Resource.Color.mtrl_btn_ripple_color;
+			global::AiForms.Renderers.Droid.Resource.Color.mtrl_btn_stroke_color_selector = global::PathwayGames.Droid.Resource.Color.mtrl_btn_stroke_color_selector;
+			global::AiForms.Renderers.Droid.Resource.Color.mtrl_btn_text_btn_ripple_color = global::PathwayGames.Droid.Resource.Color.mtrl_btn_text_btn_ripple_color;
+			global::AiForms.Renderers.Droid.Resource.Color.mtrl_btn_text_color_disabled = global::PathwayGames.Droid.Resource.Color.mtrl_btn_text_color_disabled;
+			global::AiForms.Renderers.Droid.Resource.Color.mtrl_btn_text_color_selector = global::PathwayGames.Droid.Resource.Color.mtrl_btn_text_color_selector;
+			global::AiForms.Renderers.Droid.Resource.Color.mtrl_btn_transparent_bg_color = global::PathwayGames.Droid.Resource.Color.mtrl_btn_transparent_bg_color;
+			global::AiForms.Renderers.Droid.Resource.Color.mtrl_chip_background_color = global::PathwayGames.Droid.Resource.Color.mtrl_chip_background_color;
+			global::AiForms.Renderers.Droid.Resource.Color.mtrl_chip_close_icon_tint = global::PathwayGames.Droid.Resource.Color.mtrl_chip_close_icon_tint;
+			global::AiForms.Renderers.Droid.Resource.Color.mtrl_chip_ripple_color = global::PathwayGames.Droid.Resource.Color.mtrl_chip_ripple_color;
+			global::AiForms.Renderers.Droid.Resource.Color.mtrl_chip_text_color = global::PathwayGames.Droid.Resource.Color.mtrl_chip_text_color;
+			global::AiForms.Renderers.Droid.Resource.Color.mtrl_fab_ripple_color = global::PathwayGames.Droid.Resource.Color.mtrl_fab_ripple_color;
+			global::AiForms.Renderers.Droid.Resource.Color.mtrl_scrim_color = global::PathwayGames.Droid.Resource.Color.mtrl_scrim_color;
+			global::AiForms.Renderers.Droid.Resource.Color.mtrl_tabs_colored_ripple_color = global::PathwayGames.Droid.Resource.Color.mtrl_tabs_colored_ripple_color;
+			global::AiForms.Renderers.Droid.Resource.Color.mtrl_tabs_icon_color_selector = global::PathwayGames.Droid.Resource.Color.mtrl_tabs_icon_color_selector;
+			global::AiForms.Renderers.Droid.Resource.Color.mtrl_tabs_icon_color_selector_colored = global::PathwayGames.Droid.Resource.Color.mtrl_tabs_icon_color_selector_colored;
+			global::AiForms.Renderers.Droid.Resource.Color.mtrl_tabs_legacy_text_color_selector = global::PathwayGames.Droid.Resource.Color.mtrl_tabs_legacy_text_color_selector;
+			global::AiForms.Renderers.Droid.Resource.Color.mtrl_tabs_ripple_color = global::PathwayGames.Droid.Resource.Color.mtrl_tabs_ripple_color;
+			global::AiForms.Renderers.Droid.Resource.Color.mtrl_text_btn_text_color_selector = global::PathwayGames.Droid.Resource.Color.mtrl_text_btn_text_color_selector;
+			global::AiForms.Renderers.Droid.Resource.Color.mtrl_textinput_default_box_stroke_color = global::PathwayGames.Droid.Resource.Color.mtrl_textinput_default_box_stroke_color;
+			global::AiForms.Renderers.Droid.Resource.Color.mtrl_textinput_disabled_color = global::PathwayGames.Droid.Resource.Color.mtrl_textinput_disabled_color;
+			global::AiForms.Renderers.Droid.Resource.Color.mtrl_textinput_filled_box_default_background_color = global::PathwayGames.Droid.Resource.Color.mtrl_textinput_filled_box_default_background_color;
+			global::AiForms.Renderers.Droid.Resource.Color.mtrl_textinput_hovered_box_stroke_color = global::PathwayGames.Droid.Resource.Color.mtrl_textinput_hovered_box_stroke_color;
+			global::AiForms.Renderers.Droid.Resource.Color.notification_action_color_filter = global::PathwayGames.Droid.Resource.Color.notification_action_color_filter;
+			global::AiForms.Renderers.Droid.Resource.Color.notification_icon_bg_color = global::PathwayGames.Droid.Resource.Color.notification_icon_bg_color;
+			global::AiForms.Renderers.Droid.Resource.Color.notification_material_background_media_default_color = global::PathwayGames.Droid.Resource.Color.notification_material_background_media_default_color;
+			global::AiForms.Renderers.Droid.Resource.Color.primary_dark_material_dark = global::PathwayGames.Droid.Resource.Color.primary_dark_material_dark;
+			global::AiForms.Renderers.Droid.Resource.Color.primary_dark_material_light = global::PathwayGames.Droid.Resource.Color.primary_dark_material_light;
+			global::AiForms.Renderers.Droid.Resource.Color.primary_material_dark = global::PathwayGames.Droid.Resource.Color.primary_material_dark;
+			global::AiForms.Renderers.Droid.Resource.Color.primary_material_light = global::PathwayGames.Droid.Resource.Color.primary_material_light;
+			global::AiForms.Renderers.Droid.Resource.Color.primary_text_default_material_dark = global::PathwayGames.Droid.Resource.Color.primary_text_default_material_dark;
+			global::AiForms.Renderers.Droid.Resource.Color.primary_text_default_material_light = global::PathwayGames.Droid.Resource.Color.primary_text_default_material_light;
+			global::AiForms.Renderers.Droid.Resource.Color.primary_text_disabled_material_dark = global::PathwayGames.Droid.Resource.Color.primary_text_disabled_material_dark;
+			global::AiForms.Renderers.Droid.Resource.Color.primary_text_disabled_material_light = global::PathwayGames.Droid.Resource.Color.primary_text_disabled_material_light;
+			global::AiForms.Renderers.Droid.Resource.Color.ripple_material_dark = global::PathwayGames.Droid.Resource.Color.ripple_material_dark;
+			global::AiForms.Renderers.Droid.Resource.Color.ripple_material_light = global::PathwayGames.Droid.Resource.Color.ripple_material_light;
+			global::AiForms.Renderers.Droid.Resource.Color.secondary_text_default_material_dark = global::PathwayGames.Droid.Resource.Color.secondary_text_default_material_dark;
+			global::AiForms.Renderers.Droid.Resource.Color.secondary_text_default_material_light = global::PathwayGames.Droid.Resource.Color.secondary_text_default_material_light;
+			global::AiForms.Renderers.Droid.Resource.Color.secondary_text_disabled_material_dark = global::PathwayGames.Droid.Resource.Color.secondary_text_disabled_material_dark;
+			global::AiForms.Renderers.Droid.Resource.Color.secondary_text_disabled_material_light = global::PathwayGames.Droid.Resource.Color.secondary_text_disabled_material_light;
+			global::AiForms.Renderers.Droid.Resource.Color.switch_thumb_disabled_material_dark = global::PathwayGames.Droid.Resource.Color.switch_thumb_disabled_material_dark;
+			global::AiForms.Renderers.Droid.Resource.Color.switch_thumb_disabled_material_light = global::PathwayGames.Droid.Resource.Color.switch_thumb_disabled_material_light;
+			global::AiForms.Renderers.Droid.Resource.Color.switch_thumb_material_dark = global::PathwayGames.Droid.Resource.Color.switch_thumb_material_dark;
+			global::AiForms.Renderers.Droid.Resource.Color.switch_thumb_material_light = global::PathwayGames.Droid.Resource.Color.switch_thumb_material_light;
+			global::AiForms.Renderers.Droid.Resource.Color.switch_thumb_normal_material_dark = global::PathwayGames.Droid.Resource.Color.switch_thumb_normal_material_dark;
+			global::AiForms.Renderers.Droid.Resource.Color.switch_thumb_normal_material_light = global::PathwayGames.Droid.Resource.Color.switch_thumb_normal_material_light;
+			global::AiForms.Renderers.Droid.Resource.Color.tooltip_background_dark = global::PathwayGames.Droid.Resource.Color.tooltip_background_dark;
+			global::AiForms.Renderers.Droid.Resource.Color.tooltip_background_light = global::PathwayGames.Droid.Resource.Color.tooltip_background_light;
+			global::AiForms.Renderers.Droid.Resource.Dimension.abc_action_bar_content_inset_material = global::PathwayGames.Droid.Resource.Dimension.abc_action_bar_content_inset_material;
+			global::AiForms.Renderers.Droid.Resource.Dimension.abc_action_bar_content_inset_with_nav = global::PathwayGames.Droid.Resource.Dimension.abc_action_bar_content_inset_with_nav;
+			global::AiForms.Renderers.Droid.Resource.Dimension.abc_action_bar_default_height_material = global::PathwayGames.Droid.Resource.Dimension.abc_action_bar_default_height_material;
+			global::AiForms.Renderers.Droid.Resource.Dimension.abc_action_bar_default_padding_end_material = global::PathwayGames.Droid.Resource.Dimension.abc_action_bar_default_padding_end_material;
+			global::AiForms.Renderers.Droid.Resource.Dimension.abc_action_bar_default_padding_start_material = global::PathwayGames.Droid.Resource.Dimension.abc_action_bar_default_padding_start_material;
+			global::AiForms.Renderers.Droid.Resource.Dimension.abc_action_bar_elevation_material = global::PathwayGames.Droid.Resource.Dimension.abc_action_bar_elevation_material;
+			global::AiForms.Renderers.Droid.Resource.Dimension.abc_action_bar_icon_vertical_padding_material = global::PathwayGames.Droid.Resource.Dimension.abc_action_bar_icon_vertical_padding_material;
+			global::AiForms.Renderers.Droid.Resource.Dimension.abc_action_bar_overflow_padding_end_material = global::PathwayGames.Droid.Resource.Dimension.abc_action_bar_overflow_padding_end_material;
+			global::AiForms.Renderers.Droid.Resource.Dimension.abc_action_bar_overflow_padding_start_material = global::PathwayGames.Droid.Resource.Dimension.abc_action_bar_overflow_padding_start_material;
+			global::AiForms.Renderers.Droid.Resource.Dimension.abc_action_bar_stacked_max_height = global::PathwayGames.Droid.Resource.Dimension.abc_action_bar_stacked_max_height;
+			global::AiForms.Renderers.Droid.Resource.Dimension.abc_action_bar_stacked_tab_max_width = global::PathwayGames.Droid.Resource.Dimension.abc_action_bar_stacked_tab_max_width;
+			global::AiForms.Renderers.Droid.Resource.Dimension.abc_action_bar_subtitle_bottom_margin_material = global::PathwayGames.Droid.Resource.Dimension.abc_action_bar_subtitle_bottom_margin_material;
+			global::AiForms.Renderers.Droid.Resource.Dimension.abc_action_bar_subtitle_top_margin_material = global::PathwayGames.Droid.Resource.Dimension.abc_action_bar_subtitle_top_margin_material;
+			global::AiForms.Renderers.Droid.Resource.Dimension.abc_action_button_min_height_material = global::PathwayGames.Droid.Resource.Dimension.abc_action_button_min_height_material;
+			global::AiForms.Renderers.Droid.Resource.Dimension.abc_action_button_min_width_material = global::PathwayGames.Droid.Resource.Dimension.abc_action_button_min_width_material;
+			global::AiForms.Renderers.Droid.Resource.Dimension.abc_action_button_min_width_overflow_material = global::PathwayGames.Droid.Resource.Dimension.abc_action_button_min_width_overflow_material;
+			global::AiForms.Renderers.Droid.Resource.Dimension.abc_alert_dialog_button_bar_height = global::PathwayGames.Droid.Resource.Dimension.abc_alert_dialog_button_bar_height;
+			global::AiForms.Renderers.Droid.Resource.Dimension.abc_alert_dialog_button_dimen = global::PathwayGames.Droid.Resource.Dimension.abc_alert_dialog_button_dimen;
+			global::AiForms.Renderers.Droid.Resource.Dimension.abc_button_inset_horizontal_material = global::PathwayGames.Droid.Resource.Dimension.abc_button_inset_horizontal_material;
+			global::AiForms.Renderers.Droid.Resource.Dimension.abc_button_inset_vertical_material = global::PathwayGames.Droid.Resource.Dimension.abc_button_inset_vertical_material;
+			global::AiForms.Renderers.Droid.Resource.Dimension.abc_button_padding_horizontal_material = global::PathwayGames.Droid.Resource.Dimension.abc_button_padding_horizontal_material;
+			global::AiForms.Renderers.Droid.Resource.Dimension.abc_button_padding_vertical_material = global::PathwayGames.Droid.Resource.Dimension.abc_button_padding_vertical_material;
+			global::AiForms.Renderers.Droid.Resource.Dimension.abc_cascading_menus_min_smallest_width = global::PathwayGames.Droid.Resource.Dimension.abc_cascading_menus_min_smallest_width;
+			global::AiForms.Renderers.Droid.Resource.Dimension.abc_config_prefDialogWidth = global::PathwayGames.Droid.Resource.Dimension.abc_config_prefDialogWidth;
+			global::AiForms.Renderers.Droid.Resource.Dimension.abc_control_corner_material = global::PathwayGames.Droid.Resource.Dimension.abc_control_corner_material;
+			global::AiForms.Renderers.Droid.Resource.Dimension.abc_control_inset_material = global::PathwayGames.Droid.Resource.Dimension.abc_control_inset_material;
+			global::AiForms.Renderers.Droid.Resource.Dimension.abc_control_padding_material = global::PathwayGames.Droid.Resource.Dimension.abc_control_padding_material;
+			global::AiForms.Renderers.Droid.Resource.Dimension.abc_dialog_corner_radius_material = global::PathwayGames.Droid.Resource.Dimension.abc_dialog_corner_radius_material;
+			global::AiForms.Renderers.Droid.Resource.Dimension.abc_dialog_fixed_height_major = global::PathwayGames.Droid.Resource.Dimension.abc_dialog_fixed_height_major;
+			global::AiForms.Renderers.Droid.Resource.Dimension.abc_dialog_fixed_height_minor = global::PathwayGames.Droid.Resource.Dimension.abc_dialog_fixed_height_minor;
+			global::AiForms.Renderers.Droid.Resource.Dimension.abc_dialog_fixed_width_major = global::PathwayGames.Droid.Resource.Dimension.abc_dialog_fixed_width_major;
+			global::AiForms.Renderers.Droid.Resource.Dimension.abc_dialog_fixed_width_minor = global::PathwayGames.Droid.Resource.Dimension.abc_dialog_fixed_width_minor;
+			global::AiForms.Renderers.Droid.Resource.Dimension.abc_dialog_list_padding_bottom_no_buttons = global::PathwayGames.Droid.Resource.Dimension.abc_dialog_list_padding_bottom_no_buttons;
+			global::AiForms.Renderers.Droid.Resource.Dimension.abc_dialog_list_padding_top_no_title = global::PathwayGames.Droid.Resource.Dimension.abc_dialog_list_padding_top_no_title;
+			global::AiForms.Renderers.Droid.Resource.Dimension.abc_dialog_min_width_major = global::PathwayGames.Droid.Resource.Dimension.abc_dialog_min_width_major;
+			global::AiForms.Renderers.Droid.Resource.Dimension.abc_dialog_min_width_minor = global::PathwayGames.Droid.Resource.Dimension.abc_dialog_min_width_minor;
+			global::AiForms.Renderers.Droid.Resource.Dimension.abc_dialog_padding_material = global::PathwayGames.Droid.Resource.Dimension.abc_dialog_padding_material;
+			global::AiForms.Renderers.Droid.Resource.Dimension.abc_dialog_padding_top_material = global::PathwayGames.Droid.Resource.Dimension.abc_dialog_padding_top_material;
+			global::AiForms.Renderers.Droid.Resource.Dimension.abc_dialog_title_divider_material = global::PathwayGames.Droid.Resource.Dimension.abc_dialog_title_divider_material;
+			global::AiForms.Renderers.Droid.Resource.Dimension.abc_disabled_alpha_material_dark = global::PathwayGames.Droid.Resource.Dimension.abc_disabled_alpha_material_dark;
+			global::AiForms.Renderers.Droid.Resource.Dimension.abc_disabled_alpha_material_light = global::PathwayGames.Droid.Resource.Dimension.abc_disabled_alpha_material_light;
+			global::AiForms.Renderers.Droid.Resource.Dimension.abc_dropdownitem_icon_width = global::PathwayGames.Droid.Resource.Dimension.abc_dropdownitem_icon_width;
+			global::AiForms.Renderers.Droid.Resource.Dimension.abc_dropdownitem_text_padding_left = global::PathwayGames.Droid.Resource.Dimension.abc_dropdownitem_text_padding_left;
+			global::AiForms.Renderers.Droid.Resource.Dimension.abc_dropdownitem_text_padding_right = global::PathwayGames.Droid.Resource.Dimension.abc_dropdownitem_text_padding_right;
+			global::AiForms.Renderers.Droid.Resource.Dimension.abc_edit_text_inset_bottom_material = global::PathwayGames.Droid.Resource.Dimension.abc_edit_text_inset_bottom_material;
+			global::AiForms.Renderers.Droid.Resource.Dimension.abc_edit_text_inset_horizontal_material = global::PathwayGames.Droid.Resource.Dimension.abc_edit_text_inset_horizontal_material;
+			global::AiForms.Renderers.Droid.Resource.Dimension.abc_edit_text_inset_top_material = global::PathwayGames.Droid.Resource.Dimension.abc_edit_text_inset_top_material;
+			global::AiForms.Renderers.Droid.Resource.Dimension.abc_floating_window_z = global::PathwayGames.Droid.Resource.Dimension.abc_floating_window_z;
+			global::AiForms.Renderers.Droid.Resource.Dimension.abc_list_item_padding_horizontal_material = global::PathwayGames.Droid.Resource.Dimension.abc_list_item_padding_horizontal_material;
+			global::AiForms.Renderers.Droid.Resource.Dimension.abc_panel_menu_list_width = global::PathwayGames.Droid.Resource.Dimension.abc_panel_menu_list_width;
+			global::AiForms.Renderers.Droid.Resource.Dimension.abc_progress_bar_height_material = global::PathwayGames.Droid.Resource.Dimension.abc_progress_bar_height_material;
+			global::AiForms.Renderers.Droid.Resource.Dimension.abc_search_view_preferred_height = global::PathwayGames.Droid.Resource.Dimension.abc_search_view_preferred_height;
+			global::AiForms.Renderers.Droid.Resource.Dimension.abc_search_view_preferred_width = global::PathwayGames.Droid.Resource.Dimension.abc_search_view_preferred_width;
+			global::AiForms.Renderers.Droid.Resource.Dimension.abc_seekbar_track_background_height_material = global::PathwayGames.Droid.Resource.Dimension.abc_seekbar_track_background_height_material;
+			global::AiForms.Renderers.Droid.Resource.Dimension.abc_seekbar_track_progress_height_material = global::PathwayGames.Droid.Resource.Dimension.abc_seekbar_track_progress_height_material;
+			global::AiForms.Renderers.Droid.Resource.Dimension.abc_select_dialog_padding_start_material = global::PathwayGames.Droid.Resource.Dimension.abc_select_dialog_padding_start_material;
+			global::AiForms.Renderers.Droid.Resource.Dimension.abc_switch_padding = global::PathwayGames.Droid.Resource.Dimension.abc_switch_padding;
+			global::AiForms.Renderers.Droid.Resource.Dimension.abc_text_size_body_1_material = global::PathwayGames.Droid.Resource.Dimension.abc_text_size_body_1_material;
+			global::AiForms.Renderers.Droid.Resource.Dimension.abc_text_size_body_2_material = global::PathwayGames.Droid.Resource.Dimension.abc_text_size_body_2_material;
+			global::AiForms.Renderers.Droid.Resource.Dimension.abc_text_size_button_material = global::PathwayGames.Droid.Resource.Dimension.abc_text_size_button_material;
+			global::AiForms.Renderers.Droid.Resource.Dimension.abc_text_size_caption_material = global::PathwayGames.Droid.Resource.Dimension.abc_text_size_caption_material;
+			global::AiForms.Renderers.Droid.Resource.Dimension.abc_text_size_display_1_material = global::PathwayGames.Droid.Resource.Dimension.abc_text_size_display_1_material;
+			global::AiForms.Renderers.Droid.Resource.Dimension.abc_text_size_display_2_material = global::PathwayGames.Droid.Resource.Dimension.abc_text_size_display_2_material;
+			global::AiForms.Renderers.Droid.Resource.Dimension.abc_text_size_display_3_material = global::PathwayGames.Droid.Resource.Dimension.abc_text_size_display_3_material;
+			global::AiForms.Renderers.Droid.Resource.Dimension.abc_text_size_display_4_material = global::PathwayGames.Droid.Resource.Dimension.abc_text_size_display_4_material;
+			global::AiForms.Renderers.Droid.Resource.Dimension.abc_text_size_headline_material = global::PathwayGames.Droid.Resource.Dimension.abc_text_size_headline_material;
+			global::AiForms.Renderers.Droid.Resource.Dimension.abc_text_size_large_material = global::PathwayGames.Droid.Resource.Dimension.abc_text_size_large_material;
+			global::AiForms.Renderers.Droid.Resource.Dimension.abc_text_size_medium_material = global::PathwayGames.Droid.Resource.Dimension.abc_text_size_medium_material;
+			global::AiForms.Renderers.Droid.Resource.Dimension.abc_text_size_menu_header_material = global::PathwayGames.Droid.Resource.Dimension.abc_text_size_menu_header_material;
+			global::AiForms.Renderers.Droid.Resource.Dimension.abc_text_size_menu_material = global::PathwayGames.Droid.Resource.Dimension.abc_text_size_menu_material;
+			global::AiForms.Renderers.Droid.Resource.Dimension.abc_text_size_small_material = global::PathwayGames.Droid.Resource.Dimension.abc_text_size_small_material;
+			global::AiForms.Renderers.Droid.Resource.Dimension.abc_text_size_subhead_material = global::PathwayGames.Droid.Resource.Dimension.abc_text_size_subhead_material;
+			global::AiForms.Renderers.Droid.Resource.Dimension.abc_text_size_subtitle_material_toolbar = global::PathwayGames.Droid.Resource.Dimension.abc_text_size_subtitle_material_toolbar;
+			global::AiForms.Renderers.Droid.Resource.Dimension.abc_text_size_title_material = global::PathwayGames.Droid.Resource.Dimension.abc_text_size_title_material;
+			global::AiForms.Renderers.Droid.Resource.Dimension.abc_text_size_title_material_toolbar = global::PathwayGames.Droid.Resource.Dimension.abc_text_size_title_material_toolbar;
+			global::AiForms.Renderers.Droid.Resource.Dimension.browser_actions_context_menu_max_width = global::PathwayGames.Droid.Resource.Dimension.browser_actions_context_menu_max_width;
+			global::AiForms.Renderers.Droid.Resource.Dimension.browser_actions_context_menu_min_padding = global::PathwayGames.Droid.Resource.Dimension.browser_actions_context_menu_min_padding;
+			global::AiForms.Renderers.Droid.Resource.Dimension.cardview_compat_inset_shadow = global::PathwayGames.Droid.Resource.Dimension.cardview_compat_inset_shadow;
+			global::AiForms.Renderers.Droid.Resource.Dimension.cardview_default_elevation = global::PathwayGames.Droid.Resource.Dimension.cardview_default_elevation;
+			global::AiForms.Renderers.Droid.Resource.Dimension.cardview_default_radius = global::PathwayGames.Droid.Resource.Dimension.cardview_default_radius;
+			global::AiForms.Renderers.Droid.Resource.Dimension.compat_button_inset_horizontal_material = global::PathwayGames.Droid.Resource.Dimension.compat_button_inset_horizontal_material;
+			global::AiForms.Renderers.Droid.Resource.Dimension.compat_button_inset_vertical_material = global::PathwayGames.Droid.Resource.Dimension.compat_button_inset_vertical_material;
+			global::AiForms.Renderers.Droid.Resource.Dimension.compat_button_padding_horizontal_material = global::PathwayGames.Droid.Resource.Dimension.compat_button_padding_horizontal_material;
+			global::AiForms.Renderers.Droid.Resource.Dimension.compat_button_padding_vertical_material = global::PathwayGames.Droid.Resource.Dimension.compat_button_padding_vertical_material;
+			global::AiForms.Renderers.Droid.Resource.Dimension.compat_control_corner_material = global::PathwayGames.Droid.Resource.Dimension.compat_control_corner_material;
+			global::AiForms.Renderers.Droid.Resource.Dimension.compat_notification_large_icon_max_height = global::PathwayGames.Droid.Resource.Dimension.compat_notification_large_icon_max_height;
+			global::AiForms.Renderers.Droid.Resource.Dimension.compat_notification_large_icon_max_width = global::PathwayGames.Droid.Resource.Dimension.compat_notification_large_icon_max_width;
+			global::AiForms.Renderers.Droid.Resource.Dimension.design_appbar_elevation = global::PathwayGames.Droid.Resource.Dimension.design_appbar_elevation;
+			global::AiForms.Renderers.Droid.Resource.Dimension.design_bottom_navigation_active_item_max_width = global::PathwayGames.Droid.Resource.Dimension.design_bottom_navigation_active_item_max_width;
+			global::AiForms.Renderers.Droid.Resource.Dimension.design_bottom_navigation_active_item_min_width = global::PathwayGames.Droid.Resource.Dimension.design_bottom_navigation_active_item_min_width;
+			global::AiForms.Renderers.Droid.Resource.Dimension.design_bottom_navigation_active_text_size = global::PathwayGames.Droid.Resource.Dimension.design_bottom_navigation_active_text_size;
+			global::AiForms.Renderers.Droid.Resource.Dimension.design_bottom_navigation_elevation = global::PathwayGames.Droid.Resource.Dimension.design_bottom_navigation_elevation;
+			global::AiForms.Renderers.Droid.Resource.Dimension.design_bottom_navigation_height = global::PathwayGames.Droid.Resource.Dimension.design_bottom_navigation_height;
+			global::AiForms.Renderers.Droid.Resource.Dimension.design_bottom_navigation_icon_size = global::PathwayGames.Droid.Resource.Dimension.design_bottom_navigation_icon_size;
+			global::AiForms.Renderers.Droid.Resource.Dimension.design_bottom_navigation_item_max_width = global::PathwayGames.Droid.Resource.Dimension.design_bottom_navigation_item_max_width;
+			global::AiForms.Renderers.Droid.Resource.Dimension.design_bottom_navigation_item_min_width = global::PathwayGames.Droid.Resource.Dimension.design_bottom_navigation_item_min_width;
+			global::AiForms.Renderers.Droid.Resource.Dimension.design_bottom_navigation_margin = global::PathwayGames.Droid.Resource.Dimension.design_bottom_navigation_margin;
+			global::AiForms.Renderers.Droid.Resource.Dimension.design_bottom_navigation_shadow_height = global::PathwayGames.Droid.Resource.Dimension.design_bottom_navigation_shadow_height;
+			global::AiForms.Renderers.Droid.Resource.Dimension.design_bottom_navigation_text_size = global::PathwayGames.Droid.Resource.Dimension.design_bottom_navigation_text_size;
+			global::AiForms.Renderers.Droid.Resource.Dimension.design_bottom_sheet_modal_elevation = global::PathwayGames.Droid.Resource.Dimension.design_bottom_sheet_modal_elevation;
+			global::AiForms.Renderers.Droid.Resource.Dimension.design_bottom_sheet_peek_height_min = global::PathwayGames.Droid.Resource.Dimension.design_bottom_sheet_peek_height_min;
+			global::AiForms.Renderers.Droid.Resource.Dimension.design_fab_border_width = global::PathwayGames.Droid.Resource.Dimension.design_fab_border_width;
+			global::AiForms.Renderers.Droid.Resource.Dimension.design_fab_elevation = global::PathwayGames.Droid.Resource.Dimension.design_fab_elevation;
+			global::AiForms.Renderers.Droid.Resource.Dimension.design_fab_image_size = global::PathwayGames.Droid.Resource.Dimension.design_fab_image_size;
+			global::AiForms.Renderers.Droid.Resource.Dimension.design_fab_size_mini = global::PathwayGames.Droid.Resource.Dimension.design_fab_size_mini;
+			global::AiForms.Renderers.Droid.Resource.Dimension.design_fab_size_normal = global::PathwayGames.Droid.Resource.Dimension.design_fab_size_normal;
+			global::AiForms.Renderers.Droid.Resource.Dimension.design_fab_translation_z_hovered_focused = global::PathwayGames.Droid.Resource.Dimension.design_fab_translation_z_hovered_focused;
+			global::AiForms.Renderers.Droid.Resource.Dimension.design_fab_translation_z_pressed = global::PathwayGames.Droid.Resource.Dimension.design_fab_translation_z_pressed;
+			global::AiForms.Renderers.Droid.Resource.Dimension.design_navigation_elevation = global::PathwayGames.Droid.Resource.Dimension.design_navigation_elevation;
+			global::AiForms.Renderers.Droid.Resource.Dimension.design_navigation_icon_padding = global::PathwayGames.Droid.Resource.Dimension.design_navigation_icon_padding;
+			global::AiForms.Renderers.Droid.Resource.Dimension.design_navigation_icon_size = global::PathwayGames.Droid.Resource.Dimension.design_navigation_icon_size;
+			global::AiForms.Renderers.Droid.Resource.Dimension.design_navigation_item_horizontal_padding = global::PathwayGames.Droid.Resource.Dimension.design_navigation_item_horizontal_padding;
+			global::AiForms.Renderers.Droid.Resource.Dimension.design_navigation_item_icon_padding = global::PathwayGames.Droid.Resource.Dimension.design_navigation_item_icon_padding;
+			global::AiForms.Renderers.Droid.Resource.Dimension.design_navigation_max_width = global::PathwayGames.Droid.Resource.Dimension.design_navigation_max_width;
+			global::AiForms.Renderers.Droid.Resource.Dimension.design_navigation_padding_bottom = global::PathwayGames.Droid.Resource.Dimension.design_navigation_padding_bottom;
+			global::AiForms.Renderers.Droid.Resource.Dimension.design_navigation_separator_vertical_padding = global::PathwayGames.Droid.Resource.Dimension.design_navigation_separator_vertical_padding;
+			global::AiForms.Renderers.Droid.Resource.Dimension.design_snackbar_action_inline_max_width = global::PathwayGames.Droid.Resource.Dimension.design_snackbar_action_inline_max_width;
+			global::AiForms.Renderers.Droid.Resource.Dimension.design_snackbar_background_corner_radius = global::PathwayGames.Droid.Resource.Dimension.design_snackbar_background_corner_radius;
+			global::AiForms.Renderers.Droid.Resource.Dimension.design_snackbar_elevation = global::PathwayGames.Droid.Resource.Dimension.design_snackbar_elevation;
+			global::AiForms.Renderers.Droid.Resource.Dimension.design_snackbar_extra_spacing_horizontal = global::PathwayGames.Droid.Resource.Dimension.design_snackbar_extra_spacing_horizontal;
+			global::AiForms.Renderers.Droid.Resource.Dimension.design_snackbar_max_width = global::PathwayGames.Droid.Resource.Dimension.design_snackbar_max_width;
+			global::AiForms.Renderers.Droid.Resource.Dimension.design_snackbar_min_width = global::PathwayGames.Droid.Resource.Dimension.design_snackbar_min_width;
+			global::AiForms.Renderers.Droid.Resource.Dimension.design_snackbar_padding_horizontal = global::PathwayGames.Droid.Resource.Dimension.design_snackbar_padding_horizontal;
+			global::AiForms.Renderers.Droid.Resource.Dimension.design_snackbar_padding_vertical = global::PathwayGames.Droid.Resource.Dimension.design_snackbar_padding_vertical;
+			global::AiForms.Renderers.Droid.Resource.Dimension.design_snackbar_padding_vertical_2lines = global::PathwayGames.Droid.Resource.Dimension.design_snackbar_padding_vertical_2lines;
+			global::AiForms.Renderers.Droid.Resource.Dimension.design_snackbar_text_size = global::PathwayGames.Droid.Resource.Dimension.design_snackbar_text_size;
+			global::AiForms.Renderers.Droid.Resource.Dimension.design_tab_max_width = global::PathwayGames.Droid.Resource.Dimension.design_tab_max_width;
+			global::AiForms.Renderers.Droid.Resource.Dimension.design_tab_scrollable_min_width = global::PathwayGames.Droid.Resource.Dimension.design_tab_scrollable_min_width;
+			global::AiForms.Renderers.Droid.Resource.Dimension.design_tab_text_size = global::PathwayGames.Droid.Resource.Dimension.design_tab_text_size;
+			global::AiForms.Renderers.Droid.Resource.Dimension.design_tab_text_size_2line = global::PathwayGames.Droid.Resource.Dimension.design_tab_text_size_2line;
+			global::AiForms.Renderers.Droid.Resource.Dimension.design_textinput_caption_translate_y = global::PathwayGames.Droid.Resource.Dimension.design_textinput_caption_translate_y;
+			global::AiForms.Renderers.Droid.Resource.Dimension.disabled_alpha_material_dark = global::PathwayGames.Droid.Resource.Dimension.disabled_alpha_material_dark;
+			global::AiForms.Renderers.Droid.Resource.Dimension.disabled_alpha_material_light = global::PathwayGames.Droid.Resource.Dimension.disabled_alpha_material_light;
+			global::AiForms.Renderers.Droid.Resource.Dimension.fastscroll_default_thickness = global::PathwayGames.Droid.Resource.Dimension.fastscroll_default_thickness;
+			global::AiForms.Renderers.Droid.Resource.Dimension.fastscroll_margin = global::PathwayGames.Droid.Resource.Dimension.fastscroll_margin;
+			global::AiForms.Renderers.Droid.Resource.Dimension.fastscroll_minimum_range = global::PathwayGames.Droid.Resource.Dimension.fastscroll_minimum_range;
+			global::AiForms.Renderers.Droid.Resource.Dimension.highlight_alpha_material_colored = global::PathwayGames.Droid.Resource.Dimension.highlight_alpha_material_colored;
+			global::AiForms.Renderers.Droid.Resource.Dimension.highlight_alpha_material_dark = global::PathwayGames.Droid.Resource.Dimension.highlight_alpha_material_dark;
+			global::AiForms.Renderers.Droid.Resource.Dimension.highlight_alpha_material_light = global::PathwayGames.Droid.Resource.Dimension.highlight_alpha_material_light;
+			global::AiForms.Renderers.Droid.Resource.Dimension.hint_alpha_material_dark = global::PathwayGames.Droid.Resource.Dimension.hint_alpha_material_dark;
+			global::AiForms.Renderers.Droid.Resource.Dimension.hint_alpha_material_light = global::PathwayGames.Droid.Resource.Dimension.hint_alpha_material_light;
+			global::AiForms.Renderers.Droid.Resource.Dimension.hint_pressed_alpha_material_dark = global::PathwayGames.Droid.Resource.Dimension.hint_pressed_alpha_material_dark;
+			global::AiForms.Renderers.Droid.Resource.Dimension.hint_pressed_alpha_material_light = global::PathwayGames.Droid.Resource.Dimension.hint_pressed_alpha_material_light;
+			global::AiForms.Renderers.Droid.Resource.Dimension.item_touch_helper_max_drag_scroll_per_frame = global::PathwayGames.Droid.Resource.Dimension.item_touch_helper_max_drag_scroll_per_frame;
+			global::AiForms.Renderers.Droid.Resource.Dimension.item_touch_helper_swipe_escape_max_velocity = global::PathwayGames.Droid.Resource.Dimension.item_touch_helper_swipe_escape_max_velocity;
+			global::AiForms.Renderers.Droid.Resource.Dimension.item_touch_helper_swipe_escape_velocity = global::PathwayGames.Droid.Resource.Dimension.item_touch_helper_swipe_escape_velocity;
+			global::AiForms.Renderers.Droid.Resource.Dimension.mr_controller_volume_group_list_item_height = global::PathwayGames.Droid.Resource.Dimension.mr_controller_volume_group_list_item_height;
+			global::AiForms.Renderers.Droid.Resource.Dimension.mr_controller_volume_group_list_item_icon_size = global::PathwayGames.Droid.Resource.Dimension.mr_controller_volume_group_list_item_icon_size;
+			global::AiForms.Renderers.Droid.Resource.Dimension.mr_controller_volume_group_list_max_height = global::PathwayGames.Droid.Resource.Dimension.mr_controller_volume_group_list_max_height;
+			global::AiForms.Renderers.Droid.Resource.Dimension.mr_controller_volume_group_list_padding_top = global::PathwayGames.Droid.Resource.Dimension.mr_controller_volume_group_list_padding_top;
+			global::AiForms.Renderers.Droid.Resource.Dimension.mr_dialog_fixed_width_major = global::PathwayGames.Droid.Resource.Dimension.mr_dialog_fixed_width_major;
+			global::AiForms.Renderers.Droid.Resource.Dimension.mr_dialog_fixed_width_minor = global::PathwayGames.Droid.Resource.Dimension.mr_dialog_fixed_width_minor;
+			global::AiForms.Renderers.Droid.Resource.Dimension.mtrl_bottomappbar_fabOffsetEndMode = global::PathwayGames.Droid.Resource.Dimension.mtrl_bottomappbar_fabOffsetEndMode;
+			global::AiForms.Renderers.Droid.Resource.Dimension.mtrl_bottomappbar_fab_cradle_margin = global::PathwayGames.Droid.Resource.Dimension.mtrl_bottomappbar_fab_cradle_margin;
+			global::AiForms.Renderers.Droid.Resource.Dimension.mtrl_bottomappbar_fab_cradle_rounded_corner_radius = global::PathwayGames.Droid.Resource.Dimension.mtrl_bottomappbar_fab_cradle_rounded_corner_radius;
+			global::AiForms.Renderers.Droid.Resource.Dimension.mtrl_bottomappbar_fab_cradle_vertical_offset = global::PathwayGames.Droid.Resource.Dimension.mtrl_bottomappbar_fab_cradle_vertical_offset;
+			global::AiForms.Renderers.Droid.Resource.Dimension.mtrl_bottomappbar_height = global::PathwayGames.Droid.Resource.Dimension.mtrl_bottomappbar_height;
+			global::AiForms.Renderers.Droid.Resource.Dimension.mtrl_btn_corner_radius = global::PathwayGames.Droid.Resource.Dimension.mtrl_btn_corner_radius;
+			global::AiForms.Renderers.Droid.Resource.Dimension.mtrl_btn_dialog_btn_min_width = global::PathwayGames.Droid.Resource.Dimension.mtrl_btn_dialog_btn_min_width;
+			global::AiForms.Renderers.Droid.Resource.Dimension.mtrl_btn_disabled_elevation = global::PathwayGames.Droid.Resource.Dimension.mtrl_btn_disabled_elevation;
+			global::AiForms.Renderers.Droid.Resource.Dimension.mtrl_btn_disabled_z = global::PathwayGames.Droid.Resource.Dimension.mtrl_btn_disabled_z;
+			global::AiForms.Renderers.Droid.Resource.Dimension.mtrl_btn_elevation = global::PathwayGames.Droid.Resource.Dimension.mtrl_btn_elevation;
+			global::AiForms.Renderers.Droid.Resource.Dimension.mtrl_btn_focused_z = global::PathwayGames.Droid.Resource.Dimension.mtrl_btn_focused_z;
+			global::AiForms.Renderers.Droid.Resource.Dimension.mtrl_btn_hovered_z = global::PathwayGames.Droid.Resource.Dimension.mtrl_btn_hovered_z;
+			global::AiForms.Renderers.Droid.Resource.Dimension.mtrl_btn_icon_btn_padding_left = global::PathwayGames.Droid.Resource.Dimension.mtrl_btn_icon_btn_padding_left;
+			global::AiForms.Renderers.Droid.Resource.Dimension.mtrl_btn_icon_padding = global::PathwayGames.Droid.Resource.Dimension.mtrl_btn_icon_padding;
+			global::AiForms.Renderers.Droid.Resource.Dimension.mtrl_btn_inset = global::PathwayGames.Droid.Resource.Dimension.mtrl_btn_inset;
+			global::AiForms.Renderers.Droid.Resource.Dimension.mtrl_btn_letter_spacing = global::PathwayGames.Droid.Resource.Dimension.mtrl_btn_letter_spacing;
+			global::AiForms.Renderers.Droid.Resource.Dimension.mtrl_btn_padding_bottom = global::PathwayGames.Droid.Resource.Dimension.mtrl_btn_padding_bottom;
+			global::AiForms.Renderers.Droid.Resource.Dimension.mtrl_btn_padding_left = global::PathwayGames.Droid.Resource.Dimension.mtrl_btn_padding_left;
+			global::AiForms.Renderers.Droid.Resource.Dimension.mtrl_btn_padding_right = global::PathwayGames.Droid.Resource.Dimension.mtrl_btn_padding_right;
+			global::AiForms.Renderers.Droid.Resource.Dimension.mtrl_btn_padding_top = global::PathwayGames.Droid.Resource.Dimension.mtrl_btn_padding_top;
+			global::AiForms.Renderers.Droid.Resource.Dimension.mtrl_btn_pressed_z = global::PathwayGames.Droid.Resource.Dimension.mtrl_btn_pressed_z;
+			global::AiForms.Renderers.Droid.Resource.Dimension.mtrl_btn_stroke_size = global::PathwayGames.Droid.Resource.Dimension.mtrl_btn_stroke_size;
+			global::AiForms.Renderers.Droid.Resource.Dimension.mtrl_btn_text_btn_icon_padding = global::PathwayGames.Droid.Resource.Dimension.mtrl_btn_text_btn_icon_padding;
+			global::AiForms.Renderers.Droid.Resource.Dimension.mtrl_btn_text_btn_padding_left = global::PathwayGames.Droid.Resource.Dimension.mtrl_btn_text_btn_padding_left;
+			global::AiForms.Renderers.Droid.Resource.Dimension.mtrl_btn_text_btn_padding_right = global::PathwayGames.Droid.Resource.Dimension.mtrl_btn_text_btn_padding_right;
+			global::AiForms.Renderers.Droid.Resource.Dimension.mtrl_btn_text_size = global::PathwayGames.Droid.Resource.Dimension.mtrl_btn_text_size;
+			global::AiForms.Renderers.Droid.Resource.Dimension.mtrl_btn_z = global::PathwayGames.Droid.Resource.Dimension.mtrl_btn_z;
+			global::AiForms.Renderers.Droid.Resource.Dimension.mtrl_card_elevation = global::PathwayGames.Droid.Resource.Dimension.mtrl_card_elevation;
+			global::AiForms.Renderers.Droid.Resource.Dimension.mtrl_card_spacing = global::PathwayGames.Droid.Resource.Dimension.mtrl_card_spacing;
+			global::AiForms.Renderers.Droid.Resource.Dimension.mtrl_chip_pressed_translation_z = global::PathwayGames.Droid.Resource.Dimension.mtrl_chip_pressed_translation_z;
+			global::AiForms.Renderers.Droid.Resource.Dimension.mtrl_chip_text_size = global::PathwayGames.Droid.Resource.Dimension.mtrl_chip_text_size;
+			global::AiForms.Renderers.Droid.Resource.Dimension.mtrl_fab_elevation = global::PathwayGames.Droid.Resource.Dimension.mtrl_fab_elevation;
+			global::AiForms.Renderers.Droid.Resource.Dimension.mtrl_fab_translation_z_hovered_focused = global::PathwayGames.Droid.Resource.Dimension.mtrl_fab_translation_z_hovered_focused;
+			global::AiForms.Renderers.Droid.Resource.Dimension.mtrl_fab_translation_z_pressed = global::PathwayGames.Droid.Resource.Dimension.mtrl_fab_translation_z_pressed;
+			global::AiForms.Renderers.Droid.Resource.Dimension.mtrl_navigation_elevation = global::PathwayGames.Droid.Resource.Dimension.mtrl_navigation_elevation;
+			global::AiForms.Renderers.Droid.Resource.Dimension.mtrl_navigation_item_horizontal_padding = global::PathwayGames.Droid.Resource.Dimension.mtrl_navigation_item_horizontal_padding;
+			global::AiForms.Renderers.Droid.Resource.Dimension.mtrl_navigation_item_icon_padding = global::PathwayGames.Droid.Resource.Dimension.mtrl_navigation_item_icon_padding;
+			global::AiForms.Renderers.Droid.Resource.Dimension.mtrl_snackbar_background_corner_radius = global::PathwayGames.Droid.Resource.Dimension.mtrl_snackbar_background_corner_radius;
+			global::AiForms.Renderers.Droid.Resource.Dimension.mtrl_snackbar_margin = global::PathwayGames.Droid.Resource.Dimension.mtrl_snackbar_margin;
+			global::AiForms.Renderers.Droid.Resource.Dimension.mtrl_textinput_box_bottom_offset = global::PathwayGames.Droid.Resource.Dimension.mtrl_textinput_box_bottom_offset;
+			global::AiForms.Renderers.Droid.Resource.Dimension.mtrl_textinput_box_corner_radius_medium = global::PathwayGames.Droid.Resource.Dimension.mtrl_textinput_box_corner_radius_medium;
+			global::AiForms.Renderers.Droid.Resource.Dimension.mtrl_textinput_box_corner_radius_small = global::PathwayGames.Droid.Resource.Dimension.mtrl_textinput_box_corner_radius_small;
+			global::AiForms.Renderers.Droid.Resource.Dimension.mtrl_textinput_box_label_cutout_padding = global::PathwayGames.Droid.Resource.Dimension.mtrl_textinput_box_label_cutout_padding;
+			global::AiForms.Renderers.Droid.Resource.Dimension.mtrl_textinput_box_padding_end = global::PathwayGames.Droid.Resource.Dimension.mtrl_textinput_box_padding_end;
+			global::AiForms.Renderers.Droid.Resource.Dimension.mtrl_textinput_box_stroke_width_default = global::PathwayGames.Droid.Resource.Dimension.mtrl_textinput_box_stroke_width_default;
+			global::AiForms.Renderers.Droid.Resource.Dimension.mtrl_textinput_box_stroke_width_focused = global::PathwayGames.Droid.Resource.Dimension.mtrl_textinput_box_stroke_width_focused;
+			global::AiForms.Renderers.Droid.Resource.Dimension.mtrl_textinput_outline_box_expanded_padding = global::PathwayGames.Droid.Resource.Dimension.mtrl_textinput_outline_box_expanded_padding;
+			global::AiForms.Renderers.Droid.Resource.Dimension.mtrl_toolbar_default_height = global::PathwayGames.Droid.Resource.Dimension.mtrl_toolbar_default_height;
+			global::AiForms.Renderers.Droid.Resource.Dimension.notification_action_icon_size = global::PathwayGames.Droid.Resource.Dimension.notification_action_icon_size;
+			global::AiForms.Renderers.Droid.Resource.Dimension.notification_action_text_size = global::PathwayGames.Droid.Resource.Dimension.notification_action_text_size;
+			global::AiForms.Renderers.Droid.Resource.Dimension.notification_big_circle_margin = global::PathwayGames.Droid.Resource.Dimension.notification_big_circle_margin;
+			global::AiForms.Renderers.Droid.Resource.Dimension.notification_content_margin_start = global::PathwayGames.Droid.Resource.Dimension.notification_content_margin_start;
+			global::AiForms.Renderers.Droid.Resource.Dimension.notification_large_icon_height = global::PathwayGames.Droid.Resource.Dimension.notification_large_icon_height;
+			global::AiForms.Renderers.Droid.Resource.Dimension.notification_large_icon_width = global::PathwayGames.Droid.Resource.Dimension.notification_large_icon_width;
+			global::AiForms.Renderers.Droid.Resource.Dimension.notification_main_column_padding_top = global::PathwayGames.Droid.Resource.Dimension.notification_main_column_padding_top;
+			global::AiForms.Renderers.Droid.Resource.Dimension.notification_media_narrow_margin = global::PathwayGames.Droid.Resource.Dimension.notification_media_narrow_margin;
+			global::AiForms.Renderers.Droid.Resource.Dimension.notification_right_icon_size = global::PathwayGames.Droid.Resource.Dimension.notification_right_icon_size;
+			global::AiForms.Renderers.Droid.Resource.Dimension.notification_right_side_padding_top = global::PathwayGames.Droid.Resource.Dimension.notification_right_side_padding_top;
+			global::AiForms.Renderers.Droid.Resource.Dimension.notification_small_icon_background_padding = global::PathwayGames.Droid.Resource.Dimension.notification_small_icon_background_padding;
+			global::AiForms.Renderers.Droid.Resource.Dimension.notification_small_icon_size_as_large = global::PathwayGames.Droid.Resource.Dimension.notification_small_icon_size_as_large;
+			global::AiForms.Renderers.Droid.Resource.Dimension.notification_subtext_size = global::PathwayGames.Droid.Resource.Dimension.notification_subtext_size;
+			global::AiForms.Renderers.Droid.Resource.Dimension.notification_top_pad = global::PathwayGames.Droid.Resource.Dimension.notification_top_pad;
+			global::AiForms.Renderers.Droid.Resource.Dimension.notification_top_pad_large_text = global::PathwayGames.Droid.Resource.Dimension.notification_top_pad_large_text;
+			global::AiForms.Renderers.Droid.Resource.Dimension.subtitle_corner_radius = global::PathwayGames.Droid.Resource.Dimension.subtitle_corner_radius;
+			global::AiForms.Renderers.Droid.Resource.Dimension.subtitle_outline_width = global::PathwayGames.Droid.Resource.Dimension.subtitle_outline_width;
+			global::AiForms.Renderers.Droid.Resource.Dimension.subtitle_shadow_offset = global::PathwayGames.Droid.Resource.Dimension.subtitle_shadow_offset;
+			global::AiForms.Renderers.Droid.Resource.Dimension.subtitle_shadow_radius = global::PathwayGames.Droid.Resource.Dimension.subtitle_shadow_radius;
+			global::AiForms.Renderers.Droid.Resource.Dimension.tooltip_corner_radius = global::PathwayGames.Droid.Resource.Dimension.tooltip_corner_radius;
+			global::AiForms.Renderers.Droid.Resource.Dimension.tooltip_horizontal_padding = global::PathwayGames.Droid.Resource.Dimension.tooltip_horizontal_padding;
+			global::AiForms.Renderers.Droid.Resource.Dimension.tooltip_margin = global::PathwayGames.Droid.Resource.Dimension.tooltip_margin;
+			global::AiForms.Renderers.Droid.Resource.Dimension.tooltip_precise_anchor_extra_offset = global::PathwayGames.Droid.Resource.Dimension.tooltip_precise_anchor_extra_offset;
+			global::AiForms.Renderers.Droid.Resource.Dimension.tooltip_precise_anchor_threshold = global::PathwayGames.Droid.Resource.Dimension.tooltip_precise_anchor_threshold;
+			global::AiForms.Renderers.Droid.Resource.Dimension.tooltip_vertical_padding = global::PathwayGames.Droid.Resource.Dimension.tooltip_vertical_padding;
+			global::AiForms.Renderers.Droid.Resource.Dimension.tooltip_y_offset_non_touch = global::PathwayGames.Droid.Resource.Dimension.tooltip_y_offset_non_touch;
+			global::AiForms.Renderers.Droid.Resource.Dimension.tooltip_y_offset_touch = global::PathwayGames.Droid.Resource.Dimension.tooltip_y_offset_touch;
+			global::AiForms.Renderers.Droid.Resource.Drawable.abc_ab_share_pack_mtrl_alpha = global::PathwayGames.Droid.Resource.Drawable.abc_ab_share_pack_mtrl_alpha;
+			global::AiForms.Renderers.Droid.Resource.Drawable.abc_action_bar_item_background_material = global::PathwayGames.Droid.Resource.Drawable.abc_action_bar_item_background_material;
+			global::AiForms.Renderers.Droid.Resource.Drawable.abc_btn_borderless_material = global::PathwayGames.Droid.Resource.Drawable.abc_btn_borderless_material;
+			global::AiForms.Renderers.Droid.Resource.Drawable.abc_btn_check_material = global::PathwayGames.Droid.Resource.Drawable.abc_btn_check_material;
+			global::AiForms.Renderers.Droid.Resource.Drawable.abc_btn_check_to_on_mtrl_000 = global::PathwayGames.Droid.Resource.Drawable.abc_btn_check_to_on_mtrl_000;
+			global::AiForms.Renderers.Droid.Resource.Drawable.abc_btn_check_to_on_mtrl_015 = global::PathwayGames.Droid.Resource.Drawable.abc_btn_check_to_on_mtrl_015;
+			global::AiForms.Renderers.Droid.Resource.Drawable.abc_btn_colored_material = global::PathwayGames.Droid.Resource.Drawable.abc_btn_colored_material;
+			global::AiForms.Renderers.Droid.Resource.Drawable.abc_btn_default_mtrl_shape = global::PathwayGames.Droid.Resource.Drawable.abc_btn_default_mtrl_shape;
+			global::AiForms.Renderers.Droid.Resource.Drawable.abc_btn_radio_material = global::PathwayGames.Droid.Resource.Drawable.abc_btn_radio_material;
+			global::AiForms.Renderers.Droid.Resource.Drawable.abc_btn_radio_to_on_mtrl_000 = global::PathwayGames.Droid.Resource.Drawable.abc_btn_radio_to_on_mtrl_000;
+			global::AiForms.Renderers.Droid.Resource.Drawable.abc_btn_radio_to_on_mtrl_015 = global::PathwayGames.Droid.Resource.Drawable.abc_btn_radio_to_on_mtrl_015;
+			global::AiForms.Renderers.Droid.Resource.Drawable.abc_btn_switch_to_on_mtrl_00001 = global::PathwayGames.Droid.Resource.Drawable.abc_btn_switch_to_on_mtrl_00001;
+			global::AiForms.Renderers.Droid.Resource.Drawable.abc_btn_switch_to_on_mtrl_00012 = global::PathwayGames.Droid.Resource.Drawable.abc_btn_switch_to_on_mtrl_00012;
+			global::AiForms.Renderers.Droid.Resource.Drawable.abc_cab_background_internal_bg = global::PathwayGames.Droid.Resource.Drawable.abc_cab_background_internal_bg;
+			global::AiForms.Renderers.Droid.Resource.Drawable.abc_cab_background_top_material = global::PathwayGames.Droid.Resource.Drawable.abc_cab_background_top_material;
+			global::AiForms.Renderers.Droid.Resource.Drawable.abc_cab_background_top_mtrl_alpha = global::PathwayGames.Droid.Resource.Drawable.abc_cab_background_top_mtrl_alpha;
+			global::AiForms.Renderers.Droid.Resource.Drawable.abc_control_background_material = global::PathwayGames.Droid.Resource.Drawable.abc_control_background_material;
+			global::AiForms.Renderers.Droid.Resource.Drawable.abc_dialog_material_background = global::PathwayGames.Droid.Resource.Drawable.abc_dialog_material_background;
+			global::AiForms.Renderers.Droid.Resource.Drawable.abc_edit_text_material = global::PathwayGames.Droid.Resource.Drawable.abc_edit_text_material;
+			global::AiForms.Renderers.Droid.Resource.Drawable.abc_ic_ab_back_material = global::PathwayGames.Droid.Resource.Drawable.abc_ic_ab_back_material;
+			global::AiForms.Renderers.Droid.Resource.Drawable.abc_ic_arrow_drop_right_black_24dp = global::PathwayGames.Droid.Resource.Drawable.abc_ic_arrow_drop_right_black_24dp;
+			global::AiForms.Renderers.Droid.Resource.Drawable.abc_ic_clear_material = global::PathwayGames.Droid.Resource.Drawable.abc_ic_clear_material;
+			global::AiForms.Renderers.Droid.Resource.Drawable.abc_ic_commit_search_api_mtrl_alpha = global::PathwayGames.Droid.Resource.Drawable.abc_ic_commit_search_api_mtrl_alpha;
+			global::AiForms.Renderers.Droid.Resource.Drawable.abc_ic_go_search_api_material = global::PathwayGames.Droid.Resource.Drawable.abc_ic_go_search_api_material;
+			global::AiForms.Renderers.Droid.Resource.Drawable.abc_ic_menu_copy_mtrl_am_alpha = global::PathwayGames.Droid.Resource.Drawable.abc_ic_menu_copy_mtrl_am_alpha;
+			global::AiForms.Renderers.Droid.Resource.Drawable.abc_ic_menu_cut_mtrl_alpha = global::PathwayGames.Droid.Resource.Drawable.abc_ic_menu_cut_mtrl_alpha;
+			global::AiForms.Renderers.Droid.Resource.Drawable.abc_ic_menu_overflow_material = global::PathwayGames.Droid.Resource.Drawable.abc_ic_menu_overflow_material;
+			global::AiForms.Renderers.Droid.Resource.Drawable.abc_ic_menu_paste_mtrl_am_alpha = global::PathwayGames.Droid.Resource.Drawable.abc_ic_menu_paste_mtrl_am_alpha;
+			global::AiForms.Renderers.Droid.Resource.Drawable.abc_ic_menu_selectall_mtrl_alpha = global::PathwayGames.Droid.Resource.Drawable.abc_ic_menu_selectall_mtrl_alpha;
+			global::AiForms.Renderers.Droid.Resource.Drawable.abc_ic_menu_share_mtrl_alpha = global::PathwayGames.Droid.Resource.Drawable.abc_ic_menu_share_mtrl_alpha;
+			global::AiForms.Renderers.Droid.Resource.Drawable.abc_ic_search_api_material = global::PathwayGames.Droid.Resource.Drawable.abc_ic_search_api_material;
+			global::AiForms.Renderers.Droid.Resource.Drawable.abc_ic_star_black_16dp = global::PathwayGames.Droid.Resource.Drawable.abc_ic_star_black_16dp;
+			global::AiForms.Renderers.Droid.Resource.Drawable.abc_ic_star_black_36dp = global::PathwayGames.Droid.Resource.Drawable.abc_ic_star_black_36dp;
+			global::AiForms.Renderers.Droid.Resource.Drawable.abc_ic_star_black_48dp = global::PathwayGames.Droid.Resource.Drawable.abc_ic_star_black_48dp;
+			global::AiForms.Renderers.Droid.Resource.Drawable.abc_ic_star_half_black_16dp = global::PathwayGames.Droid.Resource.Drawable.abc_ic_star_half_black_16dp;
+			global::AiForms.Renderers.Droid.Resource.Drawable.abc_ic_star_half_black_36dp = global::PathwayGames.Droid.Resource.Drawable.abc_ic_star_half_black_36dp;
+			global::AiForms.Renderers.Droid.Resource.Drawable.abc_ic_star_half_black_48dp = global::PathwayGames.Droid.Resource.Drawable.abc_ic_star_half_black_48dp;
+			global::AiForms.Renderers.Droid.Resource.Drawable.abc_ic_voice_search_api_material = global::PathwayGames.Droid.Resource.Drawable.abc_ic_voice_search_api_material;
+			global::AiForms.Renderers.Droid.Resource.Drawable.abc_item_background_holo_dark = global::PathwayGames.Droid.Resource.Drawable.abc_item_background_holo_dark;
+			global::AiForms.Renderers.Droid.Resource.Drawable.abc_item_background_holo_light = global::PathwayGames.Droid.Resource.Drawable.abc_item_background_holo_light;
+			global::AiForms.Renderers.Droid.Resource.Drawable.abc_list_divider_material = global::PathwayGames.Droid.Resource.Drawable.abc_list_divider_material;
+			global::AiForms.Renderers.Droid.Resource.Drawable.abc_list_divider_mtrl_alpha = global::PathwayGames.Droid.Resource.Drawable.abc_list_divider_mtrl_alpha;
+			global::AiForms.Renderers.Droid.Resource.Drawable.abc_list_focused_holo = global::PathwayGames.Droid.Resource.Drawable.abc_list_focused_holo;
+			global::AiForms.Renderers.Droid.Resource.Drawable.abc_list_longpressed_holo = global::PathwayGames.Droid.Resource.Drawable.abc_list_longpressed_holo;
+			global::AiForms.Renderers.Droid.Resource.Drawable.abc_list_pressed_holo_dark = global::PathwayGames.Droid.Resource.Drawable.abc_list_pressed_holo_dark;
+			global::AiForms.Renderers.Droid.Resource.Drawable.abc_list_pressed_holo_light = global::PathwayGames.Droid.Resource.Drawable.abc_list_pressed_holo_light;
+			global::AiForms.Renderers.Droid.Resource.Drawable.abc_list_selector_background_transition_holo_dark = global::PathwayGames.Droid.Resource.Drawable.abc_list_selector_background_transition_holo_dark;
+			global::AiForms.Renderers.Droid.Resource.Drawable.abc_list_selector_background_transition_holo_light = global::PathwayGames.Droid.Resource.Drawable.abc_list_selector_background_transition_holo_light;
+			global::AiForms.Renderers.Droid.Resource.Drawable.abc_list_selector_disabled_holo_dark = global::PathwayGames.Droid.Resource.Drawable.abc_list_selector_disabled_holo_dark;
+			global::AiForms.Renderers.Droid.Resource.Drawable.abc_list_selector_disabled_holo_light = global::PathwayGames.Droid.Resource.Drawable.abc_list_selector_disabled_holo_light;
+			global::AiForms.Renderers.Droid.Resource.Drawable.abc_list_selector_holo_dark = global::PathwayGames.Droid.Resource.Drawable.abc_list_selector_holo_dark;
+			global::AiForms.Renderers.Droid.Resource.Drawable.abc_list_selector_holo_light = global::PathwayGames.Droid.Resource.Drawable.abc_list_selector_holo_light;
+			global::AiForms.Renderers.Droid.Resource.Drawable.abc_menu_hardkey_panel_mtrl_mult = global::PathwayGames.Droid.Resource.Drawable.abc_menu_hardkey_panel_mtrl_mult;
+			global::AiForms.Renderers.Droid.Resource.Drawable.abc_popup_background_mtrl_mult = global::PathwayGames.Droid.Resource.Drawable.abc_popup_background_mtrl_mult;
+			global::AiForms.Renderers.Droid.Resource.Drawable.abc_ratingbar_indicator_material = global::PathwayGames.Droid.Resource.Drawable.abc_ratingbar_indicator_material;
+			global::AiForms.Renderers.Droid.Resource.Drawable.abc_ratingbar_material = global::PathwayGames.Droid.Resource.Drawable.abc_ratingbar_material;
+			global::AiForms.Renderers.Droid.Resource.Drawable.abc_ratingbar_small_material = global::PathwayGames.Droid.Resource.Drawable.abc_ratingbar_small_material;
+			global::AiForms.Renderers.Droid.Resource.Drawable.abc_scrubber_control_off_mtrl_alpha = global::PathwayGames.Droid.Resource.Drawable.abc_scrubber_control_off_mtrl_alpha;
+			global::AiForms.Renderers.Droid.Resource.Drawable.abc_scrubber_control_to_pressed_mtrl_000 = global::PathwayGames.Droid.Resource.Drawable.abc_scrubber_control_to_pressed_mtrl_000;
+			global::AiForms.Renderers.Droid.Resource.Drawable.abc_scrubber_control_to_pressed_mtrl_005 = global::PathwayGames.Droid.Resource.Drawable.abc_scrubber_control_to_pressed_mtrl_005;
+			global::AiForms.Renderers.Droid.Resource.Drawable.abc_scrubber_primary_mtrl_alpha = global::PathwayGames.Droid.Resource.Drawable.abc_scrubber_primary_mtrl_alpha;
+			global::AiForms.Renderers.Droid.Resource.Drawable.abc_scrubber_track_mtrl_alpha = global::PathwayGames.Droid.Resource.Drawable.abc_scrubber_track_mtrl_alpha;
+			global::AiForms.Renderers.Droid.Resource.Drawable.abc_seekbar_thumb_material = global::PathwayGames.Droid.Resource.Drawable.abc_seekbar_thumb_material;
+			global::AiForms.Renderers.Droid.Resource.Drawable.abc_seekbar_tick_mark_material = global::PathwayGames.Droid.Resource.Drawable.abc_seekbar_tick_mark_material;
+			global::AiForms.Renderers.Droid.Resource.Drawable.abc_seekbar_track_material = global::PathwayGames.Droid.Resource.Drawable.abc_seekbar_track_material;
+			global::AiForms.Renderers.Droid.Resource.Drawable.abc_spinner_mtrl_am_alpha = global::PathwayGames.Droid.Resource.Drawable.abc_spinner_mtrl_am_alpha;
+			global::AiForms.Renderers.Droid.Resource.Drawable.abc_spinner_textfield_background_material = global::PathwayGames.Droid.Resource.Drawable.abc_spinner_textfield_background_material;
+			global::AiForms.Renderers.Droid.Resource.Drawable.abc_switch_thumb_material = global::PathwayGames.Droid.Resource.Drawable.abc_switch_thumb_material;
+			global::AiForms.Renderers.Droid.Resource.Drawable.abc_switch_track_mtrl_alpha = global::PathwayGames.Droid.Resource.Drawable.abc_switch_track_mtrl_alpha;
+			global::AiForms.Renderers.Droid.Resource.Drawable.abc_tab_indicator_material = global::PathwayGames.Droid.Resource.Drawable.abc_tab_indicator_material;
+			global::AiForms.Renderers.Droid.Resource.Drawable.abc_tab_indicator_mtrl_alpha = global::PathwayGames.Droid.Resource.Drawable.abc_tab_indicator_mtrl_alpha;
+			global::AiForms.Renderers.Droid.Resource.Drawable.abc_text_cursor_material = global::PathwayGames.Droid.Resource.Drawable.abc_text_cursor_material;
+			global::AiForms.Renderers.Droid.Resource.Drawable.abc_text_select_handle_left_mtrl_dark = global::PathwayGames.Droid.Resource.Drawable.abc_text_select_handle_left_mtrl_dark;
+			global::AiForms.Renderers.Droid.Resource.Drawable.abc_text_select_handle_left_mtrl_light = global::PathwayGames.Droid.Resource.Drawable.abc_text_select_handle_left_mtrl_light;
+			global::AiForms.Renderers.Droid.Resource.Drawable.abc_text_select_handle_middle_mtrl_dark = global::PathwayGames.Droid.Resource.Drawable.abc_text_select_handle_middle_mtrl_dark;
+			global::AiForms.Renderers.Droid.Resource.Drawable.abc_text_select_handle_middle_mtrl_light = global::PathwayGames.Droid.Resource.Drawable.abc_text_select_handle_middle_mtrl_light;
+			global::AiForms.Renderers.Droid.Resource.Drawable.abc_text_select_handle_right_mtrl_dark = global::PathwayGames.Droid.Resource.Drawable.abc_text_select_handle_right_mtrl_dark;
+			global::AiForms.Renderers.Droid.Resource.Drawable.abc_text_select_handle_right_mtrl_light = global::PathwayGames.Droid.Resource.Drawable.abc_text_select_handle_right_mtrl_light;
+			global::AiForms.Renderers.Droid.Resource.Drawable.abc_textfield_activated_mtrl_alpha = global::PathwayGames.Droid.Resource.Drawable.abc_textfield_activated_mtrl_alpha;
+			global::AiForms.Renderers.Droid.Resource.Drawable.abc_textfield_default_mtrl_alpha = global::PathwayGames.Droid.Resource.Drawable.abc_textfield_default_mtrl_alpha;
+			global::AiForms.Renderers.Droid.Resource.Drawable.abc_textfield_search_activated_mtrl_alpha = global::PathwayGames.Droid.Resource.Drawable.abc_textfield_search_activated_mtrl_alpha;
+			global::AiForms.Renderers.Droid.Resource.Drawable.abc_textfield_search_default_mtrl_alpha = global::PathwayGames.Droid.Resource.Drawable.abc_textfield_search_default_mtrl_alpha;
+			global::AiForms.Renderers.Droid.Resource.Drawable.abc_textfield_search_material = global::PathwayGames.Droid.Resource.Drawable.abc_textfield_search_material;
+			global::AiForms.Renderers.Droid.Resource.Drawable.abc_vector_test = global::PathwayGames.Droid.Resource.Drawable.abc_vector_test;
+			global::AiForms.Renderers.Droid.Resource.Drawable.avd_hide_password = global::PathwayGames.Droid.Resource.Drawable.avd_hide_password;
+			global::AiForms.Renderers.Droid.Resource.Drawable.avd_hide_password_1 = global::PathwayGames.Droid.Resource.Drawable.avd_hide_password_1;
+			global::AiForms.Renderers.Droid.Resource.Drawable.avd_hide_password_2 = global::PathwayGames.Droid.Resource.Drawable.avd_hide_password_2;
+			global::AiForms.Renderers.Droid.Resource.Drawable.avd_hide_password_3 = global::PathwayGames.Droid.Resource.Drawable.avd_hide_password_3;
+			global::AiForms.Renderers.Droid.Resource.Drawable.avd_show_password = global::PathwayGames.Droid.Resource.Drawable.avd_show_password;
+			global::AiForms.Renderers.Droid.Resource.Drawable.avd_show_password_1 = global::PathwayGames.Droid.Resource.Drawable.avd_show_password_1;
+			global::AiForms.Renderers.Droid.Resource.Drawable.avd_show_password_2 = global::PathwayGames.Droid.Resource.Drawable.avd_show_password_2;
+			global::AiForms.Renderers.Droid.Resource.Drawable.avd_show_password_3 = global::PathwayGames.Droid.Resource.Drawable.avd_show_password_3;
+			global::AiForms.Renderers.Droid.Resource.Drawable.design_bottom_navigation_item_background = global::PathwayGames.Droid.Resource.Drawable.design_bottom_navigation_item_background;
+			global::AiForms.Renderers.Droid.Resource.Drawable.design_fab_background = global::PathwayGames.Droid.Resource.Drawable.design_fab_background;
+			global::AiForms.Renderers.Droid.Resource.Drawable.design_ic_visibility = global::PathwayGames.Droid.Resource.Drawable.design_ic_visibility;
+			global::AiForms.Renderers.Droid.Resource.Drawable.design_ic_visibility_off = global::PathwayGames.Droid.Resource.Drawable.design_ic_visibility_off;
+			global::AiForms.Renderers.Droid.Resource.Drawable.design_password_eye = global::PathwayGames.Droid.Resource.Drawable.design_password_eye;
+			global::AiForms.Renderers.Droid.Resource.Drawable.design_snackbar_background = global::PathwayGames.Droid.Resource.Drawable.design_snackbar_background;
+			global::AiForms.Renderers.Droid.Resource.Drawable.ic_audiotrack_dark = global::PathwayGames.Droid.Resource.Drawable.ic_audiotrack_dark;
+			global::AiForms.Renderers.Droid.Resource.Drawable.ic_audiotrack_light = global::PathwayGames.Droid.Resource.Drawable.ic_audiotrack_light;
+			global::AiForms.Renderers.Droid.Resource.Drawable.ic_dialog_close_dark = global::PathwayGames.Droid.Resource.Drawable.ic_dialog_close_dark;
+			global::AiForms.Renderers.Droid.Resource.Drawable.ic_dialog_close_light = global::PathwayGames.Droid.Resource.Drawable.ic_dialog_close_light;
+			global::AiForms.Renderers.Droid.Resource.Drawable.ic_group_collapse_00 = global::PathwayGames.Droid.Resource.Drawable.ic_group_collapse_00;
+			global::AiForms.Renderers.Droid.Resource.Drawable.ic_group_collapse_01 = global::PathwayGames.Droid.Resource.Drawable.ic_group_collapse_01;
+			global::AiForms.Renderers.Droid.Resource.Drawable.ic_group_collapse_02 = global::PathwayGames.Droid.Resource.Drawable.ic_group_collapse_02;
+			global::AiForms.Renderers.Droid.Resource.Drawable.ic_group_collapse_03 = global::PathwayGames.Droid.Resource.Drawable.ic_group_collapse_03;
+			global::AiForms.Renderers.Droid.Resource.Drawable.ic_group_collapse_04 = global::PathwayGames.Droid.Resource.Drawable.ic_group_collapse_04;
+			global::AiForms.Renderers.Droid.Resource.Drawable.ic_group_collapse_05 = global::PathwayGames.Droid.Resource.Drawable.ic_group_collapse_05;
+			global::AiForms.Renderers.Droid.Resource.Drawable.ic_group_collapse_06 = global::PathwayGames.Droid.Resource.Drawable.ic_group_collapse_06;
+			global::AiForms.Renderers.Droid.Resource.Drawable.ic_group_collapse_07 = global::PathwayGames.Droid.Resource.Drawable.ic_group_collapse_07;
+			global::AiForms.Renderers.Droid.Resource.Drawable.ic_group_collapse_08 = global::PathwayGames.Droid.Resource.Drawable.ic_group_collapse_08;
+			global::AiForms.Renderers.Droid.Resource.Drawable.ic_group_collapse_09 = global::PathwayGames.Droid.Resource.Drawable.ic_group_collapse_09;
+			global::AiForms.Renderers.Droid.Resource.Drawable.ic_group_collapse_10 = global::PathwayGames.Droid.Resource.Drawable.ic_group_collapse_10;
+			global::AiForms.Renderers.Droid.Resource.Drawable.ic_group_collapse_11 = global::PathwayGames.Droid.Resource.Drawable.ic_group_collapse_11;
+			global::AiForms.Renderers.Droid.Resource.Drawable.ic_group_collapse_12 = global::PathwayGames.Droid.Resource.Drawable.ic_group_collapse_12;
+			global::AiForms.Renderers.Droid.Resource.Drawable.ic_group_collapse_13 = global::PathwayGames.Droid.Resource.Drawable.ic_group_collapse_13;
+			global::AiForms.Renderers.Droid.Resource.Drawable.ic_group_collapse_14 = global::PathwayGames.Droid.Resource.Drawable.ic_group_collapse_14;
+			global::AiForms.Renderers.Droid.Resource.Drawable.ic_group_collapse_15 = global::PathwayGames.Droid.Resource.Drawable.ic_group_collapse_15;
+			global::AiForms.Renderers.Droid.Resource.Drawable.ic_group_expand_00 = global::PathwayGames.Droid.Resource.Drawable.ic_group_expand_00;
+			global::AiForms.Renderers.Droid.Resource.Drawable.ic_group_expand_01 = global::PathwayGames.Droid.Resource.Drawable.ic_group_expand_01;
+			global::AiForms.Renderers.Droid.Resource.Drawable.ic_group_expand_02 = global::PathwayGames.Droid.Resource.Drawable.ic_group_expand_02;
+			global::AiForms.Renderers.Droid.Resource.Drawable.ic_group_expand_03 = global::PathwayGames.Droid.Resource.Drawable.ic_group_expand_03;
+			global::AiForms.Renderers.Droid.Resource.Drawable.ic_group_expand_04 = global::PathwayGames.Droid.Resource.Drawable.ic_group_expand_04;
+			global::AiForms.Renderers.Droid.Resource.Drawable.ic_group_expand_05 = global::PathwayGames.Droid.Resource.Drawable.ic_group_expand_05;
+			global::AiForms.Renderers.Droid.Resource.Drawable.ic_group_expand_06 = global::PathwayGames.Droid.Resource.Drawable.ic_group_expand_06;
+			global::AiForms.Renderers.Droid.Resource.Drawable.ic_group_expand_07 = global::PathwayGames.Droid.Resource.Drawable.ic_group_expand_07;
+			global::AiForms.Renderers.Droid.Resource.Drawable.ic_group_expand_08 = global::PathwayGames.Droid.Resource.Drawable.ic_group_expand_08;
+			global::AiForms.Renderers.Droid.Resource.Drawable.ic_group_expand_09 = global::PathwayGames.Droid.Resource.Drawable.ic_group_expand_09;
+			global::AiForms.Renderers.Droid.Resource.Drawable.ic_group_expand_10 = global::PathwayGames.Droid.Resource.Drawable.ic_group_expand_10;
+			global::AiForms.Renderers.Droid.Resource.Drawable.ic_group_expand_11 = global::PathwayGames.Droid.Resource.Drawable.ic_group_expand_11;
+			global::AiForms.Renderers.Droid.Resource.Drawable.ic_group_expand_12 = global::PathwayGames.Droid.Resource.Drawable.ic_group_expand_12;
+			global::AiForms.Renderers.Droid.Resource.Drawable.ic_group_expand_13 = global::PathwayGames.Droid.Resource.Drawable.ic_group_expand_13;
+			global::AiForms.Renderers.Droid.Resource.Drawable.ic_group_expand_14 = global::PathwayGames.Droid.Resource.Drawable.ic_group_expand_14;
+			global::AiForms.Renderers.Droid.Resource.Drawable.ic_group_expand_15 = global::PathwayGames.Droid.Resource.Drawable.ic_group_expand_15;
+			global::AiForms.Renderers.Droid.Resource.Drawable.ic_media_pause_dark = global::PathwayGames.Droid.Resource.Drawable.ic_media_pause_dark;
+			global::AiForms.Renderers.Droid.Resource.Drawable.ic_media_pause_light = global::PathwayGames.Droid.Resource.Drawable.ic_media_pause_light;
+			global::AiForms.Renderers.Droid.Resource.Drawable.ic_media_play_dark = global::PathwayGames.Droid.Resource.Drawable.ic_media_play_dark;
+			global::AiForms.Renderers.Droid.Resource.Drawable.ic_media_play_light = global::PathwayGames.Droid.Resource.Drawable.ic_media_play_light;
+			global::AiForms.Renderers.Droid.Resource.Drawable.ic_media_stop_dark = global::PathwayGames.Droid.Resource.Drawable.ic_media_stop_dark;
+			global::AiForms.Renderers.Droid.Resource.Drawable.ic_media_stop_light = global::PathwayGames.Droid.Resource.Drawable.ic_media_stop_light;
+			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connected_00_dark = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connected_00_dark;
+			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connected_00_light = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connected_00_light;
+			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connected_01_dark = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connected_01_dark;
+			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connected_01_light = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connected_01_light;
+			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connected_02_dark = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connected_02_dark;
+			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connected_02_light = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connected_02_light;
+			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connected_03_dark = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connected_03_dark;
+			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connected_03_light = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connected_03_light;
+			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connected_04_dark = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connected_04_dark;
+			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connected_04_light = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connected_04_light;
+			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connected_05_dark = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connected_05_dark;
+			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connected_05_light = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connected_05_light;
+			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connected_06_dark = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connected_06_dark;
+			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connected_06_light = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connected_06_light;
+			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connected_07_dark = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connected_07_dark;
+			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connected_07_light = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connected_07_light;
+			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connected_08_dark = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connected_08_dark;
+			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connected_08_light = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connected_08_light;
+			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connected_09_dark = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connected_09_dark;
+			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connected_09_light = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connected_09_light;
+			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connected_10_dark = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connected_10_dark;
+			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connected_10_light = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connected_10_light;
+			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connected_11_dark = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connected_11_dark;
+			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connected_11_light = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connected_11_light;
+			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connected_12_dark = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connected_12_dark;
+			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connected_12_light = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connected_12_light;
+			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connected_13_dark = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connected_13_dark;
+			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connected_13_light = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connected_13_light;
+			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connected_14_dark = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connected_14_dark;
+			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connected_14_light = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connected_14_light;
+			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connected_15_dark = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connected_15_dark;
+			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connected_15_light = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connected_15_light;
+			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connected_16_dark = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connected_16_dark;
+			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connected_16_light = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connected_16_light;
+			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connected_17_dark = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connected_17_dark;
+			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connected_17_light = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connected_17_light;
+			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connected_18_dark = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connected_18_dark;
+			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connected_18_light = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connected_18_light;
+			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connected_19_dark = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connected_19_dark;
+			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connected_19_light = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connected_19_light;
+			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connected_20_dark = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connected_20_dark;
+			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connected_20_light = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connected_20_light;
+			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connected_21_dark = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connected_21_dark;
+			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connected_21_light = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connected_21_light;
+			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connected_22_dark = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connected_22_dark;
+			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connected_22_light = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connected_22_light;
+			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connected_23_dark = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connected_23_dark;
+			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connected_23_light = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connected_23_light;
+			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connected_24_dark = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connected_24_dark;
+			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connected_24_light = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connected_24_light;
+			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connected_25_dark = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connected_25_dark;
+			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connected_25_light = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connected_25_light;
+			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connected_26_dark = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connected_26_dark;
+			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connected_26_light = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connected_26_light;
+			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connected_27_dark = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connected_27_dark;
+			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connected_27_light = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connected_27_light;
+			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connected_28_dark = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connected_28_dark;
+			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connected_28_light = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connected_28_light;
+			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connected_29_dark = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connected_29_dark;
+			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connected_29_light = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connected_29_light;
+			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connected_30_dark = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connected_30_dark;
+			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connected_30_light = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connected_30_light;
+			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connecting_00_dark = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connecting_00_dark;
+			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connecting_00_light = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connecting_00_light;
+			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connecting_01_dark = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connecting_01_dark;
+			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connecting_01_light = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connecting_01_light;
+			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connecting_02_dark = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connecting_02_dark;
+			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connecting_02_light = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connecting_02_light;
+			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connecting_03_dark = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connecting_03_dark;
+			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connecting_03_light = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connecting_03_light;
+			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connecting_04_dark = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connecting_04_dark;
+			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connecting_04_light = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connecting_04_light;
+			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connecting_05_dark = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connecting_05_dark;
+			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connecting_05_light = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connecting_05_light;
+			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connecting_06_dark = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connecting_06_dark;
+			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connecting_06_light = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connecting_06_light;
+			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connecting_07_dark = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connecting_07_dark;
+			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connecting_07_light = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connecting_07_light;
+			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connecting_08_dark = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connecting_08_dark;
+			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connecting_08_light = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connecting_08_light;
+			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connecting_09_dark = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connecting_09_dark;
+			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connecting_09_light = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connecting_09_light;
+			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connecting_10_dark = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connecting_10_dark;
+			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connecting_10_light = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connecting_10_light;
+			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connecting_11_dark = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connecting_11_dark;
+			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connecting_11_light = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connecting_11_light;
+			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connecting_12_dark = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connecting_12_dark;
+			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connecting_12_light = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connecting_12_light;
+			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connecting_13_dark = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connecting_13_dark;
+			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connecting_13_light = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connecting_13_light;
+			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connecting_14_dark = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connecting_14_dark;
+			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connecting_14_light = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connecting_14_light;
+			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connecting_15_dark = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connecting_15_dark;
+			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connecting_15_light = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connecting_15_light;
+			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connecting_16_dark = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connecting_16_dark;
+			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connecting_16_light = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connecting_16_light;
+			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connecting_17_dark = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connecting_17_dark;
+			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connecting_17_light = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connecting_17_light;
+			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connecting_18_dark = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connecting_18_dark;
+			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connecting_18_light = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connecting_18_light;
+			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connecting_19_dark = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connecting_19_dark;
+			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connecting_19_light = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connecting_19_light;
+			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connecting_20_dark = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connecting_20_dark;
+			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connecting_20_light = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connecting_20_light;
+			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connecting_21_dark = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connecting_21_dark;
+			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connecting_21_light = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connecting_21_light;
+			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connecting_22_dark = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connecting_22_dark;
+			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connecting_22_light = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connecting_22_light;
+			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connecting_23_dark = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connecting_23_dark;
+			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connecting_23_light = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connecting_23_light;
+			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connecting_24_dark = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connecting_24_dark;
+			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connecting_24_light = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connecting_24_light;
+			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connecting_25_dark = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connecting_25_dark;
+			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connecting_25_light = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connecting_25_light;
+			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connecting_26_dark = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connecting_26_dark;
+			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connecting_26_light = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connecting_26_light;
+			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connecting_27_dark = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connecting_27_dark;
+			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connecting_27_light = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connecting_27_light;
+			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connecting_28_dark = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connecting_28_dark;
+			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connecting_28_light = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connecting_28_light;
+			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connecting_29_dark = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connecting_29_dark;
+			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connecting_29_light = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connecting_29_light;
+			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connecting_30_dark = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connecting_30_dark;
+			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connecting_30_light = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connecting_30_light;
+			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_disabled_dark = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_disabled_dark;
+			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_disabled_light = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_disabled_light;
+			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_disconnected_dark = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_disconnected_dark;
+			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_disconnected_light = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_disconnected_light;
+			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_grey = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_grey;
+			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mtrl_chip_checked_black = global::PathwayGames.Droid.Resource.Drawable.ic_mtrl_chip_checked_black;
+			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mtrl_chip_checked_circle = global::PathwayGames.Droid.Resource.Drawable.ic_mtrl_chip_checked_circle;
+			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mtrl_chip_close_circle = global::PathwayGames.Droid.Resource.Drawable.ic_mtrl_chip_close_circle;
+			global::AiForms.Renderers.Droid.Resource.Drawable.ic_vol_type_speaker_dark = global::PathwayGames.Droid.Resource.Drawable.ic_vol_type_speaker_dark;
+			global::AiForms.Renderers.Droid.Resource.Drawable.ic_vol_type_speaker_group_dark = global::PathwayGames.Droid.Resource.Drawable.ic_vol_type_speaker_group_dark;
+			global::AiForms.Renderers.Droid.Resource.Drawable.ic_vol_type_speaker_group_light = global::PathwayGames.Droid.Resource.Drawable.ic_vol_type_speaker_group_light;
+			global::AiForms.Renderers.Droid.Resource.Drawable.ic_vol_type_speaker_light = global::PathwayGames.Droid.Resource.Drawable.ic_vol_type_speaker_light;
+			global::AiForms.Renderers.Droid.Resource.Drawable.ic_vol_type_tv_dark = global::PathwayGames.Droid.Resource.Drawable.ic_vol_type_tv_dark;
+			global::AiForms.Renderers.Droid.Resource.Drawable.ic_vol_type_tv_light = global::PathwayGames.Droid.Resource.Drawable.ic_vol_type_tv_light;
+			global::AiForms.Renderers.Droid.Resource.Drawable.mr_button_connected_dark = global::PathwayGames.Droid.Resource.Drawable.mr_button_connected_dark;
+			global::AiForms.Renderers.Droid.Resource.Drawable.mr_button_connected_light = global::PathwayGames.Droid.Resource.Drawable.mr_button_connected_light;
+			global::AiForms.Renderers.Droid.Resource.Drawable.mr_button_connecting_dark = global::PathwayGames.Droid.Resource.Drawable.mr_button_connecting_dark;
+			global::AiForms.Renderers.Droid.Resource.Drawable.mr_button_connecting_light = global::PathwayGames.Droid.Resource.Drawable.mr_button_connecting_light;
+			global::AiForms.Renderers.Droid.Resource.Drawable.mr_button_dark = global::PathwayGames.Droid.Resource.Drawable.mr_button_dark;
+			global::AiForms.Renderers.Droid.Resource.Drawable.mr_button_light = global::PathwayGames.Droid.Resource.Drawable.mr_button_light;
+			global::AiForms.Renderers.Droid.Resource.Drawable.mr_dialog_close_dark = global::PathwayGames.Droid.Resource.Drawable.mr_dialog_close_dark;
+			global::AiForms.Renderers.Droid.Resource.Drawable.mr_dialog_close_light = global::PathwayGames.Droid.Resource.Drawable.mr_dialog_close_light;
+			global::AiForms.Renderers.Droid.Resource.Drawable.mr_dialog_material_background_dark = global::PathwayGames.Droid.Resource.Drawable.mr_dialog_material_background_dark;
+			global::AiForms.Renderers.Droid.Resource.Drawable.mr_dialog_material_background_light = global::PathwayGames.Droid.Resource.Drawable.mr_dialog_material_background_light;
+			global::AiForms.Renderers.Droid.Resource.Drawable.mr_group_collapse = global::PathwayGames.Droid.Resource.Drawable.mr_group_collapse;
+			global::AiForms.Renderers.Droid.Resource.Drawable.mr_group_expand = global::PathwayGames.Droid.Resource.Drawable.mr_group_expand;
+			global::AiForms.Renderers.Droid.Resource.Drawable.mr_media_pause_dark = global::PathwayGames.Droid.Resource.Drawable.mr_media_pause_dark;
+			global::AiForms.Renderers.Droid.Resource.Drawable.mr_media_pause_light = global::PathwayGames.Droid.Resource.Drawable.mr_media_pause_light;
+			global::AiForms.Renderers.Droid.Resource.Drawable.mr_media_play_dark = global::PathwayGames.Droid.Resource.Drawable.mr_media_play_dark;
+			global::AiForms.Renderers.Droid.Resource.Drawable.mr_media_play_light = global::PathwayGames.Droid.Resource.Drawable.mr_media_play_light;
+			global::AiForms.Renderers.Droid.Resource.Drawable.mr_media_stop_dark = global::PathwayGames.Droid.Resource.Drawable.mr_media_stop_dark;
+			global::AiForms.Renderers.Droid.Resource.Drawable.mr_media_stop_light = global::PathwayGames.Droid.Resource.Drawable.mr_media_stop_light;
+			global::AiForms.Renderers.Droid.Resource.Drawable.mr_vol_type_audiotrack_dark = global::PathwayGames.Droid.Resource.Drawable.mr_vol_type_audiotrack_dark;
+			global::AiForms.Renderers.Droid.Resource.Drawable.mr_vol_type_audiotrack_light = global::PathwayGames.Droid.Resource.Drawable.mr_vol_type_audiotrack_light;
+			global::AiForms.Renderers.Droid.Resource.Drawable.mtrl_snackbar_background = global::PathwayGames.Droid.Resource.Drawable.mtrl_snackbar_background;
+			global::AiForms.Renderers.Droid.Resource.Drawable.mtrl_tabs_default_indicator = global::PathwayGames.Droid.Resource.Drawable.mtrl_tabs_default_indicator;
+			global::AiForms.Renderers.Droid.Resource.Drawable.navigation_empty_icon = global::PathwayGames.Droid.Resource.Drawable.navigation_empty_icon;
+			global::AiForms.Renderers.Droid.Resource.Drawable.notification_action_background = global::PathwayGames.Droid.Resource.Drawable.notification_action_background;
+			global::AiForms.Renderers.Droid.Resource.Drawable.notification_bg = global::PathwayGames.Droid.Resource.Drawable.notification_bg;
+			global::AiForms.Renderers.Droid.Resource.Drawable.notification_bg_low = global::PathwayGames.Droid.Resource.Drawable.notification_bg_low;
+			global::AiForms.Renderers.Droid.Resource.Drawable.notification_bg_low_normal = global::PathwayGames.Droid.Resource.Drawable.notification_bg_low_normal;
+			global::AiForms.Renderers.Droid.Resource.Drawable.notification_bg_low_pressed = global::PathwayGames.Droid.Resource.Drawable.notification_bg_low_pressed;
+			global::AiForms.Renderers.Droid.Resource.Drawable.notification_bg_normal = global::PathwayGames.Droid.Resource.Drawable.notification_bg_normal;
+			global::AiForms.Renderers.Droid.Resource.Drawable.notification_bg_normal_pressed = global::PathwayGames.Droid.Resource.Drawable.notification_bg_normal_pressed;
+			global::AiForms.Renderers.Droid.Resource.Drawable.notification_icon_background = global::PathwayGames.Droid.Resource.Drawable.notification_icon_background;
+			global::AiForms.Renderers.Droid.Resource.Drawable.notification_template_icon_bg = global::PathwayGames.Droid.Resource.Drawable.notification_template_icon_bg;
+			global::AiForms.Renderers.Droid.Resource.Drawable.notification_template_icon_low_bg = global::PathwayGames.Droid.Resource.Drawable.notification_template_icon_low_bg;
+			global::AiForms.Renderers.Droid.Resource.Drawable.notification_tile_bg = global::PathwayGames.Droid.Resource.Drawable.notification_tile_bg;
+			global::AiForms.Renderers.Droid.Resource.Drawable.notify_panel_notification_icon_bg = global::PathwayGames.Droid.Resource.Drawable.notify_panel_notification_icon_bg;
+			global::AiForms.Renderers.Droid.Resource.Drawable.tooltip_frame_dark = global::PathwayGames.Droid.Resource.Drawable.tooltip_frame_dark;
+			global::AiForms.Renderers.Droid.Resource.Drawable.tooltip_frame_light = global::PathwayGames.Droid.Resource.Drawable.tooltip_frame_light;
+			global::AiForms.Renderers.Droid.Resource.Id.ALT = global::PathwayGames.Droid.Resource.Id.ALT;
+			global::AiForms.Renderers.Droid.Resource.Id.CTRL = global::PathwayGames.Droid.Resource.Id.CTRL;
+			global::AiForms.Renderers.Droid.Resource.Id.CellAccessoryView = global::PathwayGames.Droid.Resource.Id.CellAccessoryView;
+			global::AiForms.Renderers.Droid.Resource.Id.CellBody = global::PathwayGames.Droid.Resource.Id.CellBody;
+			global::AiForms.Renderers.Droid.Resource.Id.CellContentStack = global::PathwayGames.Droid.Resource.Id.CellContentStack;
+			global::AiForms.Renderers.Droid.Resource.Id.CellDescription = global::PathwayGames.Droid.Resource.Id.CellDescription;
+			global::AiForms.Renderers.Droid.Resource.Id.CellHintText = global::PathwayGames.Droid.Resource.Id.CellHintText;
+			global::AiForms.Renderers.Droid.Resource.Id.CellIcon = global::PathwayGames.Droid.Resource.Id.CellIcon;
+			global::AiForms.Renderers.Droid.Resource.Id.CellTitle = global::PathwayGames.Droid.Resource.Id.CellTitle;
+			global::AiForms.Renderers.Droid.Resource.Id.ContentCellBody = global::PathwayGames.Droid.Resource.Id.ContentCellBody;
+			global::AiForms.Renderers.Droid.Resource.Id.ContentCellBorder = global::PathwayGames.Droid.Resource.Id.ContentCellBorder;
+			global::AiForms.Renderers.Droid.Resource.Id.FUNCTION = global::PathwayGames.Droid.Resource.Id.FUNCTION;
+			global::AiForms.Renderers.Droid.Resource.Id.FooterCellText = global::PathwayGames.Droid.Resource.Id.FooterCellText;
+			global::AiForms.Renderers.Droid.Resource.Id.HeaderCellBorder = global::PathwayGames.Droid.Resource.Id.HeaderCellBorder;
+			global::AiForms.Renderers.Droid.Resource.Id.HeaderCellText = global::PathwayGames.Droid.Resource.Id.HeaderCellText;
+			global::AiForms.Renderers.Droid.Resource.Id.META = global::PathwayGames.Droid.Resource.Id.META;
+			global::AiForms.Renderers.Droid.Resource.Id.SHIFT = global::PathwayGames.Droid.Resource.Id.SHIFT;
+			global::AiForms.Renderers.Droid.Resource.Id.SYM = global::PathwayGames.Droid.Resource.Id.SYM;
+			global::AiForms.Renderers.Droid.Resource.Id.action0 = global::PathwayGames.Droid.Resource.Id.action0;
+			global::AiForms.Renderers.Droid.Resource.Id.action_bar = global::PathwayGames.Droid.Resource.Id.action_bar;
+			global::AiForms.Renderers.Droid.Resource.Id.action_bar_activity_content = global::PathwayGames.Droid.Resource.Id.action_bar_activity_content;
+			global::AiForms.Renderers.Droid.Resource.Id.action_bar_container = global::PathwayGames.Droid.Resource.Id.action_bar_container;
+			global::AiForms.Renderers.Droid.Resource.Id.action_bar_root = global::PathwayGames.Droid.Resource.Id.action_bar_root;
+			global::AiForms.Renderers.Droid.Resource.Id.action_bar_spinner = global::PathwayGames.Droid.Resource.Id.action_bar_spinner;
+			global::AiForms.Renderers.Droid.Resource.Id.action_bar_subtitle = global::PathwayGames.Droid.Resource.Id.action_bar_subtitle;
+			global::AiForms.Renderers.Droid.Resource.Id.action_bar_title = global::PathwayGames.Droid.Resource.Id.action_bar_title;
+			global::AiForms.Renderers.Droid.Resource.Id.action_container = global::PathwayGames.Droid.Resource.Id.action_container;
+			global::AiForms.Renderers.Droid.Resource.Id.action_context_bar = global::PathwayGames.Droid.Resource.Id.action_context_bar;
+			global::AiForms.Renderers.Droid.Resource.Id.action_divider = global::PathwayGames.Droid.Resource.Id.action_divider;
+			global::AiForms.Renderers.Droid.Resource.Id.action_image = global::PathwayGames.Droid.Resource.Id.action_image;
+			global::AiForms.Renderers.Droid.Resource.Id.action_menu_divider = global::PathwayGames.Droid.Resource.Id.action_menu_divider;
+			global::AiForms.Renderers.Droid.Resource.Id.action_menu_presenter = global::PathwayGames.Droid.Resource.Id.action_menu_presenter;
+			global::AiForms.Renderers.Droid.Resource.Id.action_mode_bar = global::PathwayGames.Droid.Resource.Id.action_mode_bar;
+			global::AiForms.Renderers.Droid.Resource.Id.action_mode_bar_stub = global::PathwayGames.Droid.Resource.Id.action_mode_bar_stub;
+			global::AiForms.Renderers.Droid.Resource.Id.action_mode_close_button = global::PathwayGames.Droid.Resource.Id.action_mode_close_button;
+			global::AiForms.Renderers.Droid.Resource.Id.action_text = global::PathwayGames.Droid.Resource.Id.action_text;
+			global::AiForms.Renderers.Droid.Resource.Id.actions = global::PathwayGames.Droid.Resource.Id.actions;
+			global::AiForms.Renderers.Droid.Resource.Id.activity_chooser_view_content = global::PathwayGames.Droid.Resource.Id.activity_chooser_view_content;
+			global::AiForms.Renderers.Droid.Resource.Id.add = global::PathwayGames.Droid.Resource.Id.add;
+			global::AiForms.Renderers.Droid.Resource.Id.alertTitle = global::PathwayGames.Droid.Resource.Id.alertTitle;
+			global::AiForms.Renderers.Droid.Resource.Id.all = global::PathwayGames.Droid.Resource.Id.all;
+			global::AiForms.Renderers.Droid.Resource.Id.always = global::PathwayGames.Droid.Resource.Id.always;
+			global::AiForms.Renderers.Droid.Resource.Id.async = global::PathwayGames.Droid.Resource.Id.async;
+			global::AiForms.Renderers.Droid.Resource.Id.auto = global::PathwayGames.Droid.Resource.Id.auto;
+			global::AiForms.Renderers.Droid.Resource.Id.beginning = global::PathwayGames.Droid.Resource.Id.beginning;
+			global::AiForms.Renderers.Droid.Resource.Id.blocking = global::PathwayGames.Droid.Resource.Id.blocking;
+			global::AiForms.Renderers.Droid.Resource.Id.bottom = global::PathwayGames.Droid.Resource.Id.bottom;
+			global::AiForms.Renderers.Droid.Resource.Id.bottomtab_navarea = global::PathwayGames.Droid.Resource.Id.bottomtab_navarea;
+			global::AiForms.Renderers.Droid.Resource.Id.bottomtab_tabbar = global::PathwayGames.Droid.Resource.Id.bottomtab_tabbar;
+			global::AiForms.Renderers.Droid.Resource.Id.browser_actions_header_text = global::PathwayGames.Droid.Resource.Id.browser_actions_header_text;
+			global::AiForms.Renderers.Droid.Resource.Id.browser_actions_menu_item_icon = global::PathwayGames.Droid.Resource.Id.browser_actions_menu_item_icon;
+			global::AiForms.Renderers.Droid.Resource.Id.browser_actions_menu_item_text = global::PathwayGames.Droid.Resource.Id.browser_actions_menu_item_text;
+			global::AiForms.Renderers.Droid.Resource.Id.browser_actions_menu_items = global::PathwayGames.Droid.Resource.Id.browser_actions_menu_items;
+			global::AiForms.Renderers.Droid.Resource.Id.browser_actions_menu_view = global::PathwayGames.Droid.Resource.Id.browser_actions_menu_view;
+			global::AiForms.Renderers.Droid.Resource.Id.buttonPanel = global::PathwayGames.Droid.Resource.Id.buttonPanel;
+			global::AiForms.Renderers.Droid.Resource.Id.cancel_action = global::PathwayGames.Droid.Resource.Id.cancel_action;
+			global::AiForms.Renderers.Droid.Resource.Id.center = global::PathwayGames.Droid.Resource.Id.center;
+			global::AiForms.Renderers.Droid.Resource.Id.center_horizontal = global::PathwayGames.Droid.Resource.Id.center_horizontal;
+			global::AiForms.Renderers.Droid.Resource.Id.center_vertical = global::PathwayGames.Droid.Resource.Id.center_vertical;
+			global::AiForms.Renderers.Droid.Resource.Id.checkbox = global::PathwayGames.Droid.Resource.Id.checkbox;
+			global::AiForms.Renderers.Droid.Resource.Id.chronometer = global::PathwayGames.Droid.Resource.Id.chronometer;
+			global::AiForms.Renderers.Droid.Resource.Id.clip_horizontal = global::PathwayGames.Droid.Resource.Id.clip_horizontal;
+			global::AiForms.Renderers.Droid.Resource.Id.clip_vertical = global::PathwayGames.Droid.Resource.Id.clip_vertical;
+			global::AiForms.Renderers.Droid.Resource.Id.collapseActionView = global::PathwayGames.Droid.Resource.Id.collapseActionView;
+			global::AiForms.Renderers.Droid.Resource.Id.container = global::PathwayGames.Droid.Resource.Id.container;
+			global::AiForms.Renderers.Droid.Resource.Id.content = global::PathwayGames.Droid.Resource.Id.content;
+			global::AiForms.Renderers.Droid.Resource.Id.contentPanel = global::PathwayGames.Droid.Resource.Id.contentPanel;
+			global::AiForms.Renderers.Droid.Resource.Id.coordinator = global::PathwayGames.Droid.Resource.Id.coordinator;
+			global::AiForms.Renderers.Droid.Resource.Id.custom = global::PathwayGames.Droid.Resource.Id.custom;
+			global::AiForms.Renderers.Droid.Resource.Id.customPanel = global::PathwayGames.Droid.Resource.Id.customPanel;
+			global::AiForms.Renderers.Droid.Resource.Id.decor_content_parent = global::PathwayGames.Droid.Resource.Id.decor_content_parent;
+			global::AiForms.Renderers.Droid.Resource.Id.default_activity_button = global::PathwayGames.Droid.Resource.Id.default_activity_button;
+			global::AiForms.Renderers.Droid.Resource.Id.design_bottom_sheet = global::PathwayGames.Droid.Resource.Id.design_bottom_sheet;
+			global::AiForms.Renderers.Droid.Resource.Id.design_menu_item_action_area = global::PathwayGames.Droid.Resource.Id.design_menu_item_action_area;
+			global::AiForms.Renderers.Droid.Resource.Id.design_menu_item_action_area_stub = global::PathwayGames.Droid.Resource.Id.design_menu_item_action_area_stub;
+			global::AiForms.Renderers.Droid.Resource.Id.design_menu_item_text = global::PathwayGames.Droid.Resource.Id.design_menu_item_text;
+			global::AiForms.Renderers.Droid.Resource.Id.design_navigation_view = global::PathwayGames.Droid.Resource.Id.design_navigation_view;
+			global::AiForms.Renderers.Droid.Resource.Id.disableHome = global::PathwayGames.Droid.Resource.Id.disableHome;
+			global::AiForms.Renderers.Droid.Resource.Id.edit_query = global::PathwayGames.Droid.Resource.Id.edit_query;
+			global::AiForms.Renderers.Droid.Resource.Id.end = global::PathwayGames.Droid.Resource.Id.end;
+			global::AiForms.Renderers.Droid.Resource.Id.end_padder = global::PathwayGames.Droid.Resource.Id.end_padder;
+			global::AiForms.Renderers.Droid.Resource.Id.enterAlways = global::PathwayGames.Droid.Resource.Id.enterAlways;
+			global::AiForms.Renderers.Droid.Resource.Id.enterAlwaysCollapsed = global::PathwayGames.Droid.Resource.Id.enterAlwaysCollapsed;
+			global::AiForms.Renderers.Droid.Resource.Id.exitUntilCollapsed = global::PathwayGames.Droid.Resource.Id.exitUntilCollapsed;
+			global::AiForms.Renderers.Droid.Resource.Id.expand_activities_button = global::PathwayGames.Droid.Resource.Id.expand_activities_button;
+			global::AiForms.Renderers.Droid.Resource.Id.expanded_menu = global::PathwayGames.Droid.Resource.Id.expanded_menu;
+			global::AiForms.Renderers.Droid.Resource.Id.fill = global::PathwayGames.Droid.Resource.Id.fill;
+			global::AiForms.Renderers.Droid.Resource.Id.fill_horizontal = global::PathwayGames.Droid.Resource.Id.fill_horizontal;
+			global::AiForms.Renderers.Droid.Resource.Id.fill_vertical = global::PathwayGames.Droid.Resource.Id.fill_vertical;
+			global::AiForms.Renderers.Droid.Resource.Id.filled = global::PathwayGames.Droid.Resource.Id.filled;
+			global::AiForms.Renderers.Droid.Resource.Id.@fixed = global::PathwayGames.Droid.Resource.Id.@fixed;
+			global::AiForms.Renderers.Droid.Resource.Id.flyoutcontent_appbar = global::PathwayGames.Droid.Resource.Id.flyoutcontent_appbar;
+			global::AiForms.Renderers.Droid.Resource.Id.flyoutcontent_recycler = global::PathwayGames.Droid.Resource.Id.flyoutcontent_recycler;
+			global::AiForms.Renderers.Droid.Resource.Id.forever = global::PathwayGames.Droid.Resource.Id.forever;
+			global::AiForms.Renderers.Droid.Resource.Id.ghost_view = global::PathwayGames.Droid.Resource.Id.ghost_view;
+			global::AiForms.Renderers.Droid.Resource.Id.group_divider = global::PathwayGames.Droid.Resource.Id.group_divider;
+			global::AiForms.Renderers.Droid.Resource.Id.home = global::PathwayGames.Droid.Resource.Id.home;
+			global::AiForms.Renderers.Droid.Resource.Id.homeAsUp = global::PathwayGames.Droid.Resource.Id.homeAsUp;
+			global::AiForms.Renderers.Droid.Resource.Id.icon = global::PathwayGames.Droid.Resource.Id.icon;
+			global::AiForms.Renderers.Droid.Resource.Id.icon_group = global::PathwayGames.Droid.Resource.Id.icon_group;
+			global::AiForms.Renderers.Droid.Resource.Id.ifRoom = global::PathwayGames.Droid.Resource.Id.ifRoom;
+			global::AiForms.Renderers.Droid.Resource.Id.image = global::PathwayGames.Droid.Resource.Id.image;
+			global::AiForms.Renderers.Droid.Resource.Id.info = global::PathwayGames.Droid.Resource.Id.info;
+			global::AiForms.Renderers.Droid.Resource.Id.italic = global::PathwayGames.Droid.Resource.Id.italic;
+			global::AiForms.Renderers.Droid.Resource.Id.item_touch_helper_previous_elevation = global::PathwayGames.Droid.Resource.Id.item_touch_helper_previous_elevation;
+			global::AiForms.Renderers.Droid.Resource.Id.labeled = global::PathwayGames.Droid.Resource.Id.labeled;
+			global::AiForms.Renderers.Droid.Resource.Id.largeLabel = global::PathwayGames.Droid.Resource.Id.largeLabel;
+			global::AiForms.Renderers.Droid.Resource.Id.left = global::PathwayGames.Droid.Resource.Id.left;
+			global::AiForms.Renderers.Droid.Resource.Id.line1 = global::PathwayGames.Droid.Resource.Id.line1;
+			global::AiForms.Renderers.Droid.Resource.Id.line3 = global::PathwayGames.Droid.Resource.Id.line3;
+			global::AiForms.Renderers.Droid.Resource.Id.listMode = global::PathwayGames.Droid.Resource.Id.listMode;
+			global::AiForms.Renderers.Droid.Resource.Id.list_item = global::PathwayGames.Droid.Resource.Id.list_item;
+			global::AiForms.Renderers.Droid.Resource.Id.main_appbar = global::PathwayGames.Droid.Resource.Id.main_appbar;
+			global::AiForms.Renderers.Droid.Resource.Id.main_tablayout = global::PathwayGames.Droid.Resource.Id.main_tablayout;
+			global::AiForms.Renderers.Droid.Resource.Id.main_toolbar = global::PathwayGames.Droid.Resource.Id.main_toolbar;
+			global::AiForms.Renderers.Droid.Resource.Id.masked = global::PathwayGames.Droid.Resource.Id.masked;
+			global::AiForms.Renderers.Droid.Resource.Id.media_actions = global::PathwayGames.Droid.Resource.Id.media_actions;
+			global::AiForms.Renderers.Droid.Resource.Id.message = global::PathwayGames.Droid.Resource.Id.message;
+			global::AiForms.Renderers.Droid.Resource.Id.middle = global::PathwayGames.Droid.Resource.Id.middle;
+			global::AiForms.Renderers.Droid.Resource.Id.mini = global::PathwayGames.Droid.Resource.Id.mini;
+			global::AiForms.Renderers.Droid.Resource.Id.mr_art = global::PathwayGames.Droid.Resource.Id.mr_art;
+			global::AiForms.Renderers.Droid.Resource.Id.mr_cast_checkbox = global::PathwayGames.Droid.Resource.Id.mr_cast_checkbox;
+			global::AiForms.Renderers.Droid.Resource.Id.mr_cast_close_button = global::PathwayGames.Droid.Resource.Id.mr_cast_close_button;
+			global::AiForms.Renderers.Droid.Resource.Id.mr_cast_group_icon = global::PathwayGames.Droid.Resource.Id.mr_cast_group_icon;
+			global::AiForms.Renderers.Droid.Resource.Id.mr_cast_group_name = global::PathwayGames.Droid.Resource.Id.mr_cast_group_name;
+			global::AiForms.Renderers.Droid.Resource.Id.mr_cast_list = global::PathwayGames.Droid.Resource.Id.mr_cast_list;
+			global::AiForms.Renderers.Droid.Resource.Id.mr_cast_meta = global::PathwayGames.Droid.Resource.Id.mr_cast_meta;
+			global::AiForms.Renderers.Droid.Resource.Id.mr_cast_meta_art = global::PathwayGames.Droid.Resource.Id.mr_cast_meta_art;
+			global::AiForms.Renderers.Droid.Resource.Id.mr_cast_meta_subtitle = global::PathwayGames.Droid.Resource.Id.mr_cast_meta_subtitle;
+			global::AiForms.Renderers.Droid.Resource.Id.mr_cast_meta_title = global::PathwayGames.Droid.Resource.Id.mr_cast_meta_title;
+			global::AiForms.Renderers.Droid.Resource.Id.mr_cast_route_icon = global::PathwayGames.Droid.Resource.Id.mr_cast_route_icon;
+			global::AiForms.Renderers.Droid.Resource.Id.mr_cast_route_name = global::PathwayGames.Droid.Resource.Id.mr_cast_route_name;
+			global::AiForms.Renderers.Droid.Resource.Id.mr_cast_stop_button = global::PathwayGames.Droid.Resource.Id.mr_cast_stop_button;
+			global::AiForms.Renderers.Droid.Resource.Id.mr_cast_volume_layout = global::PathwayGames.Droid.Resource.Id.mr_cast_volume_layout;
+			global::AiForms.Renderers.Droid.Resource.Id.mr_cast_volume_slider = global::PathwayGames.Droid.Resource.Id.mr_cast_volume_slider;
+			global::AiForms.Renderers.Droid.Resource.Id.mr_chooser_list = global::PathwayGames.Droid.Resource.Id.mr_chooser_list;
+			global::AiForms.Renderers.Droid.Resource.Id.mr_chooser_route_desc = global::PathwayGames.Droid.Resource.Id.mr_chooser_route_desc;
+			global::AiForms.Renderers.Droid.Resource.Id.mr_chooser_route_icon = global::PathwayGames.Droid.Resource.Id.mr_chooser_route_icon;
+			global::AiForms.Renderers.Droid.Resource.Id.mr_chooser_route_name = global::PathwayGames.Droid.Resource.Id.mr_chooser_route_name;
+			global::AiForms.Renderers.Droid.Resource.Id.mr_chooser_title = global::PathwayGames.Droid.Resource.Id.mr_chooser_title;
+			global::AiForms.Renderers.Droid.Resource.Id.mr_close = global::PathwayGames.Droid.Resource.Id.mr_close;
+			global::AiForms.Renderers.Droid.Resource.Id.mr_control_divider = global::PathwayGames.Droid.Resource.Id.mr_control_divider;
+			global::AiForms.Renderers.Droid.Resource.Id.mr_control_playback_ctrl = global::PathwayGames.Droid.Resource.Id.mr_control_playback_ctrl;
+			global::AiForms.Renderers.Droid.Resource.Id.mr_control_subtitle = global::PathwayGames.Droid.Resource.Id.mr_control_subtitle;
+			global::AiForms.Renderers.Droid.Resource.Id.mr_control_title = global::PathwayGames.Droid.Resource.Id.mr_control_title;
+			global::AiForms.Renderers.Droid.Resource.Id.mr_control_title_container = global::PathwayGames.Droid.Resource.Id.mr_control_title_container;
+			global::AiForms.Renderers.Droid.Resource.Id.mr_custom_control = global::PathwayGames.Droid.Resource.Id.mr_custom_control;
+			global::AiForms.Renderers.Droid.Resource.Id.mr_default_control = global::PathwayGames.Droid.Resource.Id.mr_default_control;
+			global::AiForms.Renderers.Droid.Resource.Id.mr_dialog_area = global::PathwayGames.Droid.Resource.Id.mr_dialog_area;
+			global::AiForms.Renderers.Droid.Resource.Id.mr_dialog_header_name = global::PathwayGames.Droid.Resource.Id.mr_dialog_header_name;
+			global::AiForms.Renderers.Droid.Resource.Id.mr_expandable_area = global::PathwayGames.Droid.Resource.Id.mr_expandable_area;
+			global::AiForms.Renderers.Droid.Resource.Id.mr_group_expand_collapse = global::PathwayGames.Droid.Resource.Id.mr_group_expand_collapse;
+			global::AiForms.Renderers.Droid.Resource.Id.mr_group_volume_route_name = global::PathwayGames.Droid.Resource.Id.mr_group_volume_route_name;
+			global::AiForms.Renderers.Droid.Resource.Id.mr_group_volume_slider = global::PathwayGames.Droid.Resource.Id.mr_group_volume_slider;
+			global::AiForms.Renderers.Droid.Resource.Id.mr_media_main_control = global::PathwayGames.Droid.Resource.Id.mr_media_main_control;
+			global::AiForms.Renderers.Droid.Resource.Id.mr_name = global::PathwayGames.Droid.Resource.Id.mr_name;
+			global::AiForms.Renderers.Droid.Resource.Id.mr_picker_close_button = global::PathwayGames.Droid.Resource.Id.mr_picker_close_button;
+			global::AiForms.Renderers.Droid.Resource.Id.mr_picker_list = global::PathwayGames.Droid.Resource.Id.mr_picker_list;
+			global::AiForms.Renderers.Droid.Resource.Id.mr_picker_route_icon = global::PathwayGames.Droid.Resource.Id.mr_picker_route_icon;
+			global::AiForms.Renderers.Droid.Resource.Id.mr_picker_route_name = global::PathwayGames.Droid.Resource.Id.mr_picker_route_name;
+			global::AiForms.Renderers.Droid.Resource.Id.mr_playback_control = global::PathwayGames.Droid.Resource.Id.mr_playback_control;
+			global::AiForms.Renderers.Droid.Resource.Id.mr_title_bar = global::PathwayGames.Droid.Resource.Id.mr_title_bar;
+			global::AiForms.Renderers.Droid.Resource.Id.mr_volume_control = global::PathwayGames.Droid.Resource.Id.mr_volume_control;
+			global::AiForms.Renderers.Droid.Resource.Id.mr_volume_group_list = global::PathwayGames.Droid.Resource.Id.mr_volume_group_list;
+			global::AiForms.Renderers.Droid.Resource.Id.mr_volume_item_icon = global::PathwayGames.Droid.Resource.Id.mr_volume_item_icon;
+			global::AiForms.Renderers.Droid.Resource.Id.mr_volume_slider = global::PathwayGames.Droid.Resource.Id.mr_volume_slider;
+			global::AiForms.Renderers.Droid.Resource.Id.mtrl_child_content_container = global::PathwayGames.Droid.Resource.Id.mtrl_child_content_container;
+			global::AiForms.Renderers.Droid.Resource.Id.mtrl_internal_children_alpha_tag = global::PathwayGames.Droid.Resource.Id.mtrl_internal_children_alpha_tag;
+			global::AiForms.Renderers.Droid.Resource.Id.multiply = global::PathwayGames.Droid.Resource.Id.multiply;
+			global::AiForms.Renderers.Droid.Resource.Id.navigation_header_container = global::PathwayGames.Droid.Resource.Id.navigation_header_container;
+			global::AiForms.Renderers.Droid.Resource.Id.never = global::PathwayGames.Droid.Resource.Id.never;
+			global::AiForms.Renderers.Droid.Resource.Id.none = global::PathwayGames.Droid.Resource.Id.none;
+			global::AiForms.Renderers.Droid.Resource.Id.normal = global::PathwayGames.Droid.Resource.Id.normal;
+			global::AiForms.Renderers.Droid.Resource.Id.notification_background = global::PathwayGames.Droid.Resource.Id.notification_background;
+			global::AiForms.Renderers.Droid.Resource.Id.notification_main_column = global::PathwayGames.Droid.Resource.Id.notification_main_column;
+			global::AiForms.Renderers.Droid.Resource.Id.notification_main_column_container = global::PathwayGames.Droid.Resource.Id.notification_main_column_container;
+			global::AiForms.Renderers.Droid.Resource.Id.outline = global::PathwayGames.Droid.Resource.Id.outline;
+			global::AiForms.Renderers.Droid.Resource.Id.parallax = global::PathwayGames.Droid.Resource.Id.parallax;
+			global::AiForms.Renderers.Droid.Resource.Id.parentPanel = global::PathwayGames.Droid.Resource.Id.parentPanel;
+			global::AiForms.Renderers.Droid.Resource.Id.parent_matrix = global::PathwayGames.Droid.Resource.Id.parent_matrix;
+			global::AiForms.Renderers.Droid.Resource.Id.pin = global::PathwayGames.Droid.Resource.Id.pin;
+			global::AiForms.Renderers.Droid.Resource.Id.progress_circular = global::PathwayGames.Droid.Resource.Id.progress_circular;
+			global::AiForms.Renderers.Droid.Resource.Id.progress_horizontal = global::PathwayGames.Droid.Resource.Id.progress_horizontal;
+			global::AiForms.Renderers.Droid.Resource.Id.radio = global::PathwayGames.Droid.Resource.Id.radio;
+			global::AiForms.Renderers.Droid.Resource.Id.right = global::PathwayGames.Droid.Resource.Id.right;
+			global::AiForms.Renderers.Droid.Resource.Id.right_icon = global::PathwayGames.Droid.Resource.Id.right_icon;
+			global::AiForms.Renderers.Droid.Resource.Id.right_side = global::PathwayGames.Droid.Resource.Id.right_side;
+			global::AiForms.Renderers.Droid.Resource.Id.save_image_matrix = global::PathwayGames.Droid.Resource.Id.save_image_matrix;
+			global::AiForms.Renderers.Droid.Resource.Id.save_non_transition_alpha = global::PathwayGames.Droid.Resource.Id.save_non_transition_alpha;
+			global::AiForms.Renderers.Droid.Resource.Id.save_scale_type = global::PathwayGames.Droid.Resource.Id.save_scale_type;
+			global::AiForms.Renderers.Droid.Resource.Id.screen = global::PathwayGames.Droid.Resource.Id.screen;
+			global::AiForms.Renderers.Droid.Resource.Id.scroll = global::PathwayGames.Droid.Resource.Id.scroll;
+			global::AiForms.Renderers.Droid.Resource.Id.scrollIndicatorDown = global::PathwayGames.Droid.Resource.Id.scrollIndicatorDown;
+			global::AiForms.Renderers.Droid.Resource.Id.scrollIndicatorUp = global::PathwayGames.Droid.Resource.Id.scrollIndicatorUp;
+			global::AiForms.Renderers.Droid.Resource.Id.scrollView = global::PathwayGames.Droid.Resource.Id.scrollView;
+			global::AiForms.Renderers.Droid.Resource.Id.scrollable = global::PathwayGames.Droid.Resource.Id.scrollable;
+			global::AiForms.Renderers.Droid.Resource.Id.search_badge = global::PathwayGames.Droid.Resource.Id.search_badge;
+			global::AiForms.Renderers.Droid.Resource.Id.search_bar = global::PathwayGames.Droid.Resource.Id.search_bar;
+			global::AiForms.Renderers.Droid.Resource.Id.search_button = global::PathwayGames.Droid.Resource.Id.search_button;
+			global::AiForms.Renderers.Droid.Resource.Id.search_close_btn = global::PathwayGames.Droid.Resource.Id.search_close_btn;
+			global::AiForms.Renderers.Droid.Resource.Id.search_edit_frame = global::PathwayGames.Droid.Resource.Id.search_edit_frame;
+			global::AiForms.Renderers.Droid.Resource.Id.search_go_btn = global::PathwayGames.Droid.Resource.Id.search_go_btn;
+			global::AiForms.Renderers.Droid.Resource.Id.search_mag_icon = global::PathwayGames.Droid.Resource.Id.search_mag_icon;
+			global::AiForms.Renderers.Droid.Resource.Id.search_plate = global::PathwayGames.Droid.Resource.Id.search_plate;
+			global::AiForms.Renderers.Droid.Resource.Id.search_src_text = global::PathwayGames.Droid.Resource.Id.search_src_text;
+			global::AiForms.Renderers.Droid.Resource.Id.search_voice_btn = global::PathwayGames.Droid.Resource.Id.search_voice_btn;
+			global::AiForms.Renderers.Droid.Resource.Id.select_dialog_listview = global::PathwayGames.Droid.Resource.Id.select_dialog_listview;
+			global::AiForms.Renderers.Droid.Resource.Id.selected = global::PathwayGames.Droid.Resource.Id.selected;
+			global::AiForms.Renderers.Droid.Resource.Id.shellcontent_appbar = global::PathwayGames.Droid.Resource.Id.shellcontent_appbar;
+			global::AiForms.Renderers.Droid.Resource.Id.shellcontent_toolbar = global::PathwayGames.Droid.Resource.Id.shellcontent_toolbar;
+			global::AiForms.Renderers.Droid.Resource.Id.shortcut = global::PathwayGames.Droid.Resource.Id.shortcut;
+			global::AiForms.Renderers.Droid.Resource.Id.showCustom = global::PathwayGames.Droid.Resource.Id.showCustom;
+			global::AiForms.Renderers.Droid.Resource.Id.showHome = global::PathwayGames.Droid.Resource.Id.showHome;
+			global::AiForms.Renderers.Droid.Resource.Id.showTitle = global::PathwayGames.Droid.Resource.Id.showTitle;
+			global::AiForms.Renderers.Droid.Resource.Id.smallLabel = global::PathwayGames.Droid.Resource.Id.smallLabel;
+			global::AiForms.Renderers.Droid.Resource.Id.snackbar_action = global::PathwayGames.Droid.Resource.Id.snackbar_action;
+			global::AiForms.Renderers.Droid.Resource.Id.snackbar_text = global::PathwayGames.Droid.Resource.Id.snackbar_text;
+			global::AiForms.Renderers.Droid.Resource.Id.snap = global::PathwayGames.Droid.Resource.Id.snap;
+			global::AiForms.Renderers.Droid.Resource.Id.snapMargins = global::PathwayGames.Droid.Resource.Id.snapMargins;
+			global::AiForms.Renderers.Droid.Resource.Id.spacer = global::PathwayGames.Droid.Resource.Id.spacer;
+			global::AiForms.Renderers.Droid.Resource.Id.split_action_bar = global::PathwayGames.Droid.Resource.Id.split_action_bar;
+			global::AiForms.Renderers.Droid.Resource.Id.src_atop = global::PathwayGames.Droid.Resource.Id.src_atop;
+			global::AiForms.Renderers.Droid.Resource.Id.src_in = global::PathwayGames.Droid.Resource.Id.src_in;
+			global::AiForms.Renderers.Droid.Resource.Id.src_over = global::PathwayGames.Droid.Resource.Id.src_over;
+			global::AiForms.Renderers.Droid.Resource.Id.start = global::PathwayGames.Droid.Resource.Id.start;
+			global::AiForms.Renderers.Droid.Resource.Id.status_bar_latest_event_content = global::PathwayGames.Droid.Resource.Id.status_bar_latest_event_content;
+			global::AiForms.Renderers.Droid.Resource.Id.stretch = global::PathwayGames.Droid.Resource.Id.stretch;
+			global::AiForms.Renderers.Droid.Resource.Id.submenuarrow = global::PathwayGames.Droid.Resource.Id.submenuarrow;
+			global::AiForms.Renderers.Droid.Resource.Id.submit_area = global::PathwayGames.Droid.Resource.Id.submit_area;
+			global::AiForms.Renderers.Droid.Resource.Id.tabMode = global::PathwayGames.Droid.Resource.Id.tabMode;
+			global::AiForms.Renderers.Droid.Resource.Id.tag_transition_group = global::PathwayGames.Droid.Resource.Id.tag_transition_group;
+			global::AiForms.Renderers.Droid.Resource.Id.tag_unhandled_key_event_manager = global::PathwayGames.Droid.Resource.Id.tag_unhandled_key_event_manager;
+			global::AiForms.Renderers.Droid.Resource.Id.tag_unhandled_key_listeners = global::PathwayGames.Droid.Resource.Id.tag_unhandled_key_listeners;
+			global::AiForms.Renderers.Droid.Resource.Id.text = global::PathwayGames.Droid.Resource.Id.text;
+			global::AiForms.Renderers.Droid.Resource.Id.text2 = global::PathwayGames.Droid.Resource.Id.text2;
+			global::AiForms.Renderers.Droid.Resource.Id.textSpacerNoButtons = global::PathwayGames.Droid.Resource.Id.textSpacerNoButtons;
+			global::AiForms.Renderers.Droid.Resource.Id.textSpacerNoTitle = global::PathwayGames.Droid.Resource.Id.textSpacerNoTitle;
+			global::AiForms.Renderers.Droid.Resource.Id.textStart = global::PathwayGames.Droid.Resource.Id.textStart;
+			global::AiForms.Renderers.Droid.Resource.Id.text_input_password_toggle = global::PathwayGames.Droid.Resource.Id.text_input_password_toggle;
+			global::AiForms.Renderers.Droid.Resource.Id.textinput_counter = global::PathwayGames.Droid.Resource.Id.textinput_counter;
+			global::AiForms.Renderers.Droid.Resource.Id.textinput_error = global::PathwayGames.Droid.Resource.Id.textinput_error;
+			global::AiForms.Renderers.Droid.Resource.Id.textinput_helper_text = global::PathwayGames.Droid.Resource.Id.textinput_helper_text;
+			global::AiForms.Renderers.Droid.Resource.Id.time = global::PathwayGames.Droid.Resource.Id.time;
+			global::AiForms.Renderers.Droid.Resource.Id.title = global::PathwayGames.Droid.Resource.Id.title;
+			global::AiForms.Renderers.Droid.Resource.Id.titleDividerNoCustom = global::PathwayGames.Droid.Resource.Id.titleDividerNoCustom;
+			global::AiForms.Renderers.Droid.Resource.Id.title_template = global::PathwayGames.Droid.Resource.Id.title_template;
+			global::AiForms.Renderers.Droid.Resource.Id.top = global::PathwayGames.Droid.Resource.Id.top;
+			global::AiForms.Renderers.Droid.Resource.Id.topPanel = global::PathwayGames.Droid.Resource.Id.topPanel;
+			global::AiForms.Renderers.Droid.Resource.Id.touch_outside = global::PathwayGames.Droid.Resource.Id.touch_outside;
+			global::AiForms.Renderers.Droid.Resource.Id.transition_current_scene = global::PathwayGames.Droid.Resource.Id.transition_current_scene;
+			global::AiForms.Renderers.Droid.Resource.Id.transition_layout_save = global::PathwayGames.Droid.Resource.Id.transition_layout_save;
+			global::AiForms.Renderers.Droid.Resource.Id.transition_position = global::PathwayGames.Droid.Resource.Id.transition_position;
+			global::AiForms.Renderers.Droid.Resource.Id.transition_scene_layoutid_cache = global::PathwayGames.Droid.Resource.Id.transition_scene_layoutid_cache;
+			global::AiForms.Renderers.Droid.Resource.Id.transition_transform = global::PathwayGames.Droid.Resource.Id.transition_transform;
+			global::AiForms.Renderers.Droid.Resource.Id.uniform = global::PathwayGames.Droid.Resource.Id.uniform;
+			global::AiForms.Renderers.Droid.Resource.Id.unlabeled = global::PathwayGames.Droid.Resource.Id.unlabeled;
+			global::AiForms.Renderers.Droid.Resource.Id.up = global::PathwayGames.Droid.Resource.Id.up;
+			global::AiForms.Renderers.Droid.Resource.Id.useLogo = global::PathwayGames.Droid.Resource.Id.useLogo;
+			global::AiForms.Renderers.Droid.Resource.Id.view_offset_helper = global::PathwayGames.Droid.Resource.Id.view_offset_helper;
+			global::AiForms.Renderers.Droid.Resource.Id.visible = global::PathwayGames.Droid.Resource.Id.visible;
+			global::AiForms.Renderers.Droid.Resource.Id.volume_item_container = global::PathwayGames.Droid.Resource.Id.volume_item_container;
+			global::AiForms.Renderers.Droid.Resource.Id.withText = global::PathwayGames.Droid.Resource.Id.withText;
+			global::AiForms.Renderers.Droid.Resource.Id.wrap_content = global::PathwayGames.Droid.Resource.Id.wrap_content;
+			global::AiForms.Renderers.Droid.Resource.Integer.abc_config_activityDefaultDur = global::PathwayGames.Droid.Resource.Integer.abc_config_activityDefaultDur;
+			global::AiForms.Renderers.Droid.Resource.Integer.abc_config_activityShortDur = global::PathwayGames.Droid.Resource.Integer.abc_config_activityShortDur;
+			global::AiForms.Renderers.Droid.Resource.Integer.app_bar_elevation_anim_duration = global::PathwayGames.Droid.Resource.Integer.app_bar_elevation_anim_duration;
+			global::AiForms.Renderers.Droid.Resource.Integer.bottom_sheet_slide_duration = global::PathwayGames.Droid.Resource.Integer.bottom_sheet_slide_duration;
+			global::AiForms.Renderers.Droid.Resource.Integer.cancel_button_image_alpha = global::PathwayGames.Droid.Resource.Integer.cancel_button_image_alpha;
+			global::AiForms.Renderers.Droid.Resource.Integer.config_tooltipAnimTime = global::PathwayGames.Droid.Resource.Integer.config_tooltipAnimTime;
+			global::AiForms.Renderers.Droid.Resource.Integer.design_snackbar_text_max_lines = global::PathwayGames.Droid.Resource.Integer.design_snackbar_text_max_lines;
+			global::AiForms.Renderers.Droid.Resource.Integer.design_tab_indicator_anim_duration_ms = global::PathwayGames.Droid.Resource.Integer.design_tab_indicator_anim_duration_ms;
+			global::AiForms.Renderers.Droid.Resource.Integer.hide_password_duration = global::PathwayGames.Droid.Resource.Integer.hide_password_duration;
+			global::AiForms.Renderers.Droid.Resource.Integer.mr_controller_volume_group_list_animation_duration_ms = global::PathwayGames.Droid.Resource.Integer.mr_controller_volume_group_list_animation_duration_ms;
+			global::AiForms.Renderers.Droid.Resource.Integer.mr_controller_volume_group_list_fade_in_duration_ms = global::PathwayGames.Droid.Resource.Integer.mr_controller_volume_group_list_fade_in_duration_ms;
+			global::AiForms.Renderers.Droid.Resource.Integer.mr_controller_volume_group_list_fade_out_duration_ms = global::PathwayGames.Droid.Resource.Integer.mr_controller_volume_group_list_fade_out_duration_ms;
+			global::AiForms.Renderers.Droid.Resource.Integer.mr_update_routes_delay_ms = global::PathwayGames.Droid.Resource.Integer.mr_update_routes_delay_ms;
+			global::AiForms.Renderers.Droid.Resource.Integer.mtrl_btn_anim_delay_ms = global::PathwayGames.Droid.Resource.Integer.mtrl_btn_anim_delay_ms;
+			global::AiForms.Renderers.Droid.Resource.Integer.mtrl_btn_anim_duration_ms = global::PathwayGames.Droid.Resource.Integer.mtrl_btn_anim_duration_ms;
+			global::AiForms.Renderers.Droid.Resource.Integer.mtrl_chip_anim_duration = global::PathwayGames.Droid.Resource.Integer.mtrl_chip_anim_duration;
+			global::AiForms.Renderers.Droid.Resource.Integer.mtrl_tab_indicator_anim_duration_ms = global::PathwayGames.Droid.Resource.Integer.mtrl_tab_indicator_anim_duration_ms;
+			global::AiForms.Renderers.Droid.Resource.Integer.show_password_duration = global::PathwayGames.Droid.Resource.Integer.show_password_duration;
+			global::AiForms.Renderers.Droid.Resource.Integer.status_bar_notification_info_maxnum = global::PathwayGames.Droid.Resource.Integer.status_bar_notification_info_maxnum;
+			global::AiForms.Renderers.Droid.Resource.Interpolator.mr_fast_out_slow_in = global::PathwayGames.Droid.Resource.Interpolator.mr_fast_out_slow_in;
+			global::AiForms.Renderers.Droid.Resource.Interpolator.mr_linear_out_slow_in = global::PathwayGames.Droid.Resource.Interpolator.mr_linear_out_slow_in;
+			global::AiForms.Renderers.Droid.Resource.Interpolator.mtrl_fast_out_linear_in = global::PathwayGames.Droid.Resource.Interpolator.mtrl_fast_out_linear_in;
+			global::AiForms.Renderers.Droid.Resource.Interpolator.mtrl_fast_out_slow_in = global::PathwayGames.Droid.Resource.Interpolator.mtrl_fast_out_slow_in;
+			global::AiForms.Renderers.Droid.Resource.Interpolator.mtrl_linear = global::PathwayGames.Droid.Resource.Interpolator.mtrl_linear;
+			global::AiForms.Renderers.Droid.Resource.Interpolator.mtrl_linear_out_slow_in = global::PathwayGames.Droid.Resource.Interpolator.mtrl_linear_out_slow_in;
+			global::AiForms.Renderers.Droid.Resource.Layout.abc_action_bar_title_item = global::PathwayGames.Droid.Resource.Layout.abc_action_bar_title_item;
+			global::AiForms.Renderers.Droid.Resource.Layout.abc_action_bar_up_container = global::PathwayGames.Droid.Resource.Layout.abc_action_bar_up_container;
+			global::AiForms.Renderers.Droid.Resource.Layout.abc_action_menu_item_layout = global::PathwayGames.Droid.Resource.Layout.abc_action_menu_item_layout;
+			global::AiForms.Renderers.Droid.Resource.Layout.abc_action_menu_layout = global::PathwayGames.Droid.Resource.Layout.abc_action_menu_layout;
+			global::AiForms.Renderers.Droid.Resource.Layout.abc_action_mode_bar = global::PathwayGames.Droid.Resource.Layout.abc_action_mode_bar;
+			global::AiForms.Renderers.Droid.Resource.Layout.abc_action_mode_close_item_material = global::PathwayGames.Droid.Resource.Layout.abc_action_mode_close_item_material;
+			global::AiForms.Renderers.Droid.Resource.Layout.abc_activity_chooser_view = global::PathwayGames.Droid.Resource.Layout.abc_activity_chooser_view;
+			global::AiForms.Renderers.Droid.Resource.Layout.abc_activity_chooser_view_list_item = global::PathwayGames.Droid.Resource.Layout.abc_activity_chooser_view_list_item;
+			global::AiForms.Renderers.Droid.Resource.Layout.abc_alert_dialog_button_bar_material = global::PathwayGames.Droid.Resource.Layout.abc_alert_dialog_button_bar_material;
+			global::AiForms.Renderers.Droid.Resource.Layout.abc_alert_dialog_material = global::PathwayGames.Droid.Resource.Layout.abc_alert_dialog_material;
+			global::AiForms.Renderers.Droid.Resource.Layout.abc_alert_dialog_title_material = global::PathwayGames.Droid.Resource.Layout.abc_alert_dialog_title_material;
+			global::AiForms.Renderers.Droid.Resource.Layout.abc_cascading_menu_item_layout = global::PathwayGames.Droid.Resource.Layout.abc_cascading_menu_item_layout;
+			global::AiForms.Renderers.Droid.Resource.Layout.abc_dialog_title_material = global::PathwayGames.Droid.Resource.Layout.abc_dialog_title_material;
+			global::AiForms.Renderers.Droid.Resource.Layout.abc_expanded_menu_layout = global::PathwayGames.Droid.Resource.Layout.abc_expanded_menu_layout;
+			global::AiForms.Renderers.Droid.Resource.Layout.abc_list_menu_item_checkbox = global::PathwayGames.Droid.Resource.Layout.abc_list_menu_item_checkbox;
+			global::AiForms.Renderers.Droid.Resource.Layout.abc_list_menu_item_icon = global::PathwayGames.Droid.Resource.Layout.abc_list_menu_item_icon;
+			global::AiForms.Renderers.Droid.Resource.Layout.abc_list_menu_item_layout = global::PathwayGames.Droid.Resource.Layout.abc_list_menu_item_layout;
+			global::AiForms.Renderers.Droid.Resource.Layout.abc_list_menu_item_radio = global::PathwayGames.Droid.Resource.Layout.abc_list_menu_item_radio;
+			global::AiForms.Renderers.Droid.Resource.Layout.abc_popup_menu_header_item_layout = global::PathwayGames.Droid.Resource.Layout.abc_popup_menu_header_item_layout;
+			global::AiForms.Renderers.Droid.Resource.Layout.abc_popup_menu_item_layout = global::PathwayGames.Droid.Resource.Layout.abc_popup_menu_item_layout;
+			global::AiForms.Renderers.Droid.Resource.Layout.abc_screen_content_include = global::PathwayGames.Droid.Resource.Layout.abc_screen_content_include;
+			global::AiForms.Renderers.Droid.Resource.Layout.abc_screen_simple = global::PathwayGames.Droid.Resource.Layout.abc_screen_simple;
+			global::AiForms.Renderers.Droid.Resource.Layout.abc_screen_simple_overlay_action_mode = global::PathwayGames.Droid.Resource.Layout.abc_screen_simple_overlay_action_mode;
+			global::AiForms.Renderers.Droid.Resource.Layout.abc_screen_toolbar = global::PathwayGames.Droid.Resource.Layout.abc_screen_toolbar;
+			global::AiForms.Renderers.Droid.Resource.Layout.abc_search_dropdown_item_icons_2line = global::PathwayGames.Droid.Resource.Layout.abc_search_dropdown_item_icons_2line;
+			global::AiForms.Renderers.Droid.Resource.Layout.abc_search_view = global::PathwayGames.Droid.Resource.Layout.abc_search_view;
+			global::AiForms.Renderers.Droid.Resource.Layout.abc_select_dialog_material = global::PathwayGames.Droid.Resource.Layout.abc_select_dialog_material;
+			global::AiForms.Renderers.Droid.Resource.Layout.abc_tooltip = global::PathwayGames.Droid.Resource.Layout.abc_tooltip;
+			global::AiForms.Renderers.Droid.Resource.Layout.BottomTabLayout = global::PathwayGames.Droid.Resource.Layout.BottomTabLayout;
+			global::AiForms.Renderers.Droid.Resource.Layout.browser_actions_context_menu_page = global::PathwayGames.Droid.Resource.Layout.browser_actions_context_menu_page;
+			global::AiForms.Renderers.Droid.Resource.Layout.browser_actions_context_menu_row = global::PathwayGames.Droid.Resource.Layout.browser_actions_context_menu_row;
+			global::AiForms.Renderers.Droid.Resource.Layout.CellBaseView = global::PathwayGames.Droid.Resource.Layout.CellBaseView;
+			global::AiForms.Renderers.Droid.Resource.Layout.ContentCell = global::PathwayGames.Droid.Resource.Layout.ContentCell;
+			global::AiForms.Renderers.Droid.Resource.Layout.design_bottom_navigation_item = global::PathwayGames.Droid.Resource.Layout.design_bottom_navigation_item;
+			global::AiForms.Renderers.Droid.Resource.Layout.design_bottom_sheet_dialog = global::PathwayGames.Droid.Resource.Layout.design_bottom_sheet_dialog;
+			global::AiForms.Renderers.Droid.Resource.Layout.design_layout_snackbar = global::PathwayGames.Droid.Resource.Layout.design_layout_snackbar;
+			global::AiForms.Renderers.Droid.Resource.Layout.design_layout_snackbar_include = global::PathwayGames.Droid.Resource.Layout.design_layout_snackbar_include;
+			global::AiForms.Renderers.Droid.Resource.Layout.design_layout_tab_icon = global::PathwayGames.Droid.Resource.Layout.design_layout_tab_icon;
+			global::AiForms.Renderers.Droid.Resource.Layout.design_layout_tab_text = global::PathwayGames.Droid.Resource.Layout.design_layout_tab_text;
+			global::AiForms.Renderers.Droid.Resource.Layout.design_menu_item_action_area = global::PathwayGames.Droid.Resource.Layout.design_menu_item_action_area;
+			global::AiForms.Renderers.Droid.Resource.Layout.design_navigation_item = global::PathwayGames.Droid.Resource.Layout.design_navigation_item;
+			global::AiForms.Renderers.Droid.Resource.Layout.design_navigation_item_header = global::PathwayGames.Droid.Resource.Layout.design_navigation_item_header;
+			global::AiForms.Renderers.Droid.Resource.Layout.design_navigation_item_separator = global::PathwayGames.Droid.Resource.Layout.design_navigation_item_separator;
+			global::AiForms.Renderers.Droid.Resource.Layout.design_navigation_item_subheader = global::PathwayGames.Droid.Resource.Layout.design_navigation_item_subheader;
+			global::AiForms.Renderers.Droid.Resource.Layout.design_navigation_menu = global::PathwayGames.Droid.Resource.Layout.design_navigation_menu;
+			global::AiForms.Renderers.Droid.Resource.Layout.design_navigation_menu_item = global::PathwayGames.Droid.Resource.Layout.design_navigation_menu_item;
+			global::AiForms.Renderers.Droid.Resource.Layout.design_text_input_password_icon = global::PathwayGames.Droid.Resource.Layout.design_text_input_password_icon;
+			global::AiForms.Renderers.Droid.Resource.Layout.FlyoutContent = global::PathwayGames.Droid.Resource.Layout.FlyoutContent;
+			global::AiForms.Renderers.Droid.Resource.Layout.FooterCell = global::PathwayGames.Droid.Resource.Layout.FooterCell;
+			global::AiForms.Renderers.Droid.Resource.Layout.HeaderCell = global::PathwayGames.Droid.Resource.Layout.HeaderCell;
+			global::AiForms.Renderers.Droid.Resource.Layout.mr_cast_dialog = global::PathwayGames.Droid.Resource.Layout.mr_cast_dialog;
+			global::AiForms.Renderers.Droid.Resource.Layout.mr_cast_group_item = global::PathwayGames.Droid.Resource.Layout.mr_cast_group_item;
+			global::AiForms.Renderers.Droid.Resource.Layout.mr_cast_group_volume_item = global::PathwayGames.Droid.Resource.Layout.mr_cast_group_volume_item;
+			global::AiForms.Renderers.Droid.Resource.Layout.mr_cast_media_metadata = global::PathwayGames.Droid.Resource.Layout.mr_cast_media_metadata;
+			global::AiForms.Renderers.Droid.Resource.Layout.mr_cast_route_item = global::PathwayGames.Droid.Resource.Layout.mr_cast_route_item;
+			global::AiForms.Renderers.Droid.Resource.Layout.mr_chooser_dialog = global::PathwayGames.Droid.Resource.Layout.mr_chooser_dialog;
+			global::AiForms.Renderers.Droid.Resource.Layout.mr_chooser_list_item = global::PathwayGames.Droid.Resource.Layout.mr_chooser_list_item;
+			global::AiForms.Renderers.Droid.Resource.Layout.mr_controller_material_dialog_b = global::PathwayGames.Droid.Resource.Layout.mr_controller_material_dialog_b;
+			global::AiForms.Renderers.Droid.Resource.Layout.mr_controller_volume_item = global::PathwayGames.Droid.Resource.Layout.mr_controller_volume_item;
+			global::AiForms.Renderers.Droid.Resource.Layout.mr_dialog_header_item = global::PathwayGames.Droid.Resource.Layout.mr_dialog_header_item;
+			global::AiForms.Renderers.Droid.Resource.Layout.mr_picker_dialog = global::PathwayGames.Droid.Resource.Layout.mr_picker_dialog;
+			global::AiForms.Renderers.Droid.Resource.Layout.mr_picker_route_item = global::PathwayGames.Droid.Resource.Layout.mr_picker_route_item;
+			global::AiForms.Renderers.Droid.Resource.Layout.mr_playback_control = global::PathwayGames.Droid.Resource.Layout.mr_playback_control;
+			global::AiForms.Renderers.Droid.Resource.Layout.mr_volume_control = global::PathwayGames.Droid.Resource.Layout.mr_volume_control;
+			global::AiForms.Renderers.Droid.Resource.Layout.mtrl_layout_snackbar = global::PathwayGames.Droid.Resource.Layout.mtrl_layout_snackbar;
+			global::AiForms.Renderers.Droid.Resource.Layout.mtrl_layout_snackbar_include = global::PathwayGames.Droid.Resource.Layout.mtrl_layout_snackbar_include;
+			global::AiForms.Renderers.Droid.Resource.Layout.notification_action = global::PathwayGames.Droid.Resource.Layout.notification_action;
+			global::AiForms.Renderers.Droid.Resource.Layout.notification_action_tombstone = global::PathwayGames.Droid.Resource.Layout.notification_action_tombstone;
+			global::AiForms.Renderers.Droid.Resource.Layout.notification_media_action = global::PathwayGames.Droid.Resource.Layout.notification_media_action;
+			global::AiForms.Renderers.Droid.Resource.Layout.notification_media_cancel_action = global::PathwayGames.Droid.Resource.Layout.notification_media_cancel_action;
+			global::AiForms.Renderers.Droid.Resource.Layout.notification_template_big_media = global::PathwayGames.Droid.Resource.Layout.notification_template_big_media;
+			global::AiForms.Renderers.Droid.Resource.Layout.notification_template_big_media_custom = global::PathwayGames.Droid.Resource.Layout.notification_template_big_media_custom;
+			global::AiForms.Renderers.Droid.Resource.Layout.notification_template_big_media_narrow = global::PathwayGames.Droid.Resource.Layout.notification_template_big_media_narrow;
+			global::AiForms.Renderers.Droid.Resource.Layout.notification_template_big_media_narrow_custom = global::PathwayGames.Droid.Resource.Layout.notification_template_big_media_narrow_custom;
+			global::AiForms.Renderers.Droid.Resource.Layout.notification_template_custom_big = global::PathwayGames.Droid.Resource.Layout.notification_template_custom_big;
+			global::AiForms.Renderers.Droid.Resource.Layout.notification_template_icon_group = global::PathwayGames.Droid.Resource.Layout.notification_template_icon_group;
+			global::AiForms.Renderers.Droid.Resource.Layout.notification_template_lines_media = global::PathwayGames.Droid.Resource.Layout.notification_template_lines_media;
+			global::AiForms.Renderers.Droid.Resource.Layout.notification_template_media = global::PathwayGames.Droid.Resource.Layout.notification_template_media;
+			global::AiForms.Renderers.Droid.Resource.Layout.notification_template_media_custom = global::PathwayGames.Droid.Resource.Layout.notification_template_media_custom;
+			global::AiForms.Renderers.Droid.Resource.Layout.notification_template_part_chronometer = global::PathwayGames.Droid.Resource.Layout.notification_template_part_chronometer;
+			global::AiForms.Renderers.Droid.Resource.Layout.notification_template_part_time = global::PathwayGames.Droid.Resource.Layout.notification_template_part_time;
+			global::AiForms.Renderers.Droid.Resource.Layout.RootLayout = global::PathwayGames.Droid.Resource.Layout.RootLayout;
+			global::AiForms.Renderers.Droid.Resource.Layout.select_dialog_item_material = global::PathwayGames.Droid.Resource.Layout.select_dialog_item_material;
+			global::AiForms.Renderers.Droid.Resource.Layout.select_dialog_multichoice_material = global::PathwayGames.Droid.Resource.Layout.select_dialog_multichoice_material;
+			global::AiForms.Renderers.Droid.Resource.Layout.select_dialog_singlechoice_material = global::PathwayGames.Droid.Resource.Layout.select_dialog_singlechoice_material;
+			global::AiForms.Renderers.Droid.Resource.Layout.ShellContent = global::PathwayGames.Droid.Resource.Layout.ShellContent;
+			global::AiForms.Renderers.Droid.Resource.Layout.support_simple_spinner_dropdown_item = global::PathwayGames.Droid.Resource.Layout.support_simple_spinner_dropdown_item;
+			global::AiForms.Renderers.Droid.Resource.String.abc_action_bar_home_description = global::PathwayGames.Droid.Resource.String.abc_action_bar_home_description;
+			global::AiForms.Renderers.Droid.Resource.String.abc_action_bar_up_description = global::PathwayGames.Droid.Resource.String.abc_action_bar_up_description;
+			global::AiForms.Renderers.Droid.Resource.String.abc_action_menu_overflow_description = global::PathwayGames.Droid.Resource.String.abc_action_menu_overflow_description;
+			global::AiForms.Renderers.Droid.Resource.String.abc_action_mode_done = global::PathwayGames.Droid.Resource.String.abc_action_mode_done;
+			global::AiForms.Renderers.Droid.Resource.String.abc_activity_chooser_view_see_all = global::PathwayGames.Droid.Resource.String.abc_activity_chooser_view_see_all;
+			global::AiForms.Renderers.Droid.Resource.String.abc_activitychooserview_choose_application = global::PathwayGames.Droid.Resource.String.abc_activitychooserview_choose_application;
+			global::AiForms.Renderers.Droid.Resource.String.abc_capital_off = global::PathwayGames.Droid.Resource.String.abc_capital_off;
+			global::AiForms.Renderers.Droid.Resource.String.abc_capital_on = global::PathwayGames.Droid.Resource.String.abc_capital_on;
+			global::AiForms.Renderers.Droid.Resource.String.abc_font_family_body_1_material = global::PathwayGames.Droid.Resource.String.abc_font_family_body_1_material;
+			global::AiForms.Renderers.Droid.Resource.String.abc_font_family_body_2_material = global::PathwayGames.Droid.Resource.String.abc_font_family_body_2_material;
+			global::AiForms.Renderers.Droid.Resource.String.abc_font_family_button_material = global::PathwayGames.Droid.Resource.String.abc_font_family_button_material;
+			global::AiForms.Renderers.Droid.Resource.String.abc_font_family_caption_material = global::PathwayGames.Droid.Resource.String.abc_font_family_caption_material;
+			global::AiForms.Renderers.Droid.Resource.String.abc_font_family_display_1_material = global::PathwayGames.Droid.Resource.String.abc_font_family_display_1_material;
+			global::AiForms.Renderers.Droid.Resource.String.abc_font_family_display_2_material = global::PathwayGames.Droid.Resource.String.abc_font_family_display_2_material;
+			global::AiForms.Renderers.Droid.Resource.String.abc_font_family_display_3_material = global::PathwayGames.Droid.Resource.String.abc_font_family_display_3_material;
+			global::AiForms.Renderers.Droid.Resource.String.abc_font_family_display_4_material = global::PathwayGames.Droid.Resource.String.abc_font_family_display_4_material;
+			global::AiForms.Renderers.Droid.Resource.String.abc_font_family_headline_material = global::PathwayGames.Droid.Resource.String.abc_font_family_headline_material;
+			global::AiForms.Renderers.Droid.Resource.String.abc_font_family_menu_material = global::PathwayGames.Droid.Resource.String.abc_font_family_menu_material;
+			global::AiForms.Renderers.Droid.Resource.String.abc_font_family_subhead_material = global::PathwayGames.Droid.Resource.String.abc_font_family_subhead_material;
+			global::AiForms.Renderers.Droid.Resource.String.abc_font_family_title_material = global::PathwayGames.Droid.Resource.String.abc_font_family_title_material;
+			global::AiForms.Renderers.Droid.Resource.String.abc_menu_alt_shortcut_label = global::PathwayGames.Droid.Resource.String.abc_menu_alt_shortcut_label;
+			global::AiForms.Renderers.Droid.Resource.String.abc_menu_ctrl_shortcut_label = global::PathwayGames.Droid.Resource.String.abc_menu_ctrl_shortcut_label;
+			global::AiForms.Renderers.Droid.Resource.String.abc_menu_delete_shortcut_label = global::PathwayGames.Droid.Resource.String.abc_menu_delete_shortcut_label;
+			global::AiForms.Renderers.Droid.Resource.String.abc_menu_enter_shortcut_label = global::PathwayGames.Droid.Resource.String.abc_menu_enter_shortcut_label;
+			global::AiForms.Renderers.Droid.Resource.String.abc_menu_function_shortcut_label = global::PathwayGames.Droid.Resource.String.abc_menu_function_shortcut_label;
+			global::AiForms.Renderers.Droid.Resource.String.abc_menu_meta_shortcut_label = global::PathwayGames.Droid.Resource.String.abc_menu_meta_shortcut_label;
+			global::AiForms.Renderers.Droid.Resource.String.abc_menu_shift_shortcut_label = global::PathwayGames.Droid.Resource.String.abc_menu_shift_shortcut_label;
+			global::AiForms.Renderers.Droid.Resource.String.abc_menu_space_shortcut_label = global::PathwayGames.Droid.Resource.String.abc_menu_space_shortcut_label;
+			global::AiForms.Renderers.Droid.Resource.String.abc_menu_sym_shortcut_label = global::PathwayGames.Droid.Resource.String.abc_menu_sym_shortcut_label;
+			global::AiForms.Renderers.Droid.Resource.String.abc_prepend_shortcut_label = global::PathwayGames.Droid.Resource.String.abc_prepend_shortcut_label;
+			global::AiForms.Renderers.Droid.Resource.String.abc_search_hint = global::PathwayGames.Droid.Resource.String.abc_search_hint;
+			global::AiForms.Renderers.Droid.Resource.String.abc_searchview_description_clear = global::PathwayGames.Droid.Resource.String.abc_searchview_description_clear;
+			global::AiForms.Renderers.Droid.Resource.String.abc_searchview_description_query = global::PathwayGames.Droid.Resource.String.abc_searchview_description_query;
+			global::AiForms.Renderers.Droid.Resource.String.abc_searchview_description_search = global::PathwayGames.Droid.Resource.String.abc_searchview_description_search;
+			global::AiForms.Renderers.Droid.Resource.String.abc_searchview_description_submit = global::PathwayGames.Droid.Resource.String.abc_searchview_description_submit;
+			global::AiForms.Renderers.Droid.Resource.String.abc_searchview_description_voice = global::PathwayGames.Droid.Resource.String.abc_searchview_description_voice;
+			global::AiForms.Renderers.Droid.Resource.String.abc_shareactionprovider_share_with = global::PathwayGames.Droid.Resource.String.abc_shareactionprovider_share_with;
+			global::AiForms.Renderers.Droid.Resource.String.abc_shareactionprovider_share_with_application = global::PathwayGames.Droid.Resource.String.abc_shareactionprovider_share_with_application;
+			global::AiForms.Renderers.Droid.Resource.String.abc_toolbar_collapse_description = global::PathwayGames.Droid.Resource.String.abc_toolbar_collapse_description;
+			global::AiForms.Renderers.Droid.Resource.String.appbar_scrolling_view_behavior = global::PathwayGames.Droid.Resource.String.appbar_scrolling_view_behavior;
+			global::AiForms.Renderers.Droid.Resource.String.bottom_sheet_behavior = global::PathwayGames.Droid.Resource.String.bottom_sheet_behavior;
+			global::AiForms.Renderers.Droid.Resource.String.character_counter_content_description = global::PathwayGames.Droid.Resource.String.character_counter_content_description;
+			global::AiForms.Renderers.Droid.Resource.String.character_counter_pattern = global::PathwayGames.Droid.Resource.String.character_counter_pattern;
+			global::AiForms.Renderers.Droid.Resource.String.fab_transformation_scrim_behavior = global::PathwayGames.Droid.Resource.String.fab_transformation_scrim_behavior;
+			global::AiForms.Renderers.Droid.Resource.String.fab_transformation_sheet_behavior = global::PathwayGames.Droid.Resource.String.fab_transformation_sheet_behavior;
+			global::AiForms.Renderers.Droid.Resource.String.hide_bottom_view_on_scroll_behavior = global::PathwayGames.Droid.Resource.String.hide_bottom_view_on_scroll_behavior;
+			global::AiForms.Renderers.Droid.Resource.String.library_name = global::PathwayGames.Droid.Resource.String.library_name;
+			global::AiForms.Renderers.Droid.Resource.String.mr_button_content_description = global::PathwayGames.Droid.Resource.String.mr_button_content_description;
+			global::AiForms.Renderers.Droid.Resource.String.mr_cast_button_connected = global::PathwayGames.Droid.Resource.String.mr_cast_button_connected;
+			global::AiForms.Renderers.Droid.Resource.String.mr_cast_button_connecting = global::PathwayGames.Droid.Resource.String.mr_cast_button_connecting;
+			global::AiForms.Renderers.Droid.Resource.String.mr_cast_button_disconnected = global::PathwayGames.Droid.Resource.String.mr_cast_button_disconnected;
+			global::AiForms.Renderers.Droid.Resource.String.mr_cast_dialog_title_view_placeholder = global::PathwayGames.Droid.Resource.String.mr_cast_dialog_title_view_placeholder;
+			global::AiForms.Renderers.Droid.Resource.String.mr_chooser_searching = global::PathwayGames.Droid.Resource.String.mr_chooser_searching;
+			global::AiForms.Renderers.Droid.Resource.String.mr_chooser_title = global::PathwayGames.Droid.Resource.String.mr_chooser_title;
+			global::AiForms.Renderers.Droid.Resource.String.mr_controller_album_art = global::PathwayGames.Droid.Resource.String.mr_controller_album_art;
+			global::AiForms.Renderers.Droid.Resource.String.mr_controller_casting_screen = global::PathwayGames.Droid.Resource.String.mr_controller_casting_screen;
+			global::AiForms.Renderers.Droid.Resource.String.mr_controller_close_description = global::PathwayGames.Droid.Resource.String.mr_controller_close_description;
+			global::AiForms.Renderers.Droid.Resource.String.mr_controller_collapse_group = global::PathwayGames.Droid.Resource.String.mr_controller_collapse_group;
+			global::AiForms.Renderers.Droid.Resource.String.mr_controller_disconnect = global::PathwayGames.Droid.Resource.String.mr_controller_disconnect;
+			global::AiForms.Renderers.Droid.Resource.String.mr_controller_expand_group = global::PathwayGames.Droid.Resource.String.mr_controller_expand_group;
+			global::AiForms.Renderers.Droid.Resource.String.mr_controller_no_info_available = global::PathwayGames.Droid.Resource.String.mr_controller_no_info_available;
+			global::AiForms.Renderers.Droid.Resource.String.mr_controller_no_media_selected = global::PathwayGames.Droid.Resource.String.mr_controller_no_media_selected;
+			global::AiForms.Renderers.Droid.Resource.String.mr_controller_pause = global::PathwayGames.Droid.Resource.String.mr_controller_pause;
+			global::AiForms.Renderers.Droid.Resource.String.mr_controller_play = global::PathwayGames.Droid.Resource.String.mr_controller_play;
+			global::AiForms.Renderers.Droid.Resource.String.mr_controller_stop = global::PathwayGames.Droid.Resource.String.mr_controller_stop;
+			global::AiForms.Renderers.Droid.Resource.String.mr_controller_stop_casting = global::PathwayGames.Droid.Resource.String.mr_controller_stop_casting;
+			global::AiForms.Renderers.Droid.Resource.String.mr_controller_volume_slider = global::PathwayGames.Droid.Resource.String.mr_controller_volume_slider;
+			global::AiForms.Renderers.Droid.Resource.String.mr_dialog_device_header = global::PathwayGames.Droid.Resource.String.mr_dialog_device_header;
+			global::AiForms.Renderers.Droid.Resource.String.mr_dialog_route_header = global::PathwayGames.Droid.Resource.String.mr_dialog_route_header;
+			global::AiForms.Renderers.Droid.Resource.String.mr_system_route_name = global::PathwayGames.Droid.Resource.String.mr_system_route_name;
+			global::AiForms.Renderers.Droid.Resource.String.mr_user_route_category_name = global::PathwayGames.Droid.Resource.String.mr_user_route_category_name;
+			global::AiForms.Renderers.Droid.Resource.String.mtrl_chip_close_icon_content_description = global::PathwayGames.Droid.Resource.String.mtrl_chip_close_icon_content_description;
+			global::AiForms.Renderers.Droid.Resource.String.password_toggle_content_description = global::PathwayGames.Droid.Resource.String.password_toggle_content_description;
+			global::AiForms.Renderers.Droid.Resource.String.path_password_eye = global::PathwayGames.Droid.Resource.String.path_password_eye;
+			global::AiForms.Renderers.Droid.Resource.String.path_password_eye_mask_strike_through = global::PathwayGames.Droid.Resource.String.path_password_eye_mask_strike_through;
+			global::AiForms.Renderers.Droid.Resource.String.path_password_eye_mask_visible = global::PathwayGames.Droid.Resource.String.path_password_eye_mask_visible;
+			global::AiForms.Renderers.Droid.Resource.String.path_password_strike_through = global::PathwayGames.Droid.Resource.String.path_password_strike_through;
+			global::AiForms.Renderers.Droid.Resource.String.search_menu_title = global::PathwayGames.Droid.Resource.String.search_menu_title;
+			global::AiForms.Renderers.Droid.Resource.String.status_bar_notification_info_overflow = global::PathwayGames.Droid.Resource.String.status_bar_notification_info_overflow;
+			global::AiForms.Renderers.Droid.Resource.Style.AlertDialog_AppCompat = global::PathwayGames.Droid.Resource.Style.AlertDialog_AppCompat;
+			global::AiForms.Renderers.Droid.Resource.Style.AlertDialog_AppCompat_Light = global::PathwayGames.Droid.Resource.Style.AlertDialog_AppCompat_Light;
+			global::AiForms.Renderers.Droid.Resource.Style.Animation_AppCompat_Dialog = global::PathwayGames.Droid.Resource.Style.Animation_AppCompat_Dialog;
+			global::AiForms.Renderers.Droid.Resource.Style.Animation_AppCompat_DropDownUp = global::PathwayGames.Droid.Resource.Style.Animation_AppCompat_DropDownUp;
+			global::AiForms.Renderers.Droid.Resource.Style.Animation_AppCompat_Tooltip = global::PathwayGames.Droid.Resource.Style.Animation_AppCompat_Tooltip;
+			global::AiForms.Renderers.Droid.Resource.Style.Animation_Design_BottomSheetDialog = global::PathwayGames.Droid.Resource.Style.Animation_Design_BottomSheetDialog;
+			global::AiForms.Renderers.Droid.Resource.Style.Base_AlertDialog_AppCompat = global::PathwayGames.Droid.Resource.Style.Base_AlertDialog_AppCompat;
+			global::AiForms.Renderers.Droid.Resource.Style.Base_AlertDialog_AppCompat_Light = global::PathwayGames.Droid.Resource.Style.Base_AlertDialog_AppCompat_Light;
+			global::AiForms.Renderers.Droid.Resource.Style.Base_Animation_AppCompat_Dialog = global::PathwayGames.Droid.Resource.Style.Base_Animation_AppCompat_Dialog;
+			global::AiForms.Renderers.Droid.Resource.Style.Base_Animation_AppCompat_DropDownUp = global::PathwayGames.Droid.Resource.Style.Base_Animation_AppCompat_DropDownUp;
+			global::AiForms.Renderers.Droid.Resource.Style.Base_Animation_AppCompat_Tooltip = global::PathwayGames.Droid.Resource.Style.Base_Animation_AppCompat_Tooltip;
+			global::AiForms.Renderers.Droid.Resource.Style.Base_CardView = global::PathwayGames.Droid.Resource.Style.Base_CardView;
+			global::AiForms.Renderers.Droid.Resource.Style.Base_DialogWindowTitle_AppCompat = global::PathwayGames.Droid.Resource.Style.Base_DialogWindowTitle_AppCompat;
+			global::AiForms.Renderers.Droid.Resource.Style.Base_DialogWindowTitleBackground_AppCompat = global::PathwayGames.Droid.Resource.Style.Base_DialogWindowTitleBackground_AppCompat;
+			global::AiForms.Renderers.Droid.Resource.Style.Base_TextAppearance_AppCompat = global::PathwayGames.Droid.Resource.Style.Base_TextAppearance_AppCompat;
+			global::AiForms.Renderers.Droid.Resource.Style.Base_TextAppearance_AppCompat_Body1 = global::PathwayGames.Droid.Resource.Style.Base_TextAppearance_AppCompat_Body1;
+			global::AiForms.Renderers.Droid.Resource.Style.Base_TextAppearance_AppCompat_Body2 = global::PathwayGames.Droid.Resource.Style.Base_TextAppearance_AppCompat_Body2;
+			global::AiForms.Renderers.Droid.Resource.Style.Base_TextAppearance_AppCompat_Button = global::PathwayGames.Droid.Resource.Style.Base_TextAppearance_AppCompat_Button;
+			global::AiForms.Renderers.Droid.Resource.Style.Base_TextAppearance_AppCompat_Caption = global::PathwayGames.Droid.Resource.Style.Base_TextAppearance_AppCompat_Caption;
+			global::AiForms.Renderers.Droid.Resource.Style.Base_TextAppearance_AppCompat_Display1 = global::PathwayGames.Droid.Resource.Style.Base_TextAppearance_AppCompat_Display1;
+			global::AiForms.Renderers.Droid.Resource.Style.Base_TextAppearance_AppCompat_Display2 = global::PathwayGames.Droid.Resource.Style.Base_TextAppearance_AppCompat_Display2;
+			global::AiForms.Renderers.Droid.Resource.Style.Base_TextAppearance_AppCompat_Display3 = global::PathwayGames.Droid.Resource.Style.Base_TextAppearance_AppCompat_Display3;
+			global::AiForms.Renderers.Droid.Resource.Style.Base_TextAppearance_AppCompat_Display4 = global::PathwayGames.Droid.Resource.Style.Base_TextAppearance_AppCompat_Display4;
+			global::AiForms.Renderers.Droid.Resource.Style.Base_TextAppearance_AppCompat_Headline = global::PathwayGames.Droid.Resource.Style.Base_TextAppearance_AppCompat_Headline;
+			global::AiForms.Renderers.Droid.Resource.Style.Base_TextAppearance_AppCompat_Inverse = global::PathwayGames.Droid.Resource.Style.Base_TextAppearance_AppCompat_Inverse;
+			global::AiForms.Renderers.Droid.Resource.Style.Base_TextAppearance_AppCompat_Large = global::PathwayGames.Droid.Resource.Style.Base_TextAppearance_AppCompat_Large;
+			global::AiForms.Renderers.Droid.Resource.Style.Base_TextAppearance_AppCompat_Large_Inverse = global::PathwayGames.Droid.Resource.Style.Base_TextAppearance_AppCompat_Large_Inverse;
+			global::AiForms.Renderers.Droid.Resource.Style.Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Large = global::PathwayGames.Droid.Resource.Style.Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Large;
+			global::AiForms.Renderers.Droid.Resource.Style.Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Small = global::PathwayGames.Droid.Resource.Style.Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Small;
+			global::AiForms.Renderers.Droid.Resource.Style.Base_TextAppearance_AppCompat_Medium = global::PathwayGames.Droid.Resource.Style.Base_TextAppearance_AppCompat_Medium;
+			global::AiForms.Renderers.Droid.Resource.Style.Base_TextAppearance_AppCompat_Medium_Inverse = global::PathwayGames.Droid.Resource.Style.Base_TextAppearance_AppCompat_Medium_Inverse;
+			global::AiForms.Renderers.Droid.Resource.Style.Base_TextAppearance_AppCompat_Menu = global::PathwayGames.Droid.Resource.Style.Base_TextAppearance_AppCompat_Menu;
+			global::AiForms.Renderers.Droid.Resource.Style.Base_TextAppearance_AppCompat_SearchResult = global::PathwayGames.Droid.Resource.Style.Base_TextAppearance_AppCompat_SearchResult;
+			global::AiForms.Renderers.Droid.Resource.Style.Base_TextAppearance_AppCompat_SearchResult_Subtitle = global::PathwayGames.Droid.Resource.Style.Base_TextAppearance_AppCompat_SearchResult_Subtitle;
+			global::AiForms.Renderers.Droid.Resource.Style.Base_TextAppearance_AppCompat_SearchResult_Title = global::PathwayGames.Droid.Resource.Style.Base_TextAppearance_AppCompat_SearchResult_Title;
+			global::AiForms.Renderers.Droid.Resource.Style.Base_TextAppearance_AppCompat_Small = global::PathwayGames.Droid.Resource.Style.Base_TextAppearance_AppCompat_Small;
+			global::AiForms.Renderers.Droid.Resource.Style.Base_TextAppearance_AppCompat_Small_Inverse = global::PathwayGames.Droid.Resource.Style.Base_TextAppearance_AppCompat_Small_Inverse;
+			global::AiForms.Renderers.Droid.Resource.Style.Base_TextAppearance_AppCompat_Subhead = global::PathwayGames.Droid.Resource.Style.Base_TextAppearance_AppCompat_Subhead;
+			global::AiForms.Renderers.Droid.Resource.Style.Base_TextAppearance_AppCompat_Subhead_Inverse = global::PathwayGames.Droid.Resource.Style.Base_TextAppearance_AppCompat_Subhead_Inverse;
+			global::AiForms.Renderers.Droid.Resource.Style.Base_TextAppearance_AppCompat_Title = global::PathwayGames.Droid.Resource.Style.Base_TextAppearance_AppCompat_Title;
+			global::AiForms.Renderers.Droid.Resource.Style.Base_TextAppearance_AppCompat_Title_Inverse = global::PathwayGames.Droid.Resource.Style.Base_TextAppearance_AppCompat_Title_Inverse;
+			global::AiForms.Renderers.Droid.Resource.Style.Base_TextAppearance_AppCompat_Tooltip = global::PathwayGames.Droid.Resource.Style.Base_TextAppearance_AppCompat_Tooltip;
+			global::AiForms.Renderers.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Menu = global::PathwayGames.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Menu;
+			global::AiForms.Renderers.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle = global::PathwayGames.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle;
+			global::AiForms.Renderers.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse = global::PathwayGames.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse;
+			global::AiForms.Renderers.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Title = global::PathwayGames.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Title;
+			global::AiForms.Renderers.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse = global::PathwayGames.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse;
+			global::AiForms.Renderers.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionMode_Subtitle = global::PathwayGames.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionMode_Subtitle;
+			global::AiForms.Renderers.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionMode_Title = global::PathwayGames.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionMode_Title;
+			global::AiForms.Renderers.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button = global::PathwayGames.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button;
+			global::AiForms.Renderers.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Borderless_Colored = global::PathwayGames.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Borderless_Colored;
+			global::AiForms.Renderers.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Colored = global::PathwayGames.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Colored;
+			global::AiForms.Renderers.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Inverse = global::PathwayGames.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Inverse;
+			global::AiForms.Renderers.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_DropDownItem = global::PathwayGames.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_DropDownItem;
+			global::AiForms.Renderers.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Header = global::PathwayGames.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Header;
+			global::AiForms.Renderers.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Large = global::PathwayGames.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Large;
+			global::AiForms.Renderers.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Small = global::PathwayGames.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Small;
+			global::AiForms.Renderers.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_Switch = global::PathwayGames.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_Switch;
+			global::AiForms.Renderers.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_TextView_SpinnerItem = global::PathwayGames.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_TextView_SpinnerItem;
+			global::AiForms.Renderers.Droid.Resource.Style.Base_TextAppearance_Widget_AppCompat_ExpandedMenu_Item = global::PathwayGames.Droid.Resource.Style.Base_TextAppearance_Widget_AppCompat_ExpandedMenu_Item;
+			global::AiForms.Renderers.Droid.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Subtitle = global::PathwayGames.Droid.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Subtitle;
+			global::AiForms.Renderers.Droid.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Title = global::PathwayGames.Droid.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Title;
+			global::AiForms.Renderers.Droid.Resource.Style.Base_Theme_AppCompat = global::PathwayGames.Droid.Resource.Style.Base_Theme_AppCompat;
+			global::AiForms.Renderers.Droid.Resource.Style.Base_Theme_AppCompat_CompactMenu = global::PathwayGames.Droid.Resource.Style.Base_Theme_AppCompat_CompactMenu;
+			global::AiForms.Renderers.Droid.Resource.Style.Base_Theme_AppCompat_Dialog = global::PathwayGames.Droid.Resource.Style.Base_Theme_AppCompat_Dialog;
+			global::AiForms.Renderers.Droid.Resource.Style.Base_Theme_AppCompat_Dialog_Alert = global::PathwayGames.Droid.Resource.Style.Base_Theme_AppCompat_Dialog_Alert;
+			global::AiForms.Renderers.Droid.Resource.Style.Base_Theme_AppCompat_Dialog_FixedSize = global::PathwayGames.Droid.Resource.Style.Base_Theme_AppCompat_Dialog_FixedSize;
+			global::AiForms.Renderers.Droid.Resource.Style.Base_Theme_AppCompat_Dialog_MinWidth = global::PathwayGames.Droid.Resource.Style.Base_Theme_AppCompat_Dialog_MinWidth;
+			global::AiForms.Renderers.Droid.Resource.Style.Base_Theme_AppCompat_DialogWhenLarge = global::PathwayGames.Droid.Resource.Style.Base_Theme_AppCompat_DialogWhenLarge;
+			global::AiForms.Renderers.Droid.Resource.Style.Base_Theme_AppCompat_Light = global::PathwayGames.Droid.Resource.Style.Base_Theme_AppCompat_Light;
+			global::AiForms.Renderers.Droid.Resource.Style.Base_Theme_AppCompat_Light_DarkActionBar = global::PathwayGames.Droid.Resource.Style.Base_Theme_AppCompat_Light_DarkActionBar;
+			global::AiForms.Renderers.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog = global::PathwayGames.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog;
+			global::AiForms.Renderers.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog_Alert = global::PathwayGames.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog_Alert;
+			global::AiForms.Renderers.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog_FixedSize = global::PathwayGames.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog_FixedSize;
+			global::AiForms.Renderers.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog_MinWidth = global::PathwayGames.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog_MinWidth;
+			global::AiForms.Renderers.Droid.Resource.Style.Base_Theme_AppCompat_Light_DialogWhenLarge = global::PathwayGames.Droid.Resource.Style.Base_Theme_AppCompat_Light_DialogWhenLarge;
+			global::AiForms.Renderers.Droid.Resource.Style.Base_Theme_MaterialComponents = global::PathwayGames.Droid.Resource.Style.Base_Theme_MaterialComponents;
+			global::AiForms.Renderers.Droid.Resource.Style.Base_Theme_MaterialComponents_Bridge = global::PathwayGames.Droid.Resource.Style.Base_Theme_MaterialComponents_Bridge;
+			global::AiForms.Renderers.Droid.Resource.Style.Base_Theme_MaterialComponents_CompactMenu = global::PathwayGames.Droid.Resource.Style.Base_Theme_MaterialComponents_CompactMenu;
+			global::AiForms.Renderers.Droid.Resource.Style.Base_Theme_MaterialComponents_Dialog = global::PathwayGames.Droid.Resource.Style.Base_Theme_MaterialComponents_Dialog;
+			global::AiForms.Renderers.Droid.Resource.Style.Base_Theme_MaterialComponents_Dialog_Alert = global::PathwayGames.Droid.Resource.Style.Base_Theme_MaterialComponents_Dialog_Alert;
+			global::AiForms.Renderers.Droid.Resource.Style.Base_Theme_MaterialComponents_Dialog_FixedSize = global::PathwayGames.Droid.Resource.Style.Base_Theme_MaterialComponents_Dialog_FixedSize;
+			global::AiForms.Renderers.Droid.Resource.Style.Base_Theme_MaterialComponents_Dialog_MinWidth = global::PathwayGames.Droid.Resource.Style.Base_Theme_MaterialComponents_Dialog_MinWidth;
+			global::AiForms.Renderers.Droid.Resource.Style.Base_Theme_MaterialComponents_DialogWhenLarge = global::PathwayGames.Droid.Resource.Style.Base_Theme_MaterialComponents_DialogWhenLarge;
+			global::AiForms.Renderers.Droid.Resource.Style.Base_Theme_MaterialComponents_Light = global::PathwayGames.Droid.Resource.Style.Base_Theme_MaterialComponents_Light;
+			global::AiForms.Renderers.Droid.Resource.Style.Base_Theme_MaterialComponents_Light_Bridge = global::PathwayGames.Droid.Resource.Style.Base_Theme_MaterialComponents_Light_Bridge;
+			global::AiForms.Renderers.Droid.Resource.Style.Base_Theme_MaterialComponents_Light_DarkActionBar = global::PathwayGames.Droid.Resource.Style.Base_Theme_MaterialComponents_Light_DarkActionBar;
+			global::AiForms.Renderers.Droid.Resource.Style.Base_Theme_MaterialComponents_Light_DarkActionBar_Bridge = global::PathwayGames.Droid.Resource.Style.Base_Theme_MaterialComponents_Light_DarkActionBar_Bridge;
+			global::AiForms.Renderers.Droid.Resource.Style.Base_Theme_MaterialComponents_Light_Dialog = global::PathwayGames.Droid.Resource.Style.Base_Theme_MaterialComponents_Light_Dialog;
+			global::AiForms.Renderers.Droid.Resource.Style.Base_Theme_MaterialComponents_Light_Dialog_Alert = global::PathwayGames.Droid.Resource.Style.Base_Theme_MaterialComponents_Light_Dialog_Alert;
+			global::AiForms.Renderers.Droid.Resource.Style.Base_Theme_MaterialComponents_Light_Dialog_FixedSize = global::PathwayGames.Droid.Resource.Style.Base_Theme_MaterialComponents_Light_Dialog_FixedSize;
+			global::AiForms.Renderers.Droid.Resource.Style.Base_Theme_MaterialComponents_Light_Dialog_MinWidth = global::PathwayGames.Droid.Resource.Style.Base_Theme_MaterialComponents_Light_Dialog_MinWidth;
+			global::AiForms.Renderers.Droid.Resource.Style.Base_Theme_MaterialComponents_Light_DialogWhenLarge = global::PathwayGames.Droid.Resource.Style.Base_Theme_MaterialComponents_Light_DialogWhenLarge;
+			global::AiForms.Renderers.Droid.Resource.Style.Base_ThemeOverlay_AppCompat = global::PathwayGames.Droid.Resource.Style.Base_ThemeOverlay_AppCompat;
+			global::AiForms.Renderers.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_ActionBar = global::PathwayGames.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_ActionBar;
+			global::AiForms.Renderers.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Dark = global::PathwayGames.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Dark;
+			global::AiForms.Renderers.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Dark_ActionBar = global::PathwayGames.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Dark_ActionBar;
+			global::AiForms.Renderers.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Dialog = global::PathwayGames.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Dialog;
+			global::AiForms.Renderers.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Dialog_Alert = global::PathwayGames.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Dialog_Alert;
+			global::AiForms.Renderers.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Light = global::PathwayGames.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Light;
+			global::AiForms.Renderers.Droid.Resource.Style.Base_ThemeOverlay_MaterialComponents_Dialog = global::PathwayGames.Droid.Resource.Style.Base_ThemeOverlay_MaterialComponents_Dialog;
+			global::AiForms.Renderers.Droid.Resource.Style.Base_ThemeOverlay_MaterialComponents_Dialog_Alert = global::PathwayGames.Droid.Resource.Style.Base_ThemeOverlay_MaterialComponents_Dialog_Alert;
+			global::AiForms.Renderers.Droid.Resource.Style.Base_V14_Theme_MaterialComponents = global::PathwayGames.Droid.Resource.Style.Base_V14_Theme_MaterialComponents;
+			global::AiForms.Renderers.Droid.Resource.Style.Base_V14_Theme_MaterialComponents_Bridge = global::PathwayGames.Droid.Resource.Style.Base_V14_Theme_MaterialComponents_Bridge;
+			global::AiForms.Renderers.Droid.Resource.Style.Base_V14_Theme_MaterialComponents_Dialog = global::PathwayGames.Droid.Resource.Style.Base_V14_Theme_MaterialComponents_Dialog;
+			global::AiForms.Renderers.Droid.Resource.Style.Base_V14_Theme_MaterialComponents_Light = global::PathwayGames.Droid.Resource.Style.Base_V14_Theme_MaterialComponents_Light;
+			global::AiForms.Renderers.Droid.Resource.Style.Base_V14_Theme_MaterialComponents_Light_Bridge = global::PathwayGames.Droid.Resource.Style.Base_V14_Theme_MaterialComponents_Light_Bridge;
+			global::AiForms.Renderers.Droid.Resource.Style.Base_V14_Theme_MaterialComponents_Light_DarkActionBar_Bridge = global::PathwayGames.Droid.Resource.Style.Base_V14_Theme_MaterialComponents_Light_DarkActionBar_Bridge;
+			global::AiForms.Renderers.Droid.Resource.Style.Base_V14_Theme_MaterialComponents_Light_Dialog = global::PathwayGames.Droid.Resource.Style.Base_V14_Theme_MaterialComponents_Light_Dialog;
+			global::AiForms.Renderers.Droid.Resource.Style.Base_V14_ThemeOverlay_MaterialComponents_Dialog = global::PathwayGames.Droid.Resource.Style.Base_V14_ThemeOverlay_MaterialComponents_Dialog;
+			global::AiForms.Renderers.Droid.Resource.Style.Base_V14_ThemeOverlay_MaterialComponents_Dialog_Alert = global::PathwayGames.Droid.Resource.Style.Base_V14_ThemeOverlay_MaterialComponents_Dialog_Alert;
+			global::AiForms.Renderers.Droid.Resource.Style.Base_V21_Theme_AppCompat = global::PathwayGames.Droid.Resource.Style.Base_V21_Theme_AppCompat;
+			global::AiForms.Renderers.Droid.Resource.Style.Base_V21_Theme_AppCompat_Dialog = global::PathwayGames.Droid.Resource.Style.Base_V21_Theme_AppCompat_Dialog;
+			global::AiForms.Renderers.Droid.Resource.Style.Base_V21_Theme_AppCompat_Light = global::PathwayGames.Droid.Resource.Style.Base_V21_Theme_AppCompat_Light;
+			global::AiForms.Renderers.Droid.Resource.Style.Base_V21_Theme_AppCompat_Light_Dialog = global::PathwayGames.Droid.Resource.Style.Base_V21_Theme_AppCompat_Light_Dialog;
+			global::AiForms.Renderers.Droid.Resource.Style.Base_V21_ThemeOverlay_AppCompat_Dialog = global::PathwayGames.Droid.Resource.Style.Base_V21_ThemeOverlay_AppCompat_Dialog;
+			global::AiForms.Renderers.Droid.Resource.Style.Base_V22_Theme_AppCompat = global::PathwayGames.Droid.Resource.Style.Base_V22_Theme_AppCompat;
+			global::AiForms.Renderers.Droid.Resource.Style.Base_V22_Theme_AppCompat_Light = global::PathwayGames.Droid.Resource.Style.Base_V22_Theme_AppCompat_Light;
+			global::AiForms.Renderers.Droid.Resource.Style.Base_V23_Theme_AppCompat = global::PathwayGames.Droid.Resource.Style.Base_V23_Theme_AppCompat;
+			global::AiForms.Renderers.Droid.Resource.Style.Base_V23_Theme_AppCompat_Light = global::PathwayGames.Droid.Resource.Style.Base_V23_Theme_AppCompat_Light;
+			global::AiForms.Renderers.Droid.Resource.Style.Base_V26_Theme_AppCompat = global::PathwayGames.Droid.Resource.Style.Base_V26_Theme_AppCompat;
+			global::AiForms.Renderers.Droid.Resource.Style.Base_V26_Theme_AppCompat_Light = global::PathwayGames.Droid.Resource.Style.Base_V26_Theme_AppCompat_Light;
+			global::AiForms.Renderers.Droid.Resource.Style.Base_V26_Widget_AppCompat_Toolbar = global::PathwayGames.Droid.Resource.Style.Base_V26_Widget_AppCompat_Toolbar;
+			global::AiForms.Renderers.Droid.Resource.Style.Base_V28_Theme_AppCompat = global::PathwayGames.Droid.Resource.Style.Base_V28_Theme_AppCompat;
+			global::AiForms.Renderers.Droid.Resource.Style.Base_V28_Theme_AppCompat_Light = global::PathwayGames.Droid.Resource.Style.Base_V28_Theme_AppCompat_Light;
+			global::AiForms.Renderers.Droid.Resource.Style.Base_V7_Theme_AppCompat = global::PathwayGames.Droid.Resource.Style.Base_V7_Theme_AppCompat;
+			global::AiForms.Renderers.Droid.Resource.Style.Base_V7_Theme_AppCompat_Dialog = global::PathwayGames.Droid.Resource.Style.Base_V7_Theme_AppCompat_Dialog;
+			global::AiForms.Renderers.Droid.Resource.Style.Base_V7_Theme_AppCompat_Light = global::PathwayGames.Droid.Resource.Style.Base_V7_Theme_AppCompat_Light;
+			global::AiForms.Renderers.Droid.Resource.Style.Base_V7_Theme_AppCompat_Light_Dialog = global::PathwayGames.Droid.Resource.Style.Base_V7_Theme_AppCompat_Light_Dialog;
+			global::AiForms.Renderers.Droid.Resource.Style.Base_V7_ThemeOverlay_AppCompat_Dialog = global::PathwayGames.Droid.Resource.Style.Base_V7_ThemeOverlay_AppCompat_Dialog;
+			global::AiForms.Renderers.Droid.Resource.Style.Base_V7_Widget_AppCompat_AutoCompleteTextView = global::PathwayGames.Droid.Resource.Style.Base_V7_Widget_AppCompat_AutoCompleteTextView;
+			global::AiForms.Renderers.Droid.Resource.Style.Base_V7_Widget_AppCompat_EditText = global::PathwayGames.Droid.Resource.Style.Base_V7_Widget_AppCompat_EditText;
+			global::AiForms.Renderers.Droid.Resource.Style.Base_V7_Widget_AppCompat_Toolbar = global::PathwayGames.Droid.Resource.Style.Base_V7_Widget_AppCompat_Toolbar;
+			global::AiForms.Renderers.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar = global::PathwayGames.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar;
+			global::AiForms.Renderers.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar_Solid = global::PathwayGames.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar_Solid;
+			global::AiForms.Renderers.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar_TabBar = global::PathwayGames.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar_TabBar;
+			global::AiForms.Renderers.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar_TabText = global::PathwayGames.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar_TabText;
+			global::AiForms.Renderers.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar_TabView = global::PathwayGames.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar_TabView;
+			global::AiForms.Renderers.Droid.Resource.Style.Base_Widget_AppCompat_ActionButton = global::PathwayGames.Droid.Resource.Style.Base_Widget_AppCompat_ActionButton;
+			global::AiForms.Renderers.Droid.Resource.Style.Base_Widget_AppCompat_ActionButton_CloseMode = global::PathwayGames.Droid.Resource.Style.Base_Widget_AppCompat_ActionButton_CloseMode;
+			global::AiForms.Renderers.Droid.Resource.Style.Base_Widget_AppCompat_ActionButton_Overflow = global::PathwayGames.Droid.Resource.Style.Base_Widget_AppCompat_ActionButton_Overflow;
+			global::AiForms.Renderers.Droid.Resource.Style.Base_Widget_AppCompat_ActionMode = global::PathwayGames.Droid.Resource.Style.Base_Widget_AppCompat_ActionMode;
+			global::AiForms.Renderers.Droid.Resource.Style.Base_Widget_AppCompat_ActivityChooserView = global::PathwayGames.Droid.Resource.Style.Base_Widget_AppCompat_ActivityChooserView;
+			global::AiForms.Renderers.Droid.Resource.Style.Base_Widget_AppCompat_AutoCompleteTextView = global::PathwayGames.Droid.Resource.Style.Base_Widget_AppCompat_AutoCompleteTextView;
+			global::AiForms.Renderers.Droid.Resource.Style.Base_Widget_AppCompat_Button = global::PathwayGames.Droid.Resource.Style.Base_Widget_AppCompat_Button;
+			global::AiForms.Renderers.Droid.Resource.Style.Base_Widget_AppCompat_Button_Borderless = global::PathwayGames.Droid.Resource.Style.Base_Widget_AppCompat_Button_Borderless;
+			global::AiForms.Renderers.Droid.Resource.Style.Base_Widget_AppCompat_Button_Borderless_Colored = global::PathwayGames.Droid.Resource.Style.Base_Widget_AppCompat_Button_Borderless_Colored;
+			global::AiForms.Renderers.Droid.Resource.Style.Base_Widget_AppCompat_Button_ButtonBar_AlertDialog = global::PathwayGames.Droid.Resource.Style.Base_Widget_AppCompat_Button_ButtonBar_AlertDialog;
+			global::AiForms.Renderers.Droid.Resource.Style.Base_Widget_AppCompat_Button_Colored = global::PathwayGames.Droid.Resource.Style.Base_Widget_AppCompat_Button_Colored;
+			global::AiForms.Renderers.Droid.Resource.Style.Base_Widget_AppCompat_Button_Small = global::PathwayGames.Droid.Resource.Style.Base_Widget_AppCompat_Button_Small;
+			global::AiForms.Renderers.Droid.Resource.Style.Base_Widget_AppCompat_ButtonBar = global::PathwayGames.Droid.Resource.Style.Base_Widget_AppCompat_ButtonBar;
+			global::AiForms.Renderers.Droid.Resource.Style.Base_Widget_AppCompat_ButtonBar_AlertDialog = global::PathwayGames.Droid.Resource.Style.Base_Widget_AppCompat_ButtonBar_AlertDialog;
+			global::AiForms.Renderers.Droid.Resource.Style.Base_Widget_AppCompat_CompoundButton_CheckBox = global::PathwayGames.Droid.Resource.Style.Base_Widget_AppCompat_CompoundButton_CheckBox;
+			global::AiForms.Renderers.Droid.Resource.Style.Base_Widget_AppCompat_CompoundButton_RadioButton = global::PathwayGames.Droid.Resource.Style.Base_Widget_AppCompat_CompoundButton_RadioButton;
+			global::AiForms.Renderers.Droid.Resource.Style.Base_Widget_AppCompat_CompoundButton_Switch = global::PathwayGames.Droid.Resource.Style.Base_Widget_AppCompat_CompoundButton_Switch;
+			global::AiForms.Renderers.Droid.Resource.Style.Base_Widget_AppCompat_DrawerArrowToggle = global::PathwayGames.Droid.Resource.Style.Base_Widget_AppCompat_DrawerArrowToggle;
+			global::AiForms.Renderers.Droid.Resource.Style.Base_Widget_AppCompat_DrawerArrowToggle_Common = global::PathwayGames.Droid.Resource.Style.Base_Widget_AppCompat_DrawerArrowToggle_Common;
+			global::AiForms.Renderers.Droid.Resource.Style.Base_Widget_AppCompat_DropDownItem_Spinner = global::PathwayGames.Droid.Resource.Style.Base_Widget_AppCompat_DropDownItem_Spinner;
+			global::AiForms.Renderers.Droid.Resource.Style.Base_Widget_AppCompat_EditText = global::PathwayGames.Droid.Resource.Style.Base_Widget_AppCompat_EditText;
+			global::AiForms.Renderers.Droid.Resource.Style.Base_Widget_AppCompat_ImageButton = global::PathwayGames.Droid.Resource.Style.Base_Widget_AppCompat_ImageButton;
+			global::AiForms.Renderers.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar = global::PathwayGames.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar;
+			global::AiForms.Renderers.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_Solid = global::PathwayGames.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_Solid;
+			global::AiForms.Renderers.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabBar = global::PathwayGames.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabBar;
+			global::AiForms.Renderers.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabText = global::PathwayGames.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabText;
+			global::AiForms.Renderers.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabText_Inverse = global::PathwayGames.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabText_Inverse;
+			global::AiForms.Renderers.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabView = global::PathwayGames.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabView;
+			global::AiForms.Renderers.Droid.Resource.Style.Base_Widget_AppCompat_Light_PopupMenu = global::PathwayGames.Droid.Resource.Style.Base_Widget_AppCompat_Light_PopupMenu;
+			global::AiForms.Renderers.Droid.Resource.Style.Base_Widget_AppCompat_Light_PopupMenu_Overflow = global::PathwayGames.Droid.Resource.Style.Base_Widget_AppCompat_Light_PopupMenu_Overflow;
+			global::AiForms.Renderers.Droid.Resource.Style.Base_Widget_AppCompat_ListMenuView = global::PathwayGames.Droid.Resource.Style.Base_Widget_AppCompat_ListMenuView;
+			global::AiForms.Renderers.Droid.Resource.Style.Base_Widget_AppCompat_ListPopupWindow = global::PathwayGames.Droid.Resource.Style.Base_Widget_AppCompat_ListPopupWindow;
+			global::AiForms.Renderers.Droid.Resource.Style.Base_Widget_AppCompat_ListView = global::PathwayGames.Droid.Resource.Style.Base_Widget_AppCompat_ListView;
+			global::AiForms.Renderers.Droid.Resource.Style.Base_Widget_AppCompat_ListView_DropDown = global::PathwayGames.Droid.Resource.Style.Base_Widget_AppCompat_ListView_DropDown;
+			global::AiForms.Renderers.Droid.Resource.Style.Base_Widget_AppCompat_ListView_Menu = global::PathwayGames.Droid.Resource.Style.Base_Widget_AppCompat_ListView_Menu;
+			global::AiForms.Renderers.Droid.Resource.Style.Base_Widget_AppCompat_PopupMenu = global::PathwayGames.Droid.Resource.Style.Base_Widget_AppCompat_PopupMenu;
+			global::AiForms.Renderers.Droid.Resource.Style.Base_Widget_AppCompat_PopupMenu_Overflow = global::PathwayGames.Droid.Resource.Style.Base_Widget_AppCompat_PopupMenu_Overflow;
+			global::AiForms.Renderers.Droid.Resource.Style.Base_Widget_AppCompat_PopupWindow = global::PathwayGames.Droid.Resource.Style.Base_Widget_AppCompat_PopupWindow;
+			global::AiForms.Renderers.Droid.Resource.Style.Base_Widget_AppCompat_ProgressBar = global::PathwayGames.Droid.Resource.Style.Base_Widget_AppCompat_ProgressBar;
+			global::AiForms.Renderers.Droid.Resource.Style.Base_Widget_AppCompat_ProgressBar_Horizontal = global::PathwayGames.Droid.Resource.Style.Base_Widget_AppCompat_ProgressBar_Horizontal;
+			global::AiForms.Renderers.Droid.Resource.Style.Base_Widget_AppCompat_RatingBar = global::PathwayGames.Droid.Resource.Style.Base_Widget_AppCompat_RatingBar;
+			global::AiForms.Renderers.Droid.Resource.Style.Base_Widget_AppCompat_RatingBar_Indicator = global::PathwayGames.Droid.Resource.Style.Base_Widget_AppCompat_RatingBar_Indicator;
+			global::AiForms.Renderers.Droid.Resource.Style.Base_Widget_AppCompat_RatingBar_Small = global::PathwayGames.Droid.Resource.Style.Base_Widget_AppCompat_RatingBar_Small;
+			global::AiForms.Renderers.Droid.Resource.Style.Base_Widget_AppCompat_SearchView = global::PathwayGames.Droid.Resource.Style.Base_Widget_AppCompat_SearchView;
+			global::AiForms.Renderers.Droid.Resource.Style.Base_Widget_AppCompat_SearchView_ActionBar = global::PathwayGames.Droid.Resource.Style.Base_Widget_AppCompat_SearchView_ActionBar;
+			global::AiForms.Renderers.Droid.Resource.Style.Base_Widget_AppCompat_SeekBar = global::PathwayGames.Droid.Resource.Style.Base_Widget_AppCompat_SeekBar;
+			global::AiForms.Renderers.Droid.Resource.Style.Base_Widget_AppCompat_SeekBar_Discrete = global::PathwayGames.Droid.Resource.Style.Base_Widget_AppCompat_SeekBar_Discrete;
+			global::AiForms.Renderers.Droid.Resource.Style.Base_Widget_AppCompat_Spinner = global::PathwayGames.Droid.Resource.Style.Base_Widget_AppCompat_Spinner;
+			global::AiForms.Renderers.Droid.Resource.Style.Base_Widget_AppCompat_Spinner_Underlined = global::PathwayGames.Droid.Resource.Style.Base_Widget_AppCompat_Spinner_Underlined;
+			global::AiForms.Renderers.Droid.Resource.Style.Base_Widget_AppCompat_TextView_SpinnerItem = global::PathwayGames.Droid.Resource.Style.Base_Widget_AppCompat_TextView_SpinnerItem;
+			global::AiForms.Renderers.Droid.Resource.Style.Base_Widget_AppCompat_Toolbar = global::PathwayGames.Droid.Resource.Style.Base_Widget_AppCompat_Toolbar;
+			global::AiForms.Renderers.Droid.Resource.Style.Base_Widget_AppCompat_Toolbar_Button_Navigation = global::PathwayGames.Droid.Resource.Style.Base_Widget_AppCompat_Toolbar_Button_Navigation;
+			global::AiForms.Renderers.Droid.Resource.Style.Base_Widget_Design_TabLayout = global::PathwayGames.Droid.Resource.Style.Base_Widget_Design_TabLayout;
+			global::AiForms.Renderers.Droid.Resource.Style.Base_Widget_MaterialComponents_Chip = global::PathwayGames.Droid.Resource.Style.Base_Widget_MaterialComponents_Chip;
+			global::AiForms.Renderers.Droid.Resource.Style.Base_Widget_MaterialComponents_TextInputEditText = global::PathwayGames.Droid.Resource.Style.Base_Widget_MaterialComponents_TextInputEditText;
+			global::AiForms.Renderers.Droid.Resource.Style.Base_Widget_MaterialComponents_TextInputLayout = global::PathwayGames.Droid.Resource.Style.Base_Widget_MaterialComponents_TextInputLayout;
+			global::AiForms.Renderers.Droid.Resource.Style.CardView = global::PathwayGames.Droid.Resource.Style.CardView;
+			global::AiForms.Renderers.Droid.Resource.Style.CardView_Dark = global::PathwayGames.Droid.Resource.Style.CardView_Dark;
+			global::AiForms.Renderers.Droid.Resource.Style.CardView_Light = global::PathwayGames.Droid.Resource.Style.CardView_Light;
+			global::AiForms.Renderers.Droid.Resource.Style.Platform_AppCompat = global::PathwayGames.Droid.Resource.Style.Platform_AppCompat;
+			global::AiForms.Renderers.Droid.Resource.Style.Platform_AppCompat_Light = global::PathwayGames.Droid.Resource.Style.Platform_AppCompat_Light;
+			global::AiForms.Renderers.Droid.Resource.Style.Platform_MaterialComponents = global::PathwayGames.Droid.Resource.Style.Platform_MaterialComponents;
+			global::AiForms.Renderers.Droid.Resource.Style.Platform_MaterialComponents_Dialog = global::PathwayGames.Droid.Resource.Style.Platform_MaterialComponents_Dialog;
+			global::AiForms.Renderers.Droid.Resource.Style.Platform_MaterialComponents_Light = global::PathwayGames.Droid.Resource.Style.Platform_MaterialComponents_Light;
+			global::AiForms.Renderers.Droid.Resource.Style.Platform_MaterialComponents_Light_Dialog = global::PathwayGames.Droid.Resource.Style.Platform_MaterialComponents_Light_Dialog;
+			global::AiForms.Renderers.Droid.Resource.Style.Platform_ThemeOverlay_AppCompat = global::PathwayGames.Droid.Resource.Style.Platform_ThemeOverlay_AppCompat;
+			global::AiForms.Renderers.Droid.Resource.Style.Platform_ThemeOverlay_AppCompat_Dark = global::PathwayGames.Droid.Resource.Style.Platform_ThemeOverlay_AppCompat_Dark;
+			global::AiForms.Renderers.Droid.Resource.Style.Platform_ThemeOverlay_AppCompat_Light = global::PathwayGames.Droid.Resource.Style.Platform_ThemeOverlay_AppCompat_Light;
+			global::AiForms.Renderers.Droid.Resource.Style.Platform_V21_AppCompat = global::PathwayGames.Droid.Resource.Style.Platform_V21_AppCompat;
+			global::AiForms.Renderers.Droid.Resource.Style.Platform_V21_AppCompat_Light = global::PathwayGames.Droid.Resource.Style.Platform_V21_AppCompat_Light;
+			global::AiForms.Renderers.Droid.Resource.Style.Platform_V25_AppCompat = global::PathwayGames.Droid.Resource.Style.Platform_V25_AppCompat;
+			global::AiForms.Renderers.Droid.Resource.Style.Platform_V25_AppCompat_Light = global::PathwayGames.Droid.Resource.Style.Platform_V25_AppCompat_Light;
+			global::AiForms.Renderers.Droid.Resource.Style.Platform_Widget_AppCompat_Spinner = global::PathwayGames.Droid.Resource.Style.Platform_Widget_AppCompat_Spinner;
+			global::AiForms.Renderers.Droid.Resource.Style.RtlOverlay_DialogWindowTitle_AppCompat = global::PathwayGames.Droid.Resource.Style.RtlOverlay_DialogWindowTitle_AppCompat;
+			global::AiForms.Renderers.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_ActionBar_TitleItem = global::PathwayGames.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_ActionBar_TitleItem;
+			global::AiForms.Renderers.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_DialogTitle_Icon = global::PathwayGames.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_DialogTitle_Icon;
+			global::AiForms.Renderers.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem = global::PathwayGames.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem;
+			global::AiForms.Renderers.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_InternalGroup = global::PathwayGames.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_InternalGroup;
+			global::AiForms.Renderers.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_Shortcut = global::PathwayGames.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_Shortcut;
+			global::AiForms.Renderers.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_SubmenuArrow = global::PathwayGames.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_SubmenuArrow;
+			global::AiForms.Renderers.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_Text = global::PathwayGames.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_Text;
+			global::AiForms.Renderers.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_Title = global::PathwayGames.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_Title;
+			global::AiForms.Renderers.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown = global::PathwayGames.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown;
+			global::AiForms.Renderers.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon1 = global::PathwayGames.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon1;
+			global::AiForms.Renderers.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon2 = global::PathwayGames.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon2;
+			global::AiForms.Renderers.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Query = global::PathwayGames.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Query;
+			global::AiForms.Renderers.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Text = global::PathwayGames.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Text;
+			global::AiForms.Renderers.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_SearchView_MagIcon = global::PathwayGames.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_SearchView_MagIcon;
+			global::AiForms.Renderers.Droid.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton = global::PathwayGames.Droid.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton;
+			global::AiForms.Renderers.Droid.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton_Overflow = global::PathwayGames.Droid.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton_Overflow;
+			global::AiForms.Renderers.Droid.Resource.Style.TextAppearance_AppCompat = global::PathwayGames.Droid.Resource.Style.TextAppearance_AppCompat;
+			global::AiForms.Renderers.Droid.Resource.Style.TextAppearance_AppCompat_Body1 = global::PathwayGames.Droid.Resource.Style.TextAppearance_AppCompat_Body1;
+			global::AiForms.Renderers.Droid.Resource.Style.TextAppearance_AppCompat_Body2 = global::PathwayGames.Droid.Resource.Style.TextAppearance_AppCompat_Body2;
+			global::AiForms.Renderers.Droid.Resource.Style.TextAppearance_AppCompat_Button = global::PathwayGames.Droid.Resource.Style.TextAppearance_AppCompat_Button;
+			global::AiForms.Renderers.Droid.Resource.Style.TextAppearance_AppCompat_Caption = global::PathwayGames.Droid.Resource.Style.TextAppearance_AppCompat_Caption;
+			global::AiForms.Renderers.Droid.Resource.Style.TextAppearance_AppCompat_Display1 = global::PathwayGames.Droid.Resource.Style.TextAppearance_AppCompat_Display1;
+			global::AiForms.Renderers.Droid.Resource.Style.TextAppearance_AppCompat_Display2 = global::PathwayGames.Droid.Resource.Style.TextAppearance_AppCompat_Display2;
+			global::AiForms.Renderers.Droid.Resource.Style.TextAppearance_AppCompat_Display3 = global::PathwayGames.Droid.Resource.Style.TextAppearance_AppCompat_Display3;
+			global::AiForms.Renderers.Droid.Resource.Style.TextAppearance_AppCompat_Display4 = global::PathwayGames.Droid.Resource.Style.TextAppearance_AppCompat_Display4;
+			global::AiForms.Renderers.Droid.Resource.Style.TextAppearance_AppCompat_Headline = global::PathwayGames.Droid.Resource.Style.TextAppearance_AppCompat_Headline;
+			global::AiForms.Renderers.Droid.Resource.Style.TextAppearance_AppCompat_Inverse = global::PathwayGames.Droid.Resource.Style.TextAppearance_AppCompat_Inverse;
+			global::AiForms.Renderers.Droid.Resource.Style.TextAppearance_AppCompat_Large = global::PathwayGames.Droid.Resource.Style.TextAppearance_AppCompat_Large;
+			global::AiForms.Renderers.Droid.Resource.Style.TextAppearance_AppCompat_Large_Inverse = global::PathwayGames.Droid.Resource.Style.TextAppearance_AppCompat_Large_Inverse;
+			global::AiForms.Renderers.Droid.Resource.Style.TextAppearance_AppCompat_Light_SearchResult_Subtitle = global::PathwayGames.Droid.Resource.Style.TextAppearance_AppCompat_Light_SearchResult_Subtitle;
+			global::AiForms.Renderers.Droid.Resource.Style.TextAppearance_AppCompat_Light_SearchResult_Title = global::PathwayGames.Droid.Resource.Style.TextAppearance_AppCompat_Light_SearchResult_Title;
+			global::AiForms.Renderers.Droid.Resource.Style.TextAppearance_AppCompat_Light_Widget_PopupMenu_Large = global::PathwayGames.Droid.Resource.Style.TextAppearance_AppCompat_Light_Widget_PopupMenu_Large;
+			global::AiForms.Renderers.Droid.Resource.Style.TextAppearance_AppCompat_Light_Widget_PopupMenu_Small = global::PathwayGames.Droid.Resource.Style.TextAppearance_AppCompat_Light_Widget_PopupMenu_Small;
+			global::AiForms.Renderers.Droid.Resource.Style.TextAppearance_AppCompat_Medium = global::PathwayGames.Droid.Resource.Style.TextAppearance_AppCompat_Medium;
+			global::AiForms.Renderers.Droid.Resource.Style.TextAppearance_AppCompat_Medium_Inverse = global::PathwayGames.Droid.Resource.Style.TextAppearance_AppCompat_Medium_Inverse;
+			global::AiForms.Renderers.Droid.Resource.Style.TextAppearance_AppCompat_Menu = global::PathwayGames.Droid.Resource.Style.TextAppearance_AppCompat_Menu;
+			global::AiForms.Renderers.Droid.Resource.Style.TextAppearance_AppCompat_SearchResult_Subtitle = global::PathwayGames.Droid.Resource.Style.TextAppearance_AppCompat_SearchResult_Subtitle;
+			global::AiForms.Renderers.Droid.Resource.Style.TextAppearance_AppCompat_SearchResult_Title = global::PathwayGames.Droid.Resource.Style.TextAppearance_AppCompat_SearchResult_Title;
+			global::AiForms.Renderers.Droid.Resource.Style.TextAppearance_AppCompat_Small = global::PathwayGames.Droid.Resource.Style.TextAppearance_AppCompat_Small;
+			global::AiForms.Renderers.Droid.Resource.Style.TextAppearance_AppCompat_Small_Inverse = global::PathwayGames.Droid.Resource.Style.TextAppearance_AppCompat_Small_Inverse;
+			global::AiForms.Renderers.Droid.Resource.Style.TextAppearance_AppCompat_Subhead = global::PathwayGames.Droid.Resource.Style.TextAppearance_AppCompat_Subhead;
+			global::AiForms.Renderers.Droid.Resource.Style.TextAppearance_AppCompat_Subhead_Inverse = global::PathwayGames.Droid.Resource.Style.TextAppearance_AppCompat_Subhead_Inverse;
+			global::AiForms.Renderers.Droid.Resource.Style.TextAppearance_AppCompat_Title = global::PathwayGames.Droid.Resource.Style.TextAppearance_AppCompat_Title;
+			global::AiForms.Renderers.Droid.Resource.Style.TextAppearance_AppCompat_Title_Inverse = global::PathwayGames.Droid.Resource.Style.TextAppearance_AppCompat_Title_Inverse;
+			global::AiForms.Renderers.Droid.Resource.Style.TextAppearance_AppCompat_Tooltip = global::PathwayGames.Droid.Resource.Style.TextAppearance_AppCompat_Tooltip;
+			global::AiForms.Renderers.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Menu = global::PathwayGames.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Menu;
+			global::AiForms.Renderers.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Subtitle = global::PathwayGames.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Subtitle;
+			global::AiForms.Renderers.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse = global::PathwayGames.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse;
+			global::AiForms.Renderers.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Title = global::PathwayGames.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Title;
+			global::AiForms.Renderers.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse = global::PathwayGames.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse;
+			global::AiForms.Renderers.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Subtitle = global::PathwayGames.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Subtitle;
+			global::AiForms.Renderers.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Subtitle_Inverse = global::PathwayGames.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Subtitle_Inverse;
+			global::AiForms.Renderers.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Title = global::PathwayGames.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Title;
+			global::AiForms.Renderers.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Title_Inverse = global::PathwayGames.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Title_Inverse;
+			global::AiForms.Renderers.Droid.Resource.Style.TextAppearance_AppCompat_Widget_Button = global::PathwayGames.Droid.Resource.Style.TextAppearance_AppCompat_Widget_Button;
+			global::AiForms.Renderers.Droid.Resource.Style.TextAppearance_AppCompat_Widget_Button_Borderless_Colored = global::PathwayGames.Droid.Resource.Style.TextAppearance_AppCompat_Widget_Button_Borderless_Colored;
+			global::AiForms.Renderers.Droid.Resource.Style.TextAppearance_AppCompat_Widget_Button_Colored = global::PathwayGames.Droid.Resource.Style.TextAppearance_AppCompat_Widget_Button_Colored;
+			global::AiForms.Renderers.Droid.Resource.Style.TextAppearance_AppCompat_Widget_Button_Inverse = global::PathwayGames.Droid.Resource.Style.TextAppearance_AppCompat_Widget_Button_Inverse;
+			global::AiForms.Renderers.Droid.Resource.Style.TextAppearance_AppCompat_Widget_DropDownItem = global::PathwayGames.Droid.Resource.Style.TextAppearance_AppCompat_Widget_DropDownItem;
+			global::AiForms.Renderers.Droid.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Header = global::PathwayGames.Droid.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Header;
+			global::AiForms.Renderers.Droid.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Large = global::PathwayGames.Droid.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Large;
+			global::AiForms.Renderers.Droid.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Small = global::PathwayGames.Droid.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Small;
+			global::AiForms.Renderers.Droid.Resource.Style.TextAppearance_AppCompat_Widget_Switch = global::PathwayGames.Droid.Resource.Style.TextAppearance_AppCompat_Widget_Switch;
+			global::AiForms.Renderers.Droid.Resource.Style.TextAppearance_AppCompat_Widget_TextView_SpinnerItem = global::PathwayGames.Droid.Resource.Style.TextAppearance_AppCompat_Widget_TextView_SpinnerItem;
+			global::AiForms.Renderers.Droid.Resource.Style.TextAppearance_Compat_Notification = global::PathwayGames.Droid.Resource.Style.TextAppearance_Compat_Notification;
+			global::AiForms.Renderers.Droid.Resource.Style.TextAppearance_Compat_Notification_Info = global::PathwayGames.Droid.Resource.Style.TextAppearance_Compat_Notification_Info;
+			global::AiForms.Renderers.Droid.Resource.Style.TextAppearance_Compat_Notification_Info_Media = global::PathwayGames.Droid.Resource.Style.TextAppearance_Compat_Notification_Info_Media;
+			global::AiForms.Renderers.Droid.Resource.Style.TextAppearance_Compat_Notification_Line2 = global::PathwayGames.Droid.Resource.Style.TextAppearance_Compat_Notification_Line2;
+			global::AiForms.Renderers.Droid.Resource.Style.TextAppearance_Compat_Notification_Line2_Media = global::PathwayGames.Droid.Resource.Style.TextAppearance_Compat_Notification_Line2_Media;
+			global::AiForms.Renderers.Droid.Resource.Style.TextAppearance_Compat_Notification_Media = global::PathwayGames.Droid.Resource.Style.TextAppearance_Compat_Notification_Media;
+			global::AiForms.Renderers.Droid.Resource.Style.TextAppearance_Compat_Notification_Time = global::PathwayGames.Droid.Resource.Style.TextAppearance_Compat_Notification_Time;
+			global::AiForms.Renderers.Droid.Resource.Style.TextAppearance_Compat_Notification_Time_Media = global::PathwayGames.Droid.Resource.Style.TextAppearance_Compat_Notification_Time_Media;
+			global::AiForms.Renderers.Droid.Resource.Style.TextAppearance_Compat_Notification_Title = global::PathwayGames.Droid.Resource.Style.TextAppearance_Compat_Notification_Title;
+			global::AiForms.Renderers.Droid.Resource.Style.TextAppearance_Compat_Notification_Title_Media = global::PathwayGames.Droid.Resource.Style.TextAppearance_Compat_Notification_Title_Media;
+			global::AiForms.Renderers.Droid.Resource.Style.TextAppearance_Design_CollapsingToolbar_Expanded = global::PathwayGames.Droid.Resource.Style.TextAppearance_Design_CollapsingToolbar_Expanded;
+			global::AiForms.Renderers.Droid.Resource.Style.TextAppearance_Design_Counter = global::PathwayGames.Droid.Resource.Style.TextAppearance_Design_Counter;
+			global::AiForms.Renderers.Droid.Resource.Style.TextAppearance_Design_Counter_Overflow = global::PathwayGames.Droid.Resource.Style.TextAppearance_Design_Counter_Overflow;
+			global::AiForms.Renderers.Droid.Resource.Style.TextAppearance_Design_Error = global::PathwayGames.Droid.Resource.Style.TextAppearance_Design_Error;
+			global::AiForms.Renderers.Droid.Resource.Style.TextAppearance_Design_HelperText = global::PathwayGames.Droid.Resource.Style.TextAppearance_Design_HelperText;
+			global::AiForms.Renderers.Droid.Resource.Style.TextAppearance_Design_Hint = global::PathwayGames.Droid.Resource.Style.TextAppearance_Design_Hint;
+			global::AiForms.Renderers.Droid.Resource.Style.TextAppearance_Design_Snackbar_Message = global::PathwayGames.Droid.Resource.Style.TextAppearance_Design_Snackbar_Message;
+			global::AiForms.Renderers.Droid.Resource.Style.TextAppearance_Design_Tab = global::PathwayGames.Droid.Resource.Style.TextAppearance_Design_Tab;
+			global::AiForms.Renderers.Droid.Resource.Style.TextAppearance_MaterialComponents_Body1 = global::PathwayGames.Droid.Resource.Style.TextAppearance_MaterialComponents_Body1;
+			global::AiForms.Renderers.Droid.Resource.Style.TextAppearance_MaterialComponents_Body2 = global::PathwayGames.Droid.Resource.Style.TextAppearance_MaterialComponents_Body2;
+			global::AiForms.Renderers.Droid.Resource.Style.TextAppearance_MaterialComponents_Button = global::PathwayGames.Droid.Resource.Style.TextAppearance_MaterialComponents_Button;
+			global::AiForms.Renderers.Droid.Resource.Style.TextAppearance_MaterialComponents_Caption = global::PathwayGames.Droid.Resource.Style.TextAppearance_MaterialComponents_Caption;
+			global::AiForms.Renderers.Droid.Resource.Style.TextAppearance_MaterialComponents_Chip = global::PathwayGames.Droid.Resource.Style.TextAppearance_MaterialComponents_Chip;
+			global::AiForms.Renderers.Droid.Resource.Style.TextAppearance_MaterialComponents_Headline1 = global::PathwayGames.Droid.Resource.Style.TextAppearance_MaterialComponents_Headline1;
+			global::AiForms.Renderers.Droid.Resource.Style.TextAppearance_MaterialComponents_Headline2 = global::PathwayGames.Droid.Resource.Style.TextAppearance_MaterialComponents_Headline2;
+			global::AiForms.Renderers.Droid.Resource.Style.TextAppearance_MaterialComponents_Headline3 = global::PathwayGames.Droid.Resource.Style.TextAppearance_MaterialComponents_Headline3;
+			global::AiForms.Renderers.Droid.Resource.Style.TextAppearance_MaterialComponents_Headline4 = global::PathwayGames.Droid.Resource.Style.TextAppearance_MaterialComponents_Headline4;
+			global::AiForms.Renderers.Droid.Resource.Style.TextAppearance_MaterialComponents_Headline5 = global::PathwayGames.Droid.Resource.Style.TextAppearance_MaterialComponents_Headline5;
+			global::AiForms.Renderers.Droid.Resource.Style.TextAppearance_MaterialComponents_Headline6 = global::PathwayGames.Droid.Resource.Style.TextAppearance_MaterialComponents_Headline6;
+			global::AiForms.Renderers.Droid.Resource.Style.TextAppearance_MaterialComponents_Overline = global::PathwayGames.Droid.Resource.Style.TextAppearance_MaterialComponents_Overline;
+			global::AiForms.Renderers.Droid.Resource.Style.TextAppearance_MaterialComponents_Subtitle1 = global::PathwayGames.Droid.Resource.Style.TextAppearance_MaterialComponents_Subtitle1;
+			global::AiForms.Renderers.Droid.Resource.Style.TextAppearance_MaterialComponents_Subtitle2 = global::PathwayGames.Droid.Resource.Style.TextAppearance_MaterialComponents_Subtitle2;
+			global::AiForms.Renderers.Droid.Resource.Style.TextAppearance_MaterialComponents_Tab = global::PathwayGames.Droid.Resource.Style.TextAppearance_MaterialComponents_Tab;
+			global::AiForms.Renderers.Droid.Resource.Style.TextAppearance_MediaRouter_PrimaryText = global::PathwayGames.Droid.Resource.Style.TextAppearance_MediaRouter_PrimaryText;
+			global::AiForms.Renderers.Droid.Resource.Style.TextAppearance_MediaRouter_SecondaryText = global::PathwayGames.Droid.Resource.Style.TextAppearance_MediaRouter_SecondaryText;
+			global::AiForms.Renderers.Droid.Resource.Style.TextAppearance_MediaRouter_Title = global::PathwayGames.Droid.Resource.Style.TextAppearance_MediaRouter_Title;
+			global::AiForms.Renderers.Droid.Resource.Style.TextAppearance_Widget_AppCompat_ExpandedMenu_Item = global::PathwayGames.Droid.Resource.Style.TextAppearance_Widget_AppCompat_ExpandedMenu_Item;
+			global::AiForms.Renderers.Droid.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Subtitle = global::PathwayGames.Droid.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Subtitle;
+			global::AiForms.Renderers.Droid.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Title = global::PathwayGames.Droid.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Title;
+			global::AiForms.Renderers.Droid.Resource.Style.Theme_AppCompat = global::PathwayGames.Droid.Resource.Style.Theme_AppCompat;
+			global::AiForms.Renderers.Droid.Resource.Style.Theme_AppCompat_CompactMenu = global::PathwayGames.Droid.Resource.Style.Theme_AppCompat_CompactMenu;
+			global::AiForms.Renderers.Droid.Resource.Style.Theme_AppCompat_DayNight = global::PathwayGames.Droid.Resource.Style.Theme_AppCompat_DayNight;
+			global::AiForms.Renderers.Droid.Resource.Style.Theme_AppCompat_DayNight_DarkActionBar = global::PathwayGames.Droid.Resource.Style.Theme_AppCompat_DayNight_DarkActionBar;
+			global::AiForms.Renderers.Droid.Resource.Style.Theme_AppCompat_DayNight_Dialog = global::PathwayGames.Droid.Resource.Style.Theme_AppCompat_DayNight_Dialog;
+			global::AiForms.Renderers.Droid.Resource.Style.Theme_AppCompat_DayNight_Dialog_Alert = global::PathwayGames.Droid.Resource.Style.Theme_AppCompat_DayNight_Dialog_Alert;
+			global::AiForms.Renderers.Droid.Resource.Style.Theme_AppCompat_DayNight_Dialog_MinWidth = global::PathwayGames.Droid.Resource.Style.Theme_AppCompat_DayNight_Dialog_MinWidth;
+			global::AiForms.Renderers.Droid.Resource.Style.Theme_AppCompat_DayNight_DialogWhenLarge = global::PathwayGames.Droid.Resource.Style.Theme_AppCompat_DayNight_DialogWhenLarge;
+			global::AiForms.Renderers.Droid.Resource.Style.Theme_AppCompat_DayNight_NoActionBar = global::PathwayGames.Droid.Resource.Style.Theme_AppCompat_DayNight_NoActionBar;
+			global::AiForms.Renderers.Droid.Resource.Style.Theme_AppCompat_Dialog = global::PathwayGames.Droid.Resource.Style.Theme_AppCompat_Dialog;
+			global::AiForms.Renderers.Droid.Resource.Style.Theme_AppCompat_Dialog_Alert = global::PathwayGames.Droid.Resource.Style.Theme_AppCompat_Dialog_Alert;
+			global::AiForms.Renderers.Droid.Resource.Style.Theme_AppCompat_Dialog_MinWidth = global::PathwayGames.Droid.Resource.Style.Theme_AppCompat_Dialog_MinWidth;
+			global::AiForms.Renderers.Droid.Resource.Style.Theme_AppCompat_DialogWhenLarge = global::PathwayGames.Droid.Resource.Style.Theme_AppCompat_DialogWhenLarge;
+			global::AiForms.Renderers.Droid.Resource.Style.Theme_AppCompat_Light = global::PathwayGames.Droid.Resource.Style.Theme_AppCompat_Light;
+			global::AiForms.Renderers.Droid.Resource.Style.Theme_AppCompat_Light_DarkActionBar = global::PathwayGames.Droid.Resource.Style.Theme_AppCompat_Light_DarkActionBar;
+			global::AiForms.Renderers.Droid.Resource.Style.Theme_AppCompat_Light_Dialog = global::PathwayGames.Droid.Resource.Style.Theme_AppCompat_Light_Dialog;
+			global::AiForms.Renderers.Droid.Resource.Style.Theme_AppCompat_Light_Dialog_Alert = global::PathwayGames.Droid.Resource.Style.Theme_AppCompat_Light_Dialog_Alert;
+			global::AiForms.Renderers.Droid.Resource.Style.Theme_AppCompat_Light_Dialog_MinWidth = global::PathwayGames.Droid.Resource.Style.Theme_AppCompat_Light_Dialog_MinWidth;
+			global::AiForms.Renderers.Droid.Resource.Style.Theme_AppCompat_Light_DialogWhenLarge = global::PathwayGames.Droid.Resource.Style.Theme_AppCompat_Light_DialogWhenLarge;
+			global::AiForms.Renderers.Droid.Resource.Style.Theme_AppCompat_Light_NoActionBar = global::PathwayGames.Droid.Resource.Style.Theme_AppCompat_Light_NoActionBar;
+			global::AiForms.Renderers.Droid.Resource.Style.Theme_AppCompat_NoActionBar = global::PathwayGames.Droid.Resource.Style.Theme_AppCompat_NoActionBar;
+			global::AiForms.Renderers.Droid.Resource.Style.Theme_Design = global::PathwayGames.Droid.Resource.Style.Theme_Design;
+			global::AiForms.Renderers.Droid.Resource.Style.Theme_Design_BottomSheetDialog = global::PathwayGames.Droid.Resource.Style.Theme_Design_BottomSheetDialog;
+			global::AiForms.Renderers.Droid.Resource.Style.Theme_Design_Light = global::PathwayGames.Droid.Resource.Style.Theme_Design_Light;
+			global::AiForms.Renderers.Droid.Resource.Style.Theme_Design_Light_BottomSheetDialog = global::PathwayGames.Droid.Resource.Style.Theme_Design_Light_BottomSheetDialog;
+			global::AiForms.Renderers.Droid.Resource.Style.Theme_Design_Light_NoActionBar = global::PathwayGames.Droid.Resource.Style.Theme_Design_Light_NoActionBar;
+			global::AiForms.Renderers.Droid.Resource.Style.Theme_Design_NoActionBar = global::PathwayGames.Droid.Resource.Style.Theme_Design_NoActionBar;
+			global::AiForms.Renderers.Droid.Resource.Style.Theme_MaterialComponents = global::PathwayGames.Droid.Resource.Style.Theme_MaterialComponents;
+			global::AiForms.Renderers.Droid.Resource.Style.Theme_MaterialComponents_BottomSheetDialog = global::PathwayGames.Droid.Resource.Style.Theme_MaterialComponents_BottomSheetDialog;
+			global::AiForms.Renderers.Droid.Resource.Style.Theme_MaterialComponents_Bridge = global::PathwayGames.Droid.Resource.Style.Theme_MaterialComponents_Bridge;
+			global::AiForms.Renderers.Droid.Resource.Style.Theme_MaterialComponents_CompactMenu = global::PathwayGames.Droid.Resource.Style.Theme_MaterialComponents_CompactMenu;
+			global::AiForms.Renderers.Droid.Resource.Style.Theme_MaterialComponents_Dialog = global::PathwayGames.Droid.Resource.Style.Theme_MaterialComponents_Dialog;
+			global::AiForms.Renderers.Droid.Resource.Style.Theme_MaterialComponents_Dialog_Alert = global::PathwayGames.Droid.Resource.Style.Theme_MaterialComponents_Dialog_Alert;
+			global::AiForms.Renderers.Droid.Resource.Style.Theme_MaterialComponents_Dialog_MinWidth = global::PathwayGames.Droid.Resource.Style.Theme_MaterialComponents_Dialog_MinWidth;
+			global::AiForms.Renderers.Droid.Resource.Style.Theme_MaterialComponents_DialogWhenLarge = global::PathwayGames.Droid.Resource.Style.Theme_MaterialComponents_DialogWhenLarge;
+			global::AiForms.Renderers.Droid.Resource.Style.Theme_MaterialComponents_Light = global::PathwayGames.Droid.Resource.Style.Theme_MaterialComponents_Light;
+			global::AiForms.Renderers.Droid.Resource.Style.Theme_MaterialComponents_Light_BottomSheetDialog = global::PathwayGames.Droid.Resource.Style.Theme_MaterialComponents_Light_BottomSheetDialog;
+			global::AiForms.Renderers.Droid.Resource.Style.Theme_MaterialComponents_Light_Bridge = global::PathwayGames.Droid.Resource.Style.Theme_MaterialComponents_Light_Bridge;
+			global::AiForms.Renderers.Droid.Resource.Style.Theme_MaterialComponents_Light_DarkActionBar = global::PathwayGames.Droid.Resource.Style.Theme_MaterialComponents_Light_DarkActionBar;
+			global::AiForms.Renderers.Droid.Resource.Style.Theme_MaterialComponents_Light_DarkActionBar_Bridge = global::PathwayGames.Droid.Resource.Style.Theme_MaterialComponents_Light_DarkActionBar_Bridge;
+			global::AiForms.Renderers.Droid.Resource.Style.Theme_MaterialComponents_Light_Dialog = global::PathwayGames.Droid.Resource.Style.Theme_MaterialComponents_Light_Dialog;
+			global::AiForms.Renderers.Droid.Resource.Style.Theme_MaterialComponents_Light_Dialog_Alert = global::PathwayGames.Droid.Resource.Style.Theme_MaterialComponents_Light_Dialog_Alert;
+			global::AiForms.Renderers.Droid.Resource.Style.Theme_MaterialComponents_Light_Dialog_MinWidth = global::PathwayGames.Droid.Resource.Style.Theme_MaterialComponents_Light_Dialog_MinWidth;
+			global::AiForms.Renderers.Droid.Resource.Style.Theme_MaterialComponents_Light_DialogWhenLarge = global::PathwayGames.Droid.Resource.Style.Theme_MaterialComponents_Light_DialogWhenLarge;
+			global::AiForms.Renderers.Droid.Resource.Style.Theme_MaterialComponents_Light_NoActionBar = global::PathwayGames.Droid.Resource.Style.Theme_MaterialComponents_Light_NoActionBar;
+			global::AiForms.Renderers.Droid.Resource.Style.Theme_MaterialComponents_Light_NoActionBar_Bridge = global::PathwayGames.Droid.Resource.Style.Theme_MaterialComponents_Light_NoActionBar_Bridge;
+			global::AiForms.Renderers.Droid.Resource.Style.Theme_MaterialComponents_NoActionBar = global::PathwayGames.Droid.Resource.Style.Theme_MaterialComponents_NoActionBar;
+			global::AiForms.Renderers.Droid.Resource.Style.Theme_MaterialComponents_NoActionBar_Bridge = global::PathwayGames.Droid.Resource.Style.Theme_MaterialComponents_NoActionBar_Bridge;
+			global::AiForms.Renderers.Droid.Resource.Style.Theme_MediaRouter = global::PathwayGames.Droid.Resource.Style.Theme_MediaRouter;
+			global::AiForms.Renderers.Droid.Resource.Style.Theme_MediaRouter_Light = global::PathwayGames.Droid.Resource.Style.Theme_MediaRouter_Light;
+			global::AiForms.Renderers.Droid.Resource.Style.Theme_MediaRouter_Light_DarkControlPanel = global::PathwayGames.Droid.Resource.Style.Theme_MediaRouter_Light_DarkControlPanel;
+			global::AiForms.Renderers.Droid.Resource.Style.Theme_MediaRouter_LightControlPanel = global::PathwayGames.Droid.Resource.Style.Theme_MediaRouter_LightControlPanel;
+			global::AiForms.Renderers.Droid.Resource.Style.ThemeOverlay_AppCompat = global::PathwayGames.Droid.Resource.Style.ThemeOverlay_AppCompat;
+			global::AiForms.Renderers.Droid.Resource.Style.ThemeOverlay_AppCompat_ActionBar = global::PathwayGames.Droid.Resource.Style.ThemeOverlay_AppCompat_ActionBar;
+			global::AiForms.Renderers.Droid.Resource.Style.ThemeOverlay_AppCompat_Dark = global::PathwayGames.Droid.Resource.Style.ThemeOverlay_AppCompat_Dark;
+			global::AiForms.Renderers.Droid.Resource.Style.ThemeOverlay_AppCompat_Dark_ActionBar = global::PathwayGames.Droid.Resource.Style.ThemeOverlay_AppCompat_Dark_ActionBar;
+			global::AiForms.Renderers.Droid.Resource.Style.ThemeOverlay_AppCompat_Dialog = global::PathwayGames.Droid.Resource.Style.ThemeOverlay_AppCompat_Dialog;
+			global::AiForms.Renderers.Droid.Resource.Style.ThemeOverlay_AppCompat_Dialog_Alert = global::PathwayGames.Droid.Resource.Style.ThemeOverlay_AppCompat_Dialog_Alert;
+			global::AiForms.Renderers.Droid.Resource.Style.ThemeOverlay_AppCompat_Light = global::PathwayGames.Droid.Resource.Style.ThemeOverlay_AppCompat_Light;
+			global::AiForms.Renderers.Droid.Resource.Style.ThemeOverlay_MaterialComponents = global::PathwayGames.Droid.Resource.Style.ThemeOverlay_MaterialComponents;
+			global::AiForms.Renderers.Droid.Resource.Style.ThemeOverlay_MaterialComponents_ActionBar = global::PathwayGames.Droid.Resource.Style.ThemeOverlay_MaterialComponents_ActionBar;
+			global::AiForms.Renderers.Droid.Resource.Style.ThemeOverlay_MaterialComponents_Dark = global::PathwayGames.Droid.Resource.Style.ThemeOverlay_MaterialComponents_Dark;
+			global::AiForms.Renderers.Droid.Resource.Style.ThemeOverlay_MaterialComponents_Dark_ActionBar = global::PathwayGames.Droid.Resource.Style.ThemeOverlay_MaterialComponents_Dark_ActionBar;
+			global::AiForms.Renderers.Droid.Resource.Style.ThemeOverlay_MaterialComponents_Dialog = global::PathwayGames.Droid.Resource.Style.ThemeOverlay_MaterialComponents_Dialog;
+			global::AiForms.Renderers.Droid.Resource.Style.ThemeOverlay_MaterialComponents_Dialog_Alert = global::PathwayGames.Droid.Resource.Style.ThemeOverlay_MaterialComponents_Dialog_Alert;
+			global::AiForms.Renderers.Droid.Resource.Style.ThemeOverlay_MaterialComponents_Light = global::PathwayGames.Droid.Resource.Style.ThemeOverlay_MaterialComponents_Light;
+			global::AiForms.Renderers.Droid.Resource.Style.ThemeOverlay_MaterialComponents_TextInputEditText = global::PathwayGames.Droid.Resource.Style.ThemeOverlay_MaterialComponents_TextInputEditText;
+			global::AiForms.Renderers.Droid.Resource.Style.ThemeOverlay_MaterialComponents_TextInputEditText_FilledBox = global::PathwayGames.Droid.Resource.Style.ThemeOverlay_MaterialComponents_TextInputEditText_FilledBox;
+			global::AiForms.Renderers.Droid.Resource.Style.ThemeOverlay_MaterialComponents_TextInputEditText_FilledBox_Dense = global::PathwayGames.Droid.Resource.Style.ThemeOverlay_MaterialComponents_TextInputEditText_FilledBox_Dense;
+			global::AiForms.Renderers.Droid.Resource.Style.ThemeOverlay_MaterialComponents_TextInputEditText_OutlinedBox = global::PathwayGames.Droid.Resource.Style.ThemeOverlay_MaterialComponents_TextInputEditText_OutlinedBox;
+			global::AiForms.Renderers.Droid.Resource.Style.ThemeOverlay_MaterialComponents_TextInputEditText_OutlinedBox_Dense = global::PathwayGames.Droid.Resource.Style.ThemeOverlay_MaterialComponents_TextInputEditText_OutlinedBox_Dense;
+			global::AiForms.Renderers.Droid.Resource.Style.ThemeOverlay_MediaRouter_Dark = global::PathwayGames.Droid.Resource.Style.ThemeOverlay_MediaRouter_Dark;
+			global::AiForms.Renderers.Droid.Resource.Style.ThemeOverlay_MediaRouter_Light = global::PathwayGames.Droid.Resource.Style.ThemeOverlay_MediaRouter_Light;
+			global::AiForms.Renderers.Droid.Resource.Style.Widget_AppCompat_ActionBar = global::PathwayGames.Droid.Resource.Style.Widget_AppCompat_ActionBar;
+			global::AiForms.Renderers.Droid.Resource.Style.Widget_AppCompat_ActionBar_Solid = global::PathwayGames.Droid.Resource.Style.Widget_AppCompat_ActionBar_Solid;
+			global::AiForms.Renderers.Droid.Resource.Style.Widget_AppCompat_ActionBar_TabBar = global::PathwayGames.Droid.Resource.Style.Widget_AppCompat_ActionBar_TabBar;
+			global::AiForms.Renderers.Droid.Resource.Style.Widget_AppCompat_ActionBar_TabText = global::PathwayGames.Droid.Resource.Style.Widget_AppCompat_ActionBar_TabText;
+			global::AiForms.Renderers.Droid.Resource.Style.Widget_AppCompat_ActionBar_TabView = global::PathwayGames.Droid.Resource.Style.Widget_AppCompat_ActionBar_TabView;
+			global::AiForms.Renderers.Droid.Resource.Style.Widget_AppCompat_ActionButton = global::PathwayGames.Droid.Resource.Style.Widget_AppCompat_ActionButton;
+			global::AiForms.Renderers.Droid.Resource.Style.Widget_AppCompat_ActionButton_CloseMode = global::PathwayGames.Droid.Resource.Style.Widget_AppCompat_ActionButton_CloseMode;
+			global::AiForms.Renderers.Droid.Resource.Style.Widget_AppCompat_ActionButton_Overflow = global::PathwayGames.Droid.Resource.Style.Widget_AppCompat_ActionButton_Overflow;
+			global::AiForms.Renderers.Droid.Resource.Style.Widget_AppCompat_ActionMode = global::PathwayGames.Droid.Resource.Style.Widget_AppCompat_ActionMode;
+			global::AiForms.Renderers.Droid.Resource.Style.Widget_AppCompat_ActivityChooserView = global::PathwayGames.Droid.Resource.Style.Widget_AppCompat_ActivityChooserView;
+			global::AiForms.Renderers.Droid.Resource.Style.Widget_AppCompat_AutoCompleteTextView = global::PathwayGames.Droid.Resource.Style.Widget_AppCompat_AutoCompleteTextView;
+			global::AiForms.Renderers.Droid.Resource.Style.Widget_AppCompat_Button = global::PathwayGames.Droid.Resource.Style.Widget_AppCompat_Button;
+			global::AiForms.Renderers.Droid.Resource.Style.Widget_AppCompat_Button_Borderless = global::PathwayGames.Droid.Resource.Style.Widget_AppCompat_Button_Borderless;
+			global::AiForms.Renderers.Droid.Resource.Style.Widget_AppCompat_Button_Borderless_Colored = global::PathwayGames.Droid.Resource.Style.Widget_AppCompat_Button_Borderless_Colored;
+			global::AiForms.Renderers.Droid.Resource.Style.Widget_AppCompat_Button_ButtonBar_AlertDialog = global::PathwayGames.Droid.Resource.Style.Widget_AppCompat_Button_ButtonBar_AlertDialog;
+			global::AiForms.Renderers.Droid.Resource.Style.Widget_AppCompat_Button_Colored = global::PathwayGames.Droid.Resource.Style.Widget_AppCompat_Button_Colored;
+			global::AiForms.Renderers.Droid.Resource.Style.Widget_AppCompat_Button_Small = global::PathwayGames.Droid.Resource.Style.Widget_AppCompat_Button_Small;
+			global::AiForms.Renderers.Droid.Resource.Style.Widget_AppCompat_ButtonBar = global::PathwayGames.Droid.Resource.Style.Widget_AppCompat_ButtonBar;
+			global::AiForms.Renderers.Droid.Resource.Style.Widget_AppCompat_ButtonBar_AlertDialog = global::PathwayGames.Droid.Resource.Style.Widget_AppCompat_ButtonBar_AlertDialog;
+			global::AiForms.Renderers.Droid.Resource.Style.Widget_AppCompat_CompoundButton_CheckBox = global::PathwayGames.Droid.Resource.Style.Widget_AppCompat_CompoundButton_CheckBox;
+			global::AiForms.Renderers.Droid.Resource.Style.Widget_AppCompat_CompoundButton_RadioButton = global::PathwayGames.Droid.Resource.Style.Widget_AppCompat_CompoundButton_RadioButton;
+			global::AiForms.Renderers.Droid.Resource.Style.Widget_AppCompat_CompoundButton_Switch = global::PathwayGames.Droid.Resource.Style.Widget_AppCompat_CompoundButton_Switch;
+			global::AiForms.Renderers.Droid.Resource.Style.Widget_AppCompat_DrawerArrowToggle = global::PathwayGames.Droid.Resource.Style.Widget_AppCompat_DrawerArrowToggle;
+			global::AiForms.Renderers.Droid.Resource.Style.Widget_AppCompat_DropDownItem_Spinner = global::PathwayGames.Droid.Resource.Style.Widget_AppCompat_DropDownItem_Spinner;
+			global::AiForms.Renderers.Droid.Resource.Style.Widget_AppCompat_EditText = global::PathwayGames.Droid.Resource.Style.Widget_AppCompat_EditText;
+			global::AiForms.Renderers.Droid.Resource.Style.Widget_AppCompat_ImageButton = global::PathwayGames.Droid.Resource.Style.Widget_AppCompat_ImageButton;
+			global::AiForms.Renderers.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar = global::PathwayGames.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar;
+			global::AiForms.Renderers.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_Solid = global::PathwayGames.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_Solid;
+			global::AiForms.Renderers.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_Solid_Inverse = global::PathwayGames.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_Solid_Inverse;
+			global::AiForms.Renderers.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabBar = global::PathwayGames.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabBar;
+			global::AiForms.Renderers.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabBar_Inverse = global::PathwayGames.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabBar_Inverse;
+			global::AiForms.Renderers.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabText = global::PathwayGames.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabText;
+			global::AiForms.Renderers.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabText_Inverse = global::PathwayGames.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabText_Inverse;
+			global::AiForms.Renderers.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabView = global::PathwayGames.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabView;
+			global::AiForms.Renderers.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabView_Inverse = global::PathwayGames.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabView_Inverse;
+			global::AiForms.Renderers.Droid.Resource.Style.Widget_AppCompat_Light_ActionButton = global::PathwayGames.Droid.Resource.Style.Widget_AppCompat_Light_ActionButton;
+			global::AiForms.Renderers.Droid.Resource.Style.Widget_AppCompat_Light_ActionButton_CloseMode = global::PathwayGames.Droid.Resource.Style.Widget_AppCompat_Light_ActionButton_CloseMode;
+			global::AiForms.Renderers.Droid.Resource.Style.Widget_AppCompat_Light_ActionButton_Overflow = global::PathwayGames.Droid.Resource.Style.Widget_AppCompat_Light_ActionButton_Overflow;
+			global::AiForms.Renderers.Droid.Resource.Style.Widget_AppCompat_Light_ActionMode_Inverse = global::PathwayGames.Droid.Resource.Style.Widget_AppCompat_Light_ActionMode_Inverse;
+			global::AiForms.Renderers.Droid.Resource.Style.Widget_AppCompat_Light_ActivityChooserView = global::PathwayGames.Droid.Resource.Style.Widget_AppCompat_Light_ActivityChooserView;
+			global::AiForms.Renderers.Droid.Resource.Style.Widget_AppCompat_Light_AutoCompleteTextView = global::PathwayGames.Droid.Resource.Style.Widget_AppCompat_Light_AutoCompleteTextView;
+			global::AiForms.Renderers.Droid.Resource.Style.Widget_AppCompat_Light_DropDownItem_Spinner = global::PathwayGames.Droid.Resource.Style.Widget_AppCompat_Light_DropDownItem_Spinner;
+			global::AiForms.Renderers.Droid.Resource.Style.Widget_AppCompat_Light_ListPopupWindow = global::PathwayGames.Droid.Resource.Style.Widget_AppCompat_Light_ListPopupWindow;
+			global::AiForms.Renderers.Droid.Resource.Style.Widget_AppCompat_Light_ListView_DropDown = global::PathwayGames.Droid.Resource.Style.Widget_AppCompat_Light_ListView_DropDown;
+			global::AiForms.Renderers.Droid.Resource.Style.Widget_AppCompat_Light_PopupMenu = global::PathwayGames.Droid.Resource.Style.Widget_AppCompat_Light_PopupMenu;
+			global::AiForms.Renderers.Droid.Resource.Style.Widget_AppCompat_Light_PopupMenu_Overflow = global::PathwayGames.Droid.Resource.Style.Widget_AppCompat_Light_PopupMenu_Overflow;
+			global::AiForms.Renderers.Droid.Resource.Style.Widget_AppCompat_Light_SearchView = global::PathwayGames.Droid.Resource.Style.Widget_AppCompat_Light_SearchView;
+			global::AiForms.Renderers.Droid.Resource.Style.Widget_AppCompat_Light_Spinner_DropDown_ActionBar = global::PathwayGames.Droid.Resource.Style.Widget_AppCompat_Light_Spinner_DropDown_ActionBar;
+			global::AiForms.Renderers.Droid.Resource.Style.Widget_AppCompat_ListMenuView = global::PathwayGames.Droid.Resource.Style.Widget_AppCompat_ListMenuView;
+			global::AiForms.Renderers.Droid.Resource.Style.Widget_AppCompat_ListPopupWindow = global::PathwayGames.Droid.Resource.Style.Widget_AppCompat_ListPopupWindow;
+			global::AiForms.Renderers.Droid.Resource.Style.Widget_AppCompat_ListView = global::PathwayGames.Droid.Resource.Style.Widget_AppCompat_ListView;
+			global::AiForms.Renderers.Droid.Resource.Style.Widget_AppCompat_ListView_DropDown = global::PathwayGames.Droid.Resource.Style.Widget_AppCompat_ListView_DropDown;
+			global::AiForms.Renderers.Droid.Resource.Style.Widget_AppCompat_ListView_Menu = global::PathwayGames.Droid.Resource.Style.Widget_AppCompat_ListView_Menu;
+			global::AiForms.Renderers.Droid.Resource.Style.Widget_AppCompat_PopupMenu = global::PathwayGames.Droid.Resource.Style.Widget_AppCompat_PopupMenu;
+			global::AiForms.Renderers.Droid.Resource.Style.Widget_AppCompat_PopupMenu_Overflow = global::PathwayGames.Droid.Resource.Style.Widget_AppCompat_PopupMenu_Overflow;
+			global::AiForms.Renderers.Droid.Resource.Style.Widget_AppCompat_PopupWindow = global::PathwayGames.Droid.Resource.Style.Widget_AppCompat_PopupWindow;
+			global::AiForms.Renderers.Droid.Resource.Style.Widget_AppCompat_ProgressBar = global::PathwayGames.Droid.Resource.Style.Widget_AppCompat_ProgressBar;
+			global::AiForms.Renderers.Droid.Resource.Style.Widget_AppCompat_ProgressBar_Horizontal = global::PathwayGames.Droid.Resource.Style.Widget_AppCompat_ProgressBar_Horizontal;
+			global::AiForms.Renderers.Droid.Resource.Style.Widget_AppCompat_RatingBar = global::PathwayGames.Droid.Resource.Style.Widget_AppCompat_RatingBar;
+			global::AiForms.Renderers.Droid.Resource.Style.Widget_AppCompat_RatingBar_Indicator = global::PathwayGames.Droid.Resource.Style.Widget_AppCompat_RatingBar_Indicator;
+			global::AiForms.Renderers.Droid.Resource.Style.Widget_AppCompat_RatingBar_Small = global::PathwayGames.Droid.Resource.Style.Widget_AppCompat_RatingBar_Small;
+			global::AiForms.Renderers.Droid.Resource.Style.Widget_AppCompat_SearchView = global::PathwayGames.Droid.Resource.Style.Widget_AppCompat_SearchView;
+			global::AiForms.Renderers.Droid.Resource.Style.Widget_AppCompat_SearchView_ActionBar = global::PathwayGames.Droid.Resource.Style.Widget_AppCompat_SearchView_ActionBar;
+			global::AiForms.Renderers.Droid.Resource.Style.Widget_AppCompat_SeekBar = global::PathwayGames.Droid.Resource.Style.Widget_AppCompat_SeekBar;
+			global::AiForms.Renderers.Droid.Resource.Style.Widget_AppCompat_SeekBar_Discrete = global::PathwayGames.Droid.Resource.Style.Widget_AppCompat_SeekBar_Discrete;
+			global::AiForms.Renderers.Droid.Resource.Style.Widget_AppCompat_Spinner = global::PathwayGames.Droid.Resource.Style.Widget_AppCompat_Spinner;
+			global::AiForms.Renderers.Droid.Resource.Style.Widget_AppCompat_Spinner_DropDown = global::PathwayGames.Droid.Resource.Style.Widget_AppCompat_Spinner_DropDown;
+			global::AiForms.Renderers.Droid.Resource.Style.Widget_AppCompat_Spinner_DropDown_ActionBar = global::PathwayGames.Droid.Resource.Style.Widget_AppCompat_Spinner_DropDown_ActionBar;
+			global::AiForms.Renderers.Droid.Resource.Style.Widget_AppCompat_Spinner_Underlined = global::PathwayGames.Droid.Resource.Style.Widget_AppCompat_Spinner_Underlined;
+			global::AiForms.Renderers.Droid.Resource.Style.Widget_AppCompat_TextView_SpinnerItem = global::PathwayGames.Droid.Resource.Style.Widget_AppCompat_TextView_SpinnerItem;
+			global::AiForms.Renderers.Droid.Resource.Style.Widget_AppCompat_Toolbar = global::PathwayGames.Droid.Resource.Style.Widget_AppCompat_Toolbar;
+			global::AiForms.Renderers.Droid.Resource.Style.Widget_AppCompat_Toolbar_Button_Navigation = global::PathwayGames.Droid.Resource.Style.Widget_AppCompat_Toolbar_Button_Navigation;
+			global::AiForms.Renderers.Droid.Resource.Style.Widget_Compat_NotificationActionContainer = global::PathwayGames.Droid.Resource.Style.Widget_Compat_NotificationActionContainer;
+			global::AiForms.Renderers.Droid.Resource.Style.Widget_Compat_NotificationActionText = global::PathwayGames.Droid.Resource.Style.Widget_Compat_NotificationActionText;
+			global::AiForms.Renderers.Droid.Resource.Style.Widget_Design_AppBarLayout = global::PathwayGames.Droid.Resource.Style.Widget_Design_AppBarLayout;
+			global::AiForms.Renderers.Droid.Resource.Style.Widget_Design_BottomNavigationView = global::PathwayGames.Droid.Resource.Style.Widget_Design_BottomNavigationView;
+			global::AiForms.Renderers.Droid.Resource.Style.Widget_Design_BottomSheet_Modal = global::PathwayGames.Droid.Resource.Style.Widget_Design_BottomSheet_Modal;
+			global::AiForms.Renderers.Droid.Resource.Style.Widget_Design_CollapsingToolbar = global::PathwayGames.Droid.Resource.Style.Widget_Design_CollapsingToolbar;
+			global::AiForms.Renderers.Droid.Resource.Style.Widget_Design_FloatingActionButton = global::PathwayGames.Droid.Resource.Style.Widget_Design_FloatingActionButton;
+			global::AiForms.Renderers.Droid.Resource.Style.Widget_Design_NavigationView = global::PathwayGames.Droid.Resource.Style.Widget_Design_NavigationView;
+			global::AiForms.Renderers.Droid.Resource.Style.Widget_Design_ScrimInsetsFrameLayout = global::PathwayGames.Droid.Resource.Style.Widget_Design_ScrimInsetsFrameLayout;
+			global::AiForms.Renderers.Droid.Resource.Style.Widget_Design_Snackbar = global::PathwayGames.Droid.Resource.Style.Widget_Design_Snackbar;
+			global::AiForms.Renderers.Droid.Resource.Style.Widget_Design_TabLayout = global::PathwayGames.Droid.Resource.Style.Widget_Design_TabLayout;
+			global::AiForms.Renderers.Droid.Resource.Style.Widget_Design_TextInputLayout = global::PathwayGames.Droid.Resource.Style.Widget_Design_TextInputLayout;
+			global::AiForms.Renderers.Droid.Resource.Style.Widget_MaterialComponents_BottomAppBar = global::PathwayGames.Droid.Resource.Style.Widget_MaterialComponents_BottomAppBar;
+			global::AiForms.Renderers.Droid.Resource.Style.Widget_MaterialComponents_BottomAppBar_Colored = global::PathwayGames.Droid.Resource.Style.Widget_MaterialComponents_BottomAppBar_Colored;
+			global::AiForms.Renderers.Droid.Resource.Style.Widget_MaterialComponents_BottomNavigationView = global::PathwayGames.Droid.Resource.Style.Widget_MaterialComponents_BottomNavigationView;
+			global::AiForms.Renderers.Droid.Resource.Style.Widget_MaterialComponents_BottomNavigationView_Colored = global::PathwayGames.Droid.Resource.Style.Widget_MaterialComponents_BottomNavigationView_Colored;
+			global::AiForms.Renderers.Droid.Resource.Style.Widget_MaterialComponents_BottomSheet_Modal = global::PathwayGames.Droid.Resource.Style.Widget_MaterialComponents_BottomSheet_Modal;
+			global::AiForms.Renderers.Droid.Resource.Style.Widget_MaterialComponents_Button = global::PathwayGames.Droid.Resource.Style.Widget_MaterialComponents_Button;
+			global::AiForms.Renderers.Droid.Resource.Style.Widget_MaterialComponents_Button_Icon = global::PathwayGames.Droid.Resource.Style.Widget_MaterialComponents_Button_Icon;
+			global::AiForms.Renderers.Droid.Resource.Style.Widget_MaterialComponents_Button_OutlinedButton = global::PathwayGames.Droid.Resource.Style.Widget_MaterialComponents_Button_OutlinedButton;
+			global::AiForms.Renderers.Droid.Resource.Style.Widget_MaterialComponents_Button_OutlinedButton_Icon = global::PathwayGames.Droid.Resource.Style.Widget_MaterialComponents_Button_OutlinedButton_Icon;
+			global::AiForms.Renderers.Droid.Resource.Style.Widget_MaterialComponents_Button_TextButton = global::PathwayGames.Droid.Resource.Style.Widget_MaterialComponents_Button_TextButton;
+			global::AiForms.Renderers.Droid.Resource.Style.Widget_MaterialComponents_Button_TextButton_Dialog = global::PathwayGames.Droid.Resource.Style.Widget_MaterialComponents_Button_TextButton_Dialog;
+			global::AiForms.Renderers.Droid.Resource.Style.Widget_MaterialComponents_Button_TextButton_Dialog_Icon = global::PathwayGames.Droid.Resource.Style.Widget_MaterialComponents_Button_TextButton_Dialog_Icon;
+			global::AiForms.Renderers.Droid.Resource.Style.Widget_MaterialComponents_Button_TextButton_Icon = global::PathwayGames.Droid.Resource.Style.Widget_MaterialComponents_Button_TextButton_Icon;
+			global::AiForms.Renderers.Droid.Resource.Style.Widget_MaterialComponents_Button_UnelevatedButton = global::PathwayGames.Droid.Resource.Style.Widget_MaterialComponents_Button_UnelevatedButton;
+			global::AiForms.Renderers.Droid.Resource.Style.Widget_MaterialComponents_Button_UnelevatedButton_Icon = global::PathwayGames.Droid.Resource.Style.Widget_MaterialComponents_Button_UnelevatedButton_Icon;
+			global::AiForms.Renderers.Droid.Resource.Style.Widget_MaterialComponents_CardView = global::PathwayGames.Droid.Resource.Style.Widget_MaterialComponents_CardView;
+			global::AiForms.Renderers.Droid.Resource.Style.Widget_MaterialComponents_Chip_Action = global::PathwayGames.Droid.Resource.Style.Widget_MaterialComponents_Chip_Action;
+			global::AiForms.Renderers.Droid.Resource.Style.Widget_MaterialComponents_Chip_Choice = global::PathwayGames.Droid.Resource.Style.Widget_MaterialComponents_Chip_Choice;
+			global::AiForms.Renderers.Droid.Resource.Style.Widget_MaterialComponents_Chip_Entry = global::PathwayGames.Droid.Resource.Style.Widget_MaterialComponents_Chip_Entry;
+			global::AiForms.Renderers.Droid.Resource.Style.Widget_MaterialComponents_Chip_Filter = global::PathwayGames.Droid.Resource.Style.Widget_MaterialComponents_Chip_Filter;
+			global::AiForms.Renderers.Droid.Resource.Style.Widget_MaterialComponents_ChipGroup = global::PathwayGames.Droid.Resource.Style.Widget_MaterialComponents_ChipGroup;
+			global::AiForms.Renderers.Droid.Resource.Style.Widget_MaterialComponents_FloatingActionButton = global::PathwayGames.Droid.Resource.Style.Widget_MaterialComponents_FloatingActionButton;
+			global::AiForms.Renderers.Droid.Resource.Style.Widget_MaterialComponents_NavigationView = global::PathwayGames.Droid.Resource.Style.Widget_MaterialComponents_NavigationView;
+			global::AiForms.Renderers.Droid.Resource.Style.Widget_MaterialComponents_Snackbar = global::PathwayGames.Droid.Resource.Style.Widget_MaterialComponents_Snackbar;
+			global::AiForms.Renderers.Droid.Resource.Style.Widget_MaterialComponents_Snackbar_FullWidth = global::PathwayGames.Droid.Resource.Style.Widget_MaterialComponents_Snackbar_FullWidth;
+			global::AiForms.Renderers.Droid.Resource.Style.Widget_MaterialComponents_TabLayout = global::PathwayGames.Droid.Resource.Style.Widget_MaterialComponents_TabLayout;
+			global::AiForms.Renderers.Droid.Resource.Style.Widget_MaterialComponents_TabLayout_Colored = global::PathwayGames.Droid.Resource.Style.Widget_MaterialComponents_TabLayout_Colored;
+			global::AiForms.Renderers.Droid.Resource.Style.Widget_MaterialComponents_TextInputEditText_FilledBox = global::PathwayGames.Droid.Resource.Style.Widget_MaterialComponents_TextInputEditText_FilledBox;
+			global::AiForms.Renderers.Droid.Resource.Style.Widget_MaterialComponents_TextInputEditText_FilledBox_Dense = global::PathwayGames.Droid.Resource.Style.Widget_MaterialComponents_TextInputEditText_FilledBox_Dense;
+			global::AiForms.Renderers.Droid.Resource.Style.Widget_MaterialComponents_TextInputEditText_OutlinedBox = global::PathwayGames.Droid.Resource.Style.Widget_MaterialComponents_TextInputEditText_OutlinedBox;
+			global::AiForms.Renderers.Droid.Resource.Style.Widget_MaterialComponents_TextInputEditText_OutlinedBox_Dense = global::PathwayGames.Droid.Resource.Style.Widget_MaterialComponents_TextInputEditText_OutlinedBox_Dense;
+			global::AiForms.Renderers.Droid.Resource.Style.Widget_MaterialComponents_TextInputLayout_FilledBox = global::PathwayGames.Droid.Resource.Style.Widget_MaterialComponents_TextInputLayout_FilledBox;
+			global::AiForms.Renderers.Droid.Resource.Style.Widget_MaterialComponents_TextInputLayout_FilledBox_Dense = global::PathwayGames.Droid.Resource.Style.Widget_MaterialComponents_TextInputLayout_FilledBox_Dense;
+			global::AiForms.Renderers.Droid.Resource.Style.Widget_MaterialComponents_TextInputLayout_OutlinedBox = global::PathwayGames.Droid.Resource.Style.Widget_MaterialComponents_TextInputLayout_OutlinedBox;
+			global::AiForms.Renderers.Droid.Resource.Style.Widget_MaterialComponents_TextInputLayout_OutlinedBox_Dense = global::PathwayGames.Droid.Resource.Style.Widget_MaterialComponents_TextInputLayout_OutlinedBox_Dense;
+			global::AiForms.Renderers.Droid.Resource.Style.Widget_MaterialComponents_Toolbar = global::PathwayGames.Droid.Resource.Style.Widget_MaterialComponents_Toolbar;
+			global::AiForms.Renderers.Droid.Resource.Style.Widget_MediaRouter_Light_MediaRouteButton = global::PathwayGames.Droid.Resource.Style.Widget_MediaRouter_Light_MediaRouteButton;
+			global::AiForms.Renderers.Droid.Resource.Style.Widget_MediaRouter_MediaRouteButton = global::PathwayGames.Droid.Resource.Style.Widget_MediaRouter_MediaRouteButton;
+			global::AiForms.Renderers.Droid.Resource.Style.Widget_Support_CoordinatorLayout = global::PathwayGames.Droid.Resource.Style.Widget_Support_CoordinatorLayout;
+			global::AiForms.Renderers.Droid.Resource.Styleable.ActionBar = global::PathwayGames.Droid.Resource.Styleable.ActionBar;
+			global::AiForms.Renderers.Droid.Resource.Styleable.ActionBar_background = global::PathwayGames.Droid.Resource.Styleable.ActionBar_background;
+			global::AiForms.Renderers.Droid.Resource.Styleable.ActionBar_backgroundSplit = global::PathwayGames.Droid.Resource.Styleable.ActionBar_backgroundSplit;
+			global::AiForms.Renderers.Droid.Resource.Styleable.ActionBar_backgroundStacked = global::PathwayGames.Droid.Resource.Styleable.ActionBar_backgroundStacked;
+			global::AiForms.Renderers.Droid.Resource.Styleable.ActionBar_contentInsetEnd = global::PathwayGames.Droid.Resource.Styleable.ActionBar_contentInsetEnd;
+			global::AiForms.Renderers.Droid.Resource.Styleable.ActionBar_contentInsetEndWithActions = global::PathwayGames.Droid.Resource.Styleable.ActionBar_contentInsetEndWithActions;
+			global::AiForms.Renderers.Droid.Resource.Styleable.ActionBar_contentInsetLeft = global::PathwayGames.Droid.Resource.Styleable.ActionBar_contentInsetLeft;
+			global::AiForms.Renderers.Droid.Resource.Styleable.ActionBar_contentInsetRight = global::PathwayGames.Droid.Resource.Styleable.ActionBar_contentInsetRight;
+			global::AiForms.Renderers.Droid.Resource.Styleable.ActionBar_contentInsetStart = global::PathwayGames.Droid.Resource.Styleable.ActionBar_contentInsetStart;
+			global::AiForms.Renderers.Droid.Resource.Styleable.ActionBar_contentInsetStartWithNavigation = global::PathwayGames.Droid.Resource.Styleable.ActionBar_contentInsetStartWithNavigation;
+			global::AiForms.Renderers.Droid.Resource.Styleable.ActionBar_customNavigationLayout = global::PathwayGames.Droid.Resource.Styleable.ActionBar_customNavigationLayout;
+			global::AiForms.Renderers.Droid.Resource.Styleable.ActionBar_displayOptions = global::PathwayGames.Droid.Resource.Styleable.ActionBar_displayOptions;
+			global::AiForms.Renderers.Droid.Resource.Styleable.ActionBar_divider = global::PathwayGames.Droid.Resource.Styleable.ActionBar_divider;
+			global::AiForms.Renderers.Droid.Resource.Styleable.ActionBar_elevation = global::PathwayGames.Droid.Resource.Styleable.ActionBar_elevation;
+			global::AiForms.Renderers.Droid.Resource.Styleable.ActionBar_height = global::PathwayGames.Droid.Resource.Styleable.ActionBar_height;
+			global::AiForms.Renderers.Droid.Resource.Styleable.ActionBar_hideOnContentScroll = global::PathwayGames.Droid.Resource.Styleable.ActionBar_hideOnContentScroll;
+			global::AiForms.Renderers.Droid.Resource.Styleable.ActionBar_homeAsUpIndicator = global::PathwayGames.Droid.Resource.Styleable.ActionBar_homeAsUpIndicator;
+			global::AiForms.Renderers.Droid.Resource.Styleable.ActionBar_homeLayout = global::PathwayGames.Droid.Resource.Styleable.ActionBar_homeLayout;
+			global::AiForms.Renderers.Droid.Resource.Styleable.ActionBar_icon = global::PathwayGames.Droid.Resource.Styleable.ActionBar_icon;
+			global::AiForms.Renderers.Droid.Resource.Styleable.ActionBar_indeterminateProgressStyle = global::PathwayGames.Droid.Resource.Styleable.ActionBar_indeterminateProgressStyle;
+			global::AiForms.Renderers.Droid.Resource.Styleable.ActionBar_itemPadding = global::PathwayGames.Droid.Resource.Styleable.ActionBar_itemPadding;
+			global::AiForms.Renderers.Droid.Resource.Styleable.ActionBar_logo = global::PathwayGames.Droid.Resource.Styleable.ActionBar_logo;
+			global::AiForms.Renderers.Droid.Resource.Styleable.ActionBar_navigationMode = global::PathwayGames.Droid.Resource.Styleable.ActionBar_navigationMode;
+			global::AiForms.Renderers.Droid.Resource.Styleable.ActionBar_popupTheme = global::PathwayGames.Droid.Resource.Styleable.ActionBar_popupTheme;
+			global::AiForms.Renderers.Droid.Resource.Styleable.ActionBar_progressBarPadding = global::PathwayGames.Droid.Resource.Styleable.ActionBar_progressBarPadding;
+			global::AiForms.Renderers.Droid.Resource.Styleable.ActionBar_progressBarStyle = global::PathwayGames.Droid.Resource.Styleable.ActionBar_progressBarStyle;
+			global::AiForms.Renderers.Droid.Resource.Styleable.ActionBar_subtitle = global::PathwayGames.Droid.Resource.Styleable.ActionBar_subtitle;
+			global::AiForms.Renderers.Droid.Resource.Styleable.ActionBar_subtitleTextStyle = global::PathwayGames.Droid.Resource.Styleable.ActionBar_subtitleTextStyle;
+			global::AiForms.Renderers.Droid.Resource.Styleable.ActionBar_title = global::PathwayGames.Droid.Resource.Styleable.ActionBar_title;
+			global::AiForms.Renderers.Droid.Resource.Styleable.ActionBar_titleTextStyle = global::PathwayGames.Droid.Resource.Styleable.ActionBar_titleTextStyle;
+			global::AiForms.Renderers.Droid.Resource.Styleable.ActionBarLayout = global::PathwayGames.Droid.Resource.Styleable.ActionBarLayout;
+			global::AiForms.Renderers.Droid.Resource.Styleable.ActionBarLayout_android_layout_gravity = global::PathwayGames.Droid.Resource.Styleable.ActionBarLayout_android_layout_gravity;
+			global::AiForms.Renderers.Droid.Resource.Styleable.ActionMenuItemView = global::PathwayGames.Droid.Resource.Styleable.ActionMenuItemView;
+			global::AiForms.Renderers.Droid.Resource.Styleable.ActionMenuItemView_android_minWidth = global::PathwayGames.Droid.Resource.Styleable.ActionMenuItemView_android_minWidth;
+			global::AiForms.Renderers.Droid.Resource.Styleable.ActionMenuView = global::PathwayGames.Droid.Resource.Styleable.ActionMenuView;
+			global::AiForms.Renderers.Droid.Resource.Styleable.ActionMode = global::PathwayGames.Droid.Resource.Styleable.ActionMode;
+			global::AiForms.Renderers.Droid.Resource.Styleable.ActionMode_background = global::PathwayGames.Droid.Resource.Styleable.ActionMode_background;
+			global::AiForms.Renderers.Droid.Resource.Styleable.ActionMode_backgroundSplit = global::PathwayGames.Droid.Resource.Styleable.ActionMode_backgroundSplit;
+			global::AiForms.Renderers.Droid.Resource.Styleable.ActionMode_closeItemLayout = global::PathwayGames.Droid.Resource.Styleable.ActionMode_closeItemLayout;
+			global::AiForms.Renderers.Droid.Resource.Styleable.ActionMode_height = global::PathwayGames.Droid.Resource.Styleable.ActionMode_height;
+			global::AiForms.Renderers.Droid.Resource.Styleable.ActionMode_subtitleTextStyle = global::PathwayGames.Droid.Resource.Styleable.ActionMode_subtitleTextStyle;
+			global::AiForms.Renderers.Droid.Resource.Styleable.ActionMode_titleTextStyle = global::PathwayGames.Droid.Resource.Styleable.ActionMode_titleTextStyle;
+			global::AiForms.Renderers.Droid.Resource.Styleable.ActivityChooserView = global::PathwayGames.Droid.Resource.Styleable.ActivityChooserView;
+			global::AiForms.Renderers.Droid.Resource.Styleable.ActivityChooserView_expandActivityOverflowButtonDrawable = global::PathwayGames.Droid.Resource.Styleable.ActivityChooserView_expandActivityOverflowButtonDrawable;
+			global::AiForms.Renderers.Droid.Resource.Styleable.ActivityChooserView_initialActivityCount = global::PathwayGames.Droid.Resource.Styleable.ActivityChooserView_initialActivityCount;
+			global::AiForms.Renderers.Droid.Resource.Styleable.AlertDialog = global::PathwayGames.Droid.Resource.Styleable.AlertDialog;
+			global::AiForms.Renderers.Droid.Resource.Styleable.AlertDialog_android_layout = global::PathwayGames.Droid.Resource.Styleable.AlertDialog_android_layout;
+			global::AiForms.Renderers.Droid.Resource.Styleable.AlertDialog_buttonIconDimen = global::PathwayGames.Droid.Resource.Styleable.AlertDialog_buttonIconDimen;
+			global::AiForms.Renderers.Droid.Resource.Styleable.AlertDialog_buttonPanelSideLayout = global::PathwayGames.Droid.Resource.Styleable.AlertDialog_buttonPanelSideLayout;
+			global::AiForms.Renderers.Droid.Resource.Styleable.AlertDialog_listItemLayout = global::PathwayGames.Droid.Resource.Styleable.AlertDialog_listItemLayout;
+			global::AiForms.Renderers.Droid.Resource.Styleable.AlertDialog_listLayout = global::PathwayGames.Droid.Resource.Styleable.AlertDialog_listLayout;
+			global::AiForms.Renderers.Droid.Resource.Styleable.AlertDialog_multiChoiceItemLayout = global::PathwayGames.Droid.Resource.Styleable.AlertDialog_multiChoiceItemLayout;
+			global::AiForms.Renderers.Droid.Resource.Styleable.AlertDialog_showTitle = global::PathwayGames.Droid.Resource.Styleable.AlertDialog_showTitle;
+			global::AiForms.Renderers.Droid.Resource.Styleable.AlertDialog_singleChoiceItemLayout = global::PathwayGames.Droid.Resource.Styleable.AlertDialog_singleChoiceItemLayout;
+			global::AiForms.Renderers.Droid.Resource.Styleable.AnimatedStateListDrawableCompat = global::PathwayGames.Droid.Resource.Styleable.AnimatedStateListDrawableCompat;
+			global::AiForms.Renderers.Droid.Resource.Styleable.AnimatedStateListDrawableCompat_android_constantSize = global::PathwayGames.Droid.Resource.Styleable.AnimatedStateListDrawableCompat_android_constantSize;
+			global::AiForms.Renderers.Droid.Resource.Styleable.AnimatedStateListDrawableCompat_android_dither = global::PathwayGames.Droid.Resource.Styleable.AnimatedStateListDrawableCompat_android_dither;
+			global::AiForms.Renderers.Droid.Resource.Styleable.AnimatedStateListDrawableCompat_android_enterFadeDuration = global::PathwayGames.Droid.Resource.Styleable.AnimatedStateListDrawableCompat_android_enterFadeDuration;
+			global::AiForms.Renderers.Droid.Resource.Styleable.AnimatedStateListDrawableCompat_android_exitFadeDuration = global::PathwayGames.Droid.Resource.Styleable.AnimatedStateListDrawableCompat_android_exitFadeDuration;
+			global::AiForms.Renderers.Droid.Resource.Styleable.AnimatedStateListDrawableCompat_android_variablePadding = global::PathwayGames.Droid.Resource.Styleable.AnimatedStateListDrawableCompat_android_variablePadding;
+			global::AiForms.Renderers.Droid.Resource.Styleable.AnimatedStateListDrawableCompat_android_visible = global::PathwayGames.Droid.Resource.Styleable.AnimatedStateListDrawableCompat_android_visible;
+			global::AiForms.Renderers.Droid.Resource.Styleable.AnimatedStateListDrawableItem = global::PathwayGames.Droid.Resource.Styleable.AnimatedStateListDrawableItem;
+			global::AiForms.Renderers.Droid.Resource.Styleable.AnimatedStateListDrawableItem_android_drawable = global::PathwayGames.Droid.Resource.Styleable.AnimatedStateListDrawableItem_android_drawable;
+			global::AiForms.Renderers.Droid.Resource.Styleable.AnimatedStateListDrawableItem_android_id = global::PathwayGames.Droid.Resource.Styleable.AnimatedStateListDrawableItem_android_id;
+			global::AiForms.Renderers.Droid.Resource.Styleable.AnimatedStateListDrawableTransition = global::PathwayGames.Droid.Resource.Styleable.AnimatedStateListDrawableTransition;
+			global::AiForms.Renderers.Droid.Resource.Styleable.AnimatedStateListDrawableTransition_android_drawable = global::PathwayGames.Droid.Resource.Styleable.AnimatedStateListDrawableTransition_android_drawable;
+			global::AiForms.Renderers.Droid.Resource.Styleable.AnimatedStateListDrawableTransition_android_fromId = global::PathwayGames.Droid.Resource.Styleable.AnimatedStateListDrawableTransition_android_fromId;
+			global::AiForms.Renderers.Droid.Resource.Styleable.AnimatedStateListDrawableTransition_android_reversible = global::PathwayGames.Droid.Resource.Styleable.AnimatedStateListDrawableTransition_android_reversible;
+			global::AiForms.Renderers.Droid.Resource.Styleable.AnimatedStateListDrawableTransition_android_toId = global::PathwayGames.Droid.Resource.Styleable.AnimatedStateListDrawableTransition_android_toId;
+			global::AiForms.Renderers.Droid.Resource.Styleable.AppBarLayout = global::PathwayGames.Droid.Resource.Styleable.AppBarLayout;
+			global::AiForms.Renderers.Droid.Resource.Styleable.AppBarLayout_android_background = global::PathwayGames.Droid.Resource.Styleable.AppBarLayout_android_background;
+			global::AiForms.Renderers.Droid.Resource.Styleable.AppBarLayout_android_keyboardNavigationCluster = global::PathwayGames.Droid.Resource.Styleable.AppBarLayout_android_keyboardNavigationCluster;
+			global::AiForms.Renderers.Droid.Resource.Styleable.AppBarLayout_android_touchscreenBlocksFocus = global::PathwayGames.Droid.Resource.Styleable.AppBarLayout_android_touchscreenBlocksFocus;
+			global::AiForms.Renderers.Droid.Resource.Styleable.AppBarLayout_elevation = global::PathwayGames.Droid.Resource.Styleable.AppBarLayout_elevation;
+			global::AiForms.Renderers.Droid.Resource.Styleable.AppBarLayout_expanded = global::PathwayGames.Droid.Resource.Styleable.AppBarLayout_expanded;
+			global::AiForms.Renderers.Droid.Resource.Styleable.AppBarLayout_liftOnScroll = global::PathwayGames.Droid.Resource.Styleable.AppBarLayout_liftOnScroll;
+			global::AiForms.Renderers.Droid.Resource.Styleable.AppBarLayoutStates = global::PathwayGames.Droid.Resource.Styleable.AppBarLayoutStates;
+			global::AiForms.Renderers.Droid.Resource.Styleable.AppBarLayoutStates_state_collapsed = global::PathwayGames.Droid.Resource.Styleable.AppBarLayoutStates_state_collapsed;
+			global::AiForms.Renderers.Droid.Resource.Styleable.AppBarLayoutStates_state_collapsible = global::PathwayGames.Droid.Resource.Styleable.AppBarLayoutStates_state_collapsible;
+			global::AiForms.Renderers.Droid.Resource.Styleable.AppBarLayoutStates_state_liftable = global::PathwayGames.Droid.Resource.Styleable.AppBarLayoutStates_state_liftable;
+			global::AiForms.Renderers.Droid.Resource.Styleable.AppBarLayoutStates_state_lifted = global::PathwayGames.Droid.Resource.Styleable.AppBarLayoutStates_state_lifted;
+			global::AiForms.Renderers.Droid.Resource.Styleable.AppBarLayout_Layout = global::PathwayGames.Droid.Resource.Styleable.AppBarLayout_Layout;
+			global::AiForms.Renderers.Droid.Resource.Styleable.AppBarLayout_Layout_layout_scrollFlags = global::PathwayGames.Droid.Resource.Styleable.AppBarLayout_Layout_layout_scrollFlags;
+			global::AiForms.Renderers.Droid.Resource.Styleable.AppBarLayout_Layout_layout_scrollInterpolator = global::PathwayGames.Droid.Resource.Styleable.AppBarLayout_Layout_layout_scrollInterpolator;
+			global::AiForms.Renderers.Droid.Resource.Styleable.AppCompatImageView = global::PathwayGames.Droid.Resource.Styleable.AppCompatImageView;
+			global::AiForms.Renderers.Droid.Resource.Styleable.AppCompatImageView_android_src = global::PathwayGames.Droid.Resource.Styleable.AppCompatImageView_android_src;
+			global::AiForms.Renderers.Droid.Resource.Styleable.AppCompatImageView_srcCompat = global::PathwayGames.Droid.Resource.Styleable.AppCompatImageView_srcCompat;
+			global::AiForms.Renderers.Droid.Resource.Styleable.AppCompatImageView_tint = global::PathwayGames.Droid.Resource.Styleable.AppCompatImageView_tint;
+			global::AiForms.Renderers.Droid.Resource.Styleable.AppCompatImageView_tintMode = global::PathwayGames.Droid.Resource.Styleable.AppCompatImageView_tintMode;
+			global::AiForms.Renderers.Droid.Resource.Styleable.AppCompatSeekBar = global::PathwayGames.Droid.Resource.Styleable.AppCompatSeekBar;
+			global::AiForms.Renderers.Droid.Resource.Styleable.AppCompatSeekBar_android_thumb = global::PathwayGames.Droid.Resource.Styleable.AppCompatSeekBar_android_thumb;
+			global::AiForms.Renderers.Droid.Resource.Styleable.AppCompatSeekBar_tickMark = global::PathwayGames.Droid.Resource.Styleable.AppCompatSeekBar_tickMark;
+			global::AiForms.Renderers.Droid.Resource.Styleable.AppCompatSeekBar_tickMarkTint = global::PathwayGames.Droid.Resource.Styleable.AppCompatSeekBar_tickMarkTint;
+			global::AiForms.Renderers.Droid.Resource.Styleable.AppCompatSeekBar_tickMarkTintMode = global::PathwayGames.Droid.Resource.Styleable.AppCompatSeekBar_tickMarkTintMode;
+			global::AiForms.Renderers.Droid.Resource.Styleable.AppCompatTextHelper = global::PathwayGames.Droid.Resource.Styleable.AppCompatTextHelper;
+			global::AiForms.Renderers.Droid.Resource.Styleable.AppCompatTextHelper_android_drawableBottom = global::PathwayGames.Droid.Resource.Styleable.AppCompatTextHelper_android_drawableBottom;
+			global::AiForms.Renderers.Droid.Resource.Styleable.AppCompatTextHelper_android_drawableEnd = global::PathwayGames.Droid.Resource.Styleable.AppCompatTextHelper_android_drawableEnd;
+			global::AiForms.Renderers.Droid.Resource.Styleable.AppCompatTextHelper_android_drawableLeft = global::PathwayGames.Droid.Resource.Styleable.AppCompatTextHelper_android_drawableLeft;
+			global::AiForms.Renderers.Droid.Resource.Styleable.AppCompatTextHelper_android_drawableRight = global::PathwayGames.Droid.Resource.Styleable.AppCompatTextHelper_android_drawableRight;
+			global::AiForms.Renderers.Droid.Resource.Styleable.AppCompatTextHelper_android_drawableStart = global::PathwayGames.Droid.Resource.Styleable.AppCompatTextHelper_android_drawableStart;
+			global::AiForms.Renderers.Droid.Resource.Styleable.AppCompatTextHelper_android_drawableTop = global::PathwayGames.Droid.Resource.Styleable.AppCompatTextHelper_android_drawableTop;
+			global::AiForms.Renderers.Droid.Resource.Styleable.AppCompatTextHelper_android_textAppearance = global::PathwayGames.Droid.Resource.Styleable.AppCompatTextHelper_android_textAppearance;
+			global::AiForms.Renderers.Droid.Resource.Styleable.AppCompatTextView = global::PathwayGames.Droid.Resource.Styleable.AppCompatTextView;
+			global::AiForms.Renderers.Droid.Resource.Styleable.AppCompatTextView_android_textAppearance = global::PathwayGames.Droid.Resource.Styleable.AppCompatTextView_android_textAppearance;
+			global::AiForms.Renderers.Droid.Resource.Styleable.AppCompatTextView_autoSizeMaxTextSize = global::PathwayGames.Droid.Resource.Styleable.AppCompatTextView_autoSizeMaxTextSize;
+			global::AiForms.Renderers.Droid.Resource.Styleable.AppCompatTextView_autoSizeMinTextSize = global::PathwayGames.Droid.Resource.Styleable.AppCompatTextView_autoSizeMinTextSize;
+			global::AiForms.Renderers.Droid.Resource.Styleable.AppCompatTextView_autoSizePresetSizes = global::PathwayGames.Droid.Resource.Styleable.AppCompatTextView_autoSizePresetSizes;
+			global::AiForms.Renderers.Droid.Resource.Styleable.AppCompatTextView_autoSizeStepGranularity = global::PathwayGames.Droid.Resource.Styleable.AppCompatTextView_autoSizeStepGranularity;
+			global::AiForms.Renderers.Droid.Resource.Styleable.AppCompatTextView_autoSizeTextType = global::PathwayGames.Droid.Resource.Styleable.AppCompatTextView_autoSizeTextType;
+			global::AiForms.Renderers.Droid.Resource.Styleable.AppCompatTextView_firstBaselineToTopHeight = global::PathwayGames.Droid.Resource.Styleable.AppCompatTextView_firstBaselineToTopHeight;
+			global::AiForms.Renderers.Droid.Resource.Styleable.AppCompatTextView_fontFamily = global::PathwayGames.Droid.Resource.Styleable.AppCompatTextView_fontFamily;
+			global::AiForms.Renderers.Droid.Resource.Styleable.AppCompatTextView_lastBaselineToBottomHeight = global::PathwayGames.Droid.Resource.Styleable.AppCompatTextView_lastBaselineToBottomHeight;
+			global::AiForms.Renderers.Droid.Resource.Styleable.AppCompatTextView_lineHeight = global::PathwayGames.Droid.Resource.Styleable.AppCompatTextView_lineHeight;
+			global::AiForms.Renderers.Droid.Resource.Styleable.AppCompatTextView_textAllCaps = global::PathwayGames.Droid.Resource.Styleable.AppCompatTextView_textAllCaps;
+			global::AiForms.Renderers.Droid.Resource.Styleable.AppCompatTheme = global::PathwayGames.Droid.Resource.Styleable.AppCompatTheme;
+			global::AiForms.Renderers.Droid.Resource.Styleable.AppCompatTheme_actionBarDivider = global::PathwayGames.Droid.Resource.Styleable.AppCompatTheme_actionBarDivider;
+			global::AiForms.Renderers.Droid.Resource.Styleable.AppCompatTheme_actionBarItemBackground = global::PathwayGames.Droid.Resource.Styleable.AppCompatTheme_actionBarItemBackground;
+			global::AiForms.Renderers.Droid.Resource.Styleable.AppCompatTheme_actionBarPopupTheme = global::PathwayGames.Droid.Resource.Styleable.AppCompatTheme_actionBarPopupTheme;
+			global::AiForms.Renderers.Droid.Resource.Styleable.AppCompatTheme_actionBarSize = global::PathwayGames.Droid.Resource.Styleable.AppCompatTheme_actionBarSize;
+			global::AiForms.Renderers.Droid.Resource.Styleable.AppCompatTheme_actionBarSplitStyle = global::PathwayGames.Droid.Resource.Styleable.AppCompatTheme_actionBarSplitStyle;
+			global::AiForms.Renderers.Droid.Resource.Styleable.AppCompatTheme_actionBarStyle = global::PathwayGames.Droid.Resource.Styleable.AppCompatTheme_actionBarStyle;
+			global::AiForms.Renderers.Droid.Resource.Styleable.AppCompatTheme_actionBarTabBarStyle = global::PathwayGames.Droid.Resource.Styleable.AppCompatTheme_actionBarTabBarStyle;
+			global::AiForms.Renderers.Droid.Resource.Styleable.AppCompatTheme_actionBarTabStyle = global::PathwayGames.Droid.Resource.Styleable.AppCompatTheme_actionBarTabStyle;
+			global::AiForms.Renderers.Droid.Resource.Styleable.AppCompatTheme_actionBarTabTextStyle = global::PathwayGames.Droid.Resource.Styleable.AppCompatTheme_actionBarTabTextStyle;
+			global::AiForms.Renderers.Droid.Resource.Styleable.AppCompatTheme_actionBarTheme = global::PathwayGames.Droid.Resource.Styleable.AppCompatTheme_actionBarTheme;
+			global::AiForms.Renderers.Droid.Resource.Styleable.AppCompatTheme_actionBarWidgetTheme = global::PathwayGames.Droid.Resource.Styleable.AppCompatTheme_actionBarWidgetTheme;
+			global::AiForms.Renderers.Droid.Resource.Styleable.AppCompatTheme_actionButtonStyle = global::PathwayGames.Droid.Resource.Styleable.AppCompatTheme_actionButtonStyle;
+			global::AiForms.Renderers.Droid.Resource.Styleable.AppCompatTheme_actionDropDownStyle = global::PathwayGames.Droid.Resource.Styleable.AppCompatTheme_actionDropDownStyle;
+			global::AiForms.Renderers.Droid.Resource.Styleable.AppCompatTheme_actionMenuTextAppearance = global::PathwayGames.Droid.Resource.Styleable.AppCompatTheme_actionMenuTextAppearance;
+			global::AiForms.Renderers.Droid.Resource.Styleable.AppCompatTheme_actionMenuTextColor = global::PathwayGames.Droid.Resource.Styleable.AppCompatTheme_actionMenuTextColor;
+			global::AiForms.Renderers.Droid.Resource.Styleable.AppCompatTheme_actionModeBackground = global::PathwayGames.Droid.Resource.Styleable.AppCompatTheme_actionModeBackground;
+			global::AiForms.Renderers.Droid.Resource.Styleable.AppCompatTheme_actionModeCloseButtonStyle = global::PathwayGames.Droid.Resource.Styleable.AppCompatTheme_actionModeCloseButtonStyle;
+			global::AiForms.Renderers.Droid.Resource.Styleable.AppCompatTheme_actionModeCloseDrawable = global::PathwayGames.Droid.Resource.Styleable.AppCompatTheme_actionModeCloseDrawable;
+			global::AiForms.Renderers.Droid.Resource.Styleable.AppCompatTheme_actionModeCopyDrawable = global::PathwayGames.Droid.Resource.Styleable.AppCompatTheme_actionModeCopyDrawable;
+			global::AiForms.Renderers.Droid.Resource.Styleable.AppCompatTheme_actionModeCutDrawable = global::PathwayGames.Droid.Resource.Styleable.AppCompatTheme_actionModeCutDrawable;
+			global::AiForms.Renderers.Droid.Resource.Styleable.AppCompatTheme_actionModeFindDrawable = global::PathwayGames.Droid.Resource.Styleable.AppCompatTheme_actionModeFindDrawable;
+			global::AiForms.Renderers.Droid.Resource.Styleable.AppCompatTheme_actionModePasteDrawable = global::PathwayGames.Droid.Resource.Styleable.AppCompatTheme_actionModePasteDrawable;
+			global::AiForms.Renderers.Droid.Resource.Styleable.AppCompatTheme_actionModePopupWindowStyle = global::PathwayGames.Droid.Resource.Styleable.AppCompatTheme_actionModePopupWindowStyle;
+			global::AiForms.Renderers.Droid.Resource.Styleable.AppCompatTheme_actionModeSelectAllDrawable = global::PathwayGames.Droid.Resource.Styleable.AppCompatTheme_actionModeSelectAllDrawable;
+			global::AiForms.Renderers.Droid.Resource.Styleable.AppCompatTheme_actionModeShareDrawable = global::PathwayGames.Droid.Resource.Styleable.AppCompatTheme_actionModeShareDrawable;
+			global::AiForms.Renderers.Droid.Resource.Styleable.AppCompatTheme_actionModeSplitBackground = global::PathwayGames.Droid.Resource.Styleable.AppCompatTheme_actionModeSplitBackground;
+			global::AiForms.Renderers.Droid.Resource.Styleable.AppCompatTheme_actionModeStyle = global::PathwayGames.Droid.Resource.Styleable.AppCompatTheme_actionModeStyle;
+			global::AiForms.Renderers.Droid.Resource.Styleable.AppCompatTheme_actionModeWebSearchDrawable = global::PathwayGames.Droid.Resource.Styleable.AppCompatTheme_actionModeWebSearchDrawable;
+			global::AiForms.Renderers.Droid.Resource.Styleable.AppCompatTheme_actionOverflowButtonStyle = global::PathwayGames.Droid.Resource.Styleable.AppCompatTheme_actionOverflowButtonStyle;
+			global::AiForms.Renderers.Droid.Resource.Styleable.AppCompatTheme_actionOverflowMenuStyle = global::PathwayGames.Droid.Resource.Styleable.AppCompatTheme_actionOverflowMenuStyle;
+			global::AiForms.Renderers.Droid.Resource.Styleable.AppCompatTheme_activityChooserViewStyle = global::PathwayGames.Droid.Resource.Styleable.AppCompatTheme_activityChooserViewStyle;
+			global::AiForms.Renderers.Droid.Resource.Styleable.AppCompatTheme_alertDialogButtonGroupStyle = global::PathwayGames.Droid.Resource.Styleable.AppCompatTheme_alertDialogButtonGroupStyle;
+			global::AiForms.Renderers.Droid.Resource.Styleable.AppCompatTheme_alertDialogCenterButtons = global::PathwayGames.Droid.Resource.Styleable.AppCompatTheme_alertDialogCenterButtons;
+			global::AiForms.Renderers.Droid.Resource.Styleable.AppCompatTheme_alertDialogStyle = global::PathwayGames.Droid.Resource.Styleable.AppCompatTheme_alertDialogStyle;
+			global::AiForms.Renderers.Droid.Resource.Styleable.AppCompatTheme_alertDialogTheme = global::PathwayGames.Droid.Resource.Styleable.AppCompatTheme_alertDialogTheme;
+			global::AiForms.Renderers.Droid.Resource.Styleable.AppCompatTheme_android_windowAnimationStyle = global::PathwayGames.Droid.Resource.Styleable.AppCompatTheme_android_windowAnimationStyle;
+			global::AiForms.Renderers.Droid.Resource.Styleable.AppCompatTheme_android_windowIsFloating = global::PathwayGames.Droid.Resource.Styleable.AppCompatTheme_android_windowIsFloating;
+			global::AiForms.Renderers.Droid.Resource.Styleable.AppCompatTheme_autoCompleteTextViewStyle = global::PathwayGames.Droid.Resource.Styleable.AppCompatTheme_autoCompleteTextViewStyle;
+			global::AiForms.Renderers.Droid.Resource.Styleable.AppCompatTheme_borderlessButtonStyle = global::PathwayGames.Droid.Resource.Styleable.AppCompatTheme_borderlessButtonStyle;
+			global::AiForms.Renderers.Droid.Resource.Styleable.AppCompatTheme_buttonBarButtonStyle = global::PathwayGames.Droid.Resource.Styleable.AppCompatTheme_buttonBarButtonStyle;
+			global::AiForms.Renderers.Droid.Resource.Styleable.AppCompatTheme_buttonBarNegativeButtonStyle = global::PathwayGames.Droid.Resource.Styleable.AppCompatTheme_buttonBarNegativeButtonStyle;
+			global::AiForms.Renderers.Droid.Resource.Styleable.AppCompatTheme_buttonBarNeutralButtonStyle = global::PathwayGames.Droid.Resource.Styleable.AppCompatTheme_buttonBarNeutralButtonStyle;
+			global::AiForms.Renderers.Droid.Resource.Styleable.AppCompatTheme_buttonBarPositiveButtonStyle = global::PathwayGames.Droid.Resource.Styleable.AppCompatTheme_buttonBarPositiveButtonStyle;
+			global::AiForms.Renderers.Droid.Resource.Styleable.AppCompatTheme_buttonBarStyle = global::PathwayGames.Droid.Resource.Styleable.AppCompatTheme_buttonBarStyle;
+			global::AiForms.Renderers.Droid.Resource.Styleable.AppCompatTheme_buttonStyle = global::PathwayGames.Droid.Resource.Styleable.AppCompatTheme_buttonStyle;
+			global::AiForms.Renderers.Droid.Resource.Styleable.AppCompatTheme_buttonStyleSmall = global::PathwayGames.Droid.Resource.Styleable.AppCompatTheme_buttonStyleSmall;
+			global::AiForms.Renderers.Droid.Resource.Styleable.AppCompatTheme_checkboxStyle = global::PathwayGames.Droid.Resource.Styleable.AppCompatTheme_checkboxStyle;
+			global::AiForms.Renderers.Droid.Resource.Styleable.AppCompatTheme_checkedTextViewStyle = global::PathwayGames.Droid.Resource.Styleable.AppCompatTheme_checkedTextViewStyle;
+			global::AiForms.Renderers.Droid.Resource.Styleable.AppCompatTheme_colorAccent = global::PathwayGames.Droid.Resource.Styleable.AppCompatTheme_colorAccent;
+			global::AiForms.Renderers.Droid.Resource.Styleable.AppCompatTheme_colorBackgroundFloating = global::PathwayGames.Droid.Resource.Styleable.AppCompatTheme_colorBackgroundFloating;
+			global::AiForms.Renderers.Droid.Resource.Styleable.AppCompatTheme_colorButtonNormal = global::PathwayGames.Droid.Resource.Styleable.AppCompatTheme_colorButtonNormal;
+			global::AiForms.Renderers.Droid.Resource.Styleable.AppCompatTheme_colorControlActivated = global::PathwayGames.Droid.Resource.Styleable.AppCompatTheme_colorControlActivated;
+			global::AiForms.Renderers.Droid.Resource.Styleable.AppCompatTheme_colorControlHighlight = global::PathwayGames.Droid.Resource.Styleable.AppCompatTheme_colorControlHighlight;
+			global::AiForms.Renderers.Droid.Resource.Styleable.AppCompatTheme_colorControlNormal = global::PathwayGames.Droid.Resource.Styleable.AppCompatTheme_colorControlNormal;
+			global::AiForms.Renderers.Droid.Resource.Styleable.AppCompatTheme_colorError = global::PathwayGames.Droid.Resource.Styleable.AppCompatTheme_colorError;
+			global::AiForms.Renderers.Droid.Resource.Styleable.AppCompatTheme_colorPrimary = global::PathwayGames.Droid.Resource.Styleable.AppCompatTheme_colorPrimary;
+			global::AiForms.Renderers.Droid.Resource.Styleable.AppCompatTheme_colorPrimaryDark = global::PathwayGames.Droid.Resource.Styleable.AppCompatTheme_colorPrimaryDark;
+			global::AiForms.Renderers.Droid.Resource.Styleable.AppCompatTheme_colorSwitchThumbNormal = global::PathwayGames.Droid.Resource.Styleable.AppCompatTheme_colorSwitchThumbNormal;
+			global::AiForms.Renderers.Droid.Resource.Styleable.AppCompatTheme_controlBackground = global::PathwayGames.Droid.Resource.Styleable.AppCompatTheme_controlBackground;
+			global::AiForms.Renderers.Droid.Resource.Styleable.AppCompatTheme_dialogCornerRadius = global::PathwayGames.Droid.Resource.Styleable.AppCompatTheme_dialogCornerRadius;
+			global::AiForms.Renderers.Droid.Resource.Styleable.AppCompatTheme_dialogPreferredPadding = global::PathwayGames.Droid.Resource.Styleable.AppCompatTheme_dialogPreferredPadding;
+			global::AiForms.Renderers.Droid.Resource.Styleable.AppCompatTheme_dialogTheme = global::PathwayGames.Droid.Resource.Styleable.AppCompatTheme_dialogTheme;
+			global::AiForms.Renderers.Droid.Resource.Styleable.AppCompatTheme_dividerHorizontal = global::PathwayGames.Droid.Resource.Styleable.AppCompatTheme_dividerHorizontal;
+			global::AiForms.Renderers.Droid.Resource.Styleable.AppCompatTheme_dividerVertical = global::PathwayGames.Droid.Resource.Styleable.AppCompatTheme_dividerVertical;
+			global::AiForms.Renderers.Droid.Resource.Styleable.AppCompatTheme_dropDownListViewStyle = global::PathwayGames.Droid.Resource.Styleable.AppCompatTheme_dropDownListViewStyle;
+			global::AiForms.Renderers.Droid.Resource.Styleable.AppCompatTheme_dropdownListPreferredItemHeight = global::PathwayGames.Droid.Resource.Styleable.AppCompatTheme_dropdownListPreferredItemHeight;
+			global::AiForms.Renderers.Droid.Resource.Styleable.AppCompatTheme_editTextBackground = global::PathwayGames.Droid.Resource.Styleable.AppCompatTheme_editTextBackground;
+			global::AiForms.Renderers.Droid.Resource.Styleable.AppCompatTheme_editTextColor = global::PathwayGames.Droid.Resource.Styleable.AppCompatTheme_editTextColor;
+			global::AiForms.Renderers.Droid.Resource.Styleable.AppCompatTheme_editTextStyle = global::PathwayGames.Droid.Resource.Styleable.AppCompatTheme_editTextStyle;
+			global::AiForms.Renderers.Droid.Resource.Styleable.AppCompatTheme_homeAsUpIndicator = global::PathwayGames.Droid.Resource.Styleable.AppCompatTheme_homeAsUpIndicator;
+			global::AiForms.Renderers.Droid.Resource.Styleable.AppCompatTheme_imageButtonStyle = global::PathwayGames.Droid.Resource.Styleable.AppCompatTheme_imageButtonStyle;
+			global::AiForms.Renderers.Droid.Resource.Styleable.AppCompatTheme_listChoiceBackgroundIndicator = global::PathwayGames.Droid.Resource.Styleable.AppCompatTheme_listChoiceBackgroundIndicator;
+			global::AiForms.Renderers.Droid.Resource.Styleable.AppCompatTheme_listDividerAlertDialog = global::PathwayGames.Droid.Resource.Styleable.AppCompatTheme_listDividerAlertDialog;
+			global::AiForms.Renderers.Droid.Resource.Styleable.AppCompatTheme_listMenuViewStyle = global::PathwayGames.Droid.Resource.Styleable.AppCompatTheme_listMenuViewStyle;
+			global::AiForms.Renderers.Droid.Resource.Styleable.AppCompatTheme_listPopupWindowStyle = global::PathwayGames.Droid.Resource.Styleable.AppCompatTheme_listPopupWindowStyle;
+			global::AiForms.Renderers.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemHeight = global::PathwayGames.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemHeight;
+			global::AiForms.Renderers.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemHeightLarge = global::PathwayGames.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemHeightLarge;
+			global::AiForms.Renderers.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemHeightSmall = global::PathwayGames.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemHeightSmall;
+			global::AiForms.Renderers.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingLeft = global::PathwayGames.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingLeft;
+			global::AiForms.Renderers.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingRight = global::PathwayGames.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingRight;
+			global::AiForms.Renderers.Droid.Resource.Styleable.AppCompatTheme_panelBackground = global::PathwayGames.Droid.Resource.Styleable.AppCompatTheme_panelBackground;
+			global::AiForms.Renderers.Droid.Resource.Styleable.AppCompatTheme_panelMenuListTheme = global::PathwayGames.Droid.Resource.Styleable.AppCompatTheme_panelMenuListTheme;
+			global::AiForms.Renderers.Droid.Resource.Styleable.AppCompatTheme_panelMenuListWidth = global::PathwayGames.Droid.Resource.Styleable.AppCompatTheme_panelMenuListWidth;
+			global::AiForms.Renderers.Droid.Resource.Styleable.AppCompatTheme_popupMenuStyle = global::PathwayGames.Droid.Resource.Styleable.AppCompatTheme_popupMenuStyle;
+			global::AiForms.Renderers.Droid.Resource.Styleable.AppCompatTheme_popupWindowStyle = global::PathwayGames.Droid.Resource.Styleable.AppCompatTheme_popupWindowStyle;
+			global::AiForms.Renderers.Droid.Resource.Styleable.AppCompatTheme_radioButtonStyle = global::PathwayGames.Droid.Resource.Styleable.AppCompatTheme_radioButtonStyle;
+			global::AiForms.Renderers.Droid.Resource.Styleable.AppCompatTheme_ratingBarStyle = global::PathwayGames.Droid.Resource.Styleable.AppCompatTheme_ratingBarStyle;
+			global::AiForms.Renderers.Droid.Resource.Styleable.AppCompatTheme_ratingBarStyleIndicator = global::PathwayGames.Droid.Resource.Styleable.AppCompatTheme_ratingBarStyleIndicator;
+			global::AiForms.Renderers.Droid.Resource.Styleable.AppCompatTheme_ratingBarStyleSmall = global::PathwayGames.Droid.Resource.Styleable.AppCompatTheme_ratingBarStyleSmall;
+			global::AiForms.Renderers.Droid.Resource.Styleable.AppCompatTheme_searchViewStyle = global::PathwayGames.Droid.Resource.Styleable.AppCompatTheme_searchViewStyle;
+			global::AiForms.Renderers.Droid.Resource.Styleable.AppCompatTheme_seekBarStyle = global::PathwayGames.Droid.Resource.Styleable.AppCompatTheme_seekBarStyle;
+			global::AiForms.Renderers.Droid.Resource.Styleable.AppCompatTheme_selectableItemBackground = global::PathwayGames.Droid.Resource.Styleable.AppCompatTheme_selectableItemBackground;
+			global::AiForms.Renderers.Droid.Resource.Styleable.AppCompatTheme_selectableItemBackgroundBorderless = global::PathwayGames.Droid.Resource.Styleable.AppCompatTheme_selectableItemBackgroundBorderless;
+			global::AiForms.Renderers.Droid.Resource.Styleable.AppCompatTheme_spinnerDropDownItemStyle = global::PathwayGames.Droid.Resource.Styleable.AppCompatTheme_spinnerDropDownItemStyle;
+			global::AiForms.Renderers.Droid.Resource.Styleable.AppCompatTheme_spinnerStyle = global::PathwayGames.Droid.Resource.Styleable.AppCompatTheme_spinnerStyle;
+			global::AiForms.Renderers.Droid.Resource.Styleable.AppCompatTheme_switchStyle = global::PathwayGames.Droid.Resource.Styleable.AppCompatTheme_switchStyle;
+			global::AiForms.Renderers.Droid.Resource.Styleable.AppCompatTheme_textAppearanceLargePopupMenu = global::PathwayGames.Droid.Resource.Styleable.AppCompatTheme_textAppearanceLargePopupMenu;
+			global::AiForms.Renderers.Droid.Resource.Styleable.AppCompatTheme_textAppearanceListItem = global::PathwayGames.Droid.Resource.Styleable.AppCompatTheme_textAppearanceListItem;
+			global::AiForms.Renderers.Droid.Resource.Styleable.AppCompatTheme_textAppearanceListItemSecondary = global::PathwayGames.Droid.Resource.Styleable.AppCompatTheme_textAppearanceListItemSecondary;
+			global::AiForms.Renderers.Droid.Resource.Styleable.AppCompatTheme_textAppearanceListItemSmall = global::PathwayGames.Droid.Resource.Styleable.AppCompatTheme_textAppearanceListItemSmall;
+			global::AiForms.Renderers.Droid.Resource.Styleable.AppCompatTheme_textAppearancePopupMenuHeader = global::PathwayGames.Droid.Resource.Styleable.AppCompatTheme_textAppearancePopupMenuHeader;
+			global::AiForms.Renderers.Droid.Resource.Styleable.AppCompatTheme_textAppearanceSearchResultSubtitle = global::PathwayGames.Droid.Resource.Styleable.AppCompatTheme_textAppearanceSearchResultSubtitle;
+			global::AiForms.Renderers.Droid.Resource.Styleable.AppCompatTheme_textAppearanceSearchResultTitle = global::PathwayGames.Droid.Resource.Styleable.AppCompatTheme_textAppearanceSearchResultTitle;
+			global::AiForms.Renderers.Droid.Resource.Styleable.AppCompatTheme_textAppearanceSmallPopupMenu = global::PathwayGames.Droid.Resource.Styleable.AppCompatTheme_textAppearanceSmallPopupMenu;
+			global::AiForms.Renderers.Droid.Resource.Styleable.AppCompatTheme_textColorAlertDialogListItem = global::PathwayGames.Droid.Resource.Styleable.AppCompatTheme_textColorAlertDialogListItem;
+			global::AiForms.Renderers.Droid.Resource.Styleable.AppCompatTheme_textColorSearchUrl = global::PathwayGames.Droid.Resource.Styleable.AppCompatTheme_textColorSearchUrl;
+			global::AiForms.Renderers.Droid.Resource.Styleable.AppCompatTheme_toolbarNavigationButtonStyle = global::PathwayGames.Droid.Resource.Styleable.AppCompatTheme_toolbarNavigationButtonStyle;
+			global::AiForms.Renderers.Droid.Resource.Styleable.AppCompatTheme_toolbarStyle = global::PathwayGames.Droid.Resource.Styleable.AppCompatTheme_toolbarStyle;
+			global::AiForms.Renderers.Droid.Resource.Styleable.AppCompatTheme_tooltipForegroundColor = global::PathwayGames.Droid.Resource.Styleable.AppCompatTheme_tooltipForegroundColor;
+			global::AiForms.Renderers.Droid.Resource.Styleable.AppCompatTheme_tooltipFrameBackground = global::PathwayGames.Droid.Resource.Styleable.AppCompatTheme_tooltipFrameBackground;
+			global::AiForms.Renderers.Droid.Resource.Styleable.AppCompatTheme_viewInflaterClass = global::PathwayGames.Droid.Resource.Styleable.AppCompatTheme_viewInflaterClass;
+			global::AiForms.Renderers.Droid.Resource.Styleable.AppCompatTheme_windowActionBar = global::PathwayGames.Droid.Resource.Styleable.AppCompatTheme_windowActionBar;
+			global::AiForms.Renderers.Droid.Resource.Styleable.AppCompatTheme_windowActionBarOverlay = global::PathwayGames.Droid.Resource.Styleable.AppCompatTheme_windowActionBarOverlay;
+			global::AiForms.Renderers.Droid.Resource.Styleable.AppCompatTheme_windowActionModeOverlay = global::PathwayGames.Droid.Resource.Styleable.AppCompatTheme_windowActionModeOverlay;
+			global::AiForms.Renderers.Droid.Resource.Styleable.AppCompatTheme_windowFixedHeightMajor = global::PathwayGames.Droid.Resource.Styleable.AppCompatTheme_windowFixedHeightMajor;
+			global::AiForms.Renderers.Droid.Resource.Styleable.AppCompatTheme_windowFixedHeightMinor = global::PathwayGames.Droid.Resource.Styleable.AppCompatTheme_windowFixedHeightMinor;
+			global::AiForms.Renderers.Droid.Resource.Styleable.AppCompatTheme_windowFixedWidthMajor = global::PathwayGames.Droid.Resource.Styleable.AppCompatTheme_windowFixedWidthMajor;
+			global::AiForms.Renderers.Droid.Resource.Styleable.AppCompatTheme_windowFixedWidthMinor = global::PathwayGames.Droid.Resource.Styleable.AppCompatTheme_windowFixedWidthMinor;
+			global::AiForms.Renderers.Droid.Resource.Styleable.AppCompatTheme_windowMinWidthMajor = global::PathwayGames.Droid.Resource.Styleable.AppCompatTheme_windowMinWidthMajor;
+			global::AiForms.Renderers.Droid.Resource.Styleable.AppCompatTheme_windowMinWidthMinor = global::PathwayGames.Droid.Resource.Styleable.AppCompatTheme_windowMinWidthMinor;
+			global::AiForms.Renderers.Droid.Resource.Styleable.AppCompatTheme_windowNoTitle = global::PathwayGames.Droid.Resource.Styleable.AppCompatTheme_windowNoTitle;
+			global::AiForms.Renderers.Droid.Resource.Styleable.BottomAppBar = global::PathwayGames.Droid.Resource.Styleable.BottomAppBar;
+			global::AiForms.Renderers.Droid.Resource.Styleable.BottomAppBar_backgroundTint = global::PathwayGames.Droid.Resource.Styleable.BottomAppBar_backgroundTint;
+			global::AiForms.Renderers.Droid.Resource.Styleable.BottomAppBar_fabAlignmentMode = global::PathwayGames.Droid.Resource.Styleable.BottomAppBar_fabAlignmentMode;
+			global::AiForms.Renderers.Droid.Resource.Styleable.BottomAppBar_fabCradleMargin = global::PathwayGames.Droid.Resource.Styleable.BottomAppBar_fabCradleMargin;
+			global::AiForms.Renderers.Droid.Resource.Styleable.BottomAppBar_fabCradleRoundedCornerRadius = global::PathwayGames.Droid.Resource.Styleable.BottomAppBar_fabCradleRoundedCornerRadius;
+			global::AiForms.Renderers.Droid.Resource.Styleable.BottomAppBar_fabCradleVerticalOffset = global::PathwayGames.Droid.Resource.Styleable.BottomAppBar_fabCradleVerticalOffset;
+			global::AiForms.Renderers.Droid.Resource.Styleable.BottomAppBar_hideOnScroll = global::PathwayGames.Droid.Resource.Styleable.BottomAppBar_hideOnScroll;
+			global::AiForms.Renderers.Droid.Resource.Styleable.BottomNavigationView = global::PathwayGames.Droid.Resource.Styleable.BottomNavigationView;
+			global::AiForms.Renderers.Droid.Resource.Styleable.BottomNavigationView_elevation = global::PathwayGames.Droid.Resource.Styleable.BottomNavigationView_elevation;
+			global::AiForms.Renderers.Droid.Resource.Styleable.BottomNavigationView_itemBackground = global::PathwayGames.Droid.Resource.Styleable.BottomNavigationView_itemBackground;
+			global::AiForms.Renderers.Droid.Resource.Styleable.BottomNavigationView_itemHorizontalTranslationEnabled = global::PathwayGames.Droid.Resource.Styleable.BottomNavigationView_itemHorizontalTranslationEnabled;
+			global::AiForms.Renderers.Droid.Resource.Styleable.BottomNavigationView_itemIconSize = global::PathwayGames.Droid.Resource.Styleable.BottomNavigationView_itemIconSize;
+			global::AiForms.Renderers.Droid.Resource.Styleable.BottomNavigationView_itemIconTint = global::PathwayGames.Droid.Resource.Styleable.BottomNavigationView_itemIconTint;
+			global::AiForms.Renderers.Droid.Resource.Styleable.BottomNavigationView_itemTextAppearanceActive = global::PathwayGames.Droid.Resource.Styleable.BottomNavigationView_itemTextAppearanceActive;
+			global::AiForms.Renderers.Droid.Resource.Styleable.BottomNavigationView_itemTextAppearanceInactive = global::PathwayGames.Droid.Resource.Styleable.BottomNavigationView_itemTextAppearanceInactive;
+			global::AiForms.Renderers.Droid.Resource.Styleable.BottomNavigationView_itemTextColor = global::PathwayGames.Droid.Resource.Styleable.BottomNavigationView_itemTextColor;
+			global::AiForms.Renderers.Droid.Resource.Styleable.BottomNavigationView_labelVisibilityMode = global::PathwayGames.Droid.Resource.Styleable.BottomNavigationView_labelVisibilityMode;
+			global::AiForms.Renderers.Droid.Resource.Styleable.BottomNavigationView_menu = global::PathwayGames.Droid.Resource.Styleable.BottomNavigationView_menu;
+			global::AiForms.Renderers.Droid.Resource.Styleable.BottomSheetBehavior_Layout = global::PathwayGames.Droid.Resource.Styleable.BottomSheetBehavior_Layout;
+			global::AiForms.Renderers.Droid.Resource.Styleable.BottomSheetBehavior_Layout_behavior_fitToContents = global::PathwayGames.Droid.Resource.Styleable.BottomSheetBehavior_Layout_behavior_fitToContents;
+			global::AiForms.Renderers.Droid.Resource.Styleable.BottomSheetBehavior_Layout_behavior_hideable = global::PathwayGames.Droid.Resource.Styleable.BottomSheetBehavior_Layout_behavior_hideable;
+			global::AiForms.Renderers.Droid.Resource.Styleable.BottomSheetBehavior_Layout_behavior_peekHeight = global::PathwayGames.Droid.Resource.Styleable.BottomSheetBehavior_Layout_behavior_peekHeight;
+			global::AiForms.Renderers.Droid.Resource.Styleable.BottomSheetBehavior_Layout_behavior_skipCollapsed = global::PathwayGames.Droid.Resource.Styleable.BottomSheetBehavior_Layout_behavior_skipCollapsed;
+			global::AiForms.Renderers.Droid.Resource.Styleable.ButtonBarLayout = global::PathwayGames.Droid.Resource.Styleable.ButtonBarLayout;
+			global::AiForms.Renderers.Droid.Resource.Styleable.ButtonBarLayout_allowStacking = global::PathwayGames.Droid.Resource.Styleable.ButtonBarLayout_allowStacking;
+			global::AiForms.Renderers.Droid.Resource.Styleable.CardView = global::PathwayGames.Droid.Resource.Styleable.CardView;
+			global::AiForms.Renderers.Droid.Resource.Styleable.CardView_android_minHeight = global::PathwayGames.Droid.Resource.Styleable.CardView_android_minHeight;
+			global::AiForms.Renderers.Droid.Resource.Styleable.CardView_android_minWidth = global::PathwayGames.Droid.Resource.Styleable.CardView_android_minWidth;
+			global::AiForms.Renderers.Droid.Resource.Styleable.CardView_cardBackgroundColor = global::PathwayGames.Droid.Resource.Styleable.CardView_cardBackgroundColor;
+			global::AiForms.Renderers.Droid.Resource.Styleable.CardView_cardCornerRadius = global::PathwayGames.Droid.Resource.Styleable.CardView_cardCornerRadius;
+			global::AiForms.Renderers.Droid.Resource.Styleable.CardView_cardElevation = global::PathwayGames.Droid.Resource.Styleable.CardView_cardElevation;
+			global::AiForms.Renderers.Droid.Resource.Styleable.CardView_cardMaxElevation = global::PathwayGames.Droid.Resource.Styleable.CardView_cardMaxElevation;
+			global::AiForms.Renderers.Droid.Resource.Styleable.CardView_cardPreventCornerOverlap = global::PathwayGames.Droid.Resource.Styleable.CardView_cardPreventCornerOverlap;
+			global::AiForms.Renderers.Droid.Resource.Styleable.CardView_cardUseCompatPadding = global::PathwayGames.Droid.Resource.Styleable.CardView_cardUseCompatPadding;
+			global::AiForms.Renderers.Droid.Resource.Styleable.CardView_contentPadding = global::PathwayGames.Droid.Resource.Styleable.CardView_contentPadding;
+			global::AiForms.Renderers.Droid.Resource.Styleable.CardView_contentPaddingBottom = global::PathwayGames.Droid.Resource.Styleable.CardView_contentPaddingBottom;
+			global::AiForms.Renderers.Droid.Resource.Styleable.CardView_contentPaddingLeft = global::PathwayGames.Droid.Resource.Styleable.CardView_contentPaddingLeft;
+			global::AiForms.Renderers.Droid.Resource.Styleable.CardView_contentPaddingRight = global::PathwayGames.Droid.Resource.Styleable.CardView_contentPaddingRight;
+			global::AiForms.Renderers.Droid.Resource.Styleable.CardView_contentPaddingTop = global::PathwayGames.Droid.Resource.Styleable.CardView_contentPaddingTop;
+			global::AiForms.Renderers.Droid.Resource.Styleable.Chip = global::PathwayGames.Droid.Resource.Styleable.Chip;
+			global::AiForms.Renderers.Droid.Resource.Styleable.Chip_android_checkable = global::PathwayGames.Droid.Resource.Styleable.Chip_android_checkable;
+			global::AiForms.Renderers.Droid.Resource.Styleable.Chip_android_ellipsize = global::PathwayGames.Droid.Resource.Styleable.Chip_android_ellipsize;
+			global::AiForms.Renderers.Droid.Resource.Styleable.Chip_android_maxWidth = global::PathwayGames.Droid.Resource.Styleable.Chip_android_maxWidth;
+			global::AiForms.Renderers.Droid.Resource.Styleable.Chip_android_text = global::PathwayGames.Droid.Resource.Styleable.Chip_android_text;
+			global::AiForms.Renderers.Droid.Resource.Styleable.Chip_android_textAppearance = global::PathwayGames.Droid.Resource.Styleable.Chip_android_textAppearance;
+			global::AiForms.Renderers.Droid.Resource.Styleable.Chip_checkedIcon = global::PathwayGames.Droid.Resource.Styleable.Chip_checkedIcon;
+			global::AiForms.Renderers.Droid.Resource.Styleable.Chip_checkedIconEnabled = global::PathwayGames.Droid.Resource.Styleable.Chip_checkedIconEnabled;
+			global::AiForms.Renderers.Droid.Resource.Styleable.Chip_checkedIconVisible = global::PathwayGames.Droid.Resource.Styleable.Chip_checkedIconVisible;
+			global::AiForms.Renderers.Droid.Resource.Styleable.Chip_chipBackgroundColor = global::PathwayGames.Droid.Resource.Styleable.Chip_chipBackgroundColor;
+			global::AiForms.Renderers.Droid.Resource.Styleable.Chip_chipCornerRadius = global::PathwayGames.Droid.Resource.Styleable.Chip_chipCornerRadius;
+			global::AiForms.Renderers.Droid.Resource.Styleable.Chip_chipEndPadding = global::PathwayGames.Droid.Resource.Styleable.Chip_chipEndPadding;
+			global::AiForms.Renderers.Droid.Resource.Styleable.Chip_chipIcon = global::PathwayGames.Droid.Resource.Styleable.Chip_chipIcon;
+			global::AiForms.Renderers.Droid.Resource.Styleable.Chip_chipIconEnabled = global::PathwayGames.Droid.Resource.Styleable.Chip_chipIconEnabled;
+			global::AiForms.Renderers.Droid.Resource.Styleable.Chip_chipIconSize = global::PathwayGames.Droid.Resource.Styleable.Chip_chipIconSize;
+			global::AiForms.Renderers.Droid.Resource.Styleable.Chip_chipIconTint = global::PathwayGames.Droid.Resource.Styleable.Chip_chipIconTint;
+			global::AiForms.Renderers.Droid.Resource.Styleable.Chip_chipIconVisible = global::PathwayGames.Droid.Resource.Styleable.Chip_chipIconVisible;
+			global::AiForms.Renderers.Droid.Resource.Styleable.Chip_chipMinHeight = global::PathwayGames.Droid.Resource.Styleable.Chip_chipMinHeight;
+			global::AiForms.Renderers.Droid.Resource.Styleable.Chip_chipStartPadding = global::PathwayGames.Droid.Resource.Styleable.Chip_chipStartPadding;
+			global::AiForms.Renderers.Droid.Resource.Styleable.Chip_chipStrokeColor = global::PathwayGames.Droid.Resource.Styleable.Chip_chipStrokeColor;
+			global::AiForms.Renderers.Droid.Resource.Styleable.Chip_chipStrokeWidth = global::PathwayGames.Droid.Resource.Styleable.Chip_chipStrokeWidth;
+			global::AiForms.Renderers.Droid.Resource.Styleable.Chip_closeIcon = global::PathwayGames.Droid.Resource.Styleable.Chip_closeIcon;
+			global::AiForms.Renderers.Droid.Resource.Styleable.Chip_closeIconEnabled = global::PathwayGames.Droid.Resource.Styleable.Chip_closeIconEnabled;
+			global::AiForms.Renderers.Droid.Resource.Styleable.Chip_closeIconEndPadding = global::PathwayGames.Droid.Resource.Styleable.Chip_closeIconEndPadding;
+			global::AiForms.Renderers.Droid.Resource.Styleable.Chip_closeIconSize = global::PathwayGames.Droid.Resource.Styleable.Chip_closeIconSize;
+			global::AiForms.Renderers.Droid.Resource.Styleable.Chip_closeIconStartPadding = global::PathwayGames.Droid.Resource.Styleable.Chip_closeIconStartPadding;
+			global::AiForms.Renderers.Droid.Resource.Styleable.Chip_closeIconTint = global::PathwayGames.Droid.Resource.Styleable.Chip_closeIconTint;
+			global::AiForms.Renderers.Droid.Resource.Styleable.Chip_closeIconVisible = global::PathwayGames.Droid.Resource.Styleable.Chip_closeIconVisible;
+			global::AiForms.Renderers.Droid.Resource.Styleable.Chip_hideMotionSpec = global::PathwayGames.Droid.Resource.Styleable.Chip_hideMotionSpec;
+			global::AiForms.Renderers.Droid.Resource.Styleable.Chip_iconEndPadding = global::PathwayGames.Droid.Resource.Styleable.Chip_iconEndPadding;
+			global::AiForms.Renderers.Droid.Resource.Styleable.Chip_iconStartPadding = global::PathwayGames.Droid.Resource.Styleable.Chip_iconStartPadding;
+			global::AiForms.Renderers.Droid.Resource.Styleable.Chip_rippleColor = global::PathwayGames.Droid.Resource.Styleable.Chip_rippleColor;
+			global::AiForms.Renderers.Droid.Resource.Styleable.Chip_showMotionSpec = global::PathwayGames.Droid.Resource.Styleable.Chip_showMotionSpec;
+			global::AiForms.Renderers.Droid.Resource.Styleable.Chip_textEndPadding = global::PathwayGames.Droid.Resource.Styleable.Chip_textEndPadding;
+			global::AiForms.Renderers.Droid.Resource.Styleable.Chip_textStartPadding = global::PathwayGames.Droid.Resource.Styleable.Chip_textStartPadding;
+			global::AiForms.Renderers.Droid.Resource.Styleable.ChipGroup = global::PathwayGames.Droid.Resource.Styleable.ChipGroup;
+			global::AiForms.Renderers.Droid.Resource.Styleable.ChipGroup_checkedChip = global::PathwayGames.Droid.Resource.Styleable.ChipGroup_checkedChip;
+			global::AiForms.Renderers.Droid.Resource.Styleable.ChipGroup_chipSpacing = global::PathwayGames.Droid.Resource.Styleable.ChipGroup_chipSpacing;
+			global::AiForms.Renderers.Droid.Resource.Styleable.ChipGroup_chipSpacingHorizontal = global::PathwayGames.Droid.Resource.Styleable.ChipGroup_chipSpacingHorizontal;
+			global::AiForms.Renderers.Droid.Resource.Styleable.ChipGroup_chipSpacingVertical = global::PathwayGames.Droid.Resource.Styleable.ChipGroup_chipSpacingVertical;
+			global::AiForms.Renderers.Droid.Resource.Styleable.ChipGroup_singleLine = global::PathwayGames.Droid.Resource.Styleable.ChipGroup_singleLine;
+			global::AiForms.Renderers.Droid.Resource.Styleable.ChipGroup_singleSelection = global::PathwayGames.Droid.Resource.Styleable.ChipGroup_singleSelection;
+			global::AiForms.Renderers.Droid.Resource.Styleable.CollapsingToolbarLayout = global::PathwayGames.Droid.Resource.Styleable.CollapsingToolbarLayout;
+			global::AiForms.Renderers.Droid.Resource.Styleable.CollapsingToolbarLayout_collapsedTitleGravity = global::PathwayGames.Droid.Resource.Styleable.CollapsingToolbarLayout_collapsedTitleGravity;
+			global::AiForms.Renderers.Droid.Resource.Styleable.CollapsingToolbarLayout_collapsedTitleTextAppearance = global::PathwayGames.Droid.Resource.Styleable.CollapsingToolbarLayout_collapsedTitleTextAppearance;
+			global::AiForms.Renderers.Droid.Resource.Styleable.CollapsingToolbarLayout_contentScrim = global::PathwayGames.Droid.Resource.Styleable.CollapsingToolbarLayout_contentScrim;
+			global::AiForms.Renderers.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleGravity = global::PathwayGames.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleGravity;
+			global::AiForms.Renderers.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMargin = global::PathwayGames.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMargin;
+			global::AiForms.Renderers.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginBottom = global::PathwayGames.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginBottom;
+			global::AiForms.Renderers.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginEnd = global::PathwayGames.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginEnd;
+			global::AiForms.Renderers.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginStart = global::PathwayGames.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginStart;
+			global::AiForms.Renderers.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginTop = global::PathwayGames.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginTop;
+			global::AiForms.Renderers.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleTextAppearance = global::PathwayGames.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleTextAppearance;
+			global::AiForms.Renderers.Droid.Resource.Styleable.CollapsingToolbarLayout_scrimAnimationDuration = global::PathwayGames.Droid.Resource.Styleable.CollapsingToolbarLayout_scrimAnimationDuration;
+			global::AiForms.Renderers.Droid.Resource.Styleable.CollapsingToolbarLayout_scrimVisibleHeightTrigger = global::PathwayGames.Droid.Resource.Styleable.CollapsingToolbarLayout_scrimVisibleHeightTrigger;
+			global::AiForms.Renderers.Droid.Resource.Styleable.CollapsingToolbarLayout_statusBarScrim = global::PathwayGames.Droid.Resource.Styleable.CollapsingToolbarLayout_statusBarScrim;
+			global::AiForms.Renderers.Droid.Resource.Styleable.CollapsingToolbarLayout_title = global::PathwayGames.Droid.Resource.Styleable.CollapsingToolbarLayout_title;
+			global::AiForms.Renderers.Droid.Resource.Styleable.CollapsingToolbarLayout_titleEnabled = global::PathwayGames.Droid.Resource.Styleable.CollapsingToolbarLayout_titleEnabled;
+			global::AiForms.Renderers.Droid.Resource.Styleable.CollapsingToolbarLayout_toolbarId = global::PathwayGames.Droid.Resource.Styleable.CollapsingToolbarLayout_toolbarId;
+			global::AiForms.Renderers.Droid.Resource.Styleable.CollapsingToolbarLayout_Layout = global::PathwayGames.Droid.Resource.Styleable.CollapsingToolbarLayout_Layout;
+			global::AiForms.Renderers.Droid.Resource.Styleable.CollapsingToolbarLayout_Layout_layout_collapseMode = global::PathwayGames.Droid.Resource.Styleable.CollapsingToolbarLayout_Layout_layout_collapseMode;
+			global::AiForms.Renderers.Droid.Resource.Styleable.CollapsingToolbarLayout_Layout_layout_collapseParallaxMultiplier = global::PathwayGames.Droid.Resource.Styleable.CollapsingToolbarLayout_Layout_layout_collapseParallaxMultiplier;
+			global::AiForms.Renderers.Droid.Resource.Styleable.ColorStateListItem = global::PathwayGames.Droid.Resource.Styleable.ColorStateListItem;
+			global::AiForms.Renderers.Droid.Resource.Styleable.ColorStateListItem_alpha = global::PathwayGames.Droid.Resource.Styleable.ColorStateListItem_alpha;
+			global::AiForms.Renderers.Droid.Resource.Styleable.ColorStateListItem_android_alpha = global::PathwayGames.Droid.Resource.Styleable.ColorStateListItem_android_alpha;
+			global::AiForms.Renderers.Droid.Resource.Styleable.ColorStateListItem_android_color = global::PathwayGames.Droid.Resource.Styleable.ColorStateListItem_android_color;
+			global::AiForms.Renderers.Droid.Resource.Styleable.CompoundButton = global::PathwayGames.Droid.Resource.Styleable.CompoundButton;
+			global::AiForms.Renderers.Droid.Resource.Styleable.CompoundButton_android_button = global::PathwayGames.Droid.Resource.Styleable.CompoundButton_android_button;
+			global::AiForms.Renderers.Droid.Resource.Styleable.CompoundButton_buttonTint = global::PathwayGames.Droid.Resource.Styleable.CompoundButton_buttonTint;
+			global::AiForms.Renderers.Droid.Resource.Styleable.CompoundButton_buttonTintMode = global::PathwayGames.Droid.Resource.Styleable.CompoundButton_buttonTintMode;
+			global::AiForms.Renderers.Droid.Resource.Styleable.CoordinatorLayout = global::PathwayGames.Droid.Resource.Styleable.CoordinatorLayout;
+			global::AiForms.Renderers.Droid.Resource.Styleable.CoordinatorLayout_keylines = global::PathwayGames.Droid.Resource.Styleable.CoordinatorLayout_keylines;
+			global::AiForms.Renderers.Droid.Resource.Styleable.CoordinatorLayout_statusBarBackground = global::PathwayGames.Droid.Resource.Styleable.CoordinatorLayout_statusBarBackground;
+			global::AiForms.Renderers.Droid.Resource.Styleable.CoordinatorLayout_Layout = global::PathwayGames.Droid.Resource.Styleable.CoordinatorLayout_Layout;
+			global::AiForms.Renderers.Droid.Resource.Styleable.CoordinatorLayout_Layout_android_layout_gravity = global::PathwayGames.Droid.Resource.Styleable.CoordinatorLayout_Layout_android_layout_gravity;
+			global::AiForms.Renderers.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_anchor = global::PathwayGames.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_anchor;
+			global::AiForms.Renderers.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_anchorGravity = global::PathwayGames.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_anchorGravity;
+			global::AiForms.Renderers.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_behavior = global::PathwayGames.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_behavior;
+			global::AiForms.Renderers.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_dodgeInsetEdges = global::PathwayGames.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_dodgeInsetEdges;
+			global::AiForms.Renderers.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_insetEdge = global::PathwayGames.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_insetEdge;
+			global::AiForms.Renderers.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_keyline = global::PathwayGames.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_keyline;
+			global::AiForms.Renderers.Droid.Resource.Styleable.DesignTheme = global::PathwayGames.Droid.Resource.Styleable.DesignTheme;
+			global::AiForms.Renderers.Droid.Resource.Styleable.DesignTheme_bottomSheetDialogTheme = global::PathwayGames.Droid.Resource.Styleable.DesignTheme_bottomSheetDialogTheme;
+			global::AiForms.Renderers.Droid.Resource.Styleable.DesignTheme_bottomSheetStyle = global::PathwayGames.Droid.Resource.Styleable.DesignTheme_bottomSheetStyle;
+			global::AiForms.Renderers.Droid.Resource.Styleable.DrawerArrowToggle = global::PathwayGames.Droid.Resource.Styleable.DrawerArrowToggle;
+			global::AiForms.Renderers.Droid.Resource.Styleable.DrawerArrowToggle_arrowHeadLength = global::PathwayGames.Droid.Resource.Styleable.DrawerArrowToggle_arrowHeadLength;
+			global::AiForms.Renderers.Droid.Resource.Styleable.DrawerArrowToggle_arrowShaftLength = global::PathwayGames.Droid.Resource.Styleable.DrawerArrowToggle_arrowShaftLength;
+			global::AiForms.Renderers.Droid.Resource.Styleable.DrawerArrowToggle_barLength = global::PathwayGames.Droid.Resource.Styleable.DrawerArrowToggle_barLength;
+			global::AiForms.Renderers.Droid.Resource.Styleable.DrawerArrowToggle_color = global::PathwayGames.Droid.Resource.Styleable.DrawerArrowToggle_color;
+			global::AiForms.Renderers.Droid.Resource.Styleable.DrawerArrowToggle_drawableSize = global::PathwayGames.Droid.Resource.Styleable.DrawerArrowToggle_drawableSize;
+			global::AiForms.Renderers.Droid.Resource.Styleable.DrawerArrowToggle_gapBetweenBars = global::PathwayGames.Droid.Resource.Styleable.DrawerArrowToggle_gapBetweenBars;
+			global::AiForms.Renderers.Droid.Resource.Styleable.DrawerArrowToggle_spinBars = global::PathwayGames.Droid.Resource.Styleable.DrawerArrowToggle_spinBars;
+			global::AiForms.Renderers.Droid.Resource.Styleable.DrawerArrowToggle_thickness = global::PathwayGames.Droid.Resource.Styleable.DrawerArrowToggle_thickness;
+			global::AiForms.Renderers.Droid.Resource.Styleable.FloatingActionButton = global::PathwayGames.Droid.Resource.Styleable.FloatingActionButton;
+			global::AiForms.Renderers.Droid.Resource.Styleable.FloatingActionButton_backgroundTint = global::PathwayGames.Droid.Resource.Styleable.FloatingActionButton_backgroundTint;
+			global::AiForms.Renderers.Droid.Resource.Styleable.FloatingActionButton_backgroundTintMode = global::PathwayGames.Droid.Resource.Styleable.FloatingActionButton_backgroundTintMode;
+			global::AiForms.Renderers.Droid.Resource.Styleable.FloatingActionButton_borderWidth = global::PathwayGames.Droid.Resource.Styleable.FloatingActionButton_borderWidth;
+			global::AiForms.Renderers.Droid.Resource.Styleable.FloatingActionButton_elevation = global::PathwayGames.Droid.Resource.Styleable.FloatingActionButton_elevation;
+			global::AiForms.Renderers.Droid.Resource.Styleable.FloatingActionButton_fabCustomSize = global::PathwayGames.Droid.Resource.Styleable.FloatingActionButton_fabCustomSize;
+			global::AiForms.Renderers.Droid.Resource.Styleable.FloatingActionButton_fabSize = global::PathwayGames.Droid.Resource.Styleable.FloatingActionButton_fabSize;
+			global::AiForms.Renderers.Droid.Resource.Styleable.FloatingActionButton_hideMotionSpec = global::PathwayGames.Droid.Resource.Styleable.FloatingActionButton_hideMotionSpec;
+			global::AiForms.Renderers.Droid.Resource.Styleable.FloatingActionButton_hoveredFocusedTranslationZ = global::PathwayGames.Droid.Resource.Styleable.FloatingActionButton_hoveredFocusedTranslationZ;
+			global::AiForms.Renderers.Droid.Resource.Styleable.FloatingActionButton_maxImageSize = global::PathwayGames.Droid.Resource.Styleable.FloatingActionButton_maxImageSize;
+			global::AiForms.Renderers.Droid.Resource.Styleable.FloatingActionButton_pressedTranslationZ = global::PathwayGames.Droid.Resource.Styleable.FloatingActionButton_pressedTranslationZ;
+			global::AiForms.Renderers.Droid.Resource.Styleable.FloatingActionButton_rippleColor = global::PathwayGames.Droid.Resource.Styleable.FloatingActionButton_rippleColor;
+			global::AiForms.Renderers.Droid.Resource.Styleable.FloatingActionButton_showMotionSpec = global::PathwayGames.Droid.Resource.Styleable.FloatingActionButton_showMotionSpec;
+			global::AiForms.Renderers.Droid.Resource.Styleable.FloatingActionButton_useCompatPadding = global::PathwayGames.Droid.Resource.Styleable.FloatingActionButton_useCompatPadding;
+			global::AiForms.Renderers.Droid.Resource.Styleable.FloatingActionButton_Behavior_Layout = global::PathwayGames.Droid.Resource.Styleable.FloatingActionButton_Behavior_Layout;
+			global::AiForms.Renderers.Droid.Resource.Styleable.FloatingActionButton_Behavior_Layout_behavior_autoHide = global::PathwayGames.Droid.Resource.Styleable.FloatingActionButton_Behavior_Layout_behavior_autoHide;
+			global::AiForms.Renderers.Droid.Resource.Styleable.FlowLayout = global::PathwayGames.Droid.Resource.Styleable.FlowLayout;
+			global::AiForms.Renderers.Droid.Resource.Styleable.FlowLayout_itemSpacing = global::PathwayGames.Droid.Resource.Styleable.FlowLayout_itemSpacing;
+			global::AiForms.Renderers.Droid.Resource.Styleable.FlowLayout_lineSpacing = global::PathwayGames.Droid.Resource.Styleable.FlowLayout_lineSpacing;
+			global::AiForms.Renderers.Droid.Resource.Styleable.FontFamily = global::PathwayGames.Droid.Resource.Styleable.FontFamily;
+			global::AiForms.Renderers.Droid.Resource.Styleable.FontFamily_fontProviderAuthority = global::PathwayGames.Droid.Resource.Styleable.FontFamily_fontProviderAuthority;
+			global::AiForms.Renderers.Droid.Resource.Styleable.FontFamily_fontProviderCerts = global::PathwayGames.Droid.Resource.Styleable.FontFamily_fontProviderCerts;
+			global::AiForms.Renderers.Droid.Resource.Styleable.FontFamily_fontProviderFetchStrategy = global::PathwayGames.Droid.Resource.Styleable.FontFamily_fontProviderFetchStrategy;
+			global::AiForms.Renderers.Droid.Resource.Styleable.FontFamily_fontProviderFetchTimeout = global::PathwayGames.Droid.Resource.Styleable.FontFamily_fontProviderFetchTimeout;
+			global::AiForms.Renderers.Droid.Resource.Styleable.FontFamily_fontProviderPackage = global::PathwayGames.Droid.Resource.Styleable.FontFamily_fontProviderPackage;
+			global::AiForms.Renderers.Droid.Resource.Styleable.FontFamily_fontProviderQuery = global::PathwayGames.Droid.Resource.Styleable.FontFamily_fontProviderQuery;
+			global::AiForms.Renderers.Droid.Resource.Styleable.FontFamilyFont = global::PathwayGames.Droid.Resource.Styleable.FontFamilyFont;
+			global::AiForms.Renderers.Droid.Resource.Styleable.FontFamilyFont_android_font = global::PathwayGames.Droid.Resource.Styleable.FontFamilyFont_android_font;
+			global::AiForms.Renderers.Droid.Resource.Styleable.FontFamilyFont_android_fontStyle = global::PathwayGames.Droid.Resource.Styleable.FontFamilyFont_android_fontStyle;
+			global::AiForms.Renderers.Droid.Resource.Styleable.FontFamilyFont_android_fontVariationSettings = global::PathwayGames.Droid.Resource.Styleable.FontFamilyFont_android_fontVariationSettings;
+			global::AiForms.Renderers.Droid.Resource.Styleable.FontFamilyFont_android_fontWeight = global::PathwayGames.Droid.Resource.Styleable.FontFamilyFont_android_fontWeight;
+			global::AiForms.Renderers.Droid.Resource.Styleable.FontFamilyFont_android_ttcIndex = global::PathwayGames.Droid.Resource.Styleable.FontFamilyFont_android_ttcIndex;
+			global::AiForms.Renderers.Droid.Resource.Styleable.FontFamilyFont_font = global::PathwayGames.Droid.Resource.Styleable.FontFamilyFont_font;
+			global::AiForms.Renderers.Droid.Resource.Styleable.FontFamilyFont_fontStyle = global::PathwayGames.Droid.Resource.Styleable.FontFamilyFont_fontStyle;
+			global::AiForms.Renderers.Droid.Resource.Styleable.FontFamilyFont_fontVariationSettings = global::PathwayGames.Droid.Resource.Styleable.FontFamilyFont_fontVariationSettings;
+			global::AiForms.Renderers.Droid.Resource.Styleable.FontFamilyFont_fontWeight = global::PathwayGames.Droid.Resource.Styleable.FontFamilyFont_fontWeight;
+			global::AiForms.Renderers.Droid.Resource.Styleable.FontFamilyFont_ttcIndex = global::PathwayGames.Droid.Resource.Styleable.FontFamilyFont_ttcIndex;
+			global::AiForms.Renderers.Droid.Resource.Styleable.ForegroundLinearLayout = global::PathwayGames.Droid.Resource.Styleable.ForegroundLinearLayout;
+			global::AiForms.Renderers.Droid.Resource.Styleable.ForegroundLinearLayout_android_foreground = global::PathwayGames.Droid.Resource.Styleable.ForegroundLinearLayout_android_foreground;
+			global::AiForms.Renderers.Droid.Resource.Styleable.ForegroundLinearLayout_android_foregroundGravity = global::PathwayGames.Droid.Resource.Styleable.ForegroundLinearLayout_android_foregroundGravity;
+			global::AiForms.Renderers.Droid.Resource.Styleable.ForegroundLinearLayout_foregroundInsidePadding = global::PathwayGames.Droid.Resource.Styleable.ForegroundLinearLayout_foregroundInsidePadding;
+			global::AiForms.Renderers.Droid.Resource.Styleable.GradientColor = global::PathwayGames.Droid.Resource.Styleable.GradientColor;
+			global::AiForms.Renderers.Droid.Resource.Styleable.GradientColor_android_centerColor = global::PathwayGames.Droid.Resource.Styleable.GradientColor_android_centerColor;
+			global::AiForms.Renderers.Droid.Resource.Styleable.GradientColor_android_centerX = global::PathwayGames.Droid.Resource.Styleable.GradientColor_android_centerX;
+			global::AiForms.Renderers.Droid.Resource.Styleable.GradientColor_android_centerY = global::PathwayGames.Droid.Resource.Styleable.GradientColor_android_centerY;
+			global::AiForms.Renderers.Droid.Resource.Styleable.GradientColor_android_endColor = global::PathwayGames.Droid.Resource.Styleable.GradientColor_android_endColor;
+			global::AiForms.Renderers.Droid.Resource.Styleable.GradientColor_android_endX = global::PathwayGames.Droid.Resource.Styleable.GradientColor_android_endX;
+			global::AiForms.Renderers.Droid.Resource.Styleable.GradientColor_android_endY = global::PathwayGames.Droid.Resource.Styleable.GradientColor_android_endY;
+			global::AiForms.Renderers.Droid.Resource.Styleable.GradientColor_android_gradientRadius = global::PathwayGames.Droid.Resource.Styleable.GradientColor_android_gradientRadius;
+			global::AiForms.Renderers.Droid.Resource.Styleable.GradientColor_android_startColor = global::PathwayGames.Droid.Resource.Styleable.GradientColor_android_startColor;
+			global::AiForms.Renderers.Droid.Resource.Styleable.GradientColor_android_startX = global::PathwayGames.Droid.Resource.Styleable.GradientColor_android_startX;
+			global::AiForms.Renderers.Droid.Resource.Styleable.GradientColor_android_startY = global::PathwayGames.Droid.Resource.Styleable.GradientColor_android_startY;
+			global::AiForms.Renderers.Droid.Resource.Styleable.GradientColor_android_tileMode = global::PathwayGames.Droid.Resource.Styleable.GradientColor_android_tileMode;
+			global::AiForms.Renderers.Droid.Resource.Styleable.GradientColor_android_type = global::PathwayGames.Droid.Resource.Styleable.GradientColor_android_type;
+			global::AiForms.Renderers.Droid.Resource.Styleable.GradientColorItem = global::PathwayGames.Droid.Resource.Styleable.GradientColorItem;
+			global::AiForms.Renderers.Droid.Resource.Styleable.GradientColorItem_android_color = global::PathwayGames.Droid.Resource.Styleable.GradientColorItem_android_color;
+			global::AiForms.Renderers.Droid.Resource.Styleable.GradientColorItem_android_offset = global::PathwayGames.Droid.Resource.Styleable.GradientColorItem_android_offset;
+			global::AiForms.Renderers.Droid.Resource.Styleable.LinearLayoutCompat = global::PathwayGames.Droid.Resource.Styleable.LinearLayoutCompat;
+			global::AiForms.Renderers.Droid.Resource.Styleable.LinearLayoutCompat_android_baselineAligned = global::PathwayGames.Droid.Resource.Styleable.LinearLayoutCompat_android_baselineAligned;
+			global::AiForms.Renderers.Droid.Resource.Styleable.LinearLayoutCompat_android_baselineAlignedChildIndex = global::PathwayGames.Droid.Resource.Styleable.LinearLayoutCompat_android_baselineAlignedChildIndex;
+			global::AiForms.Renderers.Droid.Resource.Styleable.LinearLayoutCompat_android_gravity = global::PathwayGames.Droid.Resource.Styleable.LinearLayoutCompat_android_gravity;
+			global::AiForms.Renderers.Droid.Resource.Styleable.LinearLayoutCompat_android_orientation = global::PathwayGames.Droid.Resource.Styleable.LinearLayoutCompat_android_orientation;
+			global::AiForms.Renderers.Droid.Resource.Styleable.LinearLayoutCompat_android_weightSum = global::PathwayGames.Droid.Resource.Styleable.LinearLayoutCompat_android_weightSum;
+			global::AiForms.Renderers.Droid.Resource.Styleable.LinearLayoutCompat_divider = global::PathwayGames.Droid.Resource.Styleable.LinearLayoutCompat_divider;
+			global::AiForms.Renderers.Droid.Resource.Styleable.LinearLayoutCompat_dividerPadding = global::PathwayGames.Droid.Resource.Styleable.LinearLayoutCompat_dividerPadding;
+			global::AiForms.Renderers.Droid.Resource.Styleable.LinearLayoutCompat_measureWithLargestChild = global::PathwayGames.Droid.Resource.Styleable.LinearLayoutCompat_measureWithLargestChild;
+			global::AiForms.Renderers.Droid.Resource.Styleable.LinearLayoutCompat_showDividers = global::PathwayGames.Droid.Resource.Styleable.LinearLayoutCompat_showDividers;
+			global::AiForms.Renderers.Droid.Resource.Styleable.LinearLayoutCompat_Layout = global::PathwayGames.Droid.Resource.Styleable.LinearLayoutCompat_Layout;
+			global::AiForms.Renderers.Droid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_gravity = global::PathwayGames.Droid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_gravity;
+			global::AiForms.Renderers.Droid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_height = global::PathwayGames.Droid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_height;
+			global::AiForms.Renderers.Droid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_weight = global::PathwayGames.Droid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_weight;
+			global::AiForms.Renderers.Droid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_width = global::PathwayGames.Droid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_width;
+			global::AiForms.Renderers.Droid.Resource.Styleable.ListPopupWindow = global::PathwayGames.Droid.Resource.Styleable.ListPopupWindow;
+			global::AiForms.Renderers.Droid.Resource.Styleable.ListPopupWindow_android_dropDownHorizontalOffset = global::PathwayGames.Droid.Resource.Styleable.ListPopupWindow_android_dropDownHorizontalOffset;
+			global::AiForms.Renderers.Droid.Resource.Styleable.ListPopupWindow_android_dropDownVerticalOffset = global::PathwayGames.Droid.Resource.Styleable.ListPopupWindow_android_dropDownVerticalOffset;
+			global::AiForms.Renderers.Droid.Resource.Styleable.MaterialButton = global::PathwayGames.Droid.Resource.Styleable.MaterialButton;
+			global::AiForms.Renderers.Droid.Resource.Styleable.MaterialButton_android_insetBottom = global::PathwayGames.Droid.Resource.Styleable.MaterialButton_android_insetBottom;
+			global::AiForms.Renderers.Droid.Resource.Styleable.MaterialButton_android_insetLeft = global::PathwayGames.Droid.Resource.Styleable.MaterialButton_android_insetLeft;
+			global::AiForms.Renderers.Droid.Resource.Styleable.MaterialButton_android_insetRight = global::PathwayGames.Droid.Resource.Styleable.MaterialButton_android_insetRight;
+			global::AiForms.Renderers.Droid.Resource.Styleable.MaterialButton_android_insetTop = global::PathwayGames.Droid.Resource.Styleable.MaterialButton_android_insetTop;
+			global::AiForms.Renderers.Droid.Resource.Styleable.MaterialButton_backgroundTint = global::PathwayGames.Droid.Resource.Styleable.MaterialButton_backgroundTint;
+			global::AiForms.Renderers.Droid.Resource.Styleable.MaterialButton_backgroundTintMode = global::PathwayGames.Droid.Resource.Styleable.MaterialButton_backgroundTintMode;
+			global::AiForms.Renderers.Droid.Resource.Styleable.MaterialButton_cornerRadius = global::PathwayGames.Droid.Resource.Styleable.MaterialButton_cornerRadius;
+			global::AiForms.Renderers.Droid.Resource.Styleable.MaterialButton_icon = global::PathwayGames.Droid.Resource.Styleable.MaterialButton_icon;
+			global::AiForms.Renderers.Droid.Resource.Styleable.MaterialButton_iconGravity = global::PathwayGames.Droid.Resource.Styleable.MaterialButton_iconGravity;
+			global::AiForms.Renderers.Droid.Resource.Styleable.MaterialButton_iconPadding = global::PathwayGames.Droid.Resource.Styleable.MaterialButton_iconPadding;
+			global::AiForms.Renderers.Droid.Resource.Styleable.MaterialButton_iconSize = global::PathwayGames.Droid.Resource.Styleable.MaterialButton_iconSize;
+			global::AiForms.Renderers.Droid.Resource.Styleable.MaterialButton_iconTint = global::PathwayGames.Droid.Resource.Styleable.MaterialButton_iconTint;
+			global::AiForms.Renderers.Droid.Resource.Styleable.MaterialButton_iconTintMode = global::PathwayGames.Droid.Resource.Styleable.MaterialButton_iconTintMode;
+			global::AiForms.Renderers.Droid.Resource.Styleable.MaterialButton_rippleColor = global::PathwayGames.Droid.Resource.Styleable.MaterialButton_rippleColor;
+			global::AiForms.Renderers.Droid.Resource.Styleable.MaterialButton_strokeColor = global::PathwayGames.Droid.Resource.Styleable.MaterialButton_strokeColor;
+			global::AiForms.Renderers.Droid.Resource.Styleable.MaterialButton_strokeWidth = global::PathwayGames.Droid.Resource.Styleable.MaterialButton_strokeWidth;
+			global::AiForms.Renderers.Droid.Resource.Styleable.MaterialCardView = global::PathwayGames.Droid.Resource.Styleable.MaterialCardView;
+			global::AiForms.Renderers.Droid.Resource.Styleable.MaterialCardView_strokeColor = global::PathwayGames.Droid.Resource.Styleable.MaterialCardView_strokeColor;
+			global::AiForms.Renderers.Droid.Resource.Styleable.MaterialCardView_strokeWidth = global::PathwayGames.Droid.Resource.Styleable.MaterialCardView_strokeWidth;
+			global::AiForms.Renderers.Droid.Resource.Styleable.MaterialComponentsTheme = global::PathwayGames.Droid.Resource.Styleable.MaterialComponentsTheme;
+			global::AiForms.Renderers.Droid.Resource.Styleable.MaterialComponentsTheme_bottomSheetDialogTheme = global::PathwayGames.Droid.Resource.Styleable.MaterialComponentsTheme_bottomSheetDialogTheme;
+			global::AiForms.Renderers.Droid.Resource.Styleable.MaterialComponentsTheme_bottomSheetStyle = global::PathwayGames.Droid.Resource.Styleable.MaterialComponentsTheme_bottomSheetStyle;
+			global::AiForms.Renderers.Droid.Resource.Styleable.MaterialComponentsTheme_chipGroupStyle = global::PathwayGames.Droid.Resource.Styleable.MaterialComponentsTheme_chipGroupStyle;
+			global::AiForms.Renderers.Droid.Resource.Styleable.MaterialComponentsTheme_chipStandaloneStyle = global::PathwayGames.Droid.Resource.Styleable.MaterialComponentsTheme_chipStandaloneStyle;
+			global::AiForms.Renderers.Droid.Resource.Styleable.MaterialComponentsTheme_chipStyle = global::PathwayGames.Droid.Resource.Styleable.MaterialComponentsTheme_chipStyle;
+			global::AiForms.Renderers.Droid.Resource.Styleable.MaterialComponentsTheme_colorAccent = global::PathwayGames.Droid.Resource.Styleable.MaterialComponentsTheme_colorAccent;
+			global::AiForms.Renderers.Droid.Resource.Styleable.MaterialComponentsTheme_colorBackgroundFloating = global::PathwayGames.Droid.Resource.Styleable.MaterialComponentsTheme_colorBackgroundFloating;
+			global::AiForms.Renderers.Droid.Resource.Styleable.MaterialComponentsTheme_colorPrimary = global::PathwayGames.Droid.Resource.Styleable.MaterialComponentsTheme_colorPrimary;
+			global::AiForms.Renderers.Droid.Resource.Styleable.MaterialComponentsTheme_colorPrimaryDark = global::PathwayGames.Droid.Resource.Styleable.MaterialComponentsTheme_colorPrimaryDark;
+			global::AiForms.Renderers.Droid.Resource.Styleable.MaterialComponentsTheme_colorSecondary = global::PathwayGames.Droid.Resource.Styleable.MaterialComponentsTheme_colorSecondary;
+			global::AiForms.Renderers.Droid.Resource.Styleable.MaterialComponentsTheme_editTextStyle = global::PathwayGames.Droid.Resource.Styleable.MaterialComponentsTheme_editTextStyle;
+			global::AiForms.Renderers.Droid.Resource.Styleable.MaterialComponentsTheme_floatingActionButtonStyle = global::PathwayGames.Droid.Resource.Styleable.MaterialComponentsTheme_floatingActionButtonStyle;
+			global::AiForms.Renderers.Droid.Resource.Styleable.MaterialComponentsTheme_materialButtonStyle = global::PathwayGames.Droid.Resource.Styleable.MaterialComponentsTheme_materialButtonStyle;
+			global::AiForms.Renderers.Droid.Resource.Styleable.MaterialComponentsTheme_materialCardViewStyle = global::PathwayGames.Droid.Resource.Styleable.MaterialComponentsTheme_materialCardViewStyle;
+			global::AiForms.Renderers.Droid.Resource.Styleable.MaterialComponentsTheme_navigationViewStyle = global::PathwayGames.Droid.Resource.Styleable.MaterialComponentsTheme_navigationViewStyle;
+			global::AiForms.Renderers.Droid.Resource.Styleable.MaterialComponentsTheme_scrimBackground = global::PathwayGames.Droid.Resource.Styleable.MaterialComponentsTheme_scrimBackground;
+			global::AiForms.Renderers.Droid.Resource.Styleable.MaterialComponentsTheme_snackbarButtonStyle = global::PathwayGames.Droid.Resource.Styleable.MaterialComponentsTheme_snackbarButtonStyle;
+			global::AiForms.Renderers.Droid.Resource.Styleable.MaterialComponentsTheme_tabStyle = global::PathwayGames.Droid.Resource.Styleable.MaterialComponentsTheme_tabStyle;
+			global::AiForms.Renderers.Droid.Resource.Styleable.MaterialComponentsTheme_textAppearanceBody1 = global::PathwayGames.Droid.Resource.Styleable.MaterialComponentsTheme_textAppearanceBody1;
+			global::AiForms.Renderers.Droid.Resource.Styleable.MaterialComponentsTheme_textAppearanceBody2 = global::PathwayGames.Droid.Resource.Styleable.MaterialComponentsTheme_textAppearanceBody2;
+			global::AiForms.Renderers.Droid.Resource.Styleable.MaterialComponentsTheme_textAppearanceButton = global::PathwayGames.Droid.Resource.Styleable.MaterialComponentsTheme_textAppearanceButton;
+			global::AiForms.Renderers.Droid.Resource.Styleable.MaterialComponentsTheme_textAppearanceCaption = global::PathwayGames.Droid.Resource.Styleable.MaterialComponentsTheme_textAppearanceCaption;
+			global::AiForms.Renderers.Droid.Resource.Styleable.MaterialComponentsTheme_textAppearanceHeadline1 = global::PathwayGames.Droid.Resource.Styleable.MaterialComponentsTheme_textAppearanceHeadline1;
+			global::AiForms.Renderers.Droid.Resource.Styleable.MaterialComponentsTheme_textAppearanceHeadline2 = global::PathwayGames.Droid.Resource.Styleable.MaterialComponentsTheme_textAppearanceHeadline2;
+			global::AiForms.Renderers.Droid.Resource.Styleable.MaterialComponentsTheme_textAppearanceHeadline3 = global::PathwayGames.Droid.Resource.Styleable.MaterialComponentsTheme_textAppearanceHeadline3;
+			global::AiForms.Renderers.Droid.Resource.Styleable.MaterialComponentsTheme_textAppearanceHeadline4 = global::PathwayGames.Droid.Resource.Styleable.MaterialComponentsTheme_textAppearanceHeadline4;
+			global::AiForms.Renderers.Droid.Resource.Styleable.MaterialComponentsTheme_textAppearanceHeadline5 = global::PathwayGames.Droid.Resource.Styleable.MaterialComponentsTheme_textAppearanceHeadline5;
+			global::AiForms.Renderers.Droid.Resource.Styleable.MaterialComponentsTheme_textAppearanceHeadline6 = global::PathwayGames.Droid.Resource.Styleable.MaterialComponentsTheme_textAppearanceHeadline6;
+			global::AiForms.Renderers.Droid.Resource.Styleable.MaterialComponentsTheme_textAppearanceOverline = global::PathwayGames.Droid.Resource.Styleable.MaterialComponentsTheme_textAppearanceOverline;
+			global::AiForms.Renderers.Droid.Resource.Styleable.MaterialComponentsTheme_textAppearanceSubtitle1 = global::PathwayGames.Droid.Resource.Styleable.MaterialComponentsTheme_textAppearanceSubtitle1;
+			global::AiForms.Renderers.Droid.Resource.Styleable.MaterialComponentsTheme_textAppearanceSubtitle2 = global::PathwayGames.Droid.Resource.Styleable.MaterialComponentsTheme_textAppearanceSubtitle2;
+			global::AiForms.Renderers.Droid.Resource.Styleable.MaterialComponentsTheme_textInputStyle = global::PathwayGames.Droid.Resource.Styleable.MaterialComponentsTheme_textInputStyle;
+			global::AiForms.Renderers.Droid.Resource.Styleable.MediaRouteButton = global::PathwayGames.Droid.Resource.Styleable.MediaRouteButton;
+			global::AiForms.Renderers.Droid.Resource.Styleable.MediaRouteButton_android_minHeight = global::PathwayGames.Droid.Resource.Styleable.MediaRouteButton_android_minHeight;
+			global::AiForms.Renderers.Droid.Resource.Styleable.MediaRouteButton_android_minWidth = global::PathwayGames.Droid.Resource.Styleable.MediaRouteButton_android_minWidth;
+			global::AiForms.Renderers.Droid.Resource.Styleable.MediaRouteButton_externalRouteEnabledDrawable = global::PathwayGames.Droid.Resource.Styleable.MediaRouteButton_externalRouteEnabledDrawable;
+			global::AiForms.Renderers.Droid.Resource.Styleable.MediaRouteButton_mediaRouteButtonTint = global::PathwayGames.Droid.Resource.Styleable.MediaRouteButton_mediaRouteButtonTint;
+			global::AiForms.Renderers.Droid.Resource.Styleable.MenuGroup = global::PathwayGames.Droid.Resource.Styleable.MenuGroup;
+			global::AiForms.Renderers.Droid.Resource.Styleable.MenuGroup_android_checkableBehavior = global::PathwayGames.Droid.Resource.Styleable.MenuGroup_android_checkableBehavior;
+			global::AiForms.Renderers.Droid.Resource.Styleable.MenuGroup_android_enabled = global::PathwayGames.Droid.Resource.Styleable.MenuGroup_android_enabled;
+			global::AiForms.Renderers.Droid.Resource.Styleable.MenuGroup_android_id = global::PathwayGames.Droid.Resource.Styleable.MenuGroup_android_id;
+			global::AiForms.Renderers.Droid.Resource.Styleable.MenuGroup_android_menuCategory = global::PathwayGames.Droid.Resource.Styleable.MenuGroup_android_menuCategory;
+			global::AiForms.Renderers.Droid.Resource.Styleable.MenuGroup_android_orderInCategory = global::PathwayGames.Droid.Resource.Styleable.MenuGroup_android_orderInCategory;
+			global::AiForms.Renderers.Droid.Resource.Styleable.MenuGroup_android_visible = global::PathwayGames.Droid.Resource.Styleable.MenuGroup_android_visible;
+			global::AiForms.Renderers.Droid.Resource.Styleable.MenuItem = global::PathwayGames.Droid.Resource.Styleable.MenuItem;
+			global::AiForms.Renderers.Droid.Resource.Styleable.MenuItem_actionLayout = global::PathwayGames.Droid.Resource.Styleable.MenuItem_actionLayout;
+			global::AiForms.Renderers.Droid.Resource.Styleable.MenuItem_actionProviderClass = global::PathwayGames.Droid.Resource.Styleable.MenuItem_actionProviderClass;
+			global::AiForms.Renderers.Droid.Resource.Styleable.MenuItem_actionViewClass = global::PathwayGames.Droid.Resource.Styleable.MenuItem_actionViewClass;
+			global::AiForms.Renderers.Droid.Resource.Styleable.MenuItem_alphabeticModifiers = global::PathwayGames.Droid.Resource.Styleable.MenuItem_alphabeticModifiers;
+			global::AiForms.Renderers.Droid.Resource.Styleable.MenuItem_android_alphabeticShortcut = global::PathwayGames.Droid.Resource.Styleable.MenuItem_android_alphabeticShortcut;
+			global::AiForms.Renderers.Droid.Resource.Styleable.MenuItem_android_checkable = global::PathwayGames.Droid.Resource.Styleable.MenuItem_android_checkable;
+			global::AiForms.Renderers.Droid.Resource.Styleable.MenuItem_android_checked = global::PathwayGames.Droid.Resource.Styleable.MenuItem_android_checked;
+			global::AiForms.Renderers.Droid.Resource.Styleable.MenuItem_android_enabled = global::PathwayGames.Droid.Resource.Styleable.MenuItem_android_enabled;
+			global::AiForms.Renderers.Droid.Resource.Styleable.MenuItem_android_icon = global::PathwayGames.Droid.Resource.Styleable.MenuItem_android_icon;
+			global::AiForms.Renderers.Droid.Resource.Styleable.MenuItem_android_id = global::PathwayGames.Droid.Resource.Styleable.MenuItem_android_id;
+			global::AiForms.Renderers.Droid.Resource.Styleable.MenuItem_android_menuCategory = global::PathwayGames.Droid.Resource.Styleable.MenuItem_android_menuCategory;
+			global::AiForms.Renderers.Droid.Resource.Styleable.MenuItem_android_numericShortcut = global::PathwayGames.Droid.Resource.Styleable.MenuItem_android_numericShortcut;
+			global::AiForms.Renderers.Droid.Resource.Styleable.MenuItem_android_onClick = global::PathwayGames.Droid.Resource.Styleable.MenuItem_android_onClick;
+			global::AiForms.Renderers.Droid.Resource.Styleable.MenuItem_android_orderInCategory = global::PathwayGames.Droid.Resource.Styleable.MenuItem_android_orderInCategory;
+			global::AiForms.Renderers.Droid.Resource.Styleable.MenuItem_android_title = global::PathwayGames.Droid.Resource.Styleable.MenuItem_android_title;
+			global::AiForms.Renderers.Droid.Resource.Styleable.MenuItem_android_titleCondensed = global::PathwayGames.Droid.Resource.Styleable.MenuItem_android_titleCondensed;
+			global::AiForms.Renderers.Droid.Resource.Styleable.MenuItem_android_visible = global::PathwayGames.Droid.Resource.Styleable.MenuItem_android_visible;
+			global::AiForms.Renderers.Droid.Resource.Styleable.MenuItem_contentDescription = global::PathwayGames.Droid.Resource.Styleable.MenuItem_contentDescription;
+			global::AiForms.Renderers.Droid.Resource.Styleable.MenuItem_iconTint = global::PathwayGames.Droid.Resource.Styleable.MenuItem_iconTint;
+			global::AiForms.Renderers.Droid.Resource.Styleable.MenuItem_iconTintMode = global::PathwayGames.Droid.Resource.Styleable.MenuItem_iconTintMode;
+			global::AiForms.Renderers.Droid.Resource.Styleable.MenuItem_numericModifiers = global::PathwayGames.Droid.Resource.Styleable.MenuItem_numericModifiers;
+			global::AiForms.Renderers.Droid.Resource.Styleable.MenuItem_showAsAction = global::PathwayGames.Droid.Resource.Styleable.MenuItem_showAsAction;
+			global::AiForms.Renderers.Droid.Resource.Styleable.MenuItem_tooltipText = global::PathwayGames.Droid.Resource.Styleable.MenuItem_tooltipText;
+			global::AiForms.Renderers.Droid.Resource.Styleable.MenuView = global::PathwayGames.Droid.Resource.Styleable.MenuView;
+			global::AiForms.Renderers.Droid.Resource.Styleable.MenuView_android_headerBackground = global::PathwayGames.Droid.Resource.Styleable.MenuView_android_headerBackground;
+			global::AiForms.Renderers.Droid.Resource.Styleable.MenuView_android_horizontalDivider = global::PathwayGames.Droid.Resource.Styleable.MenuView_android_horizontalDivider;
+			global::AiForms.Renderers.Droid.Resource.Styleable.MenuView_android_itemBackground = global::PathwayGames.Droid.Resource.Styleable.MenuView_android_itemBackground;
+			global::AiForms.Renderers.Droid.Resource.Styleable.MenuView_android_itemIconDisabledAlpha = global::PathwayGames.Droid.Resource.Styleable.MenuView_android_itemIconDisabledAlpha;
+			global::AiForms.Renderers.Droid.Resource.Styleable.MenuView_android_itemTextAppearance = global::PathwayGames.Droid.Resource.Styleable.MenuView_android_itemTextAppearance;
+			global::AiForms.Renderers.Droid.Resource.Styleable.MenuView_android_verticalDivider = global::PathwayGames.Droid.Resource.Styleable.MenuView_android_verticalDivider;
+			global::AiForms.Renderers.Droid.Resource.Styleable.MenuView_android_windowAnimationStyle = global::PathwayGames.Droid.Resource.Styleable.MenuView_android_windowAnimationStyle;
+			global::AiForms.Renderers.Droid.Resource.Styleable.MenuView_preserveIconSpacing = global::PathwayGames.Droid.Resource.Styleable.MenuView_preserveIconSpacing;
+			global::AiForms.Renderers.Droid.Resource.Styleable.MenuView_subMenuArrow = global::PathwayGames.Droid.Resource.Styleable.MenuView_subMenuArrow;
+			global::AiForms.Renderers.Droid.Resource.Styleable.NavigationView = global::PathwayGames.Droid.Resource.Styleable.NavigationView;
+			global::AiForms.Renderers.Droid.Resource.Styleable.NavigationView_android_background = global::PathwayGames.Droid.Resource.Styleable.NavigationView_android_background;
+			global::AiForms.Renderers.Droid.Resource.Styleable.NavigationView_android_fitsSystemWindows = global::PathwayGames.Droid.Resource.Styleable.NavigationView_android_fitsSystemWindows;
+			global::AiForms.Renderers.Droid.Resource.Styleable.NavigationView_android_maxWidth = global::PathwayGames.Droid.Resource.Styleable.NavigationView_android_maxWidth;
+			global::AiForms.Renderers.Droid.Resource.Styleable.NavigationView_elevation = global::PathwayGames.Droid.Resource.Styleable.NavigationView_elevation;
+			global::AiForms.Renderers.Droid.Resource.Styleable.NavigationView_headerLayout = global::PathwayGames.Droid.Resource.Styleable.NavigationView_headerLayout;
+			global::AiForms.Renderers.Droid.Resource.Styleable.NavigationView_itemBackground = global::PathwayGames.Droid.Resource.Styleable.NavigationView_itemBackground;
+			global::AiForms.Renderers.Droid.Resource.Styleable.NavigationView_itemHorizontalPadding = global::PathwayGames.Droid.Resource.Styleable.NavigationView_itemHorizontalPadding;
+			global::AiForms.Renderers.Droid.Resource.Styleable.NavigationView_itemIconPadding = global::PathwayGames.Droid.Resource.Styleable.NavigationView_itemIconPadding;
+			global::AiForms.Renderers.Droid.Resource.Styleable.NavigationView_itemIconTint = global::PathwayGames.Droid.Resource.Styleable.NavigationView_itemIconTint;
+			global::AiForms.Renderers.Droid.Resource.Styleable.NavigationView_itemTextAppearance = global::PathwayGames.Droid.Resource.Styleable.NavigationView_itemTextAppearance;
+			global::AiForms.Renderers.Droid.Resource.Styleable.NavigationView_itemTextColor = global::PathwayGames.Droid.Resource.Styleable.NavigationView_itemTextColor;
+			global::AiForms.Renderers.Droid.Resource.Styleable.NavigationView_menu = global::PathwayGames.Droid.Resource.Styleable.NavigationView_menu;
+			global::AiForms.Renderers.Droid.Resource.Styleable.PopupWindow = global::PathwayGames.Droid.Resource.Styleable.PopupWindow;
+			global::AiForms.Renderers.Droid.Resource.Styleable.PopupWindow_android_popupAnimationStyle = global::PathwayGames.Droid.Resource.Styleable.PopupWindow_android_popupAnimationStyle;
+			global::AiForms.Renderers.Droid.Resource.Styleable.PopupWindow_android_popupBackground = global::PathwayGames.Droid.Resource.Styleable.PopupWindow_android_popupBackground;
+			global::AiForms.Renderers.Droid.Resource.Styleable.PopupWindow_overlapAnchor = global::PathwayGames.Droid.Resource.Styleable.PopupWindow_overlapAnchor;
+			global::AiForms.Renderers.Droid.Resource.Styleable.PopupWindowBackgroundState = global::PathwayGames.Droid.Resource.Styleable.PopupWindowBackgroundState;
+			global::AiForms.Renderers.Droid.Resource.Styleable.PopupWindowBackgroundState_state_above_anchor = global::PathwayGames.Droid.Resource.Styleable.PopupWindowBackgroundState_state_above_anchor;
+			global::AiForms.Renderers.Droid.Resource.Styleable.RecycleListView = global::PathwayGames.Droid.Resource.Styleable.RecycleListView;
+			global::AiForms.Renderers.Droid.Resource.Styleable.RecycleListView_paddingBottomNoButtons = global::PathwayGames.Droid.Resource.Styleable.RecycleListView_paddingBottomNoButtons;
+			global::AiForms.Renderers.Droid.Resource.Styleable.RecycleListView_paddingTopNoTitle = global::PathwayGames.Droid.Resource.Styleable.RecycleListView_paddingTopNoTitle;
+			global::AiForms.Renderers.Droid.Resource.Styleable.RecyclerView = global::PathwayGames.Droid.Resource.Styleable.RecyclerView;
+			global::AiForms.Renderers.Droid.Resource.Styleable.RecyclerView_android_descendantFocusability = global::PathwayGames.Droid.Resource.Styleable.RecyclerView_android_descendantFocusability;
+			global::AiForms.Renderers.Droid.Resource.Styleable.RecyclerView_android_orientation = global::PathwayGames.Droid.Resource.Styleable.RecyclerView_android_orientation;
+			global::AiForms.Renderers.Droid.Resource.Styleable.RecyclerView_fastScrollEnabled = global::PathwayGames.Droid.Resource.Styleable.RecyclerView_fastScrollEnabled;
+			global::AiForms.Renderers.Droid.Resource.Styleable.RecyclerView_fastScrollHorizontalThumbDrawable = global::PathwayGames.Droid.Resource.Styleable.RecyclerView_fastScrollHorizontalThumbDrawable;
+			global::AiForms.Renderers.Droid.Resource.Styleable.RecyclerView_fastScrollHorizontalTrackDrawable = global::PathwayGames.Droid.Resource.Styleable.RecyclerView_fastScrollHorizontalTrackDrawable;
+			global::AiForms.Renderers.Droid.Resource.Styleable.RecyclerView_fastScrollVerticalThumbDrawable = global::PathwayGames.Droid.Resource.Styleable.RecyclerView_fastScrollVerticalThumbDrawable;
+			global::AiForms.Renderers.Droid.Resource.Styleable.RecyclerView_fastScrollVerticalTrackDrawable = global::PathwayGames.Droid.Resource.Styleable.RecyclerView_fastScrollVerticalTrackDrawable;
+			global::AiForms.Renderers.Droid.Resource.Styleable.RecyclerView_layoutManager = global::PathwayGames.Droid.Resource.Styleable.RecyclerView_layoutManager;
+			global::AiForms.Renderers.Droid.Resource.Styleable.RecyclerView_reverseLayout = global::PathwayGames.Droid.Resource.Styleable.RecyclerView_reverseLayout;
+			global::AiForms.Renderers.Droid.Resource.Styleable.RecyclerView_spanCount = global::PathwayGames.Droid.Resource.Styleable.RecyclerView_spanCount;
+			global::AiForms.Renderers.Droid.Resource.Styleable.RecyclerView_stackFromEnd = global::PathwayGames.Droid.Resource.Styleable.RecyclerView_stackFromEnd;
+			global::AiForms.Renderers.Droid.Resource.Styleable.ScrimInsetsFrameLayout = global::PathwayGames.Droid.Resource.Styleable.ScrimInsetsFrameLayout;
+			global::AiForms.Renderers.Droid.Resource.Styleable.ScrimInsetsFrameLayout_insetForeground = global::PathwayGames.Droid.Resource.Styleable.ScrimInsetsFrameLayout_insetForeground;
+			global::AiForms.Renderers.Droid.Resource.Styleable.ScrollingViewBehavior_Layout = global::PathwayGames.Droid.Resource.Styleable.ScrollingViewBehavior_Layout;
+			global::AiForms.Renderers.Droid.Resource.Styleable.ScrollingViewBehavior_Layout_behavior_overlapTop = global::PathwayGames.Droid.Resource.Styleable.ScrollingViewBehavior_Layout_behavior_overlapTop;
+			global::AiForms.Renderers.Droid.Resource.Styleable.SearchView = global::PathwayGames.Droid.Resource.Styleable.SearchView;
+			global::AiForms.Renderers.Droid.Resource.Styleable.SearchView_android_focusable = global::PathwayGames.Droid.Resource.Styleable.SearchView_android_focusable;
+			global::AiForms.Renderers.Droid.Resource.Styleable.SearchView_android_imeOptions = global::PathwayGames.Droid.Resource.Styleable.SearchView_android_imeOptions;
+			global::AiForms.Renderers.Droid.Resource.Styleable.SearchView_android_inputType = global::PathwayGames.Droid.Resource.Styleable.SearchView_android_inputType;
+			global::AiForms.Renderers.Droid.Resource.Styleable.SearchView_android_maxWidth = global::PathwayGames.Droid.Resource.Styleable.SearchView_android_maxWidth;
+			global::AiForms.Renderers.Droid.Resource.Styleable.SearchView_closeIcon = global::PathwayGames.Droid.Resource.Styleable.SearchView_closeIcon;
+			global::AiForms.Renderers.Droid.Resource.Styleable.SearchView_commitIcon = global::PathwayGames.Droid.Resource.Styleable.SearchView_commitIcon;
+			global::AiForms.Renderers.Droid.Resource.Styleable.SearchView_defaultQueryHint = global::PathwayGames.Droid.Resource.Styleable.SearchView_defaultQueryHint;
+			global::AiForms.Renderers.Droid.Resource.Styleable.SearchView_goIcon = global::PathwayGames.Droid.Resource.Styleable.SearchView_goIcon;
+			global::AiForms.Renderers.Droid.Resource.Styleable.SearchView_iconifiedByDefault = global::PathwayGames.Droid.Resource.Styleable.SearchView_iconifiedByDefault;
+			global::AiForms.Renderers.Droid.Resource.Styleable.SearchView_layout = global::PathwayGames.Droid.Resource.Styleable.SearchView_layout;
+			global::AiForms.Renderers.Droid.Resource.Styleable.SearchView_queryBackground = global::PathwayGames.Droid.Resource.Styleable.SearchView_queryBackground;
+			global::AiForms.Renderers.Droid.Resource.Styleable.SearchView_queryHint = global::PathwayGames.Droid.Resource.Styleable.SearchView_queryHint;
+			global::AiForms.Renderers.Droid.Resource.Styleable.SearchView_searchHintIcon = global::PathwayGames.Droid.Resource.Styleable.SearchView_searchHintIcon;
+			global::AiForms.Renderers.Droid.Resource.Styleable.SearchView_searchIcon = global::PathwayGames.Droid.Resource.Styleable.SearchView_searchIcon;
+			global::AiForms.Renderers.Droid.Resource.Styleable.SearchView_submitBackground = global::PathwayGames.Droid.Resource.Styleable.SearchView_submitBackground;
+			global::AiForms.Renderers.Droid.Resource.Styleable.SearchView_suggestionRowLayout = global::PathwayGames.Droid.Resource.Styleable.SearchView_suggestionRowLayout;
+			global::AiForms.Renderers.Droid.Resource.Styleable.SearchView_voiceIcon = global::PathwayGames.Droid.Resource.Styleable.SearchView_voiceIcon;
+			global::AiForms.Renderers.Droid.Resource.Styleable.Snackbar = global::PathwayGames.Droid.Resource.Styleable.Snackbar;
+			global::AiForms.Renderers.Droid.Resource.Styleable.Snackbar_snackbarButtonStyle = global::PathwayGames.Droid.Resource.Styleable.Snackbar_snackbarButtonStyle;
+			global::AiForms.Renderers.Droid.Resource.Styleable.Snackbar_snackbarStyle = global::PathwayGames.Droid.Resource.Styleable.Snackbar_snackbarStyle;
+			global::AiForms.Renderers.Droid.Resource.Styleable.SnackbarLayout = global::PathwayGames.Droid.Resource.Styleable.SnackbarLayout;
+			global::AiForms.Renderers.Droid.Resource.Styleable.SnackbarLayout_android_maxWidth = global::PathwayGames.Droid.Resource.Styleable.SnackbarLayout_android_maxWidth;
+			global::AiForms.Renderers.Droid.Resource.Styleable.SnackbarLayout_elevation = global::PathwayGames.Droid.Resource.Styleable.SnackbarLayout_elevation;
+			global::AiForms.Renderers.Droid.Resource.Styleable.SnackbarLayout_maxActionInlineWidth = global::PathwayGames.Droid.Resource.Styleable.SnackbarLayout_maxActionInlineWidth;
+			global::AiForms.Renderers.Droid.Resource.Styleable.Spinner = global::PathwayGames.Droid.Resource.Styleable.Spinner;
+			global::AiForms.Renderers.Droid.Resource.Styleable.Spinner_android_dropDownWidth = global::PathwayGames.Droid.Resource.Styleable.Spinner_android_dropDownWidth;
+			global::AiForms.Renderers.Droid.Resource.Styleable.Spinner_android_entries = global::PathwayGames.Droid.Resource.Styleable.Spinner_android_entries;
+			global::AiForms.Renderers.Droid.Resource.Styleable.Spinner_android_popupBackground = global::PathwayGames.Droid.Resource.Styleable.Spinner_android_popupBackground;
+			global::AiForms.Renderers.Droid.Resource.Styleable.Spinner_android_prompt = global::PathwayGames.Droid.Resource.Styleable.Spinner_android_prompt;
+			global::AiForms.Renderers.Droid.Resource.Styleable.Spinner_popupTheme = global::PathwayGames.Droid.Resource.Styleable.Spinner_popupTheme;
+			global::AiForms.Renderers.Droid.Resource.Styleable.StateListDrawable = global::PathwayGames.Droid.Resource.Styleable.StateListDrawable;
+			global::AiForms.Renderers.Droid.Resource.Styleable.StateListDrawable_android_constantSize = global::PathwayGames.Droid.Resource.Styleable.StateListDrawable_android_constantSize;
+			global::AiForms.Renderers.Droid.Resource.Styleable.StateListDrawable_android_dither = global::PathwayGames.Droid.Resource.Styleable.StateListDrawable_android_dither;
+			global::AiForms.Renderers.Droid.Resource.Styleable.StateListDrawable_android_enterFadeDuration = global::PathwayGames.Droid.Resource.Styleable.StateListDrawable_android_enterFadeDuration;
+			global::AiForms.Renderers.Droid.Resource.Styleable.StateListDrawable_android_exitFadeDuration = global::PathwayGames.Droid.Resource.Styleable.StateListDrawable_android_exitFadeDuration;
+			global::AiForms.Renderers.Droid.Resource.Styleable.StateListDrawable_android_variablePadding = global::PathwayGames.Droid.Resource.Styleable.StateListDrawable_android_variablePadding;
+			global::AiForms.Renderers.Droid.Resource.Styleable.StateListDrawable_android_visible = global::PathwayGames.Droid.Resource.Styleable.StateListDrawable_android_visible;
+			global::AiForms.Renderers.Droid.Resource.Styleable.StateListDrawableItem = global::PathwayGames.Droid.Resource.Styleable.StateListDrawableItem;
+			global::AiForms.Renderers.Droid.Resource.Styleable.StateListDrawableItem_android_drawable = global::PathwayGames.Droid.Resource.Styleable.StateListDrawableItem_android_drawable;
+			global::AiForms.Renderers.Droid.Resource.Styleable.SwitchCompat = global::PathwayGames.Droid.Resource.Styleable.SwitchCompat;
+			global::AiForms.Renderers.Droid.Resource.Styleable.SwitchCompat_android_textOff = global::PathwayGames.Droid.Resource.Styleable.SwitchCompat_android_textOff;
+			global::AiForms.Renderers.Droid.Resource.Styleable.SwitchCompat_android_textOn = global::PathwayGames.Droid.Resource.Styleable.SwitchCompat_android_textOn;
+			global::AiForms.Renderers.Droid.Resource.Styleable.SwitchCompat_android_thumb = global::PathwayGames.Droid.Resource.Styleable.SwitchCompat_android_thumb;
+			global::AiForms.Renderers.Droid.Resource.Styleable.SwitchCompat_showText = global::PathwayGames.Droid.Resource.Styleable.SwitchCompat_showText;
+			global::AiForms.Renderers.Droid.Resource.Styleable.SwitchCompat_splitTrack = global::PathwayGames.Droid.Resource.Styleable.SwitchCompat_splitTrack;
+			global::AiForms.Renderers.Droid.Resource.Styleable.SwitchCompat_switchMinWidth = global::PathwayGames.Droid.Resource.Styleable.SwitchCompat_switchMinWidth;
+			global::AiForms.Renderers.Droid.Resource.Styleable.SwitchCompat_switchPadding = global::PathwayGames.Droid.Resource.Styleable.SwitchCompat_switchPadding;
+			global::AiForms.Renderers.Droid.Resource.Styleable.SwitchCompat_switchTextAppearance = global::PathwayGames.Droid.Resource.Styleable.SwitchCompat_switchTextAppearance;
+			global::AiForms.Renderers.Droid.Resource.Styleable.SwitchCompat_thumbTextPadding = global::PathwayGames.Droid.Resource.Styleable.SwitchCompat_thumbTextPadding;
+			global::AiForms.Renderers.Droid.Resource.Styleable.SwitchCompat_thumbTint = global::PathwayGames.Droid.Resource.Styleable.SwitchCompat_thumbTint;
+			global::AiForms.Renderers.Droid.Resource.Styleable.SwitchCompat_thumbTintMode = global::PathwayGames.Droid.Resource.Styleable.SwitchCompat_thumbTintMode;
+			global::AiForms.Renderers.Droid.Resource.Styleable.SwitchCompat_track = global::PathwayGames.Droid.Resource.Styleable.SwitchCompat_track;
+			global::AiForms.Renderers.Droid.Resource.Styleable.SwitchCompat_trackTint = global::PathwayGames.Droid.Resource.Styleable.SwitchCompat_trackTint;
+			global::AiForms.Renderers.Droid.Resource.Styleable.SwitchCompat_trackTintMode = global::PathwayGames.Droid.Resource.Styleable.SwitchCompat_trackTintMode;
+			global::AiForms.Renderers.Droid.Resource.Styleable.TabItem = global::PathwayGames.Droid.Resource.Styleable.TabItem;
+			global::AiForms.Renderers.Droid.Resource.Styleable.TabItem_android_icon = global::PathwayGames.Droid.Resource.Styleable.TabItem_android_icon;
+			global::AiForms.Renderers.Droid.Resource.Styleable.TabItem_android_layout = global::PathwayGames.Droid.Resource.Styleable.TabItem_android_layout;
+			global::AiForms.Renderers.Droid.Resource.Styleable.TabItem_android_text = global::PathwayGames.Droid.Resource.Styleable.TabItem_android_text;
+			global::AiForms.Renderers.Droid.Resource.Styleable.TabLayout = global::PathwayGames.Droid.Resource.Styleable.TabLayout;
+			global::AiForms.Renderers.Droid.Resource.Styleable.TabLayout_tabBackground = global::PathwayGames.Droid.Resource.Styleable.TabLayout_tabBackground;
+			global::AiForms.Renderers.Droid.Resource.Styleable.TabLayout_tabContentStart = global::PathwayGames.Droid.Resource.Styleable.TabLayout_tabContentStart;
+			global::AiForms.Renderers.Droid.Resource.Styleable.TabLayout_tabGravity = global::PathwayGames.Droid.Resource.Styleable.TabLayout_tabGravity;
+			global::AiForms.Renderers.Droid.Resource.Styleable.TabLayout_tabIconTint = global::PathwayGames.Droid.Resource.Styleable.TabLayout_tabIconTint;
+			global::AiForms.Renderers.Droid.Resource.Styleable.TabLayout_tabIconTintMode = global::PathwayGames.Droid.Resource.Styleable.TabLayout_tabIconTintMode;
+			global::AiForms.Renderers.Droid.Resource.Styleable.TabLayout_tabIndicator = global::PathwayGames.Droid.Resource.Styleable.TabLayout_tabIndicator;
+			global::AiForms.Renderers.Droid.Resource.Styleable.TabLayout_tabIndicatorAnimationDuration = global::PathwayGames.Droid.Resource.Styleable.TabLayout_tabIndicatorAnimationDuration;
+			global::AiForms.Renderers.Droid.Resource.Styleable.TabLayout_tabIndicatorColor = global::PathwayGames.Droid.Resource.Styleable.TabLayout_tabIndicatorColor;
+			global::AiForms.Renderers.Droid.Resource.Styleable.TabLayout_tabIndicatorFullWidth = global::PathwayGames.Droid.Resource.Styleable.TabLayout_tabIndicatorFullWidth;
+			global::AiForms.Renderers.Droid.Resource.Styleable.TabLayout_tabIndicatorGravity = global::PathwayGames.Droid.Resource.Styleable.TabLayout_tabIndicatorGravity;
+			global::AiForms.Renderers.Droid.Resource.Styleable.TabLayout_tabIndicatorHeight = global::PathwayGames.Droid.Resource.Styleable.TabLayout_tabIndicatorHeight;
+			global::AiForms.Renderers.Droid.Resource.Styleable.TabLayout_tabInlineLabel = global::PathwayGames.Droid.Resource.Styleable.TabLayout_tabInlineLabel;
+			global::AiForms.Renderers.Droid.Resource.Styleable.TabLayout_tabMaxWidth = global::PathwayGames.Droid.Resource.Styleable.TabLayout_tabMaxWidth;
+			global::AiForms.Renderers.Droid.Resource.Styleable.TabLayout_tabMinWidth = global::PathwayGames.Droid.Resource.Styleable.TabLayout_tabMinWidth;
+			global::AiForms.Renderers.Droid.Resource.Styleable.TabLayout_tabMode = global::PathwayGames.Droid.Resource.Styleable.TabLayout_tabMode;
+			global::AiForms.Renderers.Droid.Resource.Styleable.TabLayout_tabPadding = global::PathwayGames.Droid.Resource.Styleable.TabLayout_tabPadding;
+			global::AiForms.Renderers.Droid.Resource.Styleable.TabLayout_tabPaddingBottom = global::PathwayGames.Droid.Resource.Styleable.TabLayout_tabPaddingBottom;
+			global::AiForms.Renderers.Droid.Resource.Styleable.TabLayout_tabPaddingEnd = global::PathwayGames.Droid.Resource.Styleable.TabLayout_tabPaddingEnd;
+			global::AiForms.Renderers.Droid.Resource.Styleable.TabLayout_tabPaddingStart = global::PathwayGames.Droid.Resource.Styleable.TabLayout_tabPaddingStart;
+			global::AiForms.Renderers.Droid.Resource.Styleable.TabLayout_tabPaddingTop = global::PathwayGames.Droid.Resource.Styleable.TabLayout_tabPaddingTop;
+			global::AiForms.Renderers.Droid.Resource.Styleable.TabLayout_tabRippleColor = global::PathwayGames.Droid.Resource.Styleable.TabLayout_tabRippleColor;
+			global::AiForms.Renderers.Droid.Resource.Styleable.TabLayout_tabSelectedTextColor = global::PathwayGames.Droid.Resource.Styleable.TabLayout_tabSelectedTextColor;
+			global::AiForms.Renderers.Droid.Resource.Styleable.TabLayout_tabTextAppearance = global::PathwayGames.Droid.Resource.Styleable.TabLayout_tabTextAppearance;
+			global::AiForms.Renderers.Droid.Resource.Styleable.TabLayout_tabTextColor = global::PathwayGames.Droid.Resource.Styleable.TabLayout_tabTextColor;
+			global::AiForms.Renderers.Droid.Resource.Styleable.TabLayout_tabUnboundedRipple = global::PathwayGames.Droid.Resource.Styleable.TabLayout_tabUnboundedRipple;
+			global::AiForms.Renderers.Droid.Resource.Styleable.TextAppearance = global::PathwayGames.Droid.Resource.Styleable.TextAppearance;
+			global::AiForms.Renderers.Droid.Resource.Styleable.TextAppearance_android_fontFamily = global::PathwayGames.Droid.Resource.Styleable.TextAppearance_android_fontFamily;
+			global::AiForms.Renderers.Droid.Resource.Styleable.TextAppearance_android_shadowColor = global::PathwayGames.Droid.Resource.Styleable.TextAppearance_android_shadowColor;
+			global::AiForms.Renderers.Droid.Resource.Styleable.TextAppearance_android_shadowDx = global::PathwayGames.Droid.Resource.Styleable.TextAppearance_android_shadowDx;
+			global::AiForms.Renderers.Droid.Resource.Styleable.TextAppearance_android_shadowDy = global::PathwayGames.Droid.Resource.Styleable.TextAppearance_android_shadowDy;
+			global::AiForms.Renderers.Droid.Resource.Styleable.TextAppearance_android_shadowRadius = global::PathwayGames.Droid.Resource.Styleable.TextAppearance_android_shadowRadius;
+			global::AiForms.Renderers.Droid.Resource.Styleable.TextAppearance_android_textColor = global::PathwayGames.Droid.Resource.Styleable.TextAppearance_android_textColor;
+			global::AiForms.Renderers.Droid.Resource.Styleable.TextAppearance_android_textColorHint = global::PathwayGames.Droid.Resource.Styleable.TextAppearance_android_textColorHint;
+			global::AiForms.Renderers.Droid.Resource.Styleable.TextAppearance_android_textColorLink = global::PathwayGames.Droid.Resource.Styleable.TextAppearance_android_textColorLink;
+			global::AiForms.Renderers.Droid.Resource.Styleable.TextAppearance_android_textSize = global::PathwayGames.Droid.Resource.Styleable.TextAppearance_android_textSize;
+			global::AiForms.Renderers.Droid.Resource.Styleable.TextAppearance_android_textStyle = global::PathwayGames.Droid.Resource.Styleable.TextAppearance_android_textStyle;
+			global::AiForms.Renderers.Droid.Resource.Styleable.TextAppearance_android_typeface = global::PathwayGames.Droid.Resource.Styleable.TextAppearance_android_typeface;
+			global::AiForms.Renderers.Droid.Resource.Styleable.TextAppearance_fontFamily = global::PathwayGames.Droid.Resource.Styleable.TextAppearance_fontFamily;
+			global::AiForms.Renderers.Droid.Resource.Styleable.TextAppearance_textAllCaps = global::PathwayGames.Droid.Resource.Styleable.TextAppearance_textAllCaps;
+			global::AiForms.Renderers.Droid.Resource.Styleable.TextInputLayout = global::PathwayGames.Droid.Resource.Styleable.TextInputLayout;
+			global::AiForms.Renderers.Droid.Resource.Styleable.TextInputLayout_android_hint = global::PathwayGames.Droid.Resource.Styleable.TextInputLayout_android_hint;
+			global::AiForms.Renderers.Droid.Resource.Styleable.TextInputLayout_android_textColorHint = global::PathwayGames.Droid.Resource.Styleable.TextInputLayout_android_textColorHint;
+			global::AiForms.Renderers.Droid.Resource.Styleable.TextInputLayout_boxBackgroundColor = global::PathwayGames.Droid.Resource.Styleable.TextInputLayout_boxBackgroundColor;
+			global::AiForms.Renderers.Droid.Resource.Styleable.TextInputLayout_boxBackgroundMode = global::PathwayGames.Droid.Resource.Styleable.TextInputLayout_boxBackgroundMode;
+			global::AiForms.Renderers.Droid.Resource.Styleable.TextInputLayout_boxCollapsedPaddingTop = global::PathwayGames.Droid.Resource.Styleable.TextInputLayout_boxCollapsedPaddingTop;
+			global::AiForms.Renderers.Droid.Resource.Styleable.TextInputLayout_boxCornerRadiusBottomEnd = global::PathwayGames.Droid.Resource.Styleable.TextInputLayout_boxCornerRadiusBottomEnd;
+			global::AiForms.Renderers.Droid.Resource.Styleable.TextInputLayout_boxCornerRadiusBottomStart = global::PathwayGames.Droid.Resource.Styleable.TextInputLayout_boxCornerRadiusBottomStart;
+			global::AiForms.Renderers.Droid.Resource.Styleable.TextInputLayout_boxCornerRadiusTopEnd = global::PathwayGames.Droid.Resource.Styleable.TextInputLayout_boxCornerRadiusTopEnd;
+			global::AiForms.Renderers.Droid.Resource.Styleable.TextInputLayout_boxCornerRadiusTopStart = global::PathwayGames.Droid.Resource.Styleable.TextInputLayout_boxCornerRadiusTopStart;
+			global::AiForms.Renderers.Droid.Resource.Styleable.TextInputLayout_boxStrokeColor = global::PathwayGames.Droid.Resource.Styleable.TextInputLayout_boxStrokeColor;
+			global::AiForms.Renderers.Droid.Resource.Styleable.TextInputLayout_boxStrokeWidth = global::PathwayGames.Droid.Resource.Styleable.TextInputLayout_boxStrokeWidth;
+			global::AiForms.Renderers.Droid.Resource.Styleable.TextInputLayout_counterEnabled = global::PathwayGames.Droid.Resource.Styleable.TextInputLayout_counterEnabled;
+			global::AiForms.Renderers.Droid.Resource.Styleable.TextInputLayout_counterMaxLength = global::PathwayGames.Droid.Resource.Styleable.TextInputLayout_counterMaxLength;
+			global::AiForms.Renderers.Droid.Resource.Styleable.TextInputLayout_counterOverflowTextAppearance = global::PathwayGames.Droid.Resource.Styleable.TextInputLayout_counterOverflowTextAppearance;
+			global::AiForms.Renderers.Droid.Resource.Styleable.TextInputLayout_counterTextAppearance = global::PathwayGames.Droid.Resource.Styleable.TextInputLayout_counterTextAppearance;
+			global::AiForms.Renderers.Droid.Resource.Styleable.TextInputLayout_errorEnabled = global::PathwayGames.Droid.Resource.Styleable.TextInputLayout_errorEnabled;
+			global::AiForms.Renderers.Droid.Resource.Styleable.TextInputLayout_errorTextAppearance = global::PathwayGames.Droid.Resource.Styleable.TextInputLayout_errorTextAppearance;
+			global::AiForms.Renderers.Droid.Resource.Styleable.TextInputLayout_helperText = global::PathwayGames.Droid.Resource.Styleable.TextInputLayout_helperText;
+			global::AiForms.Renderers.Droid.Resource.Styleable.TextInputLayout_helperTextEnabled = global::PathwayGames.Droid.Resource.Styleable.TextInputLayout_helperTextEnabled;
+			global::AiForms.Renderers.Droid.Resource.Styleable.TextInputLayout_helperTextTextAppearance = global::PathwayGames.Droid.Resource.Styleable.TextInputLayout_helperTextTextAppearance;
+			global::AiForms.Renderers.Droid.Resource.Styleable.TextInputLayout_hintAnimationEnabled = global::PathwayGames.Droid.Resource.Styleable.TextInputLayout_hintAnimationEnabled;
+			global::AiForms.Renderers.Droid.Resource.Styleable.TextInputLayout_hintEnabled = global::PathwayGames.Droid.Resource.Styleable.TextInputLayout_hintEnabled;
+			global::AiForms.Renderers.Droid.Resource.Styleable.TextInputLayout_hintTextAppearance = global::PathwayGames.Droid.Resource.Styleable.TextInputLayout_hintTextAppearance;
+			global::AiForms.Renderers.Droid.Resource.Styleable.TextInputLayout_passwordToggleContentDescription = global::PathwayGames.Droid.Resource.Styleable.TextInputLayout_passwordToggleContentDescription;
+			global::AiForms.Renderers.Droid.Resource.Styleable.TextInputLayout_passwordToggleDrawable = global::PathwayGames.Droid.Resource.Styleable.TextInputLayout_passwordToggleDrawable;
+			global::AiForms.Renderers.Droid.Resource.Styleable.TextInputLayout_passwordToggleEnabled = global::PathwayGames.Droid.Resource.Styleable.TextInputLayout_passwordToggleEnabled;
+			global::AiForms.Renderers.Droid.Resource.Styleable.TextInputLayout_passwordToggleTint = global::PathwayGames.Droid.Resource.Styleable.TextInputLayout_passwordToggleTint;
+			global::AiForms.Renderers.Droid.Resource.Styleable.TextInputLayout_passwordToggleTintMode = global::PathwayGames.Droid.Resource.Styleable.TextInputLayout_passwordToggleTintMode;
+			global::AiForms.Renderers.Droid.Resource.Styleable.ThemeEnforcement = global::PathwayGames.Droid.Resource.Styleable.ThemeEnforcement;
+			global::AiForms.Renderers.Droid.Resource.Styleable.ThemeEnforcement_android_textAppearance = global::PathwayGames.Droid.Resource.Styleable.ThemeEnforcement_android_textAppearance;
+			global::AiForms.Renderers.Droid.Resource.Styleable.ThemeEnforcement_enforceMaterialTheme = global::PathwayGames.Droid.Resource.Styleable.ThemeEnforcement_enforceMaterialTheme;
+			global::AiForms.Renderers.Droid.Resource.Styleable.ThemeEnforcement_enforceTextAppearance = global::PathwayGames.Droid.Resource.Styleable.ThemeEnforcement_enforceTextAppearance;
+			global::AiForms.Renderers.Droid.Resource.Styleable.Toolbar = global::PathwayGames.Droid.Resource.Styleable.Toolbar;
+			global::AiForms.Renderers.Droid.Resource.Styleable.Toolbar_android_gravity = global::PathwayGames.Droid.Resource.Styleable.Toolbar_android_gravity;
+			global::AiForms.Renderers.Droid.Resource.Styleable.Toolbar_android_minHeight = global::PathwayGames.Droid.Resource.Styleable.Toolbar_android_minHeight;
+			global::AiForms.Renderers.Droid.Resource.Styleable.Toolbar_buttonGravity = global::PathwayGames.Droid.Resource.Styleable.Toolbar_buttonGravity;
+			global::AiForms.Renderers.Droid.Resource.Styleable.Toolbar_collapseContentDescription = global::PathwayGames.Droid.Resource.Styleable.Toolbar_collapseContentDescription;
+			global::AiForms.Renderers.Droid.Resource.Styleable.Toolbar_collapseIcon = global::PathwayGames.Droid.Resource.Styleable.Toolbar_collapseIcon;
+			global::AiForms.Renderers.Droid.Resource.Styleable.Toolbar_contentInsetEnd = global::PathwayGames.Droid.Resource.Styleable.Toolbar_contentInsetEnd;
+			global::AiForms.Renderers.Droid.Resource.Styleable.Toolbar_contentInsetEndWithActions = global::PathwayGames.Droid.Resource.Styleable.Toolbar_contentInsetEndWithActions;
+			global::AiForms.Renderers.Droid.Resource.Styleable.Toolbar_contentInsetLeft = global::PathwayGames.Droid.Resource.Styleable.Toolbar_contentInsetLeft;
+			global::AiForms.Renderers.Droid.Resource.Styleable.Toolbar_contentInsetRight = global::PathwayGames.Droid.Resource.Styleable.Toolbar_contentInsetRight;
+			global::AiForms.Renderers.Droid.Resource.Styleable.Toolbar_contentInsetStart = global::PathwayGames.Droid.Resource.Styleable.Toolbar_contentInsetStart;
+			global::AiForms.Renderers.Droid.Resource.Styleable.Toolbar_contentInsetStartWithNavigation = global::PathwayGames.Droid.Resource.Styleable.Toolbar_contentInsetStartWithNavigation;
+			global::AiForms.Renderers.Droid.Resource.Styleable.Toolbar_logo = global::PathwayGames.Droid.Resource.Styleable.Toolbar_logo;
+			global::AiForms.Renderers.Droid.Resource.Styleable.Toolbar_logoDescription = global::PathwayGames.Droid.Resource.Styleable.Toolbar_logoDescription;
+			global::AiForms.Renderers.Droid.Resource.Styleable.Toolbar_maxButtonHeight = global::PathwayGames.Droid.Resource.Styleable.Toolbar_maxButtonHeight;
+			global::AiForms.Renderers.Droid.Resource.Styleable.Toolbar_navigationContentDescription = global::PathwayGames.Droid.Resource.Styleable.Toolbar_navigationContentDescription;
+			global::AiForms.Renderers.Droid.Resource.Styleable.Toolbar_navigationIcon = global::PathwayGames.Droid.Resource.Styleable.Toolbar_navigationIcon;
+			global::AiForms.Renderers.Droid.Resource.Styleable.Toolbar_popupTheme = global::PathwayGames.Droid.Resource.Styleable.Toolbar_popupTheme;
+			global::AiForms.Renderers.Droid.Resource.Styleable.Toolbar_subtitle = global::PathwayGames.Droid.Resource.Styleable.Toolbar_subtitle;
+			global::AiForms.Renderers.Droid.Resource.Styleable.Toolbar_subtitleTextAppearance = global::PathwayGames.Droid.Resource.Styleable.Toolbar_subtitleTextAppearance;
+			global::AiForms.Renderers.Droid.Resource.Styleable.Toolbar_subtitleTextColor = global::PathwayGames.Droid.Resource.Styleable.Toolbar_subtitleTextColor;
+			global::AiForms.Renderers.Droid.Resource.Styleable.Toolbar_title = global::PathwayGames.Droid.Resource.Styleable.Toolbar_title;
+			global::AiForms.Renderers.Droid.Resource.Styleable.Toolbar_titleMargin = global::PathwayGames.Droid.Resource.Styleable.Toolbar_titleMargin;
+			global::AiForms.Renderers.Droid.Resource.Styleable.Toolbar_titleMarginBottom = global::PathwayGames.Droid.Resource.Styleable.Toolbar_titleMarginBottom;
+			global::AiForms.Renderers.Droid.Resource.Styleable.Toolbar_titleMarginEnd = global::PathwayGames.Droid.Resource.Styleable.Toolbar_titleMarginEnd;
+			global::AiForms.Renderers.Droid.Resource.Styleable.Toolbar_titleMarginStart = global::PathwayGames.Droid.Resource.Styleable.Toolbar_titleMarginStart;
+			global::AiForms.Renderers.Droid.Resource.Styleable.Toolbar_titleMarginTop = global::PathwayGames.Droid.Resource.Styleable.Toolbar_titleMarginTop;
+			global::AiForms.Renderers.Droid.Resource.Styleable.Toolbar_titleMargins = global::PathwayGames.Droid.Resource.Styleable.Toolbar_titleMargins;
+			global::AiForms.Renderers.Droid.Resource.Styleable.Toolbar_titleTextAppearance = global::PathwayGames.Droid.Resource.Styleable.Toolbar_titleTextAppearance;
+			global::AiForms.Renderers.Droid.Resource.Styleable.Toolbar_titleTextColor = global::PathwayGames.Droid.Resource.Styleable.Toolbar_titleTextColor;
+			global::AiForms.Renderers.Droid.Resource.Styleable.View = global::PathwayGames.Droid.Resource.Styleable.View;
+			global::AiForms.Renderers.Droid.Resource.Styleable.View_android_focusable = global::PathwayGames.Droid.Resource.Styleable.View_android_focusable;
+			global::AiForms.Renderers.Droid.Resource.Styleable.View_android_theme = global::PathwayGames.Droid.Resource.Styleable.View_android_theme;
+			global::AiForms.Renderers.Droid.Resource.Styleable.View_paddingEnd = global::PathwayGames.Droid.Resource.Styleable.View_paddingEnd;
+			global::AiForms.Renderers.Droid.Resource.Styleable.View_paddingStart = global::PathwayGames.Droid.Resource.Styleable.View_paddingStart;
+			global::AiForms.Renderers.Droid.Resource.Styleable.View_theme = global::PathwayGames.Droid.Resource.Styleable.View_theme;
+			global::AiForms.Renderers.Droid.Resource.Styleable.ViewBackgroundHelper = global::PathwayGames.Droid.Resource.Styleable.ViewBackgroundHelper;
+			global::AiForms.Renderers.Droid.Resource.Styleable.ViewBackgroundHelper_android_background = global::PathwayGames.Droid.Resource.Styleable.ViewBackgroundHelper_android_background;
+			global::AiForms.Renderers.Droid.Resource.Styleable.ViewBackgroundHelper_backgroundTint = global::PathwayGames.Droid.Resource.Styleable.ViewBackgroundHelper_backgroundTint;
+			global::AiForms.Renderers.Droid.Resource.Styleable.ViewBackgroundHelper_backgroundTintMode = global::PathwayGames.Droid.Resource.Styleable.ViewBackgroundHelper_backgroundTintMode;
+			global::AiForms.Renderers.Droid.Resource.Styleable.ViewStubCompat = global::PathwayGames.Droid.Resource.Styleable.ViewStubCompat;
+			global::AiForms.Renderers.Droid.Resource.Styleable.ViewStubCompat_android_id = global::PathwayGames.Droid.Resource.Styleable.ViewStubCompat_android_id;
+			global::AiForms.Renderers.Droid.Resource.Styleable.ViewStubCompat_android_inflatedId = global::PathwayGames.Droid.Resource.Styleable.ViewStubCompat_android_inflatedId;
+			global::AiForms.Renderers.Droid.Resource.Styleable.ViewStubCompat_android_layout = global::PathwayGames.Droid.Resource.Styleable.ViewStubCompat_android_layout;
 			global::Xamarin.Essentials.Resource.Attribute.alpha = global::PathwayGames.Droid.Resource.Attribute.alpha;
 			global::Xamarin.Essentials.Resource.Attribute.coordinatorLayoutStyle = global::PathwayGames.Droid.Resource.Attribute.coordinatorLayoutStyle;
 			global::Xamarin.Essentials.Resource.Attribute.font = global::PathwayGames.Droid.Resource.Attribute.font;
@@ -8460,779 +11380,782 @@ namespace PathwayGames.Droid
 			// aapt resource value: 0x7f020055
 			public const int avd_hide_password = 2130837589;
 			
-			// aapt resource value: 0x7f020152
-			public const int avd_hide_password_1 = 2130837842;
-			
 			// aapt resource value: 0x7f020153
-			public const int avd_hide_password_2 = 2130837843;
+			public const int avd_hide_password_1 = 2130837843;
 			
 			// aapt resource value: 0x7f020154
-			public const int avd_hide_password_3 = 2130837844;
+			public const int avd_hide_password_2 = 2130837844;
+			
+			// aapt resource value: 0x7f020155
+			public const int avd_hide_password_3 = 2130837845;
 			
 			// aapt resource value: 0x7f020056
 			public const int avd_show_password = 2130837590;
 			
-			// aapt resource value: 0x7f020155
-			public const int avd_show_password_1 = 2130837845;
-			
 			// aapt resource value: 0x7f020156
-			public const int avd_show_password_2 = 2130837846;
+			public const int avd_show_password_1 = 2130837846;
 			
 			// aapt resource value: 0x7f020157
-			public const int avd_show_password_3 = 2130837847;
+			public const int avd_show_password_2 = 2130837847;
+			
+			// aapt resource value: 0x7f020158
+			public const int avd_show_password_3 = 2130837848;
 			
 			// aapt resource value: 0x7f020057
-			public const int berry_the_dog = 2130837591;
+			public const int backpack = 2130837591;
 			
 			// aapt resource value: 0x7f020058
-			public const int button = 2130837592;
+			public const int berry_the_dog = 2130837592;
 			
 			// aapt resource value: 0x7f020059
-			public const int button_pressed = 2130837593;
+			public const int button = 2130837593;
 			
 			// aapt resource value: 0x7f02005a
-			public const int casey_the_cat = 2130837594;
+			public const int button_pressed = 2130837594;
 			
 			// aapt resource value: 0x7f02005b
-			public const int casey_the_cat_says_hey = 2130837595;
+			public const int casey_the_cat = 2130837595;
 			
 			// aapt resource value: 0x7f02005c
-			public const int casey_the_cat_thumbs_up = 2130837596;
+			public const int casey_the_cat_says_hey = 2130837596;
 			
 			// aapt resource value: 0x7f02005d
-			public const int design_bottom_navigation_item_background = 2130837597;
+			public const int casey_the_cat_thumbs_up = 2130837597;
 			
 			// aapt resource value: 0x7f02005e
-			public const int design_fab_background = 2130837598;
+			public const int design_bottom_navigation_item_background = 2130837598;
 			
 			// aapt resource value: 0x7f02005f
-			public const int design_ic_visibility = 2130837599;
+			public const int design_fab_background = 2130837599;
 			
 			// aapt resource value: 0x7f020060
-			public const int design_ic_visibility_off = 2130837600;
+			public const int design_ic_visibility = 2130837600;
 			
 			// aapt resource value: 0x7f020061
-			public const int design_password_eye = 2130837601;
+			public const int design_ic_visibility_off = 2130837601;
 			
 			// aapt resource value: 0x7f020062
-			public const int design_snackbar_background = 2130837602;
+			public const int design_password_eye = 2130837602;
 			
 			// aapt resource value: 0x7f020063
-			public const int hamburger = 2130837603;
+			public const int design_snackbar_background = 2130837603;
 			
 			// aapt resource value: 0x7f020064
-			public const int ic_audiotrack_dark = 2130837604;
+			public const int hamburger = 2130837604;
 			
 			// aapt resource value: 0x7f020065
-			public const int ic_audiotrack_light = 2130837605;
+			public const int ic_audiotrack_dark = 2130837605;
 			
 			// aapt resource value: 0x7f020066
-			public const int ic_dialog_close_dark = 2130837606;
+			public const int ic_audiotrack_light = 2130837606;
 			
 			// aapt resource value: 0x7f020067
-			public const int ic_dialog_close_light = 2130837607;
+			public const int ic_dialog_close_dark = 2130837607;
 			
 			// aapt resource value: 0x7f020068
-			public const int ic_errorstatus = 2130837608;
+			public const int ic_dialog_close_light = 2130837608;
 			
 			// aapt resource value: 0x7f020069
-			public const int ic_group_collapse_00 = 2130837609;
+			public const int ic_errorstatus = 2130837609;
 			
 			// aapt resource value: 0x7f02006a
-			public const int ic_group_collapse_01 = 2130837610;
+			public const int ic_group_collapse_00 = 2130837610;
 			
 			// aapt resource value: 0x7f02006b
-			public const int ic_group_collapse_02 = 2130837611;
+			public const int ic_group_collapse_01 = 2130837611;
 			
 			// aapt resource value: 0x7f02006c
-			public const int ic_group_collapse_03 = 2130837612;
+			public const int ic_group_collapse_02 = 2130837612;
 			
 			// aapt resource value: 0x7f02006d
-			public const int ic_group_collapse_04 = 2130837613;
+			public const int ic_group_collapse_03 = 2130837613;
 			
 			// aapt resource value: 0x7f02006e
-			public const int ic_group_collapse_05 = 2130837614;
+			public const int ic_group_collapse_04 = 2130837614;
 			
 			// aapt resource value: 0x7f02006f
-			public const int ic_group_collapse_06 = 2130837615;
+			public const int ic_group_collapse_05 = 2130837615;
 			
 			// aapt resource value: 0x7f020070
-			public const int ic_group_collapse_07 = 2130837616;
+			public const int ic_group_collapse_06 = 2130837616;
 			
 			// aapt resource value: 0x7f020071
-			public const int ic_group_collapse_08 = 2130837617;
+			public const int ic_group_collapse_07 = 2130837617;
 			
 			// aapt resource value: 0x7f020072
-			public const int ic_group_collapse_09 = 2130837618;
+			public const int ic_group_collapse_08 = 2130837618;
 			
 			// aapt resource value: 0x7f020073
-			public const int ic_group_collapse_10 = 2130837619;
+			public const int ic_group_collapse_09 = 2130837619;
 			
 			// aapt resource value: 0x7f020074
-			public const int ic_group_collapse_11 = 2130837620;
+			public const int ic_group_collapse_10 = 2130837620;
 			
 			// aapt resource value: 0x7f020075
-			public const int ic_group_collapse_12 = 2130837621;
+			public const int ic_group_collapse_11 = 2130837621;
 			
 			// aapt resource value: 0x7f020076
-			public const int ic_group_collapse_13 = 2130837622;
+			public const int ic_group_collapse_12 = 2130837622;
 			
 			// aapt resource value: 0x7f020077
-			public const int ic_group_collapse_14 = 2130837623;
+			public const int ic_group_collapse_13 = 2130837623;
 			
 			// aapt resource value: 0x7f020078
-			public const int ic_group_collapse_15 = 2130837624;
+			public const int ic_group_collapse_14 = 2130837624;
 			
 			// aapt resource value: 0x7f020079
-			public const int ic_group_expand_00 = 2130837625;
+			public const int ic_group_collapse_15 = 2130837625;
 			
 			// aapt resource value: 0x7f02007a
-			public const int ic_group_expand_01 = 2130837626;
+			public const int ic_group_expand_00 = 2130837626;
 			
 			// aapt resource value: 0x7f02007b
-			public const int ic_group_expand_02 = 2130837627;
+			public const int ic_group_expand_01 = 2130837627;
 			
 			// aapt resource value: 0x7f02007c
-			public const int ic_group_expand_03 = 2130837628;
+			public const int ic_group_expand_02 = 2130837628;
 			
 			// aapt resource value: 0x7f02007d
-			public const int ic_group_expand_04 = 2130837629;
+			public const int ic_group_expand_03 = 2130837629;
 			
 			// aapt resource value: 0x7f02007e
-			public const int ic_group_expand_05 = 2130837630;
+			public const int ic_group_expand_04 = 2130837630;
 			
 			// aapt resource value: 0x7f02007f
-			public const int ic_group_expand_06 = 2130837631;
+			public const int ic_group_expand_05 = 2130837631;
 			
 			// aapt resource value: 0x7f020080
-			public const int ic_group_expand_07 = 2130837632;
+			public const int ic_group_expand_06 = 2130837632;
 			
 			// aapt resource value: 0x7f020081
-			public const int ic_group_expand_08 = 2130837633;
+			public const int ic_group_expand_07 = 2130837633;
 			
 			// aapt resource value: 0x7f020082
-			public const int ic_group_expand_09 = 2130837634;
+			public const int ic_group_expand_08 = 2130837634;
 			
 			// aapt resource value: 0x7f020083
-			public const int ic_group_expand_10 = 2130837635;
+			public const int ic_group_expand_09 = 2130837635;
 			
 			// aapt resource value: 0x7f020084
-			public const int ic_group_expand_11 = 2130837636;
+			public const int ic_group_expand_10 = 2130837636;
 			
 			// aapt resource value: 0x7f020085
-			public const int ic_group_expand_12 = 2130837637;
+			public const int ic_group_expand_11 = 2130837637;
 			
 			// aapt resource value: 0x7f020086
-			public const int ic_group_expand_13 = 2130837638;
+			public const int ic_group_expand_12 = 2130837638;
 			
 			// aapt resource value: 0x7f020087
-			public const int ic_group_expand_14 = 2130837639;
+			public const int ic_group_expand_13 = 2130837639;
 			
 			// aapt resource value: 0x7f020088
-			public const int ic_group_expand_15 = 2130837640;
+			public const int ic_group_expand_14 = 2130837640;
 			
 			// aapt resource value: 0x7f020089
-			public const int ic_media_pause_dark = 2130837641;
+			public const int ic_group_expand_15 = 2130837641;
 			
 			// aapt resource value: 0x7f02008a
-			public const int ic_media_pause_light = 2130837642;
+			public const int ic_media_pause_dark = 2130837642;
 			
 			// aapt resource value: 0x7f02008b
-			public const int ic_media_play_dark = 2130837643;
+			public const int ic_media_pause_light = 2130837643;
 			
 			// aapt resource value: 0x7f02008c
-			public const int ic_media_play_light = 2130837644;
+			public const int ic_media_play_dark = 2130837644;
 			
 			// aapt resource value: 0x7f02008d
-			public const int ic_media_stop_dark = 2130837645;
+			public const int ic_media_play_light = 2130837645;
 			
 			// aapt resource value: 0x7f02008e
-			public const int ic_media_stop_light = 2130837646;
+			public const int ic_media_stop_dark = 2130837646;
 			
 			// aapt resource value: 0x7f02008f
-			public const int ic_mr_button_connected_00_dark = 2130837647;
+			public const int ic_media_stop_light = 2130837647;
 			
 			// aapt resource value: 0x7f020090
-			public const int ic_mr_button_connected_00_light = 2130837648;
+			public const int ic_mr_button_connected_00_dark = 2130837648;
 			
 			// aapt resource value: 0x7f020091
-			public const int ic_mr_button_connected_01_dark = 2130837649;
+			public const int ic_mr_button_connected_00_light = 2130837649;
 			
 			// aapt resource value: 0x7f020092
-			public const int ic_mr_button_connected_01_light = 2130837650;
+			public const int ic_mr_button_connected_01_dark = 2130837650;
 			
 			// aapt resource value: 0x7f020093
-			public const int ic_mr_button_connected_02_dark = 2130837651;
+			public const int ic_mr_button_connected_01_light = 2130837651;
 			
 			// aapt resource value: 0x7f020094
-			public const int ic_mr_button_connected_02_light = 2130837652;
+			public const int ic_mr_button_connected_02_dark = 2130837652;
 			
 			// aapt resource value: 0x7f020095
-			public const int ic_mr_button_connected_03_dark = 2130837653;
+			public const int ic_mr_button_connected_02_light = 2130837653;
 			
 			// aapt resource value: 0x7f020096
-			public const int ic_mr_button_connected_03_light = 2130837654;
+			public const int ic_mr_button_connected_03_dark = 2130837654;
 			
 			// aapt resource value: 0x7f020097
-			public const int ic_mr_button_connected_04_dark = 2130837655;
+			public const int ic_mr_button_connected_03_light = 2130837655;
 			
 			// aapt resource value: 0x7f020098
-			public const int ic_mr_button_connected_04_light = 2130837656;
+			public const int ic_mr_button_connected_04_dark = 2130837656;
 			
 			// aapt resource value: 0x7f020099
-			public const int ic_mr_button_connected_05_dark = 2130837657;
+			public const int ic_mr_button_connected_04_light = 2130837657;
 			
 			// aapt resource value: 0x7f02009a
-			public const int ic_mr_button_connected_05_light = 2130837658;
+			public const int ic_mr_button_connected_05_dark = 2130837658;
 			
 			// aapt resource value: 0x7f02009b
-			public const int ic_mr_button_connected_06_dark = 2130837659;
+			public const int ic_mr_button_connected_05_light = 2130837659;
 			
 			// aapt resource value: 0x7f02009c
-			public const int ic_mr_button_connected_06_light = 2130837660;
+			public const int ic_mr_button_connected_06_dark = 2130837660;
 			
 			// aapt resource value: 0x7f02009d
-			public const int ic_mr_button_connected_07_dark = 2130837661;
+			public const int ic_mr_button_connected_06_light = 2130837661;
 			
 			// aapt resource value: 0x7f02009e
-			public const int ic_mr_button_connected_07_light = 2130837662;
+			public const int ic_mr_button_connected_07_dark = 2130837662;
 			
 			// aapt resource value: 0x7f02009f
-			public const int ic_mr_button_connected_08_dark = 2130837663;
+			public const int ic_mr_button_connected_07_light = 2130837663;
 			
 			// aapt resource value: 0x7f0200a0
-			public const int ic_mr_button_connected_08_light = 2130837664;
+			public const int ic_mr_button_connected_08_dark = 2130837664;
 			
 			// aapt resource value: 0x7f0200a1
-			public const int ic_mr_button_connected_09_dark = 2130837665;
+			public const int ic_mr_button_connected_08_light = 2130837665;
 			
 			// aapt resource value: 0x7f0200a2
-			public const int ic_mr_button_connected_09_light = 2130837666;
+			public const int ic_mr_button_connected_09_dark = 2130837666;
 			
 			// aapt resource value: 0x7f0200a3
-			public const int ic_mr_button_connected_10_dark = 2130837667;
+			public const int ic_mr_button_connected_09_light = 2130837667;
 			
 			// aapt resource value: 0x7f0200a4
-			public const int ic_mr_button_connected_10_light = 2130837668;
+			public const int ic_mr_button_connected_10_dark = 2130837668;
 			
 			// aapt resource value: 0x7f0200a5
-			public const int ic_mr_button_connected_11_dark = 2130837669;
+			public const int ic_mr_button_connected_10_light = 2130837669;
 			
 			// aapt resource value: 0x7f0200a6
-			public const int ic_mr_button_connected_11_light = 2130837670;
+			public const int ic_mr_button_connected_11_dark = 2130837670;
 			
 			// aapt resource value: 0x7f0200a7
-			public const int ic_mr_button_connected_12_dark = 2130837671;
+			public const int ic_mr_button_connected_11_light = 2130837671;
 			
 			// aapt resource value: 0x7f0200a8
-			public const int ic_mr_button_connected_12_light = 2130837672;
+			public const int ic_mr_button_connected_12_dark = 2130837672;
 			
 			// aapt resource value: 0x7f0200a9
-			public const int ic_mr_button_connected_13_dark = 2130837673;
+			public const int ic_mr_button_connected_12_light = 2130837673;
 			
 			// aapt resource value: 0x7f0200aa
-			public const int ic_mr_button_connected_13_light = 2130837674;
+			public const int ic_mr_button_connected_13_dark = 2130837674;
 			
 			// aapt resource value: 0x7f0200ab
-			public const int ic_mr_button_connected_14_dark = 2130837675;
+			public const int ic_mr_button_connected_13_light = 2130837675;
 			
 			// aapt resource value: 0x7f0200ac
-			public const int ic_mr_button_connected_14_light = 2130837676;
+			public const int ic_mr_button_connected_14_dark = 2130837676;
 			
 			// aapt resource value: 0x7f0200ad
-			public const int ic_mr_button_connected_15_dark = 2130837677;
+			public const int ic_mr_button_connected_14_light = 2130837677;
 			
 			// aapt resource value: 0x7f0200ae
-			public const int ic_mr_button_connected_15_light = 2130837678;
+			public const int ic_mr_button_connected_15_dark = 2130837678;
 			
 			// aapt resource value: 0x7f0200af
-			public const int ic_mr_button_connected_16_dark = 2130837679;
+			public const int ic_mr_button_connected_15_light = 2130837679;
 			
 			// aapt resource value: 0x7f0200b0
-			public const int ic_mr_button_connected_16_light = 2130837680;
+			public const int ic_mr_button_connected_16_dark = 2130837680;
 			
 			// aapt resource value: 0x7f0200b1
-			public const int ic_mr_button_connected_17_dark = 2130837681;
+			public const int ic_mr_button_connected_16_light = 2130837681;
 			
 			// aapt resource value: 0x7f0200b2
-			public const int ic_mr_button_connected_17_light = 2130837682;
+			public const int ic_mr_button_connected_17_dark = 2130837682;
 			
 			// aapt resource value: 0x7f0200b3
-			public const int ic_mr_button_connected_18_dark = 2130837683;
+			public const int ic_mr_button_connected_17_light = 2130837683;
 			
 			// aapt resource value: 0x7f0200b4
-			public const int ic_mr_button_connected_18_light = 2130837684;
+			public const int ic_mr_button_connected_18_dark = 2130837684;
 			
 			// aapt resource value: 0x7f0200b5
-			public const int ic_mr_button_connected_19_dark = 2130837685;
+			public const int ic_mr_button_connected_18_light = 2130837685;
 			
 			// aapt resource value: 0x7f0200b6
-			public const int ic_mr_button_connected_19_light = 2130837686;
+			public const int ic_mr_button_connected_19_dark = 2130837686;
 			
 			// aapt resource value: 0x7f0200b7
-			public const int ic_mr_button_connected_20_dark = 2130837687;
+			public const int ic_mr_button_connected_19_light = 2130837687;
 			
 			// aapt resource value: 0x7f0200b8
-			public const int ic_mr_button_connected_20_light = 2130837688;
+			public const int ic_mr_button_connected_20_dark = 2130837688;
 			
 			// aapt resource value: 0x7f0200b9
-			public const int ic_mr_button_connected_21_dark = 2130837689;
+			public const int ic_mr_button_connected_20_light = 2130837689;
 			
 			// aapt resource value: 0x7f0200ba
-			public const int ic_mr_button_connected_21_light = 2130837690;
+			public const int ic_mr_button_connected_21_dark = 2130837690;
 			
 			// aapt resource value: 0x7f0200bb
-			public const int ic_mr_button_connected_22_dark = 2130837691;
+			public const int ic_mr_button_connected_21_light = 2130837691;
 			
 			// aapt resource value: 0x7f0200bc
-			public const int ic_mr_button_connected_22_light = 2130837692;
+			public const int ic_mr_button_connected_22_dark = 2130837692;
 			
 			// aapt resource value: 0x7f0200bd
-			public const int ic_mr_button_connected_23_dark = 2130837693;
+			public const int ic_mr_button_connected_22_light = 2130837693;
 			
 			// aapt resource value: 0x7f0200be
-			public const int ic_mr_button_connected_23_light = 2130837694;
+			public const int ic_mr_button_connected_23_dark = 2130837694;
 			
 			// aapt resource value: 0x7f0200bf
-			public const int ic_mr_button_connected_24_dark = 2130837695;
+			public const int ic_mr_button_connected_23_light = 2130837695;
 			
 			// aapt resource value: 0x7f0200c0
-			public const int ic_mr_button_connected_24_light = 2130837696;
+			public const int ic_mr_button_connected_24_dark = 2130837696;
 			
 			// aapt resource value: 0x7f0200c1
-			public const int ic_mr_button_connected_25_dark = 2130837697;
+			public const int ic_mr_button_connected_24_light = 2130837697;
 			
 			// aapt resource value: 0x7f0200c2
-			public const int ic_mr_button_connected_25_light = 2130837698;
+			public const int ic_mr_button_connected_25_dark = 2130837698;
 			
 			// aapt resource value: 0x7f0200c3
-			public const int ic_mr_button_connected_26_dark = 2130837699;
+			public const int ic_mr_button_connected_25_light = 2130837699;
 			
 			// aapt resource value: 0x7f0200c4
-			public const int ic_mr_button_connected_26_light = 2130837700;
+			public const int ic_mr_button_connected_26_dark = 2130837700;
 			
 			// aapt resource value: 0x7f0200c5
-			public const int ic_mr_button_connected_27_dark = 2130837701;
+			public const int ic_mr_button_connected_26_light = 2130837701;
 			
 			// aapt resource value: 0x7f0200c6
-			public const int ic_mr_button_connected_27_light = 2130837702;
+			public const int ic_mr_button_connected_27_dark = 2130837702;
 			
 			// aapt resource value: 0x7f0200c7
-			public const int ic_mr_button_connected_28_dark = 2130837703;
+			public const int ic_mr_button_connected_27_light = 2130837703;
 			
 			// aapt resource value: 0x7f0200c8
-			public const int ic_mr_button_connected_28_light = 2130837704;
+			public const int ic_mr_button_connected_28_dark = 2130837704;
 			
 			// aapt resource value: 0x7f0200c9
-			public const int ic_mr_button_connected_29_dark = 2130837705;
+			public const int ic_mr_button_connected_28_light = 2130837705;
 			
 			// aapt resource value: 0x7f0200ca
-			public const int ic_mr_button_connected_29_light = 2130837706;
+			public const int ic_mr_button_connected_29_dark = 2130837706;
 			
 			// aapt resource value: 0x7f0200cb
-			public const int ic_mr_button_connected_30_dark = 2130837707;
+			public const int ic_mr_button_connected_29_light = 2130837707;
 			
 			// aapt resource value: 0x7f0200cc
-			public const int ic_mr_button_connected_30_light = 2130837708;
+			public const int ic_mr_button_connected_30_dark = 2130837708;
 			
 			// aapt resource value: 0x7f0200cd
-			public const int ic_mr_button_connecting_00_dark = 2130837709;
+			public const int ic_mr_button_connected_30_light = 2130837709;
 			
 			// aapt resource value: 0x7f0200ce
-			public const int ic_mr_button_connecting_00_light = 2130837710;
+			public const int ic_mr_button_connecting_00_dark = 2130837710;
 			
 			// aapt resource value: 0x7f0200cf
-			public const int ic_mr_button_connecting_01_dark = 2130837711;
+			public const int ic_mr_button_connecting_00_light = 2130837711;
 			
 			// aapt resource value: 0x7f0200d0
-			public const int ic_mr_button_connecting_01_light = 2130837712;
+			public const int ic_mr_button_connecting_01_dark = 2130837712;
 			
 			// aapt resource value: 0x7f0200d1
-			public const int ic_mr_button_connecting_02_dark = 2130837713;
+			public const int ic_mr_button_connecting_01_light = 2130837713;
 			
 			// aapt resource value: 0x7f0200d2
-			public const int ic_mr_button_connecting_02_light = 2130837714;
+			public const int ic_mr_button_connecting_02_dark = 2130837714;
 			
 			// aapt resource value: 0x7f0200d3
-			public const int ic_mr_button_connecting_03_dark = 2130837715;
+			public const int ic_mr_button_connecting_02_light = 2130837715;
 			
 			// aapt resource value: 0x7f0200d4
-			public const int ic_mr_button_connecting_03_light = 2130837716;
+			public const int ic_mr_button_connecting_03_dark = 2130837716;
 			
 			// aapt resource value: 0x7f0200d5
-			public const int ic_mr_button_connecting_04_dark = 2130837717;
+			public const int ic_mr_button_connecting_03_light = 2130837717;
 			
 			// aapt resource value: 0x7f0200d6
-			public const int ic_mr_button_connecting_04_light = 2130837718;
+			public const int ic_mr_button_connecting_04_dark = 2130837718;
 			
 			// aapt resource value: 0x7f0200d7
-			public const int ic_mr_button_connecting_05_dark = 2130837719;
+			public const int ic_mr_button_connecting_04_light = 2130837719;
 			
 			// aapt resource value: 0x7f0200d8
-			public const int ic_mr_button_connecting_05_light = 2130837720;
+			public const int ic_mr_button_connecting_05_dark = 2130837720;
 			
 			// aapt resource value: 0x7f0200d9
-			public const int ic_mr_button_connecting_06_dark = 2130837721;
+			public const int ic_mr_button_connecting_05_light = 2130837721;
 			
 			// aapt resource value: 0x7f0200da
-			public const int ic_mr_button_connecting_06_light = 2130837722;
+			public const int ic_mr_button_connecting_06_dark = 2130837722;
 			
 			// aapt resource value: 0x7f0200db
-			public const int ic_mr_button_connecting_07_dark = 2130837723;
+			public const int ic_mr_button_connecting_06_light = 2130837723;
 			
 			// aapt resource value: 0x7f0200dc
-			public const int ic_mr_button_connecting_07_light = 2130837724;
+			public const int ic_mr_button_connecting_07_dark = 2130837724;
 			
 			// aapt resource value: 0x7f0200dd
-			public const int ic_mr_button_connecting_08_dark = 2130837725;
+			public const int ic_mr_button_connecting_07_light = 2130837725;
 			
 			// aapt resource value: 0x7f0200de
-			public const int ic_mr_button_connecting_08_light = 2130837726;
+			public const int ic_mr_button_connecting_08_dark = 2130837726;
 			
 			// aapt resource value: 0x7f0200df
-			public const int ic_mr_button_connecting_09_dark = 2130837727;
+			public const int ic_mr_button_connecting_08_light = 2130837727;
 			
 			// aapt resource value: 0x7f0200e0
-			public const int ic_mr_button_connecting_09_light = 2130837728;
+			public const int ic_mr_button_connecting_09_dark = 2130837728;
 			
 			// aapt resource value: 0x7f0200e1
-			public const int ic_mr_button_connecting_10_dark = 2130837729;
+			public const int ic_mr_button_connecting_09_light = 2130837729;
 			
 			// aapt resource value: 0x7f0200e2
-			public const int ic_mr_button_connecting_10_light = 2130837730;
+			public const int ic_mr_button_connecting_10_dark = 2130837730;
 			
 			// aapt resource value: 0x7f0200e3
-			public const int ic_mr_button_connecting_11_dark = 2130837731;
+			public const int ic_mr_button_connecting_10_light = 2130837731;
 			
 			// aapt resource value: 0x7f0200e4
-			public const int ic_mr_button_connecting_11_light = 2130837732;
+			public const int ic_mr_button_connecting_11_dark = 2130837732;
 			
 			// aapt resource value: 0x7f0200e5
-			public const int ic_mr_button_connecting_12_dark = 2130837733;
+			public const int ic_mr_button_connecting_11_light = 2130837733;
 			
 			// aapt resource value: 0x7f0200e6
-			public const int ic_mr_button_connecting_12_light = 2130837734;
+			public const int ic_mr_button_connecting_12_dark = 2130837734;
 			
 			// aapt resource value: 0x7f0200e7
-			public const int ic_mr_button_connecting_13_dark = 2130837735;
+			public const int ic_mr_button_connecting_12_light = 2130837735;
 			
 			// aapt resource value: 0x7f0200e8
-			public const int ic_mr_button_connecting_13_light = 2130837736;
+			public const int ic_mr_button_connecting_13_dark = 2130837736;
 			
 			// aapt resource value: 0x7f0200e9
-			public const int ic_mr_button_connecting_14_dark = 2130837737;
+			public const int ic_mr_button_connecting_13_light = 2130837737;
 			
 			// aapt resource value: 0x7f0200ea
-			public const int ic_mr_button_connecting_14_light = 2130837738;
+			public const int ic_mr_button_connecting_14_dark = 2130837738;
 			
 			// aapt resource value: 0x7f0200eb
-			public const int ic_mr_button_connecting_15_dark = 2130837739;
+			public const int ic_mr_button_connecting_14_light = 2130837739;
 			
 			// aapt resource value: 0x7f0200ec
-			public const int ic_mr_button_connecting_15_light = 2130837740;
+			public const int ic_mr_button_connecting_15_dark = 2130837740;
 			
 			// aapt resource value: 0x7f0200ed
-			public const int ic_mr_button_connecting_16_dark = 2130837741;
+			public const int ic_mr_button_connecting_15_light = 2130837741;
 			
 			// aapt resource value: 0x7f0200ee
-			public const int ic_mr_button_connecting_16_light = 2130837742;
+			public const int ic_mr_button_connecting_16_dark = 2130837742;
 			
 			// aapt resource value: 0x7f0200ef
-			public const int ic_mr_button_connecting_17_dark = 2130837743;
+			public const int ic_mr_button_connecting_16_light = 2130837743;
 			
 			// aapt resource value: 0x7f0200f0
-			public const int ic_mr_button_connecting_17_light = 2130837744;
+			public const int ic_mr_button_connecting_17_dark = 2130837744;
 			
 			// aapt resource value: 0x7f0200f1
-			public const int ic_mr_button_connecting_18_dark = 2130837745;
+			public const int ic_mr_button_connecting_17_light = 2130837745;
 			
 			// aapt resource value: 0x7f0200f2
-			public const int ic_mr_button_connecting_18_light = 2130837746;
+			public const int ic_mr_button_connecting_18_dark = 2130837746;
 			
 			// aapt resource value: 0x7f0200f3
-			public const int ic_mr_button_connecting_19_dark = 2130837747;
+			public const int ic_mr_button_connecting_18_light = 2130837747;
 			
 			// aapt resource value: 0x7f0200f4
-			public const int ic_mr_button_connecting_19_light = 2130837748;
+			public const int ic_mr_button_connecting_19_dark = 2130837748;
 			
 			// aapt resource value: 0x7f0200f5
-			public const int ic_mr_button_connecting_20_dark = 2130837749;
+			public const int ic_mr_button_connecting_19_light = 2130837749;
 			
 			// aapt resource value: 0x7f0200f6
-			public const int ic_mr_button_connecting_20_light = 2130837750;
+			public const int ic_mr_button_connecting_20_dark = 2130837750;
 			
 			// aapt resource value: 0x7f0200f7
-			public const int ic_mr_button_connecting_21_dark = 2130837751;
+			public const int ic_mr_button_connecting_20_light = 2130837751;
 			
 			// aapt resource value: 0x7f0200f8
-			public const int ic_mr_button_connecting_21_light = 2130837752;
+			public const int ic_mr_button_connecting_21_dark = 2130837752;
 			
 			// aapt resource value: 0x7f0200f9
-			public const int ic_mr_button_connecting_22_dark = 2130837753;
+			public const int ic_mr_button_connecting_21_light = 2130837753;
 			
 			// aapt resource value: 0x7f0200fa
-			public const int ic_mr_button_connecting_22_light = 2130837754;
+			public const int ic_mr_button_connecting_22_dark = 2130837754;
 			
 			// aapt resource value: 0x7f0200fb
-			public const int ic_mr_button_connecting_23_dark = 2130837755;
+			public const int ic_mr_button_connecting_22_light = 2130837755;
 			
 			// aapt resource value: 0x7f0200fc
-			public const int ic_mr_button_connecting_23_light = 2130837756;
+			public const int ic_mr_button_connecting_23_dark = 2130837756;
 			
 			// aapt resource value: 0x7f0200fd
-			public const int ic_mr_button_connecting_24_dark = 2130837757;
+			public const int ic_mr_button_connecting_23_light = 2130837757;
 			
 			// aapt resource value: 0x7f0200fe
-			public const int ic_mr_button_connecting_24_light = 2130837758;
+			public const int ic_mr_button_connecting_24_dark = 2130837758;
 			
 			// aapt resource value: 0x7f0200ff
-			public const int ic_mr_button_connecting_25_dark = 2130837759;
+			public const int ic_mr_button_connecting_24_light = 2130837759;
 			
 			// aapt resource value: 0x7f020100
-			public const int ic_mr_button_connecting_25_light = 2130837760;
+			public const int ic_mr_button_connecting_25_dark = 2130837760;
 			
 			// aapt resource value: 0x7f020101
-			public const int ic_mr_button_connecting_26_dark = 2130837761;
+			public const int ic_mr_button_connecting_25_light = 2130837761;
 			
 			// aapt resource value: 0x7f020102
-			public const int ic_mr_button_connecting_26_light = 2130837762;
+			public const int ic_mr_button_connecting_26_dark = 2130837762;
 			
 			// aapt resource value: 0x7f020103
-			public const int ic_mr_button_connecting_27_dark = 2130837763;
+			public const int ic_mr_button_connecting_26_light = 2130837763;
 			
 			// aapt resource value: 0x7f020104
-			public const int ic_mr_button_connecting_27_light = 2130837764;
+			public const int ic_mr_button_connecting_27_dark = 2130837764;
 			
 			// aapt resource value: 0x7f020105
-			public const int ic_mr_button_connecting_28_dark = 2130837765;
+			public const int ic_mr_button_connecting_27_light = 2130837765;
 			
 			// aapt resource value: 0x7f020106
-			public const int ic_mr_button_connecting_28_light = 2130837766;
+			public const int ic_mr_button_connecting_28_dark = 2130837766;
 			
 			// aapt resource value: 0x7f020107
-			public const int ic_mr_button_connecting_29_dark = 2130837767;
+			public const int ic_mr_button_connecting_28_light = 2130837767;
 			
 			// aapt resource value: 0x7f020108
-			public const int ic_mr_button_connecting_29_light = 2130837768;
+			public const int ic_mr_button_connecting_29_dark = 2130837768;
 			
 			// aapt resource value: 0x7f020109
-			public const int ic_mr_button_connecting_30_dark = 2130837769;
+			public const int ic_mr_button_connecting_29_light = 2130837769;
 			
 			// aapt resource value: 0x7f02010a
-			public const int ic_mr_button_connecting_30_light = 2130837770;
+			public const int ic_mr_button_connecting_30_dark = 2130837770;
 			
 			// aapt resource value: 0x7f02010b
-			public const int ic_mr_button_disabled_dark = 2130837771;
+			public const int ic_mr_button_connecting_30_light = 2130837771;
 			
 			// aapt resource value: 0x7f02010c
-			public const int ic_mr_button_disabled_light = 2130837772;
+			public const int ic_mr_button_disabled_dark = 2130837772;
 			
 			// aapt resource value: 0x7f02010d
-			public const int ic_mr_button_disconnected_dark = 2130837773;
+			public const int ic_mr_button_disabled_light = 2130837773;
 			
 			// aapt resource value: 0x7f02010e
-			public const int ic_mr_button_disconnected_light = 2130837774;
+			public const int ic_mr_button_disconnected_dark = 2130837774;
 			
 			// aapt resource value: 0x7f02010f
-			public const int ic_mr_button_grey = 2130837775;
+			public const int ic_mr_button_disconnected_light = 2130837775;
 			
 			// aapt resource value: 0x7f020110
-			public const int ic_mtrl_chip_checked_black = 2130837776;
+			public const int ic_mr_button_grey = 2130837776;
 			
 			// aapt resource value: 0x7f020111
-			public const int ic_mtrl_chip_checked_circle = 2130837777;
+			public const int ic_mtrl_chip_checked_black = 2130837777;
 			
 			// aapt resource value: 0x7f020112
-			public const int ic_mtrl_chip_close_circle = 2130837778;
+			public const int ic_mtrl_chip_checked_circle = 2130837778;
 			
 			// aapt resource value: 0x7f020113
-			public const int ic_successstatus = 2130837779;
+			public const int ic_mtrl_chip_close_circle = 2130837779;
 			
 			// aapt resource value: 0x7f020114
-			public const int ic_vol_type_speaker_dark = 2130837780;
+			public const int ic_successstatus = 2130837780;
 			
 			// aapt resource value: 0x7f020115
-			public const int ic_vol_type_speaker_group_dark = 2130837781;
+			public const int ic_vol_type_speaker_dark = 2130837781;
 			
 			// aapt resource value: 0x7f020116
-			public const int ic_vol_type_speaker_group_light = 2130837782;
+			public const int ic_vol_type_speaker_group_dark = 2130837782;
 			
 			// aapt resource value: 0x7f020117
-			public const int ic_vol_type_speaker_light = 2130837783;
+			public const int ic_vol_type_speaker_group_light = 2130837783;
 			
 			// aapt resource value: 0x7f020118
-			public const int ic_vol_type_tv_dark = 2130837784;
+			public const int ic_vol_type_speaker_light = 2130837784;
 			
 			// aapt resource value: 0x7f020119
-			public const int ic_vol_type_tv_light = 2130837785;
+			public const int ic_vol_type_tv_dark = 2130837785;
 			
 			// aapt resource value: 0x7f02011a
-			public const int icon_data = 2130837786;
+			public const int ic_vol_type_tv_light = 2130837786;
 			
 			// aapt resource value: 0x7f02011b
-			public const int icon_engangement_absent = 2130837787;
+			public const int icon_data = 2130837787;
 			
 			// aapt resource value: 0x7f02011c
-			public const int icon_engangement_high = 2130837788;
+			public const int icon_engangement_absent = 2130837788;
 			
 			// aapt resource value: 0x7f02011d
-			public const int icon_engangement_low = 2130837789;
+			public const int icon_engangement_high = 2130837789;
 			
 			// aapt resource value: 0x7f02011e
-			public const int icon_engangement_medium = 2130837790;
+			public const int icon_engangement_low = 2130837790;
 			
 			// aapt resource value: 0x7f02011f
-			public const int icon_eye = 2130837791;
+			public const int icon_engangement_medium = 2130837791;
 			
 			// aapt resource value: 0x7f020120
-			public const int icon_eye_off = 2130837792;
+			public const int icon_eye = 2130837792;
 			
 			// aapt resource value: 0x7f020121
-			public const int icon_head = 2130837793;
+			public const int icon_eye_off = 2130837793;
 			
 			// aapt resource value: 0x7f020122
-			public const int icon_head_off = 2130837794;
+			public const int icon_head = 2130837794;
 			
 			// aapt resource value: 0x7f020123
-			public const int icon_settings = 2130837795;
+			public const int icon_head_off = 2130837795;
 			
 			// aapt resource value: 0x7f020124
-			public const int icon_tests = 2130837796;
+			public const int icon_settings = 2130837796;
 			
 			// aapt resource value: 0x7f020125
-			public const int icon_users = 2130837797;
+			public const int icon_tests = 2130837797;
 			
 			// aapt resource value: 0x7f020126
-			public const int logo = 2130837798;
+			public const int icon_users = 2130837798;
 			
 			// aapt resource value: 0x7f020127
-			public const int logo_white = 2130837799;
+			public const int logo = 2130837799;
 			
 			// aapt resource value: 0x7f020128
-			public const int MaterialActivityIndicatorBackground = 2130837800;
+			public const int logo_white = 2130837800;
 			
 			// aapt resource value: 0x7f020129
-			public const int MaterialProgressBar = 2130837801;
+			public const int MaterialActivityIndicatorBackground = 2130837801;
 			
 			// aapt resource value: 0x7f02012a
-			public const int mr_button_connected_dark = 2130837802;
+			public const int MaterialProgressBar = 2130837802;
 			
 			// aapt resource value: 0x7f02012b
-			public const int mr_button_connected_light = 2130837803;
+			public const int mr_button_connected_dark = 2130837803;
 			
 			// aapt resource value: 0x7f02012c
-			public const int mr_button_connecting_dark = 2130837804;
+			public const int mr_button_connected_light = 2130837804;
 			
 			// aapt resource value: 0x7f02012d
-			public const int mr_button_connecting_light = 2130837805;
+			public const int mr_button_connecting_dark = 2130837805;
 			
 			// aapt resource value: 0x7f02012e
-			public const int mr_button_dark = 2130837806;
+			public const int mr_button_connecting_light = 2130837806;
 			
 			// aapt resource value: 0x7f02012f
-			public const int mr_button_light = 2130837807;
+			public const int mr_button_dark = 2130837807;
 			
 			// aapt resource value: 0x7f020130
-			public const int mr_dialog_close_dark = 2130837808;
+			public const int mr_button_light = 2130837808;
 			
 			// aapt resource value: 0x7f020131
-			public const int mr_dialog_close_light = 2130837809;
+			public const int mr_dialog_close_dark = 2130837809;
 			
 			// aapt resource value: 0x7f020132
-			public const int mr_dialog_material_background_dark = 2130837810;
+			public const int mr_dialog_close_light = 2130837810;
 			
 			// aapt resource value: 0x7f020133
-			public const int mr_dialog_material_background_light = 2130837811;
+			public const int mr_dialog_material_background_dark = 2130837811;
 			
 			// aapt resource value: 0x7f020134
-			public const int mr_group_collapse = 2130837812;
+			public const int mr_dialog_material_background_light = 2130837812;
 			
 			// aapt resource value: 0x7f020135
-			public const int mr_group_expand = 2130837813;
+			public const int mr_group_collapse = 2130837813;
 			
 			// aapt resource value: 0x7f020136
-			public const int mr_media_pause_dark = 2130837814;
+			public const int mr_group_expand = 2130837814;
 			
 			// aapt resource value: 0x7f020137
-			public const int mr_media_pause_light = 2130837815;
+			public const int mr_media_pause_dark = 2130837815;
 			
 			// aapt resource value: 0x7f020138
-			public const int mr_media_play_dark = 2130837816;
+			public const int mr_media_pause_light = 2130837816;
 			
 			// aapt resource value: 0x7f020139
-			public const int mr_media_play_light = 2130837817;
+			public const int mr_media_play_dark = 2130837817;
 			
 			// aapt resource value: 0x7f02013a
-			public const int mr_media_stop_dark = 2130837818;
+			public const int mr_media_play_light = 2130837818;
 			
 			// aapt resource value: 0x7f02013b
-			public const int mr_media_stop_light = 2130837819;
+			public const int mr_media_stop_dark = 2130837819;
 			
 			// aapt resource value: 0x7f02013c
-			public const int mr_vol_type_audiotrack_dark = 2130837820;
+			public const int mr_media_stop_light = 2130837820;
 			
 			// aapt resource value: 0x7f02013d
-			public const int mr_vol_type_audiotrack_light = 2130837821;
+			public const int mr_vol_type_audiotrack_dark = 2130837821;
 			
 			// aapt resource value: 0x7f02013e
-			public const int mtrl_snackbar_background = 2130837822;
+			public const int mr_vol_type_audiotrack_light = 2130837822;
 			
 			// aapt resource value: 0x7f02013f
-			public const int mtrl_tabs_default_indicator = 2130837823;
+			public const int mtrl_snackbar_background = 2130837823;
 			
 			// aapt resource value: 0x7f020140
-			public const int navigation_empty_icon = 2130837824;
+			public const int mtrl_tabs_default_indicator = 2130837824;
 			
 			// aapt resource value: 0x7f020141
-			public const int notification_action_background = 2130837825;
+			public const int navigation_empty_icon = 2130837825;
 			
 			// aapt resource value: 0x7f020142
-			public const int notification_bg = 2130837826;
+			public const int notification_action_background = 2130837826;
 			
 			// aapt resource value: 0x7f020143
-			public const int notification_bg_low = 2130837827;
+			public const int notification_bg = 2130837827;
 			
 			// aapt resource value: 0x7f020144
-			public const int notification_bg_low_normal = 2130837828;
+			public const int notification_bg_low = 2130837828;
 			
 			// aapt resource value: 0x7f020145
-			public const int notification_bg_low_pressed = 2130837829;
+			public const int notification_bg_low_normal = 2130837829;
 			
 			// aapt resource value: 0x7f020146
-			public const int notification_bg_normal = 2130837830;
+			public const int notification_bg_low_pressed = 2130837830;
 			
 			// aapt resource value: 0x7f020147
-			public const int notification_bg_normal_pressed = 2130837831;
+			public const int notification_bg_normal = 2130837831;
 			
 			// aapt resource value: 0x7f020148
-			public const int notification_icon_background = 2130837832;
-			
-			// aapt resource value: 0x7f020150
-			public const int notification_template_icon_bg = 2130837840;
-			
-			// aapt resource value: 0x7f020151
-			public const int notification_template_icon_low_bg = 2130837841;
+			public const int notification_bg_normal_pressed = 2130837832;
 			
 			// aapt resource value: 0x7f020149
-			public const int notification_tile_bg = 2130837833;
+			public const int notification_icon_background = 2130837833;
+			
+			// aapt resource value: 0x7f020151
+			public const int notification_template_icon_bg = 2130837841;
+			
+			// aapt resource value: 0x7f020152
+			public const int notification_template_icon_low_bg = 2130837842;
 			
 			// aapt resource value: 0x7f02014a
-			public const int notify_panel_notification_icon_bg = 2130837834;
+			public const int notification_tile_bg = 2130837834;
 			
 			// aapt resource value: 0x7f02014b
-			public const int reward_animation_wow = 2130837835;
+			public const int notify_panel_notification_icon_bg = 2130837835;
 			
 			// aapt resource value: 0x7f02014c
-			public const int roundedbg = 2130837836;
+			public const int reward_animation_wow = 2130837836;
 			
 			// aapt resource value: 0x7f02014d
-			public const int roundedbgdark = 2130837837;
+			public const int roundedbg = 2130837837;
 			
 			// aapt resource value: 0x7f02014e
-			public const int tooltip_frame_dark = 2130837838;
+			public const int roundedbgdark = 2130837838;
 			
 			// aapt resource value: 0x7f02014f
-			public const int tooltip_frame_light = 2130837839;
+			public const int tooltip_frame_dark = 2130837839;
+			
+			// aapt resource value: 0x7f020150
+			public const int tooltip_frame_light = 2130837840;
 			
 			static Drawable()
 			{
@@ -9253,8 +12176,44 @@ namespace PathwayGames.Droid
 			// aapt resource value: 0x7f0b003a
 			public const int CTRL = 2131427386;
 			
+			// aapt resource value: 0x7f0b00a6
+			public const int CellAccessoryView = 2131427494;
+			
+			// aapt resource value: 0x7f0b00a5
+			public const int CellBody = 2131427493;
+			
+			// aapt resource value: 0x7f0b00a7
+			public const int CellContentStack = 2131427495;
+			
+			// aapt resource value: 0x7f0b00a9
+			public const int CellDescription = 2131427497;
+			
+			// aapt resource value: 0x7f0b00aa
+			public const int CellHintText = 2131427498;
+			
+			// aapt resource value: 0x7f0b00a4
+			public const int CellIcon = 2131427492;
+			
+			// aapt resource value: 0x7f0b00a8
+			public const int CellTitle = 2131427496;
+			
+			// aapt resource value: 0x7f0b00ab
+			public const int ContentCellBody = 2131427499;
+			
+			// aapt resource value: 0x7f0b00ac
+			public const int ContentCellBorder = 2131427500;
+			
 			// aapt resource value: 0x7f0b003b
 			public const int FUNCTION = 2131427387;
+			
+			// aapt resource value: 0x7f0b00bb
+			public const int FooterCellText = 2131427515;
+			
+			// aapt resource value: 0x7f0b00bd
+			public const int HeaderCellBorder = 2131427517;
+			
+			// aapt resource value: 0x7f0b00bc
+			public const int HeaderCellText = 2131427516;
 			
 			// aapt resource value: 0x7f0b003c
 			public const int META = 2131427388;
@@ -9265,8 +12224,8 @@ namespace PathwayGames.Droid
 			// aapt resource value: 0x7f0b003e
 			public const int SYM = 2131427390;
 			
-			// aapt resource value: 0x7f0b00e9
-			public const int action0 = 2131427561;
+			// aapt resource value: 0x7f0b00f5
+			public const int action0 = 2131427573;
 			
 			// aapt resource value: 0x7f0b008d
 			public const int action_bar = 2131427469;
@@ -9289,17 +12248,17 @@ namespace PathwayGames.Droid
 			// aapt resource value: 0x7f0b0069
 			public const int action_bar_title = 2131427433;
 			
-			// aapt resource value: 0x7f0b00e6
-			public const int action_container = 2131427558;
+			// aapt resource value: 0x7f0b00f2
+			public const int action_container = 2131427570;
 			
 			// aapt resource value: 0x7f0b008e
 			public const int action_context_bar = 2131427470;
 			
-			// aapt resource value: 0x7f0b00ed
-			public const int action_divider = 2131427565;
+			// aapt resource value: 0x7f0b00f9
+			public const int action_divider = 2131427577;
 			
-			// aapt resource value: 0x7f0b00e7
-			public const int action_image = 2131427559;
+			// aapt resource value: 0x7f0b00f3
+			public const int action_image = 2131427571;
 			
 			// aapt resource value: 0x7f0b0003
 			public const int action_menu_divider = 2131427331;
@@ -9316,11 +12275,11 @@ namespace PathwayGames.Droid
 			// aapt resource value: 0x7f0b006b
 			public const int action_mode_close_button = 2131427435;
 			
-			// aapt resource value: 0x7f0b00e8
-			public const int action_text = 2131427560;
+			// aapt resource value: 0x7f0b00f4
+			public const int action_text = 2131427572;
 			
-			// aapt resource value: 0x7f0b00f6
-			public const int actions = 2131427574;
+			// aapt resource value: 0x7f0b0102
+			public const int actions = 2131427586;
 			
 			// aapt resource value: 0x7f0b006c
 			public const int activity_chooser_view_content = 2131427436;
@@ -9376,8 +12335,8 @@ namespace PathwayGames.Droid
 			// aapt resource value: 0x7f0b0072
 			public const int buttonPanel = 2131427442;
 			
-			// aapt resource value: 0x7f0b00ea
-			public const int cancel_action = 2131427562;
+			// aapt resource value: 0x7f0b00f6
+			public const int cancel_action = 2131427574;
 			
 			// aapt resource value: 0x7f0b004c
 			public const int center = 2131427404;
@@ -9391,8 +12350,8 @@ namespace PathwayGames.Droid
 			// aapt resource value: 0x7f0b0086
 			public const int checkbox = 2131427462;
 			
-			// aapt resource value: 0x7f0b00f2
-			public const int chronometer = 2131427570;
+			// aapt resource value: 0x7f0b00fe
+			public const int chronometer = 2131427582;
 			
 			// aapt resource value: 0x7f0b0061
 			public const int clip_horizontal = 2131427425;
@@ -9403,8 +12362,8 @@ namespace PathwayGames.Droid
 			// aapt resource value: 0x7f0b0040
 			public const int collapseActionView = 2131427392;
 			
-			// aapt resource value: 0x7f0b00a6
-			public const int container = 2131427494;
+			// aapt resource value: 0x7f0b00af
+			public const int container = 2131427503;
 			
 			// aapt resource value: 0x7f0b0082
 			public const int content = 2131427458;
@@ -9412,8 +12371,8 @@ namespace PathwayGames.Droid
 			// aapt resource value: 0x7f0b0075
 			public const int contentPanel = 2131427445;
 			
-			// aapt resource value: 0x7f0b00a7
-			public const int coordinator = 2131427495;
+			// aapt resource value: 0x7f0b00b0
+			public const int coordinator = 2131427504;
 			
 			// aapt resource value: 0x7f0b007c
 			public const int custom = 2131427452;
@@ -9427,20 +12386,20 @@ namespace PathwayGames.Droid
 			// aapt resource value: 0x7f0b006f
 			public const int default_activity_button = 2131427439;
 			
-			// aapt resource value: 0x7f0b00a9
-			public const int design_bottom_sheet = 2131427497;
+			// aapt resource value: 0x7f0b00b2
+			public const int design_bottom_sheet = 2131427506;
 			
-			// aapt resource value: 0x7f0b00ae
-			public const int design_menu_item_action_area = 2131427502;
+			// aapt resource value: 0x7f0b00b7
+			public const int design_menu_item_action_area = 2131427511;
 			
-			// aapt resource value: 0x7f0b00ad
-			public const int design_menu_item_action_area_stub = 2131427501;
+			// aapt resource value: 0x7f0b00b6
+			public const int design_menu_item_action_area_stub = 2131427510;
 			
-			// aapt resource value: 0x7f0b00ac
-			public const int design_menu_item_text = 2131427500;
+			// aapt resource value: 0x7f0b00b5
+			public const int design_menu_item_text = 2131427509;
 			
-			// aapt resource value: 0x7f0b00ab
-			public const int design_navigation_view = 2131427499;
+			// aapt resource value: 0x7f0b00b4
+			public const int design_navigation_view = 2131427508;
 			
 			// aapt resource value: 0x7f0b0027
 			public const int disableHome = 2131427367;
@@ -9451,8 +12410,8 @@ namespace PathwayGames.Droid
 			// aapt resource value: 0x7f0b0037
 			public const int end = 2131427383;
 			
-			// aapt resource value: 0x7f0b00f8
-			public const int end_padder = 2131427576;
+			// aapt resource value: 0x7f0b0104
+			public const int end_padder = 2131427588;
 			
 			// aapt resource value: 0x7f0b0046
 			public const int enterAlways = 2131427398;
@@ -9484,11 +12443,11 @@ namespace PathwayGames.Droid
 			// aapt resource value: 0x7f0b005c
 			public const int @fixed = 2131427420;
 			
-			// aapt resource value: 0x7f0b00b0
-			public const int flyoutcontent_appbar = 2131427504;
+			// aapt resource value: 0x7f0b00b9
+			public const int flyoutcontent_appbar = 2131427513;
 			
-			// aapt resource value: 0x7f0b00b1
-			public const int flyoutcontent_recycler = 2131427505;
+			// aapt resource value: 0x7f0b00ba
+			public const int flyoutcontent_recycler = 2131427514;
 			
 			// aapt resource value: 0x7f0b0067
 			public const int forever = 2131427431;
@@ -9508,8 +12467,8 @@ namespace PathwayGames.Droid
 			// aapt resource value: 0x7f0b0071
 			public const int icon = 2131427441;
 			
-			// aapt resource value: 0x7f0b00f7
-			public const int icon_group = 2131427575;
+			// aapt resource value: 0x7f0b0103
+			public const int icon_group = 2131427587;
 			
 			// aapt resource value: 0x7f0b0041
 			public const int ifRoom = 2131427393;
@@ -9517,8 +12476,8 @@ namespace PathwayGames.Droid
 			// aapt resource value: 0x7f0b006e
 			public const int image = 2131427438;
 			
-			// aapt resource value: 0x7f0b00f3
-			public const int info = 2131427571;
+			// aapt resource value: 0x7f0b00ff
+			public const int info = 2131427583;
 			
 			// aapt resource value: 0x7f0b0068
 			public const int italic = 2131427432;
@@ -9529,8 +12488,8 @@ namespace PathwayGames.Droid
 			// aapt resource value: 0x7f0b004e
 			public const int labeled = 2131427406;
 			
-			// aapt resource value: 0x7f0b00a5
-			public const int largeLabel = 2131427493;
+			// aapt resource value: 0x7f0b00ae
+			public const int largeLabel = 2131427502;
 			
 			// aapt resource value: 0x7f0b0054
 			public const int left = 2131427412;
@@ -9547,35 +12506,35 @@ namespace PathwayGames.Droid
 			// aapt resource value: 0x7f0b0070
 			public const int list_item = 2131427440;
 			
-			// aapt resource value: 0x7f0b00b4
-			public const int loadingImage = 2131427508;
+			// aapt resource value: 0x7f0b00c0
+			public const int loadingImage = 2131427520;
 			
-			// aapt resource value: 0x7f0b00b2
-			public const int loadingProgressBar = 2131427506;
+			// aapt resource value: 0x7f0b00be
+			public const int loadingProgressBar = 2131427518;
 			
-			// aapt resource value: 0x7f0b00b5
-			public const int loadingProgressWheel = 2131427509;
+			// aapt resource value: 0x7f0b00c1
+			public const int loadingProgressWheel = 2131427521;
 			
-			// aapt resource value: 0x7f0b00f9
-			public const int main_appbar = 2131427577;
+			// aapt resource value: 0x7f0b0105
+			public const int main_appbar = 2131427589;
 			
-			// aapt resource value: 0x7f0b00fb
-			public const int main_tablayout = 2131427579;
+			// aapt resource value: 0x7f0b0107
+			public const int main_tablayout = 2131427591;
 			
-			// aapt resource value: 0x7f0b00fa
-			public const int main_toolbar = 2131427578;
+			// aapt resource value: 0x7f0b0106
+			public const int main_toolbar = 2131427590;
 			
-			// aapt resource value: 0x7f0b00fc
-			public const int main_viewpager = 2131427580;
+			// aapt resource value: 0x7f0b0108
+			public const int main_viewpager = 2131427592;
 			
-			// aapt resource value: 0x7f0b0102
-			public const int masked = 2131427586;
+			// aapt resource value: 0x7f0b010e
+			public const int masked = 2131427598;
 			
-			// aapt resource value: 0x7f0b00b6
-			public const int materialformsedittext = 2131427510;
+			// aapt resource value: 0x7f0b00c2
+			public const int materialformsedittext = 2131427522;
 			
-			// aapt resource value: 0x7f0b00ec
-			public const int media_actions = 2131427564;
+			// aapt resource value: 0x7f0b00f8
+			public const int media_actions = 2131427576;
 			
 			// aapt resource value: 0x7f0b009c
 			public const int message = 2131427484;
@@ -9586,143 +12545,143 @@ namespace PathwayGames.Droid
 			// aapt resource value: 0x7f0b0059
 			public const int mini = 2131427417;
 			
-			// aapt resource value: 0x7f0b00d3
-			public const int mr_art = 2131427539;
-			
-			// aapt resource value: 0x7f0b00c4
-			public const int mr_cast_checkbox = 2131427524;
-			
-			// aapt resource value: 0x7f0b00bd
-			public const int mr_cast_close_button = 2131427517;
-			
-			// aapt resource value: 0x7f0b00b8
-			public const int mr_cast_group_icon = 2131427512;
-			
-			// aapt resource value: 0x7f0b00b9
-			public const int mr_cast_group_name = 2131427513;
-			
-			// aapt resource value: 0x7f0b00b7
-			public const int mr_cast_list = 2131427511;
-			
-			// aapt resource value: 0x7f0b00bc
-			public const int mr_cast_meta = 2131427516;
-			
-			// aapt resource value: 0x7f0b00be
-			public const int mr_cast_meta_art = 2131427518;
-			
-			// aapt resource value: 0x7f0b00c0
-			public const int mr_cast_meta_subtitle = 2131427520;
-			
-			// aapt resource value: 0x7f0b00bf
-			public const int mr_cast_meta_title = 2131427519;
-			
-			// aapt resource value: 0x7f0b00c2
-			public const int mr_cast_route_icon = 2131427522;
-			
-			// aapt resource value: 0x7f0b00c3
-			public const int mr_cast_route_name = 2131427523;
-			
-			// aapt resource value: 0x7f0b00c1
-			public const int mr_cast_stop_button = 2131427521;
-			
-			// aapt resource value: 0x7f0b00c5
-			public const int mr_cast_volume_layout = 2131427525;
-			
-			// aapt resource value: 0x7f0b00c6
-			public const int mr_cast_volume_slider = 2131427526;
-			
-			// aapt resource value: 0x7f0b00c8
-			public const int mr_chooser_list = 2131427528;
-			
-			// aapt resource value: 0x7f0b00cb
-			public const int mr_chooser_route_desc = 2131427531;
-			
-			// aapt resource value: 0x7f0b00c9
-			public const int mr_chooser_route_icon = 2131427529;
-			
-			// aapt resource value: 0x7f0b00ca
-			public const int mr_chooser_route_name = 2131427530;
-			
-			// aapt resource value: 0x7f0b00c7
-			public const int mr_chooser_title = 2131427527;
+			// aapt resource value: 0x7f0b00df
+			public const int mr_art = 2131427551;
 			
 			// aapt resource value: 0x7f0b00d0
-			public const int mr_close = 2131427536;
+			public const int mr_cast_checkbox = 2131427536;
 			
-			// aapt resource value: 0x7f0b00d6
-			public const int mr_control_divider = 2131427542;
+			// aapt resource value: 0x7f0b00c9
+			public const int mr_cast_close_button = 2131427529;
 			
-			// aapt resource value: 0x7f0b00e1
-			public const int mr_control_playback_ctrl = 2131427553;
+			// aapt resource value: 0x7f0b00c4
+			public const int mr_cast_group_icon = 2131427524;
 			
-			// aapt resource value: 0x7f0b00e4
-			public const int mr_control_subtitle = 2131427556;
+			// aapt resource value: 0x7f0b00c5
+			public const int mr_cast_group_name = 2131427525;
 			
-			// aapt resource value: 0x7f0b00e3
-			public const int mr_control_title = 2131427555;
+			// aapt resource value: 0x7f0b00c3
+			public const int mr_cast_list = 2131427523;
 			
-			// aapt resource value: 0x7f0b00e2
-			public const int mr_control_title_container = 2131427554;
+			// aapt resource value: 0x7f0b00c8
+			public const int mr_cast_meta = 2131427528;
 			
-			// aapt resource value: 0x7f0b00d1
-			public const int mr_custom_control = 2131427537;
-			
-			// aapt resource value: 0x7f0b00d2
-			public const int mr_default_control = 2131427538;
-			
-			// aapt resource value: 0x7f0b00cd
-			public const int mr_dialog_area = 2131427533;
-			
-			// aapt resource value: 0x7f0b00dc
-			public const int mr_dialog_header_name = 2131427548;
+			// aapt resource value: 0x7f0b00ca
+			public const int mr_cast_meta_art = 2131427530;
 			
 			// aapt resource value: 0x7f0b00cc
-			public const int mr_expandable_area = 2131427532;
+			public const int mr_cast_meta_subtitle = 2131427532;
 			
-			// aapt resource value: 0x7f0b00e5
-			public const int mr_group_expand_collapse = 2131427557;
-			
-			// aapt resource value: 0x7f0b00ba
-			public const int mr_group_volume_route_name = 2131427514;
-			
-			// aapt resource value: 0x7f0b00bb
-			public const int mr_group_volume_slider = 2131427515;
-			
-			// aapt resource value: 0x7f0b00d4
-			public const int mr_media_main_control = 2131427540;
-			
-			// aapt resource value: 0x7f0b00cf
-			public const int mr_name = 2131427535;
-			
-			// aapt resource value: 0x7f0b00dd
-			public const int mr_picker_close_button = 2131427549;
-			
-			// aapt resource value: 0x7f0b00de
-			public const int mr_picker_list = 2131427550;
-			
-			// aapt resource value: 0x7f0b00df
-			public const int mr_picker_route_icon = 2131427551;
-			
-			// aapt resource value: 0x7f0b00e0
-			public const int mr_picker_route_name = 2131427552;
-			
-			// aapt resource value: 0x7f0b00d5
-			public const int mr_playback_control = 2131427541;
+			// aapt resource value: 0x7f0b00cb
+			public const int mr_cast_meta_title = 2131427531;
 			
 			// aapt resource value: 0x7f0b00ce
-			public const int mr_title_bar = 2131427534;
+			public const int mr_cast_route_icon = 2131427534;
+			
+			// aapt resource value: 0x7f0b00cf
+			public const int mr_cast_route_name = 2131427535;
+			
+			// aapt resource value: 0x7f0b00cd
+			public const int mr_cast_stop_button = 2131427533;
+			
+			// aapt resource value: 0x7f0b00d1
+			public const int mr_cast_volume_layout = 2131427537;
+			
+			// aapt resource value: 0x7f0b00d2
+			public const int mr_cast_volume_slider = 2131427538;
+			
+			// aapt resource value: 0x7f0b00d4
+			public const int mr_chooser_list = 2131427540;
 			
 			// aapt resource value: 0x7f0b00d7
-			public const int mr_volume_control = 2131427543;
+			public const int mr_chooser_route_desc = 2131427543;
+			
+			// aapt resource value: 0x7f0b00d5
+			public const int mr_chooser_route_icon = 2131427541;
+			
+			// aapt resource value: 0x7f0b00d6
+			public const int mr_chooser_route_name = 2131427542;
+			
+			// aapt resource value: 0x7f0b00d3
+			public const int mr_chooser_title = 2131427539;
+			
+			// aapt resource value: 0x7f0b00dc
+			public const int mr_close = 2131427548;
+			
+			// aapt resource value: 0x7f0b00e2
+			public const int mr_control_divider = 2131427554;
+			
+			// aapt resource value: 0x7f0b00ed
+			public const int mr_control_playback_ctrl = 2131427565;
+			
+			// aapt resource value: 0x7f0b00f0
+			public const int mr_control_subtitle = 2131427568;
+			
+			// aapt resource value: 0x7f0b00ef
+			public const int mr_control_title = 2131427567;
+			
+			// aapt resource value: 0x7f0b00ee
+			public const int mr_control_title_container = 2131427566;
+			
+			// aapt resource value: 0x7f0b00dd
+			public const int mr_custom_control = 2131427549;
+			
+			// aapt resource value: 0x7f0b00de
+			public const int mr_default_control = 2131427550;
+			
+			// aapt resource value: 0x7f0b00d9
+			public const int mr_dialog_area = 2131427545;
+			
+			// aapt resource value: 0x7f0b00e8
+			public const int mr_dialog_header_name = 2131427560;
 			
 			// aapt resource value: 0x7f0b00d8
-			public const int mr_volume_group_list = 2131427544;
+			public const int mr_expandable_area = 2131427544;
 			
-			// aapt resource value: 0x7f0b00da
-			public const int mr_volume_item_icon = 2131427546;
+			// aapt resource value: 0x7f0b00f1
+			public const int mr_group_expand_collapse = 2131427569;
+			
+			// aapt resource value: 0x7f0b00c6
+			public const int mr_group_volume_route_name = 2131427526;
+			
+			// aapt resource value: 0x7f0b00c7
+			public const int mr_group_volume_slider = 2131427527;
+			
+			// aapt resource value: 0x7f0b00e0
+			public const int mr_media_main_control = 2131427552;
 			
 			// aapt resource value: 0x7f0b00db
-			public const int mr_volume_slider = 2131427547;
+			public const int mr_name = 2131427547;
+			
+			// aapt resource value: 0x7f0b00e9
+			public const int mr_picker_close_button = 2131427561;
+			
+			// aapt resource value: 0x7f0b00ea
+			public const int mr_picker_list = 2131427562;
+			
+			// aapt resource value: 0x7f0b00eb
+			public const int mr_picker_route_icon = 2131427563;
+			
+			// aapt resource value: 0x7f0b00ec
+			public const int mr_picker_route_name = 2131427564;
+			
+			// aapt resource value: 0x7f0b00e1
+			public const int mr_playback_control = 2131427553;
+			
+			// aapt resource value: 0x7f0b00da
+			public const int mr_title_bar = 2131427546;
+			
+			// aapt resource value: 0x7f0b00e3
+			public const int mr_volume_control = 2131427555;
+			
+			// aapt resource value: 0x7f0b00e4
+			public const int mr_volume_group_list = 2131427556;
+			
+			// aapt resource value: 0x7f0b00e6
+			public const int mr_volume_item_icon = 2131427558;
+			
+			// aapt resource value: 0x7f0b00e7
+			public const int mr_volume_slider = 2131427559;
 			
 			// aapt resource value: 0x7f0b0014
 			public const int mtrl_child_content_container = 2131427348;
@@ -9733,8 +12692,8 @@ namespace PathwayGames.Droid
 			// aapt resource value: 0x7f0b002f
 			public const int multiply = 2131427375;
 			
-			// aapt resource value: 0x7f0b00aa
-			public const int navigation_header_container = 2131427498;
+			// aapt resource value: 0x7f0b00b3
+			public const int navigation_header_container = 2131427507;
 			
 			// aapt resource value: 0x7f0b0042
 			public const int never = 2131427394;
@@ -9745,14 +12704,14 @@ namespace PathwayGames.Droid
 			// aapt resource value: 0x7f0b0025
 			public const int normal = 2131427365;
 			
-			// aapt resource value: 0x7f0b00f5
-			public const int notification_background = 2131427573;
+			// aapt resource value: 0x7f0b0101
+			public const int notification_background = 2131427585;
 			
-			// aapt resource value: 0x7f0b00ef
-			public const int notification_main_column = 2131427567;
+			// aapt resource value: 0x7f0b00fb
+			public const int notification_main_column = 2131427579;
 			
-			// aapt resource value: 0x7f0b00ee
-			public const int notification_main_column_container = 2131427566;
+			// aapt resource value: 0x7f0b00fa
+			public const int notification_main_column_container = 2131427578;
 			
 			// aapt resource value: 0x7f0b0060
 			public const int outline = 2131427424;
@@ -9781,11 +12740,11 @@ namespace PathwayGames.Droid
 			// aapt resource value: 0x7f0b0055
 			public const int right = 2131427413;
 			
-			// aapt resource value: 0x7f0b00f4
-			public const int right_icon = 2131427572;
+			// aapt resource value: 0x7f0b0100
+			public const int right_icon = 2131427584;
 			
-			// aapt resource value: 0x7f0b00f0
-			public const int right_side = 2131427568;
+			// aapt resource value: 0x7f0b00fc
+			public const int right_side = 2131427580;
 			
 			// aapt resource value: 0x7f0b000c
 			public const int save_image_matrix = 2131427340;
@@ -9850,11 +12809,11 @@ namespace PathwayGames.Droid
 			// aapt resource value: 0x7f0b004f
 			public const int selected = 2131427407;
 			
-			// aapt resource value: 0x7f0b00fd
-			public const int shellcontent_appbar = 2131427581;
+			// aapt resource value: 0x7f0b0109
+			public const int shellcontent_appbar = 2131427593;
 			
-			// aapt resource value: 0x7f0b00fe
-			public const int shellcontent_toolbar = 2131427582;
+			// aapt resource value: 0x7f0b010a
+			public const int shellcontent_toolbar = 2131427594;
 			
 			// aapt resource value: 0x7f0b0083
 			public const int shortcut = 2131427459;
@@ -9868,11 +12827,11 @@ namespace PathwayGames.Droid
 			// aapt resource value: 0x7f0b002c
 			public const int showTitle = 2131427372;
 			
-			// aapt resource value: 0x7f0b00ff
-			public const int sliding_tabs = 2131427583;
+			// aapt resource value: 0x7f0b010b
+			public const int sliding_tabs = 2131427595;
 			
-			// aapt resource value: 0x7f0b00a4
-			public const int smallLabel = 2131427492;
+			// aapt resource value: 0x7f0b00ad
+			public const int smallLabel = 2131427501;
 			
 			// aapt resource value: 0x7f0b0016
 			public const int snackbar_action = 2131427350;
@@ -9904,8 +12863,8 @@ namespace PathwayGames.Droid
 			// aapt resource value: 0x7f0b0056
 			public const int start = 2131427414;
 			
-			// aapt resource value: 0x7f0b00eb
-			public const int status_bar_latest_event_content = 2131427563;
+			// aapt resource value: 0x7f0b00f7
+			public const int status_bar_latest_event_content = 2131427575;
 			
 			// aapt resource value: 0x7f0b005b
 			public const int stretch = 2131427419;
@@ -9943,11 +12902,11 @@ namespace PathwayGames.Droid
 			// aapt resource value: 0x7f0b005a
 			public const int textStart = 2131427418;
 			
-			// aapt resource value: 0x7f0b00b3
-			public const int textViewStatus = 2131427507;
+			// aapt resource value: 0x7f0b00bf
+			public const int textViewStatus = 2131427519;
 			
-			// aapt resource value: 0x7f0b00af
-			public const int text_input_password_toggle = 2131427503;
+			// aapt resource value: 0x7f0b00b8
+			public const int text_input_password_toggle = 2131427512;
 			
 			// aapt resource value: 0x7f0b0018
 			public const int textinput_counter = 2131427352;
@@ -9958,8 +12917,8 @@ namespace PathwayGames.Droid
 			// aapt resource value: 0x7f0b001a
 			public const int textinput_helper_text = 2131427354;
 			
-			// aapt resource value: 0x7f0b00f1
-			public const int time = 2131427569;
+			// aapt resource value: 0x7f0b00fd
+			public const int time = 2131427581;
 			
 			// aapt resource value: 0x7f0b0023
 			public const int title = 2131427363;
@@ -9970,8 +12929,8 @@ namespace PathwayGames.Droid
 			// aapt resource value: 0x7f0b007e
 			public const int title_template = 2131427454;
 			
-			// aapt resource value: 0x7f0b0100
-			public const int toolbar = 2131427584;
+			// aapt resource value: 0x7f0b010c
+			public const int toolbar = 2131427596;
 			
 			// aapt resource value: 0x7f0b0045
 			public const int top = 2131427397;
@@ -9979,8 +12938,8 @@ namespace PathwayGames.Droid
 			// aapt resource value: 0x7f0b007d
 			public const int topPanel = 2131427453;
 			
-			// aapt resource value: 0x7f0b00a8
-			public const int touch_outside = 2131427496;
+			// aapt resource value: 0x7f0b00b1
+			public const int touch_outside = 2131427505;
 			
 			// aapt resource value: 0x7f0b000f
 			public const int transition_current_scene = 2131427343;
@@ -10012,11 +12971,11 @@ namespace PathwayGames.Droid
 			// aapt resource value: 0x7f0b001b
 			public const int view_offset_helper = 2131427355;
 			
-			// aapt resource value: 0x7f0b0101
-			public const int visible = 2131427585;
+			// aapt resource value: 0x7f0b010d
+			public const int visible = 2131427597;
 			
-			// aapt resource value: 0x7f0b00d9
-			public const int volume_item_container = 2131427545;
+			// aapt resource value: 0x7f0b00e5
+			public const int volume_item_container = 2131427557;
 			
 			// aapt resource value: 0x7f0b0043
 			public const int withText = 2131427395;
@@ -10232,181 +13191,193 @@ namespace PathwayGames.Droid
 			public const int browser_actions_context_menu_row = 2130968606;
 			
 			// aapt resource value: 0x7f04001f
-			public const int design_bottom_navigation_item = 2130968607;
+			public const int CellBaseView = 2130968607;
 			
 			// aapt resource value: 0x7f040020
-			public const int design_bottom_sheet_dialog = 2130968608;
+			public const int ContentCell = 2130968608;
 			
 			// aapt resource value: 0x7f040021
-			public const int design_layout_snackbar = 2130968609;
+			public const int design_bottom_navigation_item = 2130968609;
 			
 			// aapt resource value: 0x7f040022
-			public const int design_layout_snackbar_include = 2130968610;
+			public const int design_bottom_sheet_dialog = 2130968610;
 			
 			// aapt resource value: 0x7f040023
-			public const int design_layout_tab_icon = 2130968611;
+			public const int design_layout_snackbar = 2130968611;
 			
 			// aapt resource value: 0x7f040024
-			public const int design_layout_tab_text = 2130968612;
+			public const int design_layout_snackbar_include = 2130968612;
 			
 			// aapt resource value: 0x7f040025
-			public const int design_menu_item_action_area = 2130968613;
+			public const int design_layout_tab_icon = 2130968613;
 			
 			// aapt resource value: 0x7f040026
-			public const int design_navigation_item = 2130968614;
+			public const int design_layout_tab_text = 2130968614;
 			
 			// aapt resource value: 0x7f040027
-			public const int design_navigation_item_header = 2130968615;
+			public const int design_menu_item_action_area = 2130968615;
 			
 			// aapt resource value: 0x7f040028
-			public const int design_navigation_item_separator = 2130968616;
+			public const int design_navigation_item = 2130968616;
 			
 			// aapt resource value: 0x7f040029
-			public const int design_navigation_item_subheader = 2130968617;
+			public const int design_navigation_item_header = 2130968617;
 			
 			// aapt resource value: 0x7f04002a
-			public const int design_navigation_menu = 2130968618;
+			public const int design_navigation_item_separator = 2130968618;
 			
 			// aapt resource value: 0x7f04002b
-			public const int design_navigation_menu_item = 2130968619;
+			public const int design_navigation_item_subheader = 2130968619;
 			
 			// aapt resource value: 0x7f04002c
-			public const int design_text_input_password_icon = 2130968620;
+			public const int design_navigation_menu = 2130968620;
 			
 			// aapt resource value: 0x7f04002d
-			public const int FlyoutContent = 2130968621;
+			public const int design_navigation_menu_item = 2130968621;
 			
 			// aapt resource value: 0x7f04002e
-			public const int loading = 2130968622;
+			public const int design_text_input_password_icon = 2130968622;
 			
 			// aapt resource value: 0x7f04002f
-			public const int loadingimage = 2130968623;
+			public const int FlyoutContent = 2130968623;
 			
 			// aapt resource value: 0x7f040030
-			public const int loadingprogress = 2130968624;
+			public const int FooterCell = 2130968624;
 			
 			// aapt resource value: 0x7f040031
-			public const int MaterialPickerTextInput = 2130968625;
+			public const int HeaderCell = 2130968625;
 			
 			// aapt resource value: 0x7f040032
-			public const int mr_cast_dialog = 2130968626;
+			public const int loading = 2130968626;
 			
 			// aapt resource value: 0x7f040033
-			public const int mr_cast_group_item = 2130968627;
+			public const int loadingimage = 2130968627;
 			
 			// aapt resource value: 0x7f040034
-			public const int mr_cast_group_volume_item = 2130968628;
+			public const int loadingprogress = 2130968628;
 			
 			// aapt resource value: 0x7f040035
-			public const int mr_cast_media_metadata = 2130968629;
+			public const int MaterialPickerTextInput = 2130968629;
 			
 			// aapt resource value: 0x7f040036
-			public const int mr_cast_route_item = 2130968630;
+			public const int mr_cast_dialog = 2130968630;
 			
 			// aapt resource value: 0x7f040037
-			public const int mr_chooser_dialog = 2130968631;
+			public const int mr_cast_group_item = 2130968631;
 			
 			// aapt resource value: 0x7f040038
-			public const int mr_chooser_list_item = 2130968632;
+			public const int mr_cast_group_volume_item = 2130968632;
 			
 			// aapt resource value: 0x7f040039
-			public const int mr_controller_material_dialog_b = 2130968633;
+			public const int mr_cast_media_metadata = 2130968633;
 			
 			// aapt resource value: 0x7f04003a
-			public const int mr_controller_volume_item = 2130968634;
+			public const int mr_cast_route_item = 2130968634;
 			
 			// aapt resource value: 0x7f04003b
-			public const int mr_dialog_header_item = 2130968635;
+			public const int mr_chooser_dialog = 2130968635;
 			
 			// aapt resource value: 0x7f04003c
-			public const int mr_picker_dialog = 2130968636;
+			public const int mr_chooser_list_item = 2130968636;
 			
 			// aapt resource value: 0x7f04003d
-			public const int mr_picker_route_item = 2130968637;
+			public const int mr_controller_material_dialog_b = 2130968637;
 			
 			// aapt resource value: 0x7f04003e
-			public const int mr_playback_control = 2130968638;
+			public const int mr_controller_volume_item = 2130968638;
 			
 			// aapt resource value: 0x7f04003f
-			public const int mr_volume_control = 2130968639;
+			public const int mr_dialog_header_item = 2130968639;
 			
 			// aapt resource value: 0x7f040040
-			public const int mtrl_layout_snackbar = 2130968640;
+			public const int mr_picker_dialog = 2130968640;
 			
 			// aapt resource value: 0x7f040041
-			public const int mtrl_layout_snackbar_include = 2130968641;
+			public const int mr_picker_route_item = 2130968641;
 			
 			// aapt resource value: 0x7f040042
-			public const int notification_action = 2130968642;
+			public const int mr_playback_control = 2130968642;
 			
 			// aapt resource value: 0x7f040043
-			public const int notification_action_tombstone = 2130968643;
+			public const int mr_volume_control = 2130968643;
 			
 			// aapt resource value: 0x7f040044
-			public const int notification_media_action = 2130968644;
+			public const int mtrl_layout_snackbar = 2130968644;
 			
 			// aapt resource value: 0x7f040045
-			public const int notification_media_cancel_action = 2130968645;
+			public const int mtrl_layout_snackbar_include = 2130968645;
 			
 			// aapt resource value: 0x7f040046
-			public const int notification_template_big_media = 2130968646;
+			public const int notification_action = 2130968646;
 			
 			// aapt resource value: 0x7f040047
-			public const int notification_template_big_media_custom = 2130968647;
+			public const int notification_action_tombstone = 2130968647;
 			
 			// aapt resource value: 0x7f040048
-			public const int notification_template_big_media_narrow = 2130968648;
+			public const int notification_media_action = 2130968648;
 			
 			// aapt resource value: 0x7f040049
-			public const int notification_template_big_media_narrow_custom = 2130968649;
+			public const int notification_media_cancel_action = 2130968649;
 			
 			// aapt resource value: 0x7f04004a
-			public const int notification_template_custom_big = 2130968650;
+			public const int notification_template_big_media = 2130968650;
 			
 			// aapt resource value: 0x7f04004b
-			public const int notification_template_icon_group = 2130968651;
+			public const int notification_template_big_media_custom = 2130968651;
 			
 			// aapt resource value: 0x7f04004c
-			public const int notification_template_lines_media = 2130968652;
+			public const int notification_template_big_media_narrow = 2130968652;
 			
 			// aapt resource value: 0x7f04004d
-			public const int notification_template_media = 2130968653;
+			public const int notification_template_big_media_narrow_custom = 2130968653;
 			
 			// aapt resource value: 0x7f04004e
-			public const int notification_template_media_custom = 2130968654;
+			public const int notification_template_custom_big = 2130968654;
 			
 			// aapt resource value: 0x7f04004f
-			public const int notification_template_part_chronometer = 2130968655;
+			public const int notification_template_icon_group = 2130968655;
 			
 			// aapt resource value: 0x7f040050
-			public const int notification_template_part_time = 2130968656;
+			public const int notification_template_lines_media = 2130968656;
 			
 			// aapt resource value: 0x7f040051
-			public const int RootLayout = 2130968657;
+			public const int notification_template_media = 2130968657;
 			
 			// aapt resource value: 0x7f040052
-			public const int select_dialog_item_material = 2130968658;
+			public const int notification_template_media_custom = 2130968658;
 			
 			// aapt resource value: 0x7f040053
-			public const int select_dialog_multichoice_material = 2130968659;
+			public const int notification_template_part_chronometer = 2130968659;
 			
 			// aapt resource value: 0x7f040054
-			public const int select_dialog_singlechoice_material = 2130968660;
+			public const int notification_template_part_time = 2130968660;
 			
 			// aapt resource value: 0x7f040055
-			public const int ShellContent = 2130968661;
+			public const int RootLayout = 2130968661;
 			
 			// aapt resource value: 0x7f040056
-			public const int support_simple_spinner_dropdown_item = 2130968662;
+			public const int select_dialog_item_material = 2130968662;
 			
 			// aapt resource value: 0x7f040057
-			public const int Tabbar = 2130968663;
+			public const int select_dialog_multichoice_material = 2130968663;
 			
 			// aapt resource value: 0x7f040058
-			public const int TextInputLayoutFilledBox = 2130968664;
+			public const int select_dialog_singlechoice_material = 2130968664;
 			
 			// aapt resource value: 0x7f040059
-			public const int Toolbar = 2130968665;
+			public const int ShellContent = 2130968665;
+			
+			// aapt resource value: 0x7f04005a
+			public const int support_simple_spinner_dropdown_item = 2130968666;
+			
+			// aapt resource value: 0x7f04005b
+			public const int Tabbar = 2130968667;
+			
+			// aapt resource value: 0x7f04005c
+			public const int TextInputLayoutFilledBox = 2130968668;
+			
+			// aapt resource value: 0x7f04005d
+			public const int Toolbar = 2130968669;
 			
 			static Layout()
 			{

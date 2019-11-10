@@ -1,4 +1,5 @@
 ﻿using CommonServiceLocator;
+using PathwayGames.Controls;
 using PathwayGames.Data;
 using PathwayGames.Infrastructure.Dialog;
 using PathwayGames.Infrastructure.File;
@@ -79,6 +80,7 @@ namespace PathwayGames
             Container.RegisterType<IRepository<User>, Repository<User>>(new InjectionConstructor(DatabaseFilePath));
             Container.RegisterType<IRepository<UserGameSettings>, Repository<UserGameSettings>>(new InjectionConstructor(DatabaseFilePath));
             Container.RegisterType<IRepository<UserGameSession>, Repository<UserGameSession>>(new InjectionConstructor(DatabaseFilePath));
+            Container.RegisterType<IRepository<SeekGridOption>, Repository<SeekGridOption>>(new InjectionConstructor(DatabaseFilePath));
 
             // Infrastructure
             Container.RegisterInstance(NavigationService, new ContainerControlledLifetimeManager());
@@ -91,7 +93,7 @@ namespace PathwayGames
             Container.RegisterType<IEngangementService, EngangementService>();
             Container.RegisterType<IExcelService, ExcelService>();
             Container.RegisterType<IUserService, UserService>();
-
+            
             // View models
             Container.RegisterType<MasterViewModel>();
             Container.RegisterType<MainViewModel>();

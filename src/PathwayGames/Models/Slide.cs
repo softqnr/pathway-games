@@ -4,7 +4,6 @@ using PathwayGames.Infrastructure.Json;
 using PathwayGames.Models.Enums;
 using System;
 using System.Collections.Generic;
-using System.Text;
 
 namespace PathwayGames.Models
 {
@@ -19,7 +18,10 @@ namespace PathwayGames.Models
         public double BlankDuration { get; set; }
 
         [JsonIgnore]
-        public string Image { get; set; }
+        public IList<string> Images { get; set; }
+
+        [JsonIgnore]
+        public string BorderColor { get; set; }
 
         [JsonIgnore]
         public string Sound { get; set; }
@@ -37,10 +39,25 @@ namespace PathwayGames.Models
 
         public int Points { get; set; }
 
-        public Slide(SlideType slideType, double displayDuration)
+        public Slide(SlideType slideType, double displayDuration, string slideImage) : this(slideType, displayDuration, slideImage, 0, "")
+        { }
+
+        public Slide(SlideType slideType, double displayDuration, string slideImage, double blankDuration) : this(slideType, displayDuration, slideImage, blankDuration, "")
+        { }
+
+        public Slide(SlideType slideType, double displayDuration, string slideImage, double blankDuration, string sound) : this(slideType, displayDuration, new List<string>{ slideImage }, blankDuration, sound)
+        { }
+
+        public Slide(SlideType slideType, double displayDuration, List<string> slideImages, double blankDuration) : this(slideType, displayDuration, slideImages, blankDuration, "")
+        { }
+
+        public Slide(SlideType slideType, double displayDuration, List<string> slideImages, double blankDuration, string sound)
         {
+            Images = slideImages;
             SlideType = slideType;
             DisplayDuration = displayDuration;
+            BlankDuration = blankDuration;
+            Sound = sound;
         }
     }
 }

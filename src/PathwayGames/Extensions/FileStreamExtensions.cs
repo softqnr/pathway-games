@@ -2,7 +2,7 @@
 
 namespace PathwayGames.Extensions
 {
-    public static class FileStreamHelperstensions
+    public static class FileStreamExtensions
     {
         public static long Seek(this FileStream fs, string searchString)
         {

@@ -3,13 +3,14 @@
     xmlns:views="clr-namespace:PathwayGames.Views" xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:g="clr-namespace:PathwayGames.Gestures;assembly=PathwayGames"
-             xmlns:c="clr-namespace:PathwayGames.Controls;assembly=PathwayGames"
+             xmlns:c="clr-namespace:PathwayGames.Controls"
              xmlns:b="clr-namespace:PathwayGames.Behaviors;assembly=PathwayGames"
              xmlns:ffimageloading="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
+             x:Name="GamePage"
              x:Class="PathwayGames.Views.GameView"
              Visual="Material" BackgroundColor="White"
-             Title = "{Binding Title}">
-    
+             Title="{Binding Title}">
+
     <NavigationPage.TitleView>
         <StackLayout Orientation="Horizontal" VerticalOptions="CenterAndExpand" Spacing="10">
             <Image Source="logo.png" HorizontalOptions="Center" />
@@ -18,31 +19,41 @@
             <Image Source="{Binding EEGIconImageSource}" HeightRequest="20" HorizontalOptions="End" />
         </StackLayout>
     </NavigationPage.TitleView>
-    
+
     <ContentPage.Content>
-        <Grid Padding="16, 16">
+        <Grid Padding="10,10">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
             <Grid.RowDefinitions>
                 <RowDefinition Height="*"/>
                 <RowDefinition Height="Auto"/>
-                <RowDefinition Height="Auto"/>
                 <RowDefinition Height="1"/>
             </Grid.RowDefinitions>
 
-            <ffimageloading:CachedImage x:Name="SlideImage" Source="{Binding SlideImageSource}" 
-                                        FadeAnimationEnabled="False" LoadingDelay="0" 
-                                        Aspect="AspectFit" VerticalOptions="Center" HeightRequest="450" Grid.Column="0" Grid.Row="0" />
+            <StackLayout x:Name="GameSection"
+                         Grid.Column="0" Grid.Row="0"
+                         VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" 
+                         Orientation="Vertical">
+                
+                    <Frame BackgroundColor="White" Padding="5,5,5,5" CornerRadius="5" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" HasShadow="False">
+                        <Frame BackgroundColor="White" Padding="5,5,5,5" CornerRadius="5" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" HasShadow="False">
+                        <c:UniformImageGrid ItemsSource="{Binding SlideImages}" ColumnCount="{Binding ImageGridColumns}" 
+                                            BackgroundColor="White" ColumnSpacing="4" RowSpacing="4"
+                                        VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
+                        </c:UniformImageGrid>
+                        </Frame>
+                    </Frame>
+                
+                <Image Source="button.jpg" x:Name="Button"  g:Gesture.Tapped="{Binding ButtonTappedCommand}" Margin="0"
+                   WidthRequest="160" VerticalOptions="End" HorizontalOptions="Center">
+                    <Image.Behaviors>
+                        <b:ViewTappedButtonBehavior AnimationType="Fade" />
+                    </Image.Behaviors>
+                </Image>
+            </StackLayout>
 
-            <Image Source="button.jpg" g:Gesture.Tapped="{Binding ButtonTappedCommand}" 
-                   WidthRequest="160" VerticalOptions="EndAndExpand" Grid.Column="0" Grid.Row="1">
-                <Image.Behaviors>
-                    <b:ViewTappedButtonBehavior AnimationType="Fade" />
-                </Image.Behaviors>
-            </Image>
-
-            <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand" Grid.Column="0" Grid.Row="2">
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Grid.Column="0" Grid.Row="1">
                 <Label FontSize="Small">
                     <Label.FormattedText>
                         <FormattedString>
@@ -60,7 +71,7 @@
                     </Label.FormattedText>
                 </Label>
             </StackLayout>
-            <c:EyeGazePreview Grid.Column="0" Grid.Row="3" WidthRequest="96" HeightRequest="128" 
+            <c:EyeGazePreview Grid.Column="0" Grid.Row="2" WidthRequest="96" HeightRequest="128" 
                               EyeGazeChangedCommand="{Binding EyeGazeChangedCommand}"
                               ShowCrosshair="True"
                               RecordingEnabled="True"

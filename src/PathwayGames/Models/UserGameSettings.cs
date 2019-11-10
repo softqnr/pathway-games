@@ -12,6 +12,13 @@ namespace PathwayGames.Models
         [ForeignKey(typeof(User))]
         public long UserId { get; set; }
 
+        [Indexed]
+        [ForeignKey(typeof(SeekGridOption))]
+        public long SeekGridOptionId { get; set; }
+
+        [ManyToOne(CascadeOperations = CascadeOperation.CascadeRead)]
+        public SeekGridOption SeekGridOptions { get; set; }
+
         public bool EyeGazeSensor { get; set; } = true;
 
         public bool EEGSensor { get; set; } = true;

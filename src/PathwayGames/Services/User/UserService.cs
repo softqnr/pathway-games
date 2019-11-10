@@ -4,6 +4,7 @@ using PathwayGames.Data;
 using System.Collections.Generic;
 using PathwayGames.Models.Enums;
 using System;
+using Xamarin.Essentials;
 
 namespace PathwayGames.Services.User
 {
@@ -12,14 +13,17 @@ namespace PathwayGames.Services.User
         private IRepository<Models.User> _repositoryUser;
         private IRepository<UserGameSettings> _repositoryUserSettings;
         private IRepository<UserGameSession> _repositoryUserGameSession;
+        private IRepository<SeekGridOption> _repositorySeekGridOption;
 
         public UserService(IRepository<Models.User> repositoryUser,
             IRepository<UserGameSettings> repositoryUserSettings,
-            IRepository<UserGameSession> repositoryUserGameSession)
+            IRepository<UserGameSession> repositoryUserGameSession,
+            IRepository<SeekGridOption> repositorySeekGridOption)
         {
             _repositoryUser = repositoryUser;
             _repositoryUserSettings = repositoryUserSettings;
             _repositoryUserGameSession = repositoryUserGameSession;
+            _repositorySeekGridOption = repositorySeekGridOption;
         }
 
         public async Task<IList<Models.User>> GetByNameAndUserType(string name, string userType)
@@ -76,8 +80,21 @@ namespace PathwayGames.Services.User
                 UserName = userName,
                 UserType = userType.ToString()
             };
-
+            // Set it to default
+            user.UserSettings.SeekGridOptions = await GetSeekGridOptionByIdiomDefault(DeviceInfo.Idiom.ToString());
             await _repositoryUser.InsertWithChildrenAsync(user, true);
+        }
+
+        public async Task<IList<SeekGridOption>> GetSeekGridOptionsByIdiom(string idiom)
+        {
+            return await _repositorySeekGridOption.AsQueryable()
+                .Where(x => (x.TargetIdiom == idiom)).ToListAsync();
+        }
+
+        public async Task<SeekGridOption> GetSeekGridOptionByIdiomDefault(string idiom)
+        {
+            return await _repositorySeekGridOption.AsQueryable()
+                .Where(x => (x.TargetIdiom == idiom && x.IsDefault)).FirstOrDefaultAsync();
         }
     }
 }
