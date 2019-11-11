@@ -15,19 +15,12 @@ namespace PathwayGames.ViewModels
     public class SessionDataViewModel : ViewModelBase
     {
         private IUserService _userService;
-        private string _title;
         private IList<UserGameSession> _gameSessions;
 
         public IList<UserGameSession> GameSessions
         {
             get => _gameSessions;
             set => SetProperty(ref _gameSessions, value);
-        }
-
-        public string Title
-        {
-            get => _title;
-            set => SetProperty(ref _title, value);
         }
 
         public ICommand GameDataCommand

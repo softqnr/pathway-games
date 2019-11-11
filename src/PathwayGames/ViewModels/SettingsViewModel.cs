@@ -14,7 +14,6 @@ namespace PathwayGames.ViewModels
     {
         private IUserService _userService;
 
-        private string _title;
         private UserGameSettings _userSettings;
         private SeekGridOption _selectedSeekGridOption = new SeekGridOption();
         private IList<SeekGridOption> _seekGridOptions;
@@ -23,12 +22,6 @@ namespace PathwayGames.ViewModels
         {
             get => _selectedSeekGridOption;
             set => SetProperty(ref _selectedSeekGridOption, value);
-        }
-
-        public string Title
-        {
-            get => _title;
-            set => SetProperty(ref _title, value);
         }
 
         public UserGameSettings UserSettings

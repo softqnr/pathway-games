@@ -16,17 +16,24 @@ namespace PathwayGames.ViewModels
             NavigationService = ServiceLocator.Current.GetInstance<INavigationService>();
         }
 
-        private bool _isBusy;
+        string title = string.Empty;
+        public string Title
+        {
+            get { return title; }
+            set { SetProperty(ref title, value); }
+        }
+
+        bool isBusy;
 
         public bool IsBusy
         {
             get
             {
-                return _isBusy;
+                return isBusy;
             }
             set
             {
-                SetProperty(ref _isBusy, value);
+                SetProperty(ref isBusy, value);
             }
         }
 

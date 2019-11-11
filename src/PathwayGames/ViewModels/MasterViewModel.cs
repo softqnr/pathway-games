@@ -16,14 +16,6 @@ namespace PathwayGames.ViewModels
             set => SetProperty(ref _user, value);
         }
 
-        private string _title;
-
-        public string Title
-        {
-            get => _title;
-            set => SetProperty(ref _title, value);
-        }
-
         public string Version
         {
             get => $" v.{App.ApplicationVersion}";
