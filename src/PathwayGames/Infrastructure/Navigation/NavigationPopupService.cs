@@ -1,8 +1,8 @@
 ﻿using Rg.Plugins.Popup.Pages;
 using Rg.Plugins.Popup.Services;
 using PathwayGames.ViewModels;
-using System;
 using System.Threading.Tasks;
+using Xamarin.Forms;
 
 namespace PathwayGames.Infrastructure.Navigation
 {
@@ -18,20 +18,31 @@ namespace PathwayGames.Infrastructure.Navigation
         {
             var page = CreateAndBindPage(typeof(TViewModel), parameter);
             await (page.BindingContext as ViewModelBase).InitializeAsync(parameter);
-
+            
             if (page is PopupPage)
             {
                 await PopupNavigation.Instance.PushAsync(page as PopupPage, animate);
             }
+            else if (page is Page)
+            {
+                await CurrentNavigation.PushModalAsync(new NavigationPage(page));
+            }
             else
             {
-                throw new ArgumentException($"The type ${typeof(TViewModel)} its not a PopupPage type");
+                throw new InvalidNavigationException($"The type ${typeof(TViewModel)} its not a Page/PopupPage type");
             }
         }
 
         public async Task PopAsync(bool animate)
         {
-            await PopupNavigation.Instance.PopAsync(animate);
+            if (PopupNavigation.Instance.PopupStack.Count > 0)
+            {
+                await PopupNavigation.Instance.PopAsync(animate);
+            }
+            else
+            {
+                await CurrentNavigation.PopModalAsync(animate);
+            }
         }
     }
 }

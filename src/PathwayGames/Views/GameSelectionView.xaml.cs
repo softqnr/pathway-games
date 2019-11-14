@@ -24,13 +24,19 @@ namespace PathwayGames.Views
             {
                 case DisplayOrientation.Portrait:
                     OptionsStack.Orientation = StackOrientation.Vertical;
-                    gridButtonStyles.Setters.Where(x => x.Property.PropertyName == "HorizontalOptions")
-                        .SingleOrDefault().Value =LayoutOptions.FillAndExpand;
+                    foreach (var children in OptionsStack.Children)
+                    {
+                        children.HorizontalOptions = LayoutOptions.FillAndExpand;
+                        children.VerticalOptions = LayoutOptions.Center;
+                    }
                     break;
                 case DisplayOrientation.Landscape:
                     OptionsStack.Orientation = StackOrientation.Horizontal;
-                    gridButtonStyles.Setters.Where(x => x.Property.PropertyName == "HorizontalOptions")
-                        .SingleOrDefault().Value = LayoutOptions.Start;
+                    foreach (var children in OptionsStack.Children)
+                    {
+                        children.HorizontalOptions = LayoutOptions.StartAndExpand;
+                        children.VerticalOptions = LayoutOptions.FillAndExpand;
+                    }
                     break;
             }
         }

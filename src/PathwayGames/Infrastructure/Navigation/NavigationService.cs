@@ -19,6 +19,20 @@ namespace PathwayGames.Infrastructure.Navigation
             get { return Application.Current; }
         }
 
+        protected INavigation CurrentNavigation
+        {
+            get {
+                if (CurrentApplication.MainPage is MasterDetailPage) {
+                    var mainPage = CurrentApplication.MainPage as MasterDetailPage;
+                    return mainPage.Detail.Navigation;
+                } else if (CurrentApplication.MainPage != null) {
+                    return CurrentApplication.MainPage.Navigation;
+                } else {
+                    throw new ArgumentException($"Application mainpage has to be set.");
+                }
+            }
+        }
+
         public NavigationService()
         {
             

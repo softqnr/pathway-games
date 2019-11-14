@@ -19,6 +19,14 @@
             <Color x:Key="menu_pink">#d900d9</Color>
             <Color x:Key="menu_purple">#8000ff</Color>
             <Color x:Key="menu_red">#d90000</Color>
+            <!--  fonts   -->
+            <OnPlatform
+                x:Key="SegMDL2"
+                x:TypeArguments="x:String"
+                Android="SegMDL2.ttf#Segoe MDL2 Assets"
+                iOS="Segoe MDL2 Assets"
+            />
+            <x:String x:Key="Play">&#xf10b;</x:String>
             <!--  converters  -->
             <converters:ItemTappedEventArgsConverter x:Key="ItemTappedConverter" />
         </ResourceDictionary>

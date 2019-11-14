@@ -17,6 +17,7 @@ namespace PathwayGames.ViewModels
         }
 
         string title = string.Empty;
+
         public string Title
         {
             get { return title; }
@@ -27,14 +28,8 @@ namespace PathwayGames.ViewModels
 
         public bool IsBusy
         {
-            get
-            {
-                return isBusy;
-            }
-            set
-            {
-                SetProperty(ref isBusy, value);
-            }
+            get { return isBusy; }
+            set { SetProperty(ref isBusy, value); }
         }
 
         public virtual Task InitializeAsync(object navigationData)

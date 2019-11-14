@@ -135,6 +135,7 @@
     <None Include="Info.plist" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <BundleResource Include="Resources\pw.db" />
+    <BundleResource Include="Resources\SegMDL2.ttf" />
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="Resources\LaunchScreen.storyboard" />

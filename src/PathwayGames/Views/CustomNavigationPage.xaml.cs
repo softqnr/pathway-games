@@ -16,13 +16,13 @@ namespace PathwayGames.Views
         {
             InitializeComponent();
             // Set navigation bar icon
-            //NavigationPage.SetTitleIcon(this, "ic_launcher.png");
+            //NavigationPage.SetTitleIconImageSource(this, ImageSource.FromFile("logo.png"));
         }
         public CustomNavigationPage(Page root) : base(root)
         {
             InitializeComponent();
             // Set navigation bar icon
-            //NavigationPage.SetTitleIcon(this, "ic_launcher.png");
+            //NavigationPage.SetTitleIconImageSource(this, ImageSource.FromFile("logo.png"));
         }
     }
 }

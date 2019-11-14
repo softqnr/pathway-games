@@ -2,19 +2,23 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="PathwayGames.Views.UserFormView"
-             Title="Add user">
+             Title="Add user"
+             BackgroundColor="White">
     
-    <StackLayout Padding="10" VerticalOptions="Center" HorizontalOptions="FillAndExpand">
-        <Label Text="Username:" />
-        <Entry Text="{Binding UserName, Mode=TwoWay}" HorizontalOptions="FillAndExpand" />
-        <Label Text="User type:" />
-        <Picker SelectedItem="{Binding UserType, Mode=TwoWay}" HorizontalOptions="FillAndExpand">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Cancel" Command="{Binding CancelCommand}"/>
+        <ToolbarItem Text="Save" Command="{Binding SaveUserCommand}"/>
+    </ContentPage.ToolbarItems>
+    
+    <StackLayout Spacing="20" Padding="15" VerticalOptions="Center" HorizontalOptions="FillAndExpand">
+        <Label Text="Username:" FontSize="Medium" />
+        <Entry Text="{Binding UserName, Mode=TwoWay}" HorizontalOptions="FillAndExpand" FontSize="Small" />
+        <Label Text="User type:" FontSize="Medium" />
+        <Picker SelectedItem="{Binding UserType, Mode=TwoWay}" HorizontalOptions="FillAndExpand" FontSize="Small">
             <Picker.Items>
                 <x:String>Admin</x:String>
                 <x:String>Learner</x:String>
             </Picker.Items>
         </Picker>
-        <Button Text="Save" Command="{Binding SaveUserCommand}" HorizontalOptions="FillAndExpand"/>
-        <Button Text="Cancel" Command="{Binding CancelCommand}" HorizontalOptions="FillAndExpand" />
     </StackLayout>
 </ContentPage>

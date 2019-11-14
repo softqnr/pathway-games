@@ -106,7 +106,7 @@ namespace PathwayGames.ViewModels
 
         public async Task OnAddUser()
         {
-            await NavigationService.NavigateToAsync<UserFormViewModel>();
+            await NavigationService.NavigateToPopupAsync<UserFormViewModel>(true);
         }
 
         private async Task OnGotoUserSessionsCommand(User user)

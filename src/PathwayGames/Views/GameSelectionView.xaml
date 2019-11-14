@@ -9,47 +9,50 @@
     
     <ContentPage.Resources>
         <ResourceDictionary>
-            <Style x:Name="gridButtonStyles" x:Key="gridButton" TargetType="Frame">
+            <Style x:Name="buttonStyles" x:Key="buttonStyles" TargetType="StackLayout">
                 <Setter Property="Margin" Value="10" />
                 <Setter Property="Padding" Value="10,60,10,10" />
-                <Setter Property="HorizontalOptions" Value="FillAndExpand" />
-                <Setter Property="VerticalOptions" Value="FillAndExpand" />
             </Style>
         </ResourceDictionary>
     </ContentPage.Resources>
 
     <StackLayout x:Name="OptionsStack" Spacing="0" Margin="10, 10, 10, 20" Padding="0" 
-                 VerticalOptions="CenterAndExpand" HorizontalOptions="Fill">
+                 VerticalOptions="CenterAndExpand" HorizontalOptions="FillAndExpand">
 
-        <StackLayout BackgroundColor="{StaticResource menu_green}" Style="{StaticResource gridButton}">
+        <StackLayout BackgroundColor="{StaticResource menu_green}" Style="{StaticResource buttonStyles}" 
+                     HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
             <Label Text="TYPE X" VerticalOptions="End" TextColor="White" FontSize="Large" FontAttributes="Bold"/>
             <StackLayout.GestureRecognizers>
                 <TapGestureRecognizer Command="{Binding TypeX}"/>
             </StackLayout.GestureRecognizers>
         </StackLayout>
 
-        <StackLayout BackgroundColor="{StaticResource menu_blue}" Style="{StaticResource gridButton}">
+        <StackLayout BackgroundColor="{StaticResource menu_blue}" Style="{StaticResource buttonStyles}"
+                     HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
             <Label Text="SEEK X" VerticalOptions="End" TextColor="White" FontSize="Large" FontAttributes="Bold"/>
             <StackLayout.GestureRecognizers>
                 <TapGestureRecognizer Command="{Binding SeekX}"/>
             </StackLayout.GestureRecognizers>
         </StackLayout>
 
-        <StackLayout BackgroundColor="{StaticResource menu_pink}" Style="{StaticResource gridButton}">
+        <StackLayout BackgroundColor="{StaticResource menu_pink}" Style="{StaticResource buttonStyles}"
+                     HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
             <Label Text="TYPE AX" VerticalOptions="End" TextColor="White" FontSize="Large" FontAttributes="Bold"/>
             <StackLayout.GestureRecognizers>
                 <TapGestureRecognizer Command="{Binding TypeX}"/>
             </StackLayout.GestureRecognizers>
         </StackLayout>
 
-        <StackLayout BackgroundColor="{StaticResource menu_purple}" Style="{StaticResource gridButton}">
+        <StackLayout BackgroundColor="{StaticResource menu_purple}" Style="{StaticResource buttonStyles}"
+                     HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
             <Label Text="SEEK AX" VerticalOptions="End" TextColor="White" FontSize="Large" FontAttributes="Bold"/>
             <StackLayout.GestureRecognizers>
                 <TapGestureRecognizer Command="{Binding TypeX}"/>
             </StackLayout.GestureRecognizers>
         </StackLayout>
 
-        <StackLayout BackgroundColor="{StaticResource menu_red}" Style="{StaticResource gridButton}">
+        <StackLayout BackgroundColor="{StaticResource menu_red}" Style="{StaticResource buttonStyles}"
+                     HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
             <Label Text="SEEK AX WITH QUIZ" VerticalOptions="End" TextColor="White" FontSize="Large" FontAttributes="Bold"/>
             <StackLayout.GestureRecognizers>
                 <TapGestureRecognizer Command="{Binding TypeX}"/>

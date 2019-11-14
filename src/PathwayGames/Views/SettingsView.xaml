@@ -1,16 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:converters="clr-namespace:PathwayGames.Converters"
+             xmlns:b="clr-namespace:PathwayGames.Behaviors;assembly=PathwayGames"
              xmlns:sv="clr-namespace:AiForms.Renderers;assembly=SettingsView"
              x:Class="PathwayGames.Views.SettingsView"
              Title="{Binding Title}">
+
     <ContentPage.ToolbarItems>
-        <ToolbarItem Text="Save" Command="{Binding SaveCommand}"/>
+        <ToolbarItem Text="Save" Command="{Binding SaveSettingsCommand}"/>
     </ContentPage.ToolbarItems>
 
     <ContentPage.Content>
-
         <sv:SettingsView>
             <sv:Section Title="SENSOR SETTINGS">
                 <SwitchCell Text="True depth camera" On="{Binding UserSettings.EyeGazeSensor, Mode=TwoWay}"/>

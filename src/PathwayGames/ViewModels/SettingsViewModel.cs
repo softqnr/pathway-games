@@ -3,6 +3,7 @@ using PathwayGames.Models;
 using PathwayGames.Services.User;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Threading.Tasks;
 using System.Windows.Input;
 using Xamarin.Essentials;
@@ -36,13 +37,13 @@ namespace PathwayGames.ViewModels
             set => SetProperty(ref _seekGridOptions, value);
         }
 
-        public ICommand SaveCommand
+        public ICommand SaveSettingsCommand
         {
             get
             {
                 return new Command(async () =>
                 {
-                    await OnSave();
+                    await OnSaveSettings();
                 });
             }
         }
@@ -54,21 +55,18 @@ namespace PathwayGames.ViewModels
 
         public override async Task InitializeAsync(object navigationData)
         {
-            if (navigationData == null)
+            Title = "Settings - " + App.SelectedUser.UserName;
+            // Show current selected users game sessionss
+            UserSettings = await _userService.GetUserSettings(App.SelectedUser.Id);
+            SeekGridOptions = await _userService.GetSeekGridOptionsByIdiom(DeviceInfo.Idiom.ToString());
+            // Set selected option
+            if (UserSettings.SeekGridOptions != null)
             {
-                Title = "Settings - " + App.SelectedUser.UserName;
-                // Show current selected users game sessionss
-                UserSettings = await _userService.GetUserSettings(App.SelectedUser.Id);
-                SeekGridOptions = await _userService.GetSeekGridOptionsByIdiom(DeviceInfo.Idiom.ToString());
-                // Set selected option
-                if (UserSettings.SeekGridOptions != null)
-                {
-                    SelectedSeekGridOption = SeekGridOptions.FirstOrDefault(x => x.Id == UserSettings.SeekGridOptions.Id);
-                } 
-            }
+                SelectedSeekGridOption = SeekGridOptions.FirstOrDefault(x => x.Id == UserSettings.SeekGridOptions.Id);
+            } 
         }
 
-        private async Task OnSave()
+        private async Task OnSaveSettings()
         {
             _userSettings.SeekGridOptions = SelectedSeekGridOption;
             await _userService.UpdateUserSettings(_userSettings);

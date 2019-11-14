@@ -40,7 +40,7 @@ namespace PathwayGames.ViewModels
             {
                 return new Command(async () =>
                 {
-                    await NavigationService.NavigateBackAsync();
+                    await NavigationService.PopAsync(true);
                 });
             }
         }
@@ -52,6 +52,7 @@ namespace PathwayGames.ViewModels
                 Enum.TryParse<UserType>(UserType, out var userType);
                 await _userService.CreateUser(UserName, userType);
                 DialogService.ShowToast("User added");
+                await NavigationService.PopAsync(true);
             }
             else
             {
