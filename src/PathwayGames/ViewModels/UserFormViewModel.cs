@@ -1,8 +1,6 @@
-﻿using PathwayGames.Models;
-using System;
-using PathwayGames.Models.Enums;
+﻿using PathwayGames.Models.Enums;
 using PathwayGames.Services.User;
-using System.Collections.Generic;
+using System;
 using System.Threading.Tasks;
 using System.Windows.Input;
 using Xamarin.Forms;
@@ -12,7 +10,6 @@ namespace PathwayGames.ViewModels
     public class UserFormViewModel : ViewModelBase
     {
         private IUserService _userService;
-        private IList<User> _users;
         private string _userName;
 
         public string UserName
@@ -21,7 +18,7 @@ namespace PathwayGames.ViewModels
             set => SetProperty(ref _userName, value);
         }
 
-        public string UserType { get; set; } = "Learner";
+        public string UserType { get; set; } = Models.Enums.UserType.Learner.ToString();
 
         public ICommand SaveUserCommand
         {

@@ -106,8 +106,7 @@ namespace PathwayGames.iOS.Controls
             {
                 foreach (ARAnchor anchor in frame.Anchors)
                 {
-                    var faceAnchor = anchor as ARFaceAnchor;
-                    if (faceAnchor != null)
+                    if (anchor is ARFaceAnchor faceAnchor)
                     {
                         // Log
                         sensor.OnReadingTaken(new FaceAnchorChangedEventArgs(
