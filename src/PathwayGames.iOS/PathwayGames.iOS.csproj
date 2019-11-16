@@ -118,7 +118,6 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Controls\FaceSensorViewRenderer.cs" />
-    <Compile Include="Controls\WrappedButtonRenderer.cs" />
     <Compile Include="Effects\TapWithPositionGestureEffect.cs" />
     <Compile Include="Extensions\ARBlendShapeLocationOptionsExtensions.cs" />
     <Compile Include="Extensions\IEnumerableExtensions.cs" />
