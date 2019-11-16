@@ -1,21 +1,22 @@
-﻿using System;
+﻿using PathwayGames.Sensors;
+using System;
 using System.Windows.Input;
 using Xamarin.Forms;
 
 namespace PathwayGames.Controls
 {
-    public class EyeGazePreview : View, ISensor
+    public class FaceSensorView : View, IFaceSensor
     {
-        public event EventHandler<EyeGazeChangedEventArgs> EyeGazeChanged;
+        public event EventHandler<FaceAnchorChangedEventArgs> EyeGazeChanged;
 
         public static readonly BindableProperty EyeGazeChangedCommandProperty =
-            BindableProperty.Create(nameof(EyeGazeChangedCommand), typeof(ICommand), typeof(EyeGazePreview), null);
+            BindableProperty.Create(nameof(EyeGazeChangedCommand), typeof(ICommand), typeof(FaceSensorView), null);
 
         public static readonly BindableProperty RecordingEnabledProperty =
-            BindableProperty.Create(nameof(RecordingEnabled), typeof(bool), typeof(EyeGazePreview), null);
+            BindableProperty.Create(nameof(RecordingEnabled), typeof(bool), typeof(FaceSensorView), null);
 
         public static readonly BindableProperty ShowCrosshairProperty =
-            BindableProperty.Create(nameof(ShowCrosshair), typeof(bool), typeof(EyeGazePreview), null);
+            BindableProperty.Create(nameof(ShowCrosshair), typeof(bool), typeof(FaceSensorView), null);
 
         public ICommand EyeGazeChangedCommand
         {
@@ -35,7 +36,7 @@ namespace PathwayGames.Controls
             set { SetValue(ShowCrosshairProperty, value); }
         }
 
-        void ISensor.OnEyeGazeChanged(EyeGazeChangedEventArgs e)
+        void ISensor<FaceAnchorChangedEventArgs>.OnReadingTaken(FaceAnchorChangedEventArgs e)
         {
             if (RecordingEnabled)
             {

@@ -1,17 +1,17 @@
-﻿using System.Collections.Generic;
+﻿using PathwayGames.Sensors;
+using System.Collections.Generic;
 
 namespace PathwayGames.Models
 {
     public class SensoryData
     {
-        public List<ButtonPress> ButtonPresses { get; set; }
+        public List<ButtonPress> ButtonPresses { get; set; } = new List<ButtonPress>();
 
-        public List<FaceAnchorData> FaceAnchorData { get; set; }
+        public List<FaceAnchorReading> FaceAnchorData { get; set; } = new List<FaceAnchorReading>();
 
         public SensoryData()
         {
-            ButtonPresses = new List<ButtonPress>();
-            FaceAnchorData = new List<FaceAnchorData>();
+
         }
     }
 }

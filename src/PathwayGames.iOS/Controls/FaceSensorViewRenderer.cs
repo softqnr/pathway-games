@@ -5,20 +5,20 @@ using Foundation;
 using PathwayGames.Controls;
 using PathwayGames.iOS.Controls;
 using PathwayGames.iOS.Extensions;
-using PathwayGames.Models;
+using PathwayGames.Sensors;
 using UIKit;
 using Xamarin.Forms;
 using Xamarin.Forms.Platform.iOS;
 
-[assembly: ExportRenderer(typeof(EyeGazePreview), typeof(EyeGazePreviewRenderer))]
+[assembly: ExportRenderer(typeof(FaceSensorView), typeof(FaceSensorViewRenderer))]
 namespace PathwayGames.iOS.Controls
 {
-    public class EyeGazePreviewRenderer : ViewRenderer<EyeGazePreview, ARSCNView> , IARSessionDelegate
+    public class FaceSensorViewRenderer : ViewRenderer<FaceSensorView, ARSCNView> , IARSessionDelegate
     {
-        private ISensor sensor;
+        private IFaceSensor sensor;
         private ARSCNView SceneView;
      
-        protected override void OnElementChanged(ElementChangedEventArgs<EyeGazePreview> e)
+        protected override void OnElementChanged(ElementChangedEventArgs<FaceSensorView> e)
         {
             base.OnElementChanged(e);
 
@@ -65,7 +65,7 @@ namespace PathwayGames.iOS.Controls
                     LightEstimationEnabled = true
                 };
 
-                sensor = e.NewElement as ISensor;
+                sensor = e.NewElement as IFaceSensor;
                 // Subscribe events
                 // Crosshair
                 if (e.NewElement.ShowCrosshair)
@@ -110,8 +110,8 @@ namespace PathwayGames.iOS.Controls
                     if (faceAnchor != null)
                     {
                         // Log
-                        sensor.OnEyeGazeChanged(new EyeGazeChangedEventArgs(
-                            new FaceAnchorData(frame.Timestamp, faceAnchor.Transform.ToFloatMatrix4(),
+                        sensor.OnReadingTaken(new FaceAnchorChangedEventArgs(
+                            new FaceAnchorReading(frame.Timestamp, faceAnchor.Transform.ToFloatMatrix4(),
                                 faceAnchor.LeftEyeTransform.ToFloatMatrix4(),
                                 faceAnchor.RightEyeTransform.ToFloatMatrix4(),
                                 faceAnchor.LookAtPoint.ToFloatVector3(),

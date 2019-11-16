@@ -2,9 +2,9 @@
 using System;
 using System.Collections.Generic;
 
-namespace PathwayGames.Models
+namespace PathwayGames.Sensors
 {
-    public class FaceAnchorData
+    public class FaceAnchorReading
     {
         public DateTime ReadingDate { get; set; }
 
@@ -20,7 +20,7 @@ namespace PathwayGames.Models
 
         public Dictionary<string, float?> FacialExpressions = new Dictionary<string, float?>();
 
-        public FaceAnchorData(double readingDateTime, float[,] faceTransform,
+        public FaceAnchorReading(double readingDateTime, float[,] faceTransform,
             float[,] leftEyeTransform, float[,] rightEyeTransform, float[] lookAtPointTransform, Dictionary<string, float?>  facialExpressions)
         {
             ReadingDate = DateTime.Now;

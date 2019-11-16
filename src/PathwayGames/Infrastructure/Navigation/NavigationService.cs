@@ -23,8 +23,7 @@ namespace PathwayGames.Infrastructure.Navigation
         {
             get {
                 if (CurrentApplication.MainPage is MasterDetailPage) {
-                    var mainPage = CurrentApplication.MainPage as MasterDetailPage;
-                    return mainPage.Detail.Navigation;
+                    return ((MasterDetailPage)CurrentApplication.MainPage).Detail.Navigation;
                 } else if (CurrentApplication.MainPage != null) {
                     return CurrentApplication.MainPage.Navigation;
                 } else {
@@ -65,15 +64,7 @@ namespace PathwayGames.Infrastructure.Navigation
 
         public async Task NavigateBackAsync()
         {
-            if (CurrentApplication.MainPage is MasterDetailPage)
-            {
-                var mainPage = CurrentApplication.MainPage as MasterDetailPage;
-                await mainPage.Detail.Navigation.PopAsync();
-            }
-            else if (CurrentApplication.MainPage != null)
-            {
-                await CurrentApplication.MainPage.Navigation.PopAsync();
-            }
+            await CurrentNavigation.PopAsync();
         }
 
         public virtual Task RemoveLastFromBackStackAsync()

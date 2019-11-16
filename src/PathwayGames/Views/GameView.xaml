@@ -71,7 +71,7 @@
                     </Label.FormattedText>
                 </Label>
             </StackLayout>
-            <c:EyeGazePreview Grid.Column="0" Grid.Row="2" WidthRequest="96" HeightRequest="128" 
+            <c:FaceSensorView Grid.Column="0" Grid.Row="2" WidthRequest="96" HeightRequest="128" 
                               EyeGazeChangedCommand="{Binding EyeGazeChangedCommand}"
                               ShowCrosshair="True"
                               RecordingEnabled="True"

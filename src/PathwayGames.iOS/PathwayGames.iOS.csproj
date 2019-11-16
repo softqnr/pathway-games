@@ -117,7 +117,7 @@
     <AppExtensionDebugBundleId />
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Controls\EyeGazePreviewRenderer.cs" />
+    <Compile Include="Controls\FaceSensorViewRenderer.cs" />
     <Compile Include="Controls\WrappedButtonRenderer.cs" />
     <Compile Include="Effects\TapWithPositionGestureEffect.cs" />
     <Compile Include="Extensions\ARBlendShapeLocationOptionsExtensions.cs" />
@@ -162,13 +162,13 @@
     <PackageReference Include="Xamarin.FFImageLoading.Forms">
       <Version>2.4.11.982</Version>
     </PackageReference>
-    <PackageReference Include="Xamarin.Forms" Version="4.3.0.947036" />
+    <PackageReference Include="Xamarin.Forms" Version="4.3.0.991211" />
     <PackageReference Include="System.Reflection.Emit" Version="4.6.0">
       <ExcludeAssets>all</ExcludeAssets>
       <IncludeAssets>none</IncludeAssets>
     </PackageReference>
     <PackageReference Include="Xamarin.Forms.Visual.Material">
-      <Version>4.3.0.947036</Version>
+      <Version>4.3.0.991211</Version>
     </PackageReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />

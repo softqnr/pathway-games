@@ -8,8 +8,8 @@
     <StackLayout Margin="0,5,0,5">
         <StackLayout Margin="0" Padding="0"
             VerticalOptions="Start"
-          HorizontalOptions="FillAndExpand" BackgroundColor="Black">
-            <Label FontSize="Large" HorizontalOptions="Center" VerticalOptions="End" TextColor="White">
+          HorizontalOptions="FillAndExpand">
+            <Label FontSize="Large" HorizontalOptions="Center" VerticalOptions="End">
                 <Label.FormattedText>
                     <FormattedString>
                             <Span Text="{Binding Game.SessionData.UserName, Mode=OneWay}" FontSize="Large" />

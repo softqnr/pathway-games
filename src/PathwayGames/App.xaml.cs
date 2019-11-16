@@ -46,7 +46,7 @@ namespace PathwayGames
             InitializeDatabase();
 
             // Init DI
-            InitializeDI();
+            InitializeDependencies();
         }
 
         private async Task InitializeNavigation()
@@ -72,7 +72,7 @@ namespace PathwayGames
             DatabaseFilePath = DependencyService.Get<IFileAccessHelper>().GetDBPathAndCreateIfNotExists("pw.db");
         }
 
-        private void InitializeDI()
+        private void InitializeDependencies()
         {
             Container = new UnityContainer().AddExtension(new ForceActivation()); // IOS bug fix see https://github.com/unitycontainer/container/issues/150
 

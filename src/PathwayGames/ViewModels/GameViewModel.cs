@@ -2,6 +2,7 @@
 using PathwayGames.Infrastructure.Sound;
 using PathwayGames.Models;
 using PathwayGames.Models.Enums;
+using PathwayGames.Sensors;
 using PathwayGames.Services.Sensors;
 using PathwayGames.Services.Slides;
 using PathwayGames.Services.User;
@@ -133,7 +134,7 @@ namespace PathwayGames.ViewModels
         {
             get
             {
-                return new Command<EyeGazeChangedEventArgs>((e) =>
+                return new Command<FaceAnchorChangedEventArgs>((e) =>
                 {
                     _sensorLowWriterService.WriteToLog(e.Reading.ToString());
                 });
