@@ -67,11 +67,14 @@
           <ViewCell>
             <Grid Padding="5,10">
                 <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="18"/>
+                    <ColumnDefinition Width="48"/>
                     <ColumnDefinition Width="*" />
-                </Grid.ColumnDefinitions>
-                <Image Source="{Binding IconSource}" />
-                <Label Grid.Column="1" Text="{Binding Title}" FontSize="Large"/>
+                </Grid.ColumnDefinitions>                            
+                <Label Text="{Binding IconSource}" FontSize="44" 
+                        FontFamily="{StaticResource MaterialFontFamily}"
+                        TextColor="Black"/>
+
+                <Label Grid.Column="1" Text="{Binding Title}" FontSize="Large" VerticalOptions="Center"/>
             </Grid>
         </ViewCell>
         </DataTemplate>

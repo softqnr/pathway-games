@@ -58,7 +58,7 @@
     <MtouchDebug>true</MtouchDebug>
     <CodesignEntitlements>
     </CodesignEntitlements>
-    <CodesignProvision>iOS Team Provisioning Profile: uk.ac.ntu.comp.pathway.games</CodesignProvision>
+    <CodesignProvision>Pathway+ Games Development Profile</CodesignProvision>
     <CodesignExtraArgs />
     <CodesignResourceRules />
     <BuildIpa>true</BuildIpa>
@@ -81,7 +81,7 @@
     <IpaPackageName>uk.ac.ntu.comp.pathway.games</IpaPackageName>
     <CodesignExtraArgs />
     <CodesignResourceRules />
-    <CodesignProvision>iOS Team Provisioning Profile: uk.ac.ntu.comp.pathway.games</CodesignProvision>
+    <CodesignProvision>Pathway+ Games Development Profile</CodesignProvision>
     <MtouchLink>SdkOnly</MtouchLink>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Ad-Hoc|iPhone' ">
@@ -134,7 +134,7 @@
     <None Include="Info.plist" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <BundleResource Include="Resources\pw.db" />
-    <BundleResource Include="Resources\SegMDL2.ttf" />
+    <BundleResource Include="Resources\materialdesignicons-webfont.ttf" />
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="Resources\LaunchScreen.storyboard" />
