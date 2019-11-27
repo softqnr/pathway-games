@@ -170,12 +170,6 @@
     <AndroidResource Include="Resources\drawable\icon_data.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\icon_settings.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable\icon_users.png" />
-  </ItemGroup>
-  <ItemGroup>
     <AndroidResource Include="Resources\xml\provider_paths.xml" />
   </ItemGroup>
   <ItemGroup>

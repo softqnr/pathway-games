@@ -1,5 +1,4 @@
-﻿using PathwayGames.Controls;
-using PathwayGames.Infrastructure.Sound;
+﻿using PathwayGames.Infrastructure.Sound;
 using PathwayGames.Models;
 using PathwayGames.Models.Enums;
 using PathwayGames.Sensors;
@@ -28,7 +27,6 @@ namespace PathwayGames.ViewModels
         private ISensorLogWriterService _sensorLowWriterService;
         private ISoundService _soundService;
 
-        private string _title;
         private bool _paused;
         private bool _sensorRecording;
         private int? _slideIndex;
@@ -46,12 +44,6 @@ namespace PathwayGames.ViewModels
         public SlideStateMachine StateMachine { get; private set; }
 
         // Bindable properties
-        public string Title
-        {
-            get => _title;
-            set => SetProperty(ref _title, value);
-        }
-
         public int? SlideIndex
         {
             get => _slideIndex;
@@ -252,8 +244,7 @@ namespace PathwayGames.ViewModels
         public async Task ShowRewardSlide()
         {
             System.Diagnostics.Debug.WriteLine("({0}/{1}) - {2:HH:mm:ss.fff} - ShowRewardSlide()", SlideIndex, SlideCount, DateTime.Now);
-            TimeSpan blankSlideTime = new TimeSpan();
-            blankSlideTime = TimeSpan.FromSeconds(CurrentSlide.BlankDuration);
+            TimeSpan blankSlideTime = TimeSpan.FromSeconds(CurrentSlide.BlankDuration);
             // Cancel blank display if token exists
             if (_cts != null)
             {
