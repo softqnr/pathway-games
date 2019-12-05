@@ -11,7 +11,7 @@ namespace PathwayGames.ViewModels
     public class GameResultsViewModel : ViewModelBase
     {
         private Game _game;
-        readonly IExcelService _excelService;
+        private readonly IExcelService _excelService;
 
         public Game Game
         {

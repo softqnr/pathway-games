@@ -5,15 +5,17 @@ using System.Collections.Generic;
 using PathwayGames.Models.Enums;
 using System;
 using Xamarin.Essentials;
+using System.IO.Compression;
+using System.IO;
 
 namespace PathwayGames.Services.User
 {
     public class UserService : IUserService
     {
-        private IRepository<Models.User> _repositoryUser;
-        private IRepository<UserGameSettings> _repositoryUserSettings;
-        private IRepository<UserGameSession> _repositoryUserGameSession;
-        private IRepository<SeekGridOption> _repositorySeekGridOption;
+        private readonly IRepository<Models.User> _repositoryUser;
+        private readonly IRepository<UserGameSettings> _repositoryUserSettings;
+        private readonly IRepository<UserGameSession> _repositoryUserGameSession;
+        private readonly IRepository<SeekGridOption> _repositorySeekGridOption;
 
         public UserService(IRepository<Models.User> repositoryUser,
             IRepository<UserGameSettings> repositoryUserSettings,
@@ -95,6 +97,26 @@ namespace PathwayGames.Services.User
         {
             return await _repositorySeekGridOption.AsQueryable()
                 .Where(x => (x.TargetIdiom == idiom && x.IsDefault)).FirstOrDefaultAsync();
+        }
+
+        public string PackUserGameSessions(IList<UserGameSession> gameSessions)
+        {
+            string destinationZipFullPath = Path.Combine(App.LocalStorageDirectory, "pack.zip");
+            
+            if (File.Exists(destinationZipFullPath))
+                File.Delete(destinationZipFullPath);
+
+            using (ZipArchive zip = ZipFile.Open(destinationZipFullPath, ZipArchiveMode.Create))
+            {
+                foreach (var gameSession in gameSessions)
+                {
+                    zip.CreateEntryFromFile(Path.Combine(App.LocalStorageDirectory, gameSession.SensorDataFile)
+                        , gameSession.SensorDataFile
+                        , CompressionLevel.Optimal);
+                }
+            }
+
+            return destinationZipFullPath;
         }
     }
 }

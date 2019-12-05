@@ -58,7 +58,16 @@ namespace PathwayGames.ViewModels
 
         public async Task ExportGameData()
         {
-            await Task.FromResult(true);
+            DialogService.ShowLoading("Generating package …");
+            string fileName = _userService.PackUserGameSessions(_gameSessions);
+
+            await Share.RequestAsync(new ShareFileRequest
+            {
+                Title = "Share results",
+                File = new ShareFile(fileName)
+            });
+
+            DialogService.HideLoading();
         }
 
         public SessionDataViewModel(IUserService userService)
