@@ -11,7 +11,7 @@ namespace PathwayGames.ViewModels
     public class GameResultsViewModel : ViewModelBase
     {
         private Game _game;
-        private IExcelService _excelService;
+        readonly IExcelService _excelService;
 
         public Game Game
         {
@@ -26,17 +26,6 @@ namespace PathwayGames.ViewModels
                 return new Command(async () =>
                 {
                     await ShareGameData();
-                });
-            }
-        }
-
-        public ICommand SensorDataCommand
-        {
-            get
-            {
-                return new Command(async () =>
-                {
-                    await ShareSensorData();
                 });
             }
         }
@@ -73,28 +62,13 @@ namespace PathwayGames.ViewModels
 
         private async Task ShareGameData()
         {
-            var message = new EmailMessage
+            var file = Path.Combine(App.LocalStorageDirectory, _game.GameDataFile);
+
+            await Share.RequestAsync(new ShareFileRequest
             {
-                Subject = "Pathway+ Games - Test results",
-                Body = "",
-            };
-
-            message.Attachments.Add(new EmailAttachment(Path.Combine(App.LocalStorageDirectory, _game.GameDataFile)));
-
-            await Email.ComposeAsync(message);
-        }
-
-        private async Task ShareSensorData()
-        {
-            var message = new EmailMessage
-            {
-                Subject = "Pathway+ Games - Sensor data",
-                Body = "",
-            };
-
-            message.Attachments.Add(new EmailAttachment(Path.Combine(App.LocalStorageDirectory, _game.SensorDataFile)));
-
-            await Email.ComposeAsync(message);
+                Title = "Pathway+ Games - Test results",
+                File = new ShareFile(file)
+            });
         }
 
         public override async Task InitializeAsync(object navigationData)

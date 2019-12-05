@@ -14,7 +14,7 @@ namespace PathwayGames.ViewModels
 {
     public class SessionDataViewModel : ViewModelBase
     {
-        private IUserService _userService;
+        readonly IUserService _userService;
         private IList<UserGameSession> _gameSessions;
 
         public IList<UserGameSession> GameSessions
@@ -34,41 +34,31 @@ namespace PathwayGames.ViewModels
             }
         }
 
-        public ICommand SensorDataCommand
+        public ICommand ExportDataCommand
         {
             get
             {
-                return new Command(async (s) =>
+                return new Command(async () =>
                 {
-                    await ShareSensorData((string)s);
+                    await ExportGameData();
                 });
             }
         }
 
         private async Task ShareGameData(string gameDataFile)
         {
-            var message = new EmailMessage
+            var file = Path.Combine(App.LocalStorageDirectory, gameDataFile);
+
+            await Share.RequestAsync(new ShareFileRequest
             {
-                Subject = "Pathway+ Games - Test results",
-                Body = "",
-            };
-
-            message.Attachments.Add(new EmailAttachment(Path.Combine(App.LocalStorageDirectory, gameDataFile)));
-
-            await Email.ComposeAsync(message);
+                Title = "Pathway+ Games - Test results",
+                File = new ShareFile(file)
+            });
         }
 
-        private async Task ShareSensorData(string sensorDataFile)
+        public async Task ExportGameData()
         {
-            var message = new EmailMessage
-            {
-                Subject = "Pathway+ Games - Sensor data",
-                Body = "",
-            };
-
-            message.Attachments.Add(new EmailAttachment(Path.Combine(App.LocalStorageDirectory, sensorDataFile)));
-
-            await Email.ComposeAsync(message);
+            await Task.FromResult(true);
         }
 
         public SessionDataViewModel(IUserService userService)

@@ -37,6 +37,7 @@
     <AndroidLinkMode>Full</AndroidLinkMode>
     <AndroidUseSharedRuntime>true</AndroidUseSharedRuntime>
     <EmbedAssembliesIntoApk>false</EmbedAssembliesIntoApk>
+    <AndroidSigningKeyStore>$(SolutionDir)\build\softqnr-dev\softqnr-dev.keystore</AndroidSigningKeyStore>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugSymbols>false</DebugSymbols>
@@ -60,7 +61,7 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Acr.UserDialogs">
-      <Version>7.0.4</Version>
+      <Version>7.0.35</Version>
     </PackageReference>
     <PackageReference Include="AiForms.SettingsView">
       <Version>0.5.2</Version>

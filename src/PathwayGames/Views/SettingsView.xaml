@@ -4,6 +4,7 @@
              xmlns:b="clr-namespace:PathwayGames.Behaviors;assembly=PathwayGames"
              xmlns:sv="clr-namespace:AiForms.Renderers;assembly=SettingsView"
              x:Class="PathwayGames.Views.SettingsView"
+             Visual="Material"
              Title="{Binding Title}">
 
     <ContentPage.ToolbarItems>

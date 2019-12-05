@@ -65,6 +65,10 @@
     <IpaPackageName>uk.ac.ntu.comp.pathway.games</IpaPackageName>
     <IOSDebugOverWiFi>false</IOSDebugOverWiFi>
     <IpaIncludeArtwork>false</IpaIncludeArtwork>
+    <MtouchLink>None</MtouchLink>
+    <MtouchExtraArgs>
+    </MtouchExtraArgs>
+    <MtouchInterpreter>-all</MtouchInterpreter>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
     <DebugType>none</DebugType>
@@ -147,7 +151,7 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Acr.UserDialogs">
-      <Version>7.0.4</Version>
+      <Version>7.0.35</Version>
     </PackageReference>
     <PackageReference Include="AiForms.SettingsView">
       <Version>0.5.2</Version>
