@@ -5,11 +5,18 @@
              xmlns:c="clr-namespace:PathwayGames.Converters"
              xmlns:controls="clr-namespace:PathwayGames.Controls"
              x:Class="PathwayGames.Views.UsersView"
-             x:Name="Page"
+             x:Name="self"
              Title="Users">
     <ContentPage.ToolbarItems>
-        <controls:HideableToolbarItem Text="Add" Command="{Binding AddCommand}" 
-                                      IsVisible="{Binding CurrentUserIsAdmin}" />
+        <controls:HideableToolbarItem Command="{Binding AddCommand}" 
+                                      IsVisible="{Binding CurrentUserIsAdmin}">
+            <controls:HideableToolbarItem.IconImageSource>
+                <FontImageSource
+                        FontFamily="{StaticResource MaterialFontFamily}"
+                        Glyph="{StaticResource IconPlus}"
+                        Size="24" />
+            </controls:HideableToolbarItem.IconImageSource>
+        </controls:HideableToolbarItem>
     </ContentPage.ToolbarItems>
 
     
@@ -47,11 +54,11 @@
                             </StackLayout>
                             
                             <Button Grid.Row="0" Grid.Column="1" HorizontalOptions="End" Text="Select" WidthRequest="80"
-                                    Command="{Binding BindingContext.UserSelectedCommand, Source={x:Reference Page}}"
+                                    Command="{Binding BindingContext.UserSelectedCommand, Source={x:Reference self}}"
                                     CommandParameter="{Binding .}"/>
 
                             <Button Grid.Row="0" Grid.Column="2" HorizontalOptions="End" Text="Sessions" WidthRequest="80"
-                                    Command="{Binding BindingContext.GotoUserSessionsCommand, Source={x:Reference Page}}"
+                                    Command="{Binding BindingContext.GotoUserSessionsCommand, Source={x:Reference self}}"
                                     CommandParameter="{Binding .}"/>
                         </Grid>
                     </DataTemplate>

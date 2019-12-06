@@ -36,7 +36,8 @@
             <x:String x:Key="IconEyeOff">&#xf209;</x:String>
             <x:String x:Key="IconChevronLeft">&#xf141;</x:String>
             <x:String x:Key="IconSave">&#xe193;</x:String>
-            <x:String x:Key="IcoHamburger">&#xf35c;</x:String>
+            <x:String x:Key="IconHamburger">&#xf35c;</x:String>
+            <x:String x:Key="IconPlus">&#xf415;</x:String>
   
             <OnPlatform x:Key="MaterialFontFamily" x:TypeArguments="x:String">
                 <On Platform="iOS" Value="Material Design Icons" />
