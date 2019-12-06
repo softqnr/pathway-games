@@ -8,7 +8,14 @@
              Title="{Binding Title}">
 
     <ContentPage.ToolbarItems>
-        <ToolbarItem Text="Save" Command="{Binding SaveSettingsCommand}"/>
+        <ToolbarItem Command="{Binding SaveSettingsCommand}">
+            <ToolbarItem.IconImageSource>
+                <FontImageSource
+                    FontFamily="{StaticResource MaterialFontFamily}"
+                    Glyph="{StaticResource IconSave}"
+                    Size="24" />
+            </ToolbarItem.IconImageSource>
+        </ToolbarItem>
     </ContentPage.ToolbarItems>
 
     <ContentPage.Content>

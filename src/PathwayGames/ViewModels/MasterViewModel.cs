@@ -48,7 +48,7 @@ namespace PathwayGames.ViewModels
                         IconSource = Application.Current.Resources["IconGames"].ToString(),
                         TargetType =typeof(GameSelectionViewModel) },
                     new NavMenuItem { Id = 1, Title = "Session data",
-                        IconSource = Application.Current.Resources["IconDatabase"].ToString(),
+                        IconSource = Application.Current.Resources["IconJson"].ToString(),
                         TargetType =typeof(SessionDataViewModel) },
                     new NavMenuItem { Id = 2, Title = "Users",
                         IconSource = Application.Current.Resources["IconUser"].ToString(),

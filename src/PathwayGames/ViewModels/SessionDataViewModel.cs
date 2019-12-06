@@ -45,6 +45,17 @@ namespace PathwayGames.ViewModels
             }
         }
 
+        public ICommand DeleteGameSessionCommand
+        {
+            get
+            {
+                return new Command(async (g) =>
+                {
+                    await DeleteGameSession((UserGameSession)g);
+                });
+            }
+        }
+
         private async Task ShareGameData(string gameDataFile)
         {
             var file = Path.Combine(App.LocalStorageDirectory, gameDataFile);
@@ -68,6 +79,13 @@ namespace PathwayGames.ViewModels
             });
 
             DialogService.HideLoading();
+        }
+
+        public async Task DeleteGameSession(UserGameSession userGameSession)
+        {
+            bool confirmed = await DialogService.ShowConfirmAsync("Delete session data?", "Delete", "Ok", "Cancel");
+            if (confirmed)
+                await _userService.DeleteGameSession(userGameSession);
         }
 
         public SessionDataViewModel(IUserService userService)

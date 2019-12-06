@@ -118,5 +118,15 @@ namespace PathwayGames.Services.User
 
             return destinationZipFullPath;
         }
+
+        public async Task DeleteGameSession(UserGameSession gameSession)
+        {
+            string sensorDataFile = Path.Combine(App.LocalStorageDirectory, gameSession.SensorDataFile);
+
+            if (File.Exists(sensorDataFile))
+                File.Delete(sensorDataFile);
+
+            await _repositoryUserGameSession.DeleteAsync(gameSession);
+        }
     }
 }

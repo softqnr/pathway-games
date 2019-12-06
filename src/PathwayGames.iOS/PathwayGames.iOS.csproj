@@ -203,12 +203,6 @@
     </BundleResource>
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\icon_data.png">
-      <Generator>MSBuild:UpdateGeneratedFiles</Generator>
-      <SubType>Designer</SubType>
-    </BundleResource>
-  </ItemGroup>
-  <ItemGroup>
     <BundleResource Include="Resources\icon_engangement_absent.png">
       <Generator>MSBuild:UpdateGeneratedFiles</Generator>
       <SubType>Designer</SubType>
@@ -228,12 +222,6 @@
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\icon_engangement_medium.png">
-      <Generator>MSBuild:UpdateGeneratedFiles</Generator>
-      <SubType>Designer</SubType>
-    </BundleResource>
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\icon_tests.png">
       <Generator>MSBuild:UpdateGeneratedFiles</Generator>
       <SubType>Designer</SubType>
     </BundleResource>

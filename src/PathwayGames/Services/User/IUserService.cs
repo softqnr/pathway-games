@@ -28,5 +28,7 @@ namespace PathwayGames.Services.User
         Task<IList<SeekGridOption>> GetSeekGridOptionsByIdiom(string idiom);
 
         Task<SeekGridOption> GetSeekGridOptionByIdiomDefault(string idiom);
+
+        Task DeleteGameSession(UserGameSession gameSession);
     }
 }

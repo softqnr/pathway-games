@@ -21,6 +21,7 @@
             <Color x:Key="menu_red">#d90000</Color>
 
             <!-- Icons -->
+            <x:String x:Key="IconDelete">&#xf1c0;</x:String>
             <x:String x:Key="IconAbout">&#xf2fd;</x:String>
             <x:String x:Key="IconSettings">&#xf8ba;</x:String>
             <x:String x:Key="IconJson">&#xf626;</x:String>
@@ -28,13 +29,15 @@
             <x:String x:Key="IconPDF">&#xffd3;</x:String>
             <x:String x:Key="IconFileSend">&#xf005b;</x:String>
             <x:String x:Key="IconBrain">&#xf9d0;</x:String>
-            <x:String x:Key="IconGames">&#xfe19;</x:String>
+            <x:String x:Key="IconGames">&#xf11b;</x:String>
             <x:String x:Key="IconUser">&#xf643;</x:String>
             <x:String x:Key="IconDatabase">&#xf188;</x:String>
             <x:String x:Key="IconEye">&#xf208;</x:String>
             <x:String x:Key="IconEyeOff">&#xf209;</x:String>
             <x:String x:Key="IconChevronLeft">&#xf141;</x:String>
-
+            <x:String x:Key="IconSave">&#xe193;</x:String>
+            <x:String x:Key="IcoHamburger">&#xf35c;</x:String>
+  
             <OnPlatform x:Key="MaterialFontFamily" x:TypeArguments="x:String">
                 <On Platform="iOS" Value="Material Design Icons" />
                 <On Platform="Android" Value="materialdesignicons-webfont.ttf#Material Design Icons" />

@@ -1,8 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:PathwayGames"
              x:Class="PathwayGames.Views.SessionDataView"
-             x:Name="Page"
+             x:Name="self"
              Visual="Material"
              Title="{Binding Title}">
     <ContentPage.ToolbarItems>
@@ -24,16 +25,19 @@
                 <Grid>
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="*"/>
-                        <ColumnDefinition Width="80"/>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="Auto"/>
                     </Grid.ColumnDefinitions>
                     <StackLayout Orientation="Vertical" VerticalOptions="Center" Padding="10,10">
                         <Label Text="{Binding GameType}" FontAttributes="Bold"/>
                         <StackLayout Orientation="Horizontal" Grid.Row="0" Grid.Column="0">
-                            <Label Text="{Binding DateStarted, Mode=OneWay, StringFormat='{}{0:dd/MM/yyyy}'}"/>
+                            <Label Text="{Binding DateStarted, Mode=OneWay, StringFormat='{}{0:dd/MM/yyyy}'}" FontSize="Small"/>
                         </StackLayout>
                     </StackLayout>
-                    <Button Text="Game data" VerticalOptions="Start" Grid.Row="0" Grid.Column="1" 
-                            Command="{Binding BindingContext.GameDataCommand, Source={x:Reference Page}}" CommandParameter="{Binding GameDataFile}"/>
+                    <Button Text="{StaticResource IconJson}" VerticalOptions="Start" Grid.Row="0" Grid.Column="1" FontFamily="{StaticResource MaterialFontFamily}" FontSize="32"
+                            Command="{Binding BindingContext.GameDataCommand, Source={x:Reference self}}" CommandParameter="{Binding GameDataFile}" Margin="10" />
+                    <Button Text="{StaticResource IconDelete}" VerticalOptions="Start" Grid.Row="0" Grid.Column="2" FontFamily="{StaticResource MaterialFontFamily}" FontSize="32"
+                            Command="{Binding BindingContext.DeleteGameSessionCommand, Source={x:Reference self}}" CommandParameter="{Binding .}" Margin="10" TextColor="Gray"/>
                 </Grid>
             </DataTemplate>
         </CollectionView.ItemTemplate>
