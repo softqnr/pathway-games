@@ -17,7 +17,7 @@
         </ToolbarItem>
     </ContentPage.ToolbarItems>
     
-    <CollectionView x:Name="SessionDataList" ItemsSource="{Binding GameSessions}" Margin="5" SelectionMode="Multiple">
+    <CollectionView x:Name="SessionDataList" ItemsSource="{Binding GameSessions}" Margin="5">
     <CollectionView.EmptyView>
             <Label Text="No game sessions found!"/>
         </CollectionView.EmptyView>
