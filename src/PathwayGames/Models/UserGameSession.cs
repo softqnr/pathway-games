@@ -24,7 +24,7 @@ namespace PathwayGames.Models
 
         public string SensorDataFile { get; set; }
 
-        public UserGameSession(User user, string gameType, DateTime dateStarted, DateTime dateEnded, string gameDataFile, string sensorDataFile)
+        public UserGameSession(User user, string gameType, DateTime dateStarted, DateTime dateEnded, string gameDataFile)
         {
             UserId = user.Id;
             User = user;
@@ -32,7 +32,6 @@ namespace PathwayGames.Models
             DateStarted = dateStarted;
             DateEnded = dateEnded;
             GameDataFile = gameDataFile;
-            SensorDataFile = sensorDataFile;
         }
 
         public UserGameSession()

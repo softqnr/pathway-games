@@ -31,14 +31,13 @@ namespace PathwayGames.Models
             UserSettings = new UserGameSettings();
         }
 
-        public UserGameSession AddGameSession(Game game, string gameDataFile, string sensorDataFile)
+        public UserGameSession AddGameSession(Game game, string gameDataFile)
         {
             UserGameSession gameSession = new UserGameSession(this,
                 game.SessionData.GameType.ToString(),
                 game.SessionData.StartDate,
                 game.SessionData.EndDate.Value,
-                gameDataFile,
-                sensorDataFile);
+                gameDataFile);
 
             GameSessions.Add(gameSession);
 

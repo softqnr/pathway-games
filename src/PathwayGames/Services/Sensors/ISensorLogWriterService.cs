@@ -25,5 +25,7 @@
         void WriteToLog(string reading);
 
         void Stop();
+
+        void Cancel();
     }
 }

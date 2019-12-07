@@ -22,16 +22,15 @@ namespace PathwayGames.ViewModels
         private UserGameSettings _gameSettings;
         
         // Services
-        private ISlidesService _slidesService;
-        private IUserService _userService;
-        private ISensorLogWriterService _sensorLowWriterService;
-        private ISoundService _soundService;
+        private readonly ISlidesService _slidesService;
+        private readonly IUserService _userService;
+        private readonly ISensorLogWriterService _sensorLowWriterService;
+        private readonly ISoundService _soundService;
 
         private bool _paused;
         private bool _sensorRecording;
         private int? _slideIndex;
         private int? _slideCount;
-        private bool _eyeGazeTrackingEnabled;
         private int _imageGridColumns = 1;
         private IList<string> _slideImages;
         private ImageSource _eyeGazeIconImageSource;
@@ -90,12 +89,6 @@ namespace PathwayGames.ViewModels
         {
             get => _seed;
             set => SetProperty(ref _seed, value);
-        }
-
-        public bool EyeGazeTrackingEnabled
-        {
-            get => _eyeGazeTrackingEnabled;
-            set => SetProperty(ref _eyeGazeTrackingEnabled, value);
         }
 
         public ImageSource EyeGazeIconImageSource
@@ -352,9 +345,9 @@ namespace PathwayGames.ViewModels
         {
             System.Diagnostics.Debug.WriteLine("({0}) - {1:HH:mm:ss.fff}", "EndGame()", DateTime.Now);
             // Set sensor data filename
-            _game.SensorDataFile = StopSensorRecording();
-            // Finalize game session
-            _slidesService.FinalizeGame(_game);
+            string sensorDataFile = StopSensorRecording();
+            // End game session
+            _slidesService.EndGame(_game, sensorDataFile);
             // Save game session to db
             await _userService.SaveGameSessionData(_game);
             // Go to results view
@@ -394,14 +387,14 @@ namespace PathwayGames.ViewModels
 
                 // Read User Game Settings
                 _gameSettings = await _userService.GetUserSettings(App.SelectedUser.Id);
-                _eyeGazeTrackingEnabled = _gameSettings.EyeGazeSensor;
+
                 // Set grid columns for images
                 if (gameType == GameType.SeekX)
                 {
                     ImageGridColumns = _gameSettings.SeekGridOptions.GridColumns;
                 }
                 // Set sensor icons
-                EyeGazeIconImageSource = ImageSource.FromFile(_eyeGazeTrackingEnabled ? "icon_eye.png" : "icon_eye_off.png");
+                EyeGazeIconImageSource = ImageSource.FromFile(_gameSettings.EyeGazeSensor ? "icon_eye.png" : "icon_eye_off.png");
                 EEGIconImageSource = ImageSource.FromFile(_gameSettings.EEGSensor ? "icon_head.png" : "icon_head_off.png");
 
                 await CreateGameAndStart();
@@ -415,6 +408,7 @@ namespace PathwayGames.ViewModels
             {
                 StateMachine.Fire(Triggers.Exit);
             }
+            _sensorLowWriterService.Cancel();
         }
 
         private void NavigateToResultsView()

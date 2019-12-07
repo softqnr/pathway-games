@@ -102,6 +102,17 @@ namespace PathwayGames.Services.Sensors
             }
         }
 
+        public void Cancel()
+        {
+
+            IsMonitoring = false;
+            LogQueue.Clear();
+            if (File.Exists(LogFilePath))
+                File.Delete(LogFilePath);
+
+            LogFile = "";
+        }
+
         public void ForceFlush()
         {
             FlushLogToFile();

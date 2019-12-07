@@ -55,7 +55,7 @@ namespace PathwayGames.Services.User
         public async Task SaveGameSessionData(Game game)
         {
             Models.User user = await _repositoryUser.GetWithChildrenAsync(game.SessionData.UserId);
-            var gameSession = user.AddGameSession(game, game.GameDataFile, game.SensorDataFile);
+            var gameSession = user.AddGameSession(game, game.GameDataFile);
             await _repositoryUserGameSession.InsertAsync(gameSession);
         }
 

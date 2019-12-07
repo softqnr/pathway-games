@@ -22,14 +22,12 @@ namespace PathwayGames.Models
         [JsonIgnore]
         public string GameDataFile { get; set; }
 
-        [JsonIgnore]
-        public string SensorDataFile { get; set; }
-
         public Game(GameType gameType, UserGameSettings gameSettings, long userId, string userName, string  seed)
         {
             Outcome = new Outcome();
 
             GameSettings = gameSettings;
+
             SessionData = new SessionData(gameType, userId, userName, seed);
 
             SensoryData = new SensoryData();

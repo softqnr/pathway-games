@@ -171,45 +171,34 @@ namespace PathwayGames.Services.Slides
             return new Slide(SlideType.Reward, displayDuration, slideImage, 0, RewardSound);
         }
 
-        public void FinalizeGame(Game game)
-        {
-            game.SessionData.EndDate = DateTime.Now;
-            // Calculate game stats
-            CalculateGameScoreAndStats(game);
-            // Calculate engangement
-            game.Outcome.ConfusionMatrix = CalculateConfusionMatrix(game.Slides);  
-            // Save game data to file
-            Save(game);
-        }
-
         public ConfusionMatrix CalculateConfusionMatrix(List<Slide> slides)
         {
             return new ConfusionMatrix(slides);
         }
 
-        public Game Load(string fileName)
+        public string EndGame(Game game, string sensorDataFile)
         {
-            string filePath = Path.Combine(App.LocalStorageDirectory, fileName);
-            return JsonConvert.DeserializeObject<Game>(filePath);
-        }
+            game.SessionData.EndDate = DateTime.Now;
+            // Calculate game stats
+            CalculateGameScoreAndStats(game);
+            // Calculate engangement
+            game.Outcome.ConfusionMatrix = CalculateConfusionMatrix(game.Slides);
+            
+            // Save to Json
+            string filePathName = SaveGameToJson(game);
 
-        public string Save(Game game)
-        {
-            game.GameDataFile = $"{Guid.NewGuid().ToString()}.json";
-            string filePathName = Path.Combine(App.LocalStorageDirectory, game.GameDataFile);
- 
-            SaveGameToJson(game, filePathName);
-
-            if (game.SensorDataFile != "")
+            // Merge sensor data
+            if (sensorDataFile != "")
             {
-                MergeDataFiles(filePathName, Path.Combine(App.LocalStorageDirectory, game.SensorDataFile));
+                MergeDataFiles(filePathName, Path.Combine(App.LocalStorageDirectory, sensorDataFile));
             }
 
             return filePathName;
         }
 
-        private void SaveGameToJson(Game game, string filePathName)
+        private string SaveGameToJson(Game game)
         {
+            string filePathName = Path.Combine(App.LocalStorageDirectory, $"{Guid.NewGuid().ToString()}.json");
             using (var file = File.Open(filePathName, FileMode.Create, FileAccess.Write))
             {
                 using (var sw = new StreamWriter(file, new UTF8Encoding(false)))
@@ -222,6 +211,7 @@ namespace PathwayGames.Services.Slides
                     sw.Write(JsonConvert.SerializeObject(game, Formatting.Indented, settings));
                 }
             }
+            return filePathName;
         }
 
         private void MergeDataFiles(string gameDataFile, string gameSensorFile)

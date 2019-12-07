@@ -12,9 +12,7 @@ namespace PathwayGames.Services.Slides
         void CalculateGameScoreAndStats(Game game);
         ResponseOutcome EvaluateSlideResponse(Game game, Slide slide);
         TimeSpan CalculateBlankSlideTimeLeft(Slide slide);
-        Game Load(string fileName);
         ConfusionMatrix CalculateConfusionMatrix(List<Slide> slides);
-        void FinalizeGame(Game game);
-        string Save(Game game);
+        string EndGame(Game game, string sensorDataFile);
     }
 }
