@@ -1,8 +1,5 @@
 ﻿using PathwayGames.Models;
 using PathwayGames.Services.User;
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.IO;
 using System.Threading.Tasks;
@@ -15,9 +12,9 @@ namespace PathwayGames.ViewModels
     public class SessionDataViewModel : ViewModelBase
     {
         readonly IUserService _userService;
-        private IList<UserGameSession> _gameSessions;
+        private ObservableCollection<UserGameSession> _gameSessions;
 
-        public IList<UserGameSession> GameSessions
+        public ObservableCollection<UserGameSession> GameSessions
         {
             get => _gameSessions;
             set => SetProperty(ref _gameSessions, value);
@@ -69,23 +66,30 @@ namespace PathwayGames.ViewModels
 
         public async Task ExportGameData()
         {
-            DialogService.ShowLoading("Generating package …");
-            string fileName = _userService.PackUserGameSessions(_gameSessions);
-
-            await Share.RequestAsync(new ShareFileRequest
+            if (!IsBusy)
             {
-                Title = "Share results",
-                File = new ShareFile(fileName)
-            });
-
-            DialogService.HideLoading();
+                IsBusy = true;
+                DialogService.ShowLoading("Generating package …");
+                string fileName = _userService.PackUserGameSessions(_gameSessions);
+                await Share.RequestAsync(new ShareFileRequest
+                {
+                    Title = "Share results",
+                    File = new ShareFile(fileName)
+                });
+                DialogService.HideLoading();
+                IsBusy = false;
+            }
         }
 
         public async Task DeleteGameSession(UserGameSession userGameSession)
         {
-            bool confirmed = await DialogService.ShowConfirmAsync("Delete session data?", "Delete", "Ok", "Cancel");
+            bool confirmed = await DialogService.ShowConfirmAsync("You cannot undo this action", 
+                "Do you want to delete this session data?", "Ok", "Cancel");
             if (confirmed)
+            {
                 await _userService.DeleteGameSession(userGameSession);
+                GameSessions.Remove(userGameSession);
+            }
         }
 
         public SessionDataViewModel(IUserService userService)
@@ -100,12 +104,12 @@ namespace PathwayGames.ViewModels
             {
                 Title = "Session data - " + App.SelectedUser.UserName;
                 // Show current selected users game sessions
-                GameSessions = await _userService.GetUserGameSessions(App.SelectedUser.Id);
+                GameSessions = new ObservableCollection<UserGameSession>(await _userService.GetUserGameSessions(App.SelectedUser.Id));
             } else {
                 User user = navigationData as User;
                 Title = "Session data - " + user.UserName;
                 // Show users game sessions
-                GameSessions = await _userService.GetUserGameSessions(user.Id);
+                GameSessions = new ObservableCollection<UserGameSession>(await _userService.GetUserGameSessions(user.Id));
             }
             DialogService.HideLoading();
         }
