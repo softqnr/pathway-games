@@ -34,10 +34,10 @@
                         <Label Text="{Binding DateStarted, Mode=OneWay, StringFormat='{}{0:dd/MM/yyyy}'}" FontSize="Small"/>
                     </StackLayout>
                     <Button Text="{StaticResource IconJson}" VerticalOptions="Start" Grid.Row="0" Grid.Column="1" FontFamily="{StaticResource MaterialFontFamily}" FontSize="32"
-                            Command="{Binding BindingContext.GameDataCommand, Source={x:Reference self}}" CommandParameter="{Binding GameDataFile}" Margin="10" />
+                            Command="{Binding BindingContext.GameDataCommand, Source={x:Reference self}}" CommandParameter="{Binding GameDataFile}" Margin="10" TextColor="Black" />
                     <Button Text="{StaticResource IconDelete}" VerticalOptions="Start" Grid.Row="0" Grid.Column="2" FontFamily="{StaticResource MaterialFontFamily}" FontSize="32"
-                            Command="{Binding BindingContext.DeleteGameSessionCommand, Source={x:Reference self}}" CommandParameter="{Binding .}" Margin="10" TextColor="Gray"
-                            />
+                            Command="{Binding BindingContext.DeleteGameSessionCommand, Source={x:Reference self}}" CommandParameter="{Binding .}" Margin="10" TextColor="Black"
+                            IsVisible="{Binding Source={x:Static local:App.SelectedUser},Path=IsAdmin}"/>
                 </Grid>
             </DataTemplate>
         </CollectionView.ItemTemplate>

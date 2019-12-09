@@ -9,7 +9,7 @@ namespace PathwayGames.ViewModels
 {
     public class UserFormViewModel : ViewModelBase
     {
-        private IUserService _userService;
+        private readonly IUserService _userService;
         private string _userName;
 
         public string UserName

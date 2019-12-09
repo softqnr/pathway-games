@@ -1,15 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:b="clr-namespace:PathwayGames.Behaviors"
-             xmlns:c="clr-namespace:PathwayGames.Converters"
+             xmlns:local="clr-namespace:PathwayGames"
              xmlns:controls="clr-namespace:PathwayGames.Controls"
              x:Class="PathwayGames.Views.UsersView"
              x:Name="self"
-             Title="Users">
+             Title="Users"
+             Visual="Material">
     <ContentPage.ToolbarItems>
         <controls:HideableToolbarItem Command="{Binding AddCommand}" 
-                                      IsVisible="{Binding CurrentUserIsAdmin}">
+                                      IsVisible="{Binding Source={x:Static local:App.SelectedUser},Path=IsAdmin}">
             <controls:HideableToolbarItem.IconImageSource>
                 <FontImageSource
                         FontFamily="{StaticResource MaterialFontFamily}"
@@ -45,20 +45,20 @@
                         <Grid Padding="0,5,0,5">
                             <Grid.ColumnDefinitions>
                                 <ColumnDefinition Width="*"/>
-                                <ColumnDefinition Width="90"/>
-                                <ColumnDefinition Width="90"/>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="Auto"/>
                             </Grid.ColumnDefinitions>
                             <StackLayout Orientation="Vertical" HeightRequest="60" Grid.Row="0" Grid.Column="0">
                                 <Label Text="{Binding UserName}" FontAttributes="Bold"/>
                                 <Label Text="{Binding UserType}" TextColor="Gray"/>
                             </StackLayout>
                             
-                            <Button Grid.Row="0" Grid.Column="1" HorizontalOptions="End" Text="Select" WidthRequest="80"
-                                    Command="{Binding BindingContext.UserSelectedCommand, Source={x:Reference self}}"
+                            <Button Grid.Row="0" Grid.Column="1" HorizontalOptions="End" Text="Select"
+                                    Command="{Binding BindingContext.UserSelectedCommand, Source={x:Reference self}}" Margin="10" TextColor="Black"
                                     CommandParameter="{Binding .}"/>
 
-                            <Button Grid.Row="0" Grid.Column="2" HorizontalOptions="End" Text="Sessions" WidthRequest="80"
-                                    Command="{Binding BindingContext.GotoUserSessionsCommand, Source={x:Reference self}}"
+                            <Button Grid.Row="0" Grid.Column="2" HorizontalOptions="End" Text="{StaticResource IconJson}" FontFamily="{StaticResource MaterialFontFamily}" FontSize="32"
+                                    Command="{Binding BindingContext.GotoUserSessionsCommand, Source={x:Reference self}}" Margin="10" TextColor="Black"
                                     CommandParameter="{Binding .}"/>
                         </Grid>
                     </DataTemplate>

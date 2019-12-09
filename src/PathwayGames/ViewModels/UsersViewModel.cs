@@ -10,19 +10,10 @@ namespace PathwayGames.ViewModels
 {
     public class UsersViewModel : ViewModelBase
     {
-        private IUserService _userService;
+        private readonly IUserService _userService;
         private IList<User> _users;
-        private bool _currentUserIsAdmin;
-
-        public bool CurrentUserIsAdmin
-        {
-            get => _currentUserIsAdmin;
-            set => SetProperty(ref _currentUserIsAdmin, value);
-        }
 
         public string SelectedUserType { get; set; } = "All";
-
-        //public ObservableCollection<User> Users { get; } = new ObservableCollection<User>();
 
         public IList<User> Users
         {
@@ -95,7 +86,6 @@ namespace PathwayGames.ViewModels
                 {
                     Models.User user = await _userService.SetSelectedUser(selectedUser);
                     App.SelectedUser = user;
-                    CurrentUserIsAdmin = user.IsAdmin;
 
                     DialogService.ShowToast($"Selected user changed to {user.UserName}");
                     // Notify listeners
@@ -117,7 +107,6 @@ namespace PathwayGames.ViewModels
         public UsersViewModel(IUserService userService)
         {
             _userService = userService;
-            CurrentUserIsAdmin = App.SelectedUser.IsAdmin;
         }
 
         public override async Task InitializeAsync(object navigationData)

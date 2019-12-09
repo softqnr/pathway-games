@@ -35,10 +35,12 @@
             <x:String x:Key="IconEye">&#xf208;</x:String>
             <x:String x:Key="IconEyeOff">&#xf209;</x:String>
             <x:String x:Key="IconChevronLeft">&#xf141;</x:String>
-            <x:String x:Key="IconSave">&#xe193;</x:String>
+            <x:String x:Key="IconSave">&#xf193;</x:String>
             <x:String x:Key="IconHamburger">&#xf35c;</x:String>
             <x:String x:Key="IconPlus">&#xf415;</x:String>
-  
+            <x:String x:Key="IconCheck">&#xf854;</x:String>
+            <x:String x:Key="IconUnChecked">&#xf855;</x:String>
+
             <OnPlatform x:Key="MaterialFontFamily" x:TypeArguments="x:String">
                 <On Platform="iOS" Value="Material Design Icons" />
                 <On Platform="Android" Value="materialdesignicons-webfont.ttf#Material Design Icons" />

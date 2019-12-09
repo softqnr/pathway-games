@@ -5,7 +5,6 @@
              xmlns:g="clr-namespace:PathwayGames.Gestures;assembly=PathwayGames"
              xmlns:c="clr-namespace:PathwayGames.Controls"
              xmlns:b="clr-namespace:PathwayGames.Behaviors;assembly=PathwayGames"
-             xmlns:ffimageloading="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
              x:Name="GamePage"
              x:Class="PathwayGames.Views.GameView"
              Visual="Material" BackgroundColor="White"
@@ -13,7 +12,7 @@
 
     <NavigationPage.TitleView>
         <StackLayout Orientation="Horizontal" VerticalOptions="CenterAndExpand" Spacing="10">
-            <Image Source="logo.png" HorizontalOptions="Center" />
+            <Image Source="logo.png" HorizontalOptions="EndAndExpand" />
             <Label Text="{Binding Title}" FontSize="16" FontAttributes="Bold" TextColor="Black" HorizontalOptions="CenterAndExpand" VerticalTextAlignment="Center" />
             <Image Source="{Binding EyeGazeIconImageSource}" HeightRequest="20" HorizontalOptions="End" />
             <Image Source="{Binding EEGIconImageSource}" HeightRequest="20" HorizontalOptions="End" />
