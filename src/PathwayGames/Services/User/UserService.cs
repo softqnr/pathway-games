@@ -110,8 +110,8 @@ namespace PathwayGames.Services.User
             {
                 foreach (var gameSession in gameSessions)
                 {
-                    zip.CreateEntryFromFile(Path.Combine(App.LocalStorageDirectory, gameSession.SensorDataFile)
-                        , gameSession.SensorDataFile
+                    zip.CreateEntryFromFile(Path.Combine(App.LocalStorageDirectory, gameSession.GameDataFile)
+                        , gameSession.GameDataFile
                         , CompressionLevel.Optimal);
                 }
             }
@@ -121,7 +121,7 @@ namespace PathwayGames.Services.User
 
         public async Task DeleteGameSession(UserGameSession gameSession)
         {
-            string sensorDataFile = Path.Combine(App.LocalStorageDirectory, gameSession.SensorDataFile);
+            string sensorDataFile = Path.Combine(App.LocalStorageDirectory, gameSession.GameDataFile);
 
             if (File.Exists(sensorDataFile))
                 File.Delete(sensorDataFile);

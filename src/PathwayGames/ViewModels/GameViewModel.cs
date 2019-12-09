@@ -17,18 +17,14 @@ namespace PathwayGames.ViewModels
 {
     public class GameViewModel : ViewModelBase
     {
-        private GameType _gameType;
-        private Game _game;
-        private UserGameSettings _gameSettings;
-        
         // Services
         private readonly ISlidesService _slidesService;
         private readonly IUserService _userService;
         private readonly ISensorLogWriterService _sensorLowWriterService;
         private readonly ISoundService _soundService;
 
+        private Game _game;
         private bool _paused;
-        private bool _sensorRecording;
         private int? _slideIndex;
         private int? _slideCount;
         private int _imageGridColumns = 1;
@@ -73,10 +69,10 @@ namespace PathwayGames.ViewModels
             set => SetProperty(ref _imageGridColumns, value);
         }
 
-        public bool SensorRecording
+        public Game Game
         {
-            get => _sensorRecording;
-            set => SetProperty(ref _sensorRecording, value);
+            get => _game;
+            private set => SetProperty(ref _game, value);
         }
 
         public string UserName
@@ -126,17 +122,6 @@ namespace PathwayGames.ViewModels
             }
         }
 
-        //public ICommand SlideAppearedCommand
-        //{
-        //    get
-        //    {
-        //        return new Command(async () =>
-        //        {
-        //            await OnSlideAppeared();
-        //        });
-        //    }
-        //}
-
         //CTor
         public GameViewModel(ISlidesService slidesService,
             IUserService userService,
@@ -156,7 +141,6 @@ namespace PathwayGames.ViewModels
             // Create StateMachine
             StateMachine = new SlideStateMachine
             (
-                createGameAction: async () => await CreateGameAndStart(),
                 startGameAction: async () => await StartGame(),
                 nextSlideAction: async () => await GotoNextSlide(),
                 evaluateSlideResponseAction: async () => await EvaluateResponse(),
@@ -244,7 +228,7 @@ namespace PathwayGames.ViewModels
                 blankSlideTime = _slidesService.CalculateBlankSlideTimeLeft(CurrentSlide);
                 _cts.Cancel();
             }
-            CurrentSlide = _slidesService.GetRandomRewardSlide(_gameSettings.RewardDisplayDuration);
+            CurrentSlide = _slidesService.GetRandomRewardSlide(_game.GameSettings.RewardDisplayDuration);
             // Set span to 1 to display reward slide
             int GameImageGridColumns = ImageGridColumns;
             SlideImages = null;
@@ -311,10 +295,10 @@ namespace PathwayGames.ViewModels
             CurrentSlide.SlideHidden = DateTime.Now;
         }
 
-        public async Task CreateGameAndStart()
+        public async Task CreateGameAndStart(GameType gameType, UserGameSettings userGameSettings)
         {
             // Create game
-            _game = _slidesService.Generate(_gameType, _gameSettings, App.SelectedUser.Id, App.SelectedUser.UserName, _seed);
+            _game = _slidesService.Generate(gameType, userGameSettings, App.SelectedUser.Id, App.SelectedUser.UserName, _seed);
             SlideIndex = 0;
             SlideCount = _game.Slides.Count;
 
@@ -345,7 +329,8 @@ namespace PathwayGames.ViewModels
         {
             System.Diagnostics.Debug.WriteLine("({0}) - {1:HH:mm:ss.fff}", "EndGame()", DateTime.Now);
             // Set sensor data filename
-            string sensorDataFile = StopSensorRecording();
+            _sensorLowWriterService.Stop();
+            string sensorDataFile = _sensorLowWriterService.LogFile;
             // End game session
             _slidesService.EndGame(_game, sensorDataFile);
             // Save game session to db
@@ -360,14 +345,6 @@ namespace PathwayGames.ViewModels
             _sensorLowWriterService.LogSuffix = "] ";
 
             _sensorLowWriterService.Start($"sensor_{Guid.NewGuid().ToString()}.json", ",");
-            SensorRecording = true;
-        }
-
-        private string StopSensorRecording()
-        {
-            SensorRecording = false;
-            _sensorLowWriterService.Stop();
-            return _sensorLowWriterService.LogFile;
         }
 
         private void SaveResponse(Point p)
@@ -382,22 +359,21 @@ namespace PathwayGames.ViewModels
             if (navigationData != null &&
                 Enum.TryParse<GameType>(navigationData.ToString(), out var gameType))
             {
-                _gameType = gameType;
-                Title = $"{_gameType.ToString()} Game";
+                Title = $"{gameType.ToString()} Game";
 
                 // Read User Game Settings
-                _gameSettings = await _userService.GetUserSettings(App.SelectedUser.Id);
+                UserGameSettings userGameSettings = await _userService.GetUserSettings(App.SelectedUser.Id);
 
                 // Set grid columns for images
                 if (gameType == GameType.SeekX)
                 {
-                    ImageGridColumns = _gameSettings.SeekGridOptions.GridColumns;
+                    ImageGridColumns = userGameSettings.SeekGridOptions.GridColumns;
                 }
                 // Set sensor icons
-                EyeGazeIconImageSource = ImageSource.FromFile(_gameSettings.EyeGazeSensor ? "icon_eye.png" : "icon_eye_off.png");
-                EEGIconImageSource = ImageSource.FromFile(_gameSettings.EEGSensor ? "icon_head.png" : "icon_head_off.png");
+                EyeGazeIconImageSource = ImageSource.FromFile(userGameSettings.EyeGazeSensor ? "icon_eye.png" : "icon_eye_off.png");
+                EEGIconImageSource = ImageSource.FromFile(userGameSettings.EEGSensor ? "icon_head.png" : "icon_head_off.png");
 
-                await CreateGameAndStart();
+                await CreateGameAndStart(gameType, userGameSettings);
             }
         }
 
@@ -407,8 +383,8 @@ namespace PathwayGames.ViewModels
             if (StateMachine.State != States.End)
             {
                 StateMachine.Fire(Triggers.Exit);
+                _sensorLowWriterService.Cancel();
             }
-            _sensorLowWriterService.Cancel();
         }
 
         private void NavigateToResultsView()

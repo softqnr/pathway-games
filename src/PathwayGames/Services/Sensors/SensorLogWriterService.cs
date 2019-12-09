@@ -104,13 +104,15 @@ namespace PathwayGames.Services.Sensors
 
         public void Cancel()
         {
+            if (IsMonitoring)
+            {
+                IsMonitoring = false;
+                LogQueue.Clear();
+                if (File.Exists(LogFilePath))
+                    File.Delete(LogFilePath);
 
-            IsMonitoring = false;
-            LogQueue.Clear();
-            if (File.Exists(LogFilePath))
-                File.Delete(LogFilePath);
-
-            LogFile = "";
+                LogFile = "";
+            }
         }
 
         public void ForceFlush()

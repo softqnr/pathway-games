@@ -44,13 +44,31 @@
                         </c:UniformImageGrid>
                         </Frame>
                     </Frame>
-                
-                <Image Source="button.jpg" x:Name="Button"  g:Gesture.Tapped="{Binding ButtonTappedCommand}" Margin="0"
-                   WidthRequest="160" VerticalOptions="End" HorizontalOptions="Center">
-                    <Image.Behaviors>
-                        <b:ViewTappedButtonBehavior AnimationType="Fade" />
-                    </Image.Behaviors>
-                </Image>
+
+                <ImageButton Source="button.png" g:Gesture.Tapped="{Binding ButtonTappedCommand}" x:Name="BuzzerButton"
+                    BackgroundColor="Transparent"
+                    WidthRequest="160"
+                    HeightRequest="160"
+                    VerticalOptions="End" 
+                    HorizontalOptions="Center"
+                    Aspect="AspectFit">
+                    <VisualStateManager.VisualStateGroups>
+                        <VisualStateGroup x:Name="CommonStates">
+                            <VisualState x:Name="Normal">
+                                <VisualState.Setters>
+                                    <Setter Property="Source" Value="button.png"/>
+                                </VisualState.Setters>
+                            </VisualState>
+
+                            <VisualState x:Name="Pressed">
+                                <VisualState.Setters>
+                                    <Setter Property="Source" Value="button_pressed.png"/>
+                                </VisualState.Setters>
+                            </VisualState>
+
+                        </VisualStateGroup>
+                    </VisualStateManager.VisualStateGroups>
+                </ImageButton>
             </StackLayout>
 
             <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Grid.Column="0" Grid.Row="1">

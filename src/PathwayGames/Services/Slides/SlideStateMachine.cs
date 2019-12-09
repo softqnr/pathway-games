@@ -24,8 +24,7 @@ namespace PathwayGames.Services.Slides
         private readonly TriggerWithParameters<double> _showBlankTrigger;
         private readonly TriggerWithParameters<double> _showBlankCancelableTrigger;
 
-        public SlideStateMachine(Func<Task> createGameAction,
-            Func<Task> startGameAction,
+        public SlideStateMachine(Func<Task> startGameAction,
             Func<Task> nextSlideAction,
             Func<Task> evaluateSlideResponseAction,
             Func<double, Task> blankSlideAction,

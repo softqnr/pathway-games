@@ -185,18 +185,6 @@
     <BundleResource Include="Resources\ding.mp3" />
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\button.jpg">
-      <Generator>MSBuild:UpdateGeneratedFiles</Generator>
-      <SubType>Designer</SubType>
-    </BundleResource>
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\button_pressed.jpg">
-      <Generator>MSBuild:UpdateGeneratedFiles</Generator>
-      <SubType>Designer</SubType>
-    </BundleResource>
-  </ItemGroup>
-  <ItemGroup>
     <BundleResource Include="Resources\hamburger.png">
       <Generator>MSBuild:UpdateGeneratedFiles</Generator>
       <SubType>Designer</SubType>
@@ -363,5 +351,11 @@
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\backpack.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\button_pressed.png" />
   </ItemGroup>
 </Project>

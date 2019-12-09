@@ -176,29 +176,29 @@ namespace PathwayGames.Services.Slides
             return new ConfusionMatrix(slides);
         }
 
-        public string EndGame(Game game, string sensorDataFile)
+        public void EndGame(Game game, string sensorDataFile)
         {
             game.SessionData.EndDate = DateTime.Now;
             // Calculate game stats
             CalculateGameScoreAndStats(game);
             // Calculate engangement
             game.Outcome.ConfusionMatrix = CalculateConfusionMatrix(game.Slides);
-            
+
             // Save to Json
-            string filePathName = SaveGameToJson(game);
+            game.GameDataFile = $"{Guid.NewGuid().ToString()}.json";
+            SaveGameToJson(game);
 
             // Merge sensor data
             if (sensorDataFile != "")
             {
-                MergeDataFiles(filePathName, Path.Combine(App.LocalStorageDirectory, sensorDataFile));
+                MergeDataFiles(Path.Combine(App.LocalStorageDirectory, game.GameDataFile)
+                    , Path.Combine(App.LocalStorageDirectory, sensorDataFile));
             }
-
-            return filePathName;
         }
 
         private string SaveGameToJson(Game game)
         {
-            string filePathName = Path.Combine(App.LocalStorageDirectory, $"{Guid.NewGuid().ToString()}.json");
+            string filePathName = Path.Combine(App.LocalStorageDirectory, game.GameDataFile);
             using (var file = File.Open(filePathName, FileMode.Create, FileAccess.Write))
             {
                 using (var sw = new StreamWriter(file, new UTF8Encoding(false)))

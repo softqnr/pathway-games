@@ -29,13 +29,13 @@ namespace PathwayGames.Views
             switch (orientation)
             {
                 case DisplayOrientation.Portrait:
-                    Button.VerticalOptions = LayoutOptions.End;
-                    Button.Margin = new Thickness(0);
+                    BuzzerButton.VerticalOptions = LayoutOptions.End;
+                    BuzzerButton.Margin = new Thickness(0);
                     GameSection.Orientation = StackOrientation.Vertical;
                     break;
                 case DisplayOrientation.Landscape:
-                    Button.VerticalOptions = LayoutOptions.Center;
-                    Button.Margin = new Thickness(0,0,12,0);
+                    BuzzerButton.VerticalOptions = LayoutOptions.Center;
+                    BuzzerButton.Margin = new Thickness(0,0,12,0);
                     GameSection.Orientation = StackOrientation.Horizontal;
                     break;
             }
