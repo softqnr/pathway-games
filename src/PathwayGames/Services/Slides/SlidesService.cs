@@ -185,7 +185,6 @@ namespace PathwayGames.Services.Slides
             game.Outcome.ConfusionMatrix = CalculateConfusionMatrix(game.Slides);
 
             // Save to Json
-            game.GameDataFile = $"{Guid.NewGuid().ToString()}.json";
             SaveGameToJson(game);
 
             // Merge sensor data
@@ -193,11 +192,14 @@ namespace PathwayGames.Services.Slides
             {
                 MergeDataFiles(Path.Combine(App.LocalStorageDirectory, game.GameDataFile)
                     , Path.Combine(App.LocalStorageDirectory, sensorDataFile));
+
+                File.Delete(Path.Combine(App.LocalStorageDirectory, sensorDataFile));
             }
         }
 
         private string SaveGameToJson(Game game)
         {
+            game.GameDataFile = $"{Guid.NewGuid().ToString()}.json";
             string filePathName = Path.Combine(App.LocalStorageDirectory, game.GameDataFile);
             using (var file = File.Open(filePathName, FileMode.Create, FileAccess.Write))
             {
