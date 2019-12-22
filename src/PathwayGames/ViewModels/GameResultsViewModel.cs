@@ -5,13 +5,18 @@ using System.Windows.Input;
 using Xamarin.Forms;
 using System.IO;
 using Xamarin.Essentials;
+using PathwayGames.Services.User;
+using PathwayGames.Infrastructure.Navigation;
 
 namespace PathwayGames.ViewModels
 {
     public class GameResultsViewModel : ViewModelBase
     {
         private Game _game;
+        private UserGameSession _userGameSession;
+
         private readonly IExcelService _excelService;
+        private readonly IUserService _userService;
 
         public Game Game
         {
@@ -41,9 +46,21 @@ namespace PathwayGames.ViewModels
             }
         }
 
-        public GameResultsViewModel(IExcelService excelService)
+        public ICommand DeleteSessionCommand
+        {
+            get
+            {
+                return new Command(async () =>
+                {
+                    await DeleteSession();
+                });
+            }
+        }
+
+        public GameResultsViewModel(IExcelService excelService, IUserService userService)
         {
             _excelService = excelService;
+            _userService = userService;
         }
             
         private async Task GenerateAndShareExcelAsync()
@@ -71,11 +88,24 @@ namespace PathwayGames.ViewModels
             });
         }
 
+        private async Task DeleteSession()
+        {
+            bool confirmed = await DialogService.ShowConfirmAsync("You cannot undo this action",
+                "Do you want to delete this session data?", "Ok", "Cancel");
+            if (confirmed)
+            {
+                await _userService.DeleteGameSession(_userGameSession);
+                await NavigationService.NavigateBackAsync();
+            }
+        }
+
         public override async Task InitializeAsync(object navigationData)
         {
             if (navigationData != null)
             {
-                Game = navigationData as Game;
+                var p = navigationData as NavigationParameters;
+                Game = (Game)p.GetValue("game");
+                _userGameSession = (UserGameSession)p.GetValue("game_session");
             }
             await Task.FromResult(true);
         }

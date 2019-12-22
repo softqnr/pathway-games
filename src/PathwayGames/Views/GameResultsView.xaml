@@ -94,6 +94,7 @@
             </StackLayout>
             <Button Command="{Binding GameDataCommand}" Text="Game data" />
             <Button Command="{Binding ExportButtonCommand}" Text="Export results" />
+            <Button Command="{Binding DeleteSessionCommand}" Text="Delete session" BackgroundColor="Red" Margin="0,10,0,0" />
         </StackLayout>
     </ScrollView>
 </ContentPage>

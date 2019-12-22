@@ -1,4 +1,5 @@
-﻿using PathwayGames.Infrastructure.Sound;
+﻿using PathwayGames.Infrastructure.Navigation;
+using PathwayGames.Infrastructure.Sound;
 using PathwayGames.Models;
 using PathwayGames.Models.Enums;
 using PathwayGames.Sensors;
@@ -334,9 +335,9 @@ namespace PathwayGames.ViewModels
             // End game session
             _slidesService.EndGame(_game, sensorDataFile);
             // Save game session to db
-            await _userService.SaveGameSessionData(_game);
+            UserGameSession gameSession = await _userService.SaveGameSessionData(_game);
             // Go to results view
-            NavigateToResultsView();
+            NavigateToResultsView(gameSession);
         }
 
         private void StartSensorRecording()
@@ -387,13 +388,16 @@ namespace PathwayGames.ViewModels
             }
         }
 
-        private void NavigateToResultsView()
+        private void NavigateToResultsView(UserGameSession gameSession)
         {
             // If called from statemachine has to be run on main thread
             MainThread.BeginInvokeOnMainThread(async () =>
             {
+                NavigationParameters p = new NavigationParameters();
+                p.Add("game", _game);
+                p.Add("game_session", gameSession);
                 // Navigate to result view
-                await NavigationService.NavigateToAsync<GameResultsViewModel>(_game);
+                await NavigationService.NavigateToAsync<GameResultsViewModel>(p);
                 await NavigationService.RemoveLastFromBackStackAsync();
             });
         }

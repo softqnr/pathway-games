@@ -1,12 +1,12 @@
-﻿using PathwayGames.Models;
-using System.Threading.Tasks;
-using PathwayGames.Data;
-using System.Collections.Generic;
+﻿using PathwayGames.Data;
+using PathwayGames.Models;
 using PathwayGames.Models.Enums;
 using System;
-using Xamarin.Essentials;
-using System.IO.Compression;
+using System.Collections.Generic;
 using System.IO;
+using System.IO.Compression;
+using System.Threading.Tasks;
+using Xamarin.Essentials;
 
 namespace PathwayGames.Services.User
 {
@@ -52,11 +52,12 @@ namespace PathwayGames.Services.User
             return await _repositoryUser.GetAsync(user.Id);
         }
 
-        public async Task SaveGameSessionData(Game game)
+        public async Task<UserGameSession> SaveGameSessionData(Game game)
         {
             Models.User user = await _repositoryUser.GetWithChildrenAsync(game.SessionData.UserId);
-            var gameSession = user.AddGameSession(game, game.GameDataFile);
+            UserGameSession gameSession = user.AddGameSession(game, game.GameDataFile);
             await _repositoryUserGameSession.InsertAsync(gameSession);
+            return gameSession;
         }
 
         public async Task<IList<UserGameSession>> GetUserGameSessions(long userId)
