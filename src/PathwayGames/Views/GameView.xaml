@@ -12,9 +12,9 @@
     <NavigationPage.TitleView>
         <StackLayout Orientation="Horizontal" VerticalOptions="CenterAndExpand" Spacing="10">
             <Image Source="logo.png" HorizontalOptions="Start" />
-            <Label Text="{Binding Title}" FontSize="16" FontAttributes="Bold" TextColor="Black" HorizontalOptions="CenterAndExpand" VerticalTextAlignment="Center" />
-            <Image x:Name="EyeGazeIcon" Source="{Binding EyeGazeIconImageSource}" HeightRequest="20" HorizontalOptions="End" />
-            <Image x:Name="EEGIcon" Source="{Binding EEGIconImageSource}" HeightRequest="20" HorizontalOptions="End" />
+            <Label Text="{Binding Title}" FontSize="Header" FontAttributes="Bold" TextDecorations="Strikethrough" TextColor="Black" HorizontalOptions="CenterAndExpand" VerticalTextAlignment="Center" />
+            <Label x:Name="EyeGazeIcon" FontFamily="{StaticResource MaterialFontFamily}" FontSize="26" Text="{Binding EyeGazeIconGluph}" HeightRequest="28" HorizontalOptions="End" VerticalTextAlignment="Center" />
+            <Image x:Name="EEGIcon" Source="{Binding EEGIconImageSource}" HeightRequest="26" HorizontalOptions="End" />
         </StackLayout>
     </NavigationPage.TitleView>
 
@@ -88,6 +88,8 @@
                 </Label>
             </StackLayout>
             <c:FaceSensorView Grid.Column="0" Grid.Row="2" WidthRequest="96" HeightRequest="128" 
+                              TrackingStarted="FaceSensorView_TrackingStarted"
+                              TrackingStopped="FaceSensorView_TrackingStopped"
                               EyeGazeChangedCommand="{Binding EyeGazeChangedCommand}"
                               ShowCrosshair="True"
                               RecordingEnabled="True"

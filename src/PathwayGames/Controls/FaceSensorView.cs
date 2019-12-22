@@ -8,7 +8,9 @@ namespace PathwayGames.Controls
     public class FaceSensorView : View, IFaceSensor
     {
         public event EventHandler<FaceAnchorChangedEventArgs> EyeGazeChanged;
-
+        public event EventHandler<EventArgs> TrackingStarted;
+        public event EventHandler<EventArgs> TrackingStopped;
+        
         public static readonly BindableProperty EyeGazeChangedCommandProperty =
             BindableProperty.Create(nameof(EyeGazeChangedCommand), typeof(ICommand), typeof(FaceSensorView), null);
 
@@ -43,6 +45,16 @@ namespace PathwayGames.Controls
                 EyeGazeChanged?.Invoke(this, e);
                 EyeGazeChangedCommand?.Execute(e);
             }
+        }
+
+        void ISensor<FaceAnchorChangedEventArgs>.OnTrackingStarted(EventArgs e)
+        {
+            TrackingStarted?.Invoke(this, e);
+        }
+
+        void ISensor<FaceAnchorChangedEventArgs>.OnTrackingStopped(EventArgs e)
+        {
+            TrackingStopped?.Invoke(this, e);
         }
     }
 }

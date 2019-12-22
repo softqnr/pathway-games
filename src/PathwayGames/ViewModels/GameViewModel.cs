@@ -30,7 +30,7 @@ namespace PathwayGames.ViewModels
         private int? _slideCount;
         private int _imageGridColumns = 1;
         private IList<string> _slideImages;
-        private ImageSource _eyeGazeIconImageSource;
+        private string _eyeGazeIconGluph;
         private ImageSource _eegIconImageSource;
         private string _seed;
         private string _userName;
@@ -88,10 +88,10 @@ namespace PathwayGames.ViewModels
             set => SetProperty(ref _seed, value);
         }
 
-        public ImageSource EyeGazeIconImageSource
+        public string EyeGazeIconGluph
         {
-            get => _eyeGazeIconImageSource;
-            set => SetProperty(ref _eyeGazeIconImageSource, value);
+            get => _eyeGazeIconGluph;
+            set => SetProperty(ref _eyeGazeIconGluph, value);
         }
 
         public ImageSource EEGIconImageSource
@@ -371,7 +371,7 @@ namespace PathwayGames.ViewModels
                     ImageGridColumns = userGameSettings.SeekGridOptions.GridColumns;
                 }
                 // Set sensor icons
-                EyeGazeIconImageSource = ImageSource.FromFile(userGameSettings.EyeGazeSensor ? "icon_eye.png" : "icon_eye_off.png");
+                EyeGazeIconGluph = userGameSettings.EyeGazeSensor ? Application.Current.Resources["IconEye"].ToString() : Application.Current.Resources["IconEyeOff"].ToString();
                 EEGIconImageSource = ImageSource.FromFile(userGameSettings.EEGSensor ? "icon_head.png" : "icon_head_off.png");
 
                 await CreateGameAndStart(gameType, userGameSettings);

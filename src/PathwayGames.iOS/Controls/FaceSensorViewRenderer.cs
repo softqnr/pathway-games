@@ -6,6 +6,7 @@ using PathwayGames.Controls;
 using PathwayGames.iOS.Controls;
 using PathwayGames.iOS.Extensions;
 using PathwayGames.Sensors;
+using System;
 using UIKit;
 using Xamarin.Forms;
 using Xamarin.Forms.Platform.iOS;
@@ -17,7 +18,9 @@ namespace PathwayGames.iOS.Controls
     {
         private IFaceSensor sensor;
         private ARSCNView SceneView;
-     
+        private bool IsTracked;
+
+
         protected override void OnElementChanged(ElementChangedEventArgs<FaceSensorView> e)
         {
             base.OnElementChanged(e);
@@ -100,7 +103,9 @@ namespace PathwayGames.iOS.Controls
         }
 
         [Export("session:didUpdateFrame:")]
+#pragma warning disable IDE0060 // Remove unused parameter
         public void DidUpdateFrame(ARSession session, ARFrame frame)
+#pragma warning restore IDE0060 // Remove unused parameter
         {
             DispatchQueue.MainQueue.DispatchAsync(() =>
             {
@@ -108,14 +113,26 @@ namespace PathwayGames.iOS.Controls
                 {
                     if (anchor is ARFaceAnchor faceAnchor)
                     {
-                        // Log
-                        sensor.OnReadingTaken(new FaceAnchorChangedEventArgs(
-                            new FaceAnchorReading(frame.Timestamp, faceAnchor.Transform.ToFloatMatrix4(),
-                                faceAnchor.LeftEyeTransform.ToFloatMatrix4(),
-                                faceAnchor.RightEyeTransform.ToFloatMatrix4(),
-                                faceAnchor.LookAtPoint.ToFloatVector3(),
-                                faceAnchor.BlendShapes.ToDictionary()
-                            )));
+                        if (faceAnchor.IsTracked)
+                        {
+                            if (!IsTracked)
+                            {
+                                sensor.OnTrackingStarted(new EventArgs());
+                                IsTracked = true;
+                            }
+                            // Log
+                            sensor.OnReadingTaken(new FaceAnchorChangedEventArgs(
+                                new FaceAnchorReading(frame.Timestamp, faceAnchor.Transform.ToFloatMatrix4(),
+                                    faceAnchor.LeftEyeTransform.ToFloatMatrix4(),
+                                    faceAnchor.RightEyeTransform.ToFloatMatrix4(),
+                                    faceAnchor.LookAtPoint.ToFloatVector3(),
+                                    faceAnchor.BlendShapes.ToDictionary()
+                                )));
+                        }else if (IsTracked)
+                        {
+                            sensor.OnTrackingStopped(new EventArgs());
+                            IsTracked = false;
+                        }
                     }
                 }
                 // Important otherwise frame will not be disposed
