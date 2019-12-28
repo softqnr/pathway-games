@@ -130,9 +130,6 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\hamburger.png" />
-  </ItemGroup>
-  <ItemGroup>
     <AndroidResource Include="Resources\drawable\icon_engangement_high.png" />
   </ItemGroup>
   <ItemGroup>

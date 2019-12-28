@@ -26,6 +26,7 @@
             <x:String x:Key="IconSettings">&#xf8ba;</x:String>
             <x:String x:Key="IconJson">&#xf626;</x:String>
             <x:String x:Key="IconDownload">&#xf1da;</x:String>
+            <x:String x:Key="IconDownloadMultiple">&#xf9e8;</x:String>
             <x:String x:Key="IconPDF">&#xffd3;</x:String>
             <x:String x:Key="IconFileSend">&#xf005b;</x:String>
             <x:String x:Key="IconBrain">&#xf9d0;</x:String>

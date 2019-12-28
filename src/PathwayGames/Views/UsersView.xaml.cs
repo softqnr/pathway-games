@@ -9,6 +9,15 @@ namespace PathwayGames.Views
         public UsersView()
         {
             InitializeComponent();
+            Init();
+        }
+
+        public void Init()
+        {
+            if (!App.SelectedUser.IsAdmin)
+            {
+                ToolbarItems.Remove(AddUserButton);
+            }
         }
 
     }

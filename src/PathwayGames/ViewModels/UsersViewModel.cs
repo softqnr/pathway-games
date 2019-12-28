@@ -69,11 +69,7 @@ namespace PathwayGames.ViewModels
         {
             if (searchText != null)
             {
-                //Users.Clear();
-                //while (Users.Count > 0)
-                //    Users.RemoveAt(0);
                 // Do search
-                //foreach (var item in await _userService.GetByNameAndUserType(searchText, SelectedUserType)) Users.Add(item);
                 Users = await _userService.GetByNameAndUserType((string)searchText, SelectedUserType);
             }
         }
@@ -90,6 +86,11 @@ namespace PathwayGames.ViewModels
                     DialogService.ShowToast($"Selected user changed to {user.UserName}");
                     // Notify listeners
                     MessagingCenter.Send(user, "Selected");
+
+                    // Navigate back
+                    await NavigationService.NavigateBackAsync();
+                } else {
+                    DialogService.ShowToast($"User {App.SelectedUser.UserName} allready selected");
                 }
             }
         }

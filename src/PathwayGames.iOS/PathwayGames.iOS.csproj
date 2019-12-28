@@ -185,12 +185,6 @@
     <BundleResource Include="Resources\ding.mp3" />
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\hamburger.png">
-      <Generator>MSBuild:UpdateGeneratedFiles</Generator>
-      <SubType>Designer</SubType>
-    </BundleResource>
-  </ItemGroup>
-  <ItemGroup>
     <BundleResource Include="Resources\icon_engangement_absent.png">
       <Generator>MSBuild:UpdateGeneratedFiles</Generator>
       <SubType>Designer</SubType>

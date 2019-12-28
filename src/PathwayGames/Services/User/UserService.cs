@@ -120,6 +120,13 @@ namespace PathwayGames.Services.User
             return destinationZipFullPath;
         }
 
+        public async Task<string> PackAllUserGameSessions()
+        {
+            IList<UserGameSession> gameSessions = await _repositoryUserGameSession.GetAllAsync();
+
+            return PackUserGameSessions(gameSessions);
+        }
+
         public async Task DeleteGameSession(UserGameSession gameSession)
         {
             string sensorDataFile = Path.Combine(App.LocalStorageDirectory, gameSession.GameDataFile);

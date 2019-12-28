@@ -7,14 +7,22 @@
              Visual="Material"
              Title="{Binding Title}">
     <ContentPage.ToolbarItems>
-        <ToolbarItem Command="{Binding ExportDataCommand}">
+        <ToolbarItem Command="{Binding ExportUserDataCommand}" Order="Primary" Priority="0" Text="Pack">
             <ToolbarItem.IconImageSource>
                 <FontImageSource
                     FontFamily="{StaticResource MaterialFontFamily}"
                     Glyph="{StaticResource IconDownload}"
-                    Size="24" />    
+                    Size="24" />
             </ToolbarItem.IconImageSource>
         </ToolbarItem>
+        <ToolbarItem x:Name="ExportAllToolbarItem" Command="{Binding ExportAllUserDataCommand}" Order="Primary" Priority="1" Text="Pack all">
+            <ToolbarItem.IconImageSource>
+                <FontImageSource
+                    FontFamily="{StaticResource MaterialFontFamily}"
+                    Glyph="{StaticResource IconDownloadMultiple}"
+                    Size="24" />    
+            </ToolbarItem.IconImageSource>
+         </ToolbarItem>
     </ContentPage.ToolbarItems>
     
     <CollectionView x:Name="SessionDataList" ItemsSource="{Binding GameSessions}" Margin="5">

@@ -5,8 +5,14 @@
              xmlns:c="clr-namespace:PathwayGames.Converters"
              x:Class="PathwayGames.Views.MasterView"
              x:Name="MasterPage"
-             Title="Pathway+ Games"
-             Icon="hamburger.png">
+             Title="Pathway+ Games">
+    
+    <ContentPage.IconImageSource>
+        <FontImageSource
+                    FontFamily="{StaticResource MaterialFontFamily}"
+                    Glyph="{StaticResource IconHamburger}" />
+    </ContentPage.IconImageSource>
+    
     <ContentPage.Resources>
         <ResourceDictionary>
             <c:ItemTappedEventArgsConverter x:Key="ItemTappedConverter" />
@@ -51,7 +57,7 @@
                                 </FormattedString>
                             </Label.FormattedText>
                     </Label>
-                    <Label TextColor="White" Grid.Column="1" Grid.Row="3" FontAttributes="Bold" >
+                    <Label TextColor="White" Grid.Column="1" Grid.Row="3" FontAttributes="Bold" HorizontalOptions="Center">
                         <Label.FormattedText>
                             <FormattedString>
                                 <Span Text="{Binding BindingContext.User.UserName, Source={x:Reference MasterPage}}" />

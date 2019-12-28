@@ -19,6 +19,8 @@ namespace PathwayGames.Services.User
 
         string PackUserGameSessions(IList<UserGameSession> gameSessions);
 
+        Task<string> PackAllUserGameSessions();
+
         Task<UserGameSettings> GetUserSettings(long userId);
 
         Task UpdateUserSettings(UserGameSettings gameSettings);

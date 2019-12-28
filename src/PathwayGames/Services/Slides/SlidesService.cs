@@ -19,11 +19,12 @@ namespace PathwayGames.Services.Slides
         const string BContrastImage = "backpack.jpg";
         readonly string[] RewardSlideImages = new[] { "reward_animation_wow.gif" };
         const string RewardSound = "success.mp3";
+        const int SeedLength = 5;
 
-    public Game Generate(GameType gameType, UserGameSettings gameSettings, long userId, string userName, string seed)
+        public Game Generate(GameType gameType, UserGameSettings gameSettings, long userId, string userName, string seed)
         {
            if (string.IsNullOrWhiteSpace(seed))
-                seed = CreateRandomSeed();
+                seed = ThreadSafeRandom.CreateRandomString(SeedLength);
 
             // Create game
             Game game = new Game(gameType, gameSettings, userId, userName, seed);
@@ -71,12 +72,12 @@ namespace PathwayGames.Services.Slides
             int typeXSlideCount = (int)(gameSettings.SlideCount * 0.7);
             for (int i = 0; i < typeXSlideCount; i++)
             {
-                SlideCollection.Add(new Slide(SlideType.X, gameSettings.SlideDisplayDuration, XSlideImage, GetRandomNumber(gameSettings.BlankSlideDisplayTimes)));
+                SlideCollection.Add(new Slide(SlideType.X, gameSettings.SlideDisplayDuration, XSlideImage, ThreadSafeRandom.GetRandomNumber(gameSettings.BlankSlideDisplayTimes)));
             }
             // DistractorY
             for (int i = 0; i < gameSettings.SlideCount - typeXSlideCount; i++)
             {
-                SlideCollection.Add(new Slide(SlideType.Y, gameSettings.SlideDisplayDuration, YDistractorSlideImage, GetRandomNumber(gameSettings.BlankSlideDisplayTimes)));
+                SlideCollection.Add(new Slide(SlideType.Y, gameSettings.SlideDisplayDuration, YDistractorSlideImage, ThreadSafeRandom.GetRandomNumber(gameSettings.BlankSlideDisplayTimes)));
             }
             // Generate random number generator
             Random random = new Random(seed.GetHashCode());
@@ -91,26 +92,26 @@ namespace PathwayGames.Services.Slides
             // AX
             for (int i = 0; i < (int)gameSettings.SlideCount * 0.7; i++)
             {
-                SlideCollection.Add(new Slide(SlideType.A, gameSettings.SlideDisplayDuration, "alex_the_alien.jpg", GetRandomNumber(gameSettings.BlankSlideDisplayTimes)));
-                SlideCollection.Add(new Slide(SlideType.X, gameSettings.SlideDisplayDuration, XSlideImage, GetRandomNumber(gameSettings.BlankSlideDisplayTimes)));
+                SlideCollection.Add(new Slide(SlideType.A, gameSettings.SlideDisplayDuration, "alex_the_alien.jpg", ThreadSafeRandom.GetRandomNumber(gameSettings.BlankSlideDisplayTimes)));
+                SlideCollection.Add(new Slide(SlideType.X, gameSettings.SlideDisplayDuration, XSlideImage, ThreadSafeRandom.GetRandomNumber(gameSettings.BlankSlideDisplayTimes)));
             }
             // BY
             for (int i = 0; i < (int)gameSettings.SlideCount * 0.1; i++)
             {
-                SlideCollection.Add(new Slide(SlideType.B, gameSettings.SlideDisplayDuration, "alex_the_alien.jpg", GetRandomNumber(gameSettings.BlankSlideDisplayTimes)));
-                SlideCollection.Add(new Slide(SlideType.Y, gameSettings.SlideDisplayDuration, YDistractorSlideImage, GetRandomNumber(gameSettings.BlankSlideDisplayTimes)));
+                SlideCollection.Add(new Slide(SlideType.B, gameSettings.SlideDisplayDuration, "alex_the_alien.jpg", ThreadSafeRandom.GetRandomNumber(gameSettings.BlankSlideDisplayTimes)));
+                SlideCollection.Add(new Slide(SlideType.Y, gameSettings.SlideDisplayDuration, YDistractorSlideImage, ThreadSafeRandom.GetRandomNumber(gameSettings.BlankSlideDisplayTimes)));
             }
             // AY
             for (int i = 0; i < (int)gameSettings.SlideCount * 0.1; i++)
             {
-                SlideCollection.Add(new Slide(SlideType.A, gameSettings.SlideDisplayDuration, "alex_the_alien.jpg", GetRandomNumber(gameSettings.BlankSlideDisplayTimes)));
-                SlideCollection.Add(new Slide(SlideType.Y, gameSettings.SlideDisplayDuration, YDistractorSlideImage, GetRandomNumber(gameSettings.BlankSlideDisplayTimes)));
+                SlideCollection.Add(new Slide(SlideType.A, gameSettings.SlideDisplayDuration, "alex_the_alien.jpg", ThreadSafeRandom.GetRandomNumber(gameSettings.BlankSlideDisplayTimes)));
+                SlideCollection.Add(new Slide(SlideType.Y, gameSettings.SlideDisplayDuration, YDistractorSlideImage, ThreadSafeRandom.GetRandomNumber(gameSettings.BlankSlideDisplayTimes)));
             }
             // BX
             for (int i = 0; i < (int)gameSettings.SlideCount * 0.1; i++)
             {
-                SlideCollection.Add(new Slide(SlideType.B, gameSettings.SlideDisplayDuration, "alex_the_alien.jpg", GetRandomNumber(gameSettings.BlankSlideDisplayTimes)));
-                SlideCollection.Add(new Slide(SlideType.X, gameSettings.SlideDisplayDuration, XSlideImage, GetRandomNumber(gameSettings.BlankSlideDisplayTimes)));
+                SlideCollection.Add(new Slide(SlideType.B, gameSettings.SlideDisplayDuration, "alex_the_alien.jpg", ThreadSafeRandom.GetRandomNumber(gameSettings.BlankSlideDisplayTimes)));
+                SlideCollection.Add(new Slide(SlideType.X, gameSettings.SlideDisplayDuration, XSlideImage, ThreadSafeRandom.GetRandomNumber(gameSettings.BlankSlideDisplayTimes)));
             }
 
             // Generate random number generator
@@ -128,15 +129,15 @@ namespace PathwayGames.Services.Slides
             for (int i = 0; i < typeXSlideCount; i++)
             {
                 SlideCollection.Add(new Slide(SlideType.X, gameSettings.SlideDisplayDuration,
-                    GenerateSeekXImageSequence(gameSettings.SeekGridOptions, true), 
-                    GetRandomNumber(gameSettings.BlankSlideDisplayTimes)));
+                    GenerateSeekXImageSequence(gameSettings.SeekGridOptions, true),
+                    ThreadSafeRandom.GetRandomNumber(gameSettings.BlankSlideDisplayTimes)));
             }
             // DistractorY
             for (int i = 0; i < gameSettings.SlideCount - typeXSlideCount; i++)
             {
                 SlideCollection.Add(new Slide(SlideType.Y, gameSettings.SlideDisplayDuration,
                     GenerateSeekXImageSequence(gameSettings.SeekGridOptions, false),
-                    GetRandomNumber(gameSettings.BlankSlideDisplayTimes)));
+                    ThreadSafeRandom.GetRandomNumber(gameSettings.BlankSlideDisplayTimes)));
             }
             // Generate random number generator
             Random random = new Random(seed.GetHashCode());
@@ -311,19 +312,6 @@ namespace PathwayGames.Services.Slides
                     break;
             }
             return slide.ResponseOutcome;
-        }
-
-        private static double GetRandomNumber(double[] values)
-        {
-            int index = ThreadSafeRandom.CurrentThreadRandom.Next(0, values.Count());
-            return values[index];
-        }
-
-        private string CreateRandomSeed(int length = 6)
-        {
-            const string chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-            return new string(Enumerable.Repeat(chars, length)
-              .Select(s => s[ThreadSafeRandom.CurrentThreadRandom.Next(s.Length)]).ToArray());
         }
     }
 }

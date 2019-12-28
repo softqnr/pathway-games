@@ -9,6 +9,23 @@ namespace PathwayGames.Views
         public SessionDataView()
         {
             InitializeComponent();
+            Init();
+        }
+
+        public void Init()
+        {
+            if (!App.SelectedUser.IsAdmin)
+            {
+                //ToolbarItem toolbarItem = new ToolbarItem();
+                //toolbarItem.SetBinding(ToolbarItem.CommandProperty, "ExportAllUserDataCommand");
+                //toolbarItem.IconImageSource = new FontImageSource
+                //{
+                //    FontFamily = Application.Current.Resources["MaterialFontFamily"].ToString(),
+                //    Glyph = Application.Current.Resources["IconDownload"].ToString()
+                //};
+                //ToolbarItems.Add(toolbarItem);
+                ToolbarItems.Remove(ExportAllToolbarItem);
+            }
         }
 
     }

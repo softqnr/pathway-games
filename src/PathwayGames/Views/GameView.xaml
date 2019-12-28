@@ -12,7 +12,7 @@
     <NavigationPage.TitleView>
         <StackLayout Orientation="Horizontal" VerticalOptions="CenterAndExpand" Spacing="10">
             <Image Source="logo.png" HorizontalOptions="Start" />
-            <Label Text="{Binding Title}" FontSize="Header" FontAttributes="Bold" TextDecorations="Strikethrough" TextColor="Black" HorizontalOptions="CenterAndExpand" VerticalTextAlignment="Center" />
+            <Label Text="{Binding Title}" FontSize="Header" FontAttributes="Bold" TextColor="Black" HorizontalOptions="CenterAndExpand" VerticalTextAlignment="Center" />
             <Label x:Name="EyeGazeIcon" FontFamily="{StaticResource MaterialFontFamily}" FontSize="26" Text="{Binding EyeGazeIconGluph}" HeightRequest="28" HorizontalOptions="End" VerticalTextAlignment="Center" />
             <Image x:Name="EEGIcon" Source="{Binding EEGIconImageSource}" HeightRequest="26" HorizontalOptions="End" />
         </StackLayout>
@@ -80,7 +80,7 @@
                             <Span Text=" – " />
                             <Span Text="{Binding UserName, Mode=OneWay}" />
                             <Span Text=" – " />
-                            <Span Text="{Binding Source={x:Static x:DateTime.Now}, StringFormat='{}{0:dd/MM/yyyy - hh:mm}'}" />
+                            <Span Text="{Binding Source={x:Static x:DateTime.Now}, StringFormat='{}{0:dd/MM/yyyy hh:mm}'}" />
                             <Span Text=" – " />
                             <Span Text="{Binding Seed, Mode=OneWay}" />
                         </FormattedString>

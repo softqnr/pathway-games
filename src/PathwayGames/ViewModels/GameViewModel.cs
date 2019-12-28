@@ -136,9 +136,6 @@ namespace PathwayGames.ViewModels
 
             _userName = App.SelectedUser.UserName;
 
-            // TODO: This should come from parameters
-            _seed = "XYZ";
-
             // Create StateMachine
             StateMachine = new SlideStateMachine
             (
@@ -302,6 +299,7 @@ namespace PathwayGames.ViewModels
             _game = _slidesService.Generate(gameType, userGameSettings, App.SelectedUser.Id, App.SelectedUser.UserName, _seed);
             SlideIndex = 0;
             SlideCount = _game.Slides.Count;
+            Seed = _game.SessionData.Seed;
 
             // Triger start game
             await StateMachine.FireAsync(Triggers.Start);

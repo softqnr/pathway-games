@@ -1,22 +1,20 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:local="clr-namespace:PathwayGames"
-             xmlns:controls="clr-namespace:PathwayGames.Controls"
              x:Class="PathwayGames.Views.UsersView"
              x:Name="self"
              Title="Users"
              Visual="Material">
+    
     <ContentPage.ToolbarItems>
-        <controls:HideableToolbarItem Command="{Binding AddCommand}" 
-                                      IsVisible="{Binding Source={x:Static local:App.SelectedUser},Path=IsAdmin}">
-            <controls:HideableToolbarItem.IconImageSource>
+        <ToolbarItem x:Name="AddUserButton" Command="{Binding AddCommand}">
+            <ToolbarItem.IconImageSource>
                 <FontImageSource
                         FontFamily="{StaticResource MaterialFontFamily}"
                         Glyph="{StaticResource IconPlus}"
                         Size="24" />
-            </controls:HideableToolbarItem.IconImageSource>
-        </controls:HideableToolbarItem>
+            </ToolbarItem.IconImageSource>
+        </ToolbarItem>
     </ContentPage.ToolbarItems>
 
     
@@ -27,7 +25,7 @@
                        SearchCommandParameter="{Binding Source={x:Reference UserSearchBar}, Path=Text}" />
             
             <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
-                <Label Text="User type:" />
+                <Label Text="User type:" VerticalOptions="Center"/>
                 <Picker SelectedItem="{Binding SelectedUserType}" WidthRequest="90">
                     <Picker.Items>
                         <x:String>All</x:String>

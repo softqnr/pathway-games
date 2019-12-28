@@ -31,13 +31,24 @@ namespace PathwayGames.ViewModels
             }
         }
 
-        public ICommand ExportDataCommand
+        public ICommand ExportUserDataCommand
         {
             get
             {
                 return new Command(async () =>
                 {
-                    await ExportGameData();
+                    await ExportUserGameData();
+                });
+            }
+        }
+
+        public ICommand ExportAllUserDataCommand
+        {
+            get
+            {
+                return new Command(async () =>
+                {
+                    await ExportAllUserGameData();
                 });
             }
         }
@@ -64,7 +75,24 @@ namespace PathwayGames.ViewModels
             });
         }
 
-        public async Task ExportGameData()
+        public async Task ExportAllUserGameData()
+        {
+            if (!IsBusy)
+            {
+                IsBusy = true;
+                DialogService.ShowLoading("Generating package …");
+                string fileName = await _userService.PackAllUserGameSessions();
+                await Share.RequestAsync(new ShareFileRequest
+                {
+                    Title = "Share data",
+                    File = new ShareFile(fileName)
+                });
+                DialogService.HideLoading();
+                IsBusy = false;
+            }
+        }
+
+        public async Task ExportUserGameData()
         {
             if (!IsBusy)
             {
@@ -73,7 +101,7 @@ namespace PathwayGames.ViewModels
                 string fileName = _userService.PackUserGameSessions(_gameSessions);
                 await Share.RequestAsync(new ShareFileRequest
                 {
-                    Title = "Share results",
+                    Title = "Share data",
                     File = new ShareFile(fileName)
                 });
                 DialogService.HideLoading();
