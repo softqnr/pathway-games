@@ -30,8 +30,6 @@ namespace PathwayGames.ViewModels
         private int? _slideCount;
         private int _imageGridColumns = 1;
         private IList<string> _slideImages;
-        private string _eyeGazeIconGluph;
-        private ImageSource _eegIconImageSource;
         private string _seed;
         private string _userName;
         private CancellationTokenSource _cts;
@@ -86,18 +84,6 @@ namespace PathwayGames.ViewModels
         {
             get => _seed;
             set => SetProperty(ref _seed, value);
-        }
-
-        public string EyeGazeIconGluph
-        {
-            get => _eyeGazeIconGluph;
-            set => SetProperty(ref _eyeGazeIconGluph, value);
-        }
-
-        public ImageSource EEGIconImageSource
-        {
-            get => _eegIconImageSource;
-            set => SetProperty(ref _eegIconImageSource, value);
         }
 
         // Commands
@@ -269,7 +255,7 @@ namespace PathwayGames.ViewModels
                duration);
             // Display blank slide
             SlideImages = null;
-
+            
             await Task.Delay(TimeSpan.FromSeconds(duration));
             //
             await StateMachine.FireAsync(Triggers.SlideFinished);
@@ -296,7 +282,7 @@ namespace PathwayGames.ViewModels
         public async Task CreateGameAndStart(GameType gameType, UserGameSettings userGameSettings)
         {
             // Create game
-            _game = _slidesService.Generate(gameType, userGameSettings, App.SelectedUser.Id, App.SelectedUser.UserName, _seed);
+            Game = _slidesService.Generate(gameType, userGameSettings, App.SelectedUser.Id, App.SelectedUser.UserName, _seed);
             SlideIndex = 0;
             SlideCount = _game.Slides.Count;
             Seed = _game.SessionData.Seed;
@@ -368,9 +354,6 @@ namespace PathwayGames.ViewModels
                 {
                     ImageGridColumns = userGameSettings.SeekGridOptions.GridColumns;
                 }
-                // Set sensor icons
-                EyeGazeIconGluph = userGameSettings.EyeGazeSensor ? Application.Current.Resources["IconEye"].ToString() : Application.Current.Resources["IconEyeOff"].ToString();
-                EEGIconImageSource = ImageSource.FromFile(userGameSettings.EEGSensor ? "icon_head.png" : "icon_head_off.png");
 
                 await CreateGameAndStart(gameType, userGameSettings);
             }

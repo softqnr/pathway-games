@@ -49,6 +49,7 @@
             </OnPlatform>
             <!--  converters  -->
             <converters:ItemTappedEventArgsConverter x:Key="ItemTappedConverter" />
+            <converters:DecimalConverter x:Key="DecimalConverter" />
         </ResourceDictionary>
     </Application.Resources>
 

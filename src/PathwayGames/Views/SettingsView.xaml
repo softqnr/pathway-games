@@ -27,13 +27,17 @@
             </sv:Section>
             <sv:Section Title="GAME SETTINGS">
                 <EntryCell Label="Slide count" 
-                               Text="{Binding UserSettings.SlideCount, Mode=TwoWay}" Keyboard="Numeric" />
+                               Text="{Binding UserSettings.SlideCount, 
+                    Converter={StaticResource DecimalConverter}, Mode=TwoWay}" Keyboard="Numeric" />
                 <EntryCell Label="Slide display time" 
-                               Text="{Binding UserSettings.SlideDisplayDuration, Mode=TwoWay}" Keyboard="Numeric" />
+                               Text="{Binding UserSettings.SlideDisplayDuration, 
+                    Converter={StaticResource DecimalConverter}, Mode=TwoWay}" Keyboard="Numeric" />
                 <EntryCell Label="Blank slide display time" 
-                               Text="{Binding UserSettings.BlankSlideDisplayTime, Mode=TwoWay}" Keyboard="Numeric" />
+                               Text="{Binding UserSettings.BlankSlideDisplayTime, 
+                    Converter={StaticResource DecimalConverter}, Mode=TwoWay}" Keyboard="Numeric" />
                 <EntryCell Label="Blank slide variation (+-)" 
-                               Text="{Binding UserSettings.BlankSlideDisplayTimeVariation, Mode=TwoWay}" Keyboard="Numeric" />
+                               Text="{Binding UserSettings.BlankSlideDisplayTimeVariation, 
+                    Converter={StaticResource DecimalConverter}, Mode=TwoWay}" Keyboard="Numeric" />
             </sv:Section>
             <sv:Section Title="SEEK GAME SETTINGS" sv:RadioCell.SelectedValue="{Binding SelectedSeekGridOption, Mode=TwoWay}" ItemsSource="{Binding SeekGridOptions}">
                 <sv:Section.ItemTemplate>

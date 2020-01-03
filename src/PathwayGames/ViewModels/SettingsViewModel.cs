@@ -13,7 +13,7 @@ namespace PathwayGames.ViewModels
 {
     public class SettingsViewModel : ViewModelBase
     {
-        private IUserService _userService;
+        private readonly IUserService _userService;
 
         private UserGameSettings _userSettings;
         private SeekGridOption _selectedSeekGridOption = new SeekGridOption();

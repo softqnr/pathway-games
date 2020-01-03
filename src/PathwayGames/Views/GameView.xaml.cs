@@ -12,16 +12,6 @@ namespace PathwayGames.Views
             InitializeComponent();
             SetLayout(DeviceOrientantion);
             OnOrientationChanged += DeviceOrientantionChanged;
-            EyeGazeIcon.PropertyChanged += EyeGazeIcon_PropertyChanged;
-        }
-
-        private void EyeGazeIcon_PropertyChanged(object sender, System.ComponentModel.PropertyChangedEventArgs e)
-        {
-            // Set default color to red if tracking is enabled
-            if (e.PropertyName == "Text" && ((Label)sender).Text == Application.Current.Resources["IconEye"].ToString())
-            {
-                ((Label)sender).TextColor = Color.Red;
-            }
         }
 
         private void DeviceOrientantionChanged(object sender, PageOrientationEventArgs e)
@@ -49,7 +39,6 @@ namespace PathwayGames.Views
         protected override void OnDisappearing()
         {
             OnOrientationChanged -= DeviceOrientantionChanged;
-            EyeGazeIcon.PropertyChanged -= EyeGazeIcon_PropertyChanged;
             base.OnDisappearing();
         }
 

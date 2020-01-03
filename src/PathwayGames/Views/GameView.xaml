@@ -13,8 +13,33 @@
         <StackLayout Orientation="Horizontal" VerticalOptions="CenterAndExpand" Spacing="10">
             <Image Source="logo.png" HorizontalOptions="Start" />
             <Label Text="{Binding Title}" FontSize="Header" FontAttributes="Bold" TextColor="Black" HorizontalOptions="CenterAndExpand" VerticalTextAlignment="Center" />
-            <Label x:Name="EyeGazeIcon" FontFamily="{StaticResource MaterialFontFamily}" FontSize="26" Text="{Binding EyeGazeIconGluph}" HeightRequest="28" HorizontalOptions="End" VerticalTextAlignment="Center" />
-            <Image x:Name="EEGIcon" Source="{Binding EEGIconImageSource}" HeightRequest="26" HorizontalOptions="End" />
+            <Label x:Name="EyeGazeIcon" FontFamily="{StaticResource MaterialFontFamily}" FontSize="26"  
+                   IsEnabled="{Binding Game.GameSettings.EyeGazeSensor}"
+                   HeightRequest="28" HorizontalOptions="End" VerticalTextAlignment="Center">
+                <Label.Triggers>
+                    <Trigger TargetType="Label"
+                        Property="IsEnabled" Value="True">
+                        <Setter Property="Text" Value="{StaticResource IconEye}" />
+                        <Setter Property="TextColor" Value="Red" />
+                    </Trigger>
+                    <Trigger TargetType="Label"
+                        Property="IsEnabled" Value="False">
+                        <Setter Property="Text" Value="{StaticResource IconEyeOff}" />
+                        <Setter Property="TextColor" Value="Black" />
+                    </Trigger>
+                </Label.Triggers>
+            </Label>
+            
+            <Image x:Name="EEGIcon" HeightRequest="26" HorizontalOptions="End" IsEnabled="{Binding Game.GameSettings.EEGSensor}">
+                <Image.Triggers>
+                    <Trigger TargetType="Image" Property="IsEnabled" Value="True">
+                        <Setter Property="Source" Value="icon_head.png" />
+                    </Trigger>
+                    <Trigger TargetType="Image" Property="IsEnabled" Value="False">
+                        <Setter Property="Source" Value="icon_head_off.png" />
+                    </Trigger>
+                </Image.Triggers>
+            </Image>
         </StackLayout>
     </NavigationPage.TitleView>
 
@@ -93,7 +118,7 @@
                               EyeGazeChangedCommand="{Binding EyeGazeChangedCommand}"
                               ShowCrosshair="True"
                               RecordingEnabled="True"
-                              IsEnabled="{Binding EyeGazeTrackingEnabled}" />
+                              IsEnabled="{Binding Game.GameSettings.EyeGazeSensor}" />
         </Grid>
     </ContentPage.Content>
 

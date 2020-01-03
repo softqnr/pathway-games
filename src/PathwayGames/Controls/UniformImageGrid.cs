@@ -25,7 +25,6 @@ namespace PathwayGames.Controls
             set { SetValue(ColumnCountProperty, value); }
         }
 
-
         private int RowCount { get; set; }
 
         public IEnumerable ItemsSource
@@ -174,7 +173,7 @@ namespace PathwayGames.Controls
                 Source = ImageSource.FromFile(fileName),
                 VerticalOptions = LayoutOptions.CenterAndExpand,
                 HorizontalOptions = LayoutOptions.CenterAndExpand,
-                Aspect = Aspect.AspectFill
+                Aspect = Aspect.AspectFill,
             };
             return image;
         }
