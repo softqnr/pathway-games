@@ -21,7 +21,7 @@ namespace PathwayGames.Services.Slides
         const string RewardSound = "success.mp3";
         const int SeedLength = 5;
 
-        public Game Generate(GameType gameType, UserGameSettings gameSettings, long userId, string userName, string seed)
+        public Game Generate(GameType gameType, UserGameSettings gameSettings, long userId, string userName, string seed = "")
         {
            if (string.IsNullOrWhiteSpace(seed))
                 seed = ThreadSafeRandom.CreateRandomString(SeedLength);

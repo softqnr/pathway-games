@@ -30,8 +30,6 @@ namespace PathwayGames.ViewModels
         private int? _slideCount;
         private int _imageGridColumns = 1;
         private IList<string> _slideImages;
-        private string _seed;
-        private string _userName;
         private CancellationTokenSource _cts;
 
         private Slide CurrentSlide { get; set; }
@@ -74,18 +72,6 @@ namespace PathwayGames.ViewModels
             private set => SetProperty(ref _game, value);
         }
 
-        public string UserName
-        {
-            get => _userName;
-            set => SetProperty(ref _userName, value);
-        }
-
-        public string Seed
-        {
-            get => _seed;
-            set => SetProperty(ref _seed, value);
-        }
-
         // Commands
         public ICommand ButtonTappedCommand
         {
@@ -119,8 +105,6 @@ namespace PathwayGames.ViewModels
             _userService = userService;
             _sensorLowWriterService = sensorLowWriterService;
             _soundService = soundService;
-
-            _userName = App.SelectedUser.UserName;
 
             // Create StateMachine
             StateMachine = new SlideStateMachine
@@ -282,10 +266,9 @@ namespace PathwayGames.ViewModels
         public async Task CreateGameAndStart(GameType gameType, UserGameSettings userGameSettings)
         {
             // Create game
-            Game = _slidesService.Generate(gameType, userGameSettings, App.SelectedUser.Id, App.SelectedUser.UserName, _seed);
+            Game = _slidesService.Generate(gameType, userGameSettings, App.SelectedUser.Id, App.SelectedUser.UserName, "");
             SlideIndex = 0;
             SlideCount = _game.Slides.Count;
-            Seed = _game.SessionData.Seed;
 
             // Triger start game
             await StateMachine.FireAsync(Triggers.Start);

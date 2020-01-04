@@ -103,11 +103,11 @@
                             <Span Text="/" />
                             <Span Text="{Binding SlideCount, Mode=OneWay}" />
                             <Span Text=" – " />
-                            <Span Text="{Binding UserName, Mode=OneWay}" />
+                            <Span Text="{Binding Game.SessionData.UserName, Mode=OneWay}" />
                             <Span Text=" – " />
                             <Span Text="{Binding Source={x:Static x:DateTime.Now}, StringFormat='{}{0:dd/MM/yyyy hh:mm}'}" />
                             <Span Text=" – " />
-                            <Span Text="{Binding Seed, Mode=OneWay}" />
+                            <Span Text="{Binding Game.SessionData.Seed, Mode=OneWay}" />
                         </FormattedString>
                     </Label.FormattedText>
                 </Label>
