@@ -41,7 +41,9 @@
             <x:String x:Key="IconPlus">&#xf415;</x:String>
             <x:String x:Key="IconCheck">&#xf854;</x:String>
             <x:String x:Key="IconUnChecked">&#xf855;</x:String>
-
+            <x:String x:Key="IconLive">&#xf241;</x:String>
+            <x:String x:Key="IconCircle">&#xf12f;</x:String>
+            
             <OnPlatform x:Key="MaterialFontFamily" x:TypeArguments="x:String">
                 <On Platform="iOS" Value="Material Design Icons" />
                 <On Platform="Android" Value="materialdesignicons-webfont.ttf#Material Design Icons" />

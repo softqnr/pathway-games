@@ -7,6 +7,8 @@ namespace PathwayGames.Services.User
 {
     public interface IUserService
     {
+        Task<IList<Models.User>> GetAll();
+
         Task<IList<Models.User>> GetByNameAndUserType(string name, string userType);
 
         Task<Models.User> GetSelectedUser();

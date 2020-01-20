@@ -1,10 +1,9 @@
-﻿using PathwayGames.Models;
-using System.Collections.Generic;
+﻿using PathwayGames.Sensors;
 
 namespace PathwayGames.Services.Engangement
 {
     public interface IEngangementService
     {
-        (double z, double y) CalculateZValue(double prob);
+        double CalculateEngangement(FaceAnchorReading faceAnchorReading);
     }
 }

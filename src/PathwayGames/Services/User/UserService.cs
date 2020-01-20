@@ -34,6 +34,11 @@ namespace PathwayGames.Services.User
                 && x.UserName.StartsWith(name, StringComparison.CurrentCultureIgnoreCase)).ToListAsync();
         }
 
+        public async Task<IList<Models.User>> GetAll()
+        {
+            return await _repositoryUser.GetAllWithChildrenAsync();
+        }
+
         public async Task<Models.User> GetSelectedUser()
         {
             return await _repositoryUser.AsQueryable().Where(x => x.IsSelected).FirstOrDefaultAsync();

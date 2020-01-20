@@ -25,7 +25,7 @@
 	<key>CFBundleDisplayName</key>
 	<string>Pathway Games</string>
 	<key>CFBundleVersion</key>
-	<string>6</string>
+	<string>7</string>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>CFBundleName</key>

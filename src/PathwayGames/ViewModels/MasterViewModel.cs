@@ -56,6 +56,9 @@ namespace PathwayGames.ViewModels
                     new NavMenuItem { Id = 3, Title = "Game settings",
                         IconSource = Application.Current.Resources["IconSettings"].ToString(),
                         TargetType =typeof(SettingsViewModel) },
+                    //new NavMenuItem { Id = 4, Title = "Live",
+                    //    IconSource = Application.Current.Resources["IconLive"].ToString(),
+                    //    TargetType =typeof(SensorsViewModel) },
             });
         }
 

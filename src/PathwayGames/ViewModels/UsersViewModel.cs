@@ -112,7 +112,7 @@ namespace PathwayGames.ViewModels
 
         public override async Task InitializeAsync(object navigationData)
         {
-            await Task.FromResult(true);
+            Users = await _userService.GetAll();
         }
     }
 }

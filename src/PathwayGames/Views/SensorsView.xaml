@@ -1,6 +1,63 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+<views:ViewBase
+    xmlns:views="clr-namespace:PathwayGames.Views" xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="PathwayGames.Views.SensorsView">
+             xmlns:g="clr-namespace:PathwayGames.Gestures;assembly=PathwayGames"
+             xmlns:c="clr-namespace:PathwayGames.Controls"
+             x:Name="self"
+             x:Class="PathwayGames.Views.SensorsView"
+             Visual="Material" BackgroundColor="White"
+             Title="{Binding Title}">
 
-</ContentPage>
+    <NavigationPage.TitleView>
+        <StackLayout Orientation="Horizontal" VerticalOptions="CenterAndExpand" Spacing="10">
+            <Image Source="logo.png" HorizontalOptions="Start" />
+            <Label Text="{Binding Title}" FontSize="Header" FontAttributes="Bold" TextColor="Black" HorizontalOptions="CenterAndExpand" VerticalTextAlignment="Center" />
+            <Label x:Name="EyeGazeIcon" FontFamily="{StaticResource MaterialFontFamily}" FontSize="26"  
+                   IsEnabled="{Binding Game.GameSettings.EyeGazeSensor}"
+                   HeightRequest="28" HorizontalOptions="End" VerticalTextAlignment="Center">
+                <Label.Triggers>
+                    <Trigger TargetType="Label"
+                        Property="IsEnabled" Value="True">
+                        <Setter Property="Text" Value="{StaticResource IconEye}" />
+                        <Setter Property="TextColor" Value="Red" />
+                    </Trigger>
+                    <Trigger TargetType="Label"
+                        Property="IsEnabled" Value="False">
+                        <Setter Property="Text" Value="{StaticResource IconEyeOff}" />
+                        <Setter Property="TextColor" Value="Black" />
+                    </Trigger>
+                </Label.Triggers>
+            </Label>
+
+            <Image x:Name="EEGIcon" HeightRequest="26" HorizontalOptions="End" IsEnabled="{Binding Game.GameSettings.EEGSensor}">
+                <Image.Triggers>
+                    <Trigger TargetType="Image" Property="IsEnabled" Value="True">
+                        <Setter Property="Source" Value="icon_head.png" />
+                    </Trigger>
+                    <Trigger TargetType="Image" Property="IsEnabled" Value="False">
+                        <Setter Property="Source" Value="icon_head_off.png" />
+                    </Trigger>
+                </Image.Triggers>
+            </Image>
+        </StackLayout>
+    </NavigationPage.TitleView>
+
+
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="FillAndExpand">
+            <Label x:Name="EngangementIcon" FontFamily="{StaticResource MaterialFontFamily}" FontSize="64"  
+                       Text="{StaticResource IconCircle}"
+                       HeightRequest="128" HorizontalOptions="Center" VerticalTextAlignment="Center" />
+        
+            <c:FaceSensorView WidthRequest="128" HeightRequest="512"
+                                  TrackingStarted="FaceSensorView_TrackingStarted"
+                                  TrackingStopped="FaceSensorView_TrackingStopped"
+                                  EyeGazeChangedCommand="{Binding EyeGazeChangedCommand}"
+                                  ShowCrosshair="True"
+                                  ShowPreview="True"
+                                  RecordingEnabled="True"
+                                  IsEnabled="True" />
+        </StackLayout>
+    </ContentPage.Content>
+</views:ViewBase>

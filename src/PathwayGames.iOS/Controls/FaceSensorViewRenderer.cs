@@ -19,8 +19,7 @@ namespace PathwayGames.iOS.Controls
         private IFaceSensor sensor;
         private ARSCNView SceneView;
         private bool IsTracked;
-
-
+        
         protected override void OnElementChanged(ElementChangedEventArgs<FaceSensorView> e)
         {
             base.OnElementChanged(e);
@@ -30,19 +29,15 @@ namespace PathwayGames.iOS.Controls
                 // Enable AR
                 SceneView = new ARSCNView
                 {
-                    // 263, 668, 96, 128
-                    Frame = new CGRect(263, 558, 96, 128),
+                    //Frame = new CGRect(263, 558, 96, 128),
                     ContentMode = UIViewContentMode.ScaleToFill,
                     UserInteractionEnabled = true,
                     TranslatesAutoresizingMaskIntoConstraints = false,
                     AutomaticallyUpdatesLighting = true, 
                     // UITapGestureRecognizer =  new UITapGestureRecognizer(),
-                    // Frame = new CGRect(View.Frame.X, View.Frame.Y, View.Frame.Width, View.Frame.Height),
+                    Frame = new CGRect(Frame.X, Frame.Y, Frame.Width, Frame.Height),
                     // ShowsStatistics = true, // Show stats
                 };
-                // Hide camera display
-                SceneView.Scene.Background.Contents = UIColor.White;
-
                 SetNativeControl(SceneView);
 
                 SceneView.Session.Delegate = this;
@@ -51,6 +46,7 @@ namespace PathwayGames.iOS.Controls
             if (e.OldElement != null)
             {
                 // Unsubscribe events
+                e.OldElement.PropertyChanged -= OnElementPropertyChanged;
                 // Pause the view's session
                 SceneView.Session.Pause();
             }
@@ -63,24 +59,36 @@ namespace PathwayGames.iOS.Controls
                     ShowUnsupportedDeviceError();
                     return;
                 }
-                ARFaceTrackingConfiguration configuration = new ARFaceTrackingConfiguration
-                {
-                    LightEstimationEnabled = true
-                };
-
                 sensor = e.NewElement as IFaceSensor;
                 // Subscribe events
+                e.NewElement.PropertyChanged += OnElementPropertyChanged;
                 // Crosshair
                 if (e.NewElement.ShowCrosshair)
                 {
                     SceneView.Delegate = new EyeGazeDetectionDelegate(SceneView);
                 }
+                // Hide camera display
+                if (!e.NewElement.ShowPreview)
+                {
+                    SceneView.Scene.Background.Contents = UIColor.Clear;
+                }
                 // Run the view's session options
+                ARFaceTrackingConfiguration configuration = new ARFaceTrackingConfiguration
+                {
+                    LightEstimationEnabled = true
+                };
                 SceneView.Session.Run(configuration,
                     ARSessionRunOptions.ResetTracking | ARSessionRunOptions.RemoveExistingAnchors);
             }
         }
-
+        protected override void OnElementPropertyChanged(object sender, System.ComponentModel.PropertyChangedEventArgs e)
+        {
+            base.OnElementPropertyChanged(sender, e);
+            
+            if (e.PropertyName == FaceSensorView.ShowCrosshairProperty.PropertyName) {
+                //UpdateCrosshair();
+            }
+        }
         protected override void Dispose(bool disposing)
         {
             if (disposing)
@@ -90,6 +98,11 @@ namespace PathwayGames.iOS.Controls
                 Control.Dispose();
             }
             base.Dispose(disposing);
+        }
+
+        private void UpdateCrosshair()
+        {
+
         }
 
         private void ShowUnsupportedDeviceError()

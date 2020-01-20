@@ -20,6 +20,9 @@ namespace PathwayGames.Controls
         public static readonly BindableProperty ShowCrosshairProperty =
             BindableProperty.Create(nameof(ShowCrosshair), typeof(bool), typeof(FaceSensorView), null);
 
+        public static readonly BindableProperty ShowPreviewProperty =
+            BindableProperty.Create(nameof(ShowPreview), typeof(bool), typeof(FaceSensorView), null);
+
         public ICommand EyeGazeChangedCommand
         {
             get { return (ICommand)GetValue(EyeGazeChangedCommandProperty); }
@@ -36,6 +39,12 @@ namespace PathwayGames.Controls
         {
             get { return (bool)GetValue(ShowCrosshairProperty); }
             set { SetValue(ShowCrosshairProperty, value); }
+        }
+
+        public bool ShowPreview
+        {
+            get { return (bool)GetValue(ShowPreviewProperty); }
+            set { SetValue(ShowPreviewProperty, value); }
         }
 
         void ISensor<FaceAnchorChangedEventArgs>.OnReadingTaken(FaceAnchorChangedEventArgs e)
