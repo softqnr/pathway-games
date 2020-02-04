@@ -66,10 +66,10 @@ namespace PathwayGames.Services.Slides
 
         private List<Slide> GenerateTypeXSlideSequence(UserGameSettings gameSettings, string seed)
         {
-             // Create slide collection using the 70%X and 30%Distractor 
+             // Create slide collection using the 50%X and 50%Distractor 
             List<Slide> SlideCollection = new List<Slide>();
             // X 
-            int typeXSlideCount = (int)(gameSettings.SlideCount * 0.7);
+            int typeXSlideCount = (int)(gameSettings.SlideCount * 0.5);
             for (int i = 0; i < typeXSlideCount; i++)
             {
                 SlideCollection.Add(new Slide(SlideType.X, gameSettings.SlideDisplayDuration, XSlideImage, ThreadSafeRandom.GetRandomNumber(gameSettings.BlankSlideDisplayTimes)));
@@ -122,22 +122,22 @@ namespace PathwayGames.Services.Slides
 
         private List<Slide> GenerateSeekXSlideSequence(UserGameSettings gameSettings, string seed)
         {
-            // Create slide collection using the 70%X and 30%Distractor 
+            // Create slide collection using the 50%X and 50%Distractor 
             List<Slide> SlideCollection = new List<Slide>();
             // X 
-            int typeXSlideCount = (int)(gameSettings.SlideCount * 0.7);
+            int typeXSlideCount = (int)(gameSettings.SlideCount * 0.5);
             for (int i = 0; i < typeXSlideCount; i++)
             {
                 SlideCollection.Add(new Slide(SlideType.X, gameSettings.SlideDisplayDuration,
                     GenerateSeekXImageSequence(gameSettings.SeekGridOptions, true),
-                    ThreadSafeRandom.GetRandomNumber(gameSettings.BlankSlideDisplayTimes)));
+                        ThreadSafeRandom.GetRandomNumber(gameSettings.BlankSlideDisplayTimes)));
             }
             // DistractorY
             for (int i = 0; i < gameSettings.SlideCount - typeXSlideCount; i++)
             {
                 SlideCollection.Add(new Slide(SlideType.Y, gameSettings.SlideDisplayDuration,
                     GenerateSeekXImageSequence(gameSettings.SeekGridOptions, false),
-                    ThreadSafeRandom.GetRandomNumber(gameSettings.BlankSlideDisplayTimes)));
+                        ThreadSafeRandom.GetRandomNumber(gameSettings.BlankSlideDisplayTimes)));
             }
             // Generate random number generator
             Random random = new Random(seed.GetHashCode());

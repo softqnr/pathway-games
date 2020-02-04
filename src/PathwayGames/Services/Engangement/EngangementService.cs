@@ -1,13 +1,13 @@
 ﻿using PathwayGames.Sensors;
-using System;
 
 namespace PathwayGames.Services.Engangement
 {
     public class EngangementService : IEngangementService
     {
-        public double CalculateEngangement(FaceAnchorReading faceAnchorReading)
+        public double? CalculateEngangement(FaceAnchorReading faceAnchorReading)
         {
-            throw new NotImplementedException();
+            // Simulate engangement calculation for development purposes
+            return (double?)faceAnchorReading.FacialExpressions["SmileLeft"];
         }
     }
 }

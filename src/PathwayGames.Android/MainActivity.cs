@@ -27,6 +27,7 @@ namespace PathwayGames.Droid
             global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
             global::Xamarin.Forms.FormsMaterial.Init(this, savedInstanceState);
             AiForms.Renderers.Droid.SettingsViewInit.Init();
+            OxyPlot.Xamarin.Forms.Platform.Android.PlotViewRenderer.Init();
 
             // Catch unhandled exceptions
             AppDomain.CurrentDomain.UnhandledException += async (sender, e) => await UnhandledExceptionHandler(sender, e);

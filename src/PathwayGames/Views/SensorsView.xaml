@@ -4,6 +4,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:g="clr-namespace:PathwayGames.Gestures;assembly=PathwayGames"
              xmlns:c="clr-namespace:PathwayGames.Controls"
+             xmlns:oxy="clr-namespace:OxyPlot.Xamarin.Forms;assembly=OxyPlot.Xamarin.Forms"
              x:Name="self"
              x:Class="PathwayGames.Views.SensorsView"
              Visual="Material" BackgroundColor="White"
@@ -45,12 +46,12 @@
 
 
     <ContentPage.Content>
-        <StackLayout VerticalOptions="FillAndExpand">
+        <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" x:Name="SensorScreen">
             <Label x:Name="EngangementIcon" FontFamily="{StaticResource MaterialFontFamily}" FontSize="64"  
                        Text="{StaticResource IconCircle}"
                        HeightRequest="128" HorizontalOptions="Center" VerticalTextAlignment="Center" />
         
-            <c:FaceSensorView WidthRequest="128" HeightRequest="512"
+            <c:FaceSensorView HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"
                                   TrackingStarted="FaceSensorView_TrackingStarted"
                                   TrackingStopped="FaceSensorView_TrackingStopped"
                                   EyeGazeChangedCommand="{Binding EyeGazeChangedCommand}"
@@ -58,6 +59,8 @@
                                   ShowPreview="True"
                                   RecordingEnabled="True"
                                   IsEnabled="True" />
+
+            <oxy:PlotView Model="{Binding PlotModel}" WidthRequest="200" HeightRequest="200" x:Name="Chart"/>
         </StackLayout>
     </ContentPage.Content>
 </views:ViewBase>
