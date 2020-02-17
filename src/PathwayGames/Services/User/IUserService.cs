@@ -19,7 +19,9 @@ namespace PathwayGames.Services.User
 
         Task<IList<UserGameSession>> GetUserGameSessions(long userId);
 
-        string PackUserGameSessions(IList<UserGameSession> gameSessions);
+        string PackUserGameSessions(IList<UserGameSession> gameSessions, string fileName);
+
+        Task<string> PackUserGameSessions(long userId);
 
         Task<string> PackAllUserGameSessions();
 

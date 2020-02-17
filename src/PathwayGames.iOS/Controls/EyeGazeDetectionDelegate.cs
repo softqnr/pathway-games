@@ -27,9 +27,14 @@ namespace PathwayGames.iOS.Controls
         CGSize phoneScreenSize;
         // actual point size of device screen
         CGSize phoneScreenPointSize;
+        CGSize compensation;
 
-        nfloat widthCompensation = 0;
-        nfloat heightCompensation = 0;
+        nfloat screenScale = UIScreen.MainScreen.Scale;
+
+        bool _eyeGazeVisualizationEnabled;
+        int _screenPPI;
+        nfloat _widthCompensation;
+        nfloat _heightCompensation;
 
         const int SmoothThreshold = 15;
 
@@ -43,43 +48,84 @@ namespace PathwayGames.iOS.Controls
         nfloat[] eyeLookAtPositionXsTmp = new nfloat[SmoothThreshold];
         nfloat[] eyeLookAtPositionYsTmp = new nfloat[SmoothThreshold];
 
-        public EyeGazeDetectionDelegate(ARSCNView sceneView)
+        SCNHitTestOptions hitTestOptions = new SCNHitTestOptions
         {
-            UpdateScreenSize();
-            NSNotificationCenter.DefaultCenter.AddObserver(new NSString("UIDeviceOrientationDidChangeNotification"), OrientantioChanged);
+            BackFaceCulling = false,
+            SearchMode = SCNHitTestSearchMode.All,
+            IgnoreChildNodes = false,
+            IgnoreHiddenNodes = false,
+        };
 
-            SceneView = sceneView;
-            // Virtual screen node
-            CreateVirtualScreenNode();
-            // Create target    
-            eyePositionIndicatorView.Bounds = new CGRect(0, 0, 12, 12);//me
-            eyePositionIndicatorView.Layer.CornerRadius = eyePositionIndicatorView.Bounds.Width / 2;
-            eyePositionIndicatorView.BackgroundColor = UIColor.Red;//me
-            eyePositionIndicatorView.Center = new CGPoint(SceneView.Superview.Frame.Size.Width / 2,
-                       SceneView.Superview.Frame.Size.Height / 2);
-
-            // Setup Scenegraph
-            eyeLNode = CreateEyeNode();
-            eyeRNode = CreateEyeNode();
-
-            // Add eye position indicator to parent view
-            SceneView.Superview.AddSubview(eyePositionIndicatorView);
-       
-            SceneView.Scene.RootNode.AddChildNode(faceNode);
-            SceneView.Scene.RootNode.AddChildNode(virtualPhoneNode);
-            virtualPhoneNode.AddChildNode(virtualScreenNode);
-            faceNode.AddChildNode(eyeLNode);
-            faceNode.AddChildNode(eyeRNode);
-            eyeLNode.AddChildNode(lookAtTargetEyeLNode);
-            eyeRNode.AddChildNode(lookAtTargetEyeRNode);
-
-            // Set LookAtTargetEye at 2 meters away from the center of eyeballs to create segment vector
-            lookAtTargetEyeLNode.Position = new SCNVector3(lookAtTargetEyeLNode.Position.X, lookAtTargetEyeLNode.Position.Y, 2);
-
-            lookAtTargetEyeRNode.Position = new SCNVector3(lookAtTargetEyeRNode.Position.X, lookAtTargetEyeRNode.Position.Y, 2);
+        public bool EyeGazeVisualizationEnabled
+        {
+            get
+            {
+                return _eyeGazeVisualizationEnabled;
+            }
+            set
+            {
+                _eyeGazeVisualizationEnabled = value;
+                eyePositionIndicatorView.Hidden = !_eyeGazeVisualizationEnabled; 
+            }
         }
 
-        private void OrientantioChanged(NSNotification notification)
+        public int ScreenPPI
+        {
+            get { 
+                return _screenPPI; 
+            }
+            set { 
+                _screenPPI = value; 
+                UpdateScreenSize(); 
+            }
+        }
+
+        public nfloat WidthCompensation
+        {
+            get
+            {
+                return _widthCompensation;
+            }
+            set
+            {
+                _widthCompensation = value;
+                UpdateScreenSize();
+            }
+        }
+
+        public nfloat HeightCompensation
+        {
+            get
+            {
+                return _heightCompensation;
+            }
+            set
+            {
+                _heightCompensation = value;
+                UpdateScreenSize();
+            }
+        }
+
+        public EyeGazeDetectionDelegate(ARSCNView sceneView, bool eyeGazeVisualizationEnabled, int screenPPI, float widthCompensantion, float heightCompensantion)
+        {
+            SceneView = sceneView;
+            _eyeGazeVisualizationEnabled = eyeGazeVisualizationEnabled; 
+            _screenPPI = screenPPI;
+            _widthCompensation = widthCompensantion;
+            _heightCompensation = heightCompensantion;
+
+            // Hook to OrientantionChanged event
+            NSNotificationCenter.DefaultCenter.AddObserver(new NSString("UIDeviceOrientationDidChangeNotification"), OrientantionChanged);
+
+            // Virtual screen node
+            CreateVirtualScreenNode();
+            // Visualization
+            CreateVisualizationNode();
+            // Setup Scenegraph
+            SetupScenegraph();
+        }
+
+        private void OrientantionChanged(NSNotification notification)
         {
             UpdateScreenSize();
         }
@@ -90,16 +136,18 @@ namespace PathwayGames.iOS.Controls
             {
                 case UIDeviceOrientation.LandscapeLeft:
                 case UIDeviceOrientation.LandscapeRight:
-                    phoneScreenSize = new CGSize(0.14351, 0.070866);
+                    //phoneScreenSize = new CGSize(0.14351, 0.070866);
                     phoneScreenPointSize = new CGSize(UIScreen.MainScreen.Bounds.Height, UIScreen.MainScreen.Bounds.Width);
-                    widthCompensation = 312;
-                    heightCompensation = 0;
+                    phoneScreenSize = new CGSize(((phoneScreenPointSize.Height * screenScale) / _screenPPI) * 2.54 / 100,
+                        ((phoneScreenPointSize.Width * screenScale) / _screenPPI) * 2.54 / 100);
+                    compensation = new CGSize(_heightCompensation, _widthCompensation);
                     break;
                 default:
-                    phoneScreenSize = new CGSize(0.070866, 0.14351);
+                    //phoneScreenSize = new CGSize(0.070866, 0.14351);
                     phoneScreenPointSize = new CGSize(UIScreen.MainScreen.Bounds.Width, UIScreen.MainScreen.Bounds.Height);
-                    widthCompensation = 0;
-                    heightCompensation = 312;
+                    phoneScreenSize = new CGSize(((phoneScreenPointSize.Width * screenScale) / _screenPPI) * 2.54 / 100,
+                        ((phoneScreenPointSize.Height * screenScale) / _screenPPI) * 2.54 / 100);
+                    compensation = new CGSize(_widthCompensation, _heightCompensation);
                     break;
             }
         }
@@ -126,19 +174,12 @@ namespace PathwayGames.iOS.Controls
 
         public void Update(ARFaceAnchor anchor)
         {
-            if (!anchor.IsTracked)
+            if (!anchor.IsTracked || !EyeGazeVisualizationEnabled || ScreenPPI == 0)
                 return;
+
             // Render eye rays
             eyeRNode.Transform = anchor.RightEyeTransform.ToSCNMatrix4();
             eyeLNode.Transform = anchor.LeftEyeTransform.ToSCNMatrix4();
-
-            SCNHitTestOptions hitTestOptions = new SCNHitTestOptions
-            {
-                BackFaceCulling = false,
-                SearchMode = SCNHitTestSearchMode.All,
-                IgnoreChildNodes = false,
-                IgnoreHiddenNodes = false,
-            };
 
             // Perform Hit test using the ray segments that are drawn by the center of the eyeballs 
             // to somewhere two meters away at direction of where users look at to the virtual plane that place 
@@ -155,22 +196,23 @@ namespace PathwayGames.iOS.Controls
                
                 // Update indicator position ? - SceneView.Superview.Frame.Width
                 DispatchQueue.MainQueue.DispatchAsync(() => {
-                    eyePositionIndicatorView.Center = coordinates;
-                    //eyePositionIndicatorView.Transform = CGAffineTransform.MakeTranslation(
-                    //    smoothEyeLookAtPositionX, 
-                    //    smoothEyeLookAtPositionY
-                    //);
+                    //eyePositionIndicatorView.Center = coordinates;
+                    eyePositionIndicatorView.Transform = CGAffineTransform.MakeTranslation(
+                        coordinates.X,
+                        coordinates.Y
+                    );
+
+                    //var distanceInCm = CalculateDistanceFromCamera();
                 });
 
                 // Calc eye screen position 
-                //int screenX = (int)(coordinates.X * UIScreen.MainScreen.Scale);
-                //int screenY = (int)(coordinates.Y * UIScreen.MainScreen.Scale);
+                //int screenX = (int)(coordinates.X * screenScale);
+                //int screenY = (int)(coordinates.Y * screenScale);
+                //System.Diagnostics.Debug.WriteLine($"Screen X: {screenX} - Y: {screenY}");
 
-                //var distanceInCm = CalculateDistanceFromCamera();
                 // Send sensor data 
                 //MessagingCenter.Send<object, EyeGazeData>(this, "EyeSensorReading",  
                 //    new EyeGazeData(DateTime.Now, screenX, screenY, distanceInCm));
-                //System.Diagnostics.Debug.WriteLine($"Screen X: {screenX} - Y: {screenY} - Distance: {distanceInCm}cm");
             }
         }
 
@@ -179,13 +221,11 @@ namespace PathwayGames.iOS.Controls
             CGPoint eyeLLookAt = new CGPoint();
             CGPoint eyeRLookAt = new CGPoint();
 
-            eyeRLookAt.X = (nfloat)phoneScreenEyeRHitTestResult.LocalCoordinates.X / (phoneScreenSize.Width / 2) * phoneScreenPointSize.Width + widthCompensation;
-            eyeRLookAt.Y = (nfloat)phoneScreenEyeRHitTestResult.LocalCoordinates.Y / (phoneScreenSize.Height / 2) * (phoneScreenPointSize.Height + heightCompensation);
+            eyeRLookAt.X = (nfloat)phoneScreenEyeRHitTestResult.LocalCoordinates.X / (phoneScreenSize.Width / 2) * phoneScreenPointSize.Width + compensation.Width;
+            eyeRLookAt.Y = (nfloat)phoneScreenEyeRHitTestResult.LocalCoordinates.Y / (phoneScreenSize.Height / 2) * (phoneScreenPointSize.Height + compensation.Height);
 
-            eyeLLookAt.X = (nfloat)phoneScreenEyeLHitTestResult.LocalCoordinates.X / (phoneScreenSize.Width / 2) * phoneScreenPointSize.Width + widthCompensation;
-            eyeLLookAt.Y = (nfloat)phoneScreenEyeLHitTestResult.LocalCoordinates.Y / (phoneScreenSize.Height / 2) * (phoneScreenPointSize.Height + heightCompensation);
-
-            //Console.WriteLine($"Look Left X: {eyeLLookAt.X} - Y: {eyeLLookAt.Y} - Right X: {eyeRLookAt.X} - Y: {eyeRLookAt.Y}");
+            eyeLLookAt.X = (nfloat)phoneScreenEyeLHitTestResult.LocalCoordinates.X / (phoneScreenSize.Width / 2) * phoneScreenPointSize.Width + compensation.Width;
+            eyeLLookAt.Y = (nfloat)phoneScreenEyeLHitTestResult.LocalCoordinates.Y / (phoneScreenSize.Height / 2) * (phoneScreenPointSize.Height + compensation.Height);
 
             // Smooth
             // Add the latest position and keep up to 9 recent position to smooth with.
@@ -226,6 +266,20 @@ namespace PathwayGames.iOS.Controls
             virtualPhoneNode.Transform = SceneView.PointOfView.Transform;
         }
 
+        private void CreateVisualizationNode()
+        {
+            // Create target    
+            eyePositionIndicatorView.Bounds = new CGRect(0, 0, 12, 12);
+            eyePositionIndicatorView.Layer.CornerRadius = eyePositionIndicatorView.Bounds.Width / 2;
+            eyePositionIndicatorView.BackgroundColor = UIColor.Red;
+            eyePositionIndicatorView.Center = new CGPoint(SceneView.Superview.Frame.Size.Width / 2,
+                       SceneView.Superview.Frame.Size.Height / 2);
+
+            eyePositionIndicatorView.Hidden = !_eyeGazeVisualizationEnabled;
+            // Add eye position indicator to parent view
+            SceneView.Superview.AddSubview(eyePositionIndicatorView);
+        }
+
         private void CreateVirtualScreenNode()
         {
             SCNPlane screenGeometry = new SCNPlane
@@ -234,11 +288,29 @@ namespace PathwayGames.iOS.Controls
                 Height = 1
             };
 
-            // TODO: FirstMaterial check for null
             screenGeometry.FirstMaterial.DoubleSided = true;
             screenGeometry.FirstMaterial.Diffuse.Contents = UIColor.Green;
 
             virtualScreenNode = SCNNode.FromGeometry(screenGeometry);
+        }
+
+        private void SetupScenegraph()
+        {
+            eyeLNode = CreateEyeNode();
+            eyeRNode = CreateEyeNode();
+
+            SceneView.Scene.RootNode.AddChildNode(faceNode);
+            SceneView.Scene.RootNode.AddChildNode(virtualPhoneNode);
+            virtualPhoneNode.AddChildNode(virtualScreenNode);
+            faceNode.AddChildNode(eyeLNode);
+            faceNode.AddChildNode(eyeRNode);
+            eyeLNode.AddChildNode(lookAtTargetEyeLNode);
+            eyeRNode.AddChildNode(lookAtTargetEyeRNode);
+
+            // Set LookAtTargetEye at 2 meters away from the center of eyeballs to create segment vector
+            lookAtTargetEyeLNode.Position = new SCNVector3(lookAtTargetEyeLNode.Position.X, lookAtTargetEyeLNode.Position.Y, 2);
+
+            lookAtTargetEyeRNode.Position = new SCNVector3(lookAtTargetEyeRNode.Position.X, lookAtTargetEyeRNode.Position.Y, 2);
         }
 
         private SCNNode CreateEyeNode()

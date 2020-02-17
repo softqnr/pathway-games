@@ -13,6 +13,7 @@ namespace PathwayGames.ViewModels
     {
         readonly IUserService _userService;
         private ObservableCollection<UserGameSession> _gameSessions;
+        private Models.User _user;
 
         public ObservableCollection<UserGameSession> GameSessions
         {
@@ -98,7 +99,7 @@ namespace PathwayGames.ViewModels
             {
                 IsBusy = true;
                 DialogService.ShowLoading("Generating package …");
-                string fileName = _userService.PackUserGameSessions(_gameSessions);
+                string fileName = await _userService.PackUserGameSessions(_user.Id);
                 await Share.RequestAsync(new ShareFileRequest
                 {
                     Title = "Share data",
@@ -130,15 +131,13 @@ namespace PathwayGames.ViewModels
             DialogService.ShowLoading("Loading …");
             if (navigationData == null)
             {
+                _user = App.SelectedUser;
                 Title = "Session data - " + App.SelectedUser.UserName;
-                // Show current selected users game sessions
-                GameSessions = new ObservableCollection<UserGameSession>(await _userService.GetUserGameSessions(App.SelectedUser.Id));
             } else {
-                User user = navigationData as User;
-                Title = "Session data - " + user.UserName;
-                // Show users game sessions
-                GameSessions = new ObservableCollection<UserGameSession>(await _userService.GetUserGameSessions(user.Id));
+                _user = navigationData as User;
+                Title = "Session data - " + _user.UserName;
             }
+            GameSessions = new ObservableCollection<UserGameSession>(await _userService.GetUserGameSessions(_user.Id));
             DialogService.HideLoading();
         }
     }

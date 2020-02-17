@@ -54,11 +54,11 @@
     <WarningLevel>4</WarningLevel>
     <ConsolePause>false</ConsolePause>
     <MtouchArch>ARM64</MtouchArch>
-    <CodesignKey>iPhone Developer: Dejan Kocic (S9V4P7UX5L)</CodesignKey>
+    <CodesignKey>Apple Development: Dejan Kocic (S9V4P7UX5L)</CodesignKey>
     <MtouchDebug>true</MtouchDebug>
     <CodesignEntitlements>
     </CodesignEntitlements>
-    <CodesignProvision>Pathway+ Games Development Profile</CodesignProvision>
+    <CodesignProvision>iOS Team Provisioning Profile: uk.ac.ntu.comp.pathway.games</CodesignProvision>
     <CodesignExtraArgs />
     <CodesignResourceRules />
     <BuildIpa>true</BuildIpa>
@@ -78,14 +78,14 @@
     <WarningLevel>4</WarningLevel>
     <MtouchArch>ARM64</MtouchArch>
     <ConsolePause>false</ConsolePause>
-    <CodesignKey>iPhone Developer: Dejan Kocic (S9V4P7UX5L)</CodesignKey>
+    <CodesignKey>Apple Development: Dejan Kocic (S9V4P7UX5L)</CodesignKey>
     <CodesignEntitlements>
     </CodesignEntitlements>
     <BuildIpa>true</BuildIpa>
     <IpaPackageName>uk.ac.ntu.comp.pathway.games</IpaPackageName>
     <CodesignExtraArgs />
     <CodesignResourceRules />
-    <CodesignProvision>Pathway+ Games Development Profile</CodesignProvision>
+    <CodesignProvision>iOS Team Provisioning Profile: uk.ac.ntu.comp.pathway.games</CodesignProvision>
     <MtouchLink>SdkOnly</MtouchLink>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Ad-Hoc|iPhone' ">
@@ -124,6 +124,7 @@
     <Compile Include="Controls\FaceSensorViewRenderer.cs" />
     <Compile Include="Effects\TapWithPositionGestureEffect.cs" />
     <Compile Include="Extensions\ARBlendShapeLocationOptionsExtensions.cs" />
+    <Compile Include="Infrastructure\Device\DeviceHelper.cs" />
     <Compile Include="Extensions\IEnumerableExtensions.cs" />
     <Compile Include="Extensions\NMatrix4Extenstions.cs" />
     <Compile Include="Extensions\NVector3Extensions.cs" />

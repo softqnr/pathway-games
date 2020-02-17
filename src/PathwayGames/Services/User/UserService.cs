@@ -1,4 +1,5 @@
 ﻿using PathwayGames.Data;
+using PathwayGames.Helpers;
 using PathwayGames.Models;
 using PathwayGames.Models.Enums;
 using System;
@@ -105,9 +106,9 @@ namespace PathwayGames.Services.User
                 .Where(x => (x.TargetIdiom == idiom && x.IsDefault)).FirstOrDefaultAsync();
         }
 
-        public string PackUserGameSessions(IList<UserGameSession> gameSessions)
+        public string PackUserGameSessions(IList<UserGameSession> gameSessions, string fileName)
         {
-            string destinationZipFullPath = Path.Combine(App.LocalStorageDirectory, "pack.zip");
+            string destinationZipFullPath = Path.Combine(App.LocalStorageDirectory, fileName);
             
             if (File.Exists(destinationZipFullPath))
                 File.Delete(destinationZipFullPath);
@@ -125,11 +126,25 @@ namespace PathwayGames.Services.User
             return destinationZipFullPath;
         }
 
+        public async Task<string> PackUserGameSessions(long userId)
+        {
+            // Get current user game sessions
+            Models.User user = await _repositoryUser.GetAsync(userId);
+            IList<UserGameSession> gameSessions = await GetUserGameSessions(userId);
+            // Create filename e.g. Dejan_2019-01-21.zip
+            string fileName = $"{user.UserName}_{DateTime.Now.ToString("MM-dd-yyyy")}.zip";
+            fileName = FileHelper.MakeValidFileName(fileName);
+            return PackUserGameSessions(gameSessions, fileName);
+        }
+
         public async Task<string> PackAllUserGameSessions()
         {
+            // Get all game sessions
             IList<UserGameSession> gameSessions = await _repositoryUserGameSession.GetAllAsync();
-
-            return PackUserGameSessions(gameSessions);
+            // Create filename e.g. BulkExport_Dejan_2019-01-21.zip
+            string fileName = $"BulkExport_{App.SelectedUser.UserName}_{DateTime.Now.ToString("MM-dd-yyyy")}.zip";
+            fileName = FileHelper.MakeValidFileName(fileName);
+            return PackUserGameSessions(gameSessions, fileName);
         }
 
         public async Task DeleteGameSession(UserGameSession gameSession)

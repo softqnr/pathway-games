@@ -43,6 +43,14 @@ namespace PathwayGames.Models
 
         public int SlideCount { get; set; } = 10;
 
+        public bool EyeGazeVisualisation { get; set; }
+
+        public int ScreenPPI { get; set; }
+
+        public float VisualizationWidthCompensation { get; set; }
+
+        public float VisualizationHeightCompensation { get; set; }
+
         public UserGameSettings()
         {
 

@@ -113,12 +113,16 @@
                 </Label>
             </StackLayout>
             <c:FaceSensorView Grid.Column="0" Grid.Row="2" WidthRequest="96" HeightRequest="128" 
-                              TrackingStarted="FaceSensorView_TrackingStarted"
-                              TrackingStopped="FaceSensorView_TrackingStopped"
-                              EyeGazeChangedCommand="{Binding EyeGazeChangedCommand}"
-                              ShowCrosshair="True"
-                              RecordingEnabled="True"
-                              IsEnabled="{Binding Game.GameSettings.EyeGazeSensor}" />
+                                TrackingStarted="FaceSensorView_TrackingStarted"
+                                TrackingStopped="FaceSensorView_TrackingStopped"
+                                EyeGazeChangedCommand="{Binding EyeGazeChangedCommand}"
+                                ScreenPPI="{Binding Game.GameSettings.ScreenPPI}"
+                                WidthCompensation="{Binding Game.GameSettings.VisualizationWidthCompensation}"
+                                HeightCompensation="{Binding Game.GameSettings.VisualizationHeightCompensation}"
+                                EyeGazeVisualizationEnabled="{Binding Game.GameSettings.EyeGazeVisualisation}"
+                                CameraPreviewEnabled="False"
+                                RecordingEnabled="True"
+                                IsEnabled="{Binding Game.GameSettings.EyeGazeSensor}" />
         </Grid>
     </ContentPage.Content>
 

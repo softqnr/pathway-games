@@ -19,90 +19,129 @@ namespace PathwayGames.iOS.Controls
         private IFaceSensor sensor;
         private ARSCNView SceneView;
         private bool IsTracked;
+        private NSObject CameraPreview;
         
         protected override void OnElementChanged(ElementChangedEventArgs<FaceSensorView> e)
         {
             base.OnElementChanged(e);
 
-            if (Control == null)
-            {
-                // Enable AR
-                SceneView = new ARSCNView
-                {
-                    //Frame = new CGRect(263, 558, 96, 128),
-                    ContentMode = UIViewContentMode.ScaleToFill,
-                    UserInteractionEnabled = true,
-                    TranslatesAutoresizingMaskIntoConstraints = false,
-                    AutomaticallyUpdatesLighting = true, 
-                    // UITapGestureRecognizer =  new UITapGestureRecognizer(),
-                    Frame = new CGRect(Frame.X, Frame.Y, Frame.Width, Frame.Height),
-                    // ShowsStatistics = true, // Show stats
-                };
-                SetNativeControl(SceneView);
-
-                SceneView.Session.Delegate = this;
-             }
-
             if (e.OldElement != null)
             {
                 // Unsubscribe events
                 e.OldElement.PropertyChanged -= OnElementPropertyChanged;
-                // Pause the view's session
-                SceneView.Session.Pause();
             }
 
             if (e.NewElement != null)
             {
-                // Create a session configuration
+                // Check if AR is supported
                 if (!ARFaceTrackingConfiguration.IsSupported)
                 {
                     ShowUnsupportedDeviceError();
                     return;
                 }
+                if (Control == null)
+                {
+                    // Instantiate the native control and assign it to the Control property with
+                    // the SetNativeControl method
+                    SceneView = new ARSCNView
+                    {
+                        ContentMode = UIViewContentMode.ScaleToFill,
+                        UserInteractionEnabled = true,
+                        TranslatesAutoresizingMaskIntoConstraints = false,
+                        AutomaticallyUpdatesLighting = true,
+                        Frame = new CGRect(Frame.X, Frame.Y, Frame.Width, Frame.Height),
+                        // UITapGestureRecognizer = new UITapGestureRecognizer(),
+                        // ShowsStatistics = true, // Show stats
+                    };
+
+                    SetNativeControl(SceneView);
+
+                    SceneView.Session.Delegate = this;
+
+                    SceneView.Delegate = new EyeGazeDetectionDelegate(SceneView,
+                        e.NewElement.EyeGazeVisualizationEnabled,
+                        e.NewElement.ScreenPPI,
+                        e.NewElement.WidthCompensation,
+                        e.NewElement.HeightCompensation
+                        );
+                }
+
                 sensor = e.NewElement as IFaceSensor;
                 // Subscribe events
                 e.NewElement.PropertyChanged += OnElementPropertyChanged;
-                // Crosshair
-                if (e.NewElement.ShowCrosshair)
-                {
-                    SceneView.Delegate = new EyeGazeDetectionDelegate(SceneView);
-                }
-                // Hide camera display
-                if (!e.NewElement.ShowPreview)
-                {
-                    SceneView.Scene.Background.Contents = UIColor.Clear;
-                }
-                // Run the view's session options
-                ARFaceTrackingConfiguration configuration = new ARFaceTrackingConfiguration
+                // Begin AR Session
+                SceneView.Session.Run(new ARFaceTrackingConfiguration
                 {
                     LightEstimationEnabled = true
-                };
-                SceneView.Session.Run(configuration,
-                    ARSessionRunOptions.ResetTracking | ARSessionRunOptions.RemoveExistingAnchors);
+                }, ARSessionRunOptions.ResetTracking | ARSessionRunOptions.RemoveExistingAnchors);
             }
         }
+
         protected override void OnElementPropertyChanged(object sender, System.ComponentModel.PropertyChangedEventArgs e)
         {
             base.OnElementPropertyChanged(sender, e);
-            
-            if (e.PropertyName == FaceSensorView.ShowCrosshairProperty.PropertyName) {
-                //UpdateCrosshair();
+
+            if (this.Element == null || this.Control == null)
+                return;
+
+            if (e.PropertyName == FaceSensorView.EyeGazeVisualizationEnabledProperty.PropertyName) {
+                UpdateEyeGazeVisualization();
+            } else if (e.PropertyName == FaceSensorView.ScreenPPIProperty.PropertyName) {
+                UpdateScreenPPI();
+            } else if (e.PropertyName == FaceSensorView.CameraPreviewEnabledProperty.PropertyName) {
+                UpdateCameraPreview();
+            } else if (e.PropertyName == FaceSensorView.WidthCompensationProperty.PropertyName) {
+                UpdatWidthCompensation();
+            } else if (e.PropertyName == FaceSensorView.HeightCompensationProperty.PropertyName) {
+                UpdatHeightCompensation();
             }
         }
+
         protected override void Dispose(bool disposing)
         {
             if (disposing)
             {
-                // TODO: Stop sensor capturing
-                //Control.CaptureSession.Dispose();
+                // Pause the AR session
+                SceneView.Session?.Pause();
                 Control.Dispose();
             }
             base.Dispose(disposing);
         }
 
-        private void UpdateCrosshair()
+        private void UpdateEyeGazeVisualization()
         {
+            (SceneView.Delegate as EyeGazeDetectionDelegate).EyeGazeVisualizationEnabled = sensor.EyeGazeVisualizationEnabled;
+        }
 
+        private void UpdateScreenPPI()
+        {
+            (SceneView.Delegate as EyeGazeDetectionDelegate).ScreenPPI = sensor.ScreenPPI;
+        }
+
+        private void UpdateCameraPreview()
+        {
+            if (CameraPreview == null)
+            {
+                CameraPreview = SceneView.Scene.Background.Contents;
+            }
+            if (sensor.EyeGazeVisualizationEnabled)
+            {
+                SceneView.Scene.Background.Contents = CameraPreview;
+            }
+            else
+            {
+                SceneView.Scene.Background.Contents = UIColor.Clear;
+            }
+        }
+
+        private void UpdatWidthCompensation()
+        {
+            (SceneView.Delegate as EyeGazeDetectionDelegate).WidthCompensation = sensor.WidthCompensation;
+        }
+
+        private void UpdatHeightCompensation()
+        {
+            (SceneView.Delegate as EyeGazeDetectionDelegate).HeightCompensation = sensor.HeightCompensation;
         }
 
         private void ShowUnsupportedDeviceError()
@@ -135,7 +174,8 @@ namespace PathwayGames.iOS.Controls
                             }
                             // Log
                             sensor.OnReadingTaken(new FaceAnchorChangedEventArgs(
-                                new FaceAnchorReading(frame.Timestamp, faceAnchor.Transform.ToFloatMatrix4(),
+                                new FaceAnchorReading(frame.Timestamp, 
+                                    faceAnchor.Transform.ToFloatMatrix4(),
                                     faceAnchor.LeftEyeTransform.ToFloatMatrix4(),
                                     faceAnchor.RightEyeTransform.ToFloatMatrix4(),
                                     faceAnchor.LookAtPoint.ToFloatVector3(),

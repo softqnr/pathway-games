@@ -19,7 +19,7 @@ namespace PathwayGames.Infrastructure.Dialog
         {
             var toastConfig = new ToastConfig(message);
             toastConfig.SetDuration(duration);
-            toastConfig.Position = Device.RuntimePlatform == Device.UWP ? ToastPosition.Top : ToastPosition.Bottom;
+            toastConfig.Position = Xamarin.Forms.Device.RuntimePlatform == Xamarin.Forms.Device.UWP ? ToastPosition.Top : ToastPosition.Bottom;
 
             // ICON
             /*

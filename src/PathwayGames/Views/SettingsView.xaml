@@ -46,6 +46,21 @@
                     </DataTemplate>
                 </sv:Section.ItemTemplate>
             </sv:Section>
+            <sv:Section Title="VISUALIZATION SETTINGS">
+                <SwitchCell Text="Eye Gaze Visualization" On="{Binding UserSettings.EyeGazeVisualisation, Mode=TwoWay}"/>
+                <EntryCell Label="Screen PPI"
+                               Text="{Binding UserSettings.ScreenPPI, 
+                    Converter={StaticResource IntegerConverter}, Mode=TwoWay}" Keyboard="Numeric" />
+                <EntryCell Label="Width Compensation" 
+                               Text="{Binding UserSettings.VisualizationWidthCompensation, 
+                    Converter={StaticResource DecimalConverter}, Mode=TwoWay}" Keyboard="Numeric" />
+                <EntryCell Label="Height Compensation" 
+                               Text="{Binding UserSettings.VisualizationHeightCompensation, 
+                    Converter={StaticResource DecimalConverter}, Mode=TwoWay}" Keyboard="Numeric" />
+                <sv:ButtonCell Title="Reset Defaults" TitleAlignment="Center" 
+                               HintText="{Binding VisualizationSettings}" HintTextColor="Gray"
+                               Command="{Binding ResetVisualizationDefaultsCommand}" />
+            </sv:Section>
         </sv:SettingsView>
     </ContentPage.Content>
 </ContentPage>

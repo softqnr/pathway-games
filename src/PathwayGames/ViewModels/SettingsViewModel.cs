@@ -1,5 +1,7 @@
-﻿using PathwayGames.Infrastructure.Keyboard;
+﻿using PathwayGames.Infrastructure.Device;
+using PathwayGames.Infrastructure.Keyboard;
 using PathwayGames.Models;
+using PathwayGames.Sensors;
 using PathwayGames.Services.User;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,10 +16,14 @@ namespace PathwayGames.ViewModels
     public class SettingsViewModel : ViewModelBase
     {
         private readonly IUserService _userService;
+        private readonly IDeviceHelper _deviceHelper;
 
         private UserGameSettings _userSettings;
         private SeekGridOption _selectedSeekGridOption = new SeekGridOption();
         private IList<SeekGridOption> _seekGridOptions;
+        private string _visualizationSettings;
+        private EyeGazeCompensation _compensantion;
+        private int _ppi;
 
         public SeekGridOption SelectedSeekGridOption
         {
@@ -37,6 +43,12 @@ namespace PathwayGames.ViewModels
             set => SetProperty(ref _seekGridOptions, value);
         }
 
+        public string VisualizationSettings
+        {
+            get => _visualizationSettings;
+            set => SetProperty(ref _visualizationSettings, value);
+        }
+
         public ICommand SaveSettingsCommand
         {
             get
@@ -48,14 +60,30 @@ namespace PathwayGames.ViewModels
             }
         }
 
+        public ICommand ResetVisualizationDefaultsCommand
+        {
+            get
+            {
+                return new Command(async () =>
+                {
+                    await OnResetVisualizationDefaults();
+                });
+            }
+        }
+
         public SettingsViewModel(IUserService userService)
         {
             _userService = userService;
+            _deviceHelper = DependencyService.Get<IDeviceHelper>();
+
+            _ppi = _deviceHelper.MachineNameToPPI(DeviceInfo.Model);
+            _compensantion = _deviceHelper.MachineNameToEyeGazeCompensation(DeviceInfo.Model);
         }
 
         public override async Task InitializeAsync(object navigationData)
         {
             Title = "Settings - " + App.SelectedUser.UserName;
+            VisualizationSettings = $"({DeviceInfo.Model}, {_ppi}PPI, [{_compensantion.WidthCompensation}-{_compensantion.HeightCompensation}])";
             // Show current selected users game sessionss
             UserSettings = await _userService.GetUserSettings(App.SelectedUser.Id);
             SeekGridOptions = await _userService.GetSeekGridOptionsByIdiom(DeviceInfo.Idiom.ToString());
@@ -73,6 +101,19 @@ namespace PathwayGames.ViewModels
             App.SelectedUser.UserSettings = _userSettings;
             DependencyService.Get<IKeyboardService>().HideKeyboard();
             DialogService.ShowToast("Settings saved.");
+        }
+
+        private async Task OnResetVisualizationDefaults()
+        {
+            bool confirmed = await DialogService.ShowConfirmAsync("You cannot undo this action",
+           "Do you want to reset to default settings?", "Ok", "Cancel");
+            if (confirmed)
+            {
+                _userSettings.ScreenPPI = _ppi;
+                _userSettings.VisualizationWidthCompensation = _compensantion.WidthCompensation;
+                _userSettings.VisualizationHeightCompensation = _compensantion.HeightCompensation;
+                this.OnPropertyChanged(nameof(UserSettings));
+            }
         }
     }
 }

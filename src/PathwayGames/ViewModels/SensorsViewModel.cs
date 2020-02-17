@@ -1,12 +1,15 @@
 ﻿using OxyPlot;
 using OxyPlot.Axes;
 using OxyPlot.Series;
+using PathwayGames.Models;
 using PathwayGames.Sensors;
 using PathwayGames.Services.Engangement;
 using PathwayGames.Services.Sensors;
+using PathwayGames.Services.User;
 using System;
 using System.Diagnostics;
 using System.Threading;
+using System.Threading.Tasks;
 using System.Windows.Input;
 using Xamarin.Forms;
 
@@ -21,14 +24,22 @@ namespace PathwayGames.ViewModels
         private readonly Stopwatch watch = new Stopwatch();
         //Services
         private readonly ISensorLogWriterService _sensorLowWriterService;
+        private readonly IUserService _userService;
         private readonly IEngangementService _engangementService;
 
         private PlotModel _plotModel;
+        public UserGameSettings _userSettings;
 
         public PlotModel PlotModel
         {
             get => _plotModel;
             private set => SetProperty(ref _plotModel, value);
+        }
+
+        public UserGameSettings UserSettings
+        {
+            get => _userSettings;
+            private set => SetProperty(ref _userSettings, value);
         }
 
         public ICommand EyeGazeChangedCommand
@@ -45,15 +56,22 @@ namespace PathwayGames.ViewModels
         }
 
         public SensorsViewModel (ISensorLogWriterService sensorLogWriterService,
+            IUserService userService,
             IEngangementService engangementService)
         {
             _sensorLowWriterService = sensorLogWriterService;
+            _userService = userService;
             _engangementService = engangementService;
 
             Title = "Live";
-
+            
             //StartSensorRecording();
             CreatePlot();
+        }
+
+        public override async Task InitializeAsync(object navigationData)
+        {
+            UserSettings = await _userService.GetUserSettings(App.SelectedUser.Id);
         }
 
         private void CreatePlot()

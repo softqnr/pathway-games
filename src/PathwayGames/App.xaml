@@ -52,6 +52,7 @@
             <!--  converters  -->
             <converters:ItemTappedEventArgsConverter x:Key="ItemTappedConverter" />
             <converters:DecimalConverter x:Key="DecimalConverter" />
+            <converters:IntegerConverter x:Key="IntegerConverter" />
         </ResourceDictionary>
     </Application.Resources>
 

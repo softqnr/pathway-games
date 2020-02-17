@@ -55,8 +55,11 @@
                                   TrackingStarted="FaceSensorView_TrackingStarted"
                                   TrackingStopped="FaceSensorView_TrackingStopped"
                                   EyeGazeChangedCommand="{Binding EyeGazeChangedCommand}"
-                                  ShowCrosshair="True"
-                                  ShowPreview="True"
+                                  ScreenPPI="{Binding UserSettings.ScreenPPI}"
+                                  WidthCompensation="{Binding UserSettings.VisualizationWidthCompensation}"
+                                  HeightCompensation="{Binding UserSettings.VisualizationHeightCompensation}"
+                                  EyeGazeVisualizationEnabled="True"
+                                  CameraPreviewEnabled="True"
                                   RecordingEnabled="True"
                                   IsEnabled="True" />
 
