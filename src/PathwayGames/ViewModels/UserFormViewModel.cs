@@ -1,8 +1,11 @@
-﻿using PathwayGames.Models.Enums;
+﻿using PathwayGames.Infrastructure.Device;
+using PathwayGames.Models.Enums;
+using PathwayGames.Sensors;
 using PathwayGames.Services.User;
 using System;
 using System.Threading.Tasks;
 using System.Windows.Input;
+using Xamarin.Essentials;
 using Xamarin.Forms;
 
 namespace PathwayGames.ViewModels
@@ -10,6 +13,7 @@ namespace PathwayGames.ViewModels
     public class UserFormViewModel : ViewModelBase
     {
         private readonly IUserService _userService;
+        private readonly IDeviceHelper _deviceHelper;
         private string _userName;
 
         public string UserName
@@ -44,22 +48,26 @@ namespace PathwayGames.ViewModels
 
         public async Task OnSaveUser()
         {
-            if (UserName != "")
+            if (!IsBusy)
             {
-                Enum.TryParse<UserType>(UserType, out var userType);
-                await _userService.CreateUser(UserName, userType);
-                DialogService.ShowToast("User added");
-                await NavigationService.PopAsync(true);
-            }
-            else
-            {
-                DialogService.ShowToast("User name cannot be empty!");
+                if (UserName != "") {
+                    IsBusy = true;
+                    Enum.TryParse<UserType>(UserType, out var userType);
+                    int ppi = _deviceHelper.MachineNameToPPI(DeviceInfo.Model);
+                    EyeGazeCompensation compensantion = _deviceHelper.MachineNameToEyeGazeCompensation(DeviceInfo.Model);
+                    await _userService.CreateUser(UserName, userType, ppi, compensantion.WidthCompensation, compensantion.HeightCompensation);
+                    DialogService.ShowToast("User added");
+                    await NavigationService.PopAsync(true);
+                } else {
+                    DialogService.ShowToast("User name cannot be empty!");
+                }
             }
         }
 
         public UserFormViewModel(IUserService userService)
         {
             _userService = userService;
+            _deviceHelper = DependencyService.Get<IDeviceHelper>();
         }
 
         public override async Task InitializeAsync(object navigationData)

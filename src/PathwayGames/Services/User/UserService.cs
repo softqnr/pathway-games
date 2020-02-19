@@ -17,6 +17,7 @@ namespace PathwayGames.Services.User
         private readonly IRepository<UserGameSettings> _repositoryUserSettings;
         private readonly IRepository<UserGameSession> _repositoryUserGameSession;
         private readonly IRepository<SeekGridOption> _repositorySeekGridOption;
+        const string AllUserType = "All";
 
         public UserService(IRepository<Models.User> repositoryUser,
             IRepository<UserGameSettings> repositoryUserSettings,
@@ -31,7 +32,7 @@ namespace PathwayGames.Services.User
 
         public async Task<IList<Models.User>> GetByNameAndUserType(string name, string userType)
         {
-            return await _repositoryUser.AsQueryable().Where(x => (x.UserType == userType || userType == "All")
+            return await _repositoryUser.AsQueryable().Where(x => (x.UserType == userType || userType == AllUserType)
                 && x.UserName.StartsWith(name, StringComparison.CurrentCultureIgnoreCase)).ToListAsync();
         }
 
@@ -42,7 +43,12 @@ namespace PathwayGames.Services.User
 
         public async Task<Models.User> GetSelectedUser()
         {
-            return await _repositoryUser.AsQueryable().Where(x => x.IsSelected).FirstOrDefaultAsync();
+            var users = await _repositoryUser.GetAllWithChildrenAsync(x => x.IsSelected);
+            if (users.Count > 0) {
+                return users[0];
+            } else {
+                return null;
+            }
         }
 
         public async Task<Models.User> SetSelectedUser(Models.User user)
@@ -83,7 +89,7 @@ namespace PathwayGames.Services.User
             await _repositoryUserSettings.UpdateWithChildrenAsync(gameSettings);
         }
 
-        public async Task CreateUser(string userName, UserType userType)
+        public async Task CreateUser(string userName, UserType userType, int ppi, float widthCompensantion, float heightCompensantion)
         {
             Models.User user = new Models.User() {
                 UserName = userName,
@@ -91,6 +97,11 @@ namespace PathwayGames.Services.User
             };
             // Set it to default
             user.UserSettings.SeekGridOptions = await GetSeekGridOptionByIdiomDefault(DeviceInfo.Idiom.ToString());
+            // Visualization defaults
+            user.UserSettings.ScreenPPI = ppi;
+            user.UserSettings.VisualizationWidthCompensation = widthCompensantion;
+            user.UserSettings.VisualizationHeightCompensation = heightCompensantion;
+
             await _repositoryUser.InsertWithChildrenAsync(user, true);
         }
 

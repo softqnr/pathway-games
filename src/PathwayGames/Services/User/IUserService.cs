@@ -29,7 +29,7 @@ namespace PathwayGames.Services.User
 
         Task UpdateUserSettings(UserGameSettings gameSettings);
 
-        Task CreateUser(string userName, UserType userType);
+        Task CreateUser(string userName, UserType userType, int ppi, float widthCompensantion, float heightCompensantion);
 
         Task<IList<SeekGridOption>> GetSeekGridOptionsByIdiom(string idiom);
 
