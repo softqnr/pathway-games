@@ -70,7 +70,7 @@
                     <Label Text="{Binding Game.Outcome.ConfusionMatrix.CorrectOmission}" FontSize="Title"/>
             </Frame>
         </Grid>
-            <StackLayout Margin="0,5,0,5">
+            <StackLayout Margin="0,0,0,5">
                 <Label Text="Analysis" HorizontalOptions="Center" FontSize="Title"/>
                 <Label>
                     <Label.FormattedText>

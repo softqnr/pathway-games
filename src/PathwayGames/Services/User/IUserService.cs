@@ -36,5 +36,7 @@ namespace PathwayGames.Services.User
         Task<SeekGridOption> GetSeekGridOptionByIdiomDefault(string idiom);
 
         Task DeleteGameSession(UserGameSession gameSession);
+
+        Task DeleteUser(Models.User user);
     }
 }

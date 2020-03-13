@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:PathwayGames"
              x:Class="PathwayGames.Views.UsersView"
              x:Name="self"
              Title="Users"
@@ -34,32 +35,39 @@
                     </Picker.Items>
                 </Picker>
             </StackLayout>
-            <CollectionView ItemsSource="{Binding Users}">
+            <CollectionView ItemsSource="{Binding Users}" x:Name="collectionView"
+                            VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
                 <CollectionView.EmptyView>
                     <Label Text="No users found!"/>
                 </CollectionView.EmptyView>
                 <CollectionView.ItemTemplate>
                     <DataTemplate>
-                        <Grid Padding="0,5,0,5">
-                            <Grid.ColumnDefinitions>
-                                <ColumnDefinition Width="*"/>
-                                <ColumnDefinition Width="Auto"/>
-                                <ColumnDefinition Width="Auto"/>
-                            </Grid.ColumnDefinitions>
-                            <StackLayout Orientation="Vertical" HeightRequest="60" Grid.Row="0" Grid.Column="0">
-                                <Label Text="{Binding UserName}" FontAttributes="Bold"/>
-                                <Label Text="{Binding UserType}" TextColor="Gray"/>
-                            </StackLayout>
+                            <Grid Padding="0,5,0,5">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Width="Auto"/>
+                                </Grid.ColumnDefinitions>
+                                <StackLayout Orientation="Vertical" HeightRequest="60" Grid.Row="0" Grid.Column="0">
+                                    <Label Text="{Binding UserName}" FontAttributes="Bold"/>
+                                    <Label Text="{Binding UserType}" TextColor="Gray"/>
+                                </StackLayout>
                             
-                            <Button Grid.Row="0" Grid.Column="1" HorizontalOptions="End" Text="Select"
-                                    Command="{Binding BindingContext.UserSelectedCommand, Source={x:Reference self}}" Margin="10" TextColor="Black"
-                                    CommandParameter="{Binding .}"/>
+                                <Button Grid.Row="0" Grid.Column="1" HorizontalOptions="End" Text="Select"
+                                        Command="{Binding BindingContext.UserSelectedCommand, Source={x:Reference self}}" Margin="10" TextColor="Black"
+                                        CommandParameter="{Binding .}"/>
 
-                            <Button Grid.Row="0" Grid.Column="2" HorizontalOptions="End" Text="{StaticResource IconJson}" FontFamily="{StaticResource MaterialFontFamily}" FontSize="32"
-                                    Command="{Binding BindingContext.GotoUserSessionsCommand, Source={x:Reference self}}" Margin="10" TextColor="Black"
-                                    CommandParameter="{Binding .}"/>
+                                <Button Grid.Row="0" Grid.Column="2" HorizontalOptions="End" Text="{StaticResource IconJson}" FontFamily="{StaticResource MaterialFontFamily}" FontSize="32"
+                                        Command="{Binding BindingContext.GotoUserSessionsCommand, Source={x:Reference self}}" Margin="10" TextColor="Black"
+                                        CommandParameter="{Binding .}"/>
+
+                                <Button Grid.Row="0" Grid.Column="3" HorizontalOptions="End" Text="{StaticResource IconDelete}" FontFamily="{StaticResource MaterialFontFamily}" FontSize="32"
+                                        Command="{Binding BindingContext.DeleteUserCommand, Source={x:Reference self}}" CommandParameter="{Binding .}" Margin="10" 
+                                        IsVisible="{Binding Source={x:Static local:App.SelectedUser},Path=IsAdmin}" 
+                                        BackgroundColor="Transparent" TextColor="Black" />
                         </Grid>
-                    </DataTemplate>
+                     </DataTemplate>
                 </CollectionView.ItemTemplate>
             </CollectionView>
             

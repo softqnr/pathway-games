@@ -18,7 +18,7 @@ namespace PathwayGames.Data
         AsyncTableQuery<T> AsQueryable();
         Task<int> InsertAsync(T entity);
         Task<int> UpdateAsync(T entity);
-        Task<int> DeleteAsync(T entity); 
+        Task DeleteAsync(T entity, bool recursive = false); 
         Task InsertAllAsync(IEnumerable<T> objects);
         Task UpdateAllAsync(IEnumerable<T> objects);
         Task DeleteAllAsync(IEnumerable<T> objects, bool recursive = false);

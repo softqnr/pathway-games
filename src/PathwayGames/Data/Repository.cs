@@ -84,7 +84,7 @@ namespace PathwayGames.Data
         public async Task<int> UpdateAsync(T entity) =>
              await db.UpdateAsync(entity);
 
-        public async Task<int> DeleteAsync(T entity) =>
-             await db.DeleteAsync(entity);
+        public async Task DeleteAsync(T entity, bool recursive = false) =>
+             await db.DeleteAsync(entity, recursive);
     }
 }

@@ -39,6 +39,11 @@ namespace PathwayGames
         {
             InitializeComponent();
 
+            // Enable flags
+            Device.SetFlags(new[] {
+                "SwipeView_Experimental"
+            });
+
             // Init version tracking
             VersionTracking.Track();
 

@@ -1,7 +1,6 @@
 ﻿using PathwayGames.Models;
-using PathwayGames.Models.Enums;
 using PathwayGames.Services.User;
-using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Threading.Tasks;
 using System.Windows.Input;
 using Xamarin.Forms;
@@ -11,11 +10,11 @@ namespace PathwayGames.ViewModels
     public class UsersViewModel : ViewModelBase
     {
         private readonly IUserService _userService;
-        private IList<User> _users;
+        private ObservableCollection<User> _users;
 
         public string SelectedUserType { get; set; } = "All";
 
-        public IList<User> Users
+        public ObservableCollection<User> Users
         {
             get => _users;
             set => SetProperty(ref _users, value);
@@ -65,12 +64,23 @@ namespace PathwayGames.ViewModels
             }
         }
 
+        public ICommand DeleteUserCommand
+        {
+            get
+            {
+                return new Command(async (u) =>
+                {
+                    await OnUserDeletedCommand((User)u);
+                });
+            }
+        }
+
         private async Task OnSearch(object searchText)
         {
             if (searchText != null)
             {
                 // Do search
-                Users = await _userService.GetByNameAndUserType((string)searchText, SelectedUserType);
+                Users = new ObservableCollection<User>(await _userService.GetByNameAndUserType((string)searchText, SelectedUserType));
             }
         }
 
@@ -100,6 +110,27 @@ namespace PathwayGames.ViewModels
             await NavigationService.NavigateToPopupAsync<UserFormViewModel>(true);
         }
 
+        private async Task OnUserDeletedCommand(Models.User selectedUser)
+        {
+            if (App.SelectedUser.IsAdmin)
+            {
+                if (App.SelectedUser == selectedUser)
+                {
+                    DialogService.ShowToast($"You cannot delete yourself.");
+                }
+                else
+                {
+                    bool confirmed = await DialogService.ShowConfirmAsync("You cannot undo this action",
+                       "Do you want to delete this user?", "Ok", "Cancel");
+                    if (confirmed)
+                    {
+                        await _userService.DeleteUser(selectedUser);
+                        Users.Remove(selectedUser);
+                    }
+                }
+            }
+        }
+
         private async Task OnGotoUserSessionsCommand(User user)
         {
             await NavigationService.NavigateToAsync<SessionDataViewModel>(user);
@@ -112,7 +143,7 @@ namespace PathwayGames.ViewModels
 
         public override async Task InitializeAsync(object navigationData)
         {
-            Users = await _userService.GetAll();
+            Users = new ObservableCollection<User>(await _userService.GetAll());
         }
     }
 }

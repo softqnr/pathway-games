@@ -167,5 +167,14 @@ namespace PathwayGames.Services.User
 
             await _repositoryUserGameSession.DeleteAsync(gameSession);
         }
+
+        public async Task DeleteUser(Models.User user)
+        {
+            foreach(var gameSession in user.GameSessions)
+            {
+                await DeleteGameSession(gameSession);
+            }
+            await _repositoryUser.DeleteAsync(user, true);
+        }
     }
 }
