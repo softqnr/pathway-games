@@ -168,12 +168,13 @@ namespace PathwayGames.Controls
         private View CreateImage(object item)
         {
             var fileName = item as string;
-            var image = new FFImageLoading.Forms.CachedImage()
+            var image = new Image()
             {
                 Source = ImageSource.FromFile(fileName),
                 VerticalOptions = LayoutOptions.CenterAndExpand,
                 HorizontalOptions = LayoutOptions.CenterAndExpand,
                 Aspect = Aspect.AspectFill,
+                IsAnimationPlaying = true,
             };
             return image;
         }

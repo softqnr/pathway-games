@@ -38,5 +38,26 @@ namespace PathwayGames.ViewModels
             }
         }
 
+        public ICommand SeekAX
+        {
+            get
+            {
+                return new Command(async () =>
+                {
+                    await NavigationService.NavigateToAsync<GameViewModel>(GameType.SeekAX);
+                });
+            }
+        }
+
+        public ICommand NA
+        {
+            get
+            {
+                return new Command(async () =>
+                {
+                    await DialogService.ShowAlertAsync("", "Not available!", "OK");
+                });
+            }
+        }
     }
 }

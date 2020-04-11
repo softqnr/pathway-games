@@ -18,6 +18,8 @@ namespace PathwayGames.Services.Slides
         const string YDistractorSlideImage = "berry_the_dog.jpg";
         const string BContrastImage = "backpack.jpg";
         readonly string[] RewardSlideImages = new[] { "reward_animation_wow.gif" };
+        const string XSlideBorderColor = "#FFD700"; // gold
+        readonly string[] YDistractorBorderColors = new[] { "#0000CD", "#32CD32", "#FFD700" }; // blue, green, gold
         const string RewardSound = "success.mp3";
         const int SeedLength = 5;
 
@@ -36,12 +38,13 @@ namespace PathwayGames.Services.Slides
                     game.Slides = GenerateTypeXSlideSequence(gameSettings, seed);
                     break;
                 case GameType.SeekX:
-                    game.Slides = GenerateSeekXSlideSequence(gameSettings, seed);
+                    game.Slides = GenerateSeekXSlideSequence(gameSettings, seed, false);
                     break;
                 case GameType.TypeAX:
                     game.Slides = GenerateTypeAXSlideSequence(gameSettings, seed);
                     break;
                 case GameType.SeekAX:
+                    game.Slides = GenerateSeekXSlideSequence(gameSettings, seed, true);
                     break;
                 case GameType.SeekAXQuiz:
                     break;
@@ -120,7 +123,7 @@ namespace PathwayGames.Services.Slides
             return SlideCollection.OrderBy(i => random.Next()).ToList<Slide>();
         }
 
-        private List<Slide> GenerateSeekXSlideSequence(UserGameSettings gameSettings, string seed)
+        private List<Slide> GenerateSeekXSlideSequence(UserGameSettings gameSettings, string seed, bool isAX)
         {
             // Create slide collection using the 50%X and 50%Distractor 
             List<Slide> SlideCollection = new List<Slide>();
@@ -128,16 +131,22 @@ namespace PathwayGames.Services.Slides
             int typeXSlideCount = (int)(gameSettings.SlideCount * 0.5);
             for (int i = 0; i < typeXSlideCount; i++)
             {
-                SlideCollection.Add(new Slide(SlideType.X, gameSettings.SlideDisplayDuration,
+                var slide = new Slide(SlideType.X, gameSettings.SlideDisplayDuration,
                     GenerateSeekXImageSequence(gameSettings.SeekGridOptions, true),
-                        ThreadSafeRandom.GetRandomNumber(gameSettings.BlankSlideDisplayTimes)));
+                        ThreadSafeRandom.GetRandomNumber(gameSettings.BlankSlideDisplayTimes));
+                if (isAX)
+                    slide.BorderColor = XSlideBorderColor;
+                SlideCollection.Add(slide);
             }
             // DistractorY
             for (int i = 0; i < gameSettings.SlideCount - typeXSlideCount; i++)
             {
-                SlideCollection.Add(new Slide(SlideType.Y, gameSettings.SlideDisplayDuration,
+                var slide = new Slide(SlideType.Y, gameSettings.SlideDisplayDuration,
                     GenerateSeekXImageSequence(gameSettings.SeekGridOptions, false),
-                        ThreadSafeRandom.GetRandomNumber(gameSettings.BlankSlideDisplayTimes)));
+                        ThreadSafeRandom.GetRandomNumber(gameSettings.BlankSlideDisplayTimes));
+                if (isAX)
+                    slide.BorderColor = GetRandomYDistractorBorderColor();
+                SlideCollection.Add(slide);
             }
             // Generate random number generator
             Random random = new Random(seed.GetHashCode());
@@ -166,9 +175,14 @@ namespace PathwayGames.Services.Slides
             return Images;
         }
 
+        private string GetRandomYDistractorBorderColor()
+        {
+            return YDistractorBorderColors[ThreadSafeRandom.CurrentThreadRandom.Next(YDistractorBorderColors.Length)];
+        }
+
         public Slide GetRandomRewardSlide(double displayDuration)
         {
-            string slideImage = RewardSlideImages[ThreadSafeRandom.CurrentThreadRandom.Next(RewardSlideImages.Length - 1)];
+            string slideImage = RewardSlideImages[ThreadSafeRandom.CurrentThreadRandom.Next(RewardSlideImages.Length)];
             return new Slide(SlideType.Reward, displayDuration, slideImage, 0, RewardSound);
         }
 

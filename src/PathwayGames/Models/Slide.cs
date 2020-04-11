@@ -45,19 +45,20 @@ namespace PathwayGames.Models
         public Slide(SlideType slideType, double displayDuration, string slideImage, double blankDuration) : this(slideType, displayDuration, slideImage, blankDuration, "")
         { }
 
-        public Slide(SlideType slideType, double displayDuration, string slideImage, double blankDuration, string sound) : this(slideType, displayDuration, new List<string>{ slideImage }, blankDuration, sound)
+        public Slide(SlideType slideType, double displayDuration, string slideImage, double blankDuration, string sound) : this(slideType, displayDuration, new List<string>{ slideImage }, blankDuration, sound, "#00FFFFFF")
         { }
 
-        public Slide(SlideType slideType, double displayDuration, List<string> slideImages, double blankDuration) : this(slideType, displayDuration, slideImages, blankDuration, "")
+        public Slide(SlideType slideType, double displayDuration, List<string> slideImages, double blankDuration) : this(slideType, displayDuration, slideImages, blankDuration, "", "#00FFFFFF")
         { }
 
-        public Slide(SlideType slideType, double displayDuration, List<string> slideImages, double blankDuration, string sound)
+        public Slide(SlideType slideType, double displayDuration, List<string> slideImages, double blankDuration, string sound, string borderColor)
         {
             Images = slideImages;
             SlideType = slideType;
             DisplayDuration = displayDuration;
             BlankDuration = blankDuration;
             Sound = sound;
+            BorderColor = borderColor;
         }
     }
 }

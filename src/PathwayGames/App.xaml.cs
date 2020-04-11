@@ -41,7 +41,7 @@ namespace PathwayGames
 
             // Enable flags
             Device.SetFlags(new[] {
-                "SwipeView_Experimental"
+                "StateTriggers_Experimental"
             });
 
             // Init version tracking

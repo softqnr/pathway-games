@@ -30,6 +30,7 @@ namespace PathwayGames.ViewModels
         private int? _slideCount;
         private int _imageGridColumns = 1;
         private IList<string> _slideImages;
+        private Color _slideBorderColor;
         private CancellationTokenSource _cts;
 
         private Slide CurrentSlide { get; set; }
@@ -52,6 +53,12 @@ namespace PathwayGames.ViewModels
         {
             get => _slideImages;
             set => SetProperty(ref _slideImages, value);
+        }
+
+        public Color SlideBorderColor
+        {
+            get => _slideBorderColor;
+            set => SetProperty(ref _slideBorderColor, value);
         }
 
         public bool Paused
@@ -256,6 +263,8 @@ namespace PathwayGames.ViewModels
             {
                 await _soundService.PlaySoundAsync(slide.Sound);
             }
+            // Border color
+            SlideBorderColor = ColorConverters.FromHex(slide.BorderColor);
             System.Diagnostics.Debug.WriteLine("({0}/{1} - {2}) - {3:HH:mm:ss.fff} - RenderSlide()", SlideIndex, SlideCount, CurrentSlide.SlideType.ToString(), CurrentSlide.SlideDisplayed);
             // Wait for the slide duration
             await Task.Delay(TimeSpan.FromSeconds(CurrentSlide.DisplayDuration));
@@ -332,8 +341,8 @@ namespace PathwayGames.ViewModels
                 // Read User Game Settings
                 UserGameSettings userGameSettings = await _userService.GetUserSettings(App.SelectedUser.Id);
 
-                // Set grid columns for images
-                if (gameType == GameType.SeekX)
+                // Set image grid columns (Seek games) 
+                if (gameType == GameType.SeekX || gameType == GameType.SeekAX || gameType == GameType.SeekAXQuiz)
                 {
                     ImageGridColumns = userGameSettings.SeekGridOptions.GridColumns;
                 }

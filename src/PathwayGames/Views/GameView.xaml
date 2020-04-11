@@ -42,7 +42,7 @@
             </Image>
         </StackLayout>
     </NavigationPage.TitleView>
-
+        
     <ContentPage.Content>
         <Grid Padding="10,10">
             <Grid.ColumnDefinitions>
@@ -58,15 +58,14 @@
                          Grid.Column="0" Grid.Row="0"
                          VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" 
                          Orientation="Vertical">
-                
-                    <Frame BackgroundColor="White" Padding="5,5,5,5" CornerRadius="5" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" HasShadow="False">
-                        <Frame BackgroundColor="White" Padding="5,5,5,5" CornerRadius="5" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" HasShadow="False">
+                <Frame BackgroundColor="{Binding SlideBorderColor}" Padding="8,8,8,8" CornerRadius="8" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" HasShadow="False">
+                    <Frame BackgroundColor="White" Padding="8,8,8,8" CornerRadius="8" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" HasShadow="False">
                         <c:UniformImageGrid ItemsSource="{Binding SlideImages}" ColumnCount="{Binding ImageGridColumns}" 
                                             BackgroundColor="White" ColumnSpacing="4" RowSpacing="4"
                                         VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
                         </c:UniformImageGrid>
-                        </Frame>
                     </Frame>
+                </Frame>
 
                 <ImageButton Source="button.png" g:Gesture.Tapped="{Binding ButtonTappedCommand}" x:Name="BuzzerButton"
                     BackgroundColor="Transparent"

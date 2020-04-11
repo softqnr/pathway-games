@@ -39,7 +39,7 @@
                      HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
             <Label Text="TYPE AX" VerticalOptions="End" TextColor="White" FontSize="Large" FontAttributes="Bold"/>
             <StackLayout.GestureRecognizers>
-                <TapGestureRecognizer Command="{Binding TypeX}"/>
+                <TapGestureRecognizer Command="{Binding NA}"/>
             </StackLayout.GestureRecognizers>
         </StackLayout>
 
@@ -47,7 +47,7 @@
                      HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
             <Label Text="SEEK AX" VerticalOptions="End" TextColor="White" FontSize="Large" FontAttributes="Bold"/>
             <StackLayout.GestureRecognizers>
-                <TapGestureRecognizer Command="{Binding TypeX}"/>
+                <TapGestureRecognizer Command="{Binding SeekAX}"/>
             </StackLayout.GestureRecognizers>
         </StackLayout>
 
@@ -55,7 +55,7 @@
                      HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
             <Label Text="SEEK AX WITH QUIZ" VerticalOptions="End" TextColor="White" FontSize="Large" FontAttributes="Bold"/>
             <StackLayout.GestureRecognizers>
-                <TapGestureRecognizer Command="{Binding TypeX}"/>
+                <TapGestureRecognizer Command="{Binding NA}"/>
             </StackLayout.GestureRecognizers>
         </StackLayout>
 

@@ -3,7 +3,6 @@ using Android.App;
 using Android.Content.PM;
 using Android.OS;
 using Android.Runtime;
-using FFImageLoading.Forms.Platform;
 using System;
 using System.Threading.Tasks;
 
@@ -20,7 +19,6 @@ namespace PathwayGames.Droid
             base.OnCreate(savedInstanceState);
 
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
-            CachedImageRenderer.Init(enableFastRenderer: true);
             UserDialogs.Init(this);
             Rg.Plugins.Popup.Popup.Init(this, savedInstanceState);
 
