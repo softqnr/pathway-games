@@ -246,9 +246,11 @@ namespace PathwayGames.ViewModels
                duration);
             // Display blank slide
             SlideImages = null;
-            
+            // Reset border color
+            SlideBorderColor = Color.Transparent;
+            // Wait
             await Task.Delay(TimeSpan.FromSeconds(duration));
-            //
+            
             await StateMachine.FireAsync(Triggers.SlideFinished);
         }
 
