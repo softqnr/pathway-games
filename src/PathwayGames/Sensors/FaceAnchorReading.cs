@@ -10,6 +10,8 @@ namespace PathwayGames.Sensors
 
         public double ReadingTimestamp { get; set; }
 
+        //public double ReadingTimespan { get; set; }
+
         public float[,] FaceTransform { get; set; }
 
         public float[,] LeftEyeTransform { get; set; }
@@ -20,11 +22,12 @@ namespace PathwayGames.Sensors
 
         public Dictionary<string, float?> FacialExpressions = new Dictionary<string, float?>();
 
-        public FaceAnchorReading(double readingDateTime, float[,] faceTransform,
+        public FaceAnchorReading( double readingTimestamp, float[,] faceTransform,
             float[,] leftEyeTransform, float[,] rightEyeTransform, float[] lookAtPointTransform, Dictionary<string, float?>  facialExpressions)
         {
             ReadingDate = DateTime.Now;
-            ReadingTimestamp = readingDateTime;
+            //ReadingTimespan = readingTimespan;
+            ReadingTimestamp = readingTimestamp;
             FaceTransform = faceTransform;
             LeftEyeTransform = leftEyeTransform;
             RightEyeTransform = rightEyeTransform;

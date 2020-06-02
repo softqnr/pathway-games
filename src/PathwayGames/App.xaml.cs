@@ -5,6 +5,7 @@ using PathwayGames.Infrastructure.Dialog;
 using PathwayGames.Infrastructure.File;
 using PathwayGames.Infrastructure.Navigation;
 using PathwayGames.Infrastructure.Sound;
+using PathwayGames.Infrastructure.Timer;
 using PathwayGames.Models;
 using PathwayGames.Services.Engangement;
 using PathwayGames.Services.Excel;
@@ -91,6 +92,7 @@ namespace PathwayGames
             Container.RegisterInstance(NavigationService, new ContainerControlledLifetimeManager());
             Container.RegisterType<ISoundService, SoundService>();
             Container.RegisterType<IDialogService, DialogService>();
+            Container.RegisterType<IElapsedTimer, ElapsedTimer>();
 
             // Services
             Container.RegisterType<ISlidesService, SlidesService>();
