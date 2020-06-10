@@ -82,7 +82,7 @@
     <WarningLevel>4</WarningLevel>
     <MtouchArch>ARM64</MtouchArch>
     <ConsolePause>false</ConsolePause>
-    <CodesignKey>iPhone Developer</CodesignKey>
+    <CodesignKey>iPhone Distribution</CodesignKey>
     <CodesignEntitlements>
     </CodesignEntitlements>
     <BuildIpa>true</BuildIpa>
@@ -90,7 +90,7 @@
     <CodesignExtraArgs>
     </CodesignExtraArgs>
     <CodesignResourceRules />
-    <CodesignProvision>VS: WildCard Development</CodesignProvision>
+    <CodesignProvision>Pathway+ Games Distribution Profile</CodesignProvision>
     <MtouchLink>SdkOnly</MtouchLink>
     <MtouchExtraArgs>
     </MtouchExtraArgs>
@@ -104,13 +104,14 @@
     <ConsolePause>False</ConsolePause>
     <MtouchArch>ARM64</MtouchArch>
     <BuildIpa>True</BuildIpa>
-    <CodesignProvision>VS: WildCard Development</CodesignProvision>
-    <CodesignKey>Apple Development: Nick Shopland (2JF4K2GP74)</CodesignKey>
+    <CodesignProvision>Pathway+ Games Development Profile</CodesignProvision>
+    <CodesignKey>iPhone Developer</CodesignKey>
     <CodesignEntitlements>
     </CodesignEntitlements>
     <IpaPackageName>uk.ac.ntu.comp.pathway.games</IpaPackageName>
     <CodesignExtraArgs />
     <CodesignResourceRules />
+    <MtouchDebug>true</MtouchDebug>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'AppStore|iPhone' ">
     <DebugType>none</DebugType>

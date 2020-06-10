@@ -9,14 +9,14 @@ namespace PathwayGames.Models
     {
         public int? SlideIndex { get; set; }
 
-        [JsonConverter(typeof(UnixTimestampConverter))]
+        [JsonConverter(typeof(UnixTimeMillisecondsConverter))]
         public DateTime Time { get; set; }
 
         public Point Coordinates { get; set; }
 
         public override string ToString()
         {
-            return $"{Time:dd/MM/yyyy HH:mm:ss.fff} - ({Coordinates.X}, {Coordinates.Y} )"; 
+            return $"{Time:dd/MM/yyyy HH:mm:ss.ffff} - ({Coordinates.X}, {Coordinates.Y} )"; 
         }
     }
 }

@@ -3,6 +3,7 @@ using CoreFoundation;
 using CoreGraphics;
 using Foundation;
 using PathwayGames.Controls;
+using PathwayGames.Infrastructure.Timer;
 using PathwayGames.iOS.Controls;
 using PathwayGames.iOS.Extensions;
 using PathwayGames.Sensors;
@@ -174,7 +175,7 @@ namespace PathwayGames.iOS.Controls
                             }
                             // Log
                             sensor.OnReadingTaken(new FaceAnchorChangedEventArgs(
-                                new FaceAnchorReading(frame.Timestamp, 
+                                new FaceAnchorReading(TimerClock.Now, 
                                     faceAnchor.Transform.ToFloatMatrix4(),
                                     faceAnchor.LeftEyeTransform.ToFloatMatrix4(),
                                     faceAnchor.RightEyeTransform.ToFloatMatrix4(),

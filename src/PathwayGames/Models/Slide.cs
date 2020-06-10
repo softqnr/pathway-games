@@ -26,16 +26,16 @@ namespace PathwayGames.Models
         [JsonIgnore]
         public string Sound { get; set; }
 
-        [JsonConverter(typeof(UnixTimestampConverter))]
+        [JsonConverter(typeof(UnixTimeMillisecondsConverter))]
         public DateTime SlideDisplayed { get; set; }
 
-        [JsonConverter(typeof(UnixTimestampConverter))]
+        [JsonConverter(typeof(UnixTimeMillisecondsConverter))]
         public DateTime? SlideHidden { get; set; }
 
         [JsonConverter(typeof(StringEnumConverter))]
         public ResponseOutcome ResponseOutcome { get; set; }
 
-        public TimeSpan ResponseTime { get; set; }
+        public double ResponseTime { get; set; }
 
         public int Points { get; set; }
 

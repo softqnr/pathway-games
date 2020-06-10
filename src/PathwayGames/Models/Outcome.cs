@@ -12,11 +12,11 @@ namespace PathwayGames.Models
         [JsonIgnore]
         public double ScorePercentage { get; set; }
 
-        public TimeSpan AverageResponseTime { get; set; }
+        public double AverageResponseTime { get; set; }
 
-        public TimeSpan AverageResponseTimeCorrect { get; set; }
+        public double AverageResponseTimeCorrect { get; set; }
 
-        public TimeSpan AverageResponseTimeWrong { get; set; }
+        public double AverageResponseTimeWrong { get; set; }
 
         public Outcome()
         {

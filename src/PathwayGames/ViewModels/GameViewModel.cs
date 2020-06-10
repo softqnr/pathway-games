@@ -1,5 +1,6 @@
 ﻿using PathwayGames.Infrastructure.Navigation;
 using PathwayGames.Infrastructure.Sound;
+using PathwayGames.Infrastructure.Timer;
 using PathwayGames.Models;
 using PathwayGames.Models.Enums;
 using PathwayGames.Sensors;
@@ -128,9 +129,9 @@ namespace PathwayGames.ViewModels
 
         public async Task OnButtonTapped(Point p)
         {
-            System.Diagnostics.Debug.WriteLine("({0}/{1}) - {2:HH:mm:ss.fff} - OnButtonTapped()", SlideIndex, SlideCount, DateTime.Now);
-            // Save response
-            SaveResponse(p);
+            System.Diagnostics.Debug.WriteLine("({0}/{1}) - {2:HH:mm:ss.fff} - OnButtonTapped()", SlideIndex, SlideCount, TimerClock.Now);
+            // Save user response
+            _slidesService.SaveGameUserResponse(_game, CurrentSlide, p);
             // Ommit response for reward slide
             if (CurrentSlide.SlideType == SlideType.Reward)
                 return;
@@ -149,7 +150,7 @@ namespace PathwayGames.ViewModels
 
         public async Task GotoNextSlide()
         {
-            System.Diagnostics.Debug.WriteLine("({0}/{1}) - {2:HH:mm:ss.fff} - ShowNextSlide()", SlideIndex, SlideCount, DateTime.Now);
+            System.Diagnostics.Debug.WriteLine("({0}/{1}) - {2:HH:mm:ss.fff} - ShowNextSlide()", SlideIndex, SlideCount, TimerClock.Now);
             if (SlideIndex < SlideCount)
             {
                 // Forward to next slide
@@ -175,12 +176,12 @@ namespace PathwayGames.ViewModels
             {
                 case ResponseOutcome.CorrectCommission:
                     // Within normal slide duration
-                    System.Diagnostics.Debug.WriteLine("({0}/{1}) - {2:HH:mm:ss.fff} - Correct Commission", SlideIndex, SlideCount, DateTime.Now);
+                    System.Diagnostics.Debug.WriteLine("({0}/{1}) - {2:HH:mm:ss.fff} - Correct Commission", SlideIndex, SlideCount, TimerClock.Now);
                     // 
                     await StateMachine.FireAsync(Triggers.CorrectCommision);
                     break;
                 case ResponseOutcome.WrongCommission:
-                    System.Diagnostics.Debug.WriteLine("({0}/{1}) - {2:HH:mm:ss.fff} - Wrong Commission", SlideIndex, SlideCount, DateTime.Now);
+                    System.Diagnostics.Debug.WriteLine("({0}/{1}) - {2:HH:mm:ss.fff} - Wrong Commission", SlideIndex, SlideCount, TimerClock.Now);
                     //
                     //await StateMachine.FireAsync(Triggers.WrongCommision);
                     await StateMachine.ChangeStateToShowBlankSlide(CurrentSlide.BlankDuration);
@@ -195,7 +196,7 @@ namespace PathwayGames.ViewModels
 
         public async Task ShowRewardSlide()
         {
-            System.Diagnostics.Debug.WriteLine("({0}/{1}) - {2:HH:mm:ss.fff} - ShowRewardSlide()", SlideIndex, SlideCount, DateTime.Now);
+            System.Diagnostics.Debug.WriteLine("({0}/{1}) - {2:HH:mm:ss.fff} - ShowRewardSlide()", SlideIndex, SlideCount, TimerClock.Now);
             TimeSpan blankSlideTime = TimeSpan.FromSeconds(CurrentSlide.BlankDuration);
             // Cancel blank display if token exists
             if (_cts != null)
@@ -212,14 +213,14 @@ namespace PathwayGames.ViewModels
             await RenderSlide(CurrentSlide);
             // Restore ImageGridColumns
             ImageGridColumns = GameImageGridColumns;
-            System.Diagnostics.Debug.WriteLine("({0}/{1}) - {2:HH:mm:ss.fff} - ShowRewardSlide() Finished {3} Blank delay left", SlideIndex, SlideCount, DateTime.Now, blankSlideTime.TotalSeconds);
+            System.Diagnostics.Debug.WriteLine("({0}/{1}) - {2:HH:mm:ss.fff} - ShowRewardSlide() Finished {3} Blank delay left", SlideIndex, SlideCount, TimerClock.Now, blankSlideTime.TotalSeconds);
             //
             await StateMachine.ChangeStateToShowBlankSlide(blankSlideTime.TotalSeconds);
         }
 
         public async Task ShowBlankSlideCancelable(double duration)
         {
-            System.Diagnostics.Debug.WriteLine("({0}/{1}) - {2:HH:mm:ss.fff} - ShowBlankSlideCancelable({3})", SlideIndex, SlideCount, DateTime.Now,
+            System.Diagnostics.Debug.WriteLine("({0}/{1}) - {2:HH:mm:ss.fff} - ShowBlankSlideCancelable({3})", SlideIndex, SlideCount, TimerClock.Now,
                 duration);
             // Display blank slide / cancelable
             SlideImages = null;
@@ -242,7 +243,7 @@ namespace PathwayGames.ViewModels
 
         public async Task ShowBlankSlide(double duration)
         {
-            System.Diagnostics.Debug.WriteLine("({0}/{1}) - {2:HH:mm:ss.fff} - ShowBlankSlide({3})", SlideIndex, SlideCount, DateTime.Now,
+            System.Diagnostics.Debug.WriteLine("({0}/{1}) - {2:HH:mm:ss.fff} - ShowBlankSlide({3})", SlideIndex, SlideCount, TimerClock.Now,
                duration);
             // Display blank slide
             SlideImages = null;
@@ -259,7 +260,7 @@ namespace PathwayGames.ViewModels
             // Display slide image
             SlideImages = slide.Images;
             // Set slide displayed time
-            CurrentSlide.SlideDisplayed = DateTime.Now;
+            CurrentSlide.SlideDisplayed = TimerClock.Now;
             // Play slide sound
             if (!String.IsNullOrEmpty(slide.Sound))
             {
@@ -271,7 +272,7 @@ namespace PathwayGames.ViewModels
             // Wait for the slide duration
             await Task.Delay(TimeSpan.FromSeconds(CurrentSlide.DisplayDuration));
             // Set slide hidden time
-            CurrentSlide.SlideHidden = DateTime.Now;
+            CurrentSlide.SlideHidden = TimerClock.Now;
         }
 
         public async Task CreateGameAndStart(GameType gameType, UserGameSettings userGameSettings)
@@ -287,7 +288,7 @@ namespace PathwayGames.ViewModels
 
         public async Task StartGame()
         {
-            _game.SessionData.StartDate = DateTime.Now;
+            _game.SessionData.StartDate = TimerClock.Now;
             // Start sensor recording
             StartSensorRecording();
             // Start game
@@ -306,7 +307,7 @@ namespace PathwayGames.ViewModels
 
         public async Task EndGame()
         {
-            System.Diagnostics.Debug.WriteLine("({0}) - {1:HH:mm:ss.fff}", "EndGame()", DateTime.Now);
+            System.Diagnostics.Debug.WriteLine("({0}) - {1:HH:mm:ss.fff}", "EndGame()", TimerClock.Now);
             // Set sensor data filename
             _sensorLowWriterService.Stop();
             string sensorDataFile = _sensorLowWriterService.LogFile;
@@ -324,13 +325,6 @@ namespace PathwayGames.ViewModels
             _sensorLowWriterService.LogSuffix = "] ";
 
             _sensorLowWriterService.Start($"sensor_{Guid.NewGuid().ToString()}.json", ",");
-        }
-
-        private void SaveResponse(Point p)
-        {
-
-            Int32? slideIndex = (CurrentSlide.SlideType == SlideType.Reward) ? (Int32?)null : _game.Slides.IndexOf(CurrentSlide);
-            _game.RecordButtonPress(slideIndex, p);
         }
 
         public override async Task InitializeAsync(object navigationData)

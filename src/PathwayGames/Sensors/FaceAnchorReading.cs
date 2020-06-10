@@ -1,4 +1,5 @@
 ﻿using Newtonsoft.Json;
+using PathwayGames.Infrastructure.Json;
 using System;
 using System.Collections.Generic;
 
@@ -8,9 +9,8 @@ namespace PathwayGames.Sensors
     {
         public DateTime ReadingDate { get; set; }
 
-        public double ReadingTimestamp { get; set; }
-
-        //public double ReadingTimespan { get; set; }
+        [JsonConverter(typeof(UnixTimeMillisecondsConverter))]
+        public DateTime ReadingTimestamp { get; set; }
 
         public float[,] FaceTransform { get; set; }
 
@@ -22,12 +22,11 @@ namespace PathwayGames.Sensors
 
         public Dictionary<string, float?> FacialExpressions = new Dictionary<string, float?>();
 
-        public FaceAnchorReading( double readingTimestamp, float[,] faceTransform,
+        public FaceAnchorReading( DateTime readingDate, float[,] faceTransform,
             float[,] leftEyeTransform, float[,] rightEyeTransform, float[] lookAtPointTransform, Dictionary<string, float?>  facialExpressions)
         {
-            ReadingDate = DateTime.Now;
-            //ReadingTimespan = readingTimespan;
-            ReadingTimestamp = readingTimestamp;
+            ReadingDate = readingDate;
+            ReadingTimestamp = readingDate;
             FaceTransform = faceTransform;
             LeftEyeTransform = leftEyeTransform;
             RightEyeTransform = rightEyeTransform;
