@@ -1,4 +1,5 @@
-﻿using PathwayGames.Infrastructure.Navigation;
+﻿using Newtonsoft.Json;
+using PathwayGames.Infrastructure.Navigation;
 using PathwayGames.Infrastructure.Sound;
 using PathwayGames.Infrastructure.Timer;
 using PathwayGames.Models;
@@ -98,7 +99,7 @@ namespace PathwayGames.ViewModels
             {
                 return new Command<FaceAnchorChangedEventArgs>((e) =>
                 {
-                    _sensorLowWriterService.WriteToLog(e.Reading.ToString());
+                    _sensorLowWriterService.WriteToLog(JsonConvert.SerializeObject(e.Reading, Formatting.Indented));
                 });
             }
         }

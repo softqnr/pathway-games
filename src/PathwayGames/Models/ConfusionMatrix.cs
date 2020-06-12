@@ -1,7 +1,5 @@
 ﻿using PathwayGames.Models.Enums;
-using System;
 using System.Collections.Generic;
-using System.Linq;
 
 namespace PathwayGames.Models
 {
@@ -27,10 +25,16 @@ namespace PathwayGames.Models
 
         public double H
         {
-            get => (TotalPresses > 0) ? CorrectCommission / TotalPresses : 0;
+            get => (CorrectCommission + WrongOmission > 0) ? (double)CorrectCommission / (CorrectCommission + WrongOmission) : 0;
         }
+
         public double FA {
-            get => (TotalPresses > 0) ? WrongCommission / TotalPresses : 0;
+            get => (WrongCommission + CorrectOmission > 0) ? (double)WrongCommission / (WrongCommission + CorrectOmission) : 0;
+        }
+
+        public ConfusionMatrix()
+        {
+
         }
 
         public ConfusionMatrix(List<Slide> slides)
@@ -38,7 +42,7 @@ namespace PathwayGames.Models
             Calculate(slides);
         }
 
-        private void Calculate(List<Slide> slides)
+        public void Calculate(List<Slide> slides)
         {
             foreach (Slide slide in slides)
             {

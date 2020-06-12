@@ -1,8 +1,8 @@
 ﻿using Newtonsoft.Json;
 using Newtonsoft.Json.Converters;
+using PathwayGames.Infrastructure.Json;
 using PathwayGames.Models.Enums;
 using System;
-using Xamarin.Essentials;
 
 namespace PathwayGames.Models
 {
@@ -18,6 +18,9 @@ namespace PathwayGames.Models
         public string Seed { get; set; }
 
         public DateTime StartDate { get; set; }
+
+        [JsonConverter(typeof(UnixTimeMillisecondsConverter))]
+        public DateTime StartTime { get => StartDate; }
 
         public DateTime? EndDate { get; set; }
 

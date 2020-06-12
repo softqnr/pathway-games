@@ -10,7 +10,7 @@ namespace PathwayGames.Sensors
         public DateTime ReadingDate { get; set; }
 
         [JsonConverter(typeof(UnixTimeMillisecondsConverter))]
-        public DateTime ReadingTimestamp { get; set; }
+        public DateTime ReadingTimestamp { get => ReadingDate; }
 
         public float[,] FaceTransform { get; set; }
 
@@ -26,22 +26,11 @@ namespace PathwayGames.Sensors
             float[,] leftEyeTransform, float[,] rightEyeTransform, float[] lookAtPointTransform, Dictionary<string, float?>  facialExpressions)
         {
             ReadingDate = readingDate;
-            ReadingTimestamp = readingDate;
             FaceTransform = faceTransform;
             LeftEyeTransform = leftEyeTransform;
             RightEyeTransform = rightEyeTransform;
             LookAtPointTransform = lookAtPointTransform;
             FacialExpressions = facialExpressions;
-        }
-
-        public string ToJson()
-        {
-            return JsonConvert.SerializeObject(this, Formatting.Indented);
-        }
-
-        public override string ToString()
-        {
-            return this.ToJson();
         }
     }
 }

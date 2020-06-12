@@ -18,8 +18,6 @@ namespace PathwayGames.Services.Slides
 
         TimeSpan CalculateBlankSlideTimeLeft(Slide slide);
 
-        ConfusionMatrix CalculateConfusionMatrix(List<Slide> slides);
-
         void EndGame(Game game, string sensorDataFile);
 
         void SaveGameUserResponse(Game game, Slide slide, Point p);

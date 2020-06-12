@@ -188,18 +188,13 @@ namespace PathwayGames.Services.Slides
             return new Slide(SlideType.Reward, displayDuration, slideImage, 0, RewardSound);
         }
 
-        public ConfusionMatrix CalculateConfusionMatrix(List<Slide> slides)
-        {
-            return new ConfusionMatrix(slides);
-        }
-
         public void EndGame(Game game, string sensorDataFile)
         {
             game.SessionData.EndDate = TimerClock.Now;
             // Calculate game stats
             CalculateGameScoreAndStats(game);
             // Calculate engangement
-            game.Outcome.ConfusionMatrix = CalculateConfusionMatrix(game.Slides);
+            game.Outcome.ConfusionMatrix.Calculate(game.Slides);
 
             // Save to Json
             SaveGameToJson(game);

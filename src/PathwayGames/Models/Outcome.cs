@@ -1,12 +1,9 @@
 ﻿using Newtonsoft.Json;
-using System;
 
 namespace PathwayGames.Models
 {
     public class Outcome
     {
-        public ConfusionMatrix ConfusionMatrix { get; set; }
-
         public int Score { get; set; }
 
         [JsonIgnore]
@@ -18,9 +15,11 @@ namespace PathwayGames.Models
 
         public double AverageResponseTimeWrong { get; set; }
 
+        public ConfusionMatrix ConfusionMatrix { get; set; } = new ConfusionMatrix();
+
         public Outcome()
         {
-            //ConfusionMatrix = new ConfusionMatrix();
+
         }
     }
 }
