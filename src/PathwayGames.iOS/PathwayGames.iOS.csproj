@@ -104,14 +104,15 @@
     <ConsolePause>False</ConsolePause>
     <MtouchArch>ARM64</MtouchArch>
     <BuildIpa>True</BuildIpa>
-    <CodesignProvision>Pathway+ Games Development Profile</CodesignProvision>
-    <CodesignKey>iPhone Developer</CodesignKey>
+    <CodesignProvision>Pathway+ Games Distribution Profile</CodesignProvision>
+    <CodesignKey>iPhone Distribution</CodesignKey>
     <CodesignEntitlements>
     </CodesignEntitlements>
     <IpaPackageName>uk.ac.ntu.comp.pathway.games</IpaPackageName>
     <CodesignExtraArgs />
     <CodesignResourceRules />
     <MtouchDebug>true</MtouchDebug>
+    <MtouchExtraArgs>--optimize=experimental-xforms-product-type</MtouchExtraArgs>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'AppStore|iPhone' ">
     <DebugType>none</DebugType>
@@ -121,9 +122,16 @@
     <WarningLevel>4</WarningLevel>
     <ConsolePause>False</ConsolePause>
     <MtouchArch>ARM64</MtouchArch>
-    <CodesignKey>Apple Development: Nick Shopland (2JF4K2GP74)</CodesignKey>
+    <CodesignKey>iPhone Distribution</CodesignKey>
     <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
-    <CodesignProvision>VS: WildCard Development</CodesignProvision>
+    <CodesignProvision>Pathway+ Games Distribution Profile</CodesignProvision>
+    <BuildIpa>true</BuildIpa>
+    <IpaPackageName>uk.ac.ntu.comp.pathway.games</IpaPackageName>
+    <MtouchLink>Full</MtouchLink>
+    <MtouchInterpreter>
+    </MtouchInterpreter>
+    <MtouchExtraArgs>--optimize=experimental-xforms-product-type</MtouchExtraArgs>
+    <MtouchFastDev>false</MtouchFastDev>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(RunConfiguration)' == 'Default' ">
     <AppExtensionDebugBundleId />

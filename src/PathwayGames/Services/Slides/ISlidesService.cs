@@ -19,7 +19,5 @@ namespace PathwayGames.Services.Slides
         TimeSpan CalculateBlankSlideTimeLeft(Slide slide);
 
         void EndGame(Game game, string sensorDataFile);
-
-        void SaveGameUserResponse(Game game, Slide slide, Point p);
     }
 }

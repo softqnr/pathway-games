@@ -319,11 +319,5 @@ namespace PathwayGames.Services.Slides
             }
             return slide.ResponseOutcome;
         }
-
-        public void SaveGameUserResponse(Game game, Slide slide, Point p)
-        {
-            Int32? slideIndex = (slide.SlideType == SlideType.Reward) ? (Int32?)null : game.Slides.IndexOf(slide);
-            game.RecordButtonPress(slideIndex, p, TimerClock.Now);
-        }
     }
 }

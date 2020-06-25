@@ -35,6 +35,8 @@ namespace PathwayGames.ViewModels
         private Color _slideBorderColor;
         private CancellationTokenSource _cts;
 
+        const string SuccessSound = "ding.mp3";
+        const string MistakeSound = "mistake.mp3";
         private Slide CurrentSlide { get; set; }
         public SlideStateMachine StateMachine { get; private set; }
 
@@ -131,8 +133,14 @@ namespace PathwayGames.ViewModels
         public async Task OnButtonTapped(Point p)
         {
             System.Diagnostics.Debug.WriteLine("({0}/{1}) - {2:HH:mm:ss.fff} - OnButtonTapped()", SlideIndex, SlideCount, TimerClock.Now);
+            
+            await EvaluateButtonResponse(p);
+        }
+
+        private async Task EvaluateButtonResponse(Point p)
+        {
             // Save user response
-            _slidesService.SaveGameUserResponse(_game, CurrentSlide, p);
+            _game.RecordButtonPress(SlideIndex, p, TimerClock.Now);
             // Ommit response for reward slide
             if (CurrentSlide.SlideType == SlideType.Reward)
                 return;
@@ -140,12 +148,15 @@ namespace PathwayGames.ViewModels
             var response = _slidesService.EvaluateSlideResponse(_game, CurrentSlide);
             if (response == ResponseOutcome.CorrectCommission)
             {
-                await StateMachine.FireAsync(Triggers.CorrectCommision); // Cancel blank immediately
+                // Cancel blank immediately
+                await StateMachine.FireAsync(Triggers.CorrectCommision); 
                 // Play ding sound
-                await _soundService.PlaySoundAsync("ding.mp3");
-            } else if(response ==  ResponseOutcome.WrongCommission) { 
+                await _soundService.PlaySoundAsync(SuccessSound);
+            }
+            else if (response == ResponseOutcome.WrongCommission)
+            {
                 // Play mistake sound
-                await _soundService.PlaySoundAsync("mistake.mp3");
+                await _soundService.PlaySoundAsync(MistakeSound);
             }
         }
 
