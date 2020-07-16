@@ -1,8 +1,10 @@
 ﻿using CommonServiceLocator;
+using Newtonsoft.Json;
 using PathwayGames.Controls;
 using PathwayGames.Data;
 using PathwayGames.Infrastructure.Dialog;
 using PathwayGames.Infrastructure.File;
+using PathwayGames.Infrastructure.Json;
 using PathwayGames.Infrastructure.Navigation;
 using PathwayGames.Infrastructure.Sound;
 using PathwayGames.Models;
@@ -13,6 +15,7 @@ using PathwayGames.Services.Slides;
 using PathwayGames.Services.User;
 using PathwayGames.ViewModels;
 using PathwayGames.Views;
+using System.Collections.Generic;
 using System.Threading.Tasks;
 using Unity;
 using Unity.Injection;
@@ -52,6 +55,9 @@ namespace PathwayGames
 
             // Init DI
             InitializeDependencies();
+
+            // Init JSON serialization
+            InitializeJson();
         }
 
         private async Task InitializeNavigation()
@@ -70,6 +76,17 @@ namespace PathwayGames
             NavigationService.Configure(typeof(UserFormViewModel), typeof(UserFormView));
 
             await NavigationService.InitializeAsync();
+        }
+
+        private void InitializeJson()
+        {
+            // Ignore some properties that we do not have access to and add converters
+            JsonConvert.DefaultSettings = () => new JsonSerializerSettings
+            {
+                ContractResolver = ShouldSerializeContractResolver.Instance,
+                //Converters = new List<JsonConverter> { new UnixTimeMillisecondsConverter() },
+                Formatting = Formatting.Indented,
+            };
         }
 
         private void InitializeDatabase()

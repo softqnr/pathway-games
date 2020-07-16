@@ -9,6 +9,8 @@ using System.Linq;
 using System.Text;
 using PathwayGames.Extensions;
 using PathwayGames.Helpers;
+using Xamarin.Forms;
+using PathwayGames.Infrastructure.Timer;
 
 namespace PathwayGames.Services.Slides
 {
@@ -61,7 +63,7 @@ namespace PathwayGames.Services.Slides
             // Check if within blank duration
             if (slide.SlideHidden.HasValue)
             {
-                var blankSlideTimeUsed = (DateTime.Now - slide.SlideHidden.Value);
+                var blankSlideTimeUsed = (TimerClock.Now - slide.SlideHidden.Value);
                 timeLeft = TimeSpan.FromSeconds(slide.BlankDuration) - blankSlideTimeUsed;
             }
             return timeLeft;
@@ -186,18 +188,13 @@ namespace PathwayGames.Services.Slides
             return new Slide(SlideType.Reward, displayDuration, slideImage, 0, RewardSound);
         }
 
-        public ConfusionMatrix CalculateConfusionMatrix(List<Slide> slides)
-        {
-            return new ConfusionMatrix(slides);
-        }
-
         public void EndGame(Game game, string sensorDataFile)
         {
-            game.SessionData.EndDate = DateTime.Now;
+            game.SessionData.EndDate = TimerClock.Now;
             // Calculate game stats
             CalculateGameScoreAndStats(game);
             // Calculate engangement
-            game.Outcome.ConfusionMatrix = CalculateConfusionMatrix(game.Slides);
+            game.Outcome.ConfusionMatrix.Calculate(game.Slides);
 
             // Save to Json
             SaveGameToJson(game);
@@ -220,12 +217,7 @@ namespace PathwayGames.Services.Slides
             {
                 using (var sw = new StreamWriter(file, new UTF8Encoding(false)))
                 {
-                    // Ignore some properties
-                    var settings = new JsonSerializerSettings
-                    {
-                        ContractResolver = ShouldSerializeContractResolver.Instance
-                    };
-                    sw.Write(JsonConvert.SerializeObject(game, Formatting.Indented, settings));
+                     sw.Write(JsonConvert.SerializeObject(game));
                 }
             }
             return filePathName;
@@ -268,17 +260,17 @@ namespace PathwayGames.Services.Slides
             int wrongCount = game.Slides.Count - correctCount;
             game.Outcome.ScorePercentage = ((double)(correctCount - wrongCount) / game.Slides.Count) * 100;
             // Average Response Time
-            game.Outcome.AverageResponseTime = TimeSpan.FromMilliseconds(game.Slides.
+            game.Outcome.AverageResponseTime = game.Slides.
                 Where(x => x.ResponseOutcome == ResponseOutcome.CorrectCommission || x.ResponseOutcome == ResponseOutcome.WrongCommission)
-                .Select(x => x.ResponseTime.TotalMilliseconds).DefaultIfEmpty().Average());
+                .Select(x => x.ResponseTime).DefaultIfEmpty().Average();
             // Average Response Time Correct
-            game.Outcome.AverageResponseTimeCorrect = TimeSpan.FromMilliseconds(game.Slides.
+            game.Outcome.AverageResponseTimeCorrect = game.Slides.
                 Where(x => x.ResponseOutcome == ResponseOutcome.CorrectCommission)
-                .Select(x => x.ResponseTime.TotalMilliseconds).DefaultIfEmpty().Average());
+                .Select(x => x.ResponseTime).DefaultIfEmpty().Average();
             // Average Response Time Wrong
-            game.Outcome.AverageResponseTimeWrong = TimeSpan.FromMilliseconds(game.Slides.
+            game.Outcome.AverageResponseTimeWrong = game.Slides.
                 Where(x => x.ResponseOutcome == ResponseOutcome.WrongCommission)
-                .Select(x => x.ResponseTime.TotalMilliseconds).DefaultIfEmpty().Average());
+                .Select(x => x.ResponseTime).DefaultIfEmpty().Average();
         }
 
         public ResponseOutcome EvaluateSlideResponse(Game game, Slide slide)
@@ -290,7 +282,7 @@ namespace PathwayGames.Services.Slides
             if (firstButtonPress != null)
             {
                 // Calculate response time
-                slide.ResponseTime = firstButtonPress.Time.Subtract(slide.SlideDisplayed);
+                slide.ResponseTime = firstButtonPress.Time.Subtract(slide.SlideDisplayed).TotalSeconds;
             }
             switch (slide.SlideType)
             {

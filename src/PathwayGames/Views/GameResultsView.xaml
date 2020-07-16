@@ -76,7 +76,7 @@
                     <Label.FormattedText>
                         <FormattedString>
                             <Span Text="Average response time: " />
-                            <Span Text="{Binding Game.Outcome.AverageResponseTime, Mode=OneWay, StringFormat='{}{0:ss\\.fff}'}" />
+                            <Span Text="{Binding Game.Outcome.AverageResponseTime, Mode=OneWay, StringFormat='{}{0:0.000}'}" />
                             <Span Text=" seconds" />
                         </FormattedString>
                     </Label.FormattedText>

@@ -9,7 +9,7 @@ namespace PathwayGames.Models
     {
         public int? SlideIndex { get; set; }
 
-        [JsonConverter(typeof(UnixTimestampConverter))]
+        [JsonConverter(typeof(UnixTimeMillisecondsConverter))]
         public DateTime Time { get; set; }
 
         public Point Coordinates { get; set; }

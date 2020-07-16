@@ -1,5 +1,4 @@
 ﻿using Newtonsoft.Json;
-using Newtonsoft.Json.Converters;
 using PathwayGames.Models.Enums;
 using System;
 using System.Collections.Generic;
@@ -33,12 +32,12 @@ namespace PathwayGames.Models
             SensoryData = new SensoryData();
         }
 
-        public void RecordButtonPress(Int32? slideIndex, Point p)
+        public void RecordButtonPress(Int32? slideIndex, Point p, DateTime dateTimePressed)
         {
             SensoryData.ButtonPresses.Add(new ButtonPress()
             {
                 Coordinates = p,
-                Time = DateTime.Now,
+                Time = dateTimePressed,
                 SlideIndex = slideIndex
             });
         }
