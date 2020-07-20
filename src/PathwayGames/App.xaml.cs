@@ -1,4 +1,5 @@
 ﻿using CommonServiceLocator;
+using Microsoft.ML;
 using Newtonsoft.Json;
 using PathwayGames.Controls;
 using PathwayGames.Data;
@@ -15,6 +16,7 @@ using PathwayGames.Services.Slides;
 using PathwayGames.Services.User;
 using PathwayGames.ViewModels;
 using PathwayGames.Views;
+using PathwayGamesML.Model;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using Unity;
@@ -58,6 +60,17 @@ namespace PathwayGames
 
             // Init JSON serialization
             InitializeJson();
+
+            InitModel();
+        }
+
+        public void InitModel()
+        {
+            // Add input data
+            var input = new ModelInput();
+
+            // Load model and predict output of sample data
+            ModelOutput result = ConsumeModel.Predict(input);
         }
 
         private async Task InitializeNavigation()

@@ -51,6 +51,8 @@ namespace PathwayGames.ViewModels
                     //_sensorLowWriterService.WriteToLog(e.Reading.ToString());
                     // Invoke engangement service
                     //_engangementService
+
+                    _engangementService.CalculateEngangement(e.Reading);
                 });
             }
         }
