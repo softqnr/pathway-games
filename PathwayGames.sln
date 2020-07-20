@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PathwayGames.iOS", "src\Pat
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PathwayGames", "src\PathwayGames\PathwayGames.csproj", "{C7B22B4E-DBED-4500-AB10-B854F0CFEA77}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PathwayGamesML.Model", "src\PathwayGamesML.Model\PathwayGamesML.Model.csproj", "{6453EEB4-37A8-46C4-8B00-524B7C48A22F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PathwayGamesML.ConsoleApp", "src\PathwayGamesML.ConsoleApp\PathwayGamesML.ConsoleApp.csproj", "{3281CBFE-DF2D-4F99-BC2A-4616AEF6283E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Ad-Hoc|Any CPU = Ad-Hoc|Any CPU
