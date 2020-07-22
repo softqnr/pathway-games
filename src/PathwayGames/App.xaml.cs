@@ -3,6 +3,7 @@ using Microsoft.ML;
 using Newtonsoft.Json;
 using PathwayGames.Controls;
 using PathwayGames.Data;
+using PathwayGames.Helpers;
 using PathwayGames.Infrastructure.Dialog;
 using PathwayGames.Infrastructure.File;
 using PathwayGames.Infrastructure.Json;
@@ -16,7 +17,7 @@ using PathwayGames.Services.Slides;
 using PathwayGames.Services.User;
 using PathwayGames.ViewModels;
 using PathwayGames.Views;
-using PathwayGamesML.Model;
+//using PathwayGamesML.Model;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using Unity;
@@ -38,7 +39,7 @@ namespace PathwayGames
         public static string LocalStorageDirectory = FileSystem.AppDataDirectory;
         public static string ApplicationVersion = $"{VersionTracking.CurrentVersion}.{VersionTracking.CurrentBuild}";
 
-    public static IUnityContainer Container { get; private set; }
+        public static IUnityContainer Container { get; private set; }
         public readonly static INavigationService NavigationService = new NavigationService();
         public App()
         {
