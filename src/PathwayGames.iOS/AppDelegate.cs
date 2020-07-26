@@ -25,6 +25,7 @@ namespace PathwayGames.iOS
             AiForms.Renderers.iOS.SettingsViewInit.Init(); 
             global::Xamarin.Forms.FormsMaterial.Init();
             OxyPlot.Xamarin.Forms.Platform.iOS.PlotViewRenderer.Init();
+            FFImageLoading.Forms.Platform.CachedImageRenderer.Init();
 
             LoadApplication(new App());
 

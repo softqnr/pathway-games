@@ -32,6 +32,10 @@ namespace PathwayGames.Droid
             TaskScheduler.UnobservedTaskException += async (sender, e) => await UnhandledExceptionHandler(sender, e);
             AndroidEnvironment.UnhandledExceptionRaiser += async (sender, e) => await UnhandledExceptionHandler(sender, e);
 
+            // Init FFImageLoading
+            global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
+            FFImageLoading.Forms.Platform.CachedImageRenderer.Init(true);
+
             LoadApplication(new App());
         }
 
