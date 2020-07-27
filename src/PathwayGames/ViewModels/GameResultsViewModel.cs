@@ -65,16 +65,24 @@ namespace PathwayGames.ViewModels
             
         private async Task GenerateAndShareExcelAsync()
         {
-            DialogService.ShowLoading("Generating results …");
-            string fileName = await _excelService.ExportAsync(_game);
-
-            await Share.RequestAsync(new ShareFileRequest
+            if (!IsBusy)
             {
-                Title = "Share results",
-                File = new ShareFile(fileName)
-            });
+                IsBusy = true;
+                DialogService.ShowLoading("Generating results …");
+                string fileName = await _excelService.ExportAsync(_game);
 
-            DialogService.HideLoading();
+                await Share.RequestAsync(new ShareFileRequest
+                {
+                    Title = "Share results",
+                    File = new ShareFile(fileName),
+                    PresentationSourceBounds = Device.RuntimePlatform == Device.iOS && Device.Idiom == TargetIdiom.Tablet
+                                                ? new System.Drawing.Rectangle(0, 20, 0, 0)
+                                                : System.Drawing.Rectangle.Empty
+                });
+
+                DialogService.HideLoading();
+                IsBusy = false;
+            }
         }
 
         private async Task ShareGameData()
@@ -84,7 +92,10 @@ namespace PathwayGames.ViewModels
             await Share.RequestAsync(new ShareFileRequest
             {
                 Title = "Pathway+ Games - Test results",
-                File = new ShareFile(file)
+                File = new ShareFile(file),
+                PresentationSourceBounds = Device.RuntimePlatform == Device.iOS && Device.Idiom == TargetIdiom.Tablet
+                                            ? new System.Drawing.Rectangle(0, 20, 0, 0)
+                                            : System.Drawing.Rectangle.Empty
             });
         }
 

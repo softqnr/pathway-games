@@ -236,6 +236,8 @@ namespace PathwayGames.ViewModels
                 duration);
             // Display blank slide / cancelable
             SlideImages = null;
+            // Reset border color
+            SlideBorderColor = Color.Transparent;
 
             try
             {
