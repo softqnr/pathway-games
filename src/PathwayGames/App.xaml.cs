@@ -34,6 +34,7 @@ namespace PathwayGames
     public partial class App : Application
     {
         public static string DatabaseFilePath { get; private set; }
+        public static string MLFilePath { get; private set; }
         public static int UserId;
         public static User SelectedUser;
         public static string LocalStorageDirectory = FileSystem.AppDataDirectory;
@@ -56,22 +57,14 @@ namespace PathwayGames
             // Init DB
             InitializeDatabase();
 
+            // Init ML
+            InitializeML();
+
             // Init DI
             InitializeDependencies();
 
             // Init JSON serialization
             InitializeJson();
-
-            InitModel();
-        }
-
-        public void InitModel()
-        {
-            // Add input data
-            var input = new ModelInput();
-
-            // Load model and predict output of sample data
-            ModelOutput result = ConsumeModel.Predict(input);
         }
 
         private async Task InitializeNavigation()
@@ -106,6 +99,17 @@ namespace PathwayGames
         private void InitializeDatabase()
         {
             DatabaseFilePath = DependencyService.Get<IFileAccessHelper>().GetDBPathAndCreateIfNotExists("pw.db");
+        }
+
+        private void InitializeML()
+        {
+            MLFilePath = DependencyService.Get<IFileAccessHelper>().GetMLPathAndCreateIfNotExists("MLModel.zip");
+
+            // Add input data
+            var input = new ModelInput();
+
+            // Load model and predict output of sample data
+            ModelOutput result = ConsumeModel.Predict(input);
         }
 
         private void InitializeDependencies()

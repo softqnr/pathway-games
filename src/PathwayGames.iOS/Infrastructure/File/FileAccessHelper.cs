@@ -20,5 +20,18 @@ namespace PathwayGames.iOS.Infrastructure.File
             }
             return path;
         }
+
+        public string GetMLPathAndCreateIfNotExists(string filename)
+        {
+            var documentsPath = System.Environment.GetFolderPath(System.Environment.SpecialFolder.LocalApplicationData);
+            var path = Path.Combine(documentsPath, filename);
+            if (!System.IO.File.Exists(path))
+            {
+                var existingMLFile = NSBundle.MainBundle.PathForResource(Path.GetFileNameWithoutExtension(filename)
+                    , Path.GetExtension(filename));
+                System.IO.File.Copy(existingMLFile, path);
+            }
+            return path;
+        }
     }
 }

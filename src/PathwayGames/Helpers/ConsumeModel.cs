@@ -21,8 +21,8 @@ namespace PathwayGames.Helpers
             MLContext mlContext = new MLContext();
 
             // Load model & create prediction engine
-            string modelPath = @"C:\Users\nick\AppData\Local\Temp\MLVSTools\PathwayGamesML\PathwayGamesML.Model\MLModel.zip";
-            modelPath = @"MLModel.zip";
+            string modelPath = App.MLFilePath;
+
             ITransformer mlModel = mlContext.Model.Load(modelPath, out var modelInputSchema);
             var predEngine = mlContext.Model.CreatePredictionEngine<ModelInput, ModelOutput>(mlModel);
 
