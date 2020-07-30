@@ -1,21 +1,12 @@
-﻿//using DocumentFormat.OpenXml.Bibliography;
-//using DocumentFormat.OpenXml.Drawing;
-//using DocumentFormat.OpenXml.ExtendedProperties;
-//using MathNet.Numerics.LinearAlgebra.Complex.Solvers;
-//using MathNet.Numerics.LinearAlgebra.Double;
+﻿using CoreML;
+using Foundation;
 using MathNet.Numerics.Statistics;
-using Microsoft.ML;
-using Microsoft.ML.Data;
-using Microsoft.ML.Trainers;
-using PathwayGames.Helpers;
+using PathwayGames.Infrastructure.Device;
 using PathwayGames.Sensors;
-//using PathwayGamesML.Model;
 using System;
 using System.IO;
-//using System.Collections.Generic;
-//using System.Linq;
-//using System.Numerics;
-//using Xamarin.Forms;
+using Xamarin.Essentials;
+using Xamarin.Forms;
 
 namespace PathwayGames.Models
 {
@@ -23,6 +14,7 @@ namespace PathwayGames.Models
     {
         public int SampleWindow = 20;
 
+        private float PPI;
         private MovingStatistics blink;
         private MovingStatistics squint;
         private MovingStatistics gazeIn;
@@ -32,19 +24,14 @@ namespace PathwayGames.Models
         private MovingStatistics headSpeed;
         private MovingStatistics eyeDwell;
         private MovingStatistics headTilt;
-        //private MovingStatistics pressCount;
-        //private MovingStatistics responseTime;
-
         private FaceAnchorReading previousReading;
-
-        private MLContext mlContext;
-        private DataViewSchema modelSchema;
-        private ITransformer trainedModel;
-        private PredictionEngine<ModelInput, ModelOutput> predictionEngine;
+        private MLModel model;
 
         public LiveUserState()
         {
             LoadModel();
+
+            PPI = DependencyService.Get<IDeviceHelper>().MachineNameToPPI(DeviceInfo.Model);
 
             blink = new MovingStatistics(SampleWindow);
             squint = new MovingStatistics(SampleWindow);
@@ -61,13 +48,10 @@ namespace PathwayGames.Models
 
         private void LoadModel()
         {
-            mlContext = new MLContext();
-            string path = GetAbsolutePath(@"MLModel.zip");
-            var model = mlContext.Model;
-            trainedModel = model.Load(path, out modelSchema);
-            predictionEngine = model.CreatePredictionEngine<ModelInput, ModelOutput>(trainedModel);
-
+            var assetPath = NSBundle.MainBundle.GetUrlForResource("CoreMLModel/rf_latest_80", "mlmodelc");
+            model = MLModel.Create(assetPath, out NSError error1);
         }
+
         public static string GetAbsolutePath(string relativePath)
         {
             FileInfo _dataRoot = new FileInfo(typeof(App).Assembly.Location);
@@ -80,7 +64,7 @@ namespace PathwayGames.Models
 
         public double? GetState(FaceAnchorReading faceAnchorReading)
         {
-            UpdateEngagement(faceAnchorReading);
+            var d = UpdateEngagement(faceAnchorReading);
 
             return null;
         }
@@ -122,7 +106,9 @@ namespace PathwayGames.Models
 
         public double UpdateEngagement(FaceAnchorReading f)
         {
-            var modelInput = new ModelInput();
+            var modelInput = new CoreMLPathwayInput();
+
+            modelInput.PPI = PPI;
             modelInput.Blink = (f.FacialExpressions["EyeBlinkLeft"].Value + f.FacialExpressions["EyeBlinkRight"].Value) / 2;
             modelInput.Smile = (f.FacialExpressions["MouthSmileLeft"].Value + f.FacialExpressions["MouthSmileRight"].Value) / 2;
             modelInput.Frown = (f.FacialExpressions["MouthFrownLeft"].Value + f.FacialExpressions["MouthFrownRight"].Value) / 2;
@@ -162,25 +148,20 @@ namespace PathwayGames.Models
             //pressCount.Push();
             //responseTime.Push();
 
-            Console.WriteLine("\n{0} Blink: {1} Smile: {2} Frown: {3} Squint: {4} Gaze in: {5} Gaze out: {6} Head speed: {7} Eye dwell: {8} Head tilt: {9}",
-                f.ReadingTimestamp, blink.Mean, squint.Mean, gazeIn.Mean, gazeOut.Mean, smile.Mean, frown.Mean, headSpeed.Mean, eyeDwell.Mean, headTilt.Mean);
-
             previousReading = f;
+            
+            var predictionOut = model.GetPrediction(modelInput, out NSError error);
 
-            ////////////////////////////////////////////////////////
-            ///  ML HERE ...
-            ////////////////////////////////////////////////////////
-            ///
+            //var nn = predictionOut.FeatureNames;
+            //var n = nn.ToArray();
 
-            ModelOutput prediction = predictionEngine.Predict(modelInput);
+            var prediction = predictionOut.GetFeatureValue("target").DoubleValue;
+            var probability = predictionOut.GetFeatureValue("classProbability").DoubleValue;
 
+            Console.WriteLine("\n{0} [Result: {10} Probability: {11}] Blink: {1} Smile: {2} Frown: {3} Squint: {4} Gaze in: {5} Gaze out: {6} Head speed: {7} Eye dwell: {8} Head tilt: {9}",
+                f.ReadingTimestamp, blink.Mean, squint.Mean, gazeIn.Mean, gazeOut.Mean, smile.Mean, frown.Mean, headSpeed.Mean, eyeDwell.Mean, headTilt.Mean, prediction, probability);
 
-            Console.WriteLine("Model Result: {0], {1}", prediction.Prediction, prediction.Score);
-
-            return new Random().NextDouble();
-
-            //// Simulate engangement calculation for development purposes
-            //return (double?)faceAnchorReading.FacialExpressions["SmileLeft"];
+            return prediction;
         }
     }
 
@@ -251,6 +232,61 @@ namespace PathwayGames.Models
     //            "MouthShrugLower", "MouthShrugUpper", "MouthSmileLeft", "MouthSmileRight", "MouthStretchLeft",
     //            "MouthStretchRight", "MouthUpperUpLeft", "MouthUpperUpRight", "NoseSneerLeft", "NoseSneerRight",
     //            "TongueOut" };
+
+    public class CoreMLPathwayInput : NSObject, IMLFeatureProvider
+    {
+        public double PPI { get; set; }
+        public double Blink { get; set; }
+        public double Squint { get; set; }
+        public double GazeIn { get; set; }
+        public double GazeOut { get; set; }
+        public double Smile { get; set; }
+        public double Frown { get; set; }
+        public double HeadSpeed { get; set; }
+        public double EyeDwell { get; set; }
+        public double HeadTilt { get; set; }
+
+        public NSSet<NSString> FeatureNames => new NSSet<NSString>(
+            new NSString("ppi"),
+            new NSString("eye_blink"),
+            new NSString("eye_squint"),
+            new NSString("eye_gaze_inward"),
+            new NSString("eye_gaze_outward"),
+            new NSString("smile"),
+            new NSString("frown"),
+            new NSString("head_speed"),
+            new NSString("eye_dwelling"),
+            new NSString("head_tilt"));
+
+        public MLFeatureValue GetFeatureValue(string featureName)
+        {
+            switch (featureName)
+            {
+                case "ppi":
+                    return MLFeatureValue.Create(PPI);
+                case "eye_blink":
+                    return MLFeatureValue.Create(Blink);
+                case "eye_squint":
+                    return MLFeatureValue.Create(Squint);
+                case "eye_gaze_inward":
+                    return MLFeatureValue.Create(GazeIn);
+                case "eye_gaze_outward":
+                    return MLFeatureValue.Create(GazeOut);
+                case "smile":
+                    return MLFeatureValue.Create(Smile);
+                case "frown":
+                    return MLFeatureValue.Create(Frown);
+                case "head_speed":
+                    return MLFeatureValue.Create(HeadSpeed);
+                case "eye_dwelling":
+                    return MLFeatureValue.Create(EyeDwell);
+                case "head_tilt":
+                    return MLFeatureValue.Create(HeadTilt);
+                default:
+                    return MLFeatureValue.Create(0); // default value
+            }
+        }
+    }
 
     //// This file was auto-generated by ML.NET Model Builder. 
     //public class ModelInput

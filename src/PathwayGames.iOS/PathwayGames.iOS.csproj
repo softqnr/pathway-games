@@ -151,12 +151,12 @@
     <Compile Include="AppDelegate.cs" />
     <Compile Include="Controls\EyeGazeDetectionDelegate.cs" />
     <Compile Include="Infrastructure\Sound\SoundProvider.cs" />
+    <CoreMLModel Include="CoreMLModel\rf_latest_80.mlmodel" />
     <None Include="Entitlements.plist" />
     <None Include="Info.plist" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <BundleResource Include="Resources\pw.db" />
     <BundleResource Include="Resources\materialdesignicons-webfont.ttf" />
-    <BundleResource Include="Resources\MLModel.zip" />
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="Resources\LaunchScreen.storyboard" />
@@ -197,10 +197,6 @@
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <ItemGroup>
-    <ProjectReference Include="..\PathwayGamesML.Model\PathwayGamesML.Model.csproj">
-      <Project>{6453eeb4-37a8-46c4-8b00-524b7c48a22f}</Project>
-      <Name>PathwayGamesML.Model</Name>
-    </ProjectReference>
     <ProjectReference Include="..\PathwayGames\PathwayGames.csproj">
       <Project>{C7B22B4E-DBED-4500-AB10-B854F0CFEA77}</Project>
       <Name>PathwayGames</Name>

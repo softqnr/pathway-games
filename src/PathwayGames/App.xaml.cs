@@ -1,5 +1,4 @@
 ﻿using CommonServiceLocator;
-using Microsoft.ML;
 using Newtonsoft.Json;
 using PathwayGames.Controls;
 using PathwayGames.Data;
@@ -17,7 +16,6 @@ using PathwayGames.Services.Slides;
 using PathwayGames.Services.User;
 using PathwayGames.ViewModels;
 using PathwayGames.Views;
-//using PathwayGamesML.Model;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using Unity;
@@ -56,9 +54,6 @@ namespace PathwayGames
 
             // Init DB
             InitializeDatabase();
-
-            // Init ML
-            InitializeML();
 
             // Init DI
             InitializeDependencies();
@@ -99,17 +94,6 @@ namespace PathwayGames
         private void InitializeDatabase()
         {
             DatabaseFilePath = DependencyService.Get<IFileAccessHelper>().GetDBPathAndCreateIfNotExists("pw.db");
-        }
-
-        private void InitializeML()
-        {
-            MLFilePath = DependencyService.Get<IFileAccessHelper>().GetMLPathAndCreateIfNotExists("MLModel.zip");
-
-            // Add input data
-            var input = new ModelInput();
-
-            // Load model and predict output of sample data
-            ModelOutput result = ConsumeModel.Predict(input);
         }
 
         private void InitializeDependencies()

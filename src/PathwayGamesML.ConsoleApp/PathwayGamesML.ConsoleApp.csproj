@@ -5,9 +5,6 @@
     <TargetFramework>netcoreapp2.1</TargetFramework>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="Microsoft.ML" Version="1.5.1" />
-  </ItemGroup>
-  <ItemGroup>
     <ProjectReference Include="..\PathwayGamesML.Model\PathwayGamesML.Model.csproj" />
   </ItemGroup>
 </Project>
