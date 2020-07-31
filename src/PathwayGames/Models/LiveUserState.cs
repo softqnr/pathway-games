@@ -12,7 +12,7 @@ namespace PathwayGames.Models
 {
     public class LiveUserState
     {
-        public int SampleWindow = 20;
+        public int SampleWindow = 4;
 
         private float PPI;
         private MovingStatistics blink;
@@ -106,62 +106,170 @@ namespace PathwayGames.Models
 
         public double UpdateEngagement(FaceAnchorReading f)
         {
-            var modelInput = new CoreMLPathwayInput();
-
-            modelInput.PPI = PPI;
-            modelInput.Blink = (f.FacialExpressions["EyeBlinkLeft"].Value + f.FacialExpressions["EyeBlinkRight"].Value) / 2;
-            modelInput.Smile = (f.FacialExpressions["MouthSmileLeft"].Value + f.FacialExpressions["MouthSmileRight"].Value) / 2;
-            modelInput.Frown = (f.FacialExpressions["MouthFrownLeft"].Value + f.FacialExpressions["MouthFrownRight"].Value) / 2;
-            modelInput.Squint = (f.FacialExpressions["EyeSquintLeft"].Value + f.FacialExpressions["EyeSquintRight"].Value) / 2;
-            modelInput.GazeIn = (f.FacialExpressions["EyeLookInLeft"].Value + f.FacialExpressions["EyeLookInRight"].Value) / 2;
-            modelInput.GazeOut = (f.FacialExpressions["EyeLookOutLeft"].Value + f.FacialExpressions["EyeLookOutRight"].Value) / 2;
+            blink.Push( (f.FacialExpressions["EyeBlinkLeft"].Value + f.FacialExpressions["EyeBlinkRight"].Value) / 2);
+            smile.Push( (f.FacialExpressions["MouthSmileLeft"].Value + f.FacialExpressions["MouthSmileRight"].Value) / 2 );
+            frown.Push( (f.FacialExpressions["MouthFrownLeft"].Value + f.FacialExpressions["MouthFrownRight"].Value) / 2 );
+            squint.Push( (f.FacialExpressions["EyeSquintLeft"].Value + f.FacialExpressions["EyeSquintRight"].Value) / 2 );
+            gazeIn.Push( (f.FacialExpressions["EyeLookInLeft"].Value + f.FacialExpressions["EyeLookInRight"].Value) / 2 );
+            gazeOut.Push( (f.FacialExpressions["EyeLookOutLeft"].Value + f.FacialExpressions["EyeLookOutRight"].Value) / 2 );
 
             if (previousReading == null)
             {
-                modelInput.HeadSpeed = 0;
-                modelInput.EyeDwell = 0;
-                modelInput.HeadTilt = 0;
+                headSpeed.Push(0);
+                eyeDwell.Push(0);
+                headTilt.Push(0);
             }
             else
             {
                 var deltaTime = f.ReadingTimestamp.Subtract(previousReading.ReadingTimestamp);
                 var deltaHead = VectorMagnitude(VectorDifference(previousReading.LookAtPointTransform, f.LookAtPointTransform));
-                modelInput.HeadSpeed = (float) (deltaHead / deltaTime.TotalMilliseconds);
+                headSpeed.Push( (float) (deltaHead / deltaTime.TotalMilliseconds) );
 
                 var leftEyeDisplacement = CoordinateDisplacement(f.LeftEyeTransform);
                 var rightEyeDisplacement = CoordinateDisplacement(f.RightEyeTransform);
                 var eyeDisplacement = Math.Abs(leftEyeDisplacement[0] + rightEyeDisplacement[0]) / 2;
-                modelInput.EyeDwell = (float) (eyeDisplacement > 0 ? 1 / eyeDisplacement : 0);
+                eyeDwell.Push( (float) (eyeDisplacement > 0 ? 1 / eyeDisplacement : 0) );
 
-                modelInput.HeadTilt = (float) (Math.Abs(leftEyeDisplacement[1] + rightEyeDisplacement[1]) / 2);
+                headTilt.Push( (float) (Math.Abs(leftEyeDisplacement[1] + rightEyeDisplacement[1]) / 2) );
             }
-
-            blink.Push(modelInput.Blink);
-            smile.Push(modelInput.Smile);
-            frown.Push(modelInput.Frown);
-            squint.Push(modelInput.Squint);
-            gazeIn.Push(modelInput.GazeIn);
-            gazeOut.Push(modelInput.GazeOut);
-            headSpeed.Push(modelInput.HeadSpeed);
-            eyeDwell.Push(modelInput.EyeDwell);
-            headTilt.Push(modelInput.HeadTilt);
             //pressCount.Push();
             //responseTime.Push();
 
+            var modelInput = new CoreMLPathwayInput
+            {
+                PPI = PPI,
+                Blink = blink.Mean,
+                Smile = smile.Mean,
+                Frown = frown.Mean,
+                Squint = squint.Mean,
+                GazeIn = gazeIn.Mean,
+                GazeOut = gazeOut.Mean,
+                HeadSpeed = headSpeed.Mean,
+                EyeDwell = eyeDwell.Mean,
+                HeadTilt = headTilt.Mean
+            };
+
             previousReading = f;
-            
-            var predictionOut = model.GetPrediction(modelInput, out NSError error);
+
+
+            IMLFeatureProvider predictionOut = model.GetPrediction(modelInput, out NSError error);
+
+            var featurNames = predictionOut.FeatureNames;
+            var featuresArrayString = featurNames.ToArray().ToString();
+ 
+                var targetFeatureValue = predictionOut.GetFeatureValue("target");
+            //var prediction = targetFeatureValue.DoubleValue;
+            var prediction = targetFeatureValue.Int64Value;
+
+            var classProbabilityFeatureValue = predictionOut.GetFeatureValue("classProbability");
+            //var probability = classProbabilityFeatureValue.DoubleValue;
+            var probabilityx = classProbabilityFeatureValue.DictionaryValue.Values[0];
+
+            //var prediction = predictionOut.GetFeatureValue("target").DoubleValue;
+            //var probability = predictionOut.GetFeatureValue("classProbability").DoubleValue;
+
+            Console.WriteLine("\n{0} [Result: {10} Probability: {11}] Blink: {1} Smile: {2} Frown: {3} Squint: {4} Gaze in: {5} Gaze out: {6} Head speed: {7} Eye dwell: {8} Head tilt: {9}",
+                f.ReadingTimestamp, blink.Mean, squint.Mean, gazeIn.Mean, gazeOut.Mean, smile.Mean, frown.Mean, headSpeed.Mean, eyeDwell.Mean, headTilt.Mean, prediction, probabilityx);
+
+            //var po = (CoreMLPathwayOutput)predictionOut;
+            //var potarget = po.Target;
+            //var poprob = po.ClassProbability;
 
             //var nn = predictionOut.FeatureNames;
             //var n = nn.ToArray();
 
-            var prediction = predictionOut.GetFeatureValue("target").DoubleValue;
-            var probability = predictionOut.GetFeatureValue("classProbability").DoubleValue;
-
-            Console.WriteLine("\n{0} [Result: {10} Probability: {11}] Blink: {1} Smile: {2} Frown: {3} Squint: {4} Gaze in: {5} Gaze out: {6} Head speed: {7} Eye dwell: {8} Head tilt: {9}",
-                f.ReadingTimestamp, blink.Mean, squint.Mean, gazeIn.Mean, gazeOut.Mean, smile.Mean, frown.Mean, headSpeed.Mean, eyeDwell.Mean, headTilt.Mean, prediction, probability);
-
             return prediction;
+        }
+    }
+
+
+    public class CoreMLPathwayInput : NSObject, IMLFeatureProvider
+    {
+        public double PPI { get; set; }
+        public double Blink { get; set; }
+        public double Squint { get; set; }
+        public double GazeIn { get; set; }
+        public double GazeOut { get; set; }
+        public double Smile { get; set; }
+        public double Frown { get; set; }
+        public double HeadSpeed { get; set; }
+        public double EyeDwell { get; set; }
+        public double HeadTilt { get; set; }
+
+        public NSSet<NSString> FeatureNames => new NSSet<NSString>(
+            new NSString("ppi"),
+            new NSString("eye_blink"),
+            new NSString("eye_squint"),
+            new NSString("eye_gaze_inward"),
+            new NSString("eye_gaze_outward"),
+            new NSString("smile"),
+            new NSString("frown"),
+            new NSString("head_speed"),
+            new NSString("eye_dwelling"),
+            new NSString("head_tilt"));
+
+        public MLFeatureValue GetFeatureValue(string featureName)
+        {
+            switch (featureName)
+            {
+                case "ppi":
+                    return MLFeatureValue.Create(PPI);
+                case "eye_blink":
+                    return MLFeatureValue.Create(Blink);
+                case "eye_squint":
+                    return MLFeatureValue.Create(Squint);
+                case "eye_gaze_inward":
+                    return MLFeatureValue.Create(GazeIn);
+                case "eye_gaze_outward":
+                    return MLFeatureValue.Create(GazeOut);
+                case "smile":
+                    return MLFeatureValue.Create(Smile);
+                case "frown":
+                    return MLFeatureValue.Create(Frown);
+                case "head_speed":
+                    return MLFeatureValue.Create(HeadSpeed);
+                case "eye_dwelling":
+                    return MLFeatureValue.Create(EyeDwell);
+                case "head_tilt":
+                    return MLFeatureValue.Create(HeadTilt);
+                default:
+                    return MLFeatureValue.Create(0); // default value
+            }
+        }
+    }
+    public class CoreMLPathwayOutput : NSObject, IMLFeatureProvider
+    {
+        static readonly NSSet<NSString> featureNames = new NSSet<NSString>(
+            new NSString("target"),
+            new NSString("classProbability")
+        );
+
+        public double Target { get; set; }
+
+        public double ClassProbability { get; set; }
+
+        public NSSet<NSString> FeatureNames
+        {
+            get { return featureNames; }
+        }
+
+        public MLFeatureValue GetFeatureValue(string featureName)
+        {
+            switch (featureName)
+            {
+                case "target":
+                    return MLFeatureValue.Create(Target);
+                case "classProbability":
+                    return MLFeatureValue.Create(ClassProbability);
+                default:
+                    return null;
+            }
+        }
+
+        public CoreMLPathwayOutput(double price, double classProbability)
+        {
+            Target = price;
+            ClassProbability = classProbability;
         }
     }
 
@@ -232,61 +340,6 @@ namespace PathwayGames.Models
     //            "MouthShrugLower", "MouthShrugUpper", "MouthSmileLeft", "MouthSmileRight", "MouthStretchLeft",
     //            "MouthStretchRight", "MouthUpperUpLeft", "MouthUpperUpRight", "NoseSneerLeft", "NoseSneerRight",
     //            "TongueOut" };
-
-    public class CoreMLPathwayInput : NSObject, IMLFeatureProvider
-    {
-        public double PPI { get; set; }
-        public double Blink { get; set; }
-        public double Squint { get; set; }
-        public double GazeIn { get; set; }
-        public double GazeOut { get; set; }
-        public double Smile { get; set; }
-        public double Frown { get; set; }
-        public double HeadSpeed { get; set; }
-        public double EyeDwell { get; set; }
-        public double HeadTilt { get; set; }
-
-        public NSSet<NSString> FeatureNames => new NSSet<NSString>(
-            new NSString("ppi"),
-            new NSString("eye_blink"),
-            new NSString("eye_squint"),
-            new NSString("eye_gaze_inward"),
-            new NSString("eye_gaze_outward"),
-            new NSString("smile"),
-            new NSString("frown"),
-            new NSString("head_speed"),
-            new NSString("eye_dwelling"),
-            new NSString("head_tilt"));
-
-        public MLFeatureValue GetFeatureValue(string featureName)
-        {
-            switch (featureName)
-            {
-                case "ppi":
-                    return MLFeatureValue.Create(PPI);
-                case "eye_blink":
-                    return MLFeatureValue.Create(Blink);
-                case "eye_squint":
-                    return MLFeatureValue.Create(Squint);
-                case "eye_gaze_inward":
-                    return MLFeatureValue.Create(GazeIn);
-                case "eye_gaze_outward":
-                    return MLFeatureValue.Create(GazeOut);
-                case "smile":
-                    return MLFeatureValue.Create(Smile);
-                case "frown":
-                    return MLFeatureValue.Create(Frown);
-                case "head_speed":
-                    return MLFeatureValue.Create(HeadSpeed);
-                case "eye_dwelling":
-                    return MLFeatureValue.Create(EyeDwell);
-                case "head_tilt":
-                    return MLFeatureValue.Create(HeadTilt);
-                default:
-                    return MLFeatureValue.Create(0); // default value
-            }
-        }
-    }
 
     //// This file was auto-generated by ML.NET Model Builder. 
     //public class ModelInput
