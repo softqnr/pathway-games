@@ -3,6 +3,7 @@ using Xamarin.Forms;
 
 namespace PathwayGames.Gestures
 {
+    // TODO: Remove this if #6389 is implemented https://github.com/xamarin/Xamarin.Forms/pull/6389
     public static class Gesture
     {
         public static readonly BindableProperty TappedProperty = BindableProperty.CreateAttached("Tapped", typeof(Command<Point>), typeof(Gesture), null, propertyChanged: CommandChanged);

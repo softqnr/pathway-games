@@ -4,6 +4,7 @@ using System.Windows.Input;
 using System.Diagnostics;
 using Stateless;
 using System.Threading.Tasks;
+using PathwayGames.Infrastructure.Timer;
 
 namespace PathwayGames.Services.Slides
 {
@@ -98,7 +99,8 @@ namespace PathwayGames.Services.Slides
             //used to debug commands and UI components
             OnTransitioned
             (
-                (t) => { Debug.WriteLine("State Machine transitioned from {0} -> {1} [{2}]", t.Source, t.Destination, t.Trigger); }
+                (t) => { Debug.WriteLine("{0:HH:mm:ss.fff} - State Machine transitioned from {1} -> {2} [{3}]", 
+                    TimerClock.Now, t.Source, t.Destination, t.Trigger); }
             );
         }
 

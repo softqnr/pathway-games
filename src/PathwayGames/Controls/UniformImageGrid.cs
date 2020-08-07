@@ -100,8 +100,8 @@ namespace PathwayGames.Controls
             SizeRequest sizeRequest = base.OnMeasure(double.PositiveInfinity, double.PositiveInfinity);
             if (sizeRequest.Request.IsZero)
                 return sizeRequest;
-            System.Diagnostics.Debug.WriteLine($"WC - {widthConstraint} : HC - {heightConstraint}");
-            System.Diagnostics.Debug.WriteLine($"WB - {sizeRequest.Request.Width} : HB - {sizeRequest.Request.Height}");
+            //System.Diagnostics.Debug.WriteLine($"WC - {widthConstraint} : HC - {heightConstraint}");
+           // System.Diagnostics.Debug.WriteLine($"WB - {sizeRequest.Request.Width} : HB - {sizeRequest.Request.Height}");
             //var innerAspectRatio = sizeRequest.Request.Width / sizeRequest.Request.Height;
             var innerAspectRatio = ColumnCount / RowCount;
             if (double.IsInfinity(heightConstraint))
