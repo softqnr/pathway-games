@@ -139,8 +139,8 @@ namespace PathwayGames.ViewModels
 
         private async Task EvaluateButtonResponse(Point p)
         {
-            // Save user response
-            _game.RecordButtonPress(CurrentSlide, p, TimerClock.Now);
+            // Save user response (Slideindex starts from 1)
+            _game.RecordButtonPress(SlideIndex.Value - 1, p, TimerClock.Now);
 
             System.Diagnostics.Debug.WriteLine("({0}/{1}) - {2:HH:mm:ss.fff} - EvaluateButtonResponse()", SlideIndex, SlideCount, TimerClock.Now);
        
