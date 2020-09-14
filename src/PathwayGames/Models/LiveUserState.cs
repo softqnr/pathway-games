@@ -12,7 +12,7 @@ namespace PathwayGames.Models
 {
     public class LiveUserState
     {
-        public int SampleWindow = 4;
+        public int SampleWindow = 10;
 
         private float PPI;
         private MovingStatistics blink;
@@ -157,7 +157,7 @@ namespace PathwayGames.Models
             var featurNames = predictionOut.FeatureNames;
             var featuresArrayString = featurNames.ToArray().ToString();
  
-                var targetFeatureValue = predictionOut.GetFeatureValue("target");
+            var targetFeatureValue = predictionOut.GetFeatureValue("target");
             //var prediction = targetFeatureValue.DoubleValue;
             var prediction = targetFeatureValue.Int64Value;
 
@@ -168,7 +168,7 @@ namespace PathwayGames.Models
             //var prediction = predictionOut.GetFeatureValue("target").DoubleValue;
             //var probability = predictionOut.GetFeatureValue("classProbability").DoubleValue;
 
-            Console.WriteLine("\n{0} [Result: {10} Probability: {11}] Blink: {1} Smile: {2} Frown: {3} Squint: {4} Gaze in: {5} Gaze out: {6} Head speed: {7} Eye dwell: {8} Head tilt: {9}",
+            Console.WriteLine("[Result: {10} Probability: {11}] Blink: {1} Smile: {2} Frown: {3} Squint: {4} Gaze in: {5} Gaze out: {6} Head speed: {7} Eye dwell: {8} Head tilt: {9}",
                 f.ReadingTimestamp, blink.Mean, squint.Mean, gazeIn.Mean, gazeOut.Mean, smile.Mean, frown.Mean, headSpeed.Mean, eyeDwell.Mean, headTilt.Mean, prediction, probabilityx);
 
             //var po = (CoreMLPathwayOutput)predictionOut;
