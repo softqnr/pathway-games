@@ -87,7 +87,6 @@
                                     <Setter Property="Source" Value="button_pressed.png"/>
                                 </VisualState.Setters>
                             </VisualState>
-
                         </VisualStateGroup>
                     </VisualStateManager.VisualStateGroups>
                 </ImageButton>

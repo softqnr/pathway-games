@@ -67,13 +67,22 @@ namespace PathwayGames.ViewModels
 
         private async Task ShareGameData(string gameDataFile)
         {
-            var file = Path.Combine(App.LocalStorageDirectory, gameDataFile);
-
-            await Share.RequestAsync(new ShareFileRequest
+            if (!IsBusy)
             {
-                Title = "Pathway+ Games - Test results",
-                File = new ShareFile(file)
-            });
+                IsBusy = true;
+                var file = Path.Combine(App.LocalStorageDirectory, gameDataFile);
+
+                await Share.RequestAsync(new ShareFileRequest
+                {
+                    Title = "Pathway+ Games - Test results",
+                    File = new ShareFile(file),
+                    PresentationSourceBounds = Device.RuntimePlatform == Device.iOS && Device.Idiom == TargetIdiom.Tablet
+                                            ? new System.Drawing.Rectangle(0, 20, 0, 0)
+                                            : System.Drawing.Rectangle.Empty
+                });
+
+                IsBusy = false;
+            }
         }
 
         public async Task ExportAllUserGameData()
@@ -86,7 +95,10 @@ namespace PathwayGames.ViewModels
                 await Share.RequestAsync(new ShareFileRequest
                 {
                     Title = "Share data",
-                    File = new ShareFile(fileName)
+                    File = new ShareFile(fileName),
+                    PresentationSourceBounds = Device.RuntimePlatform == Device.iOS && Device.Idiom == TargetIdiom.Tablet
+                                            ? new System.Drawing.Rectangle(0, 20, 0, 0)
+                                            : System.Drawing.Rectangle.Empty
                 });
                 DialogService.HideLoading();
                 IsBusy = false;
@@ -103,7 +115,10 @@ namespace PathwayGames.ViewModels
                 await Share.RequestAsync(new ShareFileRequest
                 {
                     Title = "Share data",
-                    File = new ShareFile(fileName)
+                    File = new ShareFile(fileName),
+                    PresentationSourceBounds = Device.RuntimePlatform == Device.iOS && Device.Idiom == TargetIdiom.Tablet
+                                            ? new System.Drawing.Rectangle(0, 20, 0, 0)
+                                            : System.Drawing.Rectangle.Empty
                 });
                 DialogService.HideLoading();
                 IsBusy = false;

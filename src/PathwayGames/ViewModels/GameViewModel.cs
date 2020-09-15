@@ -140,17 +140,23 @@ namespace PathwayGames.ViewModels
         private async Task EvaluateButtonResponse(Point p)
         {
             // Save user response
-            _game.RecordButtonPress(SlideIndex, p, TimerClock.Now);
+            _game.RecordButtonPress(CurrentSlide, p, TimerClock.Now);
+
+            System.Diagnostics.Debug.WriteLine("({0}/{1}) - {2:HH:mm:ss.fff} - EvaluateButtonResponse()", SlideIndex, SlideCount, TimerClock.Now);
+       
             // Ommit response for reward slide
             if (CurrentSlide.SlideType == SlideType.Reward)
+            {
+                System.Diagnostics.Debug.WriteLine("({0}/{1}) - {2:HH:mm:ss.fff} - EvaluateButtonResponse() Reward slide skiping evaluation", SlideIndex, SlideCount, TimerClock.Now);
                 return;
+            }
             // Handle response
             var response = _slidesService.EvaluateSlideResponse(_game, CurrentSlide);
             if (response == ResponseOutcome.CorrectCommission)
             {
                 // Cancel blank immediately
                 await StateMachine.FireAsync(Triggers.CorrectCommision); 
-                // Play ding sound
+                // Play success sound
                 await _soundService.PlaySoundAsync(SuccessSound);
             }
             else if (response == ResponseOutcome.WrongCommission)
@@ -162,7 +168,7 @@ namespace PathwayGames.ViewModels
 
         public async Task GotoNextSlide()
         {
-            System.Diagnostics.Debug.WriteLine("({0}/{1}) - {2:HH:mm:ss.fff} - ShowNextSlide()", SlideIndex, SlideCount, TimerClock.Now);
+            System.Diagnostics.Debug.WriteLine("({0}/{1}) - {2:HH:mm:ss.fff} - GotoNextSlide()", SlideIndex, SlideCount, TimerClock.Now);
             if (SlideIndex < SlideCount)
             {
                 // Forward to next slide
@@ -188,18 +194,18 @@ namespace PathwayGames.ViewModels
             {
                 case ResponseOutcome.CorrectCommission:
                     // Within normal slide duration
-                    System.Diagnostics.Debug.WriteLine("({0}/{1}) - {2:HH:mm:ss.fff} - Correct Commission", SlideIndex, SlideCount, TimerClock.Now);
+                    System.Diagnostics.Debug.WriteLine("({0}/{1}) - {2:HH:mm:ss.fff} - EvaluateResponse() - Correct Commission", SlideIndex, SlideCount, TimerClock.Now);
                     // 
                     await StateMachine.FireAsync(Triggers.CorrectCommision);
                     break;
                 case ResponseOutcome.WrongCommission:
-                    System.Diagnostics.Debug.WriteLine("({0}/{1}) - {2:HH:mm:ss.fff} - Wrong Commission", SlideIndex, SlideCount, TimerClock.Now);
-                    //
+                    System.Diagnostics.Debug.WriteLine("({0}/{1}) - {2:HH:mm:ss.fff} -EvaluateResponse() - Wrong Commission", SlideIndex, SlideCount, TimerClock.Now);
                     //await StateMachine.FireAsync(Triggers.WrongCommision);
                     await StateMachine.ChangeStateToShowBlankSlide(CurrentSlide.BlankDuration);
                     break;
                 case ResponseOutcome.WrongOmission:
                 case ResponseOutcome.CorrectOmission:
+                    System.Diagnostics.Debug.WriteLine("({0}/{1}) - {2:HH:mm:ss.fff} - EvaluateResponse() - WrongOmission/CorrectOmission", SlideIndex, SlideCount, TimerClock.Now);
                     await StateMachine.ChangeStateToShowBlankCancelableSlide(CurrentSlide.BlankDuration);
                     break;
             }
@@ -236,6 +242,8 @@ namespace PathwayGames.ViewModels
                 duration);
             // Display blank slide / cancelable
             SlideImages = null;
+            // Reset border color
+            SlideBorderColor = Color.Transparent;
 
             try
             {

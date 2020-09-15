@@ -32,8 +32,9 @@ namespace PathwayGames.Models
             SensoryData = new SensoryData();
         }
 
-        public void RecordButtonPress(Int32? slideIndex, Point p, DateTime dateTimePressed)
+        public void RecordButtonPress(Slide slide, Point p, DateTime dateTimePressed)
         {
+            int slideIndex = Slides.IndexOf(slide); 
             SensoryData.ButtonPresses.Add(new ButtonPress()
             {
                 Coordinates = p,

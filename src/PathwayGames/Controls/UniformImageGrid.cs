@@ -100,8 +100,8 @@ namespace PathwayGames.Controls
             SizeRequest sizeRequest = base.OnMeasure(double.PositiveInfinity, double.PositiveInfinity);
             if (sizeRequest.Request.IsZero)
                 return sizeRequest;
-            System.Diagnostics.Debug.WriteLine($"WC - {widthConstraint} : HC - {heightConstraint}");
-            System.Diagnostics.Debug.WriteLine($"WB - {sizeRequest.Request.Width} : HB - {sizeRequest.Request.Height}");
+            //System.Diagnostics.Debug.WriteLine($"WC - {widthConstraint} : HC - {heightConstraint}");
+           // System.Diagnostics.Debug.WriteLine($"WB - {sizeRequest.Request.Width} : HB - {sizeRequest.Request.Height}");
             //var innerAspectRatio = sizeRequest.Request.Width / sizeRequest.Request.Height;
             var innerAspectRatio = ColumnCount / RowCount;
             if (double.IsInfinity(heightConstraint))
@@ -168,13 +168,12 @@ namespace PathwayGames.Controls
         private View CreateImage(object item)
         {
             var fileName = item as string;
-            var image = new Image()
+            var image = new FFImageLoading.Forms.CachedImage()
             {
                 Source = ImageSource.FromFile(fileName),
                 VerticalOptions = LayoutOptions.CenterAndExpand,
                 HorizontalOptions = LayoutOptions.CenterAndExpand,
                 Aspect = Aspect.AspectFill,
-                IsAnimationPlaying = true,
             };
             return image;
         }
