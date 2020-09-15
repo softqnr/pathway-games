@@ -66,7 +66,7 @@ namespace PathwayGames.Models
         {
             var d = UpdateEngagement(faceAnchorReading);
 
-            return null;
+            return d;
         }
 
         private double[] CoordinateDisplacement(float[,] coordinate)
@@ -132,8 +132,8 @@ namespace PathwayGames.Models
 
                 headTilt.Push( (float) (Math.Abs(leftEyeDisplacement[1] + rightEyeDisplacement[1]) / 2) );
             }
-            //pressCount.Push();
-            //responseTime.Push();
+
+            previousReading = f;
 
             var modelInput = new CoreMLPathwayInput
             {
@@ -149,35 +149,20 @@ namespace PathwayGames.Models
                 HeadTilt = headTilt.Mean
             };
 
-            previousReading = f;
-
-
             IMLFeatureProvider predictionOut = model.GetPrediction(modelInput, out NSError error);
-
-            var featurNames = predictionOut.FeatureNames;
-            var featuresArrayString = featurNames.ToArray().ToString();
  
             var targetFeatureValue = predictionOut.GetFeatureValue("target");
-            //var prediction = targetFeatureValue.DoubleValue;
             var prediction = targetFeatureValue.Int64Value;
 
             var classProbabilityFeatureValue = predictionOut.GetFeatureValue("classProbability");
-            //var probability = classProbabilityFeatureValue.DoubleValue;
             var probabilityx = classProbabilityFeatureValue.DictionaryValue.Values[0];
+            var probabilityy = classProbabilityFeatureValue.DictionaryValue.Values[1];
 
-            //var prediction = predictionOut.GetFeatureValue("target").DoubleValue;
-            //var probability = predictionOut.GetFeatureValue("classProbability").DoubleValue;
+            Console.WriteLine("[Result: {0} Probability: {1} {2}] Blink: {3} Smile: {4} Frown: {5} Squint: {6} Gaze in: {7} Gaze out: {8} Head speed: {9} Eye dwell: {10} Head tilt: {11}",
+                prediction, probabilityx.FloatValue, probabilityy.FloatValue, blink.Mean, squint.Mean, gazeIn.Mean, gazeOut.Mean, smile.Mean, frown.Mean, headSpeed.Mean, eyeDwell.Mean, headTilt.Mean);
 
-            Console.WriteLine("[Result: {10} Probability: {11}] Blink: {1} Smile: {2} Frown: {3} Squint: {4} Gaze in: {5} Gaze out: {6} Head speed: {7} Eye dwell: {8} Head tilt: {9}",
-                f.ReadingTimestamp, blink.Mean, squint.Mean, gazeIn.Mean, gazeOut.Mean, smile.Mean, frown.Mean, headSpeed.Mean, eyeDwell.Mean, headTilt.Mean, prediction, probabilityx);
-
-            //var po = (CoreMLPathwayOutput)predictionOut;
-            //var potarget = po.Target;
-            //var poprob = po.ClassProbability;
-
-            //var nn = predictionOut.FeatureNames;
-            //var n = nn.ToArray();
-
+            return probabilityx.FloatValue;
+            return probabilityy.FloatValue;
             return prediction;
         }
     }
