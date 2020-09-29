@@ -4,7 +4,6 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:g="clr-namespace:PathwayGames.Gestures;assembly=PathwayGames"
              xmlns:c="clr-namespace:PathwayGames.Controls"
-             xmlns:oxy="clr-namespace:OxyPlot.Xamarin.Forms;assembly=OxyPlot.Xamarin.Forms"
              x:Name="self"
              x:Class="PathwayGames.Views.SensorsView"
              Visual="Material" BackgroundColor="White"
@@ -62,8 +61,6 @@
                                   CameraPreviewEnabled="True"
                                   RecordingEnabled="True"
                                   IsEnabled="True" />
-
-            <oxy:PlotView Model="{Binding PlotModel}" WidthRequest="200" HeightRequest="200" x:Name="Chart"/>
         </StackLayout>
     </ContentPage.Content>
 </views:ViewBase>

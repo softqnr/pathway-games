@@ -15,7 +15,6 @@
     <PackageReference Include="AiForms.SettingsView" Version="1.0.9" />
     <PackageReference Include="DocumentFormat.OpenXml" Version="2.9.1" />
     <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
-    <PackageReference Include="OxyPlot.Xamarin.Forms" Version="1.0.0" />
     <PackageReference Include="Rg.Plugins.Popup" Version="1.2.0.223" />
     <PackageReference Include="sqlite-net-pcl" Version="1.5.231" />
     <PackageReference Include="SQLiteNetExtensions.Async" Version="2.1.0" />
