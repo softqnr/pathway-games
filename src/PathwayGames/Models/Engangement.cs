@@ -67,23 +67,23 @@ namespace PathwayGames.Models
                 RangeStart = 0;
                 RangeEnd = range1Max;
 
-                Color1 = Color.White;
-                Color2 = Color.Red;
+                Color1 = Color.Red;
+                Color2 = Color.Orange;
             }
             else if (range1Max <= Value && Value <= range2Max)
             {
                 RangeStart = range1Max;
                 RangeEnd = range2Max;
 
-                Color1 = Color.Red;
-                Color2 = Color.Orange;
+                Color1 = Color.Orange;
+                Color2 = Color.Yellow;
             }
             else
             {
                 RangeStart = range2Max;
                 RangeEnd = 1;
 
-                Color1 = Color.Orange;
+                Color1 = Color.Yellow;
                 Color2 = Color.Green;
             }
         }
