@@ -46,7 +46,8 @@ namespace PathwayGames
 
             // Enable flags
             Device.SetFlags(new[] {
-                "StateTriggers_Experimental"
+                "StateTriggers_Experimental",
+                "Shapes_Experimental"
             });
 
             // Init version tracking

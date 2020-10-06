@@ -1,4 +1,5 @@
 ﻿using Newtonsoft.Json;
+using PathwayGames.Models.Enums;
 using SQLite;
 using SQLiteNetExtensions.Attributes;
 
@@ -50,6 +51,10 @@ namespace PathwayGames.Models
         public float VisualizationWidthCompensation { get; set; }
 
         public float VisualizationHeightCompensation { get; set; }
+
+        public int LiveViewSensitivity { get; set; } = 1;
+
+        public string LiveViewTolerance { get; set; } = Tolerance.Low.ToString();
 
         public UserGameSettings()
         {

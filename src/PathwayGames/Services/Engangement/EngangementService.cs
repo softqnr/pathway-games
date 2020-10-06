@@ -1,22 +1,34 @@
-﻿using PathwayGames.Models;
+﻿using PathwayGames.Extensions;
+using PathwayGames.Helpers;
+using PathwayGames.Models;
+using PathwayGames.Models.Enums;
 using PathwayGames.Sensors;
+using System.Drawing;
 
 namespace PathwayGames.Services.Engangement
 {
     public class EngangementService : IEngangementService
     {
-        public LiveUserState liveUserState;
-
         public double? CalculateEngangement(FaceAnchorReading faceAnchorReading)
         {
-            //// Simulate engangement calculation for development purposes
-            //return (double?)faceAnchorReading.FacialExpressions["SmileLeft"];
+            // Simulate engangement calculation for development purposes
+            return (double?)faceAnchorReading.FacialExpressions["SmileLeft"];
+        }
 
-            if (liveUserState == null)
-                liveUserState = new LiveUserState();
+        public double GetEngangement()
+        {
+            // NOTE: For development purposes
+            return ThreadSafeRandom.CurrentThreadRandom.NextDouble(); 
+        }
 
-            return liveUserState.GetState(faceAnchorReading);
+        public Color GetEngangementColor(int sensitivity, Tolerance tolerance)
+        {
+            double engangementValue = this.GetEngangement();
 
+            Models.Engangement engangemet = new Models.Engangement(engangementValue, tolerance);
+
+            // Blend the two range colors
+            return engangemet.Color1.Blend(engangemet.Color2, engangemet.Delta);
         }
     }
 }
