@@ -1,11 +1,10 @@
 ﻿using PathwayGames.Models;
+using PathwayGames.Models.Enums;
 using PathwayGames.Sensors;
 using PathwayGames.Services.Engangement;
-using PathwayGames.Services.Sensors;
+using PathwayGames.Infrastructure.Timer;
 using PathwayGames.Services.User;
 using System;
-using System.Diagnostics;
-using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Input;
 using Xamarin.Forms;
@@ -14,20 +13,25 @@ namespace PathwayGames.ViewModels
 {
     public class SensorsViewModel : ViewModelBase
     {
-        private const int PlotUpdateInterval = 20;
-        private readonly Timer timer;
-        private readonly Stopwatch watch = new Stopwatch();
+        TimeSpan LightUpdateTimespan = TimeSpan.FromMilliseconds(10);
         //Services
-        private readonly ISensorLogWriterService _sensorLowWriterService;
         private readonly IUserService _userService;
         private readonly IEngangementService _engangementService;
 
-        public UserGameSettings _userSettings;
+        private CancelableTimer _timer;
+        private Brush _lightColor = new SolidColorBrush(Color.White);
+        private UserGameSettings _userSettings;
 
         public UserGameSettings UserSettings
         {
             get => _userSettings;
             private set => SetProperty(ref _userSettings, value);
+        }
+
+        public Brush LightColor
+        {
+            get => _lightColor;
+            private set => SetProperty(ref _lightColor, value);
         }
 
         public ICommand EyeGazeChangedCommand
@@ -36,55 +40,45 @@ namespace PathwayGames.ViewModels
             {
                 return new Command<FaceAnchorChangedEventArgs>((e) =>
                 {
-                    //_sensorLowWriterService.WriteToLog(e.Reading.ToString());
                     // Invoke engangement service
-                    //_engangementService
+                    //_engangementService.
                 });
             }
         }
 
-        public SensorsViewModel (ISensorLogWriterService sensorLogWriterService,
-            IUserService userService,
+        public SensorsViewModel (IUserService userService,
             IEngangementService engangementService)
         {
-            _sensorLowWriterService = sensorLogWriterService;
             _userService = userService;
             _engangementService = engangementService;
 
             Title = "Live";
-            
-            //StartSensorRecording();
-            CreatePlot();
         }
 
         public override async Task InitializeAsync(object navigationData)
         {
             UserSettings = await _userService.GetUserSettings(App.SelectedUser.Id);
+
+            // Timer init
+            _timer = new CancelableTimer(LightUpdateTimespan, UpdateLightColor);
+            _timer.Start();
         }
 
-        private void CreatePlot()
+        private void UpdateLightColor()
         {
- 
-        }
-
-        private void Update()
-        {
-
-        }
-
-        private void StartSensorRecording()
-        {
-            _sensorLowWriterService.LogPrefix = "\"FaceAnchorData\": [";
-            _sensorLowWriterService.LogSuffix = "] ";
-
-            _sensorLowWriterService.Start($"sensor_{Guid.NewGuid().ToString()}.json", ",");
+            Device.BeginInvokeOnMainThread(() => {
+                LightColor = new SolidColorBrush(_engangementService.GetEngangementColor(UserSettings.LiveViewSensitivity,
+                    (Tolerance)Enum.Parse(typeof(Tolerance), UserSettings.LiveViewTolerance)));
+            });
         }
 
         public override void OnDisappearing()
         {
             base.OnDisappearing();
-
-            //_sensorLowWriterService.Cancel();
+            if (_timer != null)
+            {
+                _timer.Stop();
+            }
         }
     }
 }

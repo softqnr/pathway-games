@@ -61,6 +61,12 @@
                                HintText="{Binding VisualizationSettings}" HintTextColor="Gray"
                                Command="{Binding ResetVisualizationDefaultsCommand}" />
             </sv:Section>
+            <sv:Section Title="LIVE SETTINGS">
+                <sv:NumberPickerCell Title="Sensitivity" Min="1" Max="100" 
+                                     Number="{Binding UserSettings.LiveViewSensitivity}" PickerTitle="Select number" />
+                <sv:TextPickerCell Title="Tolerance" Items="{Binding Tolerances}" 
+                                   SelectedItem="{Binding UserSettings.LiveViewTolerance}" />
+            </sv:Section>
         </sv:SettingsView>
     </ContentPage.Content>
 </ContentPage>

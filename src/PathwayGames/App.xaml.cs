@@ -36,7 +36,7 @@ namespace PathwayGames
         public static string LocalStorageDirectory = FileSystem.AppDataDirectory;
         public static string ApplicationVersion = $"{VersionTracking.CurrentVersion}.{VersionTracking.CurrentBuild}";
 
-    public static IUnityContainer Container { get; private set; }
+        public static IUnityContainer Container { get; private set; }
         public readonly static INavigationService NavigationService = new NavigationService();
         public App()
         {
@@ -44,7 +44,8 @@ namespace PathwayGames
 
             // Enable flags
             Device.SetFlags(new[] {
-                "StateTriggers_Experimental"
+                "StateTriggers_Experimental",
+                "Shapes_Experimental"
             });
 
             // Init version tracking

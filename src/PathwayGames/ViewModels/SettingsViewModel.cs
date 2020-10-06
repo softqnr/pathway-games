@@ -3,6 +3,7 @@ using PathwayGames.Infrastructure.Keyboard;
 using PathwayGames.Models;
 using PathwayGames.Sensors;
 using PathwayGames.Services.User;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.CompilerServices;
@@ -48,6 +49,8 @@ namespace PathwayGames.ViewModels
             get => _visualizationSettings;
             set => SetProperty(ref _visualizationSettings, value);
         }
+
+        public string[] Tolerances { get; } = Enum.GetNames(typeof(Models.Enums.Tolerance));
 
         public ICommand SaveSettingsCommand
         {

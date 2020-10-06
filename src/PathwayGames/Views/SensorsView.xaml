@@ -46,10 +46,10 @@
 
     <ContentPage.Content>
         <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" x:Name="SensorScreen">
-            <Label x:Name="EngangementIcon" FontFamily="{StaticResource MaterialFontFamily}" FontSize="64"  
-                       Text="{StaticResource IconCircle}"
-                       HeightRequest="128" HorizontalOptions="Center" VerticalTextAlignment="Center" />
-        
+            <Ellipse Fill="{Binding LightColor}" Stroke="Black" StrokeThickness="1" Margin="10"
+                WidthRequest="60" HeightRequest="60"
+                HorizontalOptions="Center" VerticalOptions="Center"  />
+
             <c:FaceSensorView HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"
                                   TrackingStarted="FaceSensorView_TrackingStarted"
                                   TrackingStopped="FaceSensorView_TrackingStopped"
