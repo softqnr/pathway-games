@@ -104,8 +104,9 @@
     <ConsolePause>False</ConsolePause>
     <MtouchArch>ARM64</MtouchArch>
     <BuildIpa>True</BuildIpa>
-    <CodesignProvision>Pathway+ Games Distribution Profile</CodesignProvision>
-    <CodesignKey>iPhone Distribution</CodesignKey>
+    <CodesignProvision>
+    </CodesignProvision>
+    <CodesignKey>iPhone Distribution: Nottingham Trent University (T5ZZHYYRDX)</CodesignKey>
     <CodesignEntitlements>
     </CodesignEntitlements>
     <IpaPackageName>uk.ac.ntu.comp.pathway.games</IpaPackageName>

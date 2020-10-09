@@ -6,10 +6,10 @@ namespace PathwayGames.Services.Engangement
 {
     public interface IEngangementService
     {
-        double? CalculateEngangement(FaceAnchorReading faceAnchorReading);
+        double? CalculateEngangement(int sensitivity, FaceAnchorReading faceAnchorReading);
 
         double GetEngangement();
 
-        Color GetEngangementColor(int sensitivity, Tolerance tolerance);
+        Color GetEngangementColor(Tolerance tolerance);
     }
 }

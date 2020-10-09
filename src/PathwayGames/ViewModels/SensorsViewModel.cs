@@ -41,7 +41,7 @@ namespace PathwayGames.ViewModels
                 return new Command<FaceAnchorChangedEventArgs>((e) =>
                 {
                     // Invoke engangement service
-                    //_engangementService.
+                    //_engangementService.CalculateEngangement(UserSettings.LiveViewSensitivity, e.Reading);
                 });
             }
         }
@@ -67,7 +67,7 @@ namespace PathwayGames.ViewModels
         private void UpdateLightColor()
         {
             Device.BeginInvokeOnMainThread(() => {
-                LightColor = new SolidColorBrush(_engangementService.GetEngangementColor(UserSettings.LiveViewSensitivity,
+                LightColor = new SolidColorBrush(_engangementService.GetEngangementColor(
                     (Tolerance)Enum.Parse(typeof(Tolerance), UserSettings.LiveViewTolerance)));
             });
         }
