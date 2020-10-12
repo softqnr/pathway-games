@@ -9,7 +9,7 @@ namespace PathwayGames.Services.Engangement
 {
     public class EngangementService : IEngangementService
     {
-        public double? CalculateEngangement(FaceAnchorReading faceAnchorReading)
+        public double? CalculateEngangement(int sensitivity, FaceAnchorReading faceAnchorReading)
         {
             // Simulate engangement calculation for development purposes
             return (double?)faceAnchorReading.FacialExpressions["SmileLeft"];
@@ -21,7 +21,7 @@ namespace PathwayGames.Services.Engangement
             return ThreadSafeRandom.CurrentThreadRandom.NextDouble(); 
         }
 
-        public Color GetEngangementColor(int sensitivity, Tolerance tolerance)
+        public Color GetEngangementColor(Tolerance tolerance)
         {
             double engangementValue = this.GetEngangement();
 
