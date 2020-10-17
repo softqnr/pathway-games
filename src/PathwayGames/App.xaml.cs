@@ -25,6 +25,7 @@ using Xamarin.Essentials;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
+[assembly: ExportFont("materialdesignicons-webfont.ttf", Alias = "Material")]
 [assembly: XamlCompilation(XamlCompilationOptions.Compile)]
 namespace PathwayGames
 {

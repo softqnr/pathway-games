@@ -20,7 +20,7 @@ namespace PathwayGames.Views
                 //toolbarItem.SetBinding(ToolbarItem.CommandProperty, "ExportAllUserDataCommand");
                 //toolbarItem.IconImageSource = new FontImageSource
                 //{
-                //    FontFamily = Application.Current.Resources["MaterialFontFamily"].ToString(),
+                //    FontFamily = "Material",
                 //    Glyph = Application.Current.Resources["IconDownload"].ToString()
                 //};
                 //ToolbarItems.Add(toolbarItem);

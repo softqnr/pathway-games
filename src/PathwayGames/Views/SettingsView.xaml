@@ -11,7 +11,7 @@
         <ToolbarItem Command="{Binding SaveSettingsCommand}">
             <ToolbarItem.IconImageSource>
                 <FontImageSource
-                    FontFamily="{StaticResource MaterialFontFamily}"
+                    FontFamily="Material"
                     Glyph="{StaticResource IconSave}"
                     Size="24" />
             </ToolbarItem.IconImageSource>

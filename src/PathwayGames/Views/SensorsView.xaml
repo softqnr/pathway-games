@@ -13,7 +13,7 @@
         <StackLayout Orientation="Horizontal" VerticalOptions="CenterAndExpand" Spacing="10">
             <Image Source="logo.png" HorizontalOptions="Start" />
             <Label Text="{Binding Title}" FontSize="Header" FontAttributes="Bold" TextColor="Black" HorizontalOptions="CenterAndExpand" VerticalTextAlignment="Center" />
-            <Label x:Name="EyeGazeIcon" FontFamily="{StaticResource MaterialFontFamily}" FontSize="26"  
+            <Label x:Name="EyeGazeIcon" FontFamily="Material" FontSize="26"  
                    IsEnabled="{Binding Game.GameSettings.EyeGazeSensor}"
                    HeightRequest="28" HorizontalOptions="End" VerticalTextAlignment="Center">
                 <Label.Triggers>

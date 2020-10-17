@@ -36,10 +36,6 @@
 	<string>This app needs access to the camera to take photos.</string>
 	<key>CFBundleShortVersionString</key>
 	<string>1.3</string>
-	<key>UIAppFonts</key>
-	<array>
-		<string>materialdesignicons-webfont.ttf</string>
-	</array>
 	<key>CFBundleVersion</key>
 	<string>24</string>
 	<key>XSAppIconAssets</key>

@@ -159,7 +159,6 @@
     <None Include="Info.plist" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <BundleResource Include="Resources\pw.db" />
-    <BundleResource Include="Resources\materialdesignicons-webfont.ttf" />
     <ITunesArtwork Include="iTunesArtwork" />
     <ITunesArtwork Include="iTunesArtwork%402x" />
   </ItemGroup>

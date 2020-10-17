@@ -11,7 +11,7 @@
         <ToolbarItem x:Name="AddUserButton" Command="{Binding AddCommand}">
             <ToolbarItem.IconImageSource>
                 <FontImageSource
-                        FontFamily="{StaticResource MaterialFontFamily}"
+                        FontFamily="Material"
                         Glyph="{StaticResource IconPlus}"
                         Size="24" />
             </ToolbarItem.IconImageSource>
@@ -58,11 +58,11 @@
                                         Command="{Binding BindingContext.UserSelectedCommand, Source={x:Reference self}}" Margin="10" TextColor="Black"
                                         CommandParameter="{Binding .}"/>
 
-                                <Button Grid.Row="0" Grid.Column="2" HorizontalOptions="End" Text="{StaticResource IconJson}" FontFamily="{StaticResource MaterialFontFamily}" FontSize="32"
+                                <Button Grid.Row="0" Grid.Column="2" HorizontalOptions="End" Text="{StaticResource IconJson}" FontFamily="Material" FontSize="32"
                                         Command="{Binding BindingContext.GotoUserSessionsCommand, Source={x:Reference self}}" Margin="10" TextColor="Black"
                                         CommandParameter="{Binding .}"/>
 
-                                <Button Grid.Row="0" Grid.Column="3" HorizontalOptions="End" Text="{StaticResource IconDelete}" FontFamily="{StaticResource MaterialFontFamily}" FontSize="32"
+                                <Button Grid.Row="0" Grid.Column="3" HorizontalOptions="End" Text="{StaticResource IconDelete}" FontFamily="Material" FontSize="32"
                                         Command="{Binding BindingContext.DeleteUserCommand, Source={x:Reference self}}" CommandParameter="{Binding .}" Margin="10" 
                                         IsVisible="{Binding Source={x:Static local:App.SelectedUser},Path=IsAdmin}" 
                                         BackgroundColor="Transparent" TextColor="Black" />
