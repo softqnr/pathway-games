@@ -74,7 +74,7 @@ namespace PathwayGames.ViewModels
 
                 await Share.RequestAsync(new ShareFileRequest
                 {
-                    Title = "Pathway+ Games - Test results",
+                    Title = $"{Resources.AppResources.ApplicationName} - {Resources.AppResources.TitleTestResults}",
                     File = new ShareFile(file),
                     PresentationSourceBounds = Device.RuntimePlatform == Device.iOS && Device.Idiom == TargetIdiom.Tablet
                                             ? new System.Drawing.Rectangle(0, 20, 0, 0)
@@ -90,11 +90,11 @@ namespace PathwayGames.ViewModels
             if (!IsBusy)
             {
                 IsBusy = true;
-                DialogService.ShowLoading("Generating package …");
+                DialogService.ShowLoading(Resources.AppResources.TitleGeneratingPackage);
                 string fileName = await _userService.PackAllUserGameSessions();
                 await Share.RequestAsync(new ShareFileRequest
                 {
-                    Title = "Share data",
+                    Title = Resources.AppResources.TitleShareData,
                     File = new ShareFile(fileName),
                     PresentationSourceBounds = Device.RuntimePlatform == Device.iOS && Device.Idiom == TargetIdiom.Tablet
                                             ? new System.Drawing.Rectangle(0, 20, 0, 0)
@@ -110,11 +110,11 @@ namespace PathwayGames.ViewModels
             if (!IsBusy)
             {
                 IsBusy = true;
-                DialogService.ShowLoading("Generating package …");
+                DialogService.ShowLoading(Resources.AppResources.TitleGeneratingPackage);
                 string fileName = await _userService.PackUserGameSessions(_user.Id);
                 await Share.RequestAsync(new ShareFileRequest
                 {
-                    Title = "Share data",
+                    Title = Resources.AppResources.TitleShareData,
                     File = new ShareFile(fileName),
                     PresentationSourceBounds = Device.RuntimePlatform == Device.iOS && Device.Idiom == TargetIdiom.Tablet
                                             ? new System.Drawing.Rectangle(0, 20, 0, 0)
@@ -127,8 +127,8 @@ namespace PathwayGames.ViewModels
 
         public async Task DeleteGameSession(UserGameSession userGameSession)
         {
-            bool confirmed = await DialogService.ShowConfirmAsync("You cannot undo this action", 
-                "Do you want to delete this session data?", "Ok", "Cancel");
+            bool confirmed = await DialogService.ShowConfirmAsync(Resources.AppResources.TitleCannotUndoThisAction,
+                Resources.AppResources.PromptDeleteSessionData, Resources.AppResources.Ok, Resources.AppResources.Cancel);
             if (confirmed)
             {
                 await _userService.DeleteGameSession(userGameSession);
@@ -143,14 +143,14 @@ namespace PathwayGames.ViewModels
 
         public override async Task InitializeAsync(object navigationData)
         {
-            DialogService.ShowLoading("Loading …");
+            DialogService.ShowLoading(Resources.AppResources.TitleLoading);
             if (navigationData == null)
             {
                 _user = App.SelectedUser;
-                Title = "Session data - " + App.SelectedUser.UserName;
+                Title = $"{Resources.AppResources.TitleSessionData} - {App.SelectedUser.UserName}";
             } else {
                 _user = navigationData as User;
-                Title = "Session data - " + _user.UserName;
+                Title = $"Resources.AppResources.TitleSessionData - {_user.UserName}";
             }
             GameSessions = new ObservableCollection<UserGameSession>(await _userService.GetUserGameSessions(_user.Id));
             DialogService.HideLoading();

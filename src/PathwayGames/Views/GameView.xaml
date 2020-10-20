@@ -4,6 +4,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:g="clr-namespace:PathwayGames.Gestures;assembly=PathwayGames"
              xmlns:c="clr-namespace:PathwayGames.Controls"
+             xmlns:resources="clr-namespace:PathwayGames.Resources"
              x:Name="GamePage"
              x:Class="PathwayGames.Views.GameView"
              Visual="Material" BackgroundColor="White"
@@ -96,7 +97,8 @@
                 <Label FontSize="Small">
                     <Label.FormattedText>
                         <FormattedString>
-                            <Span Text="Slide "/>
+                            <Span Text="{x:Static resources:AppResources.LabelSlide}"/>
+                            <Span Text=" "/>
                             <Span Text="{Binding SlideIndex, Mode=OneWay}" />
                             <Span Text="/" />
                             <Span Text="{Binding SlideCount, Mode=OneWay}" />

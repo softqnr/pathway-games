@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:b="clr-namespace:PathwayGames.Behaviors;assembly=PathwayGames"
+             xmlns:resources="clr-namespace:PathwayGames.Resources"
              xmlns:sv="clr-namespace:AiForms.Renderers;assembly=SettingsView"
              x:Class="PathwayGames.Views.SettingsView"
              Visual="Material"
@@ -20,51 +20,51 @@
 
     <ContentPage.Content>
         <sv:SettingsView>
-            <sv:Section Title="SENSOR SETTINGS">
-                <SwitchCell Text="True depth camera" On="{Binding UserSettings.EyeGazeSensor, Mode=TwoWay}"/>
-                <SwitchCell Text="Muse EEG headband" On="{Binding UserSettings.EEGSensor, Mode=TwoWay}"/>
-                <SwitchCell Text="Gyro / Acceleration" On="{Binding UserSettings.AccelerationSensor, Mode=TwoWay}"/>
+            <sv:Section Title="{x:Static resources:AppResources.SectionSensorSettings}">
+                <SwitchCell Text="{x:Static resources:AppResources.LabelTrueDepthcamera}" On="{Binding UserSettings.EyeGazeSensor, Mode=TwoWay}"/>
+                <SwitchCell Text="{x:Static resources:AppResources.LabelMuseEEGheadband}" On="{Binding UserSettings.EEGSensor, Mode=TwoWay}"/>
+                <SwitchCell Text="{x:Static resources:AppResources.LabelGyroAcceleration}" On="{Binding UserSettings.AccelerationSensor, Mode=TwoWay}"/>
             </sv:Section>
-            <sv:Section Title="GAME SETTINGS">
-                <EntryCell Label="Slide count" 
+            <sv:Section Title="{x:Static resources:AppResources.SectionGameSettings}">
+                <EntryCell Label="{x:Static resources:AppResources.LabelSlideCount}" 
                                Text="{Binding UserSettings.SlideCount, 
                     Converter={StaticResource DecimalConverter}, Mode=TwoWay}" Keyboard="Numeric" />
-                <EntryCell Label="Slide display time" 
+                <EntryCell Label="{x:Static resources:AppResources.LabelSlideDisplayTime}" 
                                Text="{Binding UserSettings.SlideDisplayDuration, 
                     Converter={StaticResource DecimalConverter}, Mode=TwoWay}" Keyboard="Numeric" />
-                <EntryCell Label="Blank slide display time" 
+                <EntryCell Label="{x:Static resources:AppResources.LabelBlankSlideDisplayTime}" 
                                Text="{Binding UserSettings.BlankSlideDisplayTime, 
                     Converter={StaticResource DecimalConverter}, Mode=TwoWay}" Keyboard="Numeric" />
-                <EntryCell Label="Blank slide variation (+-)" 
+                <EntryCell Label="{x:Static resources:AppResources.LabelBlankSlideVariation}" 
                                Text="{Binding UserSettings.BlankSlideDisplayTimeVariation, 
                     Converter={StaticResource DecimalConverter}, Mode=TwoWay}" Keyboard="Numeric" />
             </sv:Section>
-            <sv:Section Title="SEEK GAME SETTINGS" sv:RadioCell.SelectedValue="{Binding SelectedSeekGridOption, Mode=TwoWay}" ItemsSource="{Binding SeekGridOptions}">
+            <sv:Section Title="{x:Static resources:AppResources.SectionSeekGameSettings}" sv:RadioCell.SelectedValue="{Binding SelectedSeekGridOption, Mode=TwoWay}" ItemsSource="{Binding SeekGridOptions}">
                 <sv:Section.ItemTemplate>
                     <DataTemplate>
                         <sv:RadioCell Title="{Binding Name}" Value="{Binding .}" />
                     </DataTemplate>
                 </sv:Section.ItemTemplate>
             </sv:Section>
-            <sv:Section Title="VISUALIZATION SETTINGS">
-                <SwitchCell Text="Eye Gaze Visualization" On="{Binding UserSettings.EyeGazeVisualisation, Mode=TwoWay}"/>
-                <EntryCell Label="Screen PPI"
+            <sv:Section Title="{x:Static resources:AppResources.SectionVisualizationSettings}">
+                <SwitchCell Text="{x:Static resources:AppResources.LabelEyeGazeVisualization}" On="{Binding UserSettings.EyeGazeVisualisation, Mode=TwoWay}"/>
+                <EntryCell Label="{x:Static resources:AppResources.LabelScreenPPI}"
                                Text="{Binding UserSettings.ScreenPPI, 
                     Converter={StaticResource IntegerConverter}, Mode=TwoWay}" Keyboard="Numeric" />
-                <EntryCell Label="Width Compensation" 
+                <EntryCell Label="{x:Static resources:AppResources.LabelWidthCompensation}" 
                                Text="{Binding UserSettings.VisualizationWidthCompensation, 
                     Converter={StaticResource DecimalConverter}, Mode=TwoWay}" Keyboard="Numeric" />
-                <EntryCell Label="Height Compensation" 
+                <EntryCell Label="{x:Static resources:AppResources.LabelHeightCompensation}" 
                                Text="{Binding UserSettings.VisualizationHeightCompensation, 
                     Converter={StaticResource DecimalConverter}, Mode=TwoWay}" Keyboard="Numeric" />
-                <sv:ButtonCell Title="Reset Defaults" TitleAlignment="Center" 
+                <sv:ButtonCell Title="{x:Static resources:AppResources.ButtonResetDefaults}" TitleAlignment="Center" 
                                HintText="{Binding VisualizationSettings}" HintTextColor="Gray"
                                Command="{Binding ResetVisualizationDefaultsCommand}" />
             </sv:Section>
-            <sv:Section Title="LIVE SETTINGS">
-                <sv:NumberPickerCell Title="Sensitivity" Min="1" Max="100" 
+            <sv:Section Title="{x:Static resources:AppResources.SectionLiveSettings}">
+                <sv:NumberPickerCell Title="{x:Static resources:AppResources.LabelSensitivity}" Min="1" Max="100" 
                                      Number="{Binding UserSettings.LiveViewSensitivity}" PickerTitle="Select number" />
-                <sv:TextPickerCell Title="Tolerance" Items="{Binding Tolerances}" 
+                <sv:TextPickerCell Title="{x:Static resources:AppResources.LabelTolerance}" Items="{Binding Tolerances}" 
                                    SelectedItem="{Binding UserSettings.LiveViewTolerance}" />
             </sv:Section>
         </sv:SettingsView>

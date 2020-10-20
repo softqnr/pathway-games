@@ -44,19 +44,19 @@ namespace PathwayGames.ViewModels
 
             MenuItems = new ObservableCollection<NavMenuItem>(new[]
             {
-                    new NavMenuItem { Id = 0, Title = "Games",
+                    new NavMenuItem { Id = 0, Title = Resources.AppResources.TitleGames,
                         IconSource = Application.Current.Resources["IconGames"].ToString(),
                         TargetType =typeof(GameSelectionViewModel) },
-                    new NavMenuItem { Id = 1, Title = "Session data",
+                    new NavMenuItem { Id = 1, Title = Title = Resources.AppResources.TitleSessionData,
                         IconSource = Application.Current.Resources["IconJson"].ToString(),
                         TargetType =typeof(SessionDataViewModel) },
-                    new NavMenuItem { Id = 2, Title = "Users",
+                    new NavMenuItem { Id = 2, Title = Resources.AppResources.TitleUsers,
                         IconSource = Application.Current.Resources["IconUser"].ToString(),
                         TargetType =typeof(UsersViewModel) },
-                    new NavMenuItem { Id = 3, Title = "Game settings",
+                    new NavMenuItem { Id = 3, Title = Resources.AppResources.TitleSettings,
                         IconSource = Application.Current.Resources["IconSettings"].ToString(),
                         TargetType =typeof(SettingsViewModel) },
-                    new NavMenuItem { Id = 4, Title = "Live",
+                    new NavMenuItem { Id = 4, Title = Resources.AppResources.TitleLive,
                         IconSource = Application.Current.Resources["IconLive"].ToString(),
                         TargetType =typeof(SensorsViewModel) },
             });

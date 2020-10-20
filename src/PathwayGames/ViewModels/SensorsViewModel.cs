@@ -52,7 +52,7 @@ namespace PathwayGames.ViewModels
             _userService = userService;
             _engangementService = engangementService;
 
-            Title = "Live";
+            Title = Resources.AppResources.TitleLive;
         }
 
         public override async Task InitializeAsync(object navigationData)

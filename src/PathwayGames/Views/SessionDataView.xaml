@@ -2,12 +2,13 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:PathwayGames"
+             xmlns:resources="clr-namespace:PathwayGames.Resources"
              x:Class="PathwayGames.Views.SessionDataView"
              x:Name="self"
              Visual="Material"
              Title="{Binding Title}">
     <ContentPage.ToolbarItems>
-        <ToolbarItem Command="{Binding ExportUserDataCommand}" Order="Primary" Priority="0" Text="Pack">
+        <ToolbarItem Command="{Binding ExportUserDataCommand}" Order="Primary" Priority="0" Text="{x:Static resources:AppResources.ButtonPack}">
             <ToolbarItem.IconImageSource>
                 <FontImageSource
                     FontFamily="Material"
@@ -15,7 +16,7 @@
                     Size="24" />
             </ToolbarItem.IconImageSource>
         </ToolbarItem>
-        <ToolbarItem x:Name="ExportAllToolbarItem" Command="{Binding ExportAllUserDataCommand}" Order="Primary" Priority="1" Text="Pack all">
+        <ToolbarItem x:Name="ExportAllToolbarItem" Command="{Binding ExportAllUserDataCommand}" Order="Primary" Priority="1" Text="{x:Static resources:AppResources.ButtonPackAll}">
             <ToolbarItem.IconImageSource>
                 <FontImageSource
                     FontFamily="Material"
@@ -27,7 +28,7 @@
 
     <CollectionView x:Name="SessionDataList" ItemsSource="{Binding GameSessions}" Margin="5" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
         <CollectionView.EmptyView>
-            <Label Text="No game sessions found!"/>
+            <Label Text="{x:Static resources:AppResources.LabelNoGameSessionsFound}"/>
         </CollectionView.EmptyView>
         <CollectionView.ItemTemplate>
             <DataTemplate>
