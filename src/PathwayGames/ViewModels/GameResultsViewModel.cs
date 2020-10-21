@@ -68,12 +68,12 @@ namespace PathwayGames.ViewModels
             if (!IsBusy)
             {
                 IsBusy = true;
-                DialogService.ShowLoading("Generating results …");
+                DialogService.ShowLoading(Resources.AppResources.TitleGeneratingResults);
                 string fileName = await _excelService.ExportAsync(_game);
 
                 await Share.RequestAsync(new ShareFileRequest
                 {
-                    Title = "Share results",
+                    Title = Resources.AppResources.TitleShareResults,
                     File = new ShareFile(fileName),
                     PresentationSourceBounds = Device.RuntimePlatform == Device.iOS && Device.Idiom == TargetIdiom.Tablet
                                                 ? new System.Drawing.Rectangle(0, 20, 0, 0)
@@ -91,7 +91,7 @@ namespace PathwayGames.ViewModels
 
             await Share.RequestAsync(new ShareFileRequest
             {
-                Title = "Pathway+ Games - Test results",
+                Title = $"{Resources.AppResources.ApplicationName} - {Resources.AppResources.TitleTestResults}",
                 File = new ShareFile(file),
                 PresentationSourceBounds = Device.RuntimePlatform == Device.iOS && Device.Idiom == TargetIdiom.Tablet
                                             ? new System.Drawing.Rectangle(0, 20, 0, 0)
@@ -101,8 +101,8 @@ namespace PathwayGames.ViewModels
 
         private async Task DeleteSession()
         {
-            bool confirmed = await DialogService.ShowConfirmAsync("You cannot undo this action",
-                "Do you want to delete this session data?", "Ok", "Cancel");
+            bool confirmed = await DialogService.ShowConfirmAsync(Resources.AppResources.TitleCannotUndoThisAction,
+                Resources.AppResources.PromptDeleteSessionData, Resources.AppResources.Ok, Resources.AppResources.Cancel);
             if (confirmed)
             {
                 await _userService.DeleteGameSession(_userGameSession);

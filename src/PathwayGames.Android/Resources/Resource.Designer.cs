@@ -5283,8 +5283,8 @@ namespace PathwayGames.Droid
 			global::AiForms.Renderers.Droid.Resource.Attribute.behavior_overlapTop = global::PathwayGames.Droid.Resource.Attribute.behavior_overlapTop;
 			global::AiForms.Renderers.Droid.Resource.Attribute.behavior_peekHeight = global::PathwayGames.Droid.Resource.Attribute.behavior_peekHeight;
 			global::AiForms.Renderers.Droid.Resource.Attribute.behavior_skipCollapsed = global::PathwayGames.Droid.Resource.Attribute.behavior_skipCollapsed;
-			global::AiForms.Renderers.Droid.Resource.Attribute.borderWidth = global::PathwayGames.Droid.Resource.Attribute.borderWidth;
 			global::AiForms.Renderers.Droid.Resource.Attribute.borderlessButtonStyle = global::PathwayGames.Droid.Resource.Attribute.borderlessButtonStyle;
+			global::AiForms.Renderers.Droid.Resource.Attribute.borderWidth = global::PathwayGames.Droid.Resource.Attribute.borderWidth;
 			global::AiForms.Renderers.Droid.Resource.Attribute.bottomAppBarStyle = global::PathwayGames.Droid.Resource.Attribute.bottomAppBarStyle;
 			global::AiForms.Renderers.Droid.Resource.Attribute.bottomNavigationStyle = global::PathwayGames.Droid.Resource.Attribute.bottomNavigationStyle;
 			global::AiForms.Renderers.Droid.Resource.Attribute.bottomSheetDialogTheme = global::PathwayGames.Droid.Resource.Attribute.bottomSheetDialogTheme;
@@ -5350,9 +5350,10 @@ namespace PathwayGames.Droid
 			global::AiForms.Renderers.Droid.Resource.Attribute.closeIconVisible = global::PathwayGames.Droid.Resource.Attribute.closeIconVisible;
 			global::AiForms.Renderers.Droid.Resource.Attribute.closeItemLayout = global::PathwayGames.Droid.Resource.Attribute.closeItemLayout;
 			global::AiForms.Renderers.Droid.Resource.Attribute.collapseContentDescription = global::PathwayGames.Droid.Resource.Attribute.collapseContentDescription;
-			global::AiForms.Renderers.Droid.Resource.Attribute.collapseIcon = global::PathwayGames.Droid.Resource.Attribute.collapseIcon;
 			global::AiForms.Renderers.Droid.Resource.Attribute.collapsedTitleGravity = global::PathwayGames.Droid.Resource.Attribute.collapsedTitleGravity;
 			global::AiForms.Renderers.Droid.Resource.Attribute.collapsedTitleTextAppearance = global::PathwayGames.Droid.Resource.Attribute.collapsedTitleTextAppearance;
+			global::AiForms.Renderers.Droid.Resource.Attribute.collapseIcon = global::PathwayGames.Droid.Resource.Attribute.collapseIcon;
+			global::AiForms.Renderers.Droid.Resource.Attribute.collectionViewStyle = global::PathwayGames.Droid.Resource.Attribute.collectionViewStyle;
 			global::AiForms.Renderers.Droid.Resource.Attribute.color = global::PathwayGames.Droid.Resource.Attribute.color;
 			global::AiForms.Renderers.Droid.Resource.Attribute.colorAccent = global::PathwayGames.Droid.Resource.Attribute.colorAccent;
 			global::AiForms.Renderers.Droid.Resource.Attribute.colorBackgroundFloating = global::PathwayGames.Droid.Resource.Attribute.colorBackgroundFloating;
@@ -5398,8 +5399,8 @@ namespace PathwayGames.Droid
 			global::AiForms.Renderers.Droid.Resource.Attribute.dividerVertical = global::PathwayGames.Droid.Resource.Attribute.dividerVertical;
 			global::AiForms.Renderers.Droid.Resource.Attribute.drawableSize = global::PathwayGames.Droid.Resource.Attribute.drawableSize;
 			global::AiForms.Renderers.Droid.Resource.Attribute.drawerArrowStyle = global::PathwayGames.Droid.Resource.Attribute.drawerArrowStyle;
-			global::AiForms.Renderers.Droid.Resource.Attribute.dropDownListViewStyle = global::PathwayGames.Droid.Resource.Attribute.dropDownListViewStyle;
 			global::AiForms.Renderers.Droid.Resource.Attribute.dropdownListPreferredItemHeight = global::PathwayGames.Droid.Resource.Attribute.dropdownListPreferredItemHeight;
+			global::AiForms.Renderers.Droid.Resource.Attribute.dropDownListViewStyle = global::PathwayGames.Droid.Resource.Attribute.dropDownListViewStyle;
 			global::AiForms.Renderers.Droid.Resource.Attribute.editTextBackground = global::PathwayGames.Droid.Resource.Attribute.editTextBackground;
 			global::AiForms.Renderers.Droid.Resource.Attribute.editTextColor = global::PathwayGames.Droid.Resource.Attribute.editTextColor;
 			global::AiForms.Renderers.Droid.Resource.Attribute.editTextStyle = global::PathwayGames.Droid.Resource.Attribute.editTextStyle;
@@ -5417,7 +5418,6 @@ namespace PathwayGames.Droid
 			global::AiForms.Renderers.Droid.Resource.Attribute.expandedTitleMarginStart = global::PathwayGames.Droid.Resource.Attribute.expandedTitleMarginStart;
 			global::AiForms.Renderers.Droid.Resource.Attribute.expandedTitleMarginTop = global::PathwayGames.Droid.Resource.Attribute.expandedTitleMarginTop;
 			global::AiForms.Renderers.Droid.Resource.Attribute.expandedTitleTextAppearance = global::PathwayGames.Droid.Resource.Attribute.expandedTitleTextAppearance;
-			global::AiForms.Renderers.Droid.Resource.Attribute.externalRouteEnabledDrawable = global::PathwayGames.Droid.Resource.Attribute.externalRouteEnabledDrawable;
 			global::AiForms.Renderers.Droid.Resource.Attribute.fabAlignmentMode = global::PathwayGames.Droid.Resource.Attribute.fabAlignmentMode;
 			global::AiForms.Renderers.Droid.Resource.Attribute.fabCradleMargin = global::PathwayGames.Droid.Resource.Attribute.fabCradleMargin;
 			global::AiForms.Renderers.Droid.Resource.Attribute.fabCradleRoundedCornerRadius = global::PathwayGames.Droid.Resource.Attribute.fabCradleRoundedCornerRadius;
@@ -5462,12 +5462,12 @@ namespace PathwayGames.Droid
 			global::AiForms.Renderers.Droid.Resource.Attribute.icon = global::PathwayGames.Droid.Resource.Attribute.icon;
 			global::AiForms.Renderers.Droid.Resource.Attribute.iconEndPadding = global::PathwayGames.Droid.Resource.Attribute.iconEndPadding;
 			global::AiForms.Renderers.Droid.Resource.Attribute.iconGravity = global::PathwayGames.Droid.Resource.Attribute.iconGravity;
+			global::AiForms.Renderers.Droid.Resource.Attribute.iconifiedByDefault = global::PathwayGames.Droid.Resource.Attribute.iconifiedByDefault;
 			global::AiForms.Renderers.Droid.Resource.Attribute.iconPadding = global::PathwayGames.Droid.Resource.Attribute.iconPadding;
 			global::AiForms.Renderers.Droid.Resource.Attribute.iconSize = global::PathwayGames.Droid.Resource.Attribute.iconSize;
 			global::AiForms.Renderers.Droid.Resource.Attribute.iconStartPadding = global::PathwayGames.Droid.Resource.Attribute.iconStartPadding;
 			global::AiForms.Renderers.Droid.Resource.Attribute.iconTint = global::PathwayGames.Droid.Resource.Attribute.iconTint;
 			global::AiForms.Renderers.Droid.Resource.Attribute.iconTintMode = global::PathwayGames.Droid.Resource.Attribute.iconTintMode;
-			global::AiForms.Renderers.Droid.Resource.Attribute.iconifiedByDefault = global::PathwayGames.Droid.Resource.Attribute.iconifiedByDefault;
 			global::AiForms.Renderers.Droid.Resource.Attribute.imageButtonStyle = global::PathwayGames.Droid.Resource.Attribute.imageButtonStyle;
 			global::AiForms.Renderers.Droid.Resource.Attribute.indeterminateProgressStyle = global::PathwayGames.Droid.Resource.Attribute.indeterminateProgressStyle;
 			global::AiForms.Renderers.Droid.Resource.Attribute.initialActivityCount = global::PathwayGames.Droid.Resource.Attribute.initialActivityCount;
@@ -5522,19 +5522,6 @@ namespace PathwayGames.Droid
 			global::AiForms.Renderers.Droid.Resource.Attribute.maxButtonHeight = global::PathwayGames.Droid.Resource.Attribute.maxButtonHeight;
 			global::AiForms.Renderers.Droid.Resource.Attribute.maxImageSize = global::PathwayGames.Droid.Resource.Attribute.maxImageSize;
 			global::AiForms.Renderers.Droid.Resource.Attribute.measureWithLargestChild = global::PathwayGames.Droid.Resource.Attribute.measureWithLargestChild;
-			global::AiForms.Renderers.Droid.Resource.Attribute.mediaRouteAudioTrackDrawable = global::PathwayGames.Droid.Resource.Attribute.mediaRouteAudioTrackDrawable;
-			global::AiForms.Renderers.Droid.Resource.Attribute.mediaRouteButtonStyle = global::PathwayGames.Droid.Resource.Attribute.mediaRouteButtonStyle;
-			global::AiForms.Renderers.Droid.Resource.Attribute.mediaRouteButtonTint = global::PathwayGames.Droid.Resource.Attribute.mediaRouteButtonTint;
-			global::AiForms.Renderers.Droid.Resource.Attribute.mediaRouteCloseDrawable = global::PathwayGames.Droid.Resource.Attribute.mediaRouteCloseDrawable;
-			global::AiForms.Renderers.Droid.Resource.Attribute.mediaRouteControlPanelThemeOverlay = global::PathwayGames.Droid.Resource.Attribute.mediaRouteControlPanelThemeOverlay;
-			global::AiForms.Renderers.Droid.Resource.Attribute.mediaRouteDefaultIconDrawable = global::PathwayGames.Droid.Resource.Attribute.mediaRouteDefaultIconDrawable;
-			global::AiForms.Renderers.Droid.Resource.Attribute.mediaRoutePauseDrawable = global::PathwayGames.Droid.Resource.Attribute.mediaRoutePauseDrawable;
-			global::AiForms.Renderers.Droid.Resource.Attribute.mediaRoutePlayDrawable = global::PathwayGames.Droid.Resource.Attribute.mediaRoutePlayDrawable;
-			global::AiForms.Renderers.Droid.Resource.Attribute.mediaRouteSpeakerGroupIconDrawable = global::PathwayGames.Droid.Resource.Attribute.mediaRouteSpeakerGroupIconDrawable;
-			global::AiForms.Renderers.Droid.Resource.Attribute.mediaRouteSpeakerIconDrawable = global::PathwayGames.Droid.Resource.Attribute.mediaRouteSpeakerIconDrawable;
-			global::AiForms.Renderers.Droid.Resource.Attribute.mediaRouteStopDrawable = global::PathwayGames.Droid.Resource.Attribute.mediaRouteStopDrawable;
-			global::AiForms.Renderers.Droid.Resource.Attribute.mediaRouteTheme = global::PathwayGames.Droid.Resource.Attribute.mediaRouteTheme;
-			global::AiForms.Renderers.Droid.Resource.Attribute.mediaRouteTvIconDrawable = global::PathwayGames.Droid.Resource.Attribute.mediaRouteTvIconDrawable;
 			global::AiForms.Renderers.Droid.Resource.Attribute.menu = global::PathwayGames.Droid.Resource.Attribute.menu;
 			global::AiForms.Renderers.Droid.Resource.Attribute.multiChoiceItemLayout = global::PathwayGames.Droid.Resource.Attribute.multiChoiceItemLayout;
 			global::AiForms.Renderers.Droid.Resource.Attribute.navigationContentDescription = global::PathwayGames.Droid.Resource.Attribute.navigationContentDescription;
@@ -5573,12 +5560,14 @@ namespace PathwayGames.Droid
 			global::AiForms.Renderers.Droid.Resource.Attribute.scrimAnimationDuration = global::PathwayGames.Droid.Resource.Attribute.scrimAnimationDuration;
 			global::AiForms.Renderers.Droid.Resource.Attribute.scrimBackground = global::PathwayGames.Droid.Resource.Attribute.scrimBackground;
 			global::AiForms.Renderers.Droid.Resource.Attribute.scrimVisibleHeightTrigger = global::PathwayGames.Droid.Resource.Attribute.scrimVisibleHeightTrigger;
+			global::AiForms.Renderers.Droid.Resource.Attribute.scrollViewStyle = global::PathwayGames.Droid.Resource.Attribute.scrollViewStyle;
 			global::AiForms.Renderers.Droid.Resource.Attribute.searchHintIcon = global::PathwayGames.Droid.Resource.Attribute.searchHintIcon;
 			global::AiForms.Renderers.Droid.Resource.Attribute.searchIcon = global::PathwayGames.Droid.Resource.Attribute.searchIcon;
 			global::AiForms.Renderers.Droid.Resource.Attribute.searchViewStyle = global::PathwayGames.Droid.Resource.Attribute.searchViewStyle;
 			global::AiForms.Renderers.Droid.Resource.Attribute.seekBarStyle = global::PathwayGames.Droid.Resource.Attribute.seekBarStyle;
 			global::AiForms.Renderers.Droid.Resource.Attribute.selectableItemBackground = global::PathwayGames.Droid.Resource.Attribute.selectableItemBackground;
 			global::AiForms.Renderers.Droid.Resource.Attribute.selectableItemBackgroundBorderless = global::PathwayGames.Droid.Resource.Attribute.selectableItemBackgroundBorderless;
+			global::AiForms.Renderers.Droid.Resource.Attribute.settingsViewStyle = global::PathwayGames.Droid.Resource.Attribute.settingsViewStyle;
 			global::AiForms.Renderers.Droid.Resource.Attribute.showAsAction = global::PathwayGames.Droid.Resource.Attribute.showAsAction;
 			global::AiForms.Renderers.Droid.Resource.Attribute.showDividers = global::PathwayGames.Droid.Resource.Attribute.showDividers;
 			global::AiForms.Renderers.Droid.Resource.Attribute.showMotionSpec = global::PathwayGames.Droid.Resource.Attribute.showMotionSpec;
@@ -5684,9 +5673,9 @@ namespace PathwayGames.Droid
 			global::AiForms.Renderers.Droid.Resource.Attribute.titleMargin = global::PathwayGames.Droid.Resource.Attribute.titleMargin;
 			global::AiForms.Renderers.Droid.Resource.Attribute.titleMarginBottom = global::PathwayGames.Droid.Resource.Attribute.titleMarginBottom;
 			global::AiForms.Renderers.Droid.Resource.Attribute.titleMarginEnd = global::PathwayGames.Droid.Resource.Attribute.titleMarginEnd;
+			global::AiForms.Renderers.Droid.Resource.Attribute.titleMargins = global::PathwayGames.Droid.Resource.Attribute.titleMargins;
 			global::AiForms.Renderers.Droid.Resource.Attribute.titleMarginStart = global::PathwayGames.Droid.Resource.Attribute.titleMarginStart;
 			global::AiForms.Renderers.Droid.Resource.Attribute.titleMarginTop = global::PathwayGames.Droid.Resource.Attribute.titleMarginTop;
-			global::AiForms.Renderers.Droid.Resource.Attribute.titleMargins = global::PathwayGames.Droid.Resource.Attribute.titleMargins;
 			global::AiForms.Renderers.Droid.Resource.Attribute.titleTextAppearance = global::PathwayGames.Droid.Resource.Attribute.titleTextAppearance;
 			global::AiForms.Renderers.Droid.Resource.Attribute.titleTextColor = global::PathwayGames.Droid.Resource.Attribute.titleTextColor;
 			global::AiForms.Renderers.Droid.Resource.Attribute.titleTextStyle = global::PathwayGames.Droid.Resource.Attribute.titleTextStyle;
@@ -5819,11 +5808,11 @@ namespace PathwayGames.Droid
 			global::AiForms.Renderers.Droid.Resource.Color.mtrl_tabs_icon_color_selector_colored = global::PathwayGames.Droid.Resource.Color.mtrl_tabs_icon_color_selector_colored;
 			global::AiForms.Renderers.Droid.Resource.Color.mtrl_tabs_legacy_text_color_selector = global::PathwayGames.Droid.Resource.Color.mtrl_tabs_legacy_text_color_selector;
 			global::AiForms.Renderers.Droid.Resource.Color.mtrl_tabs_ripple_color = global::PathwayGames.Droid.Resource.Color.mtrl_tabs_ripple_color;
-			global::AiForms.Renderers.Droid.Resource.Color.mtrl_text_btn_text_color_selector = global::PathwayGames.Droid.Resource.Color.mtrl_text_btn_text_color_selector;
 			global::AiForms.Renderers.Droid.Resource.Color.mtrl_textinput_default_box_stroke_color = global::PathwayGames.Droid.Resource.Color.mtrl_textinput_default_box_stroke_color;
 			global::AiForms.Renderers.Droid.Resource.Color.mtrl_textinput_disabled_color = global::PathwayGames.Droid.Resource.Color.mtrl_textinput_disabled_color;
 			global::AiForms.Renderers.Droid.Resource.Color.mtrl_textinput_filled_box_default_background_color = global::PathwayGames.Droid.Resource.Color.mtrl_textinput_filled_box_default_background_color;
 			global::AiForms.Renderers.Droid.Resource.Color.mtrl_textinput_hovered_box_stroke_color = global::PathwayGames.Droid.Resource.Color.mtrl_textinput_hovered_box_stroke_color;
+			global::AiForms.Renderers.Droid.Resource.Color.mtrl_text_btn_text_color_selector = global::PathwayGames.Droid.Resource.Color.mtrl_text_btn_text_color_selector;
 			global::AiForms.Renderers.Droid.Resource.Color.notification_action_color_filter = global::PathwayGames.Droid.Resource.Color.notification_action_color_filter;
 			global::AiForms.Renderers.Droid.Resource.Color.notification_icon_bg_color = global::PathwayGames.Droid.Resource.Color.notification_icon_bg_color;
 			global::AiForms.Renderers.Droid.Resource.Color.notification_material_background_media_default_color = global::PathwayGames.Droid.Resource.Color.notification_material_background_media_default_color;
@@ -5995,12 +5984,6 @@ namespace PathwayGames.Droid
 			global::AiForms.Renderers.Droid.Resource.Dimension.item_touch_helper_max_drag_scroll_per_frame = global::PathwayGames.Droid.Resource.Dimension.item_touch_helper_max_drag_scroll_per_frame;
 			global::AiForms.Renderers.Droid.Resource.Dimension.item_touch_helper_swipe_escape_max_velocity = global::PathwayGames.Droid.Resource.Dimension.item_touch_helper_swipe_escape_max_velocity;
 			global::AiForms.Renderers.Droid.Resource.Dimension.item_touch_helper_swipe_escape_velocity = global::PathwayGames.Droid.Resource.Dimension.item_touch_helper_swipe_escape_velocity;
-			global::AiForms.Renderers.Droid.Resource.Dimension.mr_controller_volume_group_list_item_height = global::PathwayGames.Droid.Resource.Dimension.mr_controller_volume_group_list_item_height;
-			global::AiForms.Renderers.Droid.Resource.Dimension.mr_controller_volume_group_list_item_icon_size = global::PathwayGames.Droid.Resource.Dimension.mr_controller_volume_group_list_item_icon_size;
-			global::AiForms.Renderers.Droid.Resource.Dimension.mr_controller_volume_group_list_max_height = global::PathwayGames.Droid.Resource.Dimension.mr_controller_volume_group_list_max_height;
-			global::AiForms.Renderers.Droid.Resource.Dimension.mr_controller_volume_group_list_padding_top = global::PathwayGames.Droid.Resource.Dimension.mr_controller_volume_group_list_padding_top;
-			global::AiForms.Renderers.Droid.Resource.Dimension.mr_dialog_fixed_width_major = global::PathwayGames.Droid.Resource.Dimension.mr_dialog_fixed_width_major;
-			global::AiForms.Renderers.Droid.Resource.Dimension.mr_dialog_fixed_width_minor = global::PathwayGames.Droid.Resource.Dimension.mr_dialog_fixed_width_minor;
 			global::AiForms.Renderers.Droid.Resource.Dimension.mtrl_bottomappbar_fabOffsetEndMode = global::PathwayGames.Droid.Resource.Dimension.mtrl_bottomappbar_fabOffsetEndMode;
 			global::AiForms.Renderers.Droid.Resource.Dimension.mtrl_bottomappbar_fab_cradle_margin = global::PathwayGames.Droid.Resource.Dimension.mtrl_bottomappbar_fab_cradle_margin;
 			global::AiForms.Renderers.Droid.Resource.Dimension.mtrl_bottomappbar_fab_cradle_rounded_corner_radius = global::PathwayGames.Droid.Resource.Dimension.mtrl_bottomappbar_fab_cradle_rounded_corner_radius;
@@ -6147,6 +6130,11 @@ namespace PathwayGames.Droid
 			global::AiForms.Renderers.Droid.Resource.Drawable.abc_switch_track_mtrl_alpha = global::PathwayGames.Droid.Resource.Drawable.abc_switch_track_mtrl_alpha;
 			global::AiForms.Renderers.Droid.Resource.Drawable.abc_tab_indicator_material = global::PathwayGames.Droid.Resource.Drawable.abc_tab_indicator_material;
 			global::AiForms.Renderers.Droid.Resource.Drawable.abc_tab_indicator_mtrl_alpha = global::PathwayGames.Droid.Resource.Drawable.abc_tab_indicator_mtrl_alpha;
+			global::AiForms.Renderers.Droid.Resource.Drawable.abc_textfield_activated_mtrl_alpha = global::PathwayGames.Droid.Resource.Drawable.abc_textfield_activated_mtrl_alpha;
+			global::AiForms.Renderers.Droid.Resource.Drawable.abc_textfield_default_mtrl_alpha = global::PathwayGames.Droid.Resource.Drawable.abc_textfield_default_mtrl_alpha;
+			global::AiForms.Renderers.Droid.Resource.Drawable.abc_textfield_search_activated_mtrl_alpha = global::PathwayGames.Droid.Resource.Drawable.abc_textfield_search_activated_mtrl_alpha;
+			global::AiForms.Renderers.Droid.Resource.Drawable.abc_textfield_search_default_mtrl_alpha = global::PathwayGames.Droid.Resource.Drawable.abc_textfield_search_default_mtrl_alpha;
+			global::AiForms.Renderers.Droid.Resource.Drawable.abc_textfield_search_material = global::PathwayGames.Droid.Resource.Drawable.abc_textfield_search_material;
 			global::AiForms.Renderers.Droid.Resource.Drawable.abc_text_cursor_material = global::PathwayGames.Droid.Resource.Drawable.abc_text_cursor_material;
 			global::AiForms.Renderers.Droid.Resource.Drawable.abc_text_select_handle_left_mtrl_dark = global::PathwayGames.Droid.Resource.Drawable.abc_text_select_handle_left_mtrl_dark;
 			global::AiForms.Renderers.Droid.Resource.Drawable.abc_text_select_handle_left_mtrl_light = global::PathwayGames.Droid.Resource.Drawable.abc_text_select_handle_left_mtrl_light;
@@ -6154,11 +6142,6 @@ namespace PathwayGames.Droid
 			global::AiForms.Renderers.Droid.Resource.Drawable.abc_text_select_handle_middle_mtrl_light = global::PathwayGames.Droid.Resource.Drawable.abc_text_select_handle_middle_mtrl_light;
 			global::AiForms.Renderers.Droid.Resource.Drawable.abc_text_select_handle_right_mtrl_dark = global::PathwayGames.Droid.Resource.Drawable.abc_text_select_handle_right_mtrl_dark;
 			global::AiForms.Renderers.Droid.Resource.Drawable.abc_text_select_handle_right_mtrl_light = global::PathwayGames.Droid.Resource.Drawable.abc_text_select_handle_right_mtrl_light;
-			global::AiForms.Renderers.Droid.Resource.Drawable.abc_textfield_activated_mtrl_alpha = global::PathwayGames.Droid.Resource.Drawable.abc_textfield_activated_mtrl_alpha;
-			global::AiForms.Renderers.Droid.Resource.Drawable.abc_textfield_default_mtrl_alpha = global::PathwayGames.Droid.Resource.Drawable.abc_textfield_default_mtrl_alpha;
-			global::AiForms.Renderers.Droid.Resource.Drawable.abc_textfield_search_activated_mtrl_alpha = global::PathwayGames.Droid.Resource.Drawable.abc_textfield_search_activated_mtrl_alpha;
-			global::AiForms.Renderers.Droid.Resource.Drawable.abc_textfield_search_default_mtrl_alpha = global::PathwayGames.Droid.Resource.Drawable.abc_textfield_search_default_mtrl_alpha;
-			global::AiForms.Renderers.Droid.Resource.Drawable.abc_textfield_search_material = global::PathwayGames.Droid.Resource.Drawable.abc_textfield_search_material;
 			global::AiForms.Renderers.Droid.Resource.Drawable.abc_vector_test = global::PathwayGames.Droid.Resource.Drawable.abc_vector_test;
 			global::AiForms.Renderers.Droid.Resource.Drawable.avd_hide_password = global::PathwayGames.Droid.Resource.Drawable.avd_hide_password;
 			global::AiForms.Renderers.Droid.Resource.Drawable.avd_show_password = global::PathwayGames.Droid.Resource.Drawable.avd_show_password;
@@ -6168,206 +6151,11 @@ namespace PathwayGames.Droid
 			global::AiForms.Renderers.Droid.Resource.Drawable.design_ic_visibility_off = global::PathwayGames.Droid.Resource.Drawable.design_ic_visibility_off;
 			global::AiForms.Renderers.Droid.Resource.Drawable.design_password_eye = global::PathwayGames.Droid.Resource.Drawable.design_password_eye;
 			global::AiForms.Renderers.Droid.Resource.Drawable.design_snackbar_background = global::PathwayGames.Droid.Resource.Drawable.design_snackbar_background;
-			global::AiForms.Renderers.Droid.Resource.Drawable.ic_audiotrack_dark = global::PathwayGames.Droid.Resource.Drawable.ic_audiotrack_dark;
-			global::AiForms.Renderers.Droid.Resource.Drawable.ic_audiotrack_light = global::PathwayGames.Droid.Resource.Drawable.ic_audiotrack_light;
-			global::AiForms.Renderers.Droid.Resource.Drawable.ic_dialog_close_dark = global::PathwayGames.Droid.Resource.Drawable.ic_dialog_close_dark;
-			global::AiForms.Renderers.Droid.Resource.Drawable.ic_dialog_close_light = global::PathwayGames.Droid.Resource.Drawable.ic_dialog_close_light;
-			global::AiForms.Renderers.Droid.Resource.Drawable.ic_group_collapse_00 = global::PathwayGames.Droid.Resource.Drawable.ic_group_collapse_00;
-			global::AiForms.Renderers.Droid.Resource.Drawable.ic_group_collapse_01 = global::PathwayGames.Droid.Resource.Drawable.ic_group_collapse_01;
-			global::AiForms.Renderers.Droid.Resource.Drawable.ic_group_collapse_02 = global::PathwayGames.Droid.Resource.Drawable.ic_group_collapse_02;
-			global::AiForms.Renderers.Droid.Resource.Drawable.ic_group_collapse_03 = global::PathwayGames.Droid.Resource.Drawable.ic_group_collapse_03;
-			global::AiForms.Renderers.Droid.Resource.Drawable.ic_group_collapse_04 = global::PathwayGames.Droid.Resource.Drawable.ic_group_collapse_04;
-			global::AiForms.Renderers.Droid.Resource.Drawable.ic_group_collapse_05 = global::PathwayGames.Droid.Resource.Drawable.ic_group_collapse_05;
-			global::AiForms.Renderers.Droid.Resource.Drawable.ic_group_collapse_06 = global::PathwayGames.Droid.Resource.Drawable.ic_group_collapse_06;
-			global::AiForms.Renderers.Droid.Resource.Drawable.ic_group_collapse_07 = global::PathwayGames.Droid.Resource.Drawable.ic_group_collapse_07;
-			global::AiForms.Renderers.Droid.Resource.Drawable.ic_group_collapse_08 = global::PathwayGames.Droid.Resource.Drawable.ic_group_collapse_08;
-			global::AiForms.Renderers.Droid.Resource.Drawable.ic_group_collapse_09 = global::PathwayGames.Droid.Resource.Drawable.ic_group_collapse_09;
-			global::AiForms.Renderers.Droid.Resource.Drawable.ic_group_collapse_10 = global::PathwayGames.Droid.Resource.Drawable.ic_group_collapse_10;
-			global::AiForms.Renderers.Droid.Resource.Drawable.ic_group_collapse_11 = global::PathwayGames.Droid.Resource.Drawable.ic_group_collapse_11;
-			global::AiForms.Renderers.Droid.Resource.Drawable.ic_group_collapse_12 = global::PathwayGames.Droid.Resource.Drawable.ic_group_collapse_12;
-			global::AiForms.Renderers.Droid.Resource.Drawable.ic_group_collapse_13 = global::PathwayGames.Droid.Resource.Drawable.ic_group_collapse_13;
-			global::AiForms.Renderers.Droid.Resource.Drawable.ic_group_collapse_14 = global::PathwayGames.Droid.Resource.Drawable.ic_group_collapse_14;
-			global::AiForms.Renderers.Droid.Resource.Drawable.ic_group_collapse_15 = global::PathwayGames.Droid.Resource.Drawable.ic_group_collapse_15;
-			global::AiForms.Renderers.Droid.Resource.Drawable.ic_group_expand_00 = global::PathwayGames.Droid.Resource.Drawable.ic_group_expand_00;
-			global::AiForms.Renderers.Droid.Resource.Drawable.ic_group_expand_01 = global::PathwayGames.Droid.Resource.Drawable.ic_group_expand_01;
-			global::AiForms.Renderers.Droid.Resource.Drawable.ic_group_expand_02 = global::PathwayGames.Droid.Resource.Drawable.ic_group_expand_02;
-			global::AiForms.Renderers.Droid.Resource.Drawable.ic_group_expand_03 = global::PathwayGames.Droid.Resource.Drawable.ic_group_expand_03;
-			global::AiForms.Renderers.Droid.Resource.Drawable.ic_group_expand_04 = global::PathwayGames.Droid.Resource.Drawable.ic_group_expand_04;
-			global::AiForms.Renderers.Droid.Resource.Drawable.ic_group_expand_05 = global::PathwayGames.Droid.Resource.Drawable.ic_group_expand_05;
-			global::AiForms.Renderers.Droid.Resource.Drawable.ic_group_expand_06 = global::PathwayGames.Droid.Resource.Drawable.ic_group_expand_06;
-			global::AiForms.Renderers.Droid.Resource.Drawable.ic_group_expand_07 = global::PathwayGames.Droid.Resource.Drawable.ic_group_expand_07;
-			global::AiForms.Renderers.Droid.Resource.Drawable.ic_group_expand_08 = global::PathwayGames.Droid.Resource.Drawable.ic_group_expand_08;
-			global::AiForms.Renderers.Droid.Resource.Drawable.ic_group_expand_09 = global::PathwayGames.Droid.Resource.Drawable.ic_group_expand_09;
-			global::AiForms.Renderers.Droid.Resource.Drawable.ic_group_expand_10 = global::PathwayGames.Droid.Resource.Drawable.ic_group_expand_10;
-			global::AiForms.Renderers.Droid.Resource.Drawable.ic_group_expand_11 = global::PathwayGames.Droid.Resource.Drawable.ic_group_expand_11;
-			global::AiForms.Renderers.Droid.Resource.Drawable.ic_group_expand_12 = global::PathwayGames.Droid.Resource.Drawable.ic_group_expand_12;
-			global::AiForms.Renderers.Droid.Resource.Drawable.ic_group_expand_13 = global::PathwayGames.Droid.Resource.Drawable.ic_group_expand_13;
-			global::AiForms.Renderers.Droid.Resource.Drawable.ic_group_expand_14 = global::PathwayGames.Droid.Resource.Drawable.ic_group_expand_14;
-			global::AiForms.Renderers.Droid.Resource.Drawable.ic_group_expand_15 = global::PathwayGames.Droid.Resource.Drawable.ic_group_expand_15;
-			global::AiForms.Renderers.Droid.Resource.Drawable.ic_media_pause_dark = global::PathwayGames.Droid.Resource.Drawable.ic_media_pause_dark;
-			global::AiForms.Renderers.Droid.Resource.Drawable.ic_media_pause_light = global::PathwayGames.Droid.Resource.Drawable.ic_media_pause_light;
-			global::AiForms.Renderers.Droid.Resource.Drawable.ic_media_play_dark = global::PathwayGames.Droid.Resource.Drawable.ic_media_play_dark;
-			global::AiForms.Renderers.Droid.Resource.Drawable.ic_media_play_light = global::PathwayGames.Droid.Resource.Drawable.ic_media_play_light;
-			global::AiForms.Renderers.Droid.Resource.Drawable.ic_media_stop_dark = global::PathwayGames.Droid.Resource.Drawable.ic_media_stop_dark;
-			global::AiForms.Renderers.Droid.Resource.Drawable.ic_media_stop_light = global::PathwayGames.Droid.Resource.Drawable.ic_media_stop_light;
-			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connected_00_dark = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connected_00_dark;
-			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connected_00_light = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connected_00_light;
-			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connected_01_dark = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connected_01_dark;
-			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connected_01_light = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connected_01_light;
-			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connected_02_dark = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connected_02_dark;
-			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connected_02_light = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connected_02_light;
-			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connected_03_dark = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connected_03_dark;
-			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connected_03_light = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connected_03_light;
-			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connected_04_dark = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connected_04_dark;
-			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connected_04_light = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connected_04_light;
-			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connected_05_dark = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connected_05_dark;
-			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connected_05_light = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connected_05_light;
-			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connected_06_dark = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connected_06_dark;
-			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connected_06_light = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connected_06_light;
-			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connected_07_dark = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connected_07_dark;
-			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connected_07_light = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connected_07_light;
-			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connected_08_dark = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connected_08_dark;
-			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connected_08_light = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connected_08_light;
-			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connected_09_dark = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connected_09_dark;
-			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connected_09_light = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connected_09_light;
-			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connected_10_dark = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connected_10_dark;
-			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connected_10_light = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connected_10_light;
-			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connected_11_dark = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connected_11_dark;
-			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connected_11_light = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connected_11_light;
-			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connected_12_dark = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connected_12_dark;
-			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connected_12_light = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connected_12_light;
-			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connected_13_dark = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connected_13_dark;
-			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connected_13_light = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connected_13_light;
-			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connected_14_dark = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connected_14_dark;
-			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connected_14_light = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connected_14_light;
-			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connected_15_dark = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connected_15_dark;
-			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connected_15_light = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connected_15_light;
-			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connected_16_dark = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connected_16_dark;
-			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connected_16_light = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connected_16_light;
-			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connected_17_dark = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connected_17_dark;
-			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connected_17_light = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connected_17_light;
-			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connected_18_dark = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connected_18_dark;
-			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connected_18_light = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connected_18_light;
-			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connected_19_dark = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connected_19_dark;
-			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connected_19_light = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connected_19_light;
-			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connected_20_dark = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connected_20_dark;
-			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connected_20_light = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connected_20_light;
-			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connected_21_dark = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connected_21_dark;
-			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connected_21_light = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connected_21_light;
-			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connected_22_dark = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connected_22_dark;
-			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connected_22_light = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connected_22_light;
-			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connected_23_dark = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connected_23_dark;
-			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connected_23_light = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connected_23_light;
-			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connected_24_dark = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connected_24_dark;
-			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connected_24_light = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connected_24_light;
-			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connected_25_dark = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connected_25_dark;
-			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connected_25_light = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connected_25_light;
-			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connected_26_dark = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connected_26_dark;
-			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connected_26_light = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connected_26_light;
-			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connected_27_dark = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connected_27_dark;
-			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connected_27_light = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connected_27_light;
-			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connected_28_dark = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connected_28_dark;
-			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connected_28_light = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connected_28_light;
-			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connected_29_dark = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connected_29_dark;
-			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connected_29_light = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connected_29_light;
-			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connected_30_dark = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connected_30_dark;
-			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connected_30_light = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connected_30_light;
-			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connecting_00_dark = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connecting_00_dark;
-			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connecting_00_light = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connecting_00_light;
-			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connecting_01_dark = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connecting_01_dark;
-			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connecting_01_light = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connecting_01_light;
-			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connecting_02_dark = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connecting_02_dark;
-			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connecting_02_light = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connecting_02_light;
-			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connecting_03_dark = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connecting_03_dark;
-			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connecting_03_light = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connecting_03_light;
-			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connecting_04_dark = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connecting_04_dark;
-			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connecting_04_light = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connecting_04_light;
-			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connecting_05_dark = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connecting_05_dark;
-			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connecting_05_light = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connecting_05_light;
-			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connecting_06_dark = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connecting_06_dark;
-			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connecting_06_light = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connecting_06_light;
-			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connecting_07_dark = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connecting_07_dark;
-			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connecting_07_light = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connecting_07_light;
-			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connecting_08_dark = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connecting_08_dark;
-			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connecting_08_light = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connecting_08_light;
-			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connecting_09_dark = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connecting_09_dark;
-			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connecting_09_light = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connecting_09_light;
-			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connecting_10_dark = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connecting_10_dark;
-			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connecting_10_light = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connecting_10_light;
-			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connecting_11_dark = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connecting_11_dark;
-			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connecting_11_light = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connecting_11_light;
-			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connecting_12_dark = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connecting_12_dark;
-			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connecting_12_light = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connecting_12_light;
-			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connecting_13_dark = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connecting_13_dark;
-			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connecting_13_light = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connecting_13_light;
-			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connecting_14_dark = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connecting_14_dark;
-			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connecting_14_light = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connecting_14_light;
-			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connecting_15_dark = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connecting_15_dark;
-			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connecting_15_light = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connecting_15_light;
-			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connecting_16_dark = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connecting_16_dark;
-			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connecting_16_light = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connecting_16_light;
-			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connecting_17_dark = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connecting_17_dark;
-			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connecting_17_light = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connecting_17_light;
-			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connecting_18_dark = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connecting_18_dark;
-			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connecting_18_light = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connecting_18_light;
-			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connecting_19_dark = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connecting_19_dark;
-			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connecting_19_light = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connecting_19_light;
-			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connecting_20_dark = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connecting_20_dark;
-			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connecting_20_light = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connecting_20_light;
-			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connecting_21_dark = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connecting_21_dark;
-			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connecting_21_light = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connecting_21_light;
-			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connecting_22_dark = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connecting_22_dark;
-			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connecting_22_light = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connecting_22_light;
-			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connecting_23_dark = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connecting_23_dark;
-			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connecting_23_light = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connecting_23_light;
-			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connecting_24_dark = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connecting_24_dark;
-			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connecting_24_light = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connecting_24_light;
-			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connecting_25_dark = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connecting_25_dark;
-			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connecting_25_light = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connecting_25_light;
-			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connecting_26_dark = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connecting_26_dark;
-			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connecting_26_light = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connecting_26_light;
-			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connecting_27_dark = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connecting_27_dark;
-			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connecting_27_light = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connecting_27_light;
-			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connecting_28_dark = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connecting_28_dark;
-			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connecting_28_light = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connecting_28_light;
-			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connecting_29_dark = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connecting_29_dark;
-			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connecting_29_light = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connecting_29_light;
-			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connecting_30_dark = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connecting_30_dark;
-			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_connecting_30_light = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_connecting_30_light;
-			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_disabled_dark = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_disabled_dark;
-			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_disabled_light = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_disabled_light;
-			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_disconnected_dark = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_disconnected_dark;
-			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_disconnected_light = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_disconnected_light;
-			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mr_button_grey = global::PathwayGames.Droid.Resource.Drawable.ic_mr_button_grey;
+			global::AiForms.Renderers.Droid.Resource.Drawable.divider = global::PathwayGames.Droid.Resource.Drawable.divider;
 			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mtrl_chip_checked_black = global::PathwayGames.Droid.Resource.Drawable.ic_mtrl_chip_checked_black;
 			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mtrl_chip_checked_circle = global::PathwayGames.Droid.Resource.Drawable.ic_mtrl_chip_checked_circle;
 			global::AiForms.Renderers.Droid.Resource.Drawable.ic_mtrl_chip_close_circle = global::PathwayGames.Droid.Resource.Drawable.ic_mtrl_chip_close_circle;
-			global::AiForms.Renderers.Droid.Resource.Drawable.ic_vol_type_speaker_dark = global::PathwayGames.Droid.Resource.Drawable.ic_vol_type_speaker_dark;
-			global::AiForms.Renderers.Droid.Resource.Drawable.ic_vol_type_speaker_group_dark = global::PathwayGames.Droid.Resource.Drawable.ic_vol_type_speaker_group_dark;
-			global::AiForms.Renderers.Droid.Resource.Drawable.ic_vol_type_speaker_group_light = global::PathwayGames.Droid.Resource.Drawable.ic_vol_type_speaker_group_light;
-			global::AiForms.Renderers.Droid.Resource.Drawable.ic_vol_type_speaker_light = global::PathwayGames.Droid.Resource.Drawable.ic_vol_type_speaker_light;
-			global::AiForms.Renderers.Droid.Resource.Drawable.ic_vol_type_tv_dark = global::PathwayGames.Droid.Resource.Drawable.ic_vol_type_tv_dark;
-			global::AiForms.Renderers.Droid.Resource.Drawable.ic_vol_type_tv_light = global::PathwayGames.Droid.Resource.Drawable.ic_vol_type_tv_light;
-			global::AiForms.Renderers.Droid.Resource.Drawable.mr_button_connected_dark = global::PathwayGames.Droid.Resource.Drawable.mr_button_connected_dark;
-			global::AiForms.Renderers.Droid.Resource.Drawable.mr_button_connected_light = global::PathwayGames.Droid.Resource.Drawable.mr_button_connected_light;
-			global::AiForms.Renderers.Droid.Resource.Drawable.mr_button_connecting_dark = global::PathwayGames.Droid.Resource.Drawable.mr_button_connecting_dark;
-			global::AiForms.Renderers.Droid.Resource.Drawable.mr_button_connecting_light = global::PathwayGames.Droid.Resource.Drawable.mr_button_connecting_light;
-			global::AiForms.Renderers.Droid.Resource.Drawable.mr_button_dark = global::PathwayGames.Droid.Resource.Drawable.mr_button_dark;
-			global::AiForms.Renderers.Droid.Resource.Drawable.mr_button_light = global::PathwayGames.Droid.Resource.Drawable.mr_button_light;
-			global::AiForms.Renderers.Droid.Resource.Drawable.mr_dialog_close_dark = global::PathwayGames.Droid.Resource.Drawable.mr_dialog_close_dark;
-			global::AiForms.Renderers.Droid.Resource.Drawable.mr_dialog_close_light = global::PathwayGames.Droid.Resource.Drawable.mr_dialog_close_light;
-			global::AiForms.Renderers.Droid.Resource.Drawable.mr_dialog_material_background_dark = global::PathwayGames.Droid.Resource.Drawable.mr_dialog_material_background_dark;
-			global::AiForms.Renderers.Droid.Resource.Drawable.mr_dialog_material_background_light = global::PathwayGames.Droid.Resource.Drawable.mr_dialog_material_background_light;
-			global::AiForms.Renderers.Droid.Resource.Drawable.mr_group_collapse = global::PathwayGames.Droid.Resource.Drawable.mr_group_collapse;
-			global::AiForms.Renderers.Droid.Resource.Drawable.mr_group_expand = global::PathwayGames.Droid.Resource.Drawable.mr_group_expand;
-			global::AiForms.Renderers.Droid.Resource.Drawable.mr_media_pause_dark = global::PathwayGames.Droid.Resource.Drawable.mr_media_pause_dark;
-			global::AiForms.Renderers.Droid.Resource.Drawable.mr_media_pause_light = global::PathwayGames.Droid.Resource.Drawable.mr_media_pause_light;
-			global::AiForms.Renderers.Droid.Resource.Drawable.mr_media_play_dark = global::PathwayGames.Droid.Resource.Drawable.mr_media_play_dark;
-			global::AiForms.Renderers.Droid.Resource.Drawable.mr_media_play_light = global::PathwayGames.Droid.Resource.Drawable.mr_media_play_light;
-			global::AiForms.Renderers.Droid.Resource.Drawable.mr_media_stop_dark = global::PathwayGames.Droid.Resource.Drawable.mr_media_stop_dark;
-			global::AiForms.Renderers.Droid.Resource.Drawable.mr_media_stop_light = global::PathwayGames.Droid.Resource.Drawable.mr_media_stop_light;
-			global::AiForms.Renderers.Droid.Resource.Drawable.mr_vol_type_audiotrack_dark = global::PathwayGames.Droid.Resource.Drawable.mr_vol_type_audiotrack_dark;
-			global::AiForms.Renderers.Droid.Resource.Drawable.mr_vol_type_audiotrack_light = global::PathwayGames.Droid.Resource.Drawable.mr_vol_type_audiotrack_light;
+			global::AiForms.Renderers.Droid.Resource.Drawable.ic_navigate_next = global::PathwayGames.Droid.Resource.Drawable.ic_navigate_next;
 			global::AiForms.Renderers.Droid.Resource.Drawable.mtrl_snackbar_background = global::PathwayGames.Droid.Resource.Drawable.mtrl_snackbar_background;
 			global::AiForms.Renderers.Droid.Resource.Drawable.mtrl_tabs_default_indicator = global::PathwayGames.Droid.Resource.Drawable.mtrl_tabs_default_indicator;
 			global::AiForms.Renderers.Droid.Resource.Drawable.navigation_empty_icon = global::PathwayGames.Droid.Resource.Drawable.navigation_empty_icon;
@@ -6385,25 +6173,8 @@ namespace PathwayGames.Droid
 			global::AiForms.Renderers.Droid.Resource.Drawable.notify_panel_notification_icon_bg = global::PathwayGames.Droid.Resource.Drawable.notify_panel_notification_icon_bg;
 			global::AiForms.Renderers.Droid.Resource.Drawable.tooltip_frame_dark = global::PathwayGames.Droid.Resource.Drawable.tooltip_frame_dark;
 			global::AiForms.Renderers.Droid.Resource.Drawable.tooltip_frame_light = global::PathwayGames.Droid.Resource.Drawable.tooltip_frame_light;
-			global::AiForms.Renderers.Droid.Resource.Id.ALT = global::PathwayGames.Droid.Resource.Id.ALT;
-			global::AiForms.Renderers.Droid.Resource.Id.CTRL = global::PathwayGames.Droid.Resource.Id.CTRL;
-			global::AiForms.Renderers.Droid.Resource.Id.CellAccessoryView = global::PathwayGames.Droid.Resource.Id.CellAccessoryView;
-			global::AiForms.Renderers.Droid.Resource.Id.CellBody = global::PathwayGames.Droid.Resource.Id.CellBody;
-			global::AiForms.Renderers.Droid.Resource.Id.CellContentStack = global::PathwayGames.Droid.Resource.Id.CellContentStack;
-			global::AiForms.Renderers.Droid.Resource.Id.CellDescription = global::PathwayGames.Droid.Resource.Id.CellDescription;
-			global::AiForms.Renderers.Droid.Resource.Id.CellHintText = global::PathwayGames.Droid.Resource.Id.CellHintText;
-			global::AiForms.Renderers.Droid.Resource.Id.CellIcon = global::PathwayGames.Droid.Resource.Id.CellIcon;
-			global::AiForms.Renderers.Droid.Resource.Id.CellTitle = global::PathwayGames.Droid.Resource.Id.CellTitle;
-			global::AiForms.Renderers.Droid.Resource.Id.ContentCellBody = global::PathwayGames.Droid.Resource.Id.ContentCellBody;
-			global::AiForms.Renderers.Droid.Resource.Id.ContentCellBorder = global::PathwayGames.Droid.Resource.Id.ContentCellBorder;
-			global::AiForms.Renderers.Droid.Resource.Id.FUNCTION = global::PathwayGames.Droid.Resource.Id.FUNCTION;
-			global::AiForms.Renderers.Droid.Resource.Id.FooterCellText = global::PathwayGames.Droid.Resource.Id.FooterCellText;
-			global::AiForms.Renderers.Droid.Resource.Id.HeaderCellBorder = global::PathwayGames.Droid.Resource.Id.HeaderCellBorder;
-			global::AiForms.Renderers.Droid.Resource.Id.HeaderCellText = global::PathwayGames.Droid.Resource.Id.HeaderCellText;
-			global::AiForms.Renderers.Droid.Resource.Id.META = global::PathwayGames.Droid.Resource.Id.META;
-			global::AiForms.Renderers.Droid.Resource.Id.SHIFT = global::PathwayGames.Droid.Resource.Id.SHIFT;
-			global::AiForms.Renderers.Droid.Resource.Id.SYM = global::PathwayGames.Droid.Resource.Id.SYM;
 			global::AiForms.Renderers.Droid.Resource.Id.action0 = global::PathwayGames.Droid.Resource.Id.action0;
+			global::AiForms.Renderers.Droid.Resource.Id.actions = global::PathwayGames.Droid.Resource.Id.actions;
 			global::AiForms.Renderers.Droid.Resource.Id.action_bar = global::PathwayGames.Droid.Resource.Id.action_bar;
 			global::AiForms.Renderers.Droid.Resource.Id.action_bar_activity_content = global::PathwayGames.Droid.Resource.Id.action_bar_activity_content;
 			global::AiForms.Renderers.Droid.Resource.Id.action_bar_container = global::PathwayGames.Droid.Resource.Id.action_bar_container;
@@ -6421,11 +6192,11 @@ namespace PathwayGames.Droid
 			global::AiForms.Renderers.Droid.Resource.Id.action_mode_bar_stub = global::PathwayGames.Droid.Resource.Id.action_mode_bar_stub;
 			global::AiForms.Renderers.Droid.Resource.Id.action_mode_close_button = global::PathwayGames.Droid.Resource.Id.action_mode_close_button;
 			global::AiForms.Renderers.Droid.Resource.Id.action_text = global::PathwayGames.Droid.Resource.Id.action_text;
-			global::AiForms.Renderers.Droid.Resource.Id.actions = global::PathwayGames.Droid.Resource.Id.actions;
 			global::AiForms.Renderers.Droid.Resource.Id.activity_chooser_view_content = global::PathwayGames.Droid.Resource.Id.activity_chooser_view_content;
 			global::AiForms.Renderers.Droid.Resource.Id.add = global::PathwayGames.Droid.Resource.Id.add;
 			global::AiForms.Renderers.Droid.Resource.Id.alertTitle = global::PathwayGames.Droid.Resource.Id.alertTitle;
 			global::AiForms.Renderers.Droid.Resource.Id.all = global::PathwayGames.Droid.Resource.Id.all;
+			global::AiForms.Renderers.Droid.Resource.Id.ALT = global::PathwayGames.Droid.Resource.Id.ALT;
 			global::AiForms.Renderers.Droid.Resource.Id.always = global::PathwayGames.Droid.Resource.Id.always;
 			global::AiForms.Renderers.Droid.Resource.Id.async = global::PathwayGames.Droid.Resource.Id.async;
 			global::AiForms.Renderers.Droid.Resource.Id.auto = global::PathwayGames.Droid.Resource.Id.auto;
@@ -6435,12 +6206,20 @@ namespace PathwayGames.Droid
 			global::AiForms.Renderers.Droid.Resource.Id.bottomtab_navarea = global::PathwayGames.Droid.Resource.Id.bottomtab_navarea;
 			global::AiForms.Renderers.Droid.Resource.Id.bottomtab_tabbar = global::PathwayGames.Droid.Resource.Id.bottomtab_tabbar;
 			global::AiForms.Renderers.Droid.Resource.Id.browser_actions_header_text = global::PathwayGames.Droid.Resource.Id.browser_actions_header_text;
+			global::AiForms.Renderers.Droid.Resource.Id.browser_actions_menu_items = global::PathwayGames.Droid.Resource.Id.browser_actions_menu_items;
 			global::AiForms.Renderers.Droid.Resource.Id.browser_actions_menu_item_icon = global::PathwayGames.Droid.Resource.Id.browser_actions_menu_item_icon;
 			global::AiForms.Renderers.Droid.Resource.Id.browser_actions_menu_item_text = global::PathwayGames.Droid.Resource.Id.browser_actions_menu_item_text;
-			global::AiForms.Renderers.Droid.Resource.Id.browser_actions_menu_items = global::PathwayGames.Droid.Resource.Id.browser_actions_menu_items;
 			global::AiForms.Renderers.Droid.Resource.Id.browser_actions_menu_view = global::PathwayGames.Droid.Resource.Id.browser_actions_menu_view;
 			global::AiForms.Renderers.Droid.Resource.Id.buttonPanel = global::PathwayGames.Droid.Resource.Id.buttonPanel;
 			global::AiForms.Renderers.Droid.Resource.Id.cancel_action = global::PathwayGames.Droid.Resource.Id.cancel_action;
+			global::AiForms.Renderers.Droid.Resource.Id.CellAccessoryView = global::PathwayGames.Droid.Resource.Id.CellAccessoryView;
+			global::AiForms.Renderers.Droid.Resource.Id.CellBody = global::PathwayGames.Droid.Resource.Id.CellBody;
+			global::AiForms.Renderers.Droid.Resource.Id.CellContentStack = global::PathwayGames.Droid.Resource.Id.CellContentStack;
+			global::AiForms.Renderers.Droid.Resource.Id.CellDescription = global::PathwayGames.Droid.Resource.Id.CellDescription;
+			global::AiForms.Renderers.Droid.Resource.Id.CellHintText = global::PathwayGames.Droid.Resource.Id.CellHintText;
+			global::AiForms.Renderers.Droid.Resource.Id.CellIcon = global::PathwayGames.Droid.Resource.Id.CellIcon;
+			global::AiForms.Renderers.Droid.Resource.Id.CellLayout = global::PathwayGames.Droid.Resource.Id.CellLayout;
+			global::AiForms.Renderers.Droid.Resource.Id.CellTitle = global::PathwayGames.Droid.Resource.Id.CellTitle;
 			global::AiForms.Renderers.Droid.Resource.Id.center = global::PathwayGames.Droid.Resource.Id.center;
 			global::AiForms.Renderers.Droid.Resource.Id.center_horizontal = global::PathwayGames.Droid.Resource.Id.center_horizontal;
 			global::AiForms.Renderers.Droid.Resource.Id.center_vertical = global::PathwayGames.Droid.Resource.Id.center_vertical;
@@ -6451,8 +6230,10 @@ namespace PathwayGames.Droid
 			global::AiForms.Renderers.Droid.Resource.Id.collapseActionView = global::PathwayGames.Droid.Resource.Id.collapseActionView;
 			global::AiForms.Renderers.Droid.Resource.Id.container = global::PathwayGames.Droid.Resource.Id.container;
 			global::AiForms.Renderers.Droid.Resource.Id.content = global::PathwayGames.Droid.Resource.Id.content;
+			global::AiForms.Renderers.Droid.Resource.Id.ContentCellBody = global::PathwayGames.Droid.Resource.Id.ContentCellBody;
 			global::AiForms.Renderers.Droid.Resource.Id.contentPanel = global::PathwayGames.Droid.Resource.Id.contentPanel;
 			global::AiForms.Renderers.Droid.Resource.Id.coordinator = global::PathwayGames.Droid.Resource.Id.coordinator;
+			global::AiForms.Renderers.Droid.Resource.Id.CTRL = global::PathwayGames.Droid.Resource.Id.CTRL;
 			global::AiForms.Renderers.Droid.Resource.Id.custom = global::PathwayGames.Droid.Resource.Id.custom;
 			global::AiForms.Renderers.Droid.Resource.Id.customPanel = global::PathwayGames.Droid.Resource.Id.customPanel;
 			global::AiForms.Renderers.Droid.Resource.Id.decor_content_parent = global::PathwayGames.Droid.Resource.Id.decor_content_parent;
@@ -6469,18 +6250,21 @@ namespace PathwayGames.Droid
 			global::AiForms.Renderers.Droid.Resource.Id.enterAlways = global::PathwayGames.Droid.Resource.Id.enterAlways;
 			global::AiForms.Renderers.Droid.Resource.Id.enterAlwaysCollapsed = global::PathwayGames.Droid.Resource.Id.enterAlwaysCollapsed;
 			global::AiForms.Renderers.Droid.Resource.Id.exitUntilCollapsed = global::PathwayGames.Droid.Resource.Id.exitUntilCollapsed;
-			global::AiForms.Renderers.Droid.Resource.Id.expand_activities_button = global::PathwayGames.Droid.Resource.Id.expand_activities_button;
 			global::AiForms.Renderers.Droid.Resource.Id.expanded_menu = global::PathwayGames.Droid.Resource.Id.expanded_menu;
+			global::AiForms.Renderers.Droid.Resource.Id.expand_activities_button = global::PathwayGames.Droid.Resource.Id.expand_activities_button;
 			global::AiForms.Renderers.Droid.Resource.Id.fill = global::PathwayGames.Droid.Resource.Id.fill;
+			global::AiForms.Renderers.Droid.Resource.Id.filled = global::PathwayGames.Droid.Resource.Id.filled;
 			global::AiForms.Renderers.Droid.Resource.Id.fill_horizontal = global::PathwayGames.Droid.Resource.Id.fill_horizontal;
 			global::AiForms.Renderers.Droid.Resource.Id.fill_vertical = global::PathwayGames.Droid.Resource.Id.fill_vertical;
-			global::AiForms.Renderers.Droid.Resource.Id.filled = global::PathwayGames.Droid.Resource.Id.filled;
 			global::AiForms.Renderers.Droid.Resource.Id.@fixed = global::PathwayGames.Droid.Resource.Id.@fixed;
 			global::AiForms.Renderers.Droid.Resource.Id.flyoutcontent_appbar = global::PathwayGames.Droid.Resource.Id.flyoutcontent_appbar;
 			global::AiForms.Renderers.Droid.Resource.Id.flyoutcontent_recycler = global::PathwayGames.Droid.Resource.Id.flyoutcontent_recycler;
+			global::AiForms.Renderers.Droid.Resource.Id.FooterCellText = global::PathwayGames.Droid.Resource.Id.FooterCellText;
 			global::AiForms.Renderers.Droid.Resource.Id.forever = global::PathwayGames.Droid.Resource.Id.forever;
+			global::AiForms.Renderers.Droid.Resource.Id.FUNCTION = global::PathwayGames.Droid.Resource.Id.FUNCTION;
 			global::AiForms.Renderers.Droid.Resource.Id.ghost_view = global::PathwayGames.Droid.Resource.Id.ghost_view;
 			global::AiForms.Renderers.Droid.Resource.Id.group_divider = global::PathwayGames.Droid.Resource.Id.group_divider;
+			global::AiForms.Renderers.Droid.Resource.Id.HeaderCellText = global::PathwayGames.Droid.Resource.Id.HeaderCellText;
 			global::AiForms.Renderers.Droid.Resource.Id.home = global::PathwayGames.Droid.Resource.Id.home;
 			global::AiForms.Renderers.Droid.Resource.Id.homeAsUp = global::PathwayGames.Droid.Resource.Id.homeAsUp;
 			global::AiForms.Renderers.Droid.Resource.Id.icon = global::PathwayGames.Droid.Resource.Id.icon;
@@ -6500,57 +6284,13 @@ namespace PathwayGames.Droid
 			global::AiForms.Renderers.Droid.Resource.Id.main_appbar = global::PathwayGames.Droid.Resource.Id.main_appbar;
 			global::AiForms.Renderers.Droid.Resource.Id.main_tablayout = global::PathwayGames.Droid.Resource.Id.main_tablayout;
 			global::AiForms.Renderers.Droid.Resource.Id.main_toolbar = global::PathwayGames.Droid.Resource.Id.main_toolbar;
+			global::AiForms.Renderers.Droid.Resource.Id.main_viewpager = global::PathwayGames.Droid.Resource.Id.main_viewpager;
 			global::AiForms.Renderers.Droid.Resource.Id.masked = global::PathwayGames.Droid.Resource.Id.masked;
 			global::AiForms.Renderers.Droid.Resource.Id.media_actions = global::PathwayGames.Droid.Resource.Id.media_actions;
 			global::AiForms.Renderers.Droid.Resource.Id.message = global::PathwayGames.Droid.Resource.Id.message;
+			global::AiForms.Renderers.Droid.Resource.Id.META = global::PathwayGames.Droid.Resource.Id.META;
 			global::AiForms.Renderers.Droid.Resource.Id.middle = global::PathwayGames.Droid.Resource.Id.middle;
 			global::AiForms.Renderers.Droid.Resource.Id.mini = global::PathwayGames.Droid.Resource.Id.mini;
-			global::AiForms.Renderers.Droid.Resource.Id.mr_art = global::PathwayGames.Droid.Resource.Id.mr_art;
-			global::AiForms.Renderers.Droid.Resource.Id.mr_cast_checkbox = global::PathwayGames.Droid.Resource.Id.mr_cast_checkbox;
-			global::AiForms.Renderers.Droid.Resource.Id.mr_cast_close_button = global::PathwayGames.Droid.Resource.Id.mr_cast_close_button;
-			global::AiForms.Renderers.Droid.Resource.Id.mr_cast_group_icon = global::PathwayGames.Droid.Resource.Id.mr_cast_group_icon;
-			global::AiForms.Renderers.Droid.Resource.Id.mr_cast_group_name = global::PathwayGames.Droid.Resource.Id.mr_cast_group_name;
-			global::AiForms.Renderers.Droid.Resource.Id.mr_cast_list = global::PathwayGames.Droid.Resource.Id.mr_cast_list;
-			global::AiForms.Renderers.Droid.Resource.Id.mr_cast_meta = global::PathwayGames.Droid.Resource.Id.mr_cast_meta;
-			global::AiForms.Renderers.Droid.Resource.Id.mr_cast_meta_art = global::PathwayGames.Droid.Resource.Id.mr_cast_meta_art;
-			global::AiForms.Renderers.Droid.Resource.Id.mr_cast_meta_subtitle = global::PathwayGames.Droid.Resource.Id.mr_cast_meta_subtitle;
-			global::AiForms.Renderers.Droid.Resource.Id.mr_cast_meta_title = global::PathwayGames.Droid.Resource.Id.mr_cast_meta_title;
-			global::AiForms.Renderers.Droid.Resource.Id.mr_cast_route_icon = global::PathwayGames.Droid.Resource.Id.mr_cast_route_icon;
-			global::AiForms.Renderers.Droid.Resource.Id.mr_cast_route_name = global::PathwayGames.Droid.Resource.Id.mr_cast_route_name;
-			global::AiForms.Renderers.Droid.Resource.Id.mr_cast_stop_button = global::PathwayGames.Droid.Resource.Id.mr_cast_stop_button;
-			global::AiForms.Renderers.Droid.Resource.Id.mr_cast_volume_layout = global::PathwayGames.Droid.Resource.Id.mr_cast_volume_layout;
-			global::AiForms.Renderers.Droid.Resource.Id.mr_cast_volume_slider = global::PathwayGames.Droid.Resource.Id.mr_cast_volume_slider;
-			global::AiForms.Renderers.Droid.Resource.Id.mr_chooser_list = global::PathwayGames.Droid.Resource.Id.mr_chooser_list;
-			global::AiForms.Renderers.Droid.Resource.Id.mr_chooser_route_desc = global::PathwayGames.Droid.Resource.Id.mr_chooser_route_desc;
-			global::AiForms.Renderers.Droid.Resource.Id.mr_chooser_route_icon = global::PathwayGames.Droid.Resource.Id.mr_chooser_route_icon;
-			global::AiForms.Renderers.Droid.Resource.Id.mr_chooser_route_name = global::PathwayGames.Droid.Resource.Id.mr_chooser_route_name;
-			global::AiForms.Renderers.Droid.Resource.Id.mr_chooser_title = global::PathwayGames.Droid.Resource.Id.mr_chooser_title;
-			global::AiForms.Renderers.Droid.Resource.Id.mr_close = global::PathwayGames.Droid.Resource.Id.mr_close;
-			global::AiForms.Renderers.Droid.Resource.Id.mr_control_divider = global::PathwayGames.Droid.Resource.Id.mr_control_divider;
-			global::AiForms.Renderers.Droid.Resource.Id.mr_control_playback_ctrl = global::PathwayGames.Droid.Resource.Id.mr_control_playback_ctrl;
-			global::AiForms.Renderers.Droid.Resource.Id.mr_control_subtitle = global::PathwayGames.Droid.Resource.Id.mr_control_subtitle;
-			global::AiForms.Renderers.Droid.Resource.Id.mr_control_title = global::PathwayGames.Droid.Resource.Id.mr_control_title;
-			global::AiForms.Renderers.Droid.Resource.Id.mr_control_title_container = global::PathwayGames.Droid.Resource.Id.mr_control_title_container;
-			global::AiForms.Renderers.Droid.Resource.Id.mr_custom_control = global::PathwayGames.Droid.Resource.Id.mr_custom_control;
-			global::AiForms.Renderers.Droid.Resource.Id.mr_default_control = global::PathwayGames.Droid.Resource.Id.mr_default_control;
-			global::AiForms.Renderers.Droid.Resource.Id.mr_dialog_area = global::PathwayGames.Droid.Resource.Id.mr_dialog_area;
-			global::AiForms.Renderers.Droid.Resource.Id.mr_dialog_header_name = global::PathwayGames.Droid.Resource.Id.mr_dialog_header_name;
-			global::AiForms.Renderers.Droid.Resource.Id.mr_expandable_area = global::PathwayGames.Droid.Resource.Id.mr_expandable_area;
-			global::AiForms.Renderers.Droid.Resource.Id.mr_group_expand_collapse = global::PathwayGames.Droid.Resource.Id.mr_group_expand_collapse;
-			global::AiForms.Renderers.Droid.Resource.Id.mr_group_volume_route_name = global::PathwayGames.Droid.Resource.Id.mr_group_volume_route_name;
-			global::AiForms.Renderers.Droid.Resource.Id.mr_group_volume_slider = global::PathwayGames.Droid.Resource.Id.mr_group_volume_slider;
-			global::AiForms.Renderers.Droid.Resource.Id.mr_media_main_control = global::PathwayGames.Droid.Resource.Id.mr_media_main_control;
-			global::AiForms.Renderers.Droid.Resource.Id.mr_name = global::PathwayGames.Droid.Resource.Id.mr_name;
-			global::AiForms.Renderers.Droid.Resource.Id.mr_picker_close_button = global::PathwayGames.Droid.Resource.Id.mr_picker_close_button;
-			global::AiForms.Renderers.Droid.Resource.Id.mr_picker_list = global::PathwayGames.Droid.Resource.Id.mr_picker_list;
-			global::AiForms.Renderers.Droid.Resource.Id.mr_picker_route_icon = global::PathwayGames.Droid.Resource.Id.mr_picker_route_icon;
-			global::AiForms.Renderers.Droid.Resource.Id.mr_picker_route_name = global::PathwayGames.Droid.Resource.Id.mr_picker_route_name;
-			global::AiForms.Renderers.Droid.Resource.Id.mr_playback_control = global::PathwayGames.Droid.Resource.Id.mr_playback_control;
-			global::AiForms.Renderers.Droid.Resource.Id.mr_title_bar = global::PathwayGames.Droid.Resource.Id.mr_title_bar;
-			global::AiForms.Renderers.Droid.Resource.Id.mr_volume_control = global::PathwayGames.Droid.Resource.Id.mr_volume_control;
-			global::AiForms.Renderers.Droid.Resource.Id.mr_volume_group_list = global::PathwayGames.Droid.Resource.Id.mr_volume_group_list;
-			global::AiForms.Renderers.Droid.Resource.Id.mr_volume_item_icon = global::PathwayGames.Droid.Resource.Id.mr_volume_item_icon;
-			global::AiForms.Renderers.Droid.Resource.Id.mr_volume_slider = global::PathwayGames.Droid.Resource.Id.mr_volume_slider;
 			global::AiForms.Renderers.Droid.Resource.Id.mtrl_child_content_container = global::PathwayGames.Droid.Resource.Id.mtrl_child_content_container;
 			global::AiForms.Renderers.Droid.Resource.Id.mtrl_internal_children_alpha_tag = global::PathwayGames.Droid.Resource.Id.mtrl_internal_children_alpha_tag;
 			global::AiForms.Renderers.Droid.Resource.Id.multiply = global::PathwayGames.Droid.Resource.Id.multiply;
@@ -6572,15 +6312,13 @@ namespace PathwayGames.Droid
 			global::AiForms.Renderers.Droid.Resource.Id.right = global::PathwayGames.Droid.Resource.Id.right;
 			global::AiForms.Renderers.Droid.Resource.Id.right_icon = global::PathwayGames.Droid.Resource.Id.right_icon;
 			global::AiForms.Renderers.Droid.Resource.Id.right_side = global::PathwayGames.Droid.Resource.Id.right_side;
-			global::AiForms.Renderers.Droid.Resource.Id.save_image_matrix = global::PathwayGames.Droid.Resource.Id.save_image_matrix;
 			global::AiForms.Renderers.Droid.Resource.Id.save_non_transition_alpha = global::PathwayGames.Droid.Resource.Id.save_non_transition_alpha;
-			global::AiForms.Renderers.Droid.Resource.Id.save_scale_type = global::PathwayGames.Droid.Resource.Id.save_scale_type;
 			global::AiForms.Renderers.Droid.Resource.Id.screen = global::PathwayGames.Droid.Resource.Id.screen;
 			global::AiForms.Renderers.Droid.Resource.Id.scroll = global::PathwayGames.Droid.Resource.Id.scroll;
+			global::AiForms.Renderers.Droid.Resource.Id.scrollable = global::PathwayGames.Droid.Resource.Id.scrollable;
 			global::AiForms.Renderers.Droid.Resource.Id.scrollIndicatorDown = global::PathwayGames.Droid.Resource.Id.scrollIndicatorDown;
 			global::AiForms.Renderers.Droid.Resource.Id.scrollIndicatorUp = global::PathwayGames.Droid.Resource.Id.scrollIndicatorUp;
 			global::AiForms.Renderers.Droid.Resource.Id.scrollView = global::PathwayGames.Droid.Resource.Id.scrollView;
-			global::AiForms.Renderers.Droid.Resource.Id.scrollable = global::PathwayGames.Droid.Resource.Id.scrollable;
 			global::AiForms.Renderers.Droid.Resource.Id.search_badge = global::PathwayGames.Droid.Resource.Id.search_badge;
 			global::AiForms.Renderers.Droid.Resource.Id.search_bar = global::PathwayGames.Droid.Resource.Id.search_bar;
 			global::AiForms.Renderers.Droid.Resource.Id.search_button = global::PathwayGames.Droid.Resource.Id.search_button;
@@ -6591,14 +6329,16 @@ namespace PathwayGames.Droid
 			global::AiForms.Renderers.Droid.Resource.Id.search_plate = global::PathwayGames.Droid.Resource.Id.search_plate;
 			global::AiForms.Renderers.Droid.Resource.Id.search_src_text = global::PathwayGames.Droid.Resource.Id.search_src_text;
 			global::AiForms.Renderers.Droid.Resource.Id.search_voice_btn = global::PathwayGames.Droid.Resource.Id.search_voice_btn;
-			global::AiForms.Renderers.Droid.Resource.Id.select_dialog_listview = global::PathwayGames.Droid.Resource.Id.select_dialog_listview;
 			global::AiForms.Renderers.Droid.Resource.Id.selected = global::PathwayGames.Droid.Resource.Id.selected;
+			global::AiForms.Renderers.Droid.Resource.Id.select_dialog_listview = global::PathwayGames.Droid.Resource.Id.select_dialog_listview;
 			global::AiForms.Renderers.Droid.Resource.Id.shellcontent_appbar = global::PathwayGames.Droid.Resource.Id.shellcontent_appbar;
 			global::AiForms.Renderers.Droid.Resource.Id.shellcontent_toolbar = global::PathwayGames.Droid.Resource.Id.shellcontent_toolbar;
+			global::AiForms.Renderers.Droid.Resource.Id.SHIFT = global::PathwayGames.Droid.Resource.Id.SHIFT;
 			global::AiForms.Renderers.Droid.Resource.Id.shortcut = global::PathwayGames.Droid.Resource.Id.shortcut;
 			global::AiForms.Renderers.Droid.Resource.Id.showCustom = global::PathwayGames.Droid.Resource.Id.showCustom;
 			global::AiForms.Renderers.Droid.Resource.Id.showHome = global::PathwayGames.Droid.Resource.Id.showHome;
 			global::AiForms.Renderers.Droid.Resource.Id.showTitle = global::PathwayGames.Droid.Resource.Id.showTitle;
+			global::AiForms.Renderers.Droid.Resource.Id.sliding_tabs = global::PathwayGames.Droid.Resource.Id.sliding_tabs;
 			global::AiForms.Renderers.Droid.Resource.Id.smallLabel = global::PathwayGames.Droid.Resource.Id.smallLabel;
 			global::AiForms.Renderers.Droid.Resource.Id.snackbar_action = global::PathwayGames.Droid.Resource.Id.snackbar_action;
 			global::AiForms.Renderers.Droid.Resource.Id.snackbar_text = global::PathwayGames.Droid.Resource.Id.snackbar_text;
@@ -6614,23 +6354,25 @@ namespace PathwayGames.Droid
 			global::AiForms.Renderers.Droid.Resource.Id.stretch = global::PathwayGames.Droid.Resource.Id.stretch;
 			global::AiForms.Renderers.Droid.Resource.Id.submenuarrow = global::PathwayGames.Droid.Resource.Id.submenuarrow;
 			global::AiForms.Renderers.Droid.Resource.Id.submit_area = global::PathwayGames.Droid.Resource.Id.submit_area;
+			global::AiForms.Renderers.Droid.Resource.Id.SYM = global::PathwayGames.Droid.Resource.Id.SYM;
 			global::AiForms.Renderers.Droid.Resource.Id.tabMode = global::PathwayGames.Droid.Resource.Id.tabMode;
 			global::AiForms.Renderers.Droid.Resource.Id.tag_transition_group = global::PathwayGames.Droid.Resource.Id.tag_transition_group;
 			global::AiForms.Renderers.Droid.Resource.Id.tag_unhandled_key_event_manager = global::PathwayGames.Droid.Resource.Id.tag_unhandled_key_event_manager;
 			global::AiForms.Renderers.Droid.Resource.Id.tag_unhandled_key_listeners = global::PathwayGames.Droid.Resource.Id.tag_unhandled_key_listeners;
 			global::AiForms.Renderers.Droid.Resource.Id.text = global::PathwayGames.Droid.Resource.Id.text;
 			global::AiForms.Renderers.Droid.Resource.Id.text2 = global::PathwayGames.Droid.Resource.Id.text2;
+			global::AiForms.Renderers.Droid.Resource.Id.textinput_counter = global::PathwayGames.Droid.Resource.Id.textinput_counter;
+			global::AiForms.Renderers.Droid.Resource.Id.textinput_error = global::PathwayGames.Droid.Resource.Id.textinput_error;
+			global::AiForms.Renderers.Droid.Resource.Id.textinput_helper_text = global::PathwayGames.Droid.Resource.Id.textinput_helper_text;
 			global::AiForms.Renderers.Droid.Resource.Id.textSpacerNoButtons = global::PathwayGames.Droid.Resource.Id.textSpacerNoButtons;
 			global::AiForms.Renderers.Droid.Resource.Id.textSpacerNoTitle = global::PathwayGames.Droid.Resource.Id.textSpacerNoTitle;
 			global::AiForms.Renderers.Droid.Resource.Id.textStart = global::PathwayGames.Droid.Resource.Id.textStart;
 			global::AiForms.Renderers.Droid.Resource.Id.text_input_password_toggle = global::PathwayGames.Droid.Resource.Id.text_input_password_toggle;
-			global::AiForms.Renderers.Droid.Resource.Id.textinput_counter = global::PathwayGames.Droid.Resource.Id.textinput_counter;
-			global::AiForms.Renderers.Droid.Resource.Id.textinput_error = global::PathwayGames.Droid.Resource.Id.textinput_error;
-			global::AiForms.Renderers.Droid.Resource.Id.textinput_helper_text = global::PathwayGames.Droid.Resource.Id.textinput_helper_text;
 			global::AiForms.Renderers.Droid.Resource.Id.time = global::PathwayGames.Droid.Resource.Id.time;
 			global::AiForms.Renderers.Droid.Resource.Id.title = global::PathwayGames.Droid.Resource.Id.title;
 			global::AiForms.Renderers.Droid.Resource.Id.titleDividerNoCustom = global::PathwayGames.Droid.Resource.Id.titleDividerNoCustom;
 			global::AiForms.Renderers.Droid.Resource.Id.title_template = global::PathwayGames.Droid.Resource.Id.title_template;
+			global::AiForms.Renderers.Droid.Resource.Id.toolbar = global::PathwayGames.Droid.Resource.Id.toolbar;
 			global::AiForms.Renderers.Droid.Resource.Id.top = global::PathwayGames.Droid.Resource.Id.top;
 			global::AiForms.Renderers.Droid.Resource.Id.topPanel = global::PathwayGames.Droid.Resource.Id.topPanel;
 			global::AiForms.Renderers.Droid.Resource.Id.touch_outside = global::PathwayGames.Droid.Resource.Id.touch_outside;
@@ -6645,7 +6387,6 @@ namespace PathwayGames.Droid
 			global::AiForms.Renderers.Droid.Resource.Id.useLogo = global::PathwayGames.Droid.Resource.Id.useLogo;
 			global::AiForms.Renderers.Droid.Resource.Id.view_offset_helper = global::PathwayGames.Droid.Resource.Id.view_offset_helper;
 			global::AiForms.Renderers.Droid.Resource.Id.visible = global::PathwayGames.Droid.Resource.Id.visible;
-			global::AiForms.Renderers.Droid.Resource.Id.volume_item_container = global::PathwayGames.Droid.Resource.Id.volume_item_container;
 			global::AiForms.Renderers.Droid.Resource.Id.withText = global::PathwayGames.Droid.Resource.Id.withText;
 			global::AiForms.Renderers.Droid.Resource.Id.wrap_content = global::PathwayGames.Droid.Resource.Id.wrap_content;
 			global::AiForms.Renderers.Droid.Resource.Integer.abc_config_activityDefaultDur = global::PathwayGames.Droid.Resource.Integer.abc_config_activityDefaultDur;
@@ -6657,18 +6398,12 @@ namespace PathwayGames.Droid
 			global::AiForms.Renderers.Droid.Resource.Integer.design_snackbar_text_max_lines = global::PathwayGames.Droid.Resource.Integer.design_snackbar_text_max_lines;
 			global::AiForms.Renderers.Droid.Resource.Integer.design_tab_indicator_anim_duration_ms = global::PathwayGames.Droid.Resource.Integer.design_tab_indicator_anim_duration_ms;
 			global::AiForms.Renderers.Droid.Resource.Integer.hide_password_duration = global::PathwayGames.Droid.Resource.Integer.hide_password_duration;
-			global::AiForms.Renderers.Droid.Resource.Integer.mr_controller_volume_group_list_animation_duration_ms = global::PathwayGames.Droid.Resource.Integer.mr_controller_volume_group_list_animation_duration_ms;
-			global::AiForms.Renderers.Droid.Resource.Integer.mr_controller_volume_group_list_fade_in_duration_ms = global::PathwayGames.Droid.Resource.Integer.mr_controller_volume_group_list_fade_in_duration_ms;
-			global::AiForms.Renderers.Droid.Resource.Integer.mr_controller_volume_group_list_fade_out_duration_ms = global::PathwayGames.Droid.Resource.Integer.mr_controller_volume_group_list_fade_out_duration_ms;
-			global::AiForms.Renderers.Droid.Resource.Integer.mr_update_routes_delay_ms = global::PathwayGames.Droid.Resource.Integer.mr_update_routes_delay_ms;
 			global::AiForms.Renderers.Droid.Resource.Integer.mtrl_btn_anim_delay_ms = global::PathwayGames.Droid.Resource.Integer.mtrl_btn_anim_delay_ms;
 			global::AiForms.Renderers.Droid.Resource.Integer.mtrl_btn_anim_duration_ms = global::PathwayGames.Droid.Resource.Integer.mtrl_btn_anim_duration_ms;
 			global::AiForms.Renderers.Droid.Resource.Integer.mtrl_chip_anim_duration = global::PathwayGames.Droid.Resource.Integer.mtrl_chip_anim_duration;
 			global::AiForms.Renderers.Droid.Resource.Integer.mtrl_tab_indicator_anim_duration_ms = global::PathwayGames.Droid.Resource.Integer.mtrl_tab_indicator_anim_duration_ms;
 			global::AiForms.Renderers.Droid.Resource.Integer.show_password_duration = global::PathwayGames.Droid.Resource.Integer.show_password_duration;
 			global::AiForms.Renderers.Droid.Resource.Integer.status_bar_notification_info_maxnum = global::PathwayGames.Droid.Resource.Integer.status_bar_notification_info_maxnum;
-			global::AiForms.Renderers.Droid.Resource.Interpolator.mr_fast_out_slow_in = global::PathwayGames.Droid.Resource.Interpolator.mr_fast_out_slow_in;
-			global::AiForms.Renderers.Droid.Resource.Interpolator.mr_linear_out_slow_in = global::PathwayGames.Droid.Resource.Interpolator.mr_linear_out_slow_in;
 			global::AiForms.Renderers.Droid.Resource.Interpolator.mtrl_fast_out_linear_in = global::PathwayGames.Droid.Resource.Interpolator.mtrl_fast_out_linear_in;
 			global::AiForms.Renderers.Droid.Resource.Interpolator.mtrl_fast_out_slow_in = global::PathwayGames.Droid.Resource.Interpolator.mtrl_fast_out_slow_in;
 			global::AiForms.Renderers.Droid.Resource.Interpolator.mtrl_linear = global::PathwayGames.Droid.Resource.Interpolator.mtrl_linear;
@@ -6723,20 +6458,6 @@ namespace PathwayGames.Droid
 			global::AiForms.Renderers.Droid.Resource.Layout.FlyoutContent = global::PathwayGames.Droid.Resource.Layout.FlyoutContent;
 			global::AiForms.Renderers.Droid.Resource.Layout.FooterCell = global::PathwayGames.Droid.Resource.Layout.FooterCell;
 			global::AiForms.Renderers.Droid.Resource.Layout.HeaderCell = global::PathwayGames.Droid.Resource.Layout.HeaderCell;
-			global::AiForms.Renderers.Droid.Resource.Layout.mr_cast_dialog = global::PathwayGames.Droid.Resource.Layout.mr_cast_dialog;
-			global::AiForms.Renderers.Droid.Resource.Layout.mr_cast_group_item = global::PathwayGames.Droid.Resource.Layout.mr_cast_group_item;
-			global::AiForms.Renderers.Droid.Resource.Layout.mr_cast_group_volume_item = global::PathwayGames.Droid.Resource.Layout.mr_cast_group_volume_item;
-			global::AiForms.Renderers.Droid.Resource.Layout.mr_cast_media_metadata = global::PathwayGames.Droid.Resource.Layout.mr_cast_media_metadata;
-			global::AiForms.Renderers.Droid.Resource.Layout.mr_cast_route_item = global::PathwayGames.Droid.Resource.Layout.mr_cast_route_item;
-			global::AiForms.Renderers.Droid.Resource.Layout.mr_chooser_dialog = global::PathwayGames.Droid.Resource.Layout.mr_chooser_dialog;
-			global::AiForms.Renderers.Droid.Resource.Layout.mr_chooser_list_item = global::PathwayGames.Droid.Resource.Layout.mr_chooser_list_item;
-			global::AiForms.Renderers.Droid.Resource.Layout.mr_controller_material_dialog_b = global::PathwayGames.Droid.Resource.Layout.mr_controller_material_dialog_b;
-			global::AiForms.Renderers.Droid.Resource.Layout.mr_controller_volume_item = global::PathwayGames.Droid.Resource.Layout.mr_controller_volume_item;
-			global::AiForms.Renderers.Droid.Resource.Layout.mr_dialog_header_item = global::PathwayGames.Droid.Resource.Layout.mr_dialog_header_item;
-			global::AiForms.Renderers.Droid.Resource.Layout.mr_picker_dialog = global::PathwayGames.Droid.Resource.Layout.mr_picker_dialog;
-			global::AiForms.Renderers.Droid.Resource.Layout.mr_picker_route_item = global::PathwayGames.Droid.Resource.Layout.mr_picker_route_item;
-			global::AiForms.Renderers.Droid.Resource.Layout.mr_playback_control = global::PathwayGames.Droid.Resource.Layout.mr_playback_control;
-			global::AiForms.Renderers.Droid.Resource.Layout.mr_volume_control = global::PathwayGames.Droid.Resource.Layout.mr_volume_control;
 			global::AiForms.Renderers.Droid.Resource.Layout.mtrl_layout_snackbar = global::PathwayGames.Droid.Resource.Layout.mtrl_layout_snackbar;
 			global::AiForms.Renderers.Droid.Resource.Layout.mtrl_layout_snackbar_include = global::PathwayGames.Droid.Resource.Layout.mtrl_layout_snackbar_include;
 			global::AiForms.Renderers.Droid.Resource.Layout.notification_action = global::PathwayGames.Droid.Resource.Layout.notification_action;
@@ -6760,26 +6481,16 @@ namespace PathwayGames.Droid
 			global::AiForms.Renderers.Droid.Resource.Layout.select_dialog_singlechoice_material = global::PathwayGames.Droid.Resource.Layout.select_dialog_singlechoice_material;
 			global::AiForms.Renderers.Droid.Resource.Layout.ShellContent = global::PathwayGames.Droid.Resource.Layout.ShellContent;
 			global::AiForms.Renderers.Droid.Resource.Layout.support_simple_spinner_dropdown_item = global::PathwayGames.Droid.Resource.Layout.support_simple_spinner_dropdown_item;
+			global::AiForms.Renderers.Droid.Resource.Layout.Tabbar = global::PathwayGames.Droid.Resource.Layout.Tabbar;
+			global::AiForms.Renderers.Droid.Resource.Layout.Toolbar = global::PathwayGames.Droid.Resource.Layout.Toolbar;
 			global::AiForms.Renderers.Droid.Resource.String.abc_action_bar_home_description = global::PathwayGames.Droid.Resource.String.abc_action_bar_home_description;
 			global::AiForms.Renderers.Droid.Resource.String.abc_action_bar_up_description = global::PathwayGames.Droid.Resource.String.abc_action_bar_up_description;
 			global::AiForms.Renderers.Droid.Resource.String.abc_action_menu_overflow_description = global::PathwayGames.Droid.Resource.String.abc_action_menu_overflow_description;
 			global::AiForms.Renderers.Droid.Resource.String.abc_action_mode_done = global::PathwayGames.Droid.Resource.String.abc_action_mode_done;
-			global::AiForms.Renderers.Droid.Resource.String.abc_activity_chooser_view_see_all = global::PathwayGames.Droid.Resource.String.abc_activity_chooser_view_see_all;
 			global::AiForms.Renderers.Droid.Resource.String.abc_activitychooserview_choose_application = global::PathwayGames.Droid.Resource.String.abc_activitychooserview_choose_application;
+			global::AiForms.Renderers.Droid.Resource.String.abc_activity_chooser_view_see_all = global::PathwayGames.Droid.Resource.String.abc_activity_chooser_view_see_all;
 			global::AiForms.Renderers.Droid.Resource.String.abc_capital_off = global::PathwayGames.Droid.Resource.String.abc_capital_off;
 			global::AiForms.Renderers.Droid.Resource.String.abc_capital_on = global::PathwayGames.Droid.Resource.String.abc_capital_on;
-			global::AiForms.Renderers.Droid.Resource.String.abc_font_family_body_1_material = global::PathwayGames.Droid.Resource.String.abc_font_family_body_1_material;
-			global::AiForms.Renderers.Droid.Resource.String.abc_font_family_body_2_material = global::PathwayGames.Droid.Resource.String.abc_font_family_body_2_material;
-			global::AiForms.Renderers.Droid.Resource.String.abc_font_family_button_material = global::PathwayGames.Droid.Resource.String.abc_font_family_button_material;
-			global::AiForms.Renderers.Droid.Resource.String.abc_font_family_caption_material = global::PathwayGames.Droid.Resource.String.abc_font_family_caption_material;
-			global::AiForms.Renderers.Droid.Resource.String.abc_font_family_display_1_material = global::PathwayGames.Droid.Resource.String.abc_font_family_display_1_material;
-			global::AiForms.Renderers.Droid.Resource.String.abc_font_family_display_2_material = global::PathwayGames.Droid.Resource.String.abc_font_family_display_2_material;
-			global::AiForms.Renderers.Droid.Resource.String.abc_font_family_display_3_material = global::PathwayGames.Droid.Resource.String.abc_font_family_display_3_material;
-			global::AiForms.Renderers.Droid.Resource.String.abc_font_family_display_4_material = global::PathwayGames.Droid.Resource.String.abc_font_family_display_4_material;
-			global::AiForms.Renderers.Droid.Resource.String.abc_font_family_headline_material = global::PathwayGames.Droid.Resource.String.abc_font_family_headline_material;
-			global::AiForms.Renderers.Droid.Resource.String.abc_font_family_menu_material = global::PathwayGames.Droid.Resource.String.abc_font_family_menu_material;
-			global::AiForms.Renderers.Droid.Resource.String.abc_font_family_subhead_material = global::PathwayGames.Droid.Resource.String.abc_font_family_subhead_material;
-			global::AiForms.Renderers.Droid.Resource.String.abc_font_family_title_material = global::PathwayGames.Droid.Resource.String.abc_font_family_title_material;
 			global::AiForms.Renderers.Droid.Resource.String.abc_menu_alt_shortcut_label = global::PathwayGames.Droid.Resource.String.abc_menu_alt_shortcut_label;
 			global::AiForms.Renderers.Droid.Resource.String.abc_menu_ctrl_shortcut_label = global::PathwayGames.Droid.Resource.String.abc_menu_ctrl_shortcut_label;
 			global::AiForms.Renderers.Droid.Resource.String.abc_menu_delete_shortcut_label = global::PathwayGames.Droid.Resource.String.abc_menu_delete_shortcut_label;
@@ -6790,12 +6501,12 @@ namespace PathwayGames.Droid
 			global::AiForms.Renderers.Droid.Resource.String.abc_menu_space_shortcut_label = global::PathwayGames.Droid.Resource.String.abc_menu_space_shortcut_label;
 			global::AiForms.Renderers.Droid.Resource.String.abc_menu_sym_shortcut_label = global::PathwayGames.Droid.Resource.String.abc_menu_sym_shortcut_label;
 			global::AiForms.Renderers.Droid.Resource.String.abc_prepend_shortcut_label = global::PathwayGames.Droid.Resource.String.abc_prepend_shortcut_label;
-			global::AiForms.Renderers.Droid.Resource.String.abc_search_hint = global::PathwayGames.Droid.Resource.String.abc_search_hint;
 			global::AiForms.Renderers.Droid.Resource.String.abc_searchview_description_clear = global::PathwayGames.Droid.Resource.String.abc_searchview_description_clear;
 			global::AiForms.Renderers.Droid.Resource.String.abc_searchview_description_query = global::PathwayGames.Droid.Resource.String.abc_searchview_description_query;
 			global::AiForms.Renderers.Droid.Resource.String.abc_searchview_description_search = global::PathwayGames.Droid.Resource.String.abc_searchview_description_search;
 			global::AiForms.Renderers.Droid.Resource.String.abc_searchview_description_submit = global::PathwayGames.Droid.Resource.String.abc_searchview_description_submit;
 			global::AiForms.Renderers.Droid.Resource.String.abc_searchview_description_voice = global::PathwayGames.Droid.Resource.String.abc_searchview_description_voice;
+			global::AiForms.Renderers.Droid.Resource.String.abc_search_hint = global::PathwayGames.Droid.Resource.String.abc_search_hint;
 			global::AiForms.Renderers.Droid.Resource.String.abc_shareactionprovider_share_with = global::PathwayGames.Droid.Resource.String.abc_shareactionprovider_share_with;
 			global::AiForms.Renderers.Droid.Resource.String.abc_shareactionprovider_share_with_application = global::PathwayGames.Droid.Resource.String.abc_shareactionprovider_share_with_application;
 			global::AiForms.Renderers.Droid.Resource.String.abc_toolbar_collapse_description = global::PathwayGames.Droid.Resource.String.abc_toolbar_collapse_description;
@@ -6807,31 +6518,8 @@ namespace PathwayGames.Droid
 			global::AiForms.Renderers.Droid.Resource.String.fab_transformation_sheet_behavior = global::PathwayGames.Droid.Resource.String.fab_transformation_sheet_behavior;
 			global::AiForms.Renderers.Droid.Resource.String.hide_bottom_view_on_scroll_behavior = global::PathwayGames.Droid.Resource.String.hide_bottom_view_on_scroll_behavior;
 			global::AiForms.Renderers.Droid.Resource.String.library_name = global::PathwayGames.Droid.Resource.String.library_name;
-			global::AiForms.Renderers.Droid.Resource.String.mr_button_content_description = global::PathwayGames.Droid.Resource.String.mr_button_content_description;
-			global::AiForms.Renderers.Droid.Resource.String.mr_cast_button_connected = global::PathwayGames.Droid.Resource.String.mr_cast_button_connected;
-			global::AiForms.Renderers.Droid.Resource.String.mr_cast_button_connecting = global::PathwayGames.Droid.Resource.String.mr_cast_button_connecting;
-			global::AiForms.Renderers.Droid.Resource.String.mr_cast_button_disconnected = global::PathwayGames.Droid.Resource.String.mr_cast_button_disconnected;
-			global::AiForms.Renderers.Droid.Resource.String.mr_cast_dialog_title_view_placeholder = global::PathwayGames.Droid.Resource.String.mr_cast_dialog_title_view_placeholder;
-			global::AiForms.Renderers.Droid.Resource.String.mr_chooser_searching = global::PathwayGames.Droid.Resource.String.mr_chooser_searching;
-			global::AiForms.Renderers.Droid.Resource.String.mr_chooser_title = global::PathwayGames.Droid.Resource.String.mr_chooser_title;
-			global::AiForms.Renderers.Droid.Resource.String.mr_controller_album_art = global::PathwayGames.Droid.Resource.String.mr_controller_album_art;
-			global::AiForms.Renderers.Droid.Resource.String.mr_controller_casting_screen = global::PathwayGames.Droid.Resource.String.mr_controller_casting_screen;
-			global::AiForms.Renderers.Droid.Resource.String.mr_controller_close_description = global::PathwayGames.Droid.Resource.String.mr_controller_close_description;
-			global::AiForms.Renderers.Droid.Resource.String.mr_controller_collapse_group = global::PathwayGames.Droid.Resource.String.mr_controller_collapse_group;
-			global::AiForms.Renderers.Droid.Resource.String.mr_controller_disconnect = global::PathwayGames.Droid.Resource.String.mr_controller_disconnect;
-			global::AiForms.Renderers.Droid.Resource.String.mr_controller_expand_group = global::PathwayGames.Droid.Resource.String.mr_controller_expand_group;
-			global::AiForms.Renderers.Droid.Resource.String.mr_controller_no_info_available = global::PathwayGames.Droid.Resource.String.mr_controller_no_info_available;
-			global::AiForms.Renderers.Droid.Resource.String.mr_controller_no_media_selected = global::PathwayGames.Droid.Resource.String.mr_controller_no_media_selected;
-			global::AiForms.Renderers.Droid.Resource.String.mr_controller_pause = global::PathwayGames.Droid.Resource.String.mr_controller_pause;
-			global::AiForms.Renderers.Droid.Resource.String.mr_controller_play = global::PathwayGames.Droid.Resource.String.mr_controller_play;
-			global::AiForms.Renderers.Droid.Resource.String.mr_controller_stop = global::PathwayGames.Droid.Resource.String.mr_controller_stop;
-			global::AiForms.Renderers.Droid.Resource.String.mr_controller_stop_casting = global::PathwayGames.Droid.Resource.String.mr_controller_stop_casting;
-			global::AiForms.Renderers.Droid.Resource.String.mr_controller_volume_slider = global::PathwayGames.Droid.Resource.String.mr_controller_volume_slider;
-			global::AiForms.Renderers.Droid.Resource.String.mr_dialog_device_header = global::PathwayGames.Droid.Resource.String.mr_dialog_device_header;
-			global::AiForms.Renderers.Droid.Resource.String.mr_dialog_route_header = global::PathwayGames.Droid.Resource.String.mr_dialog_route_header;
-			global::AiForms.Renderers.Droid.Resource.String.mr_system_route_name = global::PathwayGames.Droid.Resource.String.mr_system_route_name;
-			global::AiForms.Renderers.Droid.Resource.String.mr_user_route_category_name = global::PathwayGames.Droid.Resource.String.mr_user_route_category_name;
 			global::AiForms.Renderers.Droid.Resource.String.mtrl_chip_close_icon_content_description = global::PathwayGames.Droid.Resource.String.mtrl_chip_close_icon_content_description;
+			global::AiForms.Renderers.Droid.Resource.String.overflow_tab_title = global::PathwayGames.Droid.Resource.String.overflow_tab_title;
 			global::AiForms.Renderers.Droid.Resource.String.password_toggle_content_description = global::PathwayGames.Droid.Resource.String.password_toggle_content_description;
 			global::AiForms.Renderers.Droid.Resource.String.path_password_eye = global::PathwayGames.Droid.Resource.String.path_password_eye;
 			global::AiForms.Renderers.Droid.Resource.String.path_password_eye_mask_strike_through = global::PathwayGames.Droid.Resource.String.path_password_eye_mask_strike_through;
@@ -6845,14 +6533,15 @@ namespace PathwayGames.Droid
 			global::AiForms.Renderers.Droid.Resource.Style.Animation_AppCompat_DropDownUp = global::PathwayGames.Droid.Resource.Style.Animation_AppCompat_DropDownUp;
 			global::AiForms.Renderers.Droid.Resource.Style.Animation_AppCompat_Tooltip = global::PathwayGames.Droid.Resource.Style.Animation_AppCompat_Tooltip;
 			global::AiForms.Renderers.Droid.Resource.Style.Animation_Design_BottomSheetDialog = global::PathwayGames.Droid.Resource.Style.Animation_Design_BottomSheetDialog;
+			global::AiForms.Renderers.Droid.Resource.Style.AppCompatDialogStyle = global::PathwayGames.Droid.Resource.Style.AppCompatDialogStyle;
 			global::AiForms.Renderers.Droid.Resource.Style.Base_AlertDialog_AppCompat = global::PathwayGames.Droid.Resource.Style.Base_AlertDialog_AppCompat;
 			global::AiForms.Renderers.Droid.Resource.Style.Base_AlertDialog_AppCompat_Light = global::PathwayGames.Droid.Resource.Style.Base_AlertDialog_AppCompat_Light;
 			global::AiForms.Renderers.Droid.Resource.Style.Base_Animation_AppCompat_Dialog = global::PathwayGames.Droid.Resource.Style.Base_Animation_AppCompat_Dialog;
 			global::AiForms.Renderers.Droid.Resource.Style.Base_Animation_AppCompat_DropDownUp = global::PathwayGames.Droid.Resource.Style.Base_Animation_AppCompat_DropDownUp;
 			global::AiForms.Renderers.Droid.Resource.Style.Base_Animation_AppCompat_Tooltip = global::PathwayGames.Droid.Resource.Style.Base_Animation_AppCompat_Tooltip;
 			global::AiForms.Renderers.Droid.Resource.Style.Base_CardView = global::PathwayGames.Droid.Resource.Style.Base_CardView;
-			global::AiForms.Renderers.Droid.Resource.Style.Base_DialogWindowTitle_AppCompat = global::PathwayGames.Droid.Resource.Style.Base_DialogWindowTitle_AppCompat;
 			global::AiForms.Renderers.Droid.Resource.Style.Base_DialogWindowTitleBackground_AppCompat = global::PathwayGames.Droid.Resource.Style.Base_DialogWindowTitleBackground_AppCompat;
+			global::AiForms.Renderers.Droid.Resource.Style.Base_DialogWindowTitle_AppCompat = global::PathwayGames.Droid.Resource.Style.Base_DialogWindowTitle_AppCompat;
 			global::AiForms.Renderers.Droid.Resource.Style.Base_TextAppearance_AppCompat = global::PathwayGames.Droid.Resource.Style.Base_TextAppearance_AppCompat;
 			global::AiForms.Renderers.Droid.Resource.Style.Base_TextAppearance_AppCompat_Body1 = global::PathwayGames.Droid.Resource.Style.Base_TextAppearance_AppCompat_Body1;
 			global::AiForms.Renderers.Droid.Resource.Style.Base_TextAppearance_AppCompat_Body2 = global::PathwayGames.Droid.Resource.Style.Base_TextAppearance_AppCompat_Body2;
@@ -6901,37 +6590,6 @@ namespace PathwayGames.Droid
 			global::AiForms.Renderers.Droid.Resource.Style.Base_TextAppearance_Widget_AppCompat_ExpandedMenu_Item = global::PathwayGames.Droid.Resource.Style.Base_TextAppearance_Widget_AppCompat_ExpandedMenu_Item;
 			global::AiForms.Renderers.Droid.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Subtitle = global::PathwayGames.Droid.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Subtitle;
 			global::AiForms.Renderers.Droid.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Title = global::PathwayGames.Droid.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Title;
-			global::AiForms.Renderers.Droid.Resource.Style.Base_Theme_AppCompat = global::PathwayGames.Droid.Resource.Style.Base_Theme_AppCompat;
-			global::AiForms.Renderers.Droid.Resource.Style.Base_Theme_AppCompat_CompactMenu = global::PathwayGames.Droid.Resource.Style.Base_Theme_AppCompat_CompactMenu;
-			global::AiForms.Renderers.Droid.Resource.Style.Base_Theme_AppCompat_Dialog = global::PathwayGames.Droid.Resource.Style.Base_Theme_AppCompat_Dialog;
-			global::AiForms.Renderers.Droid.Resource.Style.Base_Theme_AppCompat_Dialog_Alert = global::PathwayGames.Droid.Resource.Style.Base_Theme_AppCompat_Dialog_Alert;
-			global::AiForms.Renderers.Droid.Resource.Style.Base_Theme_AppCompat_Dialog_FixedSize = global::PathwayGames.Droid.Resource.Style.Base_Theme_AppCompat_Dialog_FixedSize;
-			global::AiForms.Renderers.Droid.Resource.Style.Base_Theme_AppCompat_Dialog_MinWidth = global::PathwayGames.Droid.Resource.Style.Base_Theme_AppCompat_Dialog_MinWidth;
-			global::AiForms.Renderers.Droid.Resource.Style.Base_Theme_AppCompat_DialogWhenLarge = global::PathwayGames.Droid.Resource.Style.Base_Theme_AppCompat_DialogWhenLarge;
-			global::AiForms.Renderers.Droid.Resource.Style.Base_Theme_AppCompat_Light = global::PathwayGames.Droid.Resource.Style.Base_Theme_AppCompat_Light;
-			global::AiForms.Renderers.Droid.Resource.Style.Base_Theme_AppCompat_Light_DarkActionBar = global::PathwayGames.Droid.Resource.Style.Base_Theme_AppCompat_Light_DarkActionBar;
-			global::AiForms.Renderers.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog = global::PathwayGames.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog;
-			global::AiForms.Renderers.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog_Alert = global::PathwayGames.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog_Alert;
-			global::AiForms.Renderers.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog_FixedSize = global::PathwayGames.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog_FixedSize;
-			global::AiForms.Renderers.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog_MinWidth = global::PathwayGames.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog_MinWidth;
-			global::AiForms.Renderers.Droid.Resource.Style.Base_Theme_AppCompat_Light_DialogWhenLarge = global::PathwayGames.Droid.Resource.Style.Base_Theme_AppCompat_Light_DialogWhenLarge;
-			global::AiForms.Renderers.Droid.Resource.Style.Base_Theme_MaterialComponents = global::PathwayGames.Droid.Resource.Style.Base_Theme_MaterialComponents;
-			global::AiForms.Renderers.Droid.Resource.Style.Base_Theme_MaterialComponents_Bridge = global::PathwayGames.Droid.Resource.Style.Base_Theme_MaterialComponents_Bridge;
-			global::AiForms.Renderers.Droid.Resource.Style.Base_Theme_MaterialComponents_CompactMenu = global::PathwayGames.Droid.Resource.Style.Base_Theme_MaterialComponents_CompactMenu;
-			global::AiForms.Renderers.Droid.Resource.Style.Base_Theme_MaterialComponents_Dialog = global::PathwayGames.Droid.Resource.Style.Base_Theme_MaterialComponents_Dialog;
-			global::AiForms.Renderers.Droid.Resource.Style.Base_Theme_MaterialComponents_Dialog_Alert = global::PathwayGames.Droid.Resource.Style.Base_Theme_MaterialComponents_Dialog_Alert;
-			global::AiForms.Renderers.Droid.Resource.Style.Base_Theme_MaterialComponents_Dialog_FixedSize = global::PathwayGames.Droid.Resource.Style.Base_Theme_MaterialComponents_Dialog_FixedSize;
-			global::AiForms.Renderers.Droid.Resource.Style.Base_Theme_MaterialComponents_Dialog_MinWidth = global::PathwayGames.Droid.Resource.Style.Base_Theme_MaterialComponents_Dialog_MinWidth;
-			global::AiForms.Renderers.Droid.Resource.Style.Base_Theme_MaterialComponents_DialogWhenLarge = global::PathwayGames.Droid.Resource.Style.Base_Theme_MaterialComponents_DialogWhenLarge;
-			global::AiForms.Renderers.Droid.Resource.Style.Base_Theme_MaterialComponents_Light = global::PathwayGames.Droid.Resource.Style.Base_Theme_MaterialComponents_Light;
-			global::AiForms.Renderers.Droid.Resource.Style.Base_Theme_MaterialComponents_Light_Bridge = global::PathwayGames.Droid.Resource.Style.Base_Theme_MaterialComponents_Light_Bridge;
-			global::AiForms.Renderers.Droid.Resource.Style.Base_Theme_MaterialComponents_Light_DarkActionBar = global::PathwayGames.Droid.Resource.Style.Base_Theme_MaterialComponents_Light_DarkActionBar;
-			global::AiForms.Renderers.Droid.Resource.Style.Base_Theme_MaterialComponents_Light_DarkActionBar_Bridge = global::PathwayGames.Droid.Resource.Style.Base_Theme_MaterialComponents_Light_DarkActionBar_Bridge;
-			global::AiForms.Renderers.Droid.Resource.Style.Base_Theme_MaterialComponents_Light_Dialog = global::PathwayGames.Droid.Resource.Style.Base_Theme_MaterialComponents_Light_Dialog;
-			global::AiForms.Renderers.Droid.Resource.Style.Base_Theme_MaterialComponents_Light_Dialog_Alert = global::PathwayGames.Droid.Resource.Style.Base_Theme_MaterialComponents_Light_Dialog_Alert;
-			global::AiForms.Renderers.Droid.Resource.Style.Base_Theme_MaterialComponents_Light_Dialog_FixedSize = global::PathwayGames.Droid.Resource.Style.Base_Theme_MaterialComponents_Light_Dialog_FixedSize;
-			global::AiForms.Renderers.Droid.Resource.Style.Base_Theme_MaterialComponents_Light_Dialog_MinWidth = global::PathwayGames.Droid.Resource.Style.Base_Theme_MaterialComponents_Light_Dialog_MinWidth;
-			global::AiForms.Renderers.Droid.Resource.Style.Base_Theme_MaterialComponents_Light_DialogWhenLarge = global::PathwayGames.Droid.Resource.Style.Base_Theme_MaterialComponents_Light_DialogWhenLarge;
 			global::AiForms.Renderers.Droid.Resource.Style.Base_ThemeOverlay_AppCompat = global::PathwayGames.Droid.Resource.Style.Base_ThemeOverlay_AppCompat;
 			global::AiForms.Renderers.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_ActionBar = global::PathwayGames.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_ActionBar;
 			global::AiForms.Renderers.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Dark = global::PathwayGames.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Dark;
@@ -6941,6 +6599,39 @@ namespace PathwayGames.Droid
 			global::AiForms.Renderers.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Light = global::PathwayGames.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Light;
 			global::AiForms.Renderers.Droid.Resource.Style.Base_ThemeOverlay_MaterialComponents_Dialog = global::PathwayGames.Droid.Resource.Style.Base_ThemeOverlay_MaterialComponents_Dialog;
 			global::AiForms.Renderers.Droid.Resource.Style.Base_ThemeOverlay_MaterialComponents_Dialog_Alert = global::PathwayGames.Droid.Resource.Style.Base_ThemeOverlay_MaterialComponents_Dialog_Alert;
+			global::AiForms.Renderers.Droid.Resource.Style.Base_Theme_AppCompat = global::PathwayGames.Droid.Resource.Style.Base_Theme_AppCompat;
+			global::AiForms.Renderers.Droid.Resource.Style.Base_Theme_AppCompat_CompactMenu = global::PathwayGames.Droid.Resource.Style.Base_Theme_AppCompat_CompactMenu;
+			global::AiForms.Renderers.Droid.Resource.Style.Base_Theme_AppCompat_Dialog = global::PathwayGames.Droid.Resource.Style.Base_Theme_AppCompat_Dialog;
+			global::AiForms.Renderers.Droid.Resource.Style.Base_Theme_AppCompat_DialogWhenLarge = global::PathwayGames.Droid.Resource.Style.Base_Theme_AppCompat_DialogWhenLarge;
+			global::AiForms.Renderers.Droid.Resource.Style.Base_Theme_AppCompat_Dialog_Alert = global::PathwayGames.Droid.Resource.Style.Base_Theme_AppCompat_Dialog_Alert;
+			global::AiForms.Renderers.Droid.Resource.Style.Base_Theme_AppCompat_Dialog_FixedSize = global::PathwayGames.Droid.Resource.Style.Base_Theme_AppCompat_Dialog_FixedSize;
+			global::AiForms.Renderers.Droid.Resource.Style.Base_Theme_AppCompat_Dialog_MinWidth = global::PathwayGames.Droid.Resource.Style.Base_Theme_AppCompat_Dialog_MinWidth;
+			global::AiForms.Renderers.Droid.Resource.Style.Base_Theme_AppCompat_Light = global::PathwayGames.Droid.Resource.Style.Base_Theme_AppCompat_Light;
+			global::AiForms.Renderers.Droid.Resource.Style.Base_Theme_AppCompat_Light_DarkActionBar = global::PathwayGames.Droid.Resource.Style.Base_Theme_AppCompat_Light_DarkActionBar;
+			global::AiForms.Renderers.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog = global::PathwayGames.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog;
+			global::AiForms.Renderers.Droid.Resource.Style.Base_Theme_AppCompat_Light_DialogWhenLarge = global::PathwayGames.Droid.Resource.Style.Base_Theme_AppCompat_Light_DialogWhenLarge;
+			global::AiForms.Renderers.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog_Alert = global::PathwayGames.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog_Alert;
+			global::AiForms.Renderers.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog_FixedSize = global::PathwayGames.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog_FixedSize;
+			global::AiForms.Renderers.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog_MinWidth = global::PathwayGames.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog_MinWidth;
+			global::AiForms.Renderers.Droid.Resource.Style.Base_Theme_MaterialComponents = global::PathwayGames.Droid.Resource.Style.Base_Theme_MaterialComponents;
+			global::AiForms.Renderers.Droid.Resource.Style.Base_Theme_MaterialComponents_Bridge = global::PathwayGames.Droid.Resource.Style.Base_Theme_MaterialComponents_Bridge;
+			global::AiForms.Renderers.Droid.Resource.Style.Base_Theme_MaterialComponents_CompactMenu = global::PathwayGames.Droid.Resource.Style.Base_Theme_MaterialComponents_CompactMenu;
+			global::AiForms.Renderers.Droid.Resource.Style.Base_Theme_MaterialComponents_Dialog = global::PathwayGames.Droid.Resource.Style.Base_Theme_MaterialComponents_Dialog;
+			global::AiForms.Renderers.Droid.Resource.Style.Base_Theme_MaterialComponents_DialogWhenLarge = global::PathwayGames.Droid.Resource.Style.Base_Theme_MaterialComponents_DialogWhenLarge;
+			global::AiForms.Renderers.Droid.Resource.Style.Base_Theme_MaterialComponents_Dialog_Alert = global::PathwayGames.Droid.Resource.Style.Base_Theme_MaterialComponents_Dialog_Alert;
+			global::AiForms.Renderers.Droid.Resource.Style.Base_Theme_MaterialComponents_Dialog_FixedSize = global::PathwayGames.Droid.Resource.Style.Base_Theme_MaterialComponents_Dialog_FixedSize;
+			global::AiForms.Renderers.Droid.Resource.Style.Base_Theme_MaterialComponents_Dialog_MinWidth = global::PathwayGames.Droid.Resource.Style.Base_Theme_MaterialComponents_Dialog_MinWidth;
+			global::AiForms.Renderers.Droid.Resource.Style.Base_Theme_MaterialComponents_Light = global::PathwayGames.Droid.Resource.Style.Base_Theme_MaterialComponents_Light;
+			global::AiForms.Renderers.Droid.Resource.Style.Base_Theme_MaterialComponents_Light_Bridge = global::PathwayGames.Droid.Resource.Style.Base_Theme_MaterialComponents_Light_Bridge;
+			global::AiForms.Renderers.Droid.Resource.Style.Base_Theme_MaterialComponents_Light_DarkActionBar = global::PathwayGames.Droid.Resource.Style.Base_Theme_MaterialComponents_Light_DarkActionBar;
+			global::AiForms.Renderers.Droid.Resource.Style.Base_Theme_MaterialComponents_Light_DarkActionBar_Bridge = global::PathwayGames.Droid.Resource.Style.Base_Theme_MaterialComponents_Light_DarkActionBar_Bridge;
+			global::AiForms.Renderers.Droid.Resource.Style.Base_Theme_MaterialComponents_Light_Dialog = global::PathwayGames.Droid.Resource.Style.Base_Theme_MaterialComponents_Light_Dialog;
+			global::AiForms.Renderers.Droid.Resource.Style.Base_Theme_MaterialComponents_Light_DialogWhenLarge = global::PathwayGames.Droid.Resource.Style.Base_Theme_MaterialComponents_Light_DialogWhenLarge;
+			global::AiForms.Renderers.Droid.Resource.Style.Base_Theme_MaterialComponents_Light_Dialog_Alert = global::PathwayGames.Droid.Resource.Style.Base_Theme_MaterialComponents_Light_Dialog_Alert;
+			global::AiForms.Renderers.Droid.Resource.Style.Base_Theme_MaterialComponents_Light_Dialog_FixedSize = global::PathwayGames.Droid.Resource.Style.Base_Theme_MaterialComponents_Light_Dialog_FixedSize;
+			global::AiForms.Renderers.Droid.Resource.Style.Base_Theme_MaterialComponents_Light_Dialog_MinWidth = global::PathwayGames.Droid.Resource.Style.Base_Theme_MaterialComponents_Light_Dialog_MinWidth;
+			global::AiForms.Renderers.Droid.Resource.Style.Base_V14_ThemeOverlay_MaterialComponents_Dialog = global::PathwayGames.Droid.Resource.Style.Base_V14_ThemeOverlay_MaterialComponents_Dialog;
+			global::AiForms.Renderers.Droid.Resource.Style.Base_V14_ThemeOverlay_MaterialComponents_Dialog_Alert = global::PathwayGames.Droid.Resource.Style.Base_V14_ThemeOverlay_MaterialComponents_Dialog_Alert;
 			global::AiForms.Renderers.Droid.Resource.Style.Base_V14_Theme_MaterialComponents = global::PathwayGames.Droid.Resource.Style.Base_V14_Theme_MaterialComponents;
 			global::AiForms.Renderers.Droid.Resource.Style.Base_V14_Theme_MaterialComponents_Bridge = global::PathwayGames.Droid.Resource.Style.Base_V14_Theme_MaterialComponents_Bridge;
 			global::AiForms.Renderers.Droid.Resource.Style.Base_V14_Theme_MaterialComponents_Dialog = global::PathwayGames.Droid.Resource.Style.Base_V14_Theme_MaterialComponents_Dialog;
@@ -6948,13 +6639,11 @@ namespace PathwayGames.Droid
 			global::AiForms.Renderers.Droid.Resource.Style.Base_V14_Theme_MaterialComponents_Light_Bridge = global::PathwayGames.Droid.Resource.Style.Base_V14_Theme_MaterialComponents_Light_Bridge;
 			global::AiForms.Renderers.Droid.Resource.Style.Base_V14_Theme_MaterialComponents_Light_DarkActionBar_Bridge = global::PathwayGames.Droid.Resource.Style.Base_V14_Theme_MaterialComponents_Light_DarkActionBar_Bridge;
 			global::AiForms.Renderers.Droid.Resource.Style.Base_V14_Theme_MaterialComponents_Light_Dialog = global::PathwayGames.Droid.Resource.Style.Base_V14_Theme_MaterialComponents_Light_Dialog;
-			global::AiForms.Renderers.Droid.Resource.Style.Base_V14_ThemeOverlay_MaterialComponents_Dialog = global::PathwayGames.Droid.Resource.Style.Base_V14_ThemeOverlay_MaterialComponents_Dialog;
-			global::AiForms.Renderers.Droid.Resource.Style.Base_V14_ThemeOverlay_MaterialComponents_Dialog_Alert = global::PathwayGames.Droid.Resource.Style.Base_V14_ThemeOverlay_MaterialComponents_Dialog_Alert;
+			global::AiForms.Renderers.Droid.Resource.Style.Base_V21_ThemeOverlay_AppCompat_Dialog = global::PathwayGames.Droid.Resource.Style.Base_V21_ThemeOverlay_AppCompat_Dialog;
 			global::AiForms.Renderers.Droid.Resource.Style.Base_V21_Theme_AppCompat = global::PathwayGames.Droid.Resource.Style.Base_V21_Theme_AppCompat;
 			global::AiForms.Renderers.Droid.Resource.Style.Base_V21_Theme_AppCompat_Dialog = global::PathwayGames.Droid.Resource.Style.Base_V21_Theme_AppCompat_Dialog;
 			global::AiForms.Renderers.Droid.Resource.Style.Base_V21_Theme_AppCompat_Light = global::PathwayGames.Droid.Resource.Style.Base_V21_Theme_AppCompat_Light;
 			global::AiForms.Renderers.Droid.Resource.Style.Base_V21_Theme_AppCompat_Light_Dialog = global::PathwayGames.Droid.Resource.Style.Base_V21_Theme_AppCompat_Light_Dialog;
-			global::AiForms.Renderers.Droid.Resource.Style.Base_V21_ThemeOverlay_AppCompat_Dialog = global::PathwayGames.Droid.Resource.Style.Base_V21_ThemeOverlay_AppCompat_Dialog;
 			global::AiForms.Renderers.Droid.Resource.Style.Base_V22_Theme_AppCompat = global::PathwayGames.Droid.Resource.Style.Base_V22_Theme_AppCompat;
 			global::AiForms.Renderers.Droid.Resource.Style.Base_V22_Theme_AppCompat_Light = global::PathwayGames.Droid.Resource.Style.Base_V22_Theme_AppCompat_Light;
 			global::AiForms.Renderers.Droid.Resource.Style.Base_V23_Theme_AppCompat = global::PathwayGames.Droid.Resource.Style.Base_V23_Theme_AppCompat;
@@ -6964,11 +6653,11 @@ namespace PathwayGames.Droid
 			global::AiForms.Renderers.Droid.Resource.Style.Base_V26_Widget_AppCompat_Toolbar = global::PathwayGames.Droid.Resource.Style.Base_V26_Widget_AppCompat_Toolbar;
 			global::AiForms.Renderers.Droid.Resource.Style.Base_V28_Theme_AppCompat = global::PathwayGames.Droid.Resource.Style.Base_V28_Theme_AppCompat;
 			global::AiForms.Renderers.Droid.Resource.Style.Base_V28_Theme_AppCompat_Light = global::PathwayGames.Droid.Resource.Style.Base_V28_Theme_AppCompat_Light;
+			global::AiForms.Renderers.Droid.Resource.Style.Base_V7_ThemeOverlay_AppCompat_Dialog = global::PathwayGames.Droid.Resource.Style.Base_V7_ThemeOverlay_AppCompat_Dialog;
 			global::AiForms.Renderers.Droid.Resource.Style.Base_V7_Theme_AppCompat = global::PathwayGames.Droid.Resource.Style.Base_V7_Theme_AppCompat;
 			global::AiForms.Renderers.Droid.Resource.Style.Base_V7_Theme_AppCompat_Dialog = global::PathwayGames.Droid.Resource.Style.Base_V7_Theme_AppCompat_Dialog;
 			global::AiForms.Renderers.Droid.Resource.Style.Base_V7_Theme_AppCompat_Light = global::PathwayGames.Droid.Resource.Style.Base_V7_Theme_AppCompat_Light;
 			global::AiForms.Renderers.Droid.Resource.Style.Base_V7_Theme_AppCompat_Light_Dialog = global::PathwayGames.Droid.Resource.Style.Base_V7_Theme_AppCompat_Light_Dialog;
-			global::AiForms.Renderers.Droid.Resource.Style.Base_V7_ThemeOverlay_AppCompat_Dialog = global::PathwayGames.Droid.Resource.Style.Base_V7_ThemeOverlay_AppCompat_Dialog;
 			global::AiForms.Renderers.Droid.Resource.Style.Base_V7_Widget_AppCompat_AutoCompleteTextView = global::PathwayGames.Droid.Resource.Style.Base_V7_Widget_AppCompat_AutoCompleteTextView;
 			global::AiForms.Renderers.Droid.Resource.Style.Base_V7_Widget_AppCompat_EditText = global::PathwayGames.Droid.Resource.Style.Base_V7_Widget_AppCompat_EditText;
 			global::AiForms.Renderers.Droid.Resource.Style.Base_V7_Widget_AppCompat_Toolbar = global::PathwayGames.Droid.Resource.Style.Base_V7_Widget_AppCompat_Toolbar;
@@ -6984,13 +6673,13 @@ namespace PathwayGames.Droid
 			global::AiForms.Renderers.Droid.Resource.Style.Base_Widget_AppCompat_ActivityChooserView = global::PathwayGames.Droid.Resource.Style.Base_Widget_AppCompat_ActivityChooserView;
 			global::AiForms.Renderers.Droid.Resource.Style.Base_Widget_AppCompat_AutoCompleteTextView = global::PathwayGames.Droid.Resource.Style.Base_Widget_AppCompat_AutoCompleteTextView;
 			global::AiForms.Renderers.Droid.Resource.Style.Base_Widget_AppCompat_Button = global::PathwayGames.Droid.Resource.Style.Base_Widget_AppCompat_Button;
+			global::AiForms.Renderers.Droid.Resource.Style.Base_Widget_AppCompat_ButtonBar = global::PathwayGames.Droid.Resource.Style.Base_Widget_AppCompat_ButtonBar;
+			global::AiForms.Renderers.Droid.Resource.Style.Base_Widget_AppCompat_ButtonBar_AlertDialog = global::PathwayGames.Droid.Resource.Style.Base_Widget_AppCompat_ButtonBar_AlertDialog;
 			global::AiForms.Renderers.Droid.Resource.Style.Base_Widget_AppCompat_Button_Borderless = global::PathwayGames.Droid.Resource.Style.Base_Widget_AppCompat_Button_Borderless;
 			global::AiForms.Renderers.Droid.Resource.Style.Base_Widget_AppCompat_Button_Borderless_Colored = global::PathwayGames.Droid.Resource.Style.Base_Widget_AppCompat_Button_Borderless_Colored;
 			global::AiForms.Renderers.Droid.Resource.Style.Base_Widget_AppCompat_Button_ButtonBar_AlertDialog = global::PathwayGames.Droid.Resource.Style.Base_Widget_AppCompat_Button_ButtonBar_AlertDialog;
 			global::AiForms.Renderers.Droid.Resource.Style.Base_Widget_AppCompat_Button_Colored = global::PathwayGames.Droid.Resource.Style.Base_Widget_AppCompat_Button_Colored;
 			global::AiForms.Renderers.Droid.Resource.Style.Base_Widget_AppCompat_Button_Small = global::PathwayGames.Droid.Resource.Style.Base_Widget_AppCompat_Button_Small;
-			global::AiForms.Renderers.Droid.Resource.Style.Base_Widget_AppCompat_ButtonBar = global::PathwayGames.Droid.Resource.Style.Base_Widget_AppCompat_ButtonBar;
-			global::AiForms.Renderers.Droid.Resource.Style.Base_Widget_AppCompat_ButtonBar_AlertDialog = global::PathwayGames.Droid.Resource.Style.Base_Widget_AppCompat_ButtonBar_AlertDialog;
 			global::AiForms.Renderers.Droid.Resource.Style.Base_Widget_AppCompat_CompoundButton_CheckBox = global::PathwayGames.Droid.Resource.Style.Base_Widget_AppCompat_CompoundButton_CheckBox;
 			global::AiForms.Renderers.Droid.Resource.Style.Base_Widget_AppCompat_CompoundButton_RadioButton = global::PathwayGames.Droid.Resource.Style.Base_Widget_AppCompat_CompoundButton_RadioButton;
 			global::AiForms.Renderers.Droid.Resource.Style.Base_Widget_AppCompat_CompoundButton_Switch = global::PathwayGames.Droid.Resource.Style.Base_Widget_AppCompat_CompoundButton_Switch;
@@ -7036,6 +6725,9 @@ namespace PathwayGames.Droid
 			global::AiForms.Renderers.Droid.Resource.Style.CardView = global::PathwayGames.Droid.Resource.Style.CardView;
 			global::AiForms.Renderers.Droid.Resource.Style.CardView_Dark = global::PathwayGames.Droid.Resource.Style.CardView_Dark;
 			global::AiForms.Renderers.Droid.Resource.Style.CardView_Light = global::PathwayGames.Droid.Resource.Style.CardView_Light;
+			global::AiForms.Renderers.Droid.Resource.Style.collectionViewTheme = global::PathwayGames.Droid.Resource.Style.collectionViewTheme;
+			global::AiForms.Renderers.Droid.Resource.Style.MainTheme = global::PathwayGames.Droid.Resource.Style.MainTheme;
+			global::AiForms.Renderers.Droid.Resource.Style.MainTheme_Base = global::PathwayGames.Droid.Resource.Style.MainTheme_Base;
 			global::AiForms.Renderers.Droid.Resource.Style.Platform_AppCompat = global::PathwayGames.Droid.Resource.Style.Platform_AppCompat;
 			global::AiForms.Renderers.Droid.Resource.Style.Platform_AppCompat_Light = global::PathwayGames.Droid.Resource.Style.Platform_AppCompat_Light;
 			global::AiForms.Renderers.Droid.Resource.Style.Platform_MaterialComponents = global::PathwayGames.Droid.Resource.Style.Platform_MaterialComponents;
@@ -7059,14 +6751,18 @@ namespace PathwayGames.Droid
 			global::AiForms.Renderers.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_SubmenuArrow = global::PathwayGames.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_SubmenuArrow;
 			global::AiForms.Renderers.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_Text = global::PathwayGames.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_Text;
 			global::AiForms.Renderers.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_Title = global::PathwayGames.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_Title;
+			global::AiForms.Renderers.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_SearchView_MagIcon = global::PathwayGames.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_SearchView_MagIcon;
 			global::AiForms.Renderers.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown = global::PathwayGames.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown;
 			global::AiForms.Renderers.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon1 = global::PathwayGames.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon1;
 			global::AiForms.Renderers.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon2 = global::PathwayGames.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon2;
 			global::AiForms.Renderers.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Query = global::PathwayGames.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Query;
 			global::AiForms.Renderers.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Text = global::PathwayGames.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Text;
-			global::AiForms.Renderers.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_SearchView_MagIcon = global::PathwayGames.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_SearchView_MagIcon;
 			global::AiForms.Renderers.Droid.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton = global::PathwayGames.Droid.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton;
 			global::AiForms.Renderers.Droid.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton_Overflow = global::PathwayGames.Droid.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton_Overflow;
+			global::AiForms.Renderers.Droid.Resource.Style.scrollViewScrollBars = global::PathwayGames.Droid.Resource.Style.scrollViewScrollBars;
+			global::AiForms.Renderers.Droid.Resource.Style.scrollViewTheme = global::PathwayGames.Droid.Resource.Style.scrollViewTheme;
+			global::AiForms.Renderers.Droid.Resource.Style.settingsViewScrollBars = global::PathwayGames.Droid.Resource.Style.settingsViewScrollBars;
+			global::AiForms.Renderers.Droid.Resource.Style.settingsViewTheme = global::PathwayGames.Droid.Resource.Style.settingsViewTheme;
 			global::AiForms.Renderers.Droid.Resource.Style.TextAppearance_AppCompat = global::PathwayGames.Droid.Resource.Style.TextAppearance_AppCompat;
 			global::AiForms.Renderers.Droid.Resource.Style.TextAppearance_AppCompat_Body1 = global::PathwayGames.Droid.Resource.Style.TextAppearance_AppCompat_Body1;
 			global::AiForms.Renderers.Droid.Resource.Style.TextAppearance_AppCompat_Body2 = global::PathwayGames.Droid.Resource.Style.TextAppearance_AppCompat_Body2;
@@ -7148,64 +6844,9 @@ namespace PathwayGames.Droid
 			global::AiForms.Renderers.Droid.Resource.Style.TextAppearance_MaterialComponents_Subtitle1 = global::PathwayGames.Droid.Resource.Style.TextAppearance_MaterialComponents_Subtitle1;
 			global::AiForms.Renderers.Droid.Resource.Style.TextAppearance_MaterialComponents_Subtitle2 = global::PathwayGames.Droid.Resource.Style.TextAppearance_MaterialComponents_Subtitle2;
 			global::AiForms.Renderers.Droid.Resource.Style.TextAppearance_MaterialComponents_Tab = global::PathwayGames.Droid.Resource.Style.TextAppearance_MaterialComponents_Tab;
-			global::AiForms.Renderers.Droid.Resource.Style.TextAppearance_MediaRouter_PrimaryText = global::PathwayGames.Droid.Resource.Style.TextAppearance_MediaRouter_PrimaryText;
-			global::AiForms.Renderers.Droid.Resource.Style.TextAppearance_MediaRouter_SecondaryText = global::PathwayGames.Droid.Resource.Style.TextAppearance_MediaRouter_SecondaryText;
-			global::AiForms.Renderers.Droid.Resource.Style.TextAppearance_MediaRouter_Title = global::PathwayGames.Droid.Resource.Style.TextAppearance_MediaRouter_Title;
 			global::AiForms.Renderers.Droid.Resource.Style.TextAppearance_Widget_AppCompat_ExpandedMenu_Item = global::PathwayGames.Droid.Resource.Style.TextAppearance_Widget_AppCompat_ExpandedMenu_Item;
 			global::AiForms.Renderers.Droid.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Subtitle = global::PathwayGames.Droid.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Subtitle;
 			global::AiForms.Renderers.Droid.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Title = global::PathwayGames.Droid.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Title;
-			global::AiForms.Renderers.Droid.Resource.Style.Theme_AppCompat = global::PathwayGames.Droid.Resource.Style.Theme_AppCompat;
-			global::AiForms.Renderers.Droid.Resource.Style.Theme_AppCompat_CompactMenu = global::PathwayGames.Droid.Resource.Style.Theme_AppCompat_CompactMenu;
-			global::AiForms.Renderers.Droid.Resource.Style.Theme_AppCompat_DayNight = global::PathwayGames.Droid.Resource.Style.Theme_AppCompat_DayNight;
-			global::AiForms.Renderers.Droid.Resource.Style.Theme_AppCompat_DayNight_DarkActionBar = global::PathwayGames.Droid.Resource.Style.Theme_AppCompat_DayNight_DarkActionBar;
-			global::AiForms.Renderers.Droid.Resource.Style.Theme_AppCompat_DayNight_Dialog = global::PathwayGames.Droid.Resource.Style.Theme_AppCompat_DayNight_Dialog;
-			global::AiForms.Renderers.Droid.Resource.Style.Theme_AppCompat_DayNight_Dialog_Alert = global::PathwayGames.Droid.Resource.Style.Theme_AppCompat_DayNight_Dialog_Alert;
-			global::AiForms.Renderers.Droid.Resource.Style.Theme_AppCompat_DayNight_Dialog_MinWidth = global::PathwayGames.Droid.Resource.Style.Theme_AppCompat_DayNight_Dialog_MinWidth;
-			global::AiForms.Renderers.Droid.Resource.Style.Theme_AppCompat_DayNight_DialogWhenLarge = global::PathwayGames.Droid.Resource.Style.Theme_AppCompat_DayNight_DialogWhenLarge;
-			global::AiForms.Renderers.Droid.Resource.Style.Theme_AppCompat_DayNight_NoActionBar = global::PathwayGames.Droid.Resource.Style.Theme_AppCompat_DayNight_NoActionBar;
-			global::AiForms.Renderers.Droid.Resource.Style.Theme_AppCompat_Dialog = global::PathwayGames.Droid.Resource.Style.Theme_AppCompat_Dialog;
-			global::AiForms.Renderers.Droid.Resource.Style.Theme_AppCompat_Dialog_Alert = global::PathwayGames.Droid.Resource.Style.Theme_AppCompat_Dialog_Alert;
-			global::AiForms.Renderers.Droid.Resource.Style.Theme_AppCompat_Dialog_MinWidth = global::PathwayGames.Droid.Resource.Style.Theme_AppCompat_Dialog_MinWidth;
-			global::AiForms.Renderers.Droid.Resource.Style.Theme_AppCompat_DialogWhenLarge = global::PathwayGames.Droid.Resource.Style.Theme_AppCompat_DialogWhenLarge;
-			global::AiForms.Renderers.Droid.Resource.Style.Theme_AppCompat_Light = global::PathwayGames.Droid.Resource.Style.Theme_AppCompat_Light;
-			global::AiForms.Renderers.Droid.Resource.Style.Theme_AppCompat_Light_DarkActionBar = global::PathwayGames.Droid.Resource.Style.Theme_AppCompat_Light_DarkActionBar;
-			global::AiForms.Renderers.Droid.Resource.Style.Theme_AppCompat_Light_Dialog = global::PathwayGames.Droid.Resource.Style.Theme_AppCompat_Light_Dialog;
-			global::AiForms.Renderers.Droid.Resource.Style.Theme_AppCompat_Light_Dialog_Alert = global::PathwayGames.Droid.Resource.Style.Theme_AppCompat_Light_Dialog_Alert;
-			global::AiForms.Renderers.Droid.Resource.Style.Theme_AppCompat_Light_Dialog_MinWidth = global::PathwayGames.Droid.Resource.Style.Theme_AppCompat_Light_Dialog_MinWidth;
-			global::AiForms.Renderers.Droid.Resource.Style.Theme_AppCompat_Light_DialogWhenLarge = global::PathwayGames.Droid.Resource.Style.Theme_AppCompat_Light_DialogWhenLarge;
-			global::AiForms.Renderers.Droid.Resource.Style.Theme_AppCompat_Light_NoActionBar = global::PathwayGames.Droid.Resource.Style.Theme_AppCompat_Light_NoActionBar;
-			global::AiForms.Renderers.Droid.Resource.Style.Theme_AppCompat_NoActionBar = global::PathwayGames.Droid.Resource.Style.Theme_AppCompat_NoActionBar;
-			global::AiForms.Renderers.Droid.Resource.Style.Theme_Design = global::PathwayGames.Droid.Resource.Style.Theme_Design;
-			global::AiForms.Renderers.Droid.Resource.Style.Theme_Design_BottomSheetDialog = global::PathwayGames.Droid.Resource.Style.Theme_Design_BottomSheetDialog;
-			global::AiForms.Renderers.Droid.Resource.Style.Theme_Design_Light = global::PathwayGames.Droid.Resource.Style.Theme_Design_Light;
-			global::AiForms.Renderers.Droid.Resource.Style.Theme_Design_Light_BottomSheetDialog = global::PathwayGames.Droid.Resource.Style.Theme_Design_Light_BottomSheetDialog;
-			global::AiForms.Renderers.Droid.Resource.Style.Theme_Design_Light_NoActionBar = global::PathwayGames.Droid.Resource.Style.Theme_Design_Light_NoActionBar;
-			global::AiForms.Renderers.Droid.Resource.Style.Theme_Design_NoActionBar = global::PathwayGames.Droid.Resource.Style.Theme_Design_NoActionBar;
-			global::AiForms.Renderers.Droid.Resource.Style.Theme_MaterialComponents = global::PathwayGames.Droid.Resource.Style.Theme_MaterialComponents;
-			global::AiForms.Renderers.Droid.Resource.Style.Theme_MaterialComponents_BottomSheetDialog = global::PathwayGames.Droid.Resource.Style.Theme_MaterialComponents_BottomSheetDialog;
-			global::AiForms.Renderers.Droid.Resource.Style.Theme_MaterialComponents_Bridge = global::PathwayGames.Droid.Resource.Style.Theme_MaterialComponents_Bridge;
-			global::AiForms.Renderers.Droid.Resource.Style.Theme_MaterialComponents_CompactMenu = global::PathwayGames.Droid.Resource.Style.Theme_MaterialComponents_CompactMenu;
-			global::AiForms.Renderers.Droid.Resource.Style.Theme_MaterialComponents_Dialog = global::PathwayGames.Droid.Resource.Style.Theme_MaterialComponents_Dialog;
-			global::AiForms.Renderers.Droid.Resource.Style.Theme_MaterialComponents_Dialog_Alert = global::PathwayGames.Droid.Resource.Style.Theme_MaterialComponents_Dialog_Alert;
-			global::AiForms.Renderers.Droid.Resource.Style.Theme_MaterialComponents_Dialog_MinWidth = global::PathwayGames.Droid.Resource.Style.Theme_MaterialComponents_Dialog_MinWidth;
-			global::AiForms.Renderers.Droid.Resource.Style.Theme_MaterialComponents_DialogWhenLarge = global::PathwayGames.Droid.Resource.Style.Theme_MaterialComponents_DialogWhenLarge;
-			global::AiForms.Renderers.Droid.Resource.Style.Theme_MaterialComponents_Light = global::PathwayGames.Droid.Resource.Style.Theme_MaterialComponents_Light;
-			global::AiForms.Renderers.Droid.Resource.Style.Theme_MaterialComponents_Light_BottomSheetDialog = global::PathwayGames.Droid.Resource.Style.Theme_MaterialComponents_Light_BottomSheetDialog;
-			global::AiForms.Renderers.Droid.Resource.Style.Theme_MaterialComponents_Light_Bridge = global::PathwayGames.Droid.Resource.Style.Theme_MaterialComponents_Light_Bridge;
-			global::AiForms.Renderers.Droid.Resource.Style.Theme_MaterialComponents_Light_DarkActionBar = global::PathwayGames.Droid.Resource.Style.Theme_MaterialComponents_Light_DarkActionBar;
-			global::AiForms.Renderers.Droid.Resource.Style.Theme_MaterialComponents_Light_DarkActionBar_Bridge = global::PathwayGames.Droid.Resource.Style.Theme_MaterialComponents_Light_DarkActionBar_Bridge;
-			global::AiForms.Renderers.Droid.Resource.Style.Theme_MaterialComponents_Light_Dialog = global::PathwayGames.Droid.Resource.Style.Theme_MaterialComponents_Light_Dialog;
-			global::AiForms.Renderers.Droid.Resource.Style.Theme_MaterialComponents_Light_Dialog_Alert = global::PathwayGames.Droid.Resource.Style.Theme_MaterialComponents_Light_Dialog_Alert;
-			global::AiForms.Renderers.Droid.Resource.Style.Theme_MaterialComponents_Light_Dialog_MinWidth = global::PathwayGames.Droid.Resource.Style.Theme_MaterialComponents_Light_Dialog_MinWidth;
-			global::AiForms.Renderers.Droid.Resource.Style.Theme_MaterialComponents_Light_DialogWhenLarge = global::PathwayGames.Droid.Resource.Style.Theme_MaterialComponents_Light_DialogWhenLarge;
-			global::AiForms.Renderers.Droid.Resource.Style.Theme_MaterialComponents_Light_NoActionBar = global::PathwayGames.Droid.Resource.Style.Theme_MaterialComponents_Light_NoActionBar;
-			global::AiForms.Renderers.Droid.Resource.Style.Theme_MaterialComponents_Light_NoActionBar_Bridge = global::PathwayGames.Droid.Resource.Style.Theme_MaterialComponents_Light_NoActionBar_Bridge;
-			global::AiForms.Renderers.Droid.Resource.Style.Theme_MaterialComponents_NoActionBar = global::PathwayGames.Droid.Resource.Style.Theme_MaterialComponents_NoActionBar;
-			global::AiForms.Renderers.Droid.Resource.Style.Theme_MaterialComponents_NoActionBar_Bridge = global::PathwayGames.Droid.Resource.Style.Theme_MaterialComponents_NoActionBar_Bridge;
-			global::AiForms.Renderers.Droid.Resource.Style.Theme_MediaRouter = global::PathwayGames.Droid.Resource.Style.Theme_MediaRouter;
-			global::AiForms.Renderers.Droid.Resource.Style.Theme_MediaRouter_Light = global::PathwayGames.Droid.Resource.Style.Theme_MediaRouter_Light;
-			global::AiForms.Renderers.Droid.Resource.Style.Theme_MediaRouter_Light_DarkControlPanel = global::PathwayGames.Droid.Resource.Style.Theme_MediaRouter_Light_DarkControlPanel;
-			global::AiForms.Renderers.Droid.Resource.Style.Theme_MediaRouter_LightControlPanel = global::PathwayGames.Droid.Resource.Style.Theme_MediaRouter_LightControlPanel;
 			global::AiForms.Renderers.Droid.Resource.Style.ThemeOverlay_AppCompat = global::PathwayGames.Droid.Resource.Style.ThemeOverlay_AppCompat;
 			global::AiForms.Renderers.Droid.Resource.Style.ThemeOverlay_AppCompat_ActionBar = global::PathwayGames.Droid.Resource.Style.ThemeOverlay_AppCompat_ActionBar;
 			global::AiForms.Renderers.Droid.Resource.Style.ThemeOverlay_AppCompat_Dark = global::PathwayGames.Droid.Resource.Style.ThemeOverlay_AppCompat_Dark;
@@ -7225,8 +6866,54 @@ namespace PathwayGames.Droid
 			global::AiForms.Renderers.Droid.Resource.Style.ThemeOverlay_MaterialComponents_TextInputEditText_FilledBox_Dense = global::PathwayGames.Droid.Resource.Style.ThemeOverlay_MaterialComponents_TextInputEditText_FilledBox_Dense;
 			global::AiForms.Renderers.Droid.Resource.Style.ThemeOverlay_MaterialComponents_TextInputEditText_OutlinedBox = global::PathwayGames.Droid.Resource.Style.ThemeOverlay_MaterialComponents_TextInputEditText_OutlinedBox;
 			global::AiForms.Renderers.Droid.Resource.Style.ThemeOverlay_MaterialComponents_TextInputEditText_OutlinedBox_Dense = global::PathwayGames.Droid.Resource.Style.ThemeOverlay_MaterialComponents_TextInputEditText_OutlinedBox_Dense;
-			global::AiForms.Renderers.Droid.Resource.Style.ThemeOverlay_MediaRouter_Dark = global::PathwayGames.Droid.Resource.Style.ThemeOverlay_MediaRouter_Dark;
-			global::AiForms.Renderers.Droid.Resource.Style.ThemeOverlay_MediaRouter_Light = global::PathwayGames.Droid.Resource.Style.ThemeOverlay_MediaRouter_Light;
+			global::AiForms.Renderers.Droid.Resource.Style.Theme_AppCompat = global::PathwayGames.Droid.Resource.Style.Theme_AppCompat;
+			global::AiForms.Renderers.Droid.Resource.Style.Theme_AppCompat_CompactMenu = global::PathwayGames.Droid.Resource.Style.Theme_AppCompat_CompactMenu;
+			global::AiForms.Renderers.Droid.Resource.Style.Theme_AppCompat_DayNight = global::PathwayGames.Droid.Resource.Style.Theme_AppCompat_DayNight;
+			global::AiForms.Renderers.Droid.Resource.Style.Theme_AppCompat_DayNight_DarkActionBar = global::PathwayGames.Droid.Resource.Style.Theme_AppCompat_DayNight_DarkActionBar;
+			global::AiForms.Renderers.Droid.Resource.Style.Theme_AppCompat_DayNight_Dialog = global::PathwayGames.Droid.Resource.Style.Theme_AppCompat_DayNight_Dialog;
+			global::AiForms.Renderers.Droid.Resource.Style.Theme_AppCompat_DayNight_DialogWhenLarge = global::PathwayGames.Droid.Resource.Style.Theme_AppCompat_DayNight_DialogWhenLarge;
+			global::AiForms.Renderers.Droid.Resource.Style.Theme_AppCompat_DayNight_Dialog_Alert = global::PathwayGames.Droid.Resource.Style.Theme_AppCompat_DayNight_Dialog_Alert;
+			global::AiForms.Renderers.Droid.Resource.Style.Theme_AppCompat_DayNight_Dialog_MinWidth = global::PathwayGames.Droid.Resource.Style.Theme_AppCompat_DayNight_Dialog_MinWidth;
+			global::AiForms.Renderers.Droid.Resource.Style.Theme_AppCompat_DayNight_NoActionBar = global::PathwayGames.Droid.Resource.Style.Theme_AppCompat_DayNight_NoActionBar;
+			global::AiForms.Renderers.Droid.Resource.Style.Theme_AppCompat_Dialog = global::PathwayGames.Droid.Resource.Style.Theme_AppCompat_Dialog;
+			global::AiForms.Renderers.Droid.Resource.Style.Theme_AppCompat_DialogWhenLarge = global::PathwayGames.Droid.Resource.Style.Theme_AppCompat_DialogWhenLarge;
+			global::AiForms.Renderers.Droid.Resource.Style.Theme_AppCompat_Dialog_Alert = global::PathwayGames.Droid.Resource.Style.Theme_AppCompat_Dialog_Alert;
+			global::AiForms.Renderers.Droid.Resource.Style.Theme_AppCompat_Dialog_MinWidth = global::PathwayGames.Droid.Resource.Style.Theme_AppCompat_Dialog_MinWidth;
+			global::AiForms.Renderers.Droid.Resource.Style.Theme_AppCompat_Light = global::PathwayGames.Droid.Resource.Style.Theme_AppCompat_Light;
+			global::AiForms.Renderers.Droid.Resource.Style.Theme_AppCompat_Light_DarkActionBar = global::PathwayGames.Droid.Resource.Style.Theme_AppCompat_Light_DarkActionBar;
+			global::AiForms.Renderers.Droid.Resource.Style.Theme_AppCompat_Light_Dialog = global::PathwayGames.Droid.Resource.Style.Theme_AppCompat_Light_Dialog;
+			global::AiForms.Renderers.Droid.Resource.Style.Theme_AppCompat_Light_DialogWhenLarge = global::PathwayGames.Droid.Resource.Style.Theme_AppCompat_Light_DialogWhenLarge;
+			global::AiForms.Renderers.Droid.Resource.Style.Theme_AppCompat_Light_Dialog_Alert = global::PathwayGames.Droid.Resource.Style.Theme_AppCompat_Light_Dialog_Alert;
+			global::AiForms.Renderers.Droid.Resource.Style.Theme_AppCompat_Light_Dialog_MinWidth = global::PathwayGames.Droid.Resource.Style.Theme_AppCompat_Light_Dialog_MinWidth;
+			global::AiForms.Renderers.Droid.Resource.Style.Theme_AppCompat_Light_NoActionBar = global::PathwayGames.Droid.Resource.Style.Theme_AppCompat_Light_NoActionBar;
+			global::AiForms.Renderers.Droid.Resource.Style.Theme_AppCompat_NoActionBar = global::PathwayGames.Droid.Resource.Style.Theme_AppCompat_NoActionBar;
+			global::AiForms.Renderers.Droid.Resource.Style.Theme_Design = global::PathwayGames.Droid.Resource.Style.Theme_Design;
+			global::AiForms.Renderers.Droid.Resource.Style.Theme_Design_BottomSheetDialog = global::PathwayGames.Droid.Resource.Style.Theme_Design_BottomSheetDialog;
+			global::AiForms.Renderers.Droid.Resource.Style.Theme_Design_Light = global::PathwayGames.Droid.Resource.Style.Theme_Design_Light;
+			global::AiForms.Renderers.Droid.Resource.Style.Theme_Design_Light_BottomSheetDialog = global::PathwayGames.Droid.Resource.Style.Theme_Design_Light_BottomSheetDialog;
+			global::AiForms.Renderers.Droid.Resource.Style.Theme_Design_Light_NoActionBar = global::PathwayGames.Droid.Resource.Style.Theme_Design_Light_NoActionBar;
+			global::AiForms.Renderers.Droid.Resource.Style.Theme_Design_NoActionBar = global::PathwayGames.Droid.Resource.Style.Theme_Design_NoActionBar;
+			global::AiForms.Renderers.Droid.Resource.Style.Theme_MaterialComponents = global::PathwayGames.Droid.Resource.Style.Theme_MaterialComponents;
+			global::AiForms.Renderers.Droid.Resource.Style.Theme_MaterialComponents_BottomSheetDialog = global::PathwayGames.Droid.Resource.Style.Theme_MaterialComponents_BottomSheetDialog;
+			global::AiForms.Renderers.Droid.Resource.Style.Theme_MaterialComponents_Bridge = global::PathwayGames.Droid.Resource.Style.Theme_MaterialComponents_Bridge;
+			global::AiForms.Renderers.Droid.Resource.Style.Theme_MaterialComponents_CompactMenu = global::PathwayGames.Droid.Resource.Style.Theme_MaterialComponents_CompactMenu;
+			global::AiForms.Renderers.Droid.Resource.Style.Theme_MaterialComponents_Dialog = global::PathwayGames.Droid.Resource.Style.Theme_MaterialComponents_Dialog;
+			global::AiForms.Renderers.Droid.Resource.Style.Theme_MaterialComponents_DialogWhenLarge = global::PathwayGames.Droid.Resource.Style.Theme_MaterialComponents_DialogWhenLarge;
+			global::AiForms.Renderers.Droid.Resource.Style.Theme_MaterialComponents_Dialog_Alert = global::PathwayGames.Droid.Resource.Style.Theme_MaterialComponents_Dialog_Alert;
+			global::AiForms.Renderers.Droid.Resource.Style.Theme_MaterialComponents_Dialog_MinWidth = global::PathwayGames.Droid.Resource.Style.Theme_MaterialComponents_Dialog_MinWidth;
+			global::AiForms.Renderers.Droid.Resource.Style.Theme_MaterialComponents_Light = global::PathwayGames.Droid.Resource.Style.Theme_MaterialComponents_Light;
+			global::AiForms.Renderers.Droid.Resource.Style.Theme_MaterialComponents_Light_BottomSheetDialog = global::PathwayGames.Droid.Resource.Style.Theme_MaterialComponents_Light_BottomSheetDialog;
+			global::AiForms.Renderers.Droid.Resource.Style.Theme_MaterialComponents_Light_Bridge = global::PathwayGames.Droid.Resource.Style.Theme_MaterialComponents_Light_Bridge;
+			global::AiForms.Renderers.Droid.Resource.Style.Theme_MaterialComponents_Light_DarkActionBar = global::PathwayGames.Droid.Resource.Style.Theme_MaterialComponents_Light_DarkActionBar;
+			global::AiForms.Renderers.Droid.Resource.Style.Theme_MaterialComponents_Light_DarkActionBar_Bridge = global::PathwayGames.Droid.Resource.Style.Theme_MaterialComponents_Light_DarkActionBar_Bridge;
+			global::AiForms.Renderers.Droid.Resource.Style.Theme_MaterialComponents_Light_Dialog = global::PathwayGames.Droid.Resource.Style.Theme_MaterialComponents_Light_Dialog;
+			global::AiForms.Renderers.Droid.Resource.Style.Theme_MaterialComponents_Light_DialogWhenLarge = global::PathwayGames.Droid.Resource.Style.Theme_MaterialComponents_Light_DialogWhenLarge;
+			global::AiForms.Renderers.Droid.Resource.Style.Theme_MaterialComponents_Light_Dialog_Alert = global::PathwayGames.Droid.Resource.Style.Theme_MaterialComponents_Light_Dialog_Alert;
+			global::AiForms.Renderers.Droid.Resource.Style.Theme_MaterialComponents_Light_Dialog_MinWidth = global::PathwayGames.Droid.Resource.Style.Theme_MaterialComponents_Light_Dialog_MinWidth;
+			global::AiForms.Renderers.Droid.Resource.Style.Theme_MaterialComponents_Light_NoActionBar = global::PathwayGames.Droid.Resource.Style.Theme_MaterialComponents_Light_NoActionBar;
+			global::AiForms.Renderers.Droid.Resource.Style.Theme_MaterialComponents_Light_NoActionBar_Bridge = global::PathwayGames.Droid.Resource.Style.Theme_MaterialComponents_Light_NoActionBar_Bridge;
+			global::AiForms.Renderers.Droid.Resource.Style.Theme_MaterialComponents_NoActionBar = global::PathwayGames.Droid.Resource.Style.Theme_MaterialComponents_NoActionBar;
+			global::AiForms.Renderers.Droid.Resource.Style.Theme_MaterialComponents_NoActionBar_Bridge = global::PathwayGames.Droid.Resource.Style.Theme_MaterialComponents_NoActionBar_Bridge;
 			global::AiForms.Renderers.Droid.Resource.Style.Widget_AppCompat_ActionBar = global::PathwayGames.Droid.Resource.Style.Widget_AppCompat_ActionBar;
 			global::AiForms.Renderers.Droid.Resource.Style.Widget_AppCompat_ActionBar_Solid = global::PathwayGames.Droid.Resource.Style.Widget_AppCompat_ActionBar_Solid;
 			global::AiForms.Renderers.Droid.Resource.Style.Widget_AppCompat_ActionBar_TabBar = global::PathwayGames.Droid.Resource.Style.Widget_AppCompat_ActionBar_TabBar;
@@ -7239,13 +6926,13 @@ namespace PathwayGames.Droid
 			global::AiForms.Renderers.Droid.Resource.Style.Widget_AppCompat_ActivityChooserView = global::PathwayGames.Droid.Resource.Style.Widget_AppCompat_ActivityChooserView;
 			global::AiForms.Renderers.Droid.Resource.Style.Widget_AppCompat_AutoCompleteTextView = global::PathwayGames.Droid.Resource.Style.Widget_AppCompat_AutoCompleteTextView;
 			global::AiForms.Renderers.Droid.Resource.Style.Widget_AppCompat_Button = global::PathwayGames.Droid.Resource.Style.Widget_AppCompat_Button;
+			global::AiForms.Renderers.Droid.Resource.Style.Widget_AppCompat_ButtonBar = global::PathwayGames.Droid.Resource.Style.Widget_AppCompat_ButtonBar;
+			global::AiForms.Renderers.Droid.Resource.Style.Widget_AppCompat_ButtonBar_AlertDialog = global::PathwayGames.Droid.Resource.Style.Widget_AppCompat_ButtonBar_AlertDialog;
 			global::AiForms.Renderers.Droid.Resource.Style.Widget_AppCompat_Button_Borderless = global::PathwayGames.Droid.Resource.Style.Widget_AppCompat_Button_Borderless;
 			global::AiForms.Renderers.Droid.Resource.Style.Widget_AppCompat_Button_Borderless_Colored = global::PathwayGames.Droid.Resource.Style.Widget_AppCompat_Button_Borderless_Colored;
 			global::AiForms.Renderers.Droid.Resource.Style.Widget_AppCompat_Button_ButtonBar_AlertDialog = global::PathwayGames.Droid.Resource.Style.Widget_AppCompat_Button_ButtonBar_AlertDialog;
 			global::AiForms.Renderers.Droid.Resource.Style.Widget_AppCompat_Button_Colored = global::PathwayGames.Droid.Resource.Style.Widget_AppCompat_Button_Colored;
 			global::AiForms.Renderers.Droid.Resource.Style.Widget_AppCompat_Button_Small = global::PathwayGames.Droid.Resource.Style.Widget_AppCompat_Button_Small;
-			global::AiForms.Renderers.Droid.Resource.Style.Widget_AppCompat_ButtonBar = global::PathwayGames.Droid.Resource.Style.Widget_AppCompat_ButtonBar;
-			global::AiForms.Renderers.Droid.Resource.Style.Widget_AppCompat_ButtonBar_AlertDialog = global::PathwayGames.Droid.Resource.Style.Widget_AppCompat_ButtonBar_AlertDialog;
 			global::AiForms.Renderers.Droid.Resource.Style.Widget_AppCompat_CompoundButton_CheckBox = global::PathwayGames.Droid.Resource.Style.Widget_AppCompat_CompoundButton_CheckBox;
 			global::AiForms.Renderers.Droid.Resource.Style.Widget_AppCompat_CompoundButton_RadioButton = global::PathwayGames.Droid.Resource.Style.Widget_AppCompat_CompoundButton_RadioButton;
 			global::AiForms.Renderers.Droid.Resource.Style.Widget_AppCompat_CompoundButton_Switch = global::PathwayGames.Droid.Resource.Style.Widget_AppCompat_CompoundButton_Switch;
@@ -7327,11 +7014,11 @@ namespace PathwayGames.Droid
 			global::AiForms.Renderers.Droid.Resource.Style.Widget_MaterialComponents_Button_UnelevatedButton = global::PathwayGames.Droid.Resource.Style.Widget_MaterialComponents_Button_UnelevatedButton;
 			global::AiForms.Renderers.Droid.Resource.Style.Widget_MaterialComponents_Button_UnelevatedButton_Icon = global::PathwayGames.Droid.Resource.Style.Widget_MaterialComponents_Button_UnelevatedButton_Icon;
 			global::AiForms.Renderers.Droid.Resource.Style.Widget_MaterialComponents_CardView = global::PathwayGames.Droid.Resource.Style.Widget_MaterialComponents_CardView;
+			global::AiForms.Renderers.Droid.Resource.Style.Widget_MaterialComponents_ChipGroup = global::PathwayGames.Droid.Resource.Style.Widget_MaterialComponents_ChipGroup;
 			global::AiForms.Renderers.Droid.Resource.Style.Widget_MaterialComponents_Chip_Action = global::PathwayGames.Droid.Resource.Style.Widget_MaterialComponents_Chip_Action;
 			global::AiForms.Renderers.Droid.Resource.Style.Widget_MaterialComponents_Chip_Choice = global::PathwayGames.Droid.Resource.Style.Widget_MaterialComponents_Chip_Choice;
 			global::AiForms.Renderers.Droid.Resource.Style.Widget_MaterialComponents_Chip_Entry = global::PathwayGames.Droid.Resource.Style.Widget_MaterialComponents_Chip_Entry;
 			global::AiForms.Renderers.Droid.Resource.Style.Widget_MaterialComponents_Chip_Filter = global::PathwayGames.Droid.Resource.Style.Widget_MaterialComponents_Chip_Filter;
-			global::AiForms.Renderers.Droid.Resource.Style.Widget_MaterialComponents_ChipGroup = global::PathwayGames.Droid.Resource.Style.Widget_MaterialComponents_ChipGroup;
 			global::AiForms.Renderers.Droid.Resource.Style.Widget_MaterialComponents_FloatingActionButton = global::PathwayGames.Droid.Resource.Style.Widget_MaterialComponents_FloatingActionButton;
 			global::AiForms.Renderers.Droid.Resource.Style.Widget_MaterialComponents_NavigationView = global::PathwayGames.Droid.Resource.Style.Widget_MaterialComponents_NavigationView;
 			global::AiForms.Renderers.Droid.Resource.Style.Widget_MaterialComponents_Snackbar = global::PathwayGames.Droid.Resource.Style.Widget_MaterialComponents_Snackbar;
@@ -7347,10 +7034,10 @@ namespace PathwayGames.Droid
 			global::AiForms.Renderers.Droid.Resource.Style.Widget_MaterialComponents_TextInputLayout_OutlinedBox = global::PathwayGames.Droid.Resource.Style.Widget_MaterialComponents_TextInputLayout_OutlinedBox;
 			global::AiForms.Renderers.Droid.Resource.Style.Widget_MaterialComponents_TextInputLayout_OutlinedBox_Dense = global::PathwayGames.Droid.Resource.Style.Widget_MaterialComponents_TextInputLayout_OutlinedBox_Dense;
 			global::AiForms.Renderers.Droid.Resource.Style.Widget_MaterialComponents_Toolbar = global::PathwayGames.Droid.Resource.Style.Widget_MaterialComponents_Toolbar;
-			global::AiForms.Renderers.Droid.Resource.Style.Widget_MediaRouter_Light_MediaRouteButton = global::PathwayGames.Droid.Resource.Style.Widget_MediaRouter_Light_MediaRouteButton;
-			global::AiForms.Renderers.Droid.Resource.Style.Widget_MediaRouter_MediaRouteButton = global::PathwayGames.Droid.Resource.Style.Widget_MediaRouter_MediaRouteButton;
 			global::AiForms.Renderers.Droid.Resource.Style.Widget_Support_CoordinatorLayout = global::PathwayGames.Droid.Resource.Style.Widget_Support_CoordinatorLayout;
 			global::AiForms.Renderers.Droid.Resource.Styleable.ActionBar = global::PathwayGames.Droid.Resource.Styleable.ActionBar;
+			global::AiForms.Renderers.Droid.Resource.Styleable.ActionBarLayout = global::PathwayGames.Droid.Resource.Styleable.ActionBarLayout;
+			global::AiForms.Renderers.Droid.Resource.Styleable.ActionBarLayout_android_layout_gravity = global::PathwayGames.Droid.Resource.Styleable.ActionBarLayout_android_layout_gravity;
 			global::AiForms.Renderers.Droid.Resource.Styleable.ActionBar_background = global::PathwayGames.Droid.Resource.Styleable.ActionBar_background;
 			global::AiForms.Renderers.Droid.Resource.Styleable.ActionBar_backgroundSplit = global::PathwayGames.Droid.Resource.Styleable.ActionBar_backgroundSplit;
 			global::AiForms.Renderers.Droid.Resource.Styleable.ActionBar_backgroundStacked = global::PathwayGames.Droid.Resource.Styleable.ActionBar_backgroundStacked;
@@ -7380,8 +7067,6 @@ namespace PathwayGames.Droid
 			global::AiForms.Renderers.Droid.Resource.Styleable.ActionBar_subtitleTextStyle = global::PathwayGames.Droid.Resource.Styleable.ActionBar_subtitleTextStyle;
 			global::AiForms.Renderers.Droid.Resource.Styleable.ActionBar_title = global::PathwayGames.Droid.Resource.Styleable.ActionBar_title;
 			global::AiForms.Renderers.Droid.Resource.Styleable.ActionBar_titleTextStyle = global::PathwayGames.Droid.Resource.Styleable.ActionBar_titleTextStyle;
-			global::AiForms.Renderers.Droid.Resource.Styleable.ActionBarLayout = global::PathwayGames.Droid.Resource.Styleable.ActionBarLayout;
-			global::AiForms.Renderers.Droid.Resource.Styleable.ActionBarLayout_android_layout_gravity = global::PathwayGames.Droid.Resource.Styleable.ActionBarLayout_android_layout_gravity;
 			global::AiForms.Renderers.Droid.Resource.Styleable.ActionMenuItemView = global::PathwayGames.Droid.Resource.Styleable.ActionMenuItemView;
 			global::AiForms.Renderers.Droid.Resource.Styleable.ActionMenuItemView_android_minWidth = global::PathwayGames.Droid.Resource.Styleable.ActionMenuItemView_android_minWidth;
 			global::AiForms.Renderers.Droid.Resource.Styleable.ActionMenuView = global::PathwayGames.Droid.Resource.Styleable.ActionMenuView;
@@ -7420,20 +7105,20 @@ namespace PathwayGames.Droid
 			global::AiForms.Renderers.Droid.Resource.Styleable.AnimatedStateListDrawableTransition_android_reversible = global::PathwayGames.Droid.Resource.Styleable.AnimatedStateListDrawableTransition_android_reversible;
 			global::AiForms.Renderers.Droid.Resource.Styleable.AnimatedStateListDrawableTransition_android_toId = global::PathwayGames.Droid.Resource.Styleable.AnimatedStateListDrawableTransition_android_toId;
 			global::AiForms.Renderers.Droid.Resource.Styleable.AppBarLayout = global::PathwayGames.Droid.Resource.Styleable.AppBarLayout;
-			global::AiForms.Renderers.Droid.Resource.Styleable.AppBarLayout_android_background = global::PathwayGames.Droid.Resource.Styleable.AppBarLayout_android_background;
-			global::AiForms.Renderers.Droid.Resource.Styleable.AppBarLayout_android_keyboardNavigationCluster = global::PathwayGames.Droid.Resource.Styleable.AppBarLayout_android_keyboardNavigationCluster;
-			global::AiForms.Renderers.Droid.Resource.Styleable.AppBarLayout_android_touchscreenBlocksFocus = global::PathwayGames.Droid.Resource.Styleable.AppBarLayout_android_touchscreenBlocksFocus;
-			global::AiForms.Renderers.Droid.Resource.Styleable.AppBarLayout_elevation = global::PathwayGames.Droid.Resource.Styleable.AppBarLayout_elevation;
-			global::AiForms.Renderers.Droid.Resource.Styleable.AppBarLayout_expanded = global::PathwayGames.Droid.Resource.Styleable.AppBarLayout_expanded;
-			global::AiForms.Renderers.Droid.Resource.Styleable.AppBarLayout_liftOnScroll = global::PathwayGames.Droid.Resource.Styleable.AppBarLayout_liftOnScroll;
 			global::AiForms.Renderers.Droid.Resource.Styleable.AppBarLayoutStates = global::PathwayGames.Droid.Resource.Styleable.AppBarLayoutStates;
 			global::AiForms.Renderers.Droid.Resource.Styleable.AppBarLayoutStates_state_collapsed = global::PathwayGames.Droid.Resource.Styleable.AppBarLayoutStates_state_collapsed;
 			global::AiForms.Renderers.Droid.Resource.Styleable.AppBarLayoutStates_state_collapsible = global::PathwayGames.Droid.Resource.Styleable.AppBarLayoutStates_state_collapsible;
 			global::AiForms.Renderers.Droid.Resource.Styleable.AppBarLayoutStates_state_liftable = global::PathwayGames.Droid.Resource.Styleable.AppBarLayoutStates_state_liftable;
 			global::AiForms.Renderers.Droid.Resource.Styleable.AppBarLayoutStates_state_lifted = global::PathwayGames.Droid.Resource.Styleable.AppBarLayoutStates_state_lifted;
+			global::AiForms.Renderers.Droid.Resource.Styleable.AppBarLayout_android_background = global::PathwayGames.Droid.Resource.Styleable.AppBarLayout_android_background;
+			global::AiForms.Renderers.Droid.Resource.Styleable.AppBarLayout_android_keyboardNavigationCluster = global::PathwayGames.Droid.Resource.Styleable.AppBarLayout_android_keyboardNavigationCluster;
+			global::AiForms.Renderers.Droid.Resource.Styleable.AppBarLayout_android_touchscreenBlocksFocus = global::PathwayGames.Droid.Resource.Styleable.AppBarLayout_android_touchscreenBlocksFocus;
+			global::AiForms.Renderers.Droid.Resource.Styleable.AppBarLayout_elevation = global::PathwayGames.Droid.Resource.Styleable.AppBarLayout_elevation;
+			global::AiForms.Renderers.Droid.Resource.Styleable.AppBarLayout_expanded = global::PathwayGames.Droid.Resource.Styleable.AppBarLayout_expanded;
 			global::AiForms.Renderers.Droid.Resource.Styleable.AppBarLayout_Layout = global::PathwayGames.Droid.Resource.Styleable.AppBarLayout_Layout;
 			global::AiForms.Renderers.Droid.Resource.Styleable.AppBarLayout_Layout_layout_scrollFlags = global::PathwayGames.Droid.Resource.Styleable.AppBarLayout_Layout_layout_scrollFlags;
 			global::AiForms.Renderers.Droid.Resource.Styleable.AppBarLayout_Layout_layout_scrollInterpolator = global::PathwayGames.Droid.Resource.Styleable.AppBarLayout_Layout_layout_scrollInterpolator;
+			global::AiForms.Renderers.Droid.Resource.Styleable.AppBarLayout_liftOnScroll = global::PathwayGames.Droid.Resource.Styleable.AppBarLayout_liftOnScroll;
 			global::AiForms.Renderers.Droid.Resource.Styleable.AppCompatImageView = global::PathwayGames.Droid.Resource.Styleable.AppCompatImageView;
 			global::AiForms.Renderers.Droid.Resource.Styleable.AppCompatImageView_android_src = global::PathwayGames.Droid.Resource.Styleable.AppCompatImageView_android_src;
 			global::AiForms.Renderers.Droid.Resource.Styleable.AppCompatImageView_srcCompat = global::PathwayGames.Droid.Resource.Styleable.AppCompatImageView_srcCompat;
@@ -7529,8 +7214,8 @@ namespace PathwayGames.Droid
 			global::AiForms.Renderers.Droid.Resource.Styleable.AppCompatTheme_dialogTheme = global::PathwayGames.Droid.Resource.Styleable.AppCompatTheme_dialogTheme;
 			global::AiForms.Renderers.Droid.Resource.Styleable.AppCompatTheme_dividerHorizontal = global::PathwayGames.Droid.Resource.Styleable.AppCompatTheme_dividerHorizontal;
 			global::AiForms.Renderers.Droid.Resource.Styleable.AppCompatTheme_dividerVertical = global::PathwayGames.Droid.Resource.Styleable.AppCompatTheme_dividerVertical;
-			global::AiForms.Renderers.Droid.Resource.Styleable.AppCompatTheme_dropDownListViewStyle = global::PathwayGames.Droid.Resource.Styleable.AppCompatTheme_dropDownListViewStyle;
 			global::AiForms.Renderers.Droid.Resource.Styleable.AppCompatTheme_dropdownListPreferredItemHeight = global::PathwayGames.Droid.Resource.Styleable.AppCompatTheme_dropdownListPreferredItemHeight;
+			global::AiForms.Renderers.Droid.Resource.Styleable.AppCompatTheme_dropDownListViewStyle = global::PathwayGames.Droid.Resource.Styleable.AppCompatTheme_dropDownListViewStyle;
 			global::AiForms.Renderers.Droid.Resource.Styleable.AppCompatTheme_editTextBackground = global::PathwayGames.Droid.Resource.Styleable.AppCompatTheme_editTextBackground;
 			global::AiForms.Renderers.Droid.Resource.Styleable.AppCompatTheme_editTextColor = global::PathwayGames.Droid.Resource.Styleable.AppCompatTheme_editTextColor;
 			global::AiForms.Renderers.Droid.Resource.Styleable.AppCompatTheme_editTextStyle = global::PathwayGames.Droid.Resource.Styleable.AppCompatTheme_editTextStyle;
@@ -7626,6 +7311,13 @@ namespace PathwayGames.Droid
 			global::AiForms.Renderers.Droid.Resource.Styleable.CardView_contentPaddingRight = global::PathwayGames.Droid.Resource.Styleable.CardView_contentPaddingRight;
 			global::AiForms.Renderers.Droid.Resource.Styleable.CardView_contentPaddingTop = global::PathwayGames.Droid.Resource.Styleable.CardView_contentPaddingTop;
 			global::AiForms.Renderers.Droid.Resource.Styleable.Chip = global::PathwayGames.Droid.Resource.Styleable.Chip;
+			global::AiForms.Renderers.Droid.Resource.Styleable.ChipGroup = global::PathwayGames.Droid.Resource.Styleable.ChipGroup;
+			global::AiForms.Renderers.Droid.Resource.Styleable.ChipGroup_checkedChip = global::PathwayGames.Droid.Resource.Styleable.ChipGroup_checkedChip;
+			global::AiForms.Renderers.Droid.Resource.Styleable.ChipGroup_chipSpacing = global::PathwayGames.Droid.Resource.Styleable.ChipGroup_chipSpacing;
+			global::AiForms.Renderers.Droid.Resource.Styleable.ChipGroup_chipSpacingHorizontal = global::PathwayGames.Droid.Resource.Styleable.ChipGroup_chipSpacingHorizontal;
+			global::AiForms.Renderers.Droid.Resource.Styleable.ChipGroup_chipSpacingVertical = global::PathwayGames.Droid.Resource.Styleable.ChipGroup_chipSpacingVertical;
+			global::AiForms.Renderers.Droid.Resource.Styleable.ChipGroup_singleLine = global::PathwayGames.Droid.Resource.Styleable.ChipGroup_singleLine;
+			global::AiForms.Renderers.Droid.Resource.Styleable.ChipGroup_singleSelection = global::PathwayGames.Droid.Resource.Styleable.ChipGroup_singleSelection;
 			global::AiForms.Renderers.Droid.Resource.Styleable.Chip_android_checkable = global::PathwayGames.Droid.Resource.Styleable.Chip_android_checkable;
 			global::AiForms.Renderers.Droid.Resource.Styleable.Chip_android_ellipsize = global::PathwayGames.Droid.Resource.Styleable.Chip_android_ellipsize;
 			global::AiForms.Renderers.Droid.Resource.Styleable.Chip_android_maxWidth = global::PathwayGames.Droid.Resource.Styleable.Chip_android_maxWidth;
@@ -7660,13 +7352,6 @@ namespace PathwayGames.Droid
 			global::AiForms.Renderers.Droid.Resource.Styleable.Chip_showMotionSpec = global::PathwayGames.Droid.Resource.Styleable.Chip_showMotionSpec;
 			global::AiForms.Renderers.Droid.Resource.Styleable.Chip_textEndPadding = global::PathwayGames.Droid.Resource.Styleable.Chip_textEndPadding;
 			global::AiForms.Renderers.Droid.Resource.Styleable.Chip_textStartPadding = global::PathwayGames.Droid.Resource.Styleable.Chip_textStartPadding;
-			global::AiForms.Renderers.Droid.Resource.Styleable.ChipGroup = global::PathwayGames.Droid.Resource.Styleable.ChipGroup;
-			global::AiForms.Renderers.Droid.Resource.Styleable.ChipGroup_checkedChip = global::PathwayGames.Droid.Resource.Styleable.ChipGroup_checkedChip;
-			global::AiForms.Renderers.Droid.Resource.Styleable.ChipGroup_chipSpacing = global::PathwayGames.Droid.Resource.Styleable.ChipGroup_chipSpacing;
-			global::AiForms.Renderers.Droid.Resource.Styleable.ChipGroup_chipSpacingHorizontal = global::PathwayGames.Droid.Resource.Styleable.ChipGroup_chipSpacingHorizontal;
-			global::AiForms.Renderers.Droid.Resource.Styleable.ChipGroup_chipSpacingVertical = global::PathwayGames.Droid.Resource.Styleable.ChipGroup_chipSpacingVertical;
-			global::AiForms.Renderers.Droid.Resource.Styleable.ChipGroup_singleLine = global::PathwayGames.Droid.Resource.Styleable.ChipGroup_singleLine;
-			global::AiForms.Renderers.Droid.Resource.Styleable.ChipGroup_singleSelection = global::PathwayGames.Droid.Resource.Styleable.ChipGroup_singleSelection;
 			global::AiForms.Renderers.Droid.Resource.Styleable.CollapsingToolbarLayout = global::PathwayGames.Droid.Resource.Styleable.CollapsingToolbarLayout;
 			global::AiForms.Renderers.Droid.Resource.Styleable.CollapsingToolbarLayout_collapsedTitleGravity = global::PathwayGames.Droid.Resource.Styleable.CollapsingToolbarLayout_collapsedTitleGravity;
 			global::AiForms.Renderers.Droid.Resource.Styleable.CollapsingToolbarLayout_collapsedTitleTextAppearance = global::PathwayGames.Droid.Resource.Styleable.CollapsingToolbarLayout_collapsedTitleTextAppearance;
@@ -7678,15 +7363,15 @@ namespace PathwayGames.Droid
 			global::AiForms.Renderers.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginStart = global::PathwayGames.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginStart;
 			global::AiForms.Renderers.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginTop = global::PathwayGames.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginTop;
 			global::AiForms.Renderers.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleTextAppearance = global::PathwayGames.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleTextAppearance;
+			global::AiForms.Renderers.Droid.Resource.Styleable.CollapsingToolbarLayout_Layout = global::PathwayGames.Droid.Resource.Styleable.CollapsingToolbarLayout_Layout;
+			global::AiForms.Renderers.Droid.Resource.Styleable.CollapsingToolbarLayout_Layout_layout_collapseMode = global::PathwayGames.Droid.Resource.Styleable.CollapsingToolbarLayout_Layout_layout_collapseMode;
+			global::AiForms.Renderers.Droid.Resource.Styleable.CollapsingToolbarLayout_Layout_layout_collapseParallaxMultiplier = global::PathwayGames.Droid.Resource.Styleable.CollapsingToolbarLayout_Layout_layout_collapseParallaxMultiplier;
 			global::AiForms.Renderers.Droid.Resource.Styleable.CollapsingToolbarLayout_scrimAnimationDuration = global::PathwayGames.Droid.Resource.Styleable.CollapsingToolbarLayout_scrimAnimationDuration;
 			global::AiForms.Renderers.Droid.Resource.Styleable.CollapsingToolbarLayout_scrimVisibleHeightTrigger = global::PathwayGames.Droid.Resource.Styleable.CollapsingToolbarLayout_scrimVisibleHeightTrigger;
 			global::AiForms.Renderers.Droid.Resource.Styleable.CollapsingToolbarLayout_statusBarScrim = global::PathwayGames.Droid.Resource.Styleable.CollapsingToolbarLayout_statusBarScrim;
 			global::AiForms.Renderers.Droid.Resource.Styleable.CollapsingToolbarLayout_title = global::PathwayGames.Droid.Resource.Styleable.CollapsingToolbarLayout_title;
 			global::AiForms.Renderers.Droid.Resource.Styleable.CollapsingToolbarLayout_titleEnabled = global::PathwayGames.Droid.Resource.Styleable.CollapsingToolbarLayout_titleEnabled;
 			global::AiForms.Renderers.Droid.Resource.Styleable.CollapsingToolbarLayout_toolbarId = global::PathwayGames.Droid.Resource.Styleable.CollapsingToolbarLayout_toolbarId;
-			global::AiForms.Renderers.Droid.Resource.Styleable.CollapsingToolbarLayout_Layout = global::PathwayGames.Droid.Resource.Styleable.CollapsingToolbarLayout_Layout;
-			global::AiForms.Renderers.Droid.Resource.Styleable.CollapsingToolbarLayout_Layout_layout_collapseMode = global::PathwayGames.Droid.Resource.Styleable.CollapsingToolbarLayout_Layout_layout_collapseMode;
-			global::AiForms.Renderers.Droid.Resource.Styleable.CollapsingToolbarLayout_Layout_layout_collapseParallaxMultiplier = global::PathwayGames.Droid.Resource.Styleable.CollapsingToolbarLayout_Layout_layout_collapseParallaxMultiplier;
 			global::AiForms.Renderers.Droid.Resource.Styleable.ColorStateListItem = global::PathwayGames.Droid.Resource.Styleable.ColorStateListItem;
 			global::AiForms.Renderers.Droid.Resource.Styleable.ColorStateListItem_alpha = global::PathwayGames.Droid.Resource.Styleable.ColorStateListItem_alpha;
 			global::AiForms.Renderers.Droid.Resource.Styleable.ColorStateListItem_android_alpha = global::PathwayGames.Droid.Resource.Styleable.ColorStateListItem_android_alpha;
@@ -7697,7 +7382,6 @@ namespace PathwayGames.Droid
 			global::AiForms.Renderers.Droid.Resource.Styleable.CompoundButton_buttonTintMode = global::PathwayGames.Droid.Resource.Styleable.CompoundButton_buttonTintMode;
 			global::AiForms.Renderers.Droid.Resource.Styleable.CoordinatorLayout = global::PathwayGames.Droid.Resource.Styleable.CoordinatorLayout;
 			global::AiForms.Renderers.Droid.Resource.Styleable.CoordinatorLayout_keylines = global::PathwayGames.Droid.Resource.Styleable.CoordinatorLayout_keylines;
-			global::AiForms.Renderers.Droid.Resource.Styleable.CoordinatorLayout_statusBarBackground = global::PathwayGames.Droid.Resource.Styleable.CoordinatorLayout_statusBarBackground;
 			global::AiForms.Renderers.Droid.Resource.Styleable.CoordinatorLayout_Layout = global::PathwayGames.Droid.Resource.Styleable.CoordinatorLayout_Layout;
 			global::AiForms.Renderers.Droid.Resource.Styleable.CoordinatorLayout_Layout_android_layout_gravity = global::PathwayGames.Droid.Resource.Styleable.CoordinatorLayout_Layout_android_layout_gravity;
 			global::AiForms.Renderers.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_anchor = global::PathwayGames.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_anchor;
@@ -7706,6 +7390,7 @@ namespace PathwayGames.Droid
 			global::AiForms.Renderers.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_dodgeInsetEdges = global::PathwayGames.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_dodgeInsetEdges;
 			global::AiForms.Renderers.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_insetEdge = global::PathwayGames.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_insetEdge;
 			global::AiForms.Renderers.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_keyline = global::PathwayGames.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_keyline;
+			global::AiForms.Renderers.Droid.Resource.Styleable.CoordinatorLayout_statusBarBackground = global::PathwayGames.Droid.Resource.Styleable.CoordinatorLayout_statusBarBackground;
 			global::AiForms.Renderers.Droid.Resource.Styleable.DesignTheme = global::PathwayGames.Droid.Resource.Styleable.DesignTheme;
 			global::AiForms.Renderers.Droid.Resource.Styleable.DesignTheme_bottomSheetDialogTheme = global::PathwayGames.Droid.Resource.Styleable.DesignTheme_bottomSheetDialogTheme;
 			global::AiForms.Renderers.Droid.Resource.Styleable.DesignTheme_bottomSheetStyle = global::PathwayGames.Droid.Resource.Styleable.DesignTheme_bottomSheetStyle;
@@ -7721,6 +7406,8 @@ namespace PathwayGames.Droid
 			global::AiForms.Renderers.Droid.Resource.Styleable.FloatingActionButton = global::PathwayGames.Droid.Resource.Styleable.FloatingActionButton;
 			global::AiForms.Renderers.Droid.Resource.Styleable.FloatingActionButton_backgroundTint = global::PathwayGames.Droid.Resource.Styleable.FloatingActionButton_backgroundTint;
 			global::AiForms.Renderers.Droid.Resource.Styleable.FloatingActionButton_backgroundTintMode = global::PathwayGames.Droid.Resource.Styleable.FloatingActionButton_backgroundTintMode;
+			global::AiForms.Renderers.Droid.Resource.Styleable.FloatingActionButton_Behavior_Layout = global::PathwayGames.Droid.Resource.Styleable.FloatingActionButton_Behavior_Layout;
+			global::AiForms.Renderers.Droid.Resource.Styleable.FloatingActionButton_Behavior_Layout_behavior_autoHide = global::PathwayGames.Droid.Resource.Styleable.FloatingActionButton_Behavior_Layout_behavior_autoHide;
 			global::AiForms.Renderers.Droid.Resource.Styleable.FloatingActionButton_borderWidth = global::PathwayGames.Droid.Resource.Styleable.FloatingActionButton_borderWidth;
 			global::AiForms.Renderers.Droid.Resource.Styleable.FloatingActionButton_elevation = global::PathwayGames.Droid.Resource.Styleable.FloatingActionButton_elevation;
 			global::AiForms.Renderers.Droid.Resource.Styleable.FloatingActionButton_fabCustomSize = global::PathwayGames.Droid.Resource.Styleable.FloatingActionButton_fabCustomSize;
@@ -7732,18 +7419,10 @@ namespace PathwayGames.Droid
 			global::AiForms.Renderers.Droid.Resource.Styleable.FloatingActionButton_rippleColor = global::PathwayGames.Droid.Resource.Styleable.FloatingActionButton_rippleColor;
 			global::AiForms.Renderers.Droid.Resource.Styleable.FloatingActionButton_showMotionSpec = global::PathwayGames.Droid.Resource.Styleable.FloatingActionButton_showMotionSpec;
 			global::AiForms.Renderers.Droid.Resource.Styleable.FloatingActionButton_useCompatPadding = global::PathwayGames.Droid.Resource.Styleable.FloatingActionButton_useCompatPadding;
-			global::AiForms.Renderers.Droid.Resource.Styleable.FloatingActionButton_Behavior_Layout = global::PathwayGames.Droid.Resource.Styleable.FloatingActionButton_Behavior_Layout;
-			global::AiForms.Renderers.Droid.Resource.Styleable.FloatingActionButton_Behavior_Layout_behavior_autoHide = global::PathwayGames.Droid.Resource.Styleable.FloatingActionButton_Behavior_Layout_behavior_autoHide;
 			global::AiForms.Renderers.Droid.Resource.Styleable.FlowLayout = global::PathwayGames.Droid.Resource.Styleable.FlowLayout;
 			global::AiForms.Renderers.Droid.Resource.Styleable.FlowLayout_itemSpacing = global::PathwayGames.Droid.Resource.Styleable.FlowLayout_itemSpacing;
 			global::AiForms.Renderers.Droid.Resource.Styleable.FlowLayout_lineSpacing = global::PathwayGames.Droid.Resource.Styleable.FlowLayout_lineSpacing;
 			global::AiForms.Renderers.Droid.Resource.Styleable.FontFamily = global::PathwayGames.Droid.Resource.Styleable.FontFamily;
-			global::AiForms.Renderers.Droid.Resource.Styleable.FontFamily_fontProviderAuthority = global::PathwayGames.Droid.Resource.Styleable.FontFamily_fontProviderAuthority;
-			global::AiForms.Renderers.Droid.Resource.Styleable.FontFamily_fontProviderCerts = global::PathwayGames.Droid.Resource.Styleable.FontFamily_fontProviderCerts;
-			global::AiForms.Renderers.Droid.Resource.Styleable.FontFamily_fontProviderFetchStrategy = global::PathwayGames.Droid.Resource.Styleable.FontFamily_fontProviderFetchStrategy;
-			global::AiForms.Renderers.Droid.Resource.Styleable.FontFamily_fontProviderFetchTimeout = global::PathwayGames.Droid.Resource.Styleable.FontFamily_fontProviderFetchTimeout;
-			global::AiForms.Renderers.Droid.Resource.Styleable.FontFamily_fontProviderPackage = global::PathwayGames.Droid.Resource.Styleable.FontFamily_fontProviderPackage;
-			global::AiForms.Renderers.Droid.Resource.Styleable.FontFamily_fontProviderQuery = global::PathwayGames.Droid.Resource.Styleable.FontFamily_fontProviderQuery;
 			global::AiForms.Renderers.Droid.Resource.Styleable.FontFamilyFont = global::PathwayGames.Droid.Resource.Styleable.FontFamilyFont;
 			global::AiForms.Renderers.Droid.Resource.Styleable.FontFamilyFont_android_font = global::PathwayGames.Droid.Resource.Styleable.FontFamilyFont_android_font;
 			global::AiForms.Renderers.Droid.Resource.Styleable.FontFamilyFont_android_fontStyle = global::PathwayGames.Droid.Resource.Styleable.FontFamilyFont_android_fontStyle;
@@ -7755,11 +7434,20 @@ namespace PathwayGames.Droid
 			global::AiForms.Renderers.Droid.Resource.Styleable.FontFamilyFont_fontVariationSettings = global::PathwayGames.Droid.Resource.Styleable.FontFamilyFont_fontVariationSettings;
 			global::AiForms.Renderers.Droid.Resource.Styleable.FontFamilyFont_fontWeight = global::PathwayGames.Droid.Resource.Styleable.FontFamilyFont_fontWeight;
 			global::AiForms.Renderers.Droid.Resource.Styleable.FontFamilyFont_ttcIndex = global::PathwayGames.Droid.Resource.Styleable.FontFamilyFont_ttcIndex;
+			global::AiForms.Renderers.Droid.Resource.Styleable.FontFamily_fontProviderAuthority = global::PathwayGames.Droid.Resource.Styleable.FontFamily_fontProviderAuthority;
+			global::AiForms.Renderers.Droid.Resource.Styleable.FontFamily_fontProviderCerts = global::PathwayGames.Droid.Resource.Styleable.FontFamily_fontProviderCerts;
+			global::AiForms.Renderers.Droid.Resource.Styleable.FontFamily_fontProviderFetchStrategy = global::PathwayGames.Droid.Resource.Styleable.FontFamily_fontProviderFetchStrategy;
+			global::AiForms.Renderers.Droid.Resource.Styleable.FontFamily_fontProviderFetchTimeout = global::PathwayGames.Droid.Resource.Styleable.FontFamily_fontProviderFetchTimeout;
+			global::AiForms.Renderers.Droid.Resource.Styleable.FontFamily_fontProviderPackage = global::PathwayGames.Droid.Resource.Styleable.FontFamily_fontProviderPackage;
+			global::AiForms.Renderers.Droid.Resource.Styleable.FontFamily_fontProviderQuery = global::PathwayGames.Droid.Resource.Styleable.FontFamily_fontProviderQuery;
 			global::AiForms.Renderers.Droid.Resource.Styleable.ForegroundLinearLayout = global::PathwayGames.Droid.Resource.Styleable.ForegroundLinearLayout;
 			global::AiForms.Renderers.Droid.Resource.Styleable.ForegroundLinearLayout_android_foreground = global::PathwayGames.Droid.Resource.Styleable.ForegroundLinearLayout_android_foreground;
 			global::AiForms.Renderers.Droid.Resource.Styleable.ForegroundLinearLayout_android_foregroundGravity = global::PathwayGames.Droid.Resource.Styleable.ForegroundLinearLayout_android_foregroundGravity;
 			global::AiForms.Renderers.Droid.Resource.Styleable.ForegroundLinearLayout_foregroundInsidePadding = global::PathwayGames.Droid.Resource.Styleable.ForegroundLinearLayout_foregroundInsidePadding;
 			global::AiForms.Renderers.Droid.Resource.Styleable.GradientColor = global::PathwayGames.Droid.Resource.Styleable.GradientColor;
+			global::AiForms.Renderers.Droid.Resource.Styleable.GradientColorItem = global::PathwayGames.Droid.Resource.Styleable.GradientColorItem;
+			global::AiForms.Renderers.Droid.Resource.Styleable.GradientColorItem_android_color = global::PathwayGames.Droid.Resource.Styleable.GradientColorItem_android_color;
+			global::AiForms.Renderers.Droid.Resource.Styleable.GradientColorItem_android_offset = global::PathwayGames.Droid.Resource.Styleable.GradientColorItem_android_offset;
 			global::AiForms.Renderers.Droid.Resource.Styleable.GradientColor_android_centerColor = global::PathwayGames.Droid.Resource.Styleable.GradientColor_android_centerColor;
 			global::AiForms.Renderers.Droid.Resource.Styleable.GradientColor_android_centerX = global::PathwayGames.Droid.Resource.Styleable.GradientColor_android_centerX;
 			global::AiForms.Renderers.Droid.Resource.Styleable.GradientColor_android_centerY = global::PathwayGames.Droid.Resource.Styleable.GradientColor_android_centerY;
@@ -7772,9 +7460,8 @@ namespace PathwayGames.Droid
 			global::AiForms.Renderers.Droid.Resource.Styleable.GradientColor_android_startY = global::PathwayGames.Droid.Resource.Styleable.GradientColor_android_startY;
 			global::AiForms.Renderers.Droid.Resource.Styleable.GradientColor_android_tileMode = global::PathwayGames.Droid.Resource.Styleable.GradientColor_android_tileMode;
 			global::AiForms.Renderers.Droid.Resource.Styleable.GradientColor_android_type = global::PathwayGames.Droid.Resource.Styleable.GradientColor_android_type;
-			global::AiForms.Renderers.Droid.Resource.Styleable.GradientColorItem = global::PathwayGames.Droid.Resource.Styleable.GradientColorItem;
-			global::AiForms.Renderers.Droid.Resource.Styleable.GradientColorItem_android_color = global::PathwayGames.Droid.Resource.Styleable.GradientColorItem_android_color;
-			global::AiForms.Renderers.Droid.Resource.Styleable.GradientColorItem_android_offset = global::PathwayGames.Droid.Resource.Styleable.GradientColorItem_android_offset;
+			global::AiForms.Renderers.Droid.Resource.Styleable.ItemsViewRendererTheme = global::PathwayGames.Droid.Resource.Styleable.ItemsViewRendererTheme;
+			global::AiForms.Renderers.Droid.Resource.Styleable.ItemsViewRendererTheme_collectionViewStyle = global::PathwayGames.Droid.Resource.Styleable.ItemsViewRendererTheme_collectionViewStyle;
 			global::AiForms.Renderers.Droid.Resource.Styleable.LinearLayoutCompat = global::PathwayGames.Droid.Resource.Styleable.LinearLayoutCompat;
 			global::AiForms.Renderers.Droid.Resource.Styleable.LinearLayoutCompat_android_baselineAligned = global::PathwayGames.Droid.Resource.Styleable.LinearLayoutCompat_android_baselineAligned;
 			global::AiForms.Renderers.Droid.Resource.Styleable.LinearLayoutCompat_android_baselineAlignedChildIndex = global::PathwayGames.Droid.Resource.Styleable.LinearLayoutCompat_android_baselineAlignedChildIndex;
@@ -7783,13 +7470,13 @@ namespace PathwayGames.Droid
 			global::AiForms.Renderers.Droid.Resource.Styleable.LinearLayoutCompat_android_weightSum = global::PathwayGames.Droid.Resource.Styleable.LinearLayoutCompat_android_weightSum;
 			global::AiForms.Renderers.Droid.Resource.Styleable.LinearLayoutCompat_divider = global::PathwayGames.Droid.Resource.Styleable.LinearLayoutCompat_divider;
 			global::AiForms.Renderers.Droid.Resource.Styleable.LinearLayoutCompat_dividerPadding = global::PathwayGames.Droid.Resource.Styleable.LinearLayoutCompat_dividerPadding;
-			global::AiForms.Renderers.Droid.Resource.Styleable.LinearLayoutCompat_measureWithLargestChild = global::PathwayGames.Droid.Resource.Styleable.LinearLayoutCompat_measureWithLargestChild;
-			global::AiForms.Renderers.Droid.Resource.Styleable.LinearLayoutCompat_showDividers = global::PathwayGames.Droid.Resource.Styleable.LinearLayoutCompat_showDividers;
 			global::AiForms.Renderers.Droid.Resource.Styleable.LinearLayoutCompat_Layout = global::PathwayGames.Droid.Resource.Styleable.LinearLayoutCompat_Layout;
 			global::AiForms.Renderers.Droid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_gravity = global::PathwayGames.Droid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_gravity;
 			global::AiForms.Renderers.Droid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_height = global::PathwayGames.Droid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_height;
 			global::AiForms.Renderers.Droid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_weight = global::PathwayGames.Droid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_weight;
 			global::AiForms.Renderers.Droid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_width = global::PathwayGames.Droid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_width;
+			global::AiForms.Renderers.Droid.Resource.Styleable.LinearLayoutCompat_measureWithLargestChild = global::PathwayGames.Droid.Resource.Styleable.LinearLayoutCompat_measureWithLargestChild;
+			global::AiForms.Renderers.Droid.Resource.Styleable.LinearLayoutCompat_showDividers = global::PathwayGames.Droid.Resource.Styleable.LinearLayoutCompat_showDividers;
 			global::AiForms.Renderers.Droid.Resource.Styleable.ListPopupWindow = global::PathwayGames.Droid.Resource.Styleable.ListPopupWindow;
 			global::AiForms.Renderers.Droid.Resource.Styleable.ListPopupWindow_android_dropDownHorizontalOffset = global::PathwayGames.Droid.Resource.Styleable.ListPopupWindow_android_dropDownHorizontalOffset;
 			global::AiForms.Renderers.Droid.Resource.Styleable.ListPopupWindow_android_dropDownVerticalOffset = global::PathwayGames.Droid.Resource.Styleable.ListPopupWindow_android_dropDownVerticalOffset;
@@ -7846,11 +7533,6 @@ namespace PathwayGames.Droid
 			global::AiForms.Renderers.Droid.Resource.Styleable.MaterialComponentsTheme_textAppearanceSubtitle1 = global::PathwayGames.Droid.Resource.Styleable.MaterialComponentsTheme_textAppearanceSubtitle1;
 			global::AiForms.Renderers.Droid.Resource.Styleable.MaterialComponentsTheme_textAppearanceSubtitle2 = global::PathwayGames.Droid.Resource.Styleable.MaterialComponentsTheme_textAppearanceSubtitle2;
 			global::AiForms.Renderers.Droid.Resource.Styleable.MaterialComponentsTheme_textInputStyle = global::PathwayGames.Droid.Resource.Styleable.MaterialComponentsTheme_textInputStyle;
-			global::AiForms.Renderers.Droid.Resource.Styleable.MediaRouteButton = global::PathwayGames.Droid.Resource.Styleable.MediaRouteButton;
-			global::AiForms.Renderers.Droid.Resource.Styleable.MediaRouteButton_android_minHeight = global::PathwayGames.Droid.Resource.Styleable.MediaRouteButton_android_minHeight;
-			global::AiForms.Renderers.Droid.Resource.Styleable.MediaRouteButton_android_minWidth = global::PathwayGames.Droid.Resource.Styleable.MediaRouteButton_android_minWidth;
-			global::AiForms.Renderers.Droid.Resource.Styleable.MediaRouteButton_externalRouteEnabledDrawable = global::PathwayGames.Droid.Resource.Styleable.MediaRouteButton_externalRouteEnabledDrawable;
-			global::AiForms.Renderers.Droid.Resource.Styleable.MediaRouteButton_mediaRouteButtonTint = global::PathwayGames.Droid.Resource.Styleable.MediaRouteButton_mediaRouteButtonTint;
 			global::AiForms.Renderers.Droid.Resource.Styleable.MenuGroup = global::PathwayGames.Droid.Resource.Styleable.MenuGroup;
 			global::AiForms.Renderers.Droid.Resource.Styleable.MenuGroup_android_checkableBehavior = global::PathwayGames.Droid.Resource.Styleable.MenuGroup_android_checkableBehavior;
 			global::AiForms.Renderers.Droid.Resource.Styleable.MenuGroup_android_enabled = global::PathwayGames.Droid.Resource.Styleable.MenuGroup_android_enabled;
@@ -7906,11 +7588,11 @@ namespace PathwayGames.Droid
 			global::AiForms.Renderers.Droid.Resource.Styleable.NavigationView_itemTextColor = global::PathwayGames.Droid.Resource.Styleable.NavigationView_itemTextColor;
 			global::AiForms.Renderers.Droid.Resource.Styleable.NavigationView_menu = global::PathwayGames.Droid.Resource.Styleable.NavigationView_menu;
 			global::AiForms.Renderers.Droid.Resource.Styleable.PopupWindow = global::PathwayGames.Droid.Resource.Styleable.PopupWindow;
+			global::AiForms.Renderers.Droid.Resource.Styleable.PopupWindowBackgroundState = global::PathwayGames.Droid.Resource.Styleable.PopupWindowBackgroundState;
+			global::AiForms.Renderers.Droid.Resource.Styleable.PopupWindowBackgroundState_state_above_anchor = global::PathwayGames.Droid.Resource.Styleable.PopupWindowBackgroundState_state_above_anchor;
 			global::AiForms.Renderers.Droid.Resource.Styleable.PopupWindow_android_popupAnimationStyle = global::PathwayGames.Droid.Resource.Styleable.PopupWindow_android_popupAnimationStyle;
 			global::AiForms.Renderers.Droid.Resource.Styleable.PopupWindow_android_popupBackground = global::PathwayGames.Droid.Resource.Styleable.PopupWindow_android_popupBackground;
 			global::AiForms.Renderers.Droid.Resource.Styleable.PopupWindow_overlapAnchor = global::PathwayGames.Droid.Resource.Styleable.PopupWindow_overlapAnchor;
-			global::AiForms.Renderers.Droid.Resource.Styleable.PopupWindowBackgroundState = global::PathwayGames.Droid.Resource.Styleable.PopupWindowBackgroundState;
-			global::AiForms.Renderers.Droid.Resource.Styleable.PopupWindowBackgroundState_state_above_anchor = global::PathwayGames.Droid.Resource.Styleable.PopupWindowBackgroundState_state_above_anchor;
 			global::AiForms.Renderers.Droid.Resource.Styleable.RecycleListView = global::PathwayGames.Droid.Resource.Styleable.RecycleListView;
 			global::AiForms.Renderers.Droid.Resource.Styleable.RecycleListView_paddingBottomNoButtons = global::PathwayGames.Droid.Resource.Styleable.RecycleListView_paddingBottomNoButtons;
 			global::AiForms.Renderers.Droid.Resource.Styleable.RecycleListView_paddingTopNoTitle = global::PathwayGames.Droid.Resource.Styleable.RecycleListView_paddingTopNoTitle;
@@ -7930,6 +7612,8 @@ namespace PathwayGames.Droid
 			global::AiForms.Renderers.Droid.Resource.Styleable.ScrimInsetsFrameLayout_insetForeground = global::PathwayGames.Droid.Resource.Styleable.ScrimInsetsFrameLayout_insetForeground;
 			global::AiForms.Renderers.Droid.Resource.Styleable.ScrollingViewBehavior_Layout = global::PathwayGames.Droid.Resource.Styleable.ScrollingViewBehavior_Layout;
 			global::AiForms.Renderers.Droid.Resource.Styleable.ScrollingViewBehavior_Layout_behavior_overlapTop = global::PathwayGames.Droid.Resource.Styleable.ScrollingViewBehavior_Layout_behavior_overlapTop;
+			global::AiForms.Renderers.Droid.Resource.Styleable.ScrollViewRendererTheme = global::PathwayGames.Droid.Resource.Styleable.ScrollViewRendererTheme;
+			global::AiForms.Renderers.Droid.Resource.Styleable.ScrollViewRendererTheme_scrollViewStyle = global::PathwayGames.Droid.Resource.Styleable.ScrollViewRendererTheme_scrollViewStyle;
 			global::AiForms.Renderers.Droid.Resource.Styleable.SearchView = global::PathwayGames.Droid.Resource.Styleable.SearchView;
 			global::AiForms.Renderers.Droid.Resource.Styleable.SearchView_android_focusable = global::PathwayGames.Droid.Resource.Styleable.SearchView_android_focusable;
 			global::AiForms.Renderers.Droid.Resource.Styleable.SearchView_android_imeOptions = global::PathwayGames.Droid.Resource.Styleable.SearchView_android_imeOptions;
@@ -7948,13 +7632,15 @@ namespace PathwayGames.Droid
 			global::AiForms.Renderers.Droid.Resource.Styleable.SearchView_submitBackground = global::PathwayGames.Droid.Resource.Styleable.SearchView_submitBackground;
 			global::AiForms.Renderers.Droid.Resource.Styleable.SearchView_suggestionRowLayout = global::PathwayGames.Droid.Resource.Styleable.SearchView_suggestionRowLayout;
 			global::AiForms.Renderers.Droid.Resource.Styleable.SearchView_voiceIcon = global::PathwayGames.Droid.Resource.Styleable.SearchView_voiceIcon;
+			global::AiForms.Renderers.Droid.Resource.Styleable.SettingsViewRendererTheme = global::PathwayGames.Droid.Resource.Styleable.SettingsViewRendererTheme;
+			global::AiForms.Renderers.Droid.Resource.Styleable.SettingsViewRendererTheme_settingsViewStyle = global::PathwayGames.Droid.Resource.Styleable.SettingsViewRendererTheme_settingsViewStyle;
 			global::AiForms.Renderers.Droid.Resource.Styleable.Snackbar = global::PathwayGames.Droid.Resource.Styleable.Snackbar;
-			global::AiForms.Renderers.Droid.Resource.Styleable.Snackbar_snackbarButtonStyle = global::PathwayGames.Droid.Resource.Styleable.Snackbar_snackbarButtonStyle;
-			global::AiForms.Renderers.Droid.Resource.Styleable.Snackbar_snackbarStyle = global::PathwayGames.Droid.Resource.Styleable.Snackbar_snackbarStyle;
 			global::AiForms.Renderers.Droid.Resource.Styleable.SnackbarLayout = global::PathwayGames.Droid.Resource.Styleable.SnackbarLayout;
 			global::AiForms.Renderers.Droid.Resource.Styleable.SnackbarLayout_android_maxWidth = global::PathwayGames.Droid.Resource.Styleable.SnackbarLayout_android_maxWidth;
 			global::AiForms.Renderers.Droid.Resource.Styleable.SnackbarLayout_elevation = global::PathwayGames.Droid.Resource.Styleable.SnackbarLayout_elevation;
 			global::AiForms.Renderers.Droid.Resource.Styleable.SnackbarLayout_maxActionInlineWidth = global::PathwayGames.Droid.Resource.Styleable.SnackbarLayout_maxActionInlineWidth;
+			global::AiForms.Renderers.Droid.Resource.Styleable.Snackbar_snackbarButtonStyle = global::PathwayGames.Droid.Resource.Styleable.Snackbar_snackbarButtonStyle;
+			global::AiForms.Renderers.Droid.Resource.Styleable.Snackbar_snackbarStyle = global::PathwayGames.Droid.Resource.Styleable.Snackbar_snackbarStyle;
 			global::AiForms.Renderers.Droid.Resource.Styleable.Spinner = global::PathwayGames.Droid.Resource.Styleable.Spinner;
 			global::AiForms.Renderers.Droid.Resource.Styleable.Spinner_android_dropDownWidth = global::PathwayGames.Droid.Resource.Styleable.Spinner_android_dropDownWidth;
 			global::AiForms.Renderers.Droid.Resource.Styleable.Spinner_android_entries = global::PathwayGames.Droid.Resource.Styleable.Spinner_android_entries;
@@ -7962,14 +7648,14 @@ namespace PathwayGames.Droid
 			global::AiForms.Renderers.Droid.Resource.Styleable.Spinner_android_prompt = global::PathwayGames.Droid.Resource.Styleable.Spinner_android_prompt;
 			global::AiForms.Renderers.Droid.Resource.Styleable.Spinner_popupTheme = global::PathwayGames.Droid.Resource.Styleable.Spinner_popupTheme;
 			global::AiForms.Renderers.Droid.Resource.Styleable.StateListDrawable = global::PathwayGames.Droid.Resource.Styleable.StateListDrawable;
+			global::AiForms.Renderers.Droid.Resource.Styleable.StateListDrawableItem = global::PathwayGames.Droid.Resource.Styleable.StateListDrawableItem;
+			global::AiForms.Renderers.Droid.Resource.Styleable.StateListDrawableItem_android_drawable = global::PathwayGames.Droid.Resource.Styleable.StateListDrawableItem_android_drawable;
 			global::AiForms.Renderers.Droid.Resource.Styleable.StateListDrawable_android_constantSize = global::PathwayGames.Droid.Resource.Styleable.StateListDrawable_android_constantSize;
 			global::AiForms.Renderers.Droid.Resource.Styleable.StateListDrawable_android_dither = global::PathwayGames.Droid.Resource.Styleable.StateListDrawable_android_dither;
 			global::AiForms.Renderers.Droid.Resource.Styleable.StateListDrawable_android_enterFadeDuration = global::PathwayGames.Droid.Resource.Styleable.StateListDrawable_android_enterFadeDuration;
 			global::AiForms.Renderers.Droid.Resource.Styleable.StateListDrawable_android_exitFadeDuration = global::PathwayGames.Droid.Resource.Styleable.StateListDrawable_android_exitFadeDuration;
 			global::AiForms.Renderers.Droid.Resource.Styleable.StateListDrawable_android_variablePadding = global::PathwayGames.Droid.Resource.Styleable.StateListDrawable_android_variablePadding;
 			global::AiForms.Renderers.Droid.Resource.Styleable.StateListDrawable_android_visible = global::PathwayGames.Droid.Resource.Styleable.StateListDrawable_android_visible;
-			global::AiForms.Renderers.Droid.Resource.Styleable.StateListDrawableItem = global::PathwayGames.Droid.Resource.Styleable.StateListDrawableItem;
-			global::AiForms.Renderers.Droid.Resource.Styleable.StateListDrawableItem_android_drawable = global::PathwayGames.Droid.Resource.Styleable.StateListDrawableItem_android_drawable;
 			global::AiForms.Renderers.Droid.Resource.Styleable.SwitchCompat = global::PathwayGames.Droid.Resource.Styleable.SwitchCompat;
 			global::AiForms.Renderers.Droid.Resource.Styleable.SwitchCompat_android_textOff = global::PathwayGames.Droid.Resource.Styleable.SwitchCompat_android_textOff;
 			global::AiForms.Renderers.Droid.Resource.Styleable.SwitchCompat_android_textOn = global::PathwayGames.Droid.Resource.Styleable.SwitchCompat_android_textOn;
@@ -8087,17 +7773,12 @@ namespace PathwayGames.Droid
 			global::AiForms.Renderers.Droid.Resource.Styleable.Toolbar_titleMargin = global::PathwayGames.Droid.Resource.Styleable.Toolbar_titleMargin;
 			global::AiForms.Renderers.Droid.Resource.Styleable.Toolbar_titleMarginBottom = global::PathwayGames.Droid.Resource.Styleable.Toolbar_titleMarginBottom;
 			global::AiForms.Renderers.Droid.Resource.Styleable.Toolbar_titleMarginEnd = global::PathwayGames.Droid.Resource.Styleable.Toolbar_titleMarginEnd;
+			global::AiForms.Renderers.Droid.Resource.Styleable.Toolbar_titleMargins = global::PathwayGames.Droid.Resource.Styleable.Toolbar_titleMargins;
 			global::AiForms.Renderers.Droid.Resource.Styleable.Toolbar_titleMarginStart = global::PathwayGames.Droid.Resource.Styleable.Toolbar_titleMarginStart;
 			global::AiForms.Renderers.Droid.Resource.Styleable.Toolbar_titleMarginTop = global::PathwayGames.Droid.Resource.Styleable.Toolbar_titleMarginTop;
-			global::AiForms.Renderers.Droid.Resource.Styleable.Toolbar_titleMargins = global::PathwayGames.Droid.Resource.Styleable.Toolbar_titleMargins;
 			global::AiForms.Renderers.Droid.Resource.Styleable.Toolbar_titleTextAppearance = global::PathwayGames.Droid.Resource.Styleable.Toolbar_titleTextAppearance;
 			global::AiForms.Renderers.Droid.Resource.Styleable.Toolbar_titleTextColor = global::PathwayGames.Droid.Resource.Styleable.Toolbar_titleTextColor;
 			global::AiForms.Renderers.Droid.Resource.Styleable.View = global::PathwayGames.Droid.Resource.Styleable.View;
-			global::AiForms.Renderers.Droid.Resource.Styleable.View_android_focusable = global::PathwayGames.Droid.Resource.Styleable.View_android_focusable;
-			global::AiForms.Renderers.Droid.Resource.Styleable.View_android_theme = global::PathwayGames.Droid.Resource.Styleable.View_android_theme;
-			global::AiForms.Renderers.Droid.Resource.Styleable.View_paddingEnd = global::PathwayGames.Droid.Resource.Styleable.View_paddingEnd;
-			global::AiForms.Renderers.Droid.Resource.Styleable.View_paddingStart = global::PathwayGames.Droid.Resource.Styleable.View_paddingStart;
-			global::AiForms.Renderers.Droid.Resource.Styleable.View_theme = global::PathwayGames.Droid.Resource.Styleable.View_theme;
 			global::AiForms.Renderers.Droid.Resource.Styleable.ViewBackgroundHelper = global::PathwayGames.Droid.Resource.Styleable.ViewBackgroundHelper;
 			global::AiForms.Renderers.Droid.Resource.Styleable.ViewBackgroundHelper_android_background = global::PathwayGames.Droid.Resource.Styleable.ViewBackgroundHelper_android_background;
 			global::AiForms.Renderers.Droid.Resource.Styleable.ViewBackgroundHelper_backgroundTint = global::PathwayGames.Droid.Resource.Styleable.ViewBackgroundHelper_backgroundTint;
@@ -8106,6 +7787,11 @@ namespace PathwayGames.Droid
 			global::AiForms.Renderers.Droid.Resource.Styleable.ViewStubCompat_android_id = global::PathwayGames.Droid.Resource.Styleable.ViewStubCompat_android_id;
 			global::AiForms.Renderers.Droid.Resource.Styleable.ViewStubCompat_android_inflatedId = global::PathwayGames.Droid.Resource.Styleable.ViewStubCompat_android_inflatedId;
 			global::AiForms.Renderers.Droid.Resource.Styleable.ViewStubCompat_android_layout = global::PathwayGames.Droid.Resource.Styleable.ViewStubCompat_android_layout;
+			global::AiForms.Renderers.Droid.Resource.Styleable.View_android_focusable = global::PathwayGames.Droid.Resource.Styleable.View_android_focusable;
+			global::AiForms.Renderers.Droid.Resource.Styleable.View_android_theme = global::PathwayGames.Droid.Resource.Styleable.View_android_theme;
+			global::AiForms.Renderers.Droid.Resource.Styleable.View_paddingEnd = global::PathwayGames.Droid.Resource.Styleable.View_paddingEnd;
+			global::AiForms.Renderers.Droid.Resource.Styleable.View_paddingStart = global::PathwayGames.Droid.Resource.Styleable.View_paddingStart;
+			global::AiForms.Renderers.Droid.Resource.Styleable.View_theme = global::PathwayGames.Droid.Resource.Styleable.View_theme;
 			global::Xamarin.Essentials.Resource.Attribute.alpha = global::PathwayGames.Droid.Resource.Attribute.alpha;
 			global::Xamarin.Essentials.Resource.Attribute.coordinatorLayoutStyle = global::PathwayGames.Droid.Resource.Attribute.coordinatorLayoutStyle;
 			global::Xamarin.Essentials.Resource.Attribute.font = global::PathwayGames.Droid.Resource.Attribute.font;
@@ -17280,406 +16966,409 @@ namespace PathwayGames.Droid
 			public const int selectableItemBackgroundBorderless = 2130903415;
 			
 			// aapt resource value: 0x7F030178
-			public const int showAsAction = 2130903416;
+			public const int settingsViewStyle = 2130903416;
 			
 			// aapt resource value: 0x7F030179
-			public const int showDividers = 2130903417;
+			public const int showAsAction = 2130903417;
 			
 			// aapt resource value: 0x7F03017A
-			public const int showMotionSpec = 2130903418;
+			public const int showDividers = 2130903418;
 			
 			// aapt resource value: 0x7F03017B
-			public const int showText = 2130903419;
+			public const int showMotionSpec = 2130903419;
 			
 			// aapt resource value: 0x7F03017C
-			public const int showTitle = 2130903420;
+			public const int showText = 2130903420;
 			
 			// aapt resource value: 0x7F03017D
-			public const int singleChoiceItemLayout = 2130903421;
+			public const int showTitle = 2130903421;
 			
 			// aapt resource value: 0x7F03017E
-			public const int singleLine = 2130903422;
+			public const int singleChoiceItemLayout = 2130903422;
 			
 			// aapt resource value: 0x7F03017F
-			public const int singleSelection = 2130903423;
+			public const int singleLine = 2130903423;
 			
 			// aapt resource value: 0x7F030180
-			public const int snackbarButtonStyle = 2130903424;
+			public const int singleSelection = 2130903424;
 			
 			// aapt resource value: 0x7F030181
-			public const int snackbarStyle = 2130903425;
+			public const int snackbarButtonStyle = 2130903425;
 			
 			// aapt resource value: 0x7F030182
-			public const int spanCount = 2130903426;
+			public const int snackbarStyle = 2130903426;
 			
 			// aapt resource value: 0x7F030183
-			public const int spinBars = 2130903427;
+			public const int spanCount = 2130903427;
 			
 			// aapt resource value: 0x7F030184
-			public const int spinnerDropDownItemStyle = 2130903428;
+			public const int spinBars = 2130903428;
 			
 			// aapt resource value: 0x7F030185
-			public const int spinnerStyle = 2130903429;
+			public const int spinnerDropDownItemStyle = 2130903429;
 			
 			// aapt resource value: 0x7F030186
-			public const int splitTrack = 2130903430;
+			public const int spinnerStyle = 2130903430;
 			
 			// aapt resource value: 0x7F030187
-			public const int srcCompat = 2130903431;
+			public const int splitTrack = 2130903431;
 			
 			// aapt resource value: 0x7F030188
-			public const int stackFromEnd = 2130903432;
+			public const int srcCompat = 2130903432;
 			
 			// aapt resource value: 0x7F030189
-			public const int state_above_anchor = 2130903433;
+			public const int stackFromEnd = 2130903433;
 			
 			// aapt resource value: 0x7F03018A
-			public const int state_collapsed = 2130903434;
+			public const int state_above_anchor = 2130903434;
 			
 			// aapt resource value: 0x7F03018B
-			public const int state_collapsible = 2130903435;
+			public const int state_collapsed = 2130903435;
 			
 			// aapt resource value: 0x7F03018C
-			public const int state_liftable = 2130903436;
+			public const int state_collapsible = 2130903436;
 			
 			// aapt resource value: 0x7F03018D
-			public const int state_lifted = 2130903437;
+			public const int state_liftable = 2130903437;
 			
 			// aapt resource value: 0x7F03018E
-			public const int statusBarBackground = 2130903438;
+			public const int state_lifted = 2130903438;
 			
 			// aapt resource value: 0x7F03018F
-			public const int statusBarScrim = 2130903439;
+			public const int statusBarBackground = 2130903439;
 			
 			// aapt resource value: 0x7F030190
-			public const int strokeColor = 2130903440;
+			public const int statusBarScrim = 2130903440;
 			
 			// aapt resource value: 0x7F030191
-			public const int strokeWidth = 2130903441;
+			public const int strokeColor = 2130903441;
 			
 			// aapt resource value: 0x7F030192
-			public const int subMenuArrow = 2130903442;
+			public const int strokeWidth = 2130903442;
 			
 			// aapt resource value: 0x7F030193
-			public const int submitBackground = 2130903443;
+			public const int subMenuArrow = 2130903443;
 			
 			// aapt resource value: 0x7F030194
-			public const int subtitle = 2130903444;
+			public const int submitBackground = 2130903444;
 			
 			// aapt resource value: 0x7F030195
-			public const int subtitleTextAppearance = 2130903445;
+			public const int subtitle = 2130903445;
 			
 			// aapt resource value: 0x7F030196
-			public const int subtitleTextColor = 2130903446;
+			public const int subtitleTextAppearance = 2130903446;
 			
 			// aapt resource value: 0x7F030197
-			public const int subtitleTextStyle = 2130903447;
+			public const int subtitleTextColor = 2130903447;
 			
 			// aapt resource value: 0x7F030198
-			public const int suggestionRowLayout = 2130903448;
+			public const int subtitleTextStyle = 2130903448;
 			
 			// aapt resource value: 0x7F030199
-			public const int switchMinWidth = 2130903449;
+			public const int suggestionRowLayout = 2130903449;
 			
 			// aapt resource value: 0x7F03019A
-			public const int switchPadding = 2130903450;
+			public const int switchMinWidth = 2130903450;
 			
 			// aapt resource value: 0x7F03019B
-			public const int switchStyle = 2130903451;
+			public const int switchPadding = 2130903451;
 			
 			// aapt resource value: 0x7F03019C
-			public const int switchTextAppearance = 2130903452;
+			public const int switchStyle = 2130903452;
 			
 			// aapt resource value: 0x7F03019D
-			public const int tabBackground = 2130903453;
+			public const int switchTextAppearance = 2130903453;
 			
 			// aapt resource value: 0x7F03019E
-			public const int tabContentStart = 2130903454;
+			public const int tabBackground = 2130903454;
 			
 			// aapt resource value: 0x7F03019F
-			public const int tabGravity = 2130903455;
+			public const int tabContentStart = 2130903455;
 			
 			// aapt resource value: 0x7F0301A0
-			public const int tabIconTint = 2130903456;
+			public const int tabGravity = 2130903456;
 			
 			// aapt resource value: 0x7F0301A1
-			public const int tabIconTintMode = 2130903457;
+			public const int tabIconTint = 2130903457;
 			
 			// aapt resource value: 0x7F0301A2
-			public const int tabIndicator = 2130903458;
+			public const int tabIconTintMode = 2130903458;
 			
 			// aapt resource value: 0x7F0301A3
-			public const int tabIndicatorAnimationDuration = 2130903459;
+			public const int tabIndicator = 2130903459;
 			
 			// aapt resource value: 0x7F0301A4
-			public const int tabIndicatorColor = 2130903460;
+			public const int tabIndicatorAnimationDuration = 2130903460;
 			
 			// aapt resource value: 0x7F0301A5
-			public const int tabIndicatorFullWidth = 2130903461;
+			public const int tabIndicatorColor = 2130903461;
 			
 			// aapt resource value: 0x7F0301A6
-			public const int tabIndicatorGravity = 2130903462;
+			public const int tabIndicatorFullWidth = 2130903462;
 			
 			// aapt resource value: 0x7F0301A7
-			public const int tabIndicatorHeight = 2130903463;
+			public const int tabIndicatorGravity = 2130903463;
 			
 			// aapt resource value: 0x7F0301A8
-			public const int tabInlineLabel = 2130903464;
+			public const int tabIndicatorHeight = 2130903464;
 			
 			// aapt resource value: 0x7F0301A9
-			public const int tabMaxWidth = 2130903465;
+			public const int tabInlineLabel = 2130903465;
 			
 			// aapt resource value: 0x7F0301AA
-			public const int tabMinWidth = 2130903466;
+			public const int tabMaxWidth = 2130903466;
 			
 			// aapt resource value: 0x7F0301AB
-			public const int tabMode = 2130903467;
+			public const int tabMinWidth = 2130903467;
 			
 			// aapt resource value: 0x7F0301AC
-			public const int tabPadding = 2130903468;
+			public const int tabMode = 2130903468;
 			
 			// aapt resource value: 0x7F0301AD
-			public const int tabPaddingBottom = 2130903469;
+			public const int tabPadding = 2130903469;
 			
 			// aapt resource value: 0x7F0301AE
-			public const int tabPaddingEnd = 2130903470;
+			public const int tabPaddingBottom = 2130903470;
 			
 			// aapt resource value: 0x7F0301AF
-			public const int tabPaddingStart = 2130903471;
+			public const int tabPaddingEnd = 2130903471;
 			
 			// aapt resource value: 0x7F0301B0
-			public const int tabPaddingTop = 2130903472;
+			public const int tabPaddingStart = 2130903472;
 			
 			// aapt resource value: 0x7F0301B1
-			public const int tabRippleColor = 2130903473;
+			public const int tabPaddingTop = 2130903473;
 			
 			// aapt resource value: 0x7F0301B2
-			public const int tabSelectedTextColor = 2130903474;
+			public const int tabRippleColor = 2130903474;
 			
 			// aapt resource value: 0x7F0301B3
-			public const int tabStyle = 2130903475;
+			public const int tabSelectedTextColor = 2130903475;
 			
 			// aapt resource value: 0x7F0301B4
-			public const int tabTextAppearance = 2130903476;
+			public const int tabStyle = 2130903476;
 			
 			// aapt resource value: 0x7F0301B5
-			public const int tabTextColor = 2130903477;
+			public const int tabTextAppearance = 2130903477;
 			
 			// aapt resource value: 0x7F0301B6
-			public const int tabUnboundedRipple = 2130903478;
+			public const int tabTextColor = 2130903478;
 			
 			// aapt resource value: 0x7F0301B7
-			public const int textAllCaps = 2130903479;
+			public const int tabUnboundedRipple = 2130903479;
 			
 			// aapt resource value: 0x7F0301B8
-			public const int textAppearanceBody1 = 2130903480;
+			public const int textAllCaps = 2130903480;
 			
 			// aapt resource value: 0x7F0301B9
-			public const int textAppearanceBody2 = 2130903481;
+			public const int textAppearanceBody1 = 2130903481;
 			
 			// aapt resource value: 0x7F0301BA
-			public const int textAppearanceButton = 2130903482;
+			public const int textAppearanceBody2 = 2130903482;
 			
 			// aapt resource value: 0x7F0301BB
-			public const int textAppearanceCaption = 2130903483;
+			public const int textAppearanceButton = 2130903483;
 			
 			// aapt resource value: 0x7F0301BC
-			public const int textAppearanceHeadline1 = 2130903484;
+			public const int textAppearanceCaption = 2130903484;
 			
 			// aapt resource value: 0x7F0301BD
-			public const int textAppearanceHeadline2 = 2130903485;
+			public const int textAppearanceHeadline1 = 2130903485;
 			
 			// aapt resource value: 0x7F0301BE
-			public const int textAppearanceHeadline3 = 2130903486;
+			public const int textAppearanceHeadline2 = 2130903486;
 			
 			// aapt resource value: 0x7F0301BF
-			public const int textAppearanceHeadline4 = 2130903487;
+			public const int textAppearanceHeadline3 = 2130903487;
 			
 			// aapt resource value: 0x7F0301C0
-			public const int textAppearanceHeadline5 = 2130903488;
+			public const int textAppearanceHeadline4 = 2130903488;
 			
 			// aapt resource value: 0x7F0301C1
-			public const int textAppearanceHeadline6 = 2130903489;
+			public const int textAppearanceHeadline5 = 2130903489;
 			
 			// aapt resource value: 0x7F0301C2
-			public const int textAppearanceLargePopupMenu = 2130903490;
+			public const int textAppearanceHeadline6 = 2130903490;
 			
 			// aapt resource value: 0x7F0301C3
-			public const int textAppearanceListItem = 2130903491;
+			public const int textAppearanceLargePopupMenu = 2130903491;
 			
 			// aapt resource value: 0x7F0301C4
-			public const int textAppearanceListItemSecondary = 2130903492;
+			public const int textAppearanceListItem = 2130903492;
 			
 			// aapt resource value: 0x7F0301C5
-			public const int textAppearanceListItemSmall = 2130903493;
+			public const int textAppearanceListItemSecondary = 2130903493;
 			
 			// aapt resource value: 0x7F0301C6
-			public const int textAppearanceOverline = 2130903494;
+			public const int textAppearanceListItemSmall = 2130903494;
 			
 			// aapt resource value: 0x7F0301C7
-			public const int textAppearancePopupMenuHeader = 2130903495;
+			public const int textAppearanceOverline = 2130903495;
 			
 			// aapt resource value: 0x7F0301C8
-			public const int textAppearanceSearchResultSubtitle = 2130903496;
+			public const int textAppearancePopupMenuHeader = 2130903496;
 			
 			// aapt resource value: 0x7F0301C9
-			public const int textAppearanceSearchResultTitle = 2130903497;
+			public const int textAppearanceSearchResultSubtitle = 2130903497;
 			
 			// aapt resource value: 0x7F0301CA
-			public const int textAppearanceSmallPopupMenu = 2130903498;
+			public const int textAppearanceSearchResultTitle = 2130903498;
 			
 			// aapt resource value: 0x7F0301CB
-			public const int textAppearanceSubtitle1 = 2130903499;
+			public const int textAppearanceSmallPopupMenu = 2130903499;
 			
 			// aapt resource value: 0x7F0301CC
-			public const int textAppearanceSubtitle2 = 2130903500;
+			public const int textAppearanceSubtitle1 = 2130903500;
 			
 			// aapt resource value: 0x7F0301CD
-			public const int textColorAlertDialogListItem = 2130903501;
+			public const int textAppearanceSubtitle2 = 2130903501;
 			
 			// aapt resource value: 0x7F0301CE
-			public const int textColorSearchUrl = 2130903502;
+			public const int textColorAlertDialogListItem = 2130903502;
 			
 			// aapt resource value: 0x7F0301CF
-			public const int textEndPadding = 2130903503;
+			public const int textColorSearchUrl = 2130903503;
 			
 			// aapt resource value: 0x7F0301D0
-			public const int textInputStyle = 2130903504;
+			public const int textEndPadding = 2130903504;
 			
 			// aapt resource value: 0x7F0301D1
-			public const int textStartPadding = 2130903505;
+			public const int textInputStyle = 2130903505;
 			
 			// aapt resource value: 0x7F0301D2
-			public const int theme = 2130903506;
+			public const int textStartPadding = 2130903506;
 			
 			// aapt resource value: 0x7F0301D3
-			public const int thickness = 2130903507;
+			public const int theme = 2130903507;
 			
 			// aapt resource value: 0x7F0301D4
-			public const int thumbTextPadding = 2130903508;
+			public const int thickness = 2130903508;
 			
 			// aapt resource value: 0x7F0301D5
-			public const int thumbTint = 2130903509;
+			public const int thumbTextPadding = 2130903509;
 			
 			// aapt resource value: 0x7F0301D6
-			public const int thumbTintMode = 2130903510;
+			public const int thumbTint = 2130903510;
 			
 			// aapt resource value: 0x7F0301D7
-			public const int tickMark = 2130903511;
+			public const int thumbTintMode = 2130903511;
 			
 			// aapt resource value: 0x7F0301D8
-			public const int tickMarkTint = 2130903512;
+			public const int tickMark = 2130903512;
 			
 			// aapt resource value: 0x7F0301D9
-			public const int tickMarkTintMode = 2130903513;
+			public const int tickMarkTint = 2130903513;
 			
 			// aapt resource value: 0x7F0301DA
-			public const int tint = 2130903514;
+			public const int tickMarkTintMode = 2130903514;
 			
 			// aapt resource value: 0x7F0301DB
-			public const int tintMode = 2130903515;
+			public const int tint = 2130903515;
 			
 			// aapt resource value: 0x7F0301DC
-			public const int title = 2130903516;
+			public const int tintMode = 2130903516;
 			
 			// aapt resource value: 0x7F0301DD
-			public const int titleEnabled = 2130903517;
+			public const int title = 2130903517;
 			
 			// aapt resource value: 0x7F0301DE
-			public const int titleMargin = 2130903518;
+			public const int titleEnabled = 2130903518;
 			
 			// aapt resource value: 0x7F0301DF
-			public const int titleMarginBottom = 2130903519;
+			public const int titleMargin = 2130903519;
 			
 			// aapt resource value: 0x7F0301E0
-			public const int titleMarginEnd = 2130903520;
-			
-			// aapt resource value: 0x7F0301E3
-			public const int titleMargins = 2130903523;
+			public const int titleMarginBottom = 2130903520;
 			
 			// aapt resource value: 0x7F0301E1
-			public const int titleMarginStart = 2130903521;
-			
-			// aapt resource value: 0x7F0301E2
-			public const int titleMarginTop = 2130903522;
+			public const int titleMarginEnd = 2130903521;
 			
 			// aapt resource value: 0x7F0301E4
-			public const int titleTextAppearance = 2130903524;
+			public const int titleMargins = 2130903524;
+			
+			// aapt resource value: 0x7F0301E2
+			public const int titleMarginStart = 2130903522;
+			
+			// aapt resource value: 0x7F0301E3
+			public const int titleMarginTop = 2130903523;
 			
 			// aapt resource value: 0x7F0301E5
-			public const int titleTextColor = 2130903525;
+			public const int titleTextAppearance = 2130903525;
 			
 			// aapt resource value: 0x7F0301E6
-			public const int titleTextStyle = 2130903526;
+			public const int titleTextColor = 2130903526;
 			
 			// aapt resource value: 0x7F0301E7
-			public const int toolbarId = 2130903527;
+			public const int titleTextStyle = 2130903527;
 			
 			// aapt resource value: 0x7F0301E8
-			public const int toolbarNavigationButtonStyle = 2130903528;
+			public const int toolbarId = 2130903528;
 			
 			// aapt resource value: 0x7F0301E9
-			public const int toolbarStyle = 2130903529;
+			public const int toolbarNavigationButtonStyle = 2130903529;
 			
 			// aapt resource value: 0x7F0301EA
-			public const int tooltipForegroundColor = 2130903530;
+			public const int toolbarStyle = 2130903530;
 			
 			// aapt resource value: 0x7F0301EB
-			public const int tooltipFrameBackground = 2130903531;
+			public const int tooltipForegroundColor = 2130903531;
 			
 			// aapt resource value: 0x7F0301EC
-			public const int tooltipText = 2130903532;
+			public const int tooltipFrameBackground = 2130903532;
 			
 			// aapt resource value: 0x7F0301ED
-			public const int track = 2130903533;
+			public const int tooltipText = 2130903533;
 			
 			// aapt resource value: 0x7F0301EE
-			public const int trackTint = 2130903534;
+			public const int track = 2130903534;
 			
 			// aapt resource value: 0x7F0301EF
-			public const int trackTintMode = 2130903535;
+			public const int trackTint = 2130903535;
 			
 			// aapt resource value: 0x7F0301F0
-			public const int ttcIndex = 2130903536;
+			public const int trackTintMode = 2130903536;
 			
 			// aapt resource value: 0x7F0301F1
-			public const int useCompatPadding = 2130903537;
+			public const int ttcIndex = 2130903537;
 			
 			// aapt resource value: 0x7F0301F2
-			public const int viewInflaterClass = 2130903538;
+			public const int useCompatPadding = 2130903538;
 			
 			// aapt resource value: 0x7F0301F3
-			public const int voiceIcon = 2130903539;
+			public const int viewInflaterClass = 2130903539;
 			
 			// aapt resource value: 0x7F0301F4
-			public const int windowActionBar = 2130903540;
+			public const int voiceIcon = 2130903540;
 			
 			// aapt resource value: 0x7F0301F5
-			public const int windowActionBarOverlay = 2130903541;
+			public const int windowActionBar = 2130903541;
 			
 			// aapt resource value: 0x7F0301F6
-			public const int windowActionModeOverlay = 2130903542;
+			public const int windowActionBarOverlay = 2130903542;
 			
 			// aapt resource value: 0x7F0301F7
-			public const int windowFixedHeightMajor = 2130903543;
+			public const int windowActionModeOverlay = 2130903543;
 			
 			// aapt resource value: 0x7F0301F8
-			public const int windowFixedHeightMinor = 2130903544;
+			public const int windowFixedHeightMajor = 2130903544;
 			
 			// aapt resource value: 0x7F0301F9
-			public const int windowFixedWidthMajor = 2130903545;
+			public const int windowFixedHeightMinor = 2130903545;
 			
 			// aapt resource value: 0x7F0301FA
-			public const int windowFixedWidthMinor = 2130903546;
+			public const int windowFixedWidthMajor = 2130903546;
 			
 			// aapt resource value: 0x7F0301FB
-			public const int windowMinWidthMajor = 2130903547;
+			public const int windowFixedWidthMinor = 2130903547;
 			
 			// aapt resource value: 0x7F0301FC
-			public const int windowMinWidthMinor = 2130903548;
+			public const int windowMinWidthMajor = 2130903548;
 			
 			// aapt resource value: 0x7F0301FD
-			public const int windowNoTitle = 2130903549;
+			public const int windowMinWidthMinor = 2130903549;
+			
+			// aapt resource value: 0x7F0301FE
+			public const int windowNoTitle = 2130903550;
 			
 			static Attribute()
 			{
@@ -19137,698 +18826,704 @@ namespace PathwayGames.Droid
 			// aapt resource value: 0x7F070069
 			public const int design_snackbar_background = 2131165289;
 			
-			// aapt resource value: 0x7F070120
-			public const int icon_eye = 2131165472;
-			
-			// aapt resource value: 0x7F070121
-			public const int icon_eye_off = 2131165473;
+			// aapt resource value: 0x7F07006A
+			public const int divider = 2131165290;
 			
 			// aapt resource value: 0x7F070122
-			public const int icon_head = 2131165474;
+			public const int icon_eye = 2131165474;
 			
 			// aapt resource value: 0x7F070123
-			public const int icon_head_off = 2131165475;
+			public const int icon_eye_off = 2131165475;
 			
 			// aapt resource value: 0x7F070124
-			public const int icon_tests = 2131165476;
-			
-			// aapt resource value: 0x7F07006A
-			public const int ic_audiotrack_dark = 2131165290;
-			
-			// aapt resource value: 0x7F07006B
-			public const int ic_audiotrack_light = 2131165291;
-			
-			// aapt resource value: 0x7F07006C
-			public const int ic_dialog_close_dark = 2131165292;
-			
-			// aapt resource value: 0x7F07006D
-			public const int ic_dialog_close_light = 2131165293;
-			
-			// aapt resource value: 0x7F07006E
-			public const int ic_errorstatus = 2131165294;
-			
-			// aapt resource value: 0x7F07006F
-			public const int ic_group_collapse_00 = 2131165295;
-			
-			// aapt resource value: 0x7F070070
-			public const int ic_group_collapse_01 = 2131165296;
-			
-			// aapt resource value: 0x7F070071
-			public const int ic_group_collapse_02 = 2131165297;
-			
-			// aapt resource value: 0x7F070072
-			public const int ic_group_collapse_03 = 2131165298;
-			
-			// aapt resource value: 0x7F070073
-			public const int ic_group_collapse_04 = 2131165299;
-			
-			// aapt resource value: 0x7F070074
-			public const int ic_group_collapse_05 = 2131165300;
-			
-			// aapt resource value: 0x7F070075
-			public const int ic_group_collapse_06 = 2131165301;
-			
-			// aapt resource value: 0x7F070076
-			public const int ic_group_collapse_07 = 2131165302;
-			
-			// aapt resource value: 0x7F070077
-			public const int ic_group_collapse_08 = 2131165303;
-			
-			// aapt resource value: 0x7F070078
-			public const int ic_group_collapse_09 = 2131165304;
-			
-			// aapt resource value: 0x7F070079
-			public const int ic_group_collapse_10 = 2131165305;
-			
-			// aapt resource value: 0x7F07007A
-			public const int ic_group_collapse_11 = 2131165306;
-			
-			// aapt resource value: 0x7F07007B
-			public const int ic_group_collapse_12 = 2131165307;
-			
-			// aapt resource value: 0x7F07007C
-			public const int ic_group_collapse_13 = 2131165308;
-			
-			// aapt resource value: 0x7F07007D
-			public const int ic_group_collapse_14 = 2131165309;
-			
-			// aapt resource value: 0x7F07007E
-			public const int ic_group_collapse_15 = 2131165310;
-			
-			// aapt resource value: 0x7F07007F
-			public const int ic_group_expand_00 = 2131165311;
-			
-			// aapt resource value: 0x7F070080
-			public const int ic_group_expand_01 = 2131165312;
-			
-			// aapt resource value: 0x7F070081
-			public const int ic_group_expand_02 = 2131165313;
-			
-			// aapt resource value: 0x7F070082
-			public const int ic_group_expand_03 = 2131165314;
-			
-			// aapt resource value: 0x7F070083
-			public const int ic_group_expand_04 = 2131165315;
-			
-			// aapt resource value: 0x7F070084
-			public const int ic_group_expand_05 = 2131165316;
-			
-			// aapt resource value: 0x7F070085
-			public const int ic_group_expand_06 = 2131165317;
-			
-			// aapt resource value: 0x7F070086
-			public const int ic_group_expand_07 = 2131165318;
-			
-			// aapt resource value: 0x7F070087
-			public const int ic_group_expand_08 = 2131165319;
-			
-			// aapt resource value: 0x7F070088
-			public const int ic_group_expand_09 = 2131165320;
-			
-			// aapt resource value: 0x7F070089
-			public const int ic_group_expand_10 = 2131165321;
-			
-			// aapt resource value: 0x7F07008A
-			public const int ic_group_expand_11 = 2131165322;
-			
-			// aapt resource value: 0x7F07008B
-			public const int ic_group_expand_12 = 2131165323;
-			
-			// aapt resource value: 0x7F07008C
-			public const int ic_group_expand_13 = 2131165324;
-			
-			// aapt resource value: 0x7F07008D
-			public const int ic_group_expand_14 = 2131165325;
-			
-			// aapt resource value: 0x7F07008E
-			public const int ic_group_expand_15 = 2131165326;
-			
-			// aapt resource value: 0x7F07008F
-			public const int ic_media_pause_dark = 2131165327;
-			
-			// aapt resource value: 0x7F070090
-			public const int ic_media_pause_light = 2131165328;
-			
-			// aapt resource value: 0x7F070091
-			public const int ic_media_play_dark = 2131165329;
-			
-			// aapt resource value: 0x7F070092
-			public const int ic_media_play_light = 2131165330;
-			
-			// aapt resource value: 0x7F070093
-			public const int ic_media_stop_dark = 2131165331;
-			
-			// aapt resource value: 0x7F070094
-			public const int ic_media_stop_light = 2131165332;
-			
-			// aapt resource value: 0x7F070095
-			public const int ic_mr_button_connected_00_dark = 2131165333;
-			
-			// aapt resource value: 0x7F070096
-			public const int ic_mr_button_connected_00_light = 2131165334;
-			
-			// aapt resource value: 0x7F070097
-			public const int ic_mr_button_connected_01_dark = 2131165335;
-			
-			// aapt resource value: 0x7F070098
-			public const int ic_mr_button_connected_01_light = 2131165336;
-			
-			// aapt resource value: 0x7F070099
-			public const int ic_mr_button_connected_02_dark = 2131165337;
-			
-			// aapt resource value: 0x7F07009A
-			public const int ic_mr_button_connected_02_light = 2131165338;
-			
-			// aapt resource value: 0x7F07009B
-			public const int ic_mr_button_connected_03_dark = 2131165339;
-			
-			// aapt resource value: 0x7F07009C
-			public const int ic_mr_button_connected_03_light = 2131165340;
-			
-			// aapt resource value: 0x7F07009D
-			public const int ic_mr_button_connected_04_dark = 2131165341;
-			
-			// aapt resource value: 0x7F07009E
-			public const int ic_mr_button_connected_04_light = 2131165342;
-			
-			// aapt resource value: 0x7F07009F
-			public const int ic_mr_button_connected_05_dark = 2131165343;
-			
-			// aapt resource value: 0x7F0700A0
-			public const int ic_mr_button_connected_05_light = 2131165344;
-			
-			// aapt resource value: 0x7F0700A1
-			public const int ic_mr_button_connected_06_dark = 2131165345;
-			
-			// aapt resource value: 0x7F0700A2
-			public const int ic_mr_button_connected_06_light = 2131165346;
-			
-			// aapt resource value: 0x7F0700A3
-			public const int ic_mr_button_connected_07_dark = 2131165347;
-			
-			// aapt resource value: 0x7F0700A4
-			public const int ic_mr_button_connected_07_light = 2131165348;
-			
-			// aapt resource value: 0x7F0700A5
-			public const int ic_mr_button_connected_08_dark = 2131165349;
-			
-			// aapt resource value: 0x7F0700A6
-			public const int ic_mr_button_connected_08_light = 2131165350;
-			
-			// aapt resource value: 0x7F0700A7
-			public const int ic_mr_button_connected_09_dark = 2131165351;
-			
-			// aapt resource value: 0x7F0700A8
-			public const int ic_mr_button_connected_09_light = 2131165352;
-			
-			// aapt resource value: 0x7F0700A9
-			public const int ic_mr_button_connected_10_dark = 2131165353;
-			
-			// aapt resource value: 0x7F0700AA
-			public const int ic_mr_button_connected_10_light = 2131165354;
-			
-			// aapt resource value: 0x7F0700AB
-			public const int ic_mr_button_connected_11_dark = 2131165355;
-			
-			// aapt resource value: 0x7F0700AC
-			public const int ic_mr_button_connected_11_light = 2131165356;
-			
-			// aapt resource value: 0x7F0700AD
-			public const int ic_mr_button_connected_12_dark = 2131165357;
-			
-			// aapt resource value: 0x7F0700AE
-			public const int ic_mr_button_connected_12_light = 2131165358;
-			
-			// aapt resource value: 0x7F0700AF
-			public const int ic_mr_button_connected_13_dark = 2131165359;
-			
-			// aapt resource value: 0x7F0700B0
-			public const int ic_mr_button_connected_13_light = 2131165360;
-			
-			// aapt resource value: 0x7F0700B1
-			public const int ic_mr_button_connected_14_dark = 2131165361;
-			
-			// aapt resource value: 0x7F0700B2
-			public const int ic_mr_button_connected_14_light = 2131165362;
-			
-			// aapt resource value: 0x7F0700B3
-			public const int ic_mr_button_connected_15_dark = 2131165363;
-			
-			// aapt resource value: 0x7F0700B4
-			public const int ic_mr_button_connected_15_light = 2131165364;
-			
-			// aapt resource value: 0x7F0700B5
-			public const int ic_mr_button_connected_16_dark = 2131165365;
-			
-			// aapt resource value: 0x7F0700B6
-			public const int ic_mr_button_connected_16_light = 2131165366;
-			
-			// aapt resource value: 0x7F0700B7
-			public const int ic_mr_button_connected_17_dark = 2131165367;
-			
-			// aapt resource value: 0x7F0700B8
-			public const int ic_mr_button_connected_17_light = 2131165368;
-			
-			// aapt resource value: 0x7F0700B9
-			public const int ic_mr_button_connected_18_dark = 2131165369;
-			
-			// aapt resource value: 0x7F0700BA
-			public const int ic_mr_button_connected_18_light = 2131165370;
-			
-			// aapt resource value: 0x7F0700BB
-			public const int ic_mr_button_connected_19_dark = 2131165371;
-			
-			// aapt resource value: 0x7F0700BC
-			public const int ic_mr_button_connected_19_light = 2131165372;
-			
-			// aapt resource value: 0x7F0700BD
-			public const int ic_mr_button_connected_20_dark = 2131165373;
-			
-			// aapt resource value: 0x7F0700BE
-			public const int ic_mr_button_connected_20_light = 2131165374;
-			
-			// aapt resource value: 0x7F0700BF
-			public const int ic_mr_button_connected_21_dark = 2131165375;
-			
-			// aapt resource value: 0x7F0700C0
-			public const int ic_mr_button_connected_21_light = 2131165376;
-			
-			// aapt resource value: 0x7F0700C1
-			public const int ic_mr_button_connected_22_dark = 2131165377;
-			
-			// aapt resource value: 0x7F0700C2
-			public const int ic_mr_button_connected_22_light = 2131165378;
-			
-			// aapt resource value: 0x7F0700C3
-			public const int ic_mr_button_connected_23_dark = 2131165379;
-			
-			// aapt resource value: 0x7F0700C4
-			public const int ic_mr_button_connected_23_light = 2131165380;
-			
-			// aapt resource value: 0x7F0700C5
-			public const int ic_mr_button_connected_24_dark = 2131165381;
-			
-			// aapt resource value: 0x7F0700C6
-			public const int ic_mr_button_connected_24_light = 2131165382;
-			
-			// aapt resource value: 0x7F0700C7
-			public const int ic_mr_button_connected_25_dark = 2131165383;
-			
-			// aapt resource value: 0x7F0700C8
-			public const int ic_mr_button_connected_25_light = 2131165384;
-			
-			// aapt resource value: 0x7F0700C9
-			public const int ic_mr_button_connected_26_dark = 2131165385;
-			
-			// aapt resource value: 0x7F0700CA
-			public const int ic_mr_button_connected_26_light = 2131165386;
-			
-			// aapt resource value: 0x7F0700CB
-			public const int ic_mr_button_connected_27_dark = 2131165387;
-			
-			// aapt resource value: 0x7F0700CC
-			public const int ic_mr_button_connected_27_light = 2131165388;
-			
-			// aapt resource value: 0x7F0700CD
-			public const int ic_mr_button_connected_28_dark = 2131165389;
-			
-			// aapt resource value: 0x7F0700CE
-			public const int ic_mr_button_connected_28_light = 2131165390;
-			
-			// aapt resource value: 0x7F0700CF
-			public const int ic_mr_button_connected_29_dark = 2131165391;
-			
-			// aapt resource value: 0x7F0700D0
-			public const int ic_mr_button_connected_29_light = 2131165392;
-			
-			// aapt resource value: 0x7F0700D1
-			public const int ic_mr_button_connected_30_dark = 2131165393;
-			
-			// aapt resource value: 0x7F0700D2
-			public const int ic_mr_button_connected_30_light = 2131165394;
-			
-			// aapt resource value: 0x7F0700D3
-			public const int ic_mr_button_connecting_00_dark = 2131165395;
-			
-			// aapt resource value: 0x7F0700D4
-			public const int ic_mr_button_connecting_00_light = 2131165396;
-			
-			// aapt resource value: 0x7F0700D5
-			public const int ic_mr_button_connecting_01_dark = 2131165397;
-			
-			// aapt resource value: 0x7F0700D6
-			public const int ic_mr_button_connecting_01_light = 2131165398;
-			
-			// aapt resource value: 0x7F0700D7
-			public const int ic_mr_button_connecting_02_dark = 2131165399;
-			
-			// aapt resource value: 0x7F0700D8
-			public const int ic_mr_button_connecting_02_light = 2131165400;
-			
-			// aapt resource value: 0x7F0700D9
-			public const int ic_mr_button_connecting_03_dark = 2131165401;
-			
-			// aapt resource value: 0x7F0700DA
-			public const int ic_mr_button_connecting_03_light = 2131165402;
-			
-			// aapt resource value: 0x7F0700DB
-			public const int ic_mr_button_connecting_04_dark = 2131165403;
-			
-			// aapt resource value: 0x7F0700DC
-			public const int ic_mr_button_connecting_04_light = 2131165404;
-			
-			// aapt resource value: 0x7F0700DD
-			public const int ic_mr_button_connecting_05_dark = 2131165405;
-			
-			// aapt resource value: 0x7F0700DE
-			public const int ic_mr_button_connecting_05_light = 2131165406;
-			
-			// aapt resource value: 0x7F0700DF
-			public const int ic_mr_button_connecting_06_dark = 2131165407;
-			
-			// aapt resource value: 0x7F0700E0
-			public const int ic_mr_button_connecting_06_light = 2131165408;
-			
-			// aapt resource value: 0x7F0700E1
-			public const int ic_mr_button_connecting_07_dark = 2131165409;
-			
-			// aapt resource value: 0x7F0700E2
-			public const int ic_mr_button_connecting_07_light = 2131165410;
-			
-			// aapt resource value: 0x7F0700E3
-			public const int ic_mr_button_connecting_08_dark = 2131165411;
-			
-			// aapt resource value: 0x7F0700E4
-			public const int ic_mr_button_connecting_08_light = 2131165412;
-			
-			// aapt resource value: 0x7F0700E5
-			public const int ic_mr_button_connecting_09_dark = 2131165413;
-			
-			// aapt resource value: 0x7F0700E6
-			public const int ic_mr_button_connecting_09_light = 2131165414;
-			
-			// aapt resource value: 0x7F0700E7
-			public const int ic_mr_button_connecting_10_dark = 2131165415;
-			
-			// aapt resource value: 0x7F0700E8
-			public const int ic_mr_button_connecting_10_light = 2131165416;
-			
-			// aapt resource value: 0x7F0700E9
-			public const int ic_mr_button_connecting_11_dark = 2131165417;
-			
-			// aapt resource value: 0x7F0700EA
-			public const int ic_mr_button_connecting_11_light = 2131165418;
-			
-			// aapt resource value: 0x7F0700EB
-			public const int ic_mr_button_connecting_12_dark = 2131165419;
-			
-			// aapt resource value: 0x7F0700EC
-			public const int ic_mr_button_connecting_12_light = 2131165420;
-			
-			// aapt resource value: 0x7F0700ED
-			public const int ic_mr_button_connecting_13_dark = 2131165421;
-			
-			// aapt resource value: 0x7F0700EE
-			public const int ic_mr_button_connecting_13_light = 2131165422;
-			
-			// aapt resource value: 0x7F0700EF
-			public const int ic_mr_button_connecting_14_dark = 2131165423;
-			
-			// aapt resource value: 0x7F0700F0
-			public const int ic_mr_button_connecting_14_light = 2131165424;
-			
-			// aapt resource value: 0x7F0700F1
-			public const int ic_mr_button_connecting_15_dark = 2131165425;
-			
-			// aapt resource value: 0x7F0700F2
-			public const int ic_mr_button_connecting_15_light = 2131165426;
-			
-			// aapt resource value: 0x7F0700F3
-			public const int ic_mr_button_connecting_16_dark = 2131165427;
-			
-			// aapt resource value: 0x7F0700F4
-			public const int ic_mr_button_connecting_16_light = 2131165428;
-			
-			// aapt resource value: 0x7F0700F5
-			public const int ic_mr_button_connecting_17_dark = 2131165429;
-			
-			// aapt resource value: 0x7F0700F6
-			public const int ic_mr_button_connecting_17_light = 2131165430;
-			
-			// aapt resource value: 0x7F0700F7
-			public const int ic_mr_button_connecting_18_dark = 2131165431;
-			
-			// aapt resource value: 0x7F0700F8
-			public const int ic_mr_button_connecting_18_light = 2131165432;
-			
-			// aapt resource value: 0x7F0700F9
-			public const int ic_mr_button_connecting_19_dark = 2131165433;
-			
-			// aapt resource value: 0x7F0700FA
-			public const int ic_mr_button_connecting_19_light = 2131165434;
-			
-			// aapt resource value: 0x7F0700FB
-			public const int ic_mr_button_connecting_20_dark = 2131165435;
-			
-			// aapt resource value: 0x7F0700FC
-			public const int ic_mr_button_connecting_20_light = 2131165436;
-			
-			// aapt resource value: 0x7F0700FD
-			public const int ic_mr_button_connecting_21_dark = 2131165437;
-			
-			// aapt resource value: 0x7F0700FE
-			public const int ic_mr_button_connecting_21_light = 2131165438;
-			
-			// aapt resource value: 0x7F0700FF
-			public const int ic_mr_button_connecting_22_dark = 2131165439;
-			
-			// aapt resource value: 0x7F070100
-			public const int ic_mr_button_connecting_22_light = 2131165440;
-			
-			// aapt resource value: 0x7F070101
-			public const int ic_mr_button_connecting_23_dark = 2131165441;
-			
-			// aapt resource value: 0x7F070102
-			public const int ic_mr_button_connecting_23_light = 2131165442;
-			
-			// aapt resource value: 0x7F070103
-			public const int ic_mr_button_connecting_24_dark = 2131165443;
-			
-			// aapt resource value: 0x7F070104
-			public const int ic_mr_button_connecting_24_light = 2131165444;
-			
-			// aapt resource value: 0x7F070105
-			public const int ic_mr_button_connecting_25_dark = 2131165445;
-			
-			// aapt resource value: 0x7F070106
-			public const int ic_mr_button_connecting_25_light = 2131165446;
-			
-			// aapt resource value: 0x7F070107
-			public const int ic_mr_button_connecting_26_dark = 2131165447;
-			
-			// aapt resource value: 0x7F070108
-			public const int ic_mr_button_connecting_26_light = 2131165448;
-			
-			// aapt resource value: 0x7F070109
-			public const int ic_mr_button_connecting_27_dark = 2131165449;
-			
-			// aapt resource value: 0x7F07010A
-			public const int ic_mr_button_connecting_27_light = 2131165450;
-			
-			// aapt resource value: 0x7F07010B
-			public const int ic_mr_button_connecting_28_dark = 2131165451;
-			
-			// aapt resource value: 0x7F07010C
-			public const int ic_mr_button_connecting_28_light = 2131165452;
-			
-			// aapt resource value: 0x7F07010D
-			public const int ic_mr_button_connecting_29_dark = 2131165453;
-			
-			// aapt resource value: 0x7F07010E
-			public const int ic_mr_button_connecting_29_light = 2131165454;
-			
-			// aapt resource value: 0x7F07010F
-			public const int ic_mr_button_connecting_30_dark = 2131165455;
-			
-			// aapt resource value: 0x7F070110
-			public const int ic_mr_button_connecting_30_light = 2131165456;
-			
-			// aapt resource value: 0x7F070111
-			public const int ic_mr_button_disabled_dark = 2131165457;
-			
-			// aapt resource value: 0x7F070112
-			public const int ic_mr_button_disabled_light = 2131165458;
-			
-			// aapt resource value: 0x7F070113
-			public const int ic_mr_button_disconnected_dark = 2131165459;
-			
-			// aapt resource value: 0x7F070114
-			public const int ic_mr_button_disconnected_light = 2131165460;
-			
-			// aapt resource value: 0x7F070115
-			public const int ic_mr_button_grey = 2131165461;
-			
-			// aapt resource value: 0x7F070116
-			public const int ic_mtrl_chip_checked_black = 2131165462;
-			
-			// aapt resource value: 0x7F070117
-			public const int ic_mtrl_chip_checked_circle = 2131165463;
-			
-			// aapt resource value: 0x7F070118
-			public const int ic_mtrl_chip_close_circle = 2131165464;
-			
-			// aapt resource value: 0x7F070119
-			public const int ic_successstatus = 2131165465;
-			
-			// aapt resource value: 0x7F07011A
-			public const int ic_vol_type_speaker_dark = 2131165466;
-			
-			// aapt resource value: 0x7F07011B
-			public const int ic_vol_type_speaker_group_dark = 2131165467;
-			
-			// aapt resource value: 0x7F07011C
-			public const int ic_vol_type_speaker_group_light = 2131165468;
-			
-			// aapt resource value: 0x7F07011D
-			public const int ic_vol_type_speaker_light = 2131165469;
-			
-			// aapt resource value: 0x7F07011E
-			public const int ic_vol_type_tv_dark = 2131165470;
-			
-			// aapt resource value: 0x7F07011F
-			public const int ic_vol_type_tv_light = 2131165471;
+			public const int icon_head = 2131165476;
 			
 			// aapt resource value: 0x7F070125
-			public const int logo = 2131165477;
+			public const int icon_head_off = 2131165477;
 			
 			// aapt resource value: 0x7F070126
-			public const int logo_white = 2131165478;
+			public const int icon_tests = 2131165478;
+			
+			// aapt resource value: 0x7F07006B
+			public const int ic_audiotrack_dark = 2131165291;
+			
+			// aapt resource value: 0x7F07006C
+			public const int ic_audiotrack_light = 2131165292;
+			
+			// aapt resource value: 0x7F07006D
+			public const int ic_dialog_close_dark = 2131165293;
+			
+			// aapt resource value: 0x7F07006E
+			public const int ic_dialog_close_light = 2131165294;
+			
+			// aapt resource value: 0x7F07006F
+			public const int ic_errorstatus = 2131165295;
+			
+			// aapt resource value: 0x7F070070
+			public const int ic_group_collapse_00 = 2131165296;
+			
+			// aapt resource value: 0x7F070071
+			public const int ic_group_collapse_01 = 2131165297;
+			
+			// aapt resource value: 0x7F070072
+			public const int ic_group_collapse_02 = 2131165298;
+			
+			// aapt resource value: 0x7F070073
+			public const int ic_group_collapse_03 = 2131165299;
+			
+			// aapt resource value: 0x7F070074
+			public const int ic_group_collapse_04 = 2131165300;
+			
+			// aapt resource value: 0x7F070075
+			public const int ic_group_collapse_05 = 2131165301;
+			
+			// aapt resource value: 0x7F070076
+			public const int ic_group_collapse_06 = 2131165302;
+			
+			// aapt resource value: 0x7F070077
+			public const int ic_group_collapse_07 = 2131165303;
+			
+			// aapt resource value: 0x7F070078
+			public const int ic_group_collapse_08 = 2131165304;
+			
+			// aapt resource value: 0x7F070079
+			public const int ic_group_collapse_09 = 2131165305;
+			
+			// aapt resource value: 0x7F07007A
+			public const int ic_group_collapse_10 = 2131165306;
+			
+			// aapt resource value: 0x7F07007B
+			public const int ic_group_collapse_11 = 2131165307;
+			
+			// aapt resource value: 0x7F07007C
+			public const int ic_group_collapse_12 = 2131165308;
+			
+			// aapt resource value: 0x7F07007D
+			public const int ic_group_collapse_13 = 2131165309;
+			
+			// aapt resource value: 0x7F07007E
+			public const int ic_group_collapse_14 = 2131165310;
+			
+			// aapt resource value: 0x7F07007F
+			public const int ic_group_collapse_15 = 2131165311;
+			
+			// aapt resource value: 0x7F070080
+			public const int ic_group_expand_00 = 2131165312;
+			
+			// aapt resource value: 0x7F070081
+			public const int ic_group_expand_01 = 2131165313;
+			
+			// aapt resource value: 0x7F070082
+			public const int ic_group_expand_02 = 2131165314;
+			
+			// aapt resource value: 0x7F070083
+			public const int ic_group_expand_03 = 2131165315;
+			
+			// aapt resource value: 0x7F070084
+			public const int ic_group_expand_04 = 2131165316;
+			
+			// aapt resource value: 0x7F070085
+			public const int ic_group_expand_05 = 2131165317;
+			
+			// aapt resource value: 0x7F070086
+			public const int ic_group_expand_06 = 2131165318;
+			
+			// aapt resource value: 0x7F070087
+			public const int ic_group_expand_07 = 2131165319;
+			
+			// aapt resource value: 0x7F070088
+			public const int ic_group_expand_08 = 2131165320;
+			
+			// aapt resource value: 0x7F070089
+			public const int ic_group_expand_09 = 2131165321;
+			
+			// aapt resource value: 0x7F07008A
+			public const int ic_group_expand_10 = 2131165322;
+			
+			// aapt resource value: 0x7F07008B
+			public const int ic_group_expand_11 = 2131165323;
+			
+			// aapt resource value: 0x7F07008C
+			public const int ic_group_expand_12 = 2131165324;
+			
+			// aapt resource value: 0x7F07008D
+			public const int ic_group_expand_13 = 2131165325;
+			
+			// aapt resource value: 0x7F07008E
+			public const int ic_group_expand_14 = 2131165326;
+			
+			// aapt resource value: 0x7F07008F
+			public const int ic_group_expand_15 = 2131165327;
+			
+			// aapt resource value: 0x7F070090
+			public const int ic_media_pause_dark = 2131165328;
+			
+			// aapt resource value: 0x7F070091
+			public const int ic_media_pause_light = 2131165329;
+			
+			// aapt resource value: 0x7F070092
+			public const int ic_media_play_dark = 2131165330;
+			
+			// aapt resource value: 0x7F070093
+			public const int ic_media_play_light = 2131165331;
+			
+			// aapt resource value: 0x7F070094
+			public const int ic_media_stop_dark = 2131165332;
+			
+			// aapt resource value: 0x7F070095
+			public const int ic_media_stop_light = 2131165333;
+			
+			// aapt resource value: 0x7F070096
+			public const int ic_mr_button_connected_00_dark = 2131165334;
+			
+			// aapt resource value: 0x7F070097
+			public const int ic_mr_button_connected_00_light = 2131165335;
+			
+			// aapt resource value: 0x7F070098
+			public const int ic_mr_button_connected_01_dark = 2131165336;
+			
+			// aapt resource value: 0x7F070099
+			public const int ic_mr_button_connected_01_light = 2131165337;
+			
+			// aapt resource value: 0x7F07009A
+			public const int ic_mr_button_connected_02_dark = 2131165338;
+			
+			// aapt resource value: 0x7F07009B
+			public const int ic_mr_button_connected_02_light = 2131165339;
+			
+			// aapt resource value: 0x7F07009C
+			public const int ic_mr_button_connected_03_dark = 2131165340;
+			
+			// aapt resource value: 0x7F07009D
+			public const int ic_mr_button_connected_03_light = 2131165341;
+			
+			// aapt resource value: 0x7F07009E
+			public const int ic_mr_button_connected_04_dark = 2131165342;
+			
+			// aapt resource value: 0x7F07009F
+			public const int ic_mr_button_connected_04_light = 2131165343;
+			
+			// aapt resource value: 0x7F0700A0
+			public const int ic_mr_button_connected_05_dark = 2131165344;
+			
+			// aapt resource value: 0x7F0700A1
+			public const int ic_mr_button_connected_05_light = 2131165345;
+			
+			// aapt resource value: 0x7F0700A2
+			public const int ic_mr_button_connected_06_dark = 2131165346;
+			
+			// aapt resource value: 0x7F0700A3
+			public const int ic_mr_button_connected_06_light = 2131165347;
+			
+			// aapt resource value: 0x7F0700A4
+			public const int ic_mr_button_connected_07_dark = 2131165348;
+			
+			// aapt resource value: 0x7F0700A5
+			public const int ic_mr_button_connected_07_light = 2131165349;
+			
+			// aapt resource value: 0x7F0700A6
+			public const int ic_mr_button_connected_08_dark = 2131165350;
+			
+			// aapt resource value: 0x7F0700A7
+			public const int ic_mr_button_connected_08_light = 2131165351;
+			
+			// aapt resource value: 0x7F0700A8
+			public const int ic_mr_button_connected_09_dark = 2131165352;
+			
+			// aapt resource value: 0x7F0700A9
+			public const int ic_mr_button_connected_09_light = 2131165353;
+			
+			// aapt resource value: 0x7F0700AA
+			public const int ic_mr_button_connected_10_dark = 2131165354;
+			
+			// aapt resource value: 0x7F0700AB
+			public const int ic_mr_button_connected_10_light = 2131165355;
+			
+			// aapt resource value: 0x7F0700AC
+			public const int ic_mr_button_connected_11_dark = 2131165356;
+			
+			// aapt resource value: 0x7F0700AD
+			public const int ic_mr_button_connected_11_light = 2131165357;
+			
+			// aapt resource value: 0x7F0700AE
+			public const int ic_mr_button_connected_12_dark = 2131165358;
+			
+			// aapt resource value: 0x7F0700AF
+			public const int ic_mr_button_connected_12_light = 2131165359;
+			
+			// aapt resource value: 0x7F0700B0
+			public const int ic_mr_button_connected_13_dark = 2131165360;
+			
+			// aapt resource value: 0x7F0700B1
+			public const int ic_mr_button_connected_13_light = 2131165361;
+			
+			// aapt resource value: 0x7F0700B2
+			public const int ic_mr_button_connected_14_dark = 2131165362;
+			
+			// aapt resource value: 0x7F0700B3
+			public const int ic_mr_button_connected_14_light = 2131165363;
+			
+			// aapt resource value: 0x7F0700B4
+			public const int ic_mr_button_connected_15_dark = 2131165364;
+			
+			// aapt resource value: 0x7F0700B5
+			public const int ic_mr_button_connected_15_light = 2131165365;
+			
+			// aapt resource value: 0x7F0700B6
+			public const int ic_mr_button_connected_16_dark = 2131165366;
+			
+			// aapt resource value: 0x7F0700B7
+			public const int ic_mr_button_connected_16_light = 2131165367;
+			
+			// aapt resource value: 0x7F0700B8
+			public const int ic_mr_button_connected_17_dark = 2131165368;
+			
+			// aapt resource value: 0x7F0700B9
+			public const int ic_mr_button_connected_17_light = 2131165369;
+			
+			// aapt resource value: 0x7F0700BA
+			public const int ic_mr_button_connected_18_dark = 2131165370;
+			
+			// aapt resource value: 0x7F0700BB
+			public const int ic_mr_button_connected_18_light = 2131165371;
+			
+			// aapt resource value: 0x7F0700BC
+			public const int ic_mr_button_connected_19_dark = 2131165372;
+			
+			// aapt resource value: 0x7F0700BD
+			public const int ic_mr_button_connected_19_light = 2131165373;
+			
+			// aapt resource value: 0x7F0700BE
+			public const int ic_mr_button_connected_20_dark = 2131165374;
+			
+			// aapt resource value: 0x7F0700BF
+			public const int ic_mr_button_connected_20_light = 2131165375;
+			
+			// aapt resource value: 0x7F0700C0
+			public const int ic_mr_button_connected_21_dark = 2131165376;
+			
+			// aapt resource value: 0x7F0700C1
+			public const int ic_mr_button_connected_21_light = 2131165377;
+			
+			// aapt resource value: 0x7F0700C2
+			public const int ic_mr_button_connected_22_dark = 2131165378;
+			
+			// aapt resource value: 0x7F0700C3
+			public const int ic_mr_button_connected_22_light = 2131165379;
+			
+			// aapt resource value: 0x7F0700C4
+			public const int ic_mr_button_connected_23_dark = 2131165380;
+			
+			// aapt resource value: 0x7F0700C5
+			public const int ic_mr_button_connected_23_light = 2131165381;
+			
+			// aapt resource value: 0x7F0700C6
+			public const int ic_mr_button_connected_24_dark = 2131165382;
+			
+			// aapt resource value: 0x7F0700C7
+			public const int ic_mr_button_connected_24_light = 2131165383;
+			
+			// aapt resource value: 0x7F0700C8
+			public const int ic_mr_button_connected_25_dark = 2131165384;
+			
+			// aapt resource value: 0x7F0700C9
+			public const int ic_mr_button_connected_25_light = 2131165385;
+			
+			// aapt resource value: 0x7F0700CA
+			public const int ic_mr_button_connected_26_dark = 2131165386;
+			
+			// aapt resource value: 0x7F0700CB
+			public const int ic_mr_button_connected_26_light = 2131165387;
+			
+			// aapt resource value: 0x7F0700CC
+			public const int ic_mr_button_connected_27_dark = 2131165388;
+			
+			// aapt resource value: 0x7F0700CD
+			public const int ic_mr_button_connected_27_light = 2131165389;
+			
+			// aapt resource value: 0x7F0700CE
+			public const int ic_mr_button_connected_28_dark = 2131165390;
+			
+			// aapt resource value: 0x7F0700CF
+			public const int ic_mr_button_connected_28_light = 2131165391;
+			
+			// aapt resource value: 0x7F0700D0
+			public const int ic_mr_button_connected_29_dark = 2131165392;
+			
+			// aapt resource value: 0x7F0700D1
+			public const int ic_mr_button_connected_29_light = 2131165393;
+			
+			// aapt resource value: 0x7F0700D2
+			public const int ic_mr_button_connected_30_dark = 2131165394;
+			
+			// aapt resource value: 0x7F0700D3
+			public const int ic_mr_button_connected_30_light = 2131165395;
+			
+			// aapt resource value: 0x7F0700D4
+			public const int ic_mr_button_connecting_00_dark = 2131165396;
+			
+			// aapt resource value: 0x7F0700D5
+			public const int ic_mr_button_connecting_00_light = 2131165397;
+			
+			// aapt resource value: 0x7F0700D6
+			public const int ic_mr_button_connecting_01_dark = 2131165398;
+			
+			// aapt resource value: 0x7F0700D7
+			public const int ic_mr_button_connecting_01_light = 2131165399;
+			
+			// aapt resource value: 0x7F0700D8
+			public const int ic_mr_button_connecting_02_dark = 2131165400;
+			
+			// aapt resource value: 0x7F0700D9
+			public const int ic_mr_button_connecting_02_light = 2131165401;
+			
+			// aapt resource value: 0x7F0700DA
+			public const int ic_mr_button_connecting_03_dark = 2131165402;
+			
+			// aapt resource value: 0x7F0700DB
+			public const int ic_mr_button_connecting_03_light = 2131165403;
+			
+			// aapt resource value: 0x7F0700DC
+			public const int ic_mr_button_connecting_04_dark = 2131165404;
+			
+			// aapt resource value: 0x7F0700DD
+			public const int ic_mr_button_connecting_04_light = 2131165405;
+			
+			// aapt resource value: 0x7F0700DE
+			public const int ic_mr_button_connecting_05_dark = 2131165406;
+			
+			// aapt resource value: 0x7F0700DF
+			public const int ic_mr_button_connecting_05_light = 2131165407;
+			
+			// aapt resource value: 0x7F0700E0
+			public const int ic_mr_button_connecting_06_dark = 2131165408;
+			
+			// aapt resource value: 0x7F0700E1
+			public const int ic_mr_button_connecting_06_light = 2131165409;
+			
+			// aapt resource value: 0x7F0700E2
+			public const int ic_mr_button_connecting_07_dark = 2131165410;
+			
+			// aapt resource value: 0x7F0700E3
+			public const int ic_mr_button_connecting_07_light = 2131165411;
+			
+			// aapt resource value: 0x7F0700E4
+			public const int ic_mr_button_connecting_08_dark = 2131165412;
+			
+			// aapt resource value: 0x7F0700E5
+			public const int ic_mr_button_connecting_08_light = 2131165413;
+			
+			// aapt resource value: 0x7F0700E6
+			public const int ic_mr_button_connecting_09_dark = 2131165414;
+			
+			// aapt resource value: 0x7F0700E7
+			public const int ic_mr_button_connecting_09_light = 2131165415;
+			
+			// aapt resource value: 0x7F0700E8
+			public const int ic_mr_button_connecting_10_dark = 2131165416;
+			
+			// aapt resource value: 0x7F0700E9
+			public const int ic_mr_button_connecting_10_light = 2131165417;
+			
+			// aapt resource value: 0x7F0700EA
+			public const int ic_mr_button_connecting_11_dark = 2131165418;
+			
+			// aapt resource value: 0x7F0700EB
+			public const int ic_mr_button_connecting_11_light = 2131165419;
+			
+			// aapt resource value: 0x7F0700EC
+			public const int ic_mr_button_connecting_12_dark = 2131165420;
+			
+			// aapt resource value: 0x7F0700ED
+			public const int ic_mr_button_connecting_12_light = 2131165421;
+			
+			// aapt resource value: 0x7F0700EE
+			public const int ic_mr_button_connecting_13_dark = 2131165422;
+			
+			// aapt resource value: 0x7F0700EF
+			public const int ic_mr_button_connecting_13_light = 2131165423;
+			
+			// aapt resource value: 0x7F0700F0
+			public const int ic_mr_button_connecting_14_dark = 2131165424;
+			
+			// aapt resource value: 0x7F0700F1
+			public const int ic_mr_button_connecting_14_light = 2131165425;
+			
+			// aapt resource value: 0x7F0700F2
+			public const int ic_mr_button_connecting_15_dark = 2131165426;
+			
+			// aapt resource value: 0x7F0700F3
+			public const int ic_mr_button_connecting_15_light = 2131165427;
+			
+			// aapt resource value: 0x7F0700F4
+			public const int ic_mr_button_connecting_16_dark = 2131165428;
+			
+			// aapt resource value: 0x7F0700F5
+			public const int ic_mr_button_connecting_16_light = 2131165429;
+			
+			// aapt resource value: 0x7F0700F6
+			public const int ic_mr_button_connecting_17_dark = 2131165430;
+			
+			// aapt resource value: 0x7F0700F7
+			public const int ic_mr_button_connecting_17_light = 2131165431;
+			
+			// aapt resource value: 0x7F0700F8
+			public const int ic_mr_button_connecting_18_dark = 2131165432;
+			
+			// aapt resource value: 0x7F0700F9
+			public const int ic_mr_button_connecting_18_light = 2131165433;
+			
+			// aapt resource value: 0x7F0700FA
+			public const int ic_mr_button_connecting_19_dark = 2131165434;
+			
+			// aapt resource value: 0x7F0700FB
+			public const int ic_mr_button_connecting_19_light = 2131165435;
+			
+			// aapt resource value: 0x7F0700FC
+			public const int ic_mr_button_connecting_20_dark = 2131165436;
+			
+			// aapt resource value: 0x7F0700FD
+			public const int ic_mr_button_connecting_20_light = 2131165437;
+			
+			// aapt resource value: 0x7F0700FE
+			public const int ic_mr_button_connecting_21_dark = 2131165438;
+			
+			// aapt resource value: 0x7F0700FF
+			public const int ic_mr_button_connecting_21_light = 2131165439;
+			
+			// aapt resource value: 0x7F070100
+			public const int ic_mr_button_connecting_22_dark = 2131165440;
+			
+			// aapt resource value: 0x7F070101
+			public const int ic_mr_button_connecting_22_light = 2131165441;
+			
+			// aapt resource value: 0x7F070102
+			public const int ic_mr_button_connecting_23_dark = 2131165442;
+			
+			// aapt resource value: 0x7F070103
+			public const int ic_mr_button_connecting_23_light = 2131165443;
+			
+			// aapt resource value: 0x7F070104
+			public const int ic_mr_button_connecting_24_dark = 2131165444;
+			
+			// aapt resource value: 0x7F070105
+			public const int ic_mr_button_connecting_24_light = 2131165445;
+			
+			// aapt resource value: 0x7F070106
+			public const int ic_mr_button_connecting_25_dark = 2131165446;
+			
+			// aapt resource value: 0x7F070107
+			public const int ic_mr_button_connecting_25_light = 2131165447;
+			
+			// aapt resource value: 0x7F070108
+			public const int ic_mr_button_connecting_26_dark = 2131165448;
+			
+			// aapt resource value: 0x7F070109
+			public const int ic_mr_button_connecting_26_light = 2131165449;
+			
+			// aapt resource value: 0x7F07010A
+			public const int ic_mr_button_connecting_27_dark = 2131165450;
+			
+			// aapt resource value: 0x7F07010B
+			public const int ic_mr_button_connecting_27_light = 2131165451;
+			
+			// aapt resource value: 0x7F07010C
+			public const int ic_mr_button_connecting_28_dark = 2131165452;
+			
+			// aapt resource value: 0x7F07010D
+			public const int ic_mr_button_connecting_28_light = 2131165453;
+			
+			// aapt resource value: 0x7F07010E
+			public const int ic_mr_button_connecting_29_dark = 2131165454;
+			
+			// aapt resource value: 0x7F07010F
+			public const int ic_mr_button_connecting_29_light = 2131165455;
+			
+			// aapt resource value: 0x7F070110
+			public const int ic_mr_button_connecting_30_dark = 2131165456;
+			
+			// aapt resource value: 0x7F070111
+			public const int ic_mr_button_connecting_30_light = 2131165457;
+			
+			// aapt resource value: 0x7F070112
+			public const int ic_mr_button_disabled_dark = 2131165458;
+			
+			// aapt resource value: 0x7F070113
+			public const int ic_mr_button_disabled_light = 2131165459;
+			
+			// aapt resource value: 0x7F070114
+			public const int ic_mr_button_disconnected_dark = 2131165460;
+			
+			// aapt resource value: 0x7F070115
+			public const int ic_mr_button_disconnected_light = 2131165461;
+			
+			// aapt resource value: 0x7F070116
+			public const int ic_mr_button_grey = 2131165462;
+			
+			// aapt resource value: 0x7F070117
+			public const int ic_mtrl_chip_checked_black = 2131165463;
+			
+			// aapt resource value: 0x7F070118
+			public const int ic_mtrl_chip_checked_circle = 2131165464;
+			
+			// aapt resource value: 0x7F070119
+			public const int ic_mtrl_chip_close_circle = 2131165465;
+			
+			// aapt resource value: 0x7F07011A
+			public const int ic_navigate_next = 2131165466;
+			
+			// aapt resource value: 0x7F07011B
+			public const int ic_successstatus = 2131165467;
+			
+			// aapt resource value: 0x7F07011C
+			public const int ic_vol_type_speaker_dark = 2131165468;
+			
+			// aapt resource value: 0x7F07011D
+			public const int ic_vol_type_speaker_group_dark = 2131165469;
+			
+			// aapt resource value: 0x7F07011E
+			public const int ic_vol_type_speaker_group_light = 2131165470;
+			
+			// aapt resource value: 0x7F07011F
+			public const int ic_vol_type_speaker_light = 2131165471;
+			
+			// aapt resource value: 0x7F070120
+			public const int ic_vol_type_tv_dark = 2131165472;
+			
+			// aapt resource value: 0x7F070121
+			public const int ic_vol_type_tv_light = 2131165473;
 			
 			// aapt resource value: 0x7F070127
-			public const int MaterialActivityIndicatorBackground = 2131165479;
+			public const int logo = 2131165479;
 			
 			// aapt resource value: 0x7F070128
-			public const int MaterialProgressBar = 2131165480;
+			public const int logo_white = 2131165480;
 			
 			// aapt resource value: 0x7F070129
-			public const int mr_button_connected_dark = 2131165481;
+			public const int MaterialActivityIndicatorBackground = 2131165481;
 			
 			// aapt resource value: 0x7F07012A
-			public const int mr_button_connected_light = 2131165482;
+			public const int MaterialProgressBar = 2131165482;
 			
 			// aapt resource value: 0x7F07012B
-			public const int mr_button_connecting_dark = 2131165483;
+			public const int mr_button_connected_dark = 2131165483;
 			
 			// aapt resource value: 0x7F07012C
-			public const int mr_button_connecting_light = 2131165484;
+			public const int mr_button_connected_light = 2131165484;
 			
 			// aapt resource value: 0x7F07012D
-			public const int mr_button_dark = 2131165485;
+			public const int mr_button_connecting_dark = 2131165485;
 			
 			// aapt resource value: 0x7F07012E
-			public const int mr_button_light = 2131165486;
+			public const int mr_button_connecting_light = 2131165486;
 			
 			// aapt resource value: 0x7F07012F
-			public const int mr_dialog_close_dark = 2131165487;
+			public const int mr_button_dark = 2131165487;
 			
 			// aapt resource value: 0x7F070130
-			public const int mr_dialog_close_light = 2131165488;
+			public const int mr_button_light = 2131165488;
 			
 			// aapt resource value: 0x7F070131
-			public const int mr_dialog_material_background_dark = 2131165489;
+			public const int mr_dialog_close_dark = 2131165489;
 			
 			// aapt resource value: 0x7F070132
-			public const int mr_dialog_material_background_light = 2131165490;
+			public const int mr_dialog_close_light = 2131165490;
 			
 			// aapt resource value: 0x7F070133
-			public const int mr_group_collapse = 2131165491;
+			public const int mr_dialog_material_background_dark = 2131165491;
 			
 			// aapt resource value: 0x7F070134
-			public const int mr_group_expand = 2131165492;
+			public const int mr_dialog_material_background_light = 2131165492;
 			
 			// aapt resource value: 0x7F070135
-			public const int mr_media_pause_dark = 2131165493;
+			public const int mr_group_collapse = 2131165493;
 			
 			// aapt resource value: 0x7F070136
-			public const int mr_media_pause_light = 2131165494;
+			public const int mr_group_expand = 2131165494;
 			
 			// aapt resource value: 0x7F070137
-			public const int mr_media_play_dark = 2131165495;
+			public const int mr_media_pause_dark = 2131165495;
 			
 			// aapt resource value: 0x7F070138
-			public const int mr_media_play_light = 2131165496;
+			public const int mr_media_pause_light = 2131165496;
 			
 			// aapt resource value: 0x7F070139
-			public const int mr_media_stop_dark = 2131165497;
+			public const int mr_media_play_dark = 2131165497;
 			
 			// aapt resource value: 0x7F07013A
-			public const int mr_media_stop_light = 2131165498;
+			public const int mr_media_play_light = 2131165498;
 			
 			// aapt resource value: 0x7F07013B
-			public const int mr_vol_type_audiotrack_dark = 2131165499;
+			public const int mr_media_stop_dark = 2131165499;
 			
 			// aapt resource value: 0x7F07013C
-			public const int mr_vol_type_audiotrack_light = 2131165500;
+			public const int mr_media_stop_light = 2131165500;
 			
 			// aapt resource value: 0x7F07013D
-			public const int mtrl_snackbar_background = 2131165501;
+			public const int mr_vol_type_audiotrack_dark = 2131165501;
 			
 			// aapt resource value: 0x7F07013E
-			public const int mtrl_tabs_default_indicator = 2131165502;
+			public const int mr_vol_type_audiotrack_light = 2131165502;
 			
 			// aapt resource value: 0x7F07013F
-			public const int navigation_empty_icon = 2131165503;
+			public const int mtrl_snackbar_background = 2131165503;
 			
 			// aapt resource value: 0x7F070140
-			public const int notification_action_background = 2131165504;
+			public const int mtrl_tabs_default_indicator = 2131165504;
 			
 			// aapt resource value: 0x7F070141
-			public const int notification_bg = 2131165505;
+			public const int navigation_empty_icon = 2131165505;
 			
 			// aapt resource value: 0x7F070142
-			public const int notification_bg_low = 2131165506;
+			public const int notification_action_background = 2131165506;
 			
 			// aapt resource value: 0x7F070143
-			public const int notification_bg_low_normal = 2131165507;
+			public const int notification_bg = 2131165507;
 			
 			// aapt resource value: 0x7F070144
-			public const int notification_bg_low_pressed = 2131165508;
+			public const int notification_bg_low = 2131165508;
 			
 			// aapt resource value: 0x7F070145
-			public const int notification_bg_normal = 2131165509;
+			public const int notification_bg_low_normal = 2131165509;
 			
 			// aapt resource value: 0x7F070146
-			public const int notification_bg_normal_pressed = 2131165510;
+			public const int notification_bg_low_pressed = 2131165510;
 			
 			// aapt resource value: 0x7F070147
-			public const int notification_icon_background = 2131165511;
+			public const int notification_bg_normal = 2131165511;
 			
 			// aapt resource value: 0x7F070148
-			public const int notification_template_icon_bg = 2131165512;
+			public const int notification_bg_normal_pressed = 2131165512;
 			
 			// aapt resource value: 0x7F070149
-			public const int notification_template_icon_low_bg = 2131165513;
+			public const int notification_icon_background = 2131165513;
 			
 			// aapt resource value: 0x7F07014A
-			public const int notification_tile_bg = 2131165514;
+			public const int notification_template_icon_bg = 2131165514;
 			
 			// aapt resource value: 0x7F07014B
-			public const int notify_panel_notification_icon_bg = 2131165515;
+			public const int notification_template_icon_low_bg = 2131165515;
 			
 			// aapt resource value: 0x7F07014C
-			public const int reward_animation_wow = 2131165516;
+			public const int notification_tile_bg = 2131165516;
 			
 			// aapt resource value: 0x7F07014D
-			public const int roundedbg = 2131165517;
+			public const int notify_panel_notification_icon_bg = 2131165517;
 			
 			// aapt resource value: 0x7F07014E
-			public const int roundedbgdark = 2131165518;
+			public const int reward_animation_wow = 2131165518;
 			
 			// aapt resource value: 0x7F07014F
-			public const int tooltip_frame_dark = 2131165519;
+			public const int roundedbg = 2131165519;
 			
 			// aapt resource value: 0x7F070150
-			public const int tooltip_frame_light = 2131165520;
+			public const int roundedbgdark = 2131165520;
+			
+			// aapt resource value: 0x7F070151
+			public const int tooltip_frame_dark = 2131165521;
+			
+			// aapt resource value: 0x7F070152
+			public const int tooltip_frame_light = 2131165522;
 			
 			static Drawable()
 			{
@@ -19843,122 +19538,122 @@ namespace PathwayGames.Droid
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7F080012
-			public const int action0 = 2131230738;
-			
-			// aapt resource value: 0x7F080024
-			public const int actions = 2131230756;
-			
-			// aapt resource value: 0x7F080013
-			public const int action_bar = 2131230739;
-			
-			// aapt resource value: 0x7F080014
-			public const int action_bar_activity_content = 2131230740;
-			
-			// aapt resource value: 0x7F080015
-			public const int action_bar_container = 2131230741;
-			
-			// aapt resource value: 0x7F080016
-			public const int action_bar_root = 2131230742;
-			
-			// aapt resource value: 0x7F080017
-			public const int action_bar_spinner = 2131230743;
-			
-			// aapt resource value: 0x7F080018
-			public const int action_bar_subtitle = 2131230744;
-			
-			// aapt resource value: 0x7F080019
-			public const int action_bar_title = 2131230745;
-			
-			// aapt resource value: 0x7F08001A
-			public const int action_container = 2131230746;
-			
-			// aapt resource value: 0x7F08001B
-			public const int action_context_bar = 2131230747;
-			
-			// aapt resource value: 0x7F08001C
-			public const int action_divider = 2131230748;
-			
-			// aapt resource value: 0x7F08001D
-			public const int action_image = 2131230749;
-			
-			// aapt resource value: 0x7F08001E
-			public const int action_menu_divider = 2131230750;
-			
-			// aapt resource value: 0x7F08001F
-			public const int action_menu_presenter = 2131230751;
-			
-			// aapt resource value: 0x7F080020
-			public const int action_mode_bar = 2131230752;
-			
-			// aapt resource value: 0x7F080021
-			public const int action_mode_bar_stub = 2131230753;
-			
-			// aapt resource value: 0x7F080022
-			public const int action_mode_close_button = 2131230754;
+			// aapt resource value: 0x7F080011
+			public const int action0 = 2131230737;
 			
 			// aapt resource value: 0x7F080023
-			public const int action_text = 2131230755;
+			public const int actions = 2131230755;
+			
+			// aapt resource value: 0x7F080012
+			public const int action_bar = 2131230738;
+			
+			// aapt resource value: 0x7F080013
+			public const int action_bar_activity_content = 2131230739;
+			
+			// aapt resource value: 0x7F080014
+			public const int action_bar_container = 2131230740;
+			
+			// aapt resource value: 0x7F080015
+			public const int action_bar_root = 2131230741;
+			
+			// aapt resource value: 0x7F080016
+			public const int action_bar_spinner = 2131230742;
+			
+			// aapt resource value: 0x7F080017
+			public const int action_bar_subtitle = 2131230743;
+			
+			// aapt resource value: 0x7F080018
+			public const int action_bar_title = 2131230744;
+			
+			// aapt resource value: 0x7F080019
+			public const int action_container = 2131230745;
+			
+			// aapt resource value: 0x7F08001A
+			public const int action_context_bar = 2131230746;
+			
+			// aapt resource value: 0x7F08001B
+			public const int action_divider = 2131230747;
+			
+			// aapt resource value: 0x7F08001C
+			public const int action_image = 2131230748;
+			
+			// aapt resource value: 0x7F08001D
+			public const int action_menu_divider = 2131230749;
+			
+			// aapt resource value: 0x7F08001E
+			public const int action_menu_presenter = 2131230750;
+			
+			// aapt resource value: 0x7F08001F
+			public const int action_mode_bar = 2131230751;
+			
+			// aapt resource value: 0x7F080020
+			public const int action_mode_bar_stub = 2131230752;
+			
+			// aapt resource value: 0x7F080021
+			public const int action_mode_close_button = 2131230753;
+			
+			// aapt resource value: 0x7F080022
+			public const int action_text = 2131230754;
+			
+			// aapt resource value: 0x7F080024
+			public const int activity_chooser_view_content = 2131230756;
 			
 			// aapt resource value: 0x7F080025
-			public const int activity_chooser_view_content = 2131230757;
+			public const int add = 2131230757;
 			
 			// aapt resource value: 0x7F080026
-			public const int add = 2131230758;
+			public const int alertTitle = 2131230758;
 			
 			// aapt resource value: 0x7F080027
-			public const int alertTitle = 2131230759;
-			
-			// aapt resource value: 0x7F080028
-			public const int all = 2131230760;
+			public const int all = 2131230759;
 			
 			// aapt resource value: 0x7F080000
 			public const int ALT = 2131230720;
 			
+			// aapt resource value: 0x7F080028
+			public const int always = 2131230760;
+			
 			// aapt resource value: 0x7F080029
-			public const int always = 2131230761;
+			public const int async = 2131230761;
 			
 			// aapt resource value: 0x7F08002A
-			public const int async = 2131230762;
+			public const int auto = 2131230762;
 			
 			// aapt resource value: 0x7F08002B
-			public const int auto = 2131230763;
+			public const int beginning = 2131230763;
 			
 			// aapt resource value: 0x7F08002C
-			public const int beginning = 2131230764;
+			public const int blocking = 2131230764;
 			
 			// aapt resource value: 0x7F08002D
-			public const int blocking = 2131230765;
+			public const int bottom = 2131230765;
 			
 			// aapt resource value: 0x7F08002E
-			public const int bottom = 2131230766;
+			public const int bottomtab_navarea = 2131230766;
 			
 			// aapt resource value: 0x7F08002F
-			public const int bottomtab_navarea = 2131230767;
+			public const int bottomtab_tabbar = 2131230767;
 			
 			// aapt resource value: 0x7F080030
-			public const int bottomtab_tabbar = 2131230768;
-			
-			// aapt resource value: 0x7F080031
-			public const int browser_actions_header_text = 2131230769;
-			
-			// aapt resource value: 0x7F080034
-			public const int browser_actions_menu_items = 2131230772;
-			
-			// aapt resource value: 0x7F080032
-			public const int browser_actions_menu_item_icon = 2131230770;
+			public const int browser_actions_header_text = 2131230768;
 			
 			// aapt resource value: 0x7F080033
-			public const int browser_actions_menu_item_text = 2131230771;
+			public const int browser_actions_menu_items = 2131230771;
+			
+			// aapt resource value: 0x7F080031
+			public const int browser_actions_menu_item_icon = 2131230769;
+			
+			// aapt resource value: 0x7F080032
+			public const int browser_actions_menu_item_text = 2131230770;
+			
+			// aapt resource value: 0x7F080034
+			public const int browser_actions_menu_view = 2131230772;
 			
 			// aapt resource value: 0x7F080035
-			public const int browser_actions_menu_view = 2131230773;
+			public const int buttonPanel = 2131230773;
 			
 			// aapt resource value: 0x7F080036
-			public const int buttonPanel = 2131230774;
-			
-			// aapt resource value: 0x7F080037
-			public const int cancel_action = 2131230775;
+			public const int cancel_action = 2131230774;
 			
 			// aapt resource value: 0x7F080002
 			public const int CellAccessoryView = 2131230722;
@@ -19979,682 +19674,679 @@ namespace PathwayGames.Droid
 			public const int CellIcon = 2131230727;
 			
 			// aapt resource value: 0x7F080008
-			public const int CellTitle = 2131230728;
-			
-			// aapt resource value: 0x7F080038
-			public const int center = 2131230776;
-			
-			// aapt resource value: 0x7F080039
-			public const int center_horizontal = 2131230777;
-			
-			// aapt resource value: 0x7F08003A
-			public const int center_vertical = 2131230778;
-			
-			// aapt resource value: 0x7F08003B
-			public const int checkbox = 2131230779;
-			
-			// aapt resource value: 0x7F08003C
-			public const int chronometer = 2131230780;
-			
-			// aapt resource value: 0x7F08003D
-			public const int clip_horizontal = 2131230781;
-			
-			// aapt resource value: 0x7F08003E
-			public const int clip_vertical = 2131230782;
-			
-			// aapt resource value: 0x7F08003F
-			public const int collapseActionView = 2131230783;
-			
-			// aapt resource value: 0x7F080040
-			public const int container = 2131230784;
-			
-			// aapt resource value: 0x7F080041
-			public const int content = 2131230785;
+			public const int CellLayout = 2131230728;
 			
 			// aapt resource value: 0x7F080009
-			public const int ContentCellBody = 2131230729;
+			public const int CellTitle = 2131230729;
+			
+			// aapt resource value: 0x7F080037
+			public const int center = 2131230775;
+			
+			// aapt resource value: 0x7F080038
+			public const int center_horizontal = 2131230776;
+			
+			// aapt resource value: 0x7F080039
+			public const int center_vertical = 2131230777;
+			
+			// aapt resource value: 0x7F08003A
+			public const int checkbox = 2131230778;
+			
+			// aapt resource value: 0x7F08003B
+			public const int chronometer = 2131230779;
+			
+			// aapt resource value: 0x7F08003C
+			public const int clip_horizontal = 2131230780;
+			
+			// aapt resource value: 0x7F08003D
+			public const int clip_vertical = 2131230781;
+			
+			// aapt resource value: 0x7F08003E
+			public const int collapseActionView = 2131230782;
+			
+			// aapt resource value: 0x7F08003F
+			public const int container = 2131230783;
+			
+			// aapt resource value: 0x7F080040
+			public const int content = 2131230784;
 			
 			// aapt resource value: 0x7F08000A
-			public const int ContentCellBorder = 2131230730;
+			public const int ContentCellBody = 2131230730;
+			
+			// aapt resource value: 0x7F080041
+			public const int contentPanel = 2131230785;
 			
 			// aapt resource value: 0x7F080042
-			public const int contentPanel = 2131230786;
-			
-			// aapt resource value: 0x7F080043
-			public const int coordinator = 2131230787;
+			public const int coordinator = 2131230786;
 			
 			// aapt resource value: 0x7F080001
 			public const int CTRL = 2131230721;
 			
+			// aapt resource value: 0x7F080043
+			public const int custom = 2131230787;
+			
 			// aapt resource value: 0x7F080044
-			public const int custom = 2131230788;
+			public const int customPanel = 2131230788;
 			
 			// aapt resource value: 0x7F080045
-			public const int customPanel = 2131230789;
+			public const int decor_content_parent = 2131230789;
 			
 			// aapt resource value: 0x7F080046
-			public const int decor_content_parent = 2131230790;
+			public const int default_activity_button = 2131230790;
 			
 			// aapt resource value: 0x7F080047
-			public const int default_activity_button = 2131230791;
+			public const int design_bottom_sheet = 2131230791;
 			
 			// aapt resource value: 0x7F080048
-			public const int design_bottom_sheet = 2131230792;
+			public const int design_menu_item_action_area = 2131230792;
 			
 			// aapt resource value: 0x7F080049
-			public const int design_menu_item_action_area = 2131230793;
+			public const int design_menu_item_action_area_stub = 2131230793;
 			
 			// aapt resource value: 0x7F08004A
-			public const int design_menu_item_action_area_stub = 2131230794;
+			public const int design_menu_item_text = 2131230794;
 			
 			// aapt resource value: 0x7F08004B
-			public const int design_menu_item_text = 2131230795;
+			public const int design_navigation_view = 2131230795;
 			
 			// aapt resource value: 0x7F08004C
-			public const int design_navigation_view = 2131230796;
+			public const int disableHome = 2131230796;
 			
 			// aapt resource value: 0x7F08004D
-			public const int disableHome = 2131230797;
+			public const int edit_query = 2131230797;
 			
 			// aapt resource value: 0x7F08004E
-			public const int edit_query = 2131230798;
+			public const int end = 2131230798;
 			
 			// aapt resource value: 0x7F08004F
-			public const int end = 2131230799;
+			public const int end_padder = 2131230799;
 			
 			// aapt resource value: 0x7F080050
-			public const int end_padder = 2131230800;
+			public const int enterAlways = 2131230800;
 			
 			// aapt resource value: 0x7F080051
-			public const int enterAlways = 2131230801;
+			public const int enterAlwaysCollapsed = 2131230801;
 			
 			// aapt resource value: 0x7F080052
-			public const int enterAlwaysCollapsed = 2131230802;
-			
-			// aapt resource value: 0x7F080053
-			public const int exitUntilCollapsed = 2131230803;
-			
-			// aapt resource value: 0x7F080055
-			public const int expanded_menu = 2131230805;
+			public const int exitUntilCollapsed = 2131230802;
 			
 			// aapt resource value: 0x7F080054
-			public const int expand_activities_button = 2131230804;
+			public const int expanded_menu = 2131230804;
 			
-			// aapt resource value: 0x7F080056
-			public const int fill = 2131230806;
+			// aapt resource value: 0x7F080053
+			public const int expand_activities_button = 2131230803;
 			
-			// aapt resource value: 0x7F080059
-			public const int filled = 2131230809;
-			
-			// aapt resource value: 0x7F080057
-			public const int fill_horizontal = 2131230807;
+			// aapt resource value: 0x7F080055
+			public const int fill = 2131230805;
 			
 			// aapt resource value: 0x7F080058
-			public const int fill_vertical = 2131230808;
+			public const int filled = 2131230808;
+			
+			// aapt resource value: 0x7F080056
+			public const int fill_horizontal = 2131230806;
+			
+			// aapt resource value: 0x7F080057
+			public const int fill_vertical = 2131230807;
+			
+			// aapt resource value: 0x7F080059
+			public const int @fixed = 2131230809;
 			
 			// aapt resource value: 0x7F08005A
-			public const int @fixed = 2131230810;
+			public const int flyoutcontent_appbar = 2131230810;
 			
 			// aapt resource value: 0x7F08005B
-			public const int flyoutcontent_appbar = 2131230811;
-			
-			// aapt resource value: 0x7F08005C
-			public const int flyoutcontent_recycler = 2131230812;
+			public const int flyoutcontent_recycler = 2131230811;
 			
 			// aapt resource value: 0x7F08000C
 			public const int FooterCellText = 2131230732;
 			
-			// aapt resource value: 0x7F08005D
-			public const int forever = 2131230813;
+			// aapt resource value: 0x7F08005C
+			public const int forever = 2131230812;
 			
 			// aapt resource value: 0x7F08000B
 			public const int FUNCTION = 2131230731;
 			
-			// aapt resource value: 0x7F08005E
-			public const int ghost_view = 2131230814;
+			// aapt resource value: 0x7F08005D
+			public const int ghost_view = 2131230813;
 			
-			// aapt resource value: 0x7F08005F
-			public const int group_divider = 2131230815;
+			// aapt resource value: 0x7F08005E
+			public const int group_divider = 2131230814;
 			
 			// aapt resource value: 0x7F08000D
-			public const int HeaderCellBorder = 2131230733;
+			public const int HeaderCellText = 2131230733;
 			
-			// aapt resource value: 0x7F08000E
-			public const int HeaderCellText = 2131230734;
+			// aapt resource value: 0x7F08005F
+			public const int home = 2131230815;
 			
 			// aapt resource value: 0x7F080060
-			public const int home = 2131230816;
+			public const int homeAsUp = 2131230816;
 			
 			// aapt resource value: 0x7F080061
-			public const int homeAsUp = 2131230817;
+			public const int icon = 2131230817;
 			
 			// aapt resource value: 0x7F080062
-			public const int icon = 2131230818;
+			public const int icon_group = 2131230818;
 			
 			// aapt resource value: 0x7F080063
-			public const int icon_group = 2131230819;
+			public const int ifRoom = 2131230819;
 			
 			// aapt resource value: 0x7F080064
-			public const int ifRoom = 2131230820;
+			public const int image = 2131230820;
 			
 			// aapt resource value: 0x7F080065
-			public const int image = 2131230821;
+			public const int info = 2131230821;
 			
 			// aapt resource value: 0x7F080066
-			public const int info = 2131230822;
+			public const int italic = 2131230822;
 			
 			// aapt resource value: 0x7F080067
-			public const int italic = 2131230823;
+			public const int item_touch_helper_previous_elevation = 2131230823;
 			
 			// aapt resource value: 0x7F080068
-			public const int item_touch_helper_previous_elevation = 2131230824;
+			public const int labeled = 2131230824;
 			
 			// aapt resource value: 0x7F080069
-			public const int labeled = 2131230825;
+			public const int largeLabel = 2131230825;
 			
 			// aapt resource value: 0x7F08006A
-			public const int largeLabel = 2131230826;
+			public const int left = 2131230826;
 			
 			// aapt resource value: 0x7F08006B
-			public const int left = 2131230827;
+			public const int line1 = 2131230827;
 			
 			// aapt resource value: 0x7F08006C
-			public const int line1 = 2131230828;
+			public const int line3 = 2131230828;
 			
 			// aapt resource value: 0x7F08006D
-			public const int line3 = 2131230829;
+			public const int listMode = 2131230829;
 			
 			// aapt resource value: 0x7F08006E
-			public const int listMode = 2131230830;
+			public const int list_item = 2131230830;
 			
 			// aapt resource value: 0x7F08006F
-			public const int list_item = 2131230831;
+			public const int loadingImage = 2131230831;
 			
 			// aapt resource value: 0x7F080070
-			public const int loadingImage = 2131230832;
+			public const int loadingProgressBar = 2131230832;
 			
 			// aapt resource value: 0x7F080071
-			public const int loadingProgressBar = 2131230833;
+			public const int loadingProgressWheel = 2131230833;
 			
 			// aapt resource value: 0x7F080072
-			public const int loadingProgressWheel = 2131230834;
+			public const int main_appbar = 2131230834;
 			
 			// aapt resource value: 0x7F080073
-			public const int main_appbar = 2131230835;
+			public const int main_tablayout = 2131230835;
 			
 			// aapt resource value: 0x7F080074
-			public const int main_tablayout = 2131230836;
+			public const int main_toolbar = 2131230836;
 			
 			// aapt resource value: 0x7F080075
-			public const int main_toolbar = 2131230837;
+			public const int main_viewpager = 2131230837;
 			
 			// aapt resource value: 0x7F080076
-			public const int main_viewpager = 2131230838;
+			public const int masked = 2131230838;
 			
 			// aapt resource value: 0x7F080077
-			public const int masked = 2131230839;
+			public const int materialformsedittext = 2131230839;
 			
 			// aapt resource value: 0x7F080078
-			public const int materialformsedittext = 2131230840;
+			public const int media_actions = 2131230840;
 			
 			// aapt resource value: 0x7F080079
-			public const int media_actions = 2131230841;
+			public const int message = 2131230841;
+			
+			// aapt resource value: 0x7F08000E
+			public const int META = 2131230734;
 			
 			// aapt resource value: 0x7F08007A
-			public const int message = 2131230842;
-			
-			// aapt resource value: 0x7F08000F
-			public const int META = 2131230735;
+			public const int middle = 2131230842;
 			
 			// aapt resource value: 0x7F08007B
-			public const int middle = 2131230843;
+			public const int mini = 2131230843;
 			
 			// aapt resource value: 0x7F08007C
-			public const int mini = 2131230844;
+			public const int mr_art = 2131230844;
 			
 			// aapt resource value: 0x7F08007D
-			public const int mr_art = 2131230845;
+			public const int mr_cast_checkbox = 2131230845;
 			
 			// aapt resource value: 0x7F08007E
-			public const int mr_cast_checkbox = 2131230846;
+			public const int mr_cast_close_button = 2131230846;
 			
 			// aapt resource value: 0x7F08007F
-			public const int mr_cast_close_button = 2131230847;
+			public const int mr_cast_group_icon = 2131230847;
 			
 			// aapt resource value: 0x7F080080
-			public const int mr_cast_group_icon = 2131230848;
+			public const int mr_cast_group_name = 2131230848;
 			
 			// aapt resource value: 0x7F080081
-			public const int mr_cast_group_name = 2131230849;
+			public const int mr_cast_list = 2131230849;
 			
 			// aapt resource value: 0x7F080082
-			public const int mr_cast_list = 2131230850;
+			public const int mr_cast_meta = 2131230850;
 			
 			// aapt resource value: 0x7F080083
-			public const int mr_cast_meta = 2131230851;
+			public const int mr_cast_meta_art = 2131230851;
 			
 			// aapt resource value: 0x7F080084
-			public const int mr_cast_meta_art = 2131230852;
+			public const int mr_cast_meta_subtitle = 2131230852;
 			
 			// aapt resource value: 0x7F080085
-			public const int mr_cast_meta_subtitle = 2131230853;
+			public const int mr_cast_meta_title = 2131230853;
 			
 			// aapt resource value: 0x7F080086
-			public const int mr_cast_meta_title = 2131230854;
+			public const int mr_cast_route_icon = 2131230854;
 			
 			// aapt resource value: 0x7F080087
-			public const int mr_cast_route_icon = 2131230855;
+			public const int mr_cast_route_name = 2131230855;
 			
 			// aapt resource value: 0x7F080088
-			public const int mr_cast_route_name = 2131230856;
+			public const int mr_cast_stop_button = 2131230856;
 			
 			// aapt resource value: 0x7F080089
-			public const int mr_cast_stop_button = 2131230857;
+			public const int mr_cast_volume_layout = 2131230857;
 			
 			// aapt resource value: 0x7F08008A
-			public const int mr_cast_volume_layout = 2131230858;
+			public const int mr_cast_volume_slider = 2131230858;
 			
 			// aapt resource value: 0x7F08008B
-			public const int mr_cast_volume_slider = 2131230859;
+			public const int mr_chooser_list = 2131230859;
 			
 			// aapt resource value: 0x7F08008C
-			public const int mr_chooser_list = 2131230860;
+			public const int mr_chooser_route_desc = 2131230860;
 			
 			// aapt resource value: 0x7F08008D
-			public const int mr_chooser_route_desc = 2131230861;
+			public const int mr_chooser_route_icon = 2131230861;
 			
 			// aapt resource value: 0x7F08008E
-			public const int mr_chooser_route_icon = 2131230862;
+			public const int mr_chooser_route_name = 2131230862;
 			
 			// aapt resource value: 0x7F08008F
-			public const int mr_chooser_route_name = 2131230863;
+			public const int mr_chooser_title = 2131230863;
 			
 			// aapt resource value: 0x7F080090
-			public const int mr_chooser_title = 2131230864;
+			public const int mr_close = 2131230864;
 			
 			// aapt resource value: 0x7F080091
-			public const int mr_close = 2131230865;
+			public const int mr_control_divider = 2131230865;
 			
 			// aapt resource value: 0x7F080092
-			public const int mr_control_divider = 2131230866;
+			public const int mr_control_playback_ctrl = 2131230866;
 			
 			// aapt resource value: 0x7F080093
-			public const int mr_control_playback_ctrl = 2131230867;
+			public const int mr_control_subtitle = 2131230867;
 			
 			// aapt resource value: 0x7F080094
-			public const int mr_control_subtitle = 2131230868;
+			public const int mr_control_title = 2131230868;
 			
 			// aapt resource value: 0x7F080095
-			public const int mr_control_title = 2131230869;
+			public const int mr_control_title_container = 2131230869;
 			
 			// aapt resource value: 0x7F080096
-			public const int mr_control_title_container = 2131230870;
+			public const int mr_custom_control = 2131230870;
 			
 			// aapt resource value: 0x7F080097
-			public const int mr_custom_control = 2131230871;
+			public const int mr_default_control = 2131230871;
 			
 			// aapt resource value: 0x7F080098
-			public const int mr_default_control = 2131230872;
+			public const int mr_dialog_area = 2131230872;
 			
 			// aapt resource value: 0x7F080099
-			public const int mr_dialog_area = 2131230873;
+			public const int mr_dialog_header_name = 2131230873;
 			
 			// aapt resource value: 0x7F08009A
-			public const int mr_dialog_header_name = 2131230874;
+			public const int mr_expandable_area = 2131230874;
 			
 			// aapt resource value: 0x7F08009B
-			public const int mr_expandable_area = 2131230875;
+			public const int mr_group_expand_collapse = 2131230875;
 			
 			// aapt resource value: 0x7F08009C
-			public const int mr_group_expand_collapse = 2131230876;
+			public const int mr_group_volume_route_name = 2131230876;
 			
 			// aapt resource value: 0x7F08009D
-			public const int mr_group_volume_route_name = 2131230877;
+			public const int mr_group_volume_slider = 2131230877;
 			
 			// aapt resource value: 0x7F08009E
-			public const int mr_group_volume_slider = 2131230878;
+			public const int mr_media_main_control = 2131230878;
 			
 			// aapt resource value: 0x7F08009F
-			public const int mr_media_main_control = 2131230879;
+			public const int mr_name = 2131230879;
 			
 			// aapt resource value: 0x7F0800A0
-			public const int mr_name = 2131230880;
+			public const int mr_picker_close_button = 2131230880;
 			
 			// aapt resource value: 0x7F0800A1
-			public const int mr_picker_close_button = 2131230881;
+			public const int mr_picker_list = 2131230881;
 			
 			// aapt resource value: 0x7F0800A2
-			public const int mr_picker_list = 2131230882;
+			public const int mr_picker_route_icon = 2131230882;
 			
 			// aapt resource value: 0x7F0800A3
-			public const int mr_picker_route_icon = 2131230883;
+			public const int mr_picker_route_name = 2131230883;
 			
 			// aapt resource value: 0x7F0800A4
-			public const int mr_picker_route_name = 2131230884;
+			public const int mr_playback_control = 2131230884;
 			
 			// aapt resource value: 0x7F0800A5
-			public const int mr_playback_control = 2131230885;
+			public const int mr_title_bar = 2131230885;
 			
 			// aapt resource value: 0x7F0800A6
-			public const int mr_title_bar = 2131230886;
+			public const int mr_volume_control = 2131230886;
 			
 			// aapt resource value: 0x7F0800A7
-			public const int mr_volume_control = 2131230887;
+			public const int mr_volume_group_list = 2131230887;
 			
 			// aapt resource value: 0x7F0800A8
-			public const int mr_volume_group_list = 2131230888;
+			public const int mr_volume_item_icon = 2131230888;
 			
 			// aapt resource value: 0x7F0800A9
-			public const int mr_volume_item_icon = 2131230889;
+			public const int mr_volume_slider = 2131230889;
 			
 			// aapt resource value: 0x7F0800AA
-			public const int mr_volume_slider = 2131230890;
+			public const int mtrl_child_content_container = 2131230890;
 			
 			// aapt resource value: 0x7F0800AB
-			public const int mtrl_child_content_container = 2131230891;
+			public const int mtrl_internal_children_alpha_tag = 2131230891;
 			
 			// aapt resource value: 0x7F0800AC
-			public const int mtrl_internal_children_alpha_tag = 2131230892;
+			public const int multiply = 2131230892;
 			
 			// aapt resource value: 0x7F0800AD
-			public const int multiply = 2131230893;
+			public const int navigation_header_container = 2131230893;
 			
 			// aapt resource value: 0x7F0800AE
-			public const int navigation_header_container = 2131230894;
+			public const int never = 2131230894;
 			
 			// aapt resource value: 0x7F0800AF
-			public const int never = 2131230895;
+			public const int none = 2131230895;
 			
 			// aapt resource value: 0x7F0800B0
-			public const int none = 2131230896;
+			public const int normal = 2131230896;
 			
 			// aapt resource value: 0x7F0800B1
-			public const int normal = 2131230897;
+			public const int notification_background = 2131230897;
 			
 			// aapt resource value: 0x7F0800B2
-			public const int notification_background = 2131230898;
+			public const int notification_main_column = 2131230898;
 			
 			// aapt resource value: 0x7F0800B3
-			public const int notification_main_column = 2131230899;
+			public const int notification_main_column_container = 2131230899;
 			
 			// aapt resource value: 0x7F0800B4
-			public const int notification_main_column_container = 2131230900;
+			public const int outline = 2131230900;
 			
 			// aapt resource value: 0x7F0800B5
-			public const int outline = 2131230901;
+			public const int parallax = 2131230901;
 			
 			// aapt resource value: 0x7F0800B6
-			public const int parallax = 2131230902;
+			public const int parentPanel = 2131230902;
 			
 			// aapt resource value: 0x7F0800B7
-			public const int parentPanel = 2131230903;
+			public const int parent_matrix = 2131230903;
 			
 			// aapt resource value: 0x7F0800B8
-			public const int parent_matrix = 2131230904;
+			public const int pin = 2131230904;
 			
 			// aapt resource value: 0x7F0800B9
-			public const int pin = 2131230905;
+			public const int progress_circular = 2131230905;
 			
 			// aapt resource value: 0x7F0800BA
-			public const int progress_circular = 2131230906;
+			public const int progress_horizontal = 2131230906;
 			
 			// aapt resource value: 0x7F0800BB
-			public const int progress_horizontal = 2131230907;
+			public const int radio = 2131230907;
 			
 			// aapt resource value: 0x7F0800BC
-			public const int radio = 2131230908;
+			public const int right = 2131230908;
 			
 			// aapt resource value: 0x7F0800BD
-			public const int right = 2131230909;
+			public const int right_icon = 2131230909;
 			
 			// aapt resource value: 0x7F0800BE
-			public const int right_icon = 2131230910;
+			public const int right_side = 2131230910;
 			
 			// aapt resource value: 0x7F0800BF
-			public const int right_side = 2131230911;
+			public const int save_image_matrix = 2131230911;
 			
 			// aapt resource value: 0x7F0800C0
-			public const int save_image_matrix = 2131230912;
+			public const int save_non_transition_alpha = 2131230912;
 			
 			// aapt resource value: 0x7F0800C1
-			public const int save_non_transition_alpha = 2131230913;
+			public const int save_scale_type = 2131230913;
 			
 			// aapt resource value: 0x7F0800C2
-			public const int save_scale_type = 2131230914;
+			public const int screen = 2131230914;
 			
 			// aapt resource value: 0x7F0800C3
-			public const int screen = 2131230915;
-			
-			// aapt resource value: 0x7F0800C4
-			public const int scroll = 2131230916;
-			
-			// aapt resource value: 0x7F0800C8
-			public const int scrollable = 2131230920;
-			
-			// aapt resource value: 0x7F0800C5
-			public const int scrollIndicatorDown = 2131230917;
-			
-			// aapt resource value: 0x7F0800C6
-			public const int scrollIndicatorUp = 2131230918;
+			public const int scroll = 2131230915;
 			
 			// aapt resource value: 0x7F0800C7
-			public const int scrollView = 2131230919;
+			public const int scrollable = 2131230919;
+			
+			// aapt resource value: 0x7F0800C4
+			public const int scrollIndicatorDown = 2131230916;
+			
+			// aapt resource value: 0x7F0800C5
+			public const int scrollIndicatorUp = 2131230917;
+			
+			// aapt resource value: 0x7F0800C6
+			public const int scrollView = 2131230918;
+			
+			// aapt resource value: 0x7F0800C8
+			public const int search_badge = 2131230920;
 			
 			// aapt resource value: 0x7F0800C9
-			public const int search_badge = 2131230921;
+			public const int search_bar = 2131230921;
 			
 			// aapt resource value: 0x7F0800CA
-			public const int search_bar = 2131230922;
+			public const int search_button = 2131230922;
 			
 			// aapt resource value: 0x7F0800CB
-			public const int search_button = 2131230923;
+			public const int search_close_btn = 2131230923;
 			
 			// aapt resource value: 0x7F0800CC
-			public const int search_close_btn = 2131230924;
+			public const int search_edit_frame = 2131230924;
 			
 			// aapt resource value: 0x7F0800CD
-			public const int search_edit_frame = 2131230925;
+			public const int search_go_btn = 2131230925;
 			
 			// aapt resource value: 0x7F0800CE
-			public const int search_go_btn = 2131230926;
+			public const int search_mag_icon = 2131230926;
 			
 			// aapt resource value: 0x7F0800CF
-			public const int search_mag_icon = 2131230927;
+			public const int search_plate = 2131230927;
 			
 			// aapt resource value: 0x7F0800D0
-			public const int search_plate = 2131230928;
+			public const int search_src_text = 2131230928;
 			
 			// aapt resource value: 0x7F0800D1
-			public const int search_src_text = 2131230929;
-			
-			// aapt resource value: 0x7F0800D2
-			public const int search_voice_btn = 2131230930;
-			
-			// aapt resource value: 0x7F0800D4
-			public const int selected = 2131230932;
+			public const int search_voice_btn = 2131230929;
 			
 			// aapt resource value: 0x7F0800D3
-			public const int select_dialog_listview = 2131230931;
+			public const int selected = 2131230931;
+			
+			// aapt resource value: 0x7F0800D2
+			public const int select_dialog_listview = 2131230930;
+			
+			// aapt resource value: 0x7F0800D4
+			public const int shellcontent_appbar = 2131230932;
 			
 			// aapt resource value: 0x7F0800D5
-			public const int shellcontent_appbar = 2131230933;
+			public const int shellcontent_toolbar = 2131230933;
+			
+			// aapt resource value: 0x7F08000F
+			public const int SHIFT = 2131230735;
 			
 			// aapt resource value: 0x7F0800D6
-			public const int shellcontent_toolbar = 2131230934;
-			
-			// aapt resource value: 0x7F080010
-			public const int SHIFT = 2131230736;
+			public const int shortcut = 2131230934;
 			
 			// aapt resource value: 0x7F0800D7
-			public const int shortcut = 2131230935;
+			public const int showCustom = 2131230935;
 			
 			// aapt resource value: 0x7F0800D8
-			public const int showCustom = 2131230936;
+			public const int showHome = 2131230936;
 			
 			// aapt resource value: 0x7F0800D9
-			public const int showHome = 2131230937;
+			public const int showTitle = 2131230937;
 			
 			// aapt resource value: 0x7F0800DA
-			public const int showTitle = 2131230938;
+			public const int sliding_tabs = 2131230938;
 			
 			// aapt resource value: 0x7F0800DB
-			public const int sliding_tabs = 2131230939;
+			public const int smallLabel = 2131230939;
 			
 			// aapt resource value: 0x7F0800DC
-			public const int smallLabel = 2131230940;
+			public const int snackbar_action = 2131230940;
 			
 			// aapt resource value: 0x7F0800DD
-			public const int snackbar_action = 2131230941;
+			public const int snackbar_text = 2131230941;
 			
 			// aapt resource value: 0x7F0800DE
-			public const int snackbar_text = 2131230942;
+			public const int snap = 2131230942;
 			
 			// aapt resource value: 0x7F0800DF
-			public const int snap = 2131230943;
+			public const int snapMargins = 2131230943;
 			
 			// aapt resource value: 0x7F0800E0
-			public const int snapMargins = 2131230944;
+			public const int spacer = 2131230944;
 			
 			// aapt resource value: 0x7F0800E1
-			public const int spacer = 2131230945;
+			public const int split_action_bar = 2131230945;
 			
 			// aapt resource value: 0x7F0800E2
-			public const int split_action_bar = 2131230946;
+			public const int src_atop = 2131230946;
 			
 			// aapt resource value: 0x7F0800E3
-			public const int src_atop = 2131230947;
+			public const int src_in = 2131230947;
 			
 			// aapt resource value: 0x7F0800E4
-			public const int src_in = 2131230948;
+			public const int src_over = 2131230948;
 			
 			// aapt resource value: 0x7F0800E5
-			public const int src_over = 2131230949;
+			public const int start = 2131230949;
 			
 			// aapt resource value: 0x7F0800E6
-			public const int start = 2131230950;
+			public const int status_bar_latest_event_content = 2131230950;
 			
 			// aapt resource value: 0x7F0800E7
-			public const int status_bar_latest_event_content = 2131230951;
+			public const int stretch = 2131230951;
 			
 			// aapt resource value: 0x7F0800E8
-			public const int stretch = 2131230952;
+			public const int submenuarrow = 2131230952;
 			
 			// aapt resource value: 0x7F0800E9
-			public const int submenuarrow = 2131230953;
+			public const int submit_area = 2131230953;
+			
+			// aapt resource value: 0x7F080010
+			public const int SYM = 2131230736;
 			
 			// aapt resource value: 0x7F0800EA
-			public const int submit_area = 2131230954;
-			
-			// aapt resource value: 0x7F080011
-			public const int SYM = 2131230737;
+			public const int tabMode = 2131230954;
 			
 			// aapt resource value: 0x7F0800EB
-			public const int tabMode = 2131230955;
+			public const int tag_transition_group = 2131230955;
 			
 			// aapt resource value: 0x7F0800EC
-			public const int tag_transition_group = 2131230956;
+			public const int tag_unhandled_key_event_manager = 2131230956;
 			
 			// aapt resource value: 0x7F0800ED
-			public const int tag_unhandled_key_event_manager = 2131230957;
+			public const int tag_unhandled_key_listeners = 2131230957;
 			
 			// aapt resource value: 0x7F0800EE
-			public const int tag_unhandled_key_listeners = 2131230958;
+			public const int text = 2131230958;
 			
 			// aapt resource value: 0x7F0800EF
-			public const int text = 2131230959;
-			
-			// aapt resource value: 0x7F0800F0
-			public const int text2 = 2131230960;
-			
-			// aapt resource value: 0x7F0800F6
-			public const int textinput_counter = 2131230966;
-			
-			// aapt resource value: 0x7F0800F7
-			public const int textinput_error = 2131230967;
-			
-			// aapt resource value: 0x7F0800F8
-			public const int textinput_helper_text = 2131230968;
-			
-			// aapt resource value: 0x7F0800F1
-			public const int textSpacerNoButtons = 2131230961;
-			
-			// aapt resource value: 0x7F0800F2
-			public const int textSpacerNoTitle = 2131230962;
-			
-			// aapt resource value: 0x7F0800F3
-			public const int textStart = 2131230963;
-			
-			// aapt resource value: 0x7F0800F4
-			public const int textViewStatus = 2131230964;
+			public const int text2 = 2131230959;
 			
 			// aapt resource value: 0x7F0800F5
-			public const int text_input_password_toggle = 2131230965;
+			public const int textinput_counter = 2131230965;
+			
+			// aapt resource value: 0x7F0800F6
+			public const int textinput_error = 2131230966;
+			
+			// aapt resource value: 0x7F0800F7
+			public const int textinput_helper_text = 2131230967;
+			
+			// aapt resource value: 0x7F0800F0
+			public const int textSpacerNoButtons = 2131230960;
+			
+			// aapt resource value: 0x7F0800F1
+			public const int textSpacerNoTitle = 2131230961;
+			
+			// aapt resource value: 0x7F0800F2
+			public const int textStart = 2131230962;
+			
+			// aapt resource value: 0x7F0800F3
+			public const int textViewStatus = 2131230963;
+			
+			// aapt resource value: 0x7F0800F4
+			public const int text_input_password_toggle = 2131230964;
+			
+			// aapt resource value: 0x7F0800F8
+			public const int time = 2131230968;
 			
 			// aapt resource value: 0x7F0800F9
-			public const int time = 2131230969;
+			public const int title = 2131230969;
 			
 			// aapt resource value: 0x7F0800FA
-			public const int title = 2131230970;
+			public const int titleDividerNoCustom = 2131230970;
 			
 			// aapt resource value: 0x7F0800FB
-			public const int titleDividerNoCustom = 2131230971;
+			public const int title_template = 2131230971;
 			
 			// aapt resource value: 0x7F0800FC
-			public const int title_template = 2131230972;
+			public const int toolbar = 2131230972;
 			
 			// aapt resource value: 0x7F0800FD
-			public const int toolbar = 2131230973;
+			public const int top = 2131230973;
 			
 			// aapt resource value: 0x7F0800FE
-			public const int top = 2131230974;
+			public const int topPanel = 2131230974;
 			
 			// aapt resource value: 0x7F0800FF
-			public const int topPanel = 2131230975;
+			public const int touch_outside = 2131230975;
 			
 			// aapt resource value: 0x7F080100
-			public const int touch_outside = 2131230976;
+			public const int transition_current_scene = 2131230976;
 			
 			// aapt resource value: 0x7F080101
-			public const int transition_current_scene = 2131230977;
+			public const int transition_layout_save = 2131230977;
 			
 			// aapt resource value: 0x7F080102
-			public const int transition_layout_save = 2131230978;
+			public const int transition_position = 2131230978;
 			
 			// aapt resource value: 0x7F080103
-			public const int transition_position = 2131230979;
+			public const int transition_scene_layoutid_cache = 2131230979;
 			
 			// aapt resource value: 0x7F080104
-			public const int transition_scene_layoutid_cache = 2131230980;
+			public const int transition_transform = 2131230980;
 			
 			// aapt resource value: 0x7F080105
-			public const int transition_transform = 2131230981;
+			public const int uniform = 2131230981;
 			
 			// aapt resource value: 0x7F080106
-			public const int uniform = 2131230982;
+			public const int unlabeled = 2131230982;
 			
 			// aapt resource value: 0x7F080107
-			public const int unlabeled = 2131230983;
+			public const int up = 2131230983;
 			
 			// aapt resource value: 0x7F080108
-			public const int up = 2131230984;
+			public const int useLogo = 2131230984;
 			
 			// aapt resource value: 0x7F080109
-			public const int useLogo = 2131230985;
+			public const int view_offset_helper = 2131230985;
 			
 			// aapt resource value: 0x7F08010A
-			public const int view_offset_helper = 2131230986;
+			public const int visible = 2131230986;
 			
 			// aapt resource value: 0x7F08010B
-			public const int visible = 2131230987;
+			public const int volume_item_container = 2131230987;
 			
 			// aapt resource value: 0x7F08010C
-			public const int volume_item_container = 2131230988;
+			public const int withText = 2131230988;
 			
 			// aapt resource value: 0x7F08010D
-			public const int withText = 2131230989;
-			
-			// aapt resource value: 0x7F08010E
-			public const int wrap_content = 2131230990;
+			public const int wrap_content = 2131230989;
 			
 			static Id()
 			{
@@ -22045,6 +21737,12 @@ namespace PathwayGames.Droid
 			// aapt resource value: 0x7F0E020D
 			public const int scrollViewTheme = 2131624461;
 			
+			// aapt resource value: 0x7F0E020E
+			public const int settingsViewScrollBars = 2131624462;
+			
+			// aapt resource value: 0x7F0E020F
+			public const int settingsViewTheme = 2131624463;
+			
 			// aapt resource value: 0x7F0E00E7
 			public const int TextAppearance_AppCompat = 2131624167;
 			
@@ -22934,7 +22632,7 @@ namespace PathwayGames.Droid
 		public partial class Styleable
 		{
 			
-			// aapt resource value: { 0x7F03003D,0x7F03003E,0x7F03003F,0x7F03009E,0x7F03009F,0x7F0300A0,0x7F0300A1,0x7F0300A2,0x7F0300A3,0x7F0300B1,0x7F0300B6,0x7F0300B7,0x7F0300C2,0x7F0300ED,0x7F0300F2,0x7F0300F7,0x7F0300F8,0x7F0300FA,0x7F030104,0x7F03010E,0x7F030131,0x7F03014F,0x7F030160,0x7F030164,0x7F030165,0x7F030194,0x7F030197,0x7F0301DC,0x7F0301E6 }
+			// aapt resource value: { 0x7F03003D,0x7F03003E,0x7F03003F,0x7F03009E,0x7F03009F,0x7F0300A0,0x7F0300A1,0x7F0300A2,0x7F0300A3,0x7F0300B1,0x7F0300B6,0x7F0300B7,0x7F0300C2,0x7F0300ED,0x7F0300F2,0x7F0300F7,0x7F0300F8,0x7F0300FA,0x7F030104,0x7F03010E,0x7F030131,0x7F03014F,0x7F030160,0x7F030164,0x7F030165,0x7F030195,0x7F030198,0x7F0301DD,0x7F0301E7 }
 			public static int[] ActionBar = new int[] {
 					2130903101,
 					2130903102,
@@ -22961,10 +22659,10 @@ namespace PathwayGames.Droid
 					2130903392,
 					2130903396,
 					2130903397,
-					2130903444,
-					2130903447,
-					2130903516,
-					2130903526};
+					2130903445,
+					2130903448,
+					2130903517,
+					2130903527};
 			
 			// aapt resource value: { 0x10100B3 }
 			public static int[] ActionBarLayout = new int[] {
@@ -23071,14 +22769,14 @@ namespace PathwayGames.Droid
 			public static int[] ActionMenuView = new int[] {
 					-1};
 			
-			// aapt resource value: { 0x7F03003D,0x7F03003E,0x7F03008A,0x7F0300ED,0x7F030197,0x7F0301E6 }
+			// aapt resource value: { 0x7F03003D,0x7F03003E,0x7F03008A,0x7F0300ED,0x7F030198,0x7F0301E7 }
 			public static int[] ActionMode = new int[] {
 					2130903101,
 					2130903102,
 					2130903178,
 					2130903277,
-					2130903447,
-					2130903526};
+					2130903448,
+					2130903527};
 			
 			// aapt resource value: 0
 			public const int ActionMode_background = 0;
@@ -23109,7 +22807,7 @@ namespace PathwayGames.Droid
 			// aapt resource value: 1
 			public const int ActivityChooserView_initialActivityCount = 1;
 			
-			// aapt resource value: { 0x10100F2,0x7F03005E,0x7F03005F,0x7F030128,0x7F030129,0x7F03014C,0x7F03017C,0x7F03017D }
+			// aapt resource value: { 0x10100F2,0x7F03005E,0x7F03005F,0x7F030128,0x7F030129,0x7F03014C,0x7F03017D,0x7F03017E }
 			public static int[] AlertDialog = new int[] {
 					16842994,
 					2130903134,
@@ -23117,8 +22815,8 @@ namespace PathwayGames.Droid
 					2130903336,
 					2130903337,
 					2130903372,
-					2130903420,
-					2130903421};
+					2130903421,
+					2130903422};
 			
 			// aapt resource value: 0
 			public const int AlertDialog_android_layout = 0;
@@ -23210,12 +22908,12 @@ namespace PathwayGames.Droid
 					2130903240,
 					2130903331};
 			
-			// aapt resource value: { 0x7F03018A,0x7F03018B,0x7F03018C,0x7F03018D }
+			// aapt resource value: { 0x7F03018B,0x7F03018C,0x7F03018D,0x7F03018E }
 			public static int[] AppBarLayoutStates = new int[] {
-					2130903434,
 					2130903435,
 					2130903436,
-					2130903437};
+					2130903437,
+					2130903438};
 			
 			// aapt resource value: 0
 			public const int AppBarLayoutStates_state_collapsed = 0;
@@ -23258,12 +22956,12 @@ namespace PathwayGames.Droid
 			// aapt resource value: 5
 			public const int AppBarLayout_liftOnScroll = 5;
 			
-			// aapt resource value: { 0x1010119,0x7F030187,0x7F0301DA,0x7F0301DB }
+			// aapt resource value: { 0x1010119,0x7F030188,0x7F0301DB,0x7F0301DC }
 			public static int[] AppCompatImageView = new int[] {
 					16843033,
-					2130903431,
-					2130903514,
-					2130903515};
+					2130903432,
+					2130903515,
+					2130903516};
 			
 			// aapt resource value: 0
 			public const int AppCompatImageView_android_src = 0;
@@ -23277,12 +22975,12 @@ namespace PathwayGames.Droid
 			// aapt resource value: 3
 			public const int AppCompatImageView_tintMode = 3;
 			
-			// aapt resource value: { 0x1010142,0x7F0301D7,0x7F0301D8,0x7F0301D9 }
+			// aapt resource value: { 0x1010142,0x7F0301D8,0x7F0301D9,0x7F0301DA }
 			public static int[] AppCompatSeekBar = new int[] {
 					16843074,
-					2130903511,
 					2130903512,
-					2130903513};
+					2130903513,
+					2130903514};
 			
 			// aapt resource value: 0
 			public const int AppCompatSeekBar_android_thumb = 0;
@@ -23327,7 +23025,7 @@ namespace PathwayGames.Droid
 			// aapt resource value: 0
 			public const int AppCompatTextHelper_android_textAppearance = 0;
 			
-			// aapt resource value: { 0x1010034,0x7F030038,0x7F030039,0x7F03003A,0x7F03003B,0x7F03003C,0x7F0300DC,0x7F0300DF,0x7F030116,0x7F030124,0x7F0301B7 }
+			// aapt resource value: { 0x1010034,0x7F030038,0x7F030039,0x7F03003A,0x7F03003B,0x7F03003C,0x7F0300DC,0x7F0300DF,0x7F030116,0x7F030124,0x7F0301B8 }
 			public static int[] AppCompatTextView = new int[] {
 					16842804,
 					2130903096,
@@ -23339,7 +23037,7 @@ namespace PathwayGames.Droid
 					2130903263,
 					2130903318,
 					2130903332,
-					2130903479};
+					2130903480};
 			
 			// aapt resource value: 0
 			public const int AppCompatTextView_android_textAppearance = 0;
@@ -23374,7 +23072,7 @@ namespace PathwayGames.Droid
 			// aapt resource value: 10
 			public const int AppCompatTextView_textAllCaps = 10;
 			
-			// aapt resource value: { 0x1010057,0x10100AE,0x7F030000,0x7F030001,0x7F030002,0x7F030003,0x7F030004,0x7F030005,0x7F030006,0x7F030007,0x7F030008,0x7F030009,0x7F03000A,0x7F03000B,0x7F03000C,0x7F03000E,0x7F03000F,0x7F030010,0x7F030011,0x7F030012,0x7F030013,0x7F030014,0x7F030015,0x7F030016,0x7F030017,0x7F030018,0x7F030019,0x7F03001A,0x7F03001B,0x7F03001C,0x7F03001D,0x7F03001E,0x7F030021,0x7F03002E,0x7F03002F,0x7F030030,0x7F030031,0x7F030037,0x7F03004A,0x7F030058,0x7F030059,0x7F03005A,0x7F03005B,0x7F03005C,0x7F030060,0x7F030061,0x7F03006B,0x7F030070,0x7F030091,0x7F030092,0x7F030093,0x7F030094,0x7F030095,0x7F030096,0x7F030097,0x7F030098,0x7F030099,0x7F03009B,0x7F0300AA,0x7F0300B3,0x7F0300B4,0x7F0300B5,0x7F0300B8,0x7F0300BA,0x7F0300BD,0x7F0300BE,0x7F0300BF,0x7F0300C0,0x7F0300C1,0x7F0300F7,0x7F030103,0x7F030126,0x7F030127,0x7F03012A,0x7F03012B,0x7F03012C,0x7F03012D,0x7F03012E,0x7F03012F,0x7F030130,0x7F030157,0x7F030158,0x7F030159,0x7F03015F,0x7F030161,0x7F030168,0x7F030169,0x7F03016A,0x7F03016B,0x7F030174,0x7F030175,0x7F030176,0x7F030177,0x7F030184,0x7F030185,0x7F03019B,0x7F0301C2,0x7F0301C3,0x7F0301C4,0x7F0301C5,0x7F0301C7,0x7F0301C8,0x7F0301C9,0x7F0301CA,0x7F0301CD,0x7F0301CE,0x7F0301E8,0x7F0301E9,0x7F0301EA,0x7F0301EB,0x7F0301F2,0x7F0301F4,0x7F0301F5,0x7F0301F6,0x7F0301F7,0x7F0301F8,0x7F0301F9,0x7F0301FA,0x7F0301FB,0x7F0301FC,0x7F0301FD }
+			// aapt resource value: { 0x1010057,0x10100AE,0x7F030000,0x7F030001,0x7F030002,0x7F030003,0x7F030004,0x7F030005,0x7F030006,0x7F030007,0x7F030008,0x7F030009,0x7F03000A,0x7F03000B,0x7F03000C,0x7F03000E,0x7F03000F,0x7F030010,0x7F030011,0x7F030012,0x7F030013,0x7F030014,0x7F030015,0x7F030016,0x7F030017,0x7F030018,0x7F030019,0x7F03001A,0x7F03001B,0x7F03001C,0x7F03001D,0x7F03001E,0x7F030021,0x7F03002E,0x7F03002F,0x7F030030,0x7F030031,0x7F030037,0x7F03004A,0x7F030058,0x7F030059,0x7F03005A,0x7F03005B,0x7F03005C,0x7F030060,0x7F030061,0x7F03006B,0x7F030070,0x7F030091,0x7F030092,0x7F030093,0x7F030094,0x7F030095,0x7F030096,0x7F030097,0x7F030098,0x7F030099,0x7F03009B,0x7F0300AA,0x7F0300B3,0x7F0300B4,0x7F0300B5,0x7F0300B8,0x7F0300BA,0x7F0300BD,0x7F0300BE,0x7F0300BF,0x7F0300C0,0x7F0300C1,0x7F0300F7,0x7F030103,0x7F030126,0x7F030127,0x7F03012A,0x7F03012B,0x7F03012C,0x7F03012D,0x7F03012E,0x7F03012F,0x7F030130,0x7F030157,0x7F030158,0x7F030159,0x7F03015F,0x7F030161,0x7F030168,0x7F030169,0x7F03016A,0x7F03016B,0x7F030174,0x7F030175,0x7F030176,0x7F030177,0x7F030185,0x7F030186,0x7F03019C,0x7F0301C3,0x7F0301C4,0x7F0301C5,0x7F0301C6,0x7F0301C8,0x7F0301C9,0x7F0301CA,0x7F0301CB,0x7F0301CE,0x7F0301CF,0x7F0301E9,0x7F0301EA,0x7F0301EB,0x7F0301EC,0x7F0301F3,0x7F0301F5,0x7F0301F6,0x7F0301F7,0x7F0301F8,0x7F0301F9,0x7F0301FA,0x7F0301FB,0x7F0301FC,0x7F0301FD,0x7F0301FE }
 			public static int[] AppCompatTheme = new int[] {
 					16842839,
 					16842926,
@@ -23469,25 +23167,24 @@ namespace PathwayGames.Droid
 					2130903413,
 					2130903414,
 					2130903415,
-					2130903428,
 					2130903429,
-					2130903451,
-					2130903490,
+					2130903430,
+					2130903452,
 					2130903491,
 					2130903492,
 					2130903493,
-					2130903495,
+					2130903494,
 					2130903496,
 					2130903497,
 					2130903498,
-					2130903501,
+					2130903499,
 					2130903502,
-					2130903528,
+					2130903503,
 					2130903529,
 					2130903530,
 					2130903531,
-					2130903538,
-					2130903540,
+					2130903532,
+					2130903539,
 					2130903541,
 					2130903542,
 					2130903543,
@@ -23496,7 +23193,8 @@ namespace PathwayGames.Droid
 					2130903546,
 					2130903547,
 					2130903548,
-					2130903549};
+					2130903549,
+					2130903550};
 			
 			// aapt resource value: 2
 			public const int AppCompatTheme_actionBarDivider = 2;
@@ -24012,7 +23710,7 @@ namespace PathwayGames.Droid
 			// aapt resource value: 12
 			public const int CardView_contentPaddingTop = 12;
 			
-			// aapt resource value: { 0x1010034,0x10100AB,0x101011F,0x101014F,0x10101E5,0x7F03006D,0x7F03006E,0x7F03006F,0x7F030071,0x7F030072,0x7F030073,0x7F030075,0x7F030076,0x7F030077,0x7F030078,0x7F030079,0x7F03007A,0x7F03007F,0x7F030080,0x7F030081,0x7F030083,0x7F030084,0x7F030085,0x7F030086,0x7F030087,0x7F030088,0x7F030089,0x7F0300F1,0x7F0300FB,0x7F0300FF,0x7F03016D,0x7F03017A,0x7F0301CF,0x7F0301D1 }
+			// aapt resource value: { 0x1010034,0x10100AB,0x101011F,0x101014F,0x10101E5,0x7F03006D,0x7F03006E,0x7F03006F,0x7F030071,0x7F030072,0x7F030073,0x7F030075,0x7F030076,0x7F030077,0x7F030078,0x7F030079,0x7F03007A,0x7F03007F,0x7F030080,0x7F030081,0x7F030083,0x7F030084,0x7F030085,0x7F030086,0x7F030087,0x7F030088,0x7F030089,0x7F0300F1,0x7F0300FB,0x7F0300FF,0x7F03016D,0x7F03017B,0x7F0301D0,0x7F0301D2 }
 			public static int[] Chip = new int[] {
 					16842804,
 					16842923,
@@ -24045,18 +23743,18 @@ namespace PathwayGames.Droid
 					2130903291,
 					2130903295,
 					2130903405,
-					2130903418,
-					2130903503,
-					2130903505};
+					2130903419,
+					2130903504,
+					2130903506};
 			
-			// aapt resource value: { 0x7F03006C,0x7F03007B,0x7F03007C,0x7F03007D,0x7F03017E,0x7F03017F }
+			// aapt resource value: { 0x7F03006C,0x7F03007B,0x7F03007C,0x7F03007D,0x7F03017F,0x7F030180 }
 			public static int[] ChipGroup = new int[] {
 					2130903148,
 					2130903163,
 					2130903164,
 					2130903165,
-					2130903422,
-					2130903423};
+					2130903423,
+					2130903424};
 			
 			// aapt resource value: 0
 			public const int ChipGroup_checkedChip = 0;
@@ -24178,7 +23876,7 @@ namespace PathwayGames.Droid
 			// aapt resource value: 33
 			public const int Chip_textStartPadding = 33;
 			
-			// aapt resource value: { 0x7F03008D,0x7F03008E,0x7F0300A9,0x7F0300C9,0x7F0300CA,0x7F0300CB,0x7F0300CC,0x7F0300CD,0x7F0300CE,0x7F0300CF,0x7F03016E,0x7F030170,0x7F03018F,0x7F0301DC,0x7F0301DD,0x7F0301E7 }
+			// aapt resource value: { 0x7F03008D,0x7F03008E,0x7F0300A9,0x7F0300C9,0x7F0300CA,0x7F0300CB,0x7F0300CC,0x7F0300CD,0x7F0300CE,0x7F0300CF,0x7F03016E,0x7F030170,0x7F030190,0x7F0301DD,0x7F0301DE,0x7F0301E8 }
 			public static int[] CollapsingToolbarLayout = new int[] {
 					2130903181,
 					2130903182,
@@ -24192,10 +23890,10 @@ namespace PathwayGames.Droid
 					2130903247,
 					2130903406,
 					2130903408,
-					2130903439,
-					2130903516,
+					2130903440,
 					2130903517,
-					2130903527};
+					2130903518,
+					2130903528};
 			
 			// aapt resource value: 0
 			public const int CollapsingToolbarLayout_collapsedTitleGravity = 0;
@@ -24286,10 +23984,10 @@ namespace PathwayGames.Droid
 			// aapt resource value: 2
 			public const int CompoundButton_buttonTintMode = 2;
 			
-			// aapt resource value: { 0x7F030114,0x7F03018E }
+			// aapt resource value: { 0x7F030114,0x7F03018F }
 			public static int[] CoordinatorLayout = new int[] {
 					2130903316,
-					2130903438};
+					2130903439};
 			
 			// aapt resource value: 0
 			public const int CoordinatorLayout_keylines = 0;
@@ -24339,7 +24037,7 @@ namespace PathwayGames.Droid
 			// aapt resource value: 1
 			public const int DesignTheme_bottomSheetStyle = 1;
 			
-			// aapt resource value: { 0x7F030035,0x7F030036,0x7F030042,0x7F030090,0x7F0300BB,0x7F0300EA,0x7F030183,0x7F0301D3 }
+			// aapt resource value: { 0x7F030035,0x7F030036,0x7F030042,0x7F030090,0x7F0300BB,0x7F0300EA,0x7F030184,0x7F0301D4 }
 			public static int[] DrawerArrowToggle = new int[] {
 					2130903093,
 					2130903094,
@@ -24347,8 +24045,8 @@ namespace PathwayGames.Droid
 					2130903184,
 					2130903227,
 					2130903274,
-					2130903427,
-					2130903507};
+					2130903428,
+					2130903508};
 			
 			// aapt resource value: 0
 			public const int DrawerArrowToggle_arrowHeadLength = 0;
@@ -24374,7 +24072,7 @@ namespace PathwayGames.Droid
 			// aapt resource value: 7
 			public const int DrawerArrowToggle_thickness = 7;
 			
-			// aapt resource value: { 0x7F030040,0x7F030041,0x7F030049,0x7F0300C2,0x7F0300D5,0x7F0300D6,0x7F0300F1,0x7F0300F9,0x7F03013C,0x7F030163,0x7F03016D,0x7F03017A,0x7F0301F1 }
+			// aapt resource value: { 0x7F030040,0x7F030041,0x7F030049,0x7F0300C2,0x7F0300D5,0x7F0300D6,0x7F0300F1,0x7F0300F9,0x7F03013C,0x7F030163,0x7F03016D,0x7F03017B,0x7F0301F2 }
 			public static int[] FloatingActionButton = new int[] {
 					2130903104,
 					2130903105,
@@ -24387,8 +24085,8 @@ namespace PathwayGames.Droid
 					2130903356,
 					2130903395,
 					2130903405,
-					2130903418,
-					2130903537};
+					2130903419,
+					2130903538};
 			
 			// aapt resource value: 0
 			public const int FloatingActionButton_backgroundTint = 0;
@@ -24456,7 +24154,7 @@ namespace PathwayGames.Droid
 					2130903268,
 					2130903269};
 			
-			// aapt resource value: { 0x1010532,0x1010533,0x101053F,0x101056F,0x1010570,0x7F0300DE,0x7F0300E6,0x7F0300E7,0x7F0300E8,0x7F0301F0 }
+			// aapt resource value: { 0x1010532,0x1010533,0x101053F,0x101056F,0x1010570,0x7F0300DE,0x7F0300E6,0x7F0300E7,0x7F0300E8,0x7F0301F1 }
 			public static int[] FontFamilyFont = new int[] {
 					16844082,
 					16844083,
@@ -24467,7 +24165,7 @@ namespace PathwayGames.Droid
 					2130903270,
 					2130903271,
 					2130903272,
-					2130903536};
+					2130903537};
 			
 			// aapt resource value: 0
 			public const int FontFamilyFont_android_font = 0;
@@ -24601,7 +24299,7 @@ namespace PathwayGames.Droid
 			// aapt resource value: 0
 			public const int ItemsViewRendererTheme_collectionViewStyle = 0;
 			
-			// aapt resource value: { 0x10100AF,0x10100C4,0x1010126,0x1010127,0x1010128,0x7F0300B7,0x7F0300B9,0x7F03013D,0x7F030179 }
+			// aapt resource value: { 0x10100AF,0x10100C4,0x1010126,0x1010127,0x1010128,0x7F0300B7,0x7F0300B9,0x7F03013D,0x7F03017A }
 			public static int[] LinearLayoutCompat = new int[] {
 					16842927,
 					16842948,
@@ -24611,7 +24309,7 @@ namespace PathwayGames.Droid
 					2130903223,
 					2130903225,
 					2130903357,
-					2130903417};
+					2130903418};
 			
 			// aapt resource value: 2
 			public const int LinearLayoutCompat_android_baselineAligned = 2;
@@ -24670,7 +24368,7 @@ namespace PathwayGames.Droid
 			// aapt resource value: 1
 			public const int ListPopupWindow_android_dropDownVerticalOffset = 1;
 			
-			// aapt resource value: { 0x10101B7,0x10101B8,0x10101B9,0x10101BA,0x7F030040,0x7F030041,0x7F0300AC,0x7F0300FA,0x7F0300FC,0x7F0300FD,0x7F0300FE,0x7F030100,0x7F030101,0x7F03016D,0x7F030190,0x7F030191 }
+			// aapt resource value: { 0x10101B7,0x10101B8,0x10101B9,0x10101BA,0x7F030040,0x7F030041,0x7F0300AC,0x7F0300FA,0x7F0300FC,0x7F0300FD,0x7F0300FE,0x7F030100,0x7F030101,0x7F03016D,0x7F030191,0x7F030192 }
 			public static int[] MaterialButton = new int[] {
 					16843191,
 					16843192,
@@ -24686,8 +24384,8 @@ namespace PathwayGames.Droid
 					2130903296,
 					2130903297,
 					2130903405,
-					2130903440,
-					2130903441};
+					2130903441,
+					2130903442};
 			
 			// aapt resource value: 3
 			public const int MaterialButton_android_insetBottom = 3;
@@ -24737,10 +24435,10 @@ namespace PathwayGames.Droid
 			// aapt resource value: 15
 			public const int MaterialButton_strokeWidth = 15;
 			
-			// aapt resource value: { 0x7F030190,0x7F030191 }
+			// aapt resource value: { 0x7F030191,0x7F030192 }
 			public static int[] MaterialCardView = new int[] {
-					2130903440,
-					2130903441};
+					2130903441,
+					2130903442};
 			
 			// aapt resource value: 0
 			public const int MaterialCardView_strokeColor = 0;
@@ -24748,7 +24446,7 @@ namespace PathwayGames.Droid
 			// aapt resource value: 1
 			public const int MaterialCardView_strokeWidth = 1;
 			
-			// aapt resource value: { 0x7F03004D,0x7F03004E,0x7F030074,0x7F03007E,0x7F030082,0x7F030091,0x7F030092,0x7F030098,0x7F030099,0x7F03009A,0x7F0300C1,0x7F0300DD,0x7F030133,0x7F030134,0x7F030150,0x7F03016F,0x7F030180,0x7F0301B3,0x7F0301B8,0x7F0301B9,0x7F0301BA,0x7F0301BB,0x7F0301BC,0x7F0301BD,0x7F0301BE,0x7F0301BF,0x7F0301C0,0x7F0301C1,0x7F0301C6,0x7F0301CB,0x7F0301CC,0x7F0301D0 }
+			// aapt resource value: { 0x7F03004D,0x7F03004E,0x7F030074,0x7F03007E,0x7F030082,0x7F030091,0x7F030092,0x7F030098,0x7F030099,0x7F03009A,0x7F0300C1,0x7F0300DD,0x7F030133,0x7F030134,0x7F030150,0x7F03016F,0x7F030181,0x7F0301B4,0x7F0301B9,0x7F0301BA,0x7F0301BB,0x7F0301BC,0x7F0301BD,0x7F0301BE,0x7F0301BF,0x7F0301C0,0x7F0301C1,0x7F0301C2,0x7F0301C7,0x7F0301CC,0x7F0301CD,0x7F0301D1 }
 			public static int[] MaterialComponentsTheme = new int[] {
 					2130903117,
 					2130903118,
@@ -24766,9 +24464,8 @@ namespace PathwayGames.Droid
 					2130903348,
 					2130903376,
 					2130903407,
-					2130903424,
-					2130903475,
-					2130903480,
+					2130903425,
+					2130903476,
 					2130903481,
 					2130903482,
 					2130903483,
@@ -24778,10 +24475,11 @@ namespace PathwayGames.Droid
 					2130903487,
 					2130903488,
 					2130903489,
-					2130903494,
-					2130903499,
+					2130903490,
+					2130903495,
 					2130903500,
-					2130903504};
+					2130903501,
+					2130903505};
 			
 			// aapt resource value: 0
 			public const int MaterialComponentsTheme_bottomSheetDialogTheme = 0;
@@ -24925,7 +24623,7 @@ namespace PathwayGames.Droid
 			// aapt resource value: 2
 			public const int MenuGroup_android_visible = 2;
 			
-			// aapt resource value: { 0x1010002,0x101000E,0x10100D0,0x1010106,0x1010194,0x10101DE,0x10101DF,0x10101E1,0x10101E2,0x10101E3,0x10101E4,0x10101E5,0x101026F,0x7F03000D,0x7F03001F,0x7F030020,0x7F030034,0x7F03009D,0x7F030100,0x7F030101,0x7F030151,0x7F030178,0x7F0301EC }
+			// aapt resource value: { 0x1010002,0x101000E,0x10100D0,0x1010106,0x1010194,0x10101DE,0x10101DF,0x10101E1,0x10101E2,0x10101E3,0x10101E4,0x10101E5,0x101026F,0x7F03000D,0x7F03001F,0x7F030020,0x7F030034,0x7F03009D,0x7F030100,0x7F030101,0x7F030151,0x7F030179,0x7F0301ED }
 			public static int[] MenuItem = new int[] {
 					16842754,
 					16842766,
@@ -24948,8 +24646,8 @@ namespace PathwayGames.Droid
 					2130903296,
 					2130903297,
 					2130903377,
-					2130903416,
-					2130903532};
+					2130903417,
+					2130903533};
 			
 			// aapt resource value: 13
 			public const int MenuItem_actionLayout = 13;
@@ -25020,7 +24718,7 @@ namespace PathwayGames.Droid
 			// aapt resource value: 22
 			public const int MenuItem_tooltipText = 22;
 			
-			// aapt resource value: { 0x10100AE,0x101012C,0x101012D,0x101012E,0x101012F,0x1010130,0x1010131,0x7F030162,0x7F030192 }
+			// aapt resource value: { 0x10100AE,0x101012C,0x101012D,0x101012E,0x101012F,0x1010130,0x1010131,0x7F030162,0x7F030193 }
 			public static int[] MenuView = new int[] {
 					16842926,
 					16843052,
@@ -25030,7 +24728,7 @@ namespace PathwayGames.Droid
 					16843056,
 					16843057,
 					2130903394,
-					2130903442};
+					2130903443};
 			
 			// aapt resource value: 4
 			public const int MenuView_android_headerBackground = 4;
@@ -25116,9 +24814,9 @@ namespace PathwayGames.Droid
 					16843465,
 					2130903378};
 			
-			// aapt resource value: { 0x7F030189 }
+			// aapt resource value: { 0x7F03018A }
 			public static int[] PopupWindowBackgroundState = new int[] {
-					2130903433};
+					2130903434};
 			
 			// aapt resource value: 0
 			public const int PopupWindowBackgroundState_state_above_anchor = 0;
@@ -25194,7 +24892,7 @@ namespace PathwayGames.Droid
 			// aapt resource value: 1
 			public const int RecycleListView_paddingTopNoTitle = 1;
 			
-			// aapt resource value: { 0x10100C4,0x10100F1,0x7F0300D7,0x7F0300D8,0x7F0300D9,0x7F0300DA,0x7F0300DB,0x7F030118,0x7F03016C,0x7F030182,0x7F030188 }
+			// aapt resource value: { 0x10100C4,0x10100F1,0x7F0300D7,0x7F0300D8,0x7F0300D9,0x7F0300DA,0x7F0300DB,0x7F030118,0x7F03016C,0x7F030183,0x7F030189 }
 			public static int[] RecyclerView = new int[] {
 					16842948,
 					16842993,
@@ -25205,8 +24903,8 @@ namespace PathwayGames.Droid
 					2130903259,
 					2130903320,
 					2130903404,
-					2130903426,
-					2130903432};
+					2130903427,
+					2130903433};
 			
 			// aapt resource value: 1
 			public const int RecyclerView_android_descendantFocusability = 1;
@@ -25262,7 +24960,7 @@ namespace PathwayGames.Droid
 			// aapt resource value: 0
 			public const int ScrollViewRendererTheme_scrollViewStyle = 0;
 			
-			// aapt resource value: { 0x10100DA,0x101011F,0x1010220,0x1010264,0x7F030083,0x7F03009C,0x7F0300B2,0x7F0300EB,0x7F030102,0x7F030117,0x7F030166,0x7F030167,0x7F030172,0x7F030173,0x7F030193,0x7F030198,0x7F0301F3 }
+			// aapt resource value: { 0x10100DA,0x101011F,0x1010220,0x1010264,0x7F030083,0x7F03009C,0x7F0300B2,0x7F0300EB,0x7F030102,0x7F030117,0x7F030166,0x7F030167,0x7F030172,0x7F030173,0x7F030194,0x7F030199,0x7F0301F4 }
 			public static int[] SearchView = new int[] {
 					16842970,
 					16843039,
@@ -25278,9 +24976,9 @@ namespace PathwayGames.Droid
 					2130903399,
 					2130903410,
 					2130903411,
-					2130903443,
-					2130903448,
-					2130903539};
+					2130903444,
+					2130903449,
+					2130903540};
 			
 			// aapt resource value: 0
 			public const int SearchView_android_focusable = 0;
@@ -25333,10 +25031,17 @@ namespace PathwayGames.Droid
 			// aapt resource value: 16
 			public const int SearchView_voiceIcon = 16;
 			
-			// aapt resource value: { 0x7F030180,0x7F030181 }
+			// aapt resource value: { 0x7F030178 }
+			public static int[] SettingsViewRendererTheme = new int[] {
+					2130903416};
+			
+			// aapt resource value: 0
+			public const int SettingsViewRendererTheme_settingsViewStyle = 0;
+			
+			// aapt resource value: { 0x7F030181,0x7F030182 }
 			public static int[] Snackbar = new int[] {
-					2130903424,
-					2130903425};
+					2130903425,
+					2130903426};
 			
 			// aapt resource value: { 0x101011F,0x7F0300C2,0x7F03013A }
 			public static int[] SnackbarLayout = new int[] {
@@ -25416,22 +25121,22 @@ namespace PathwayGames.Droid
 			// aapt resource value: 1
 			public const int StateListDrawable_android_visible = 1;
 			
-			// aapt resource value: { 0x1010124,0x1010125,0x1010142,0x7F03017B,0x7F030186,0x7F030199,0x7F03019A,0x7F03019C,0x7F0301D4,0x7F0301D5,0x7F0301D6,0x7F0301ED,0x7F0301EE,0x7F0301EF }
+			// aapt resource value: { 0x1010124,0x1010125,0x1010142,0x7F03017C,0x7F030187,0x7F03019A,0x7F03019B,0x7F03019D,0x7F0301D5,0x7F0301D6,0x7F0301D7,0x7F0301EE,0x7F0301EF,0x7F0301F0 }
 			public static int[] SwitchCompat = new int[] {
 					16843044,
 					16843045,
 					16843074,
-					2130903419,
-					2130903430,
-					2130903449,
+					2130903420,
+					2130903431,
 					2130903450,
-					2130903452,
-					2130903508,
+					2130903451,
+					2130903453,
 					2130903509,
 					2130903510,
-					2130903533,
+					2130903511,
 					2130903534,
-					2130903535};
+					2130903535,
+					2130903536};
 			
 			// aapt resource value: 1
 			public const int SwitchCompat_android_textOff = 1;
@@ -25490,9 +25195,8 @@ namespace PathwayGames.Droid
 			// aapt resource value: 2
 			public const int TabItem_android_text = 2;
 			
-			// aapt resource value: { 0x7F03019D,0x7F03019E,0x7F03019F,0x7F0301A0,0x7F0301A1,0x7F0301A2,0x7F0301A3,0x7F0301A4,0x7F0301A5,0x7F0301A6,0x7F0301A7,0x7F0301A8,0x7F0301A9,0x7F0301AA,0x7F0301AB,0x7F0301AC,0x7F0301AD,0x7F0301AE,0x7F0301AF,0x7F0301B0,0x7F0301B1,0x7F0301B2,0x7F0301B4,0x7F0301B5,0x7F0301B6 }
+			// aapt resource value: { 0x7F03019E,0x7F03019F,0x7F0301A0,0x7F0301A1,0x7F0301A2,0x7F0301A3,0x7F0301A4,0x7F0301A5,0x7F0301A6,0x7F0301A7,0x7F0301A8,0x7F0301A9,0x7F0301AA,0x7F0301AB,0x7F0301AC,0x7F0301AD,0x7F0301AE,0x7F0301AF,0x7F0301B0,0x7F0301B1,0x7F0301B2,0x7F0301B3,0x7F0301B5,0x7F0301B6,0x7F0301B7 }
 			public static int[] TabLayout = new int[] {
-					2130903453,
 					2130903454,
 					2130903455,
 					2130903456,
@@ -25514,9 +25218,10 @@ namespace PathwayGames.Droid
 					2130903472,
 					2130903473,
 					2130903474,
-					2130903476,
+					2130903475,
 					2130903477,
-					2130903478};
+					2130903478,
+					2130903479};
 			
 			// aapt resource value: 0
 			public const int TabLayout_tabBackground = 0;
@@ -25593,7 +25298,7 @@ namespace PathwayGames.Droid
 			// aapt resource value: 24
 			public const int TabLayout_tabUnboundedRipple = 24;
 			
-			// aapt resource value: { 0x1010095,0x1010096,0x1010097,0x1010098,0x101009A,0x101009B,0x1010161,0x1010162,0x1010163,0x1010164,0x10103AC,0x7F0300DF,0x7F0301B7 }
+			// aapt resource value: { 0x1010095,0x1010096,0x1010097,0x1010098,0x101009A,0x101009B,0x1010161,0x1010162,0x1010163,0x1010164,0x10103AC,0x7F0300DF,0x7F0301B8 }
 			public static int[] TextAppearance = new int[] {
 					16842901,
 					16842902,
@@ -25607,7 +25312,7 @@ namespace PathwayGames.Droid
 					16843108,
 					16843692,
 					2130903263,
-					2130903479};
+					2130903480};
 			
 			// aapt resource value: 10
 			public const int TextAppearance_android_fontFamily = 10;
@@ -25778,7 +25483,7 @@ namespace PathwayGames.Droid
 			// aapt resource value: 2
 			public const int ThemeEnforcement_enforceTextAppearance = 2;
 			
-			// aapt resource value: { 0x10100AF,0x1010140,0x7F03005D,0x7F03008B,0x7F03008C,0x7F03009E,0x7F03009F,0x7F0300A0,0x7F0300A1,0x7F0300A2,0x7F0300A3,0x7F030131,0x7F030132,0x7F03013B,0x7F03014D,0x7F03014E,0x7F030160,0x7F030194,0x7F030195,0x7F030196,0x7F0301DC,0x7F0301DE,0x7F0301DF,0x7F0301E0,0x7F0301E1,0x7F0301E2,0x7F0301E3,0x7F0301E4,0x7F0301E5 }
+			// aapt resource value: { 0x10100AF,0x1010140,0x7F03005D,0x7F03008B,0x7F03008C,0x7F03009E,0x7F03009F,0x7F0300A0,0x7F0300A1,0x7F0300A2,0x7F0300A3,0x7F030131,0x7F030132,0x7F03013B,0x7F03014D,0x7F03014E,0x7F030160,0x7F030195,0x7F030196,0x7F030197,0x7F0301DD,0x7F0301DF,0x7F0301E0,0x7F0301E1,0x7F0301E2,0x7F0301E3,0x7F0301E4,0x7F0301E5,0x7F0301E6 }
 			public static int[] Toolbar = new int[] {
 					16842927,
 					16843072,
@@ -25797,18 +25502,18 @@ namespace PathwayGames.Droid
 					2130903373,
 					2130903374,
 					2130903392,
-					2130903444,
 					2130903445,
 					2130903446,
-					2130903516,
-					2130903518,
+					2130903447,
+					2130903517,
 					2130903519,
 					2130903520,
 					2130903521,
 					2130903522,
 					2130903523,
 					2130903524,
-					2130903525};
+					2130903525,
+					2130903526};
 			
 			// aapt resource value: 0
 			public const int Toolbar_android_gravity = 0;
@@ -25897,13 +25602,13 @@ namespace PathwayGames.Droid
 			// aapt resource value: 28
 			public const int Toolbar_titleTextColor = 28;
 			
-			// aapt resource value: { 0x1010000,0x10100DA,0x7F030154,0x7F030155,0x7F0301D2 }
+			// aapt resource value: { 0x1010000,0x10100DA,0x7F030154,0x7F030155,0x7F0301D3 }
 			public static int[] View = new int[] {
 					16842752,
 					16842970,
 					2130903380,
 					2130903381,
-					2130903506};
+					2130903507};
 			
 			// aapt resource value: { 0x10100D4,0x7F030040,0x7F030041 }
 			public static int[] ViewBackgroundHelper = new int[] {

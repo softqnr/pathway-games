@@ -1,6 +1,5 @@
 ﻿using CommonServiceLocator;
 using Newtonsoft.Json;
-using PathwayGames.Controls;
 using PathwayGames.Data;
 using PathwayGames.Helpers;
 using PathwayGames.Infrastructure.Dialog;
@@ -9,6 +8,7 @@ using PathwayGames.Infrastructure.Json;
 using PathwayGames.Infrastructure.Navigation;
 using PathwayGames.Infrastructure.Sound;
 using PathwayGames.Models;
+using PathwayGames.Resources;
 using PathwayGames.Services.Engangement;
 using PathwayGames.Services.Excel;
 using PathwayGames.Services.Sensors;
@@ -16,7 +16,7 @@ using PathwayGames.Services.Slides;
 using PathwayGames.Services.User;
 using PathwayGames.ViewModels;
 using PathwayGames.Views;
-using System.Collections.Generic;
+using System.Threading;
 using System.Threading.Tasks;
 using Unity;
 using Unity.Injection;
@@ -24,9 +24,7 @@ using Unity.Lifetime;
 using Unity.ServiceLocation;
 using Xamarin.Essentials;
 using Xamarin.Forms;
-using Xamarin.Forms.Xaml;
 
-[assembly: XamlCompilation(XamlCompilationOptions.Compile)]
 namespace PathwayGames
 {
     public partial class App : Application
@@ -44,10 +42,11 @@ namespace PathwayGames
         {
             InitializeComponent();
 
-            // Enable flags
+            // Enable flags for experimental features
             Device.SetFlags(new[] {
                 "StateTriggers_Experimental",
-                "Shapes_Experimental"
+                "Shapes_Experimental",
+                "Brush_Experimental"
             });
 
             // Init version tracking

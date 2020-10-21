@@ -85,7 +85,7 @@ namespace PathwayGames.ViewModels
 
         public override async Task InitializeAsync(object navigationData)
         {
-            Title = "Settings - " + App.SelectedUser.UserName;
+            Title = Resources.AppResources.TitleSettings + " - " + App.SelectedUser.UserName;
             VisualizationSettings = $"({DeviceInfo.Model}, {_ppi}PPI, [{_compensantion.WidthCompensation}-{_compensantion.HeightCompensation}])";
             // Show current selected users game sessionss
             UserSettings = await _userService.GetUserSettings(App.SelectedUser.Id);
@@ -103,13 +103,13 @@ namespace PathwayGames.ViewModels
             await _userService.UpdateUserSettings(_userSettings);
             App.SelectedUser.UserSettings = _userSettings;
             DependencyService.Get<IKeyboardService>().HideKeyboard();
-            DialogService.ShowToast("Settings saved.");
+            DialogService.ShowToast(Resources.AppResources.TitleSettingsSaved);
         }
 
         private async Task OnResetVisualizationDefaults()
         {
-            bool confirmed = await DialogService.ShowConfirmAsync("You cannot undo this action",
-           "Do you want to reset to default settings?", "Ok", "Cancel");
+            bool confirmed = await DialogService.ShowConfirmAsync(Resources.AppResources.TitleCannotUndoThisAction,
+                Resources.AppResources.PromptResetDefaultSettings, Resources.AppResources.Ok, Resources.AppResources.Cancel);
             if (confirmed)
             {
                 _userSettings.ScreenPPI = _ppi;

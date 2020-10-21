@@ -55,7 +55,7 @@ namespace PathwayGames.ViewModels
             {
                 return new Command(async () =>
                 {
-                    await DialogService.ShowAlertAsync("", "Not available!", "OK");
+                    await DialogService.ShowAlertAsync("", "N/A", Resources.AppResources.Ok);
                 });
             }
         }

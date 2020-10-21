@@ -2,8 +2,9 @@
 <views:ViewBase
     xmlns:views="clr-namespace:PathwayGames.Views" xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:g="clr-namespace:PathwayGames.Gestures;assembly=PathwayGames"
              xmlns:c="clr-namespace:PathwayGames.Controls"
+             xmlns:resources="clr-namespace:PathwayGames.Resources"
+             xmlns:system="clr-namespace:System;assembly=mscorlib"
              x:Name="self"
              x:Class="PathwayGames.Views.SensorsView"
              Visual="Material" BackgroundColor="White"
@@ -13,7 +14,7 @@
         <StackLayout Orientation="Horizontal" VerticalOptions="CenterAndExpand" Spacing="10">
             <Image Source="logo.png" HorizontalOptions="Start" />
             <Label Text="{Binding Title}" FontSize="Header" FontAttributes="Bold" TextColor="Black" HorizontalOptions="CenterAndExpand" VerticalTextAlignment="Center" />
-            <Label x:Name="EyeGazeIcon" FontFamily="{StaticResource MaterialFontFamily}" FontSize="26"  
+            <Label x:Name="EyeGazeIcon" FontFamily="Material" FontSize="26"  
                    IsEnabled="{Binding Game.GameSettings.EyeGazeSensor}"
                    HeightRequest="28" HorizontalOptions="End" VerticalTextAlignment="Center">
                 <Label.Triggers>
@@ -43,14 +44,10 @@
         </StackLayout>
     </NavigationPage.TitleView>
 
-
     <ContentPage.Content>
         <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" x:Name="SensorScreen">
-            <Ellipse Fill="{Binding LightColor}" Stroke="Black" StrokeThickness="1" Margin="10"
-                WidthRequest="60" HeightRequest="60"
-                HorizontalOptions="Center" VerticalOptions="Center"  />
 
-            <c:FaceSensorView HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"
+            <c:FaceSensorView HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Margin="0"
                                   TrackingStarted="FaceSensorView_TrackingStarted"
                                   TrackingStopped="FaceSensorView_TrackingStopped"
                                   EyeGazeChangedCommand="{Binding EyeGazeChangedCommand}"
@@ -61,6 +58,45 @@
                                   CameraPreviewEnabled="True"
                                   RecordingEnabled="True"
                                   IsEnabled="True" />
+
+            <Frame BackgroundColor="Black" HorizontalOptions="FillAndExpand" VerticalOptions="End" Padding="4,18,4,24">
+                <StackLayout Orientation="Horizontal" VerticalOptions="CenterAndExpand" HorizontalOptions="FillAndExpand">
+                    <Label FontSize="Micro" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" 
+                           LineBreakMode="WordWrap" TextColor="White" HorizontalTextAlignment="Center">
+                        <Label.FormattedText>
+                            <FormattedString>
+                                <Span Text="{x:Static resources:AppResources.LabelSensitivity}" />
+                                <Span Text=":" />
+                                <Span Text="{x:Static system:Environment.NewLine}"/>
+                                <Span Text="{Binding UserSettings.LiveViewSensitivity, Mode=OneWay}" FontAttributes="Bold" />
+                            </FormattedString>
+                        </Label.FormattedText>
+                    </Label>
+
+                    <Ellipse Fill="{Binding LightColor}" StrokeThickness="5"
+                        WidthRequest="60" HeightRequest="60"
+                        HorizontalOptions="Center" VerticalOptions="Center"  >
+                        <Ellipse.Stroke>
+                            <RadialGradientBrush>
+                                <GradientStop Color="Black" Offset="0.1"/>
+                                <GradientStop Color="DarkGray" Offset="1.0"/>
+                            </RadialGradientBrush>
+                        </Ellipse.Stroke>
+                    </Ellipse>
+
+                    <Label FontSize="Micro" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" 
+                           LineBreakMode="WordWrap" TextColor="White" HorizontalTextAlignment="Center">
+                        <Label.FormattedText>
+                            <FormattedString>
+                                <Span Text="{x:Static resources:AppResources.LabelTolerance}" />
+                                <Span Text=":" />
+                                <Span Text="{x:Static system:Environment.NewLine}"/>
+                                <Span Text="{Binding UserSettings.LiveViewTolerance, Mode=OneWay}" FontAttributes="Bold" />
+                            </FormattedString>
+                        </Label.FormattedText>
+                    </Label>
+                </StackLayout>
+            </Frame>
         </StackLayout>
     </ContentPage.Content>
 </views:ViewBase>

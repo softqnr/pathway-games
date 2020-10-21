@@ -2,6 +2,7 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:PathwayGames"
+             xmlns:resources="clr-namespace:PathwayGames.Resources"
              x:Class="PathwayGames.Views.UsersView"
              x:Name="self"
              Title="Users"
@@ -11,22 +12,28 @@
         <ToolbarItem x:Name="AddUserButton" Command="{Binding AddCommand}">
             <ToolbarItem.IconImageSource>
                 <FontImageSource
-                        FontFamily="{StaticResource MaterialFontFamily}"
+                        FontFamily="Material"
                         Glyph="{StaticResource IconPlus}"
                         Size="24" />
             </ToolbarItem.IconImageSource>
         </ToolbarItem>
     </ContentPage.ToolbarItems>
-
     
     <ContentPage.Content>
         <StackLayout Padding="10,0,10,0">
-            <SearchBar Placeholder="Enter search term" x:Name="UserSearchBar"
+            <SearchBar Placeholder="{x:Static resources:AppResources.PlaceholderEnterSearchTerm}" x:Name="UserSearchBar"
                        SearchCommand="{Binding SearchCommand}" 
                        SearchCommandParameter="{Binding Source={x:Reference UserSearchBar}, Path=Text}" />
             
             <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
-                <Label Text="User type:" VerticalOptions="Center"/>
+                <Label Text="User type:" VerticalOptions="Center">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="{x:Static resources:AppResources.LabelUserType}"  />
+                            <Span Text=": " />
+                        </FormattedString>
+                    </Label.FormattedText> 
+                </Label>
                 <Picker SelectedItem="{Binding SelectedUserType}" WidthRequest="90">
                     <Picker.Items>
                         <x:String>All</x:String>
@@ -38,7 +45,7 @@
             <CollectionView ItemsSource="{Binding Users}" x:Name="collectionView"
                             VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
                 <CollectionView.EmptyView>
-                    <Label Text="No users found!"/>
+                    <Label Text="{x:Static resources:AppResources.LabelNoUsersFound}"/>
                 </CollectionView.EmptyView>
                 <CollectionView.ItemTemplate>
                     <DataTemplate>
@@ -53,16 +60,16 @@
                                     <Label Text="{Binding UserName}" FontAttributes="Bold"/>
                                     <Label Text="{Binding UserType}" TextColor="Gray"/>
                                 </StackLayout>
-                            
-                                <Button Grid.Row="0" Grid.Column="1" HorizontalOptions="End" Text="Select"
+
+                            <Button Grid.Row="0" Grid.Column="1" HorizontalOptions="End" Text="{x:Static resources:AppResources.ButtonSelect}"
                                         Command="{Binding BindingContext.UserSelectedCommand, Source={x:Reference self}}" Margin="10" TextColor="Black"
                                         CommandParameter="{Binding .}"/>
 
-                                <Button Grid.Row="0" Grid.Column="2" HorizontalOptions="End" Text="{StaticResource IconJson}" FontFamily="{StaticResource MaterialFontFamily}" FontSize="32"
+                                <Button Grid.Row="0" Grid.Column="2" HorizontalOptions="End" Text="{StaticResource IconJson}" FontFamily="Material" FontSize="32"
                                         Command="{Binding BindingContext.GotoUserSessionsCommand, Source={x:Reference self}}" Margin="10" TextColor="Black"
                                         CommandParameter="{Binding .}"/>
 
-                                <Button Grid.Row="0" Grid.Column="3" HorizontalOptions="End" Text="{StaticResource IconDelete}" FontFamily="{StaticResource MaterialFontFamily}" FontSize="32"
+                                <Button Grid.Row="0" Grid.Column="3" HorizontalOptions="End" Text="{StaticResource IconDelete}" FontFamily="Material" FontSize="32"
                                         Command="{Binding BindingContext.DeleteUserCommand, Source={x:Reference self}}" CommandParameter="{Binding .}" Margin="10" 
                                         IsVisible="{Binding Source={x:Static local:App.SelectedUser},Path=IsAdmin}" 
                                         BackgroundColor="Transparent" TextColor="Black" />
