@@ -41,13 +41,13 @@ namespace PathwayGames.ViewModels
                 return new Command<FaceAnchorChangedEventArgs>((e) =>
                 {
                     // Invoke engangement service
-                    //_engangementService.CalculateEngangement(UserSettings.LiveViewSensitivity, e.Reading);
+                    // here will send sensor data for your algorithm calculation
+                    _engangementService.CalculateEngangement(UserSettings.LiveViewSensitivity, e.Reading);
                 });
             }
         }
 
-        public SensorsViewModel (IUserService userService,
-            IEngangementService engangementService)
+        public SensorsViewModel (IUserService userService, IEngangementService engangementService)
         {
             _userService = userService;
             _engangementService = engangementService;

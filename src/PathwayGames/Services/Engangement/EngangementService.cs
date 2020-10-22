@@ -9,16 +9,33 @@ namespace PathwayGames.Services.Engangement
 {
     public class EngangementService : IEngangementService
     {
+        LiveUserState _liveUserState;
+
+        public EngangementService()
+        {
+            if (_liveUserState == null)
+                _liveUserState = new LiveUserState();
+        }
+
         public double? CalculateEngangement(int sensitivity, FaceAnchorReading faceAnchorReading)
         {
-            // Simulate engangement calculation for development purposes
-            return (double?)faceAnchorReading.FacialExpressions["SmileLeft"];
+            //// Simulate engangement calculation for development purposes
+            //return (double?)faceAnchorReading.FacialExpressions["SmileLeft"];
+
+            return _liveUserState.GetState(faceAnchorReading);
         }
+
+        //public double GetEngangement(int sensitivity, FaceAnchorReading faceAnchorReading)
+        //{
+        //    return _liveUserState.GetState(faceAnchorReading);
+        //}
 
         public double GetEngangement()
         {
             // NOTE: For development purposes
-            return ThreadSafeRandom.CurrentThreadRandom.NextDouble(); 
+            // here you should put engagement calc
+
+            return ThreadSafeRandom.CurrentThreadRandom.NextDouble();
         }
 
         public Color GetEngangementColor(Tolerance tolerance)

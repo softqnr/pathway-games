@@ -167,7 +167,6 @@ namespace PathwayGames.Models
         }
     }
 
-
     public class CoreMLPathwayInput : NSObject, IMLFeatureProvider
     {
         public double PPI { get; set; }
@@ -222,6 +221,7 @@ namespace PathwayGames.Models
             }
         }
     }
+
     public class CoreMLPathwayOutput : NSObject, IMLFeatureProvider
     {
         static readonly NSSet<NSString> featureNames = new NSSet<NSString>(
