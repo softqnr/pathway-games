@@ -42,6 +42,8 @@ namespace PathwayGames
         {
             InitializeComponent();
 
+            //Thread.CurrentThread.CurrentUICulture = System.Globalization.CultureInfo.GetCultureInfo("sr");
+
             // Enable flags for experimental features
             Device.SetFlags(new[] {
                 "StateTriggers_Experimental",

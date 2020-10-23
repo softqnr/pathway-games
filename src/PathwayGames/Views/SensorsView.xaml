@@ -56,7 +56,7 @@
                                   HeightCompensation="{Binding UserSettings.VisualizationHeightCompensation}"
                                   EyeGazeVisualizationEnabled="True"
                                   CameraPreviewEnabled="True"
-                                  RecordingEnabled="True"
+                                  RecordingEnabled="{Binding RecordingEnabled}"
                                   IsEnabled="True" />
 
             <Frame BackgroundColor="Black" HorizontalOptions="FillAndExpand" VerticalOptions="End" Padding="4,18,4,24">

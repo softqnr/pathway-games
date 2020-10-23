@@ -18,6 +18,7 @@ namespace PathwayGames.ViewModels
         private readonly IUserService _userService;
         private readonly IEngangementService _engangementService;
 
+        private bool _recordingEnabled;
         private CancelableTimer _timer;
         private Brush _lightColor = new SolidColorBrush(Color.White);
         private UserGameSettings _userSettings;
@@ -26,6 +27,12 @@ namespace PathwayGames.ViewModels
         {
             get => _userSettings;
             private set => SetProperty(ref _userSettings, value);
+        }
+
+        public bool RecordingEnabled
+        {
+            get => _recordingEnabled;
+            private set => SetProperty(ref _recordingEnabled, value);
         }
 
         public Brush LightColor
@@ -58,6 +65,9 @@ namespace PathwayGames.ViewModels
         public override async Task InitializeAsync(object navigationData)
         {
             UserSettings = await _userService.GetUserSettings(App.SelectedUser.Id);
+
+            // Start sensor read
+            RecordingEnabled = true;
 
             // Timer init
             _timer = new CancelableTimer(LightUpdateTimespan, UpdateLightColor);
