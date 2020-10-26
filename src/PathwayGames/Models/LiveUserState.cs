@@ -12,7 +12,7 @@ namespace PathwayGames.Models
 {
     public class LiveUserState
     {
-        public int SampleWindow = 10;
+        public int Sensitivity = 10;
 
         private float PPI;
         private MovingStatistics blink;
@@ -27,23 +27,15 @@ namespace PathwayGames.Models
         private FaceAnchorReading previousReading;
         private MLModel model;
 
+        public float EngagementScore { get; private set; }
+
         public LiveUserState()
         {
-            LoadModel();
-
             PPI = DependencyService.Get<IDeviceHelper>().MachineNameToPPI(DeviceInfo.Model);
 
-            blink = new MovingStatistics(SampleWindow);
-            squint = new MovingStatistics(SampleWindow);
-            gazeIn = new MovingStatistics(SampleWindow);
-            gazeOut = new MovingStatistics(SampleWindow);
-            smile = new MovingStatistics(SampleWindow);
-            frown = new MovingStatistics(SampleWindow);
-            headSpeed = new MovingStatistics(SampleWindow);
-            eyeDwell = new MovingStatistics(SampleWindow);
-            headTilt = new MovingStatistics(SampleWindow);
-            //pressCount = new MovingStatistics(TimeWindow);
-            //responseTime = new MovingStatistics(TimeWindow);
+            LoadModel();
+
+            StartSession();
         }
 
         private void LoadModel()
@@ -52,59 +44,22 @@ namespace PathwayGames.Models
             model = MLModel.Create(assetPath, out NSError error1);
         }
 
-        public static string GetAbsolutePath(string relativePath)
+        public void StartSession()
         {
-            FileInfo _dataRoot = new FileInfo(typeof(App).Assembly.Location);
-            string assemblyFolderPath = _dataRoot.Directory.FullName;
+            var sampleWindow = Sensitivity * 15; // 15 to 1500, at 60 frames/sec, = 0.25 sec to 25 seconds
 
-            string fullPath = Path.Combine(assemblyFolderPath, relativePath);
-
-            return fullPath;
+            blink = new MovingStatistics(sampleWindow);
+            squint = new MovingStatistics(sampleWindow);
+            gazeIn = new MovingStatistics(sampleWindow);
+            gazeOut = new MovingStatistics(sampleWindow);
+            smile = new MovingStatistics(sampleWindow);
+            frown = new MovingStatistics(sampleWindow);
+            headSpeed = new MovingStatistics(sampleWindow);
+            eyeDwell = new MovingStatistics(sampleWindow);
+            headTilt = new MovingStatistics(sampleWindow);
         }
 
-        public double? GetState(FaceAnchorReading faceAnchorReading)
-        {
-            var d = UpdateEngagement(faceAnchorReading);
-
-            return d;
-        }
-
-        private double[] CoordinateDisplacement(float[,] coordinate)
-        {
-            var rotational_disp = 0d;
-            var transitional_disp = 0d;
-
-            if (coordinate.Length == 16)
-            {
-                var x_rot_disp = VectorDifference(coordinate.GetRow(0), new float[] { 1, 0, 0 });
-                var y_rot_disp = VectorDifference(coordinate.GetRow(1), new float [] { 0, 1, 0 });
-                var z_rot_disp = VectorDifference(coordinate.GetRow(2), new float[] { 0, 0, 1 });
-                rotational_disp = VectorMagnitude(AddVectors(x_rot_disp, y_rot_disp, z_rot_disp));
-                transitional_disp = VectorMagnitude(VectorDifference(coordinate.GetRow(3), new float[] { 0, 0, 0 }));
-            }
-
-            return new[] { transitional_disp, rotational_disp };
-        }
-
-        private double[] VectorDifference(float[] a_array, float[] b_array)
-        {
-            return new double[] { b_array[0] - a_array[0], b_array[1] - a_array[1], b_array[2] - a_array[2] };
-        }
-
-        private double VectorMagnitude(double[] vec_array)
-        {
-            return Math.Pow(Math.Pow(vec_array[0], 2) + Math.Pow(vec_array[1], 2) + Math.Pow(vec_array[2], 2), 0.5);
-        }
-
-        private double[] AddVectors(double[] a_array, double[] b_array, double[] c_array)
-        {
-            if (a_array.Length + b_array.Length + c_array.Length == 9)
-                return new double[] { a_array[0] + b_array[0] + c_array[0], a_array[1] + b_array[1] + c_array[1], a_array[2] + b_array[2] + c_array[2] };
-            else
-                return new double[] { 0, 0, 0 };
-        }
-
-        public double UpdateEngagement(FaceAnchorReading f)
+        private double CalculateEngagement(FaceAnchorReading f)
         {
             blink.Push( (f.FacialExpressions["EyeBlinkLeft"].Value + f.FacialExpressions["EyeBlinkRight"].Value) / 2);
             smile.Push( (f.FacialExpressions["MouthSmileLeft"].Value + f.FacialExpressions["MouthSmileRight"].Value) / 2 );
@@ -115,9 +70,9 @@ namespace PathwayGames.Models
 
             if (previousReading == null)
             {
-                headSpeed.Push(0);
-                eyeDwell.Push(0);
-                headTilt.Push(0);
+                headSpeed.Push(1);
+                eyeDwell.Push(1);
+                headTilt.Push(1);
             }
             else
             {
@@ -158,12 +113,52 @@ namespace PathwayGames.Models
             var probabilityx = classProbabilityFeatureValue.DictionaryValue.Values[0];
             var probabilityy = classProbabilityFeatureValue.DictionaryValue.Values[1];
 
-            Console.WriteLine("[Result: {0} Probability: {1} {2}] Blink: {3} Smile: {4} Frown: {5} Squint: {6} Gaze in: {7} Gaze out: {8} Head speed: {9} Eye dwell: {10} Head tilt: {11}",
-                prediction, probabilityx.FloatValue, probabilityy.FloatValue, blink.Mean, squint.Mean, gazeIn.Mean, gazeOut.Mean, smile.Mean, frown.Mean, headSpeed.Mean, eyeDwell.Mean, headTilt.Mean);
+            //Console.WriteLine("[Result: {0} Probability: {1} {2}] Blink: {3} Smile: {4} Frown: {5} Squint: {6} Gaze in: {7} Gaze out: {8} Head speed: {9} Eye dwell: {10} Head tilt: {11}",
+            //    prediction, probabilityx.FloatValue, probabilityy.FloatValue, blink.Mean, squint.Mean, gazeIn.Mean, gazeOut.Mean, smile.Mean, frown.Mean, headSpeed.Mean, eyeDwell.Mean, headTilt.Mean);
 
-            return probabilityx.FloatValue;
-            return probabilityy.FloatValue;
-            return prediction;
+            EngagementScore = (probabilityy.FloatValue - probabilityx.FloatValue);
+            
+            return EngagementScore;
+        }
+
+        public double? UpdateState(FaceAnchorReading faceAnchorReading)
+        {
+            return CalculateEngagement(faceAnchorReading);
+        }
+
+        private double[] CoordinateDisplacement(float[,] coordinate)
+        {
+            var rotational_disp = 0d;
+            var transitional_disp = 0d;
+
+            if (coordinate.Length == 16)
+            {
+                var x_rot_disp = VectorDifference(coordinate.GetRow(0), new float[] { 1, 0, 0 });
+                var y_rot_disp = VectorDifference(coordinate.GetRow(1), new float[] { 0, 1, 0 });
+                var z_rot_disp = VectorDifference(coordinate.GetRow(2), new float[] { 0, 0, 1 });
+                rotational_disp = VectorMagnitude(AddVectors(x_rot_disp, y_rot_disp, z_rot_disp));
+                transitional_disp = VectorMagnitude(VectorDifference(coordinate.GetRow(3), new float[] { 0, 0, 0 }));
+            }
+
+            return new[] { transitional_disp, rotational_disp };
+        }
+
+        private double[] VectorDifference(float[] a_array, float[] b_array)
+        {
+            return new double[] { b_array[0] - a_array[0], b_array[1] - a_array[1], b_array[2] - a_array[2] };
+        }
+
+        private double VectorMagnitude(double[] vec_array)
+        {
+            return Math.Pow(Math.Pow(vec_array[0], 2) + Math.Pow(vec_array[1], 2) + Math.Pow(vec_array[2], 2), 0.5);
+        }
+
+        private double[] AddVectors(double[] a_array, double[] b_array, double[] c_array)
+        {
+            if (a_array.Length + b_array.Length + c_array.Length == 9)
+                return new double[] { a_array[0] + b_array[0] + c_array[0], a_array[1] + b_array[1] + c_array[1], a_array[2] + b_array[2] + c_array[2] };
+            else
+                return new double[] { 0, 0, 0 };
         }
     }
 

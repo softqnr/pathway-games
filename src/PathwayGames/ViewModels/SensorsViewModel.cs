@@ -23,6 +23,8 @@ namespace PathwayGames.ViewModels
         private Brush _lightColor = new SolidColorBrush(Color.White);
         private UserGameSettings _userSettings;
 
+        private LiveUserState _liveUserState;
+
         public UserGameSettings UserSettings
         {
             get => _userSettings;
@@ -59,6 +61,8 @@ namespace PathwayGames.ViewModels
             _userService = userService;
             _engangementService = engangementService;
 
+            _liveUserState = new LiveUserState();
+
             Title = Resources.AppResources.TitleLive;
         }
 
@@ -72,6 +76,9 @@ namespace PathwayGames.ViewModels
             // Timer init
             _timer = new CancelableTimer(LightUpdateTimespan, UpdateLightColor);
             _timer.Start();
+
+            _liveUserState.Sensitivity = UserSettings.LiveViewSensitivity;
+            _liveUserState.StartSession();
         }
 
         private void UpdateLightColor()
