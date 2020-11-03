@@ -13,12 +13,9 @@ namespace PathwayGames.Services.Engangement
     {
         LiveUserState _liveUserState;
 
-        public int Sensitivity;
-
-        public EngangementService()
+        public void InitEngagement(LiveUserState liveUserState)
         {
-            if (_liveUserState == null)
-                _liveUserState = new LiveUserState();
+            _liveUserState = liveUserState;
         }
 
         public double? CalculateEngangement(int sensitivity, FaceAnchorReading faceAnchorReading)

@@ -12,8 +12,6 @@ namespace PathwayGames.Models
 {
     public class LiveUserState
     {
-        public int Sensitivity = 10;
-
         private float PPI;
         private MovingStatistics blink;
         private MovingStatistics squint;
@@ -34,8 +32,6 @@ namespace PathwayGames.Models
             PPI = DependencyService.Get<IDeviceHelper>().MachineNameToPPI(DeviceInfo.Model);
 
             LoadModel();
-
-            StartSession();
         }
 
         private void LoadModel()
@@ -44,9 +40,9 @@ namespace PathwayGames.Models
             model = MLModel.Create(assetPath, out NSError error1);
         }
 
-        public void StartSession()
+        public void StartSession(int sensitivity)
         {
-            var sampleWindow = Sensitivity * 15; // 15 to 1500, at 60 frames/sec, = 0.25 sec to 25 seconds
+            var sampleWindow = sensitivity * 12; // 12 to 1200, at 60 frames/sec, = 0.2 sec to 20 seconds
 
             blink = new MovingStatistics(sampleWindow);
             squint = new MovingStatistics(sampleWindow);
@@ -113,11 +109,10 @@ namespace PathwayGames.Models
             var probabilityx = classProbabilityFeatureValue.DictionaryValue.Values[0];
             var probabilityy = classProbabilityFeatureValue.DictionaryValue.Values[1];
 
-            //Console.WriteLine("[Result: {0} Probability: {1} {2}] Blink: {3} Smile: {4} Frown: {5} Squint: {6} Gaze in: {7} Gaze out: {8} Head speed: {9} Eye dwell: {10} Head tilt: {11}",
-            //    prediction, probabilityx.FloatValue, probabilityy.FloatValue, blink.Mean, squint.Mean, gazeIn.Mean, gazeOut.Mean, smile.Mean, frown.Mean, headSpeed.Mean, eyeDwell.Mean, headTilt.Mean);
+            // this is a hack
+            EngagementScore = (probabilityy.FloatValue - probabilityx.FloatValue - 0.5f) * 2f;
+            EngagementScore = (EngagementScore < 0f) ? 0f : EngagementScore;
 
-            EngagementScore = (probabilityy.FloatValue - probabilityx.FloatValue);
-            
             return EngagementScore;
         }
 

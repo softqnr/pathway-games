@@ -61,8 +61,6 @@ namespace PathwayGames.ViewModels
             _userService = userService;
             _engangementService = engangementService;
 
-            _liveUserState = new LiveUserState();
-
             Title = Resources.AppResources.TitleLive;
         }
 
@@ -77,8 +75,10 @@ namespace PathwayGames.ViewModels
             _timer = new CancelableTimer(LightUpdateTimespan, UpdateLightColor);
             _timer.Start();
 
-            _liveUserState.Sensitivity = UserSettings.LiveViewSensitivity;
-            _liveUserState.StartSession();
+            _liveUserState = new LiveUserState();
+            _engangementService.InitEngagement(_liveUserState);
+            
+            _liveUserState.StartSession(UserSettings.LiveViewSensitivity);
         }
 
         private void UpdateLightColor()
