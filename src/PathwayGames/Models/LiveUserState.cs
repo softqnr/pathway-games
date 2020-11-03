@@ -42,7 +42,7 @@ namespace PathwayGames.Models
 
         public void StartSession(int sensitivity)
         {
-            var sampleWindow = sensitivity * 12; // 12 to 1200, at 60 frames/sec, = 0.2 sec to 20 seconds
+            var sampleWindow = sensitivity * 60; // 60 to 1200ms, at 60 frames/sec, = 1 sec to 20 seconds
 
             blink = new MovingStatistics(sampleWindow);
             squint = new MovingStatistics(sampleWindow);

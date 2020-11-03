@@ -358,7 +358,7 @@ namespace PathwayGames.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Window (0.2 - 20 secs).
+        ///   Looks up a localized string similar to Window (secs).
         /// </summary>
         internal static string LabelSensitivity {
             get {
