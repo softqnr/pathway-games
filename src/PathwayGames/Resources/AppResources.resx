@@ -217,7 +217,7 @@
     <value>SEEK X</value>
   </data>
   <data name="LabelSensitivity" xml:space="preserve">
-    <value>Sensitivity</value>
+    <value>Window (secs)</value>
   </data>
   <data name="LabelSlide" xml:space="preserve">
     <value>Slide</value>

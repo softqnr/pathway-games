@@ -1,0 +1,1 @@
+xcrun altool --upload-app --type ios --file "uk.ac.ntu.comp.pathway.games.ipa" --username "dejan.kocic@hotmail.com" --password "leux-jccq-wvsn-rien"

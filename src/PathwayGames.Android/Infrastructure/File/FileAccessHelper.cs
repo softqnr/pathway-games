@@ -21,7 +21,19 @@ namespace PathwayGames.Droid.Infrastructure.File
 
             return dbFile;
         }
+        public string GetMLPathAndCreateIfNotExists(string filename)
+        {
+            var documentsPath = System.Environment.GetFolderPath(System.Environment.SpecialFolder.LocalApplicationData);
+            var path = Path.Combine(documentsPath, filename);
 
+            if (!System.IO.File.Exists(path))
+            {
+                // Copy from assets
+                CopyAssetFileTo(filename, path);
+            }
+
+            return path;
+        }
         public void CopyAssetFileTo(string assetFile, string destinationFileName)
         {
             using (var fileStream = new FileStream(destinationFileName, FileMode.OpenOrCreate, FileAccess.Write))

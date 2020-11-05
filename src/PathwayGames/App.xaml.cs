@@ -1,6 +1,7 @@
 ﻿using CommonServiceLocator;
 using Newtonsoft.Json;
 using PathwayGames.Data;
+using PathwayGames.Helpers;
 using PathwayGames.Infrastructure.Dialog;
 using PathwayGames.Infrastructure.File;
 using PathwayGames.Infrastructure.Json;
@@ -29,6 +30,7 @@ namespace PathwayGames
     public partial class App : Application
     {
         public static string DatabaseFilePath { get; private set; }
+        public static string MLFilePath { get; private set; }
         public static int UserId;
         public static User SelectedUser;
         public static string LocalStorageDirectory = FileSystem.AppDataDirectory;

@@ -23,6 +23,8 @@ namespace PathwayGames.ViewModels
         private Brush _lightColor = new SolidColorBrush(Color.White);
         private UserGameSettings _userSettings;
 
+        private LiveUserState _liveUserState;
+
         public UserGameSettings UserSettings
         {
             get => _userSettings;
@@ -48,13 +50,13 @@ namespace PathwayGames.ViewModels
                 return new Command<FaceAnchorChangedEventArgs>((e) =>
                 {
                     // Invoke engangement service
-                    //_engangementService.CalculateEngangement(UserSettings.LiveViewSensitivity, e.Reading);
+                    // here will send sensor data for your algorithm calculation
+                    _engangementService.CalculateEngangement(UserSettings.LiveViewSensitivity, e.Reading);
                 });
             }
         }
 
-        public SensorsViewModel (IUserService userService,
-            IEngangementService engangementService)
+        public SensorsViewModel (IUserService userService, IEngangementService engangementService)
         {
             _userService = userService;
             _engangementService = engangementService;
@@ -72,6 +74,11 @@ namespace PathwayGames.ViewModels
             // Timer init
             _timer = new CancelableTimer(LightUpdateTimespan, UpdateLightColor);
             _timer.Start();
+
+            _liveUserState = new LiveUserState();
+            _engangementService.InitEngagement(_liveUserState);
+            
+            _liveUserState.StartSession(UserSettings.LiveViewSensitivity);
         }
 
         private void UpdateLightColor()

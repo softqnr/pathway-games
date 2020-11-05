@@ -4,5 +4,6 @@
     {
         string GetDBPathAndCreateIfNotExists(string databaseFilename);
 
+        string GetMLPathAndCreateIfNotExists(string filename);
     }
 }
