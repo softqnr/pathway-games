@@ -6,11 +6,11 @@ namespace PathwayGames.Services.Engangement
 {
     public interface IEngagementService
     {
-        void Init(float ppi);
+        void StartSession(float ppi, int sensitivity);
 
         double UpdateEngagement(FaceAnchorReading faceAnchorReading);
 
-        double GetEngagement(/*int sensitivity,*/ FaceAnchorReading faceAnchorReading);
+        double GetEngagement(FaceAnchorReading faceAnchorReading);
 
         Color GetEngagementColor(Tolerance tolerance);
     }

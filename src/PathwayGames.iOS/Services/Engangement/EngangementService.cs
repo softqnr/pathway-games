@@ -35,23 +35,23 @@ namespace PathwayGames.iOS.Services.Engangement
         public EngangementService()
         {
             LoadModel();
-
-            blink = new MovingStatistics(SampleWindow);
-            squint = new MovingStatistics(SampleWindow);
-            gazeIn = new MovingStatistics(SampleWindow);
-            gazeOut = new MovingStatistics(SampleWindow);
-            smile = new MovingStatistics(SampleWindow);
-            frown = new MovingStatistics(SampleWindow);
-            headSpeed = new MovingStatistics(SampleWindow);
-            eyeDwell = new MovingStatistics(SampleWindow);
-            headTilt = new MovingStatistics(SampleWindow);
-            //pressCount = new MovingStatistics(TimeWindow);
-            //responseTime = new MovingStatistics(TimeWindow);
         }
 
-        public void Init(float ppi)
+        public void StartSession(float ppi, int sensitivity)
         {
             PPI = ppi;
+
+            var sampleWindow = sensitivity * 60; // 60 to 1200ms, at 60 frames/sec, = 1 sec to 20 seconds
+
+            blink = new MovingStatistics(sampleWindow);
+            squint = new MovingStatistics(sampleWindow);
+            gazeIn = new MovingStatistics(sampleWindow);
+            gazeOut = new MovingStatistics(sampleWindow);
+            smile = new MovingStatistics(sampleWindow);
+            frown = new MovingStatistics(sampleWindow);
+            headSpeed = new MovingStatistics(sampleWindow);
+            eyeDwell = new MovingStatistics(sampleWindow);
+            headTilt = new MovingStatistics(sampleWindow);
         }
 
         private void LoadModel()

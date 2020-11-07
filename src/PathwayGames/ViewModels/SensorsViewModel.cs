@@ -59,15 +59,17 @@ namespace PathwayGames.ViewModels
         {
             _userService = userService;
             _engagementService = DependencyService.Get<IEngagementService>();
-            var ppi = DependencyService.Get<IDeviceHelper>().MachineNameToPPI(DeviceInfo.Model);
-
-            _engagementService.Init(ppi);
+            
             Title = Resources.AppResources.TitleLive;
         }
 
         public override async Task InitializeAsync(object navigationData)
         {
             UserSettings = await _userService.GetUserSettings(App.SelectedUser.Id);
+
+            // Start ML Session
+            var ppi = DependencyService.Get<IDeviceHelper>().MachineNameToPPI(DeviceInfo.Model);
+            _engagementService.StartSession(ppi, UserSettings.LiveViewSensitivity);
 
             // Start sensor read
             RecordingEnabled = true;
