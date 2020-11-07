@@ -62,7 +62,7 @@
                                Command="{Binding ResetVisualizationDefaultsCommand}" />
             </sv:Section>
             <sv:Section Title="{x:Static resources:AppResources.SectionLiveSettings}">
-                <sv:NumberPickerCell Title="{x:Static resources:AppResources.LabelSensitivity}" Min="1" Max="100" 
+                <sv:NumberPickerCell Title="{x:Static resources:AppResources.LabelSensitivity}" Min="1" Max="20" 
                                      Number="{Binding UserSettings.LiveViewSensitivity}" PickerTitle="Select number" />
                 <sv:TextPickerCell Title="{x:Static resources:AppResources.LabelTolerance}" Items="{Binding Tolerances}" 
                                    SelectedItem="{Binding UserSettings.LiveViewTolerance}" />

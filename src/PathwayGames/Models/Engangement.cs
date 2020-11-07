@@ -39,7 +39,7 @@ namespace PathwayGames.Models
 
             switch (Tolerance)
             {
-                case Tolerance.Low:
+                case Tolerance.High:
                     // 3x Red => Range(0, 0.50)
                     // 2x Amber => Range(0.50, 0.83)
                     // 1x Green => Range(0.83, 1)
@@ -53,7 +53,7 @@ namespace PathwayGames.Models
                     range1Max = 0.44;
                     range2Max = 0.77;
                     break;
-                case Tolerance.High:
+                case Tolerance.Low:
                     // 1x Red => Range(0, 0.33)
                     // 1x Amber => Range(0.33, 0.66)
                     // 1x Green => Range(0.66, 1)
