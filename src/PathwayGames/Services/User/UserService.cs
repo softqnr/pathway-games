@@ -1,4 +1,4 @@
-﻿using PathwayGames.Data;
+﻿using PathwayGames.Infrastructure.Data;
 using PathwayGames.Helpers;
 using PathwayGames.Models;
 using PathwayGames.Models.Enums;

@@ -1,6 +1,6 @@
 ﻿using CommonServiceLocator;
 using Newtonsoft.Json;
-using PathwayGames.Data;
+using PathwayGames.Infrastructure.Data;
 using PathwayGames.Infrastructure.Dialog;
 using PathwayGames.Infrastructure.File;
 using PathwayGames.Infrastructure.Json;
@@ -114,7 +114,7 @@ namespace PathwayGames
             // Services
             Container.RegisterType<ISlidesService, SlidesService>();
             Container.RegisterType<ISensorLogWriterService, SensorLogWriterService>();
-            Container.RegisterType<IEngangementService, EngangementService>();
+            //Container.RegisterType<IEngangementService, EngangementService>();
             Container.RegisterType<IExcelService, ExcelService>();
             Container.RegisterType<IUserService, UserService>();
             

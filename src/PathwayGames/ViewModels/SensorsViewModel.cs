@@ -8,6 +8,8 @@ using System;
 using System.Threading.Tasks;
 using System.Windows.Input;
 using Xamarin.Forms;
+using PathwayGames.Infrastructure.Device;
+using Xamarin.Essentials;
 
 namespace PathwayGames.ViewModels
 {
@@ -16,7 +18,7 @@ namespace PathwayGames.ViewModels
         TimeSpan LightUpdateTimespan = TimeSpan.FromMilliseconds(10);
         //Services
         private readonly IUserService _userService;
-        private readonly IEngangementService _engangementService;
+        private readonly IEngagementService _engagementService;
 
         private bool _recordingEnabled;
         private CancelableTimer _timer;
@@ -48,17 +50,18 @@ namespace PathwayGames.ViewModels
                 return new Command<FaceAnchorChangedEventArgs>((e) =>
                 {
                     // Invoke engangement service
-                    //_engangementService.CalculateEngangement(UserSettings.LiveViewSensitivity, e.Reading);
+                    _engagementService.UpdateEngagement(/*UserSettings.LiveViewSensitivity,*/ e.Reading);
                 });
             }
         }
 
-        public SensorsViewModel (IUserService userService,
-            IEngangementService engangementService)
+        public SensorsViewModel (IUserService userService)
         {
             _userService = userService;
-            _engangementService = engangementService;
+            _engagementService = DependencyService.Get<IEngagementService>();
+            var ppi = DependencyService.Get<IDeviceHelper>().MachineNameToPPI(DeviceInfo.Model);
 
+            _engagementService.Init(ppi);
             Title = Resources.AppResources.TitleLive;
         }
 
@@ -77,7 +80,7 @@ namespace PathwayGames.ViewModels
         private void UpdateLightColor()
         {
             Device.BeginInvokeOnMainThread(() => {
-                LightColor = new SolidColorBrush(_engangementService.GetEngangementColor(
+                LightColor = new SolidColorBrush(_engagementService.GetEngagementColor(
                     (Tolerance)Enum.Parse(typeof(Tolerance), UserSettings.LiveViewTolerance)));
             });
         }

@@ -3,6 +3,5 @@
     public interface IFileAccessHelper
     {
         string GetDBPathAndCreateIfNotExists(string databaseFilename);
-
     }
 }

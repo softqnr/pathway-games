@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using System.Linq.Expressions;
 using System.Threading.Tasks;
 
-namespace PathwayGames.Data
+namespace PathwayGames.Infrastructure.Data
 {
     public interface IRepository<T> where T : ModelBase, new()
     {
