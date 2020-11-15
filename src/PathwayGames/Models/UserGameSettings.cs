@@ -52,9 +52,9 @@ namespace PathwayGames.Models
 
         public float VisualizationHeightCompensation { get; set; }
 
-        public int LiveViewSensitivity { get; set; } = 1;
+        public int LiveViewSensitivity { get; set; } = 5;
 
-        public string LiveViewTolerance { get; set; } = Tolerance.Low.ToString();
+        public string LiveViewTolerance { get; set; } = Tolerance.High.ToString();
 
         public UserGameSettings()
         {
