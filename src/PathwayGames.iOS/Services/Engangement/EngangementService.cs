@@ -177,7 +177,13 @@ namespace PathwayGames.iOS.Services.Engangement
 
             value = probabilityy.FloatValue - probabilityx.FloatValue;
 
-            Console.WriteLine(value);
+            if (value < 0f)
+            {
+                Console.WriteLine(value + " negative !");
+                value = 0f;
+            }
+            else
+                Console.WriteLine(value);
 
             return value;
             //return probabilityy.FloatValue;

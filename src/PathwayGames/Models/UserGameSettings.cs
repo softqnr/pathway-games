@@ -54,7 +54,7 @@ namespace PathwayGames.Models
 
         public int LiveViewSensitivity { get; set; } = 5;
 
-        public string LiveViewTolerance { get; set; } = Tolerance.High.ToString();
+        public string LiveViewTolerance { get; set; } = Tolerance.Medium.ToString();
 
         public UserGameSettings()
         {
