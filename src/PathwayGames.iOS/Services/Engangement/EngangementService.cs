@@ -171,9 +171,11 @@ namespace PathwayGames.iOS.Services.Engangement
             var probabilityx = classProbabilityFeatureValue.DictionaryValue.Values[0];
             var probabilityy = classProbabilityFeatureValue.DictionaryValue.Values[1];
 
-            // this is a bit hacky, but it's all relative
-            value = (probabilityy.FloatValue - probabilityx.FloatValue - 0.5f) * 2f;
-            value = (value < 0f) ? 0f : value;
+            //// this is a bit hacky, but it's all relative
+            //value = (probabilityy.FloatValue - probabilityx.FloatValue - 0.5f) * 2f;
+            //value = (value < 0f) ? 0f : value;
+
+            value = probabilityy.FloatValue - probabilityx.FloatValue;
 
             Console.WriteLine(value);
 
