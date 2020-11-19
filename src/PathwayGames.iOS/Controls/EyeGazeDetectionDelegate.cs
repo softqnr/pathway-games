@@ -30,7 +30,8 @@ namespace PathwayGames.iOS.Controls
         CGSize compensation;
 
         nfloat screenScale = UIScreen.MainScreen.Scale;
-
+        
+        bool _recordingEnabled;
         bool _eyeGazeVisualizationEnabled;
         int _screenPPI;
         nfloat _widthCompensation;
@@ -56,6 +57,18 @@ namespace PathwayGames.iOS.Controls
             IgnoreHiddenNodes = false,
         };
 
+        public bool RecordingEnabled
+        {
+            get
+            {
+                return _recordingEnabled;
+            }
+            set
+            {
+                _recordingEnabled = value;
+            }
+        }
+
         public bool EyeGazeVisualizationEnabled
         {
             get
@@ -65,7 +78,7 @@ namespace PathwayGames.iOS.Controls
             set
             {
                 _eyeGazeVisualizationEnabled = value;
-                eyePositionIndicatorView.Hidden = !_eyeGazeVisualizationEnabled; 
+                UpdateVisualization();
             }
         }
 
@@ -106,13 +119,14 @@ namespace PathwayGames.iOS.Controls
             }
         }
 
-        public EyeGazeDetectionDelegate(ARSCNView sceneView, bool eyeGazeVisualizationEnabled, int screenPPI, float widthCompensantion, float heightCompensantion)
+        public EyeGazeDetectionDelegate(ARSCNView sceneView, bool recordingEnabled, bool eyeGazeVisualizationEnabled, int screenPPI, float widthCompensantion, float heightCompensantion)
         {
             SceneView = sceneView;
-            _eyeGazeVisualizationEnabled = eyeGazeVisualizationEnabled; 
             _screenPPI = screenPPI;
             _widthCompensation = widthCompensantion;
             _heightCompensation = heightCompensantion;
+            _recordingEnabled = recordingEnabled;
+            _eyeGazeVisualizationEnabled = eyeGazeVisualizationEnabled;
 
             // Hook to OrientantionChanged event
             NSNotificationCenter.DefaultCenter.AddObserver(new NSString("UIDeviceOrientationDidChangeNotification"), OrientantionChanged);
@@ -123,11 +137,21 @@ namespace PathwayGames.iOS.Controls
             CreateVisualizationNode();
             // Setup Scenegraph
             SetupScenegraph();
+
+            UpdateVisualization();           
         }
 
         private void OrientantionChanged(NSNotification notification)
         {
             UpdateScreenSize();
+        }
+
+        private void UpdateVisualization()
+        {
+            // Hide visualization elements
+            eyeLNode.Hidden = !_eyeGazeVisualizationEnabled;
+            eyeRNode.Hidden = !_eyeGazeVisualizationEnabled;
+            eyePositionIndicatorView.Hidden = !_eyeGazeVisualizationEnabled;
         }
 
         private void UpdateScreenSize()
@@ -174,7 +198,7 @@ namespace PathwayGames.iOS.Controls
 
         public void Update(ARFaceAnchor anchor)
         {
-            if (!anchor.IsTracked || !EyeGazeVisualizationEnabled || ScreenPPI == 0)
+            if (!anchor.IsTracked || !RecordingEnabled || ScreenPPI == 0)
                 return;
 
             // Render eye rays
@@ -186,6 +210,7 @@ namespace PathwayGames.iOS.Controls
             // at the same orientation of the phone screen
             var phoneScreenEyeRHitTestResults = virtualPhoneNode.HitTest(lookAtTargetEyeRNode.WorldPosition, 
                 eyeRNode.WorldPosition, hitTestOptions);
+            
             // HitTest with segment (virtualPhoneNode)
             var phoneScreenEyeLHitTestResults = virtualPhoneNode.HitTest(lookAtTargetEyeLNode.WorldPosition, 
                 eyeLNode.WorldPosition, hitTestOptions);

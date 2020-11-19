@@ -20,6 +20,7 @@ namespace PathwayGames.ViewModels
         private readonly IUserService _userService;
         private readonly IEngagementService _engagementService;
 
+        private bool _visualizationEnabled;
         private bool _recordingEnabled;
         private CancelableTimer _timer;
         private Brush _lightColor = new SolidColorBrush(Color.White);
@@ -29,6 +30,12 @@ namespace PathwayGames.ViewModels
         {
             get => _userSettings;
             private set => SetProperty(ref _userSettings, value);
+        }
+
+        public bool VisualizationEnabled
+        {
+            get => _visualizationEnabled;
+            private set => SetProperty(ref _visualizationEnabled, value);
         }
 
         public bool RecordingEnabled
@@ -50,7 +57,19 @@ namespace PathwayGames.ViewModels
                 return new Command<FaceAnchorChangedEventArgs>((e) =>
                 {
                     // Invoke engangement service
-                    _engagementService.UpdateEngagement(/*UserSettings.LiveViewSensitivity,*/ e.Reading);
+                    _engagementService.UpdateEngagement(e.Reading);
+                });
+            }
+        }
+
+        public ICommand FaceSensorTappedCommand
+        {
+            get
+            {
+                return new Command(() =>
+                {
+                    // Tongel visualization
+                    VisualizationEnabled = !VisualizationEnabled;
                 });
             }
         }
@@ -59,15 +78,18 @@ namespace PathwayGames.ViewModels
         {
             _userService = userService;
             _engagementService = DependencyService.Get<IEngagementService>();
-            var ppi = DependencyService.Get<IDeviceHelper>().MachineNameToPPI(DeviceInfo.Model);
-
-            _engagementService.Init(ppi);
+            
             Title = Resources.AppResources.TitleLive;
         }
 
         public override async Task InitializeAsync(object navigationData)
         {
             UserSettings = await _userService.GetUserSettings(App.SelectedUser.Id);
+            VisualizationEnabled = UserSettings.EyeGazeVisualisation;
+
+            // Start ML Session
+            var ppi = DependencyService.Get<IDeviceHelper>().MachineNameToPPI(DeviceInfo.Model);
+            _engagementService.StartSession(ppi, UserSettings.LiveViewSensitivity);
 
             // Start sensor read
             RecordingEnabled = true;

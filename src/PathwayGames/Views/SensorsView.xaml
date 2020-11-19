@@ -54,10 +54,16 @@
                                   ScreenPPI="{Binding UserSettings.ScreenPPI}"
                                   WidthCompensation="{Binding UserSettings.VisualizationWidthCompensation}"
                                   HeightCompensation="{Binding UserSettings.VisualizationHeightCompensation}"
-                                  EyeGazeVisualizationEnabled="True"
-                                  CameraPreviewEnabled="True"
                                   RecordingEnabled="{Binding RecordingEnabled}"
-                                  IsEnabled="True" />
+                                  EyeGazeVisualizationEnabled="{Binding VisualizationEnabled}"
+                                  CameraPreviewEnabled="True"
+                                  IsEnabled="True">
+                <c:FaceSensorView.GestureRecognizers>
+                    <TapGestureRecognizer
+                        Command="{Binding FaceSensorTappedCommand}"
+                        NumberOfTapsRequired="2" />
+                </c:FaceSensorView.GestureRecognizers>
+            </c:FaceSensorView>
 
             <Frame BackgroundColor="Black" HorizontalOptions="FillAndExpand" VerticalOptions="End" Padding="4,18,4,24">
                 <StackLayout Orientation="Horizontal" VerticalOptions="CenterAndExpand" HorizontalOptions="FillAndExpand">

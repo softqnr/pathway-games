@@ -35,23 +35,23 @@ namespace PathwayGames.iOS.Services.Engangement
         public EngangementService()
         {
             LoadModel();
-
-            blink = new MovingStatistics(SampleWindow);
-            squint = new MovingStatistics(SampleWindow);
-            gazeIn = new MovingStatistics(SampleWindow);
-            gazeOut = new MovingStatistics(SampleWindow);
-            smile = new MovingStatistics(SampleWindow);
-            frown = new MovingStatistics(SampleWindow);
-            headSpeed = new MovingStatistics(SampleWindow);
-            eyeDwell = new MovingStatistics(SampleWindow);
-            headTilt = new MovingStatistics(SampleWindow);
-            //pressCount = new MovingStatistics(TimeWindow);
-            //responseTime = new MovingStatistics(TimeWindow);
         }
 
-        public void Init(float ppi)
+        public void StartSession(float ppi, int sensitivity)
         {
             PPI = ppi;
+
+            var sampleWindow = sensitivity * 60; // 60 to 1200ms, at 60 frames/sec, = 1 sec to 20 seconds
+
+            blink = new MovingStatistics(sampleWindow);
+            squint = new MovingStatistics(sampleWindow);
+            gazeIn = new MovingStatistics(sampleWindow);
+            gazeOut = new MovingStatistics(sampleWindow);
+            smile = new MovingStatistics(sampleWindow);
+            frown = new MovingStatistics(sampleWindow);
+            headSpeed = new MovingStatistics(sampleWindow);
+            eyeDwell = new MovingStatistics(sampleWindow);
+            headTilt = new MovingStatistics(sampleWindow);
         }
 
         private void LoadModel()
@@ -75,7 +75,7 @@ namespace PathwayGames.iOS.Services.Engangement
             Models.Engangement engangemet = new Models.Engangement(value, tolerance);
 
             // Blend the two range colors
-            return engangemet.Color1.Blend(engangemet.Color2, engangemet.Delta);
+            return engangemet.Color2.Blend(engangemet.Color1, engangemet.Delta);
         }
 
         public double GetEngagement(FaceAnchorReading faceAnchorReading)
@@ -171,10 +171,19 @@ namespace PathwayGames.iOS.Services.Engangement
             var probabilityx = classProbabilityFeatureValue.DictionaryValue.Values[0];
             var probabilityy = classProbabilityFeatureValue.DictionaryValue.Values[1];
 
-            Console.WriteLine("[Result: {0} Probability: {1} {2}] Blink: {3} Smile: {4} Frown: {5} Squint: {6} Gaze in: {7} Gaze out: {8} Head speed: {9} Eye dwell: {10} Head tilt: {11}",
-                prediction, probabilityx.FloatValue, probabilityy.FloatValue, blink.Mean, squint.Mean, gazeIn.Mean, gazeOut.Mean, smile.Mean, frown.Mean, headSpeed.Mean, eyeDwell.Mean, headTilt.Mean);
-            
-            value = probabilityx.FloatValue;
+            //// this is a bit hacky, but it's all relative
+            //value = (probabilityy.FloatValue - probabilityx.FloatValue - 0.5f) * 2f;
+            //value = (value < 0f) ? 0f : value;
+
+            value = probabilityy.FloatValue - probabilityx.FloatValue;
+
+            if (value < 0f)
+            {
+                Console.WriteLine(value + " negative !");
+                value = 0f;
+            }
+            else
+                Console.WriteLine(value);
 
             return value;
             //return probabilityy.FloatValue;

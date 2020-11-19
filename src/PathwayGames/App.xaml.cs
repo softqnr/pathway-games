@@ -1,4 +1,6 @@
-﻿using CommonServiceLocator;
+﻿using Autofac;
+using Autofac.Extras.CommonServiceLocator;
+using CommonServiceLocator;
 using Newtonsoft.Json;
 using PathwayGames.Infrastructure.Data;
 using PathwayGames.Infrastructure.Dialog;
@@ -7,20 +9,13 @@ using PathwayGames.Infrastructure.Json;
 using PathwayGames.Infrastructure.Navigation;
 using PathwayGames.Infrastructure.Sound;
 using PathwayGames.Models;
-using PathwayGames.Resources;
-using PathwayGames.Services.Engangement;
 using PathwayGames.Services.Excel;
 using PathwayGames.Services.Sensors;
 using PathwayGames.Services.Slides;
 using PathwayGames.Services.User;
 using PathwayGames.ViewModels;
 using PathwayGames.Views;
-using System.Threading;
 using System.Threading.Tasks;
-using Unity;
-using Unity.Injection;
-using Unity.Lifetime;
-using Unity.ServiceLocation;
 using Xamarin.Essentials;
 using Xamarin.Forms;
 
@@ -34,7 +29,7 @@ namespace PathwayGames
         public static string LocalStorageDirectory = FileSystem.AppDataDirectory;
         public static string ApplicationVersion = $"{VersionTracking.CurrentVersion}.{VersionTracking.CurrentBuild}";
 
-        public static IUnityContainer Container { get; private set; }
+        public static IContainer Container { get; private set; }
         public readonly static INavigationService NavigationService = new NavigationService();
         public App()
         {
@@ -98,41 +93,46 @@ namespace PathwayGames
 
         private void InitializeDependencies()
         {
-            Container = new UnityContainer().AddExtension(new ForceActivation()); // IOS bug fix see https://github.com/unitycontainer/container/issues/150
-
+            var builder = new ContainerBuilder();
             // Data repositories
-            Container.RegisterType<IRepository<User>, Repository<User>>(new InjectionConstructor(DatabaseFilePath));
-            Container.RegisterType<IRepository<UserGameSettings>, Repository<UserGameSettings>>(new InjectionConstructor(DatabaseFilePath));
-            Container.RegisterType<IRepository<UserGameSession>, Repository<UserGameSession>>(new InjectionConstructor(DatabaseFilePath));
-            Container.RegisterType<IRepository<SeekGridOption>, Repository<SeekGridOption>>(new InjectionConstructor(DatabaseFilePath));
+            builder.RegisterGeneric(typeof(Repository<>))
+                .As(typeof(IRepository<>)).WithParameter("databaseFile", DatabaseFilePath); ;
+            //builder.RegisterType<IRepository<User>>()
+            //    .As<Repository<User>>().WithParameter("databaseFile", DatabaseFilePath);
+            //builder.RegisterType<IRepository<UserGameSettings>>()
+            //    .As<Repository<UserGameSettings>>().WithParameter("databaseFile", DatabaseFilePath);
+            //builder.RegisterType<IRepository<UserGameSession>>()
+            //    .As<Repository<UserGameSession>>().WithParameter("databaseFile", DatabaseFilePath);
+            //builder.RegisterType<IRepository<SeekGridOption>>()
+            //    .As<Repository<SeekGridOption>>().WithParameter("databaseFile", DatabaseFilePath);
 
             // Infrastructure
-            Container.RegisterInstance(NavigationService, new ContainerControlledLifetimeManager());
-            Container.RegisterType<ISoundService, SoundService>();
-            Container.RegisterType<IDialogService, DialogService>();
+            builder.RegisterInstance(NavigationService).SingleInstance();
+            builder.RegisterType<SoundService>().As<ISoundService>();
+            builder.RegisterType<DialogService>().As<IDialogService>();
 
             // Services
-            Container.RegisterType<ISlidesService, SlidesService>();
-            Container.RegisterType<ISensorLogWriterService, SensorLogWriterService>();
-            //Container.RegisterType<IEngangementService, EngangementService>();
-            Container.RegisterType<IExcelService, ExcelService>();
-            Container.RegisterType<IUserService, UserService>();
-            
+            builder.RegisterType<SlidesService>().As<ISlidesService>();
+            builder.RegisterType<SensorLogWriterService>().As<ISensorLogWriterService>();
+            builder.RegisterType<ExcelService>().As<IExcelService>();
+            builder.RegisterType<UserService>().As<IUserService>();
+            //builder.RegisterType<EngangementService>().As<IEngangementService>();
+
             // View models
-            Container.RegisterType<MasterViewModel>();
-            Container.RegisterType<MainViewModel>();
-            Container.RegisterType<GameSelectionViewModel>();
-            Container.RegisterType<GameViewModel>();
-            Container.RegisterType<SettingsViewModel>();
-            Container.RegisterType<GameResultsViewModel>();
-            Container.RegisterType<SessionDataViewModel>();
-            Container.RegisterType<SensorsViewModel>();
-            Container.RegisterType<UsersViewModel>();
-            Container.RegisterType<UserFormViewModel>();
+            builder.RegisterType<MasterViewModel>();
+            builder.RegisterType<MainViewModel>();
+            builder.RegisterType<GameSelectionViewModel>();
+            builder.RegisterType<GameViewModel>();
+            builder.RegisterType<SettingsViewModel>();
+            builder.RegisterType<GameResultsViewModel>();
+            builder.RegisterType<SessionDataViewModel>();
+            builder.RegisterType<SensorsViewModel>();
+            builder.RegisterType<UsersViewModel>();
+            builder.RegisterType<UserFormViewModel>();
 
             // Set as service locator provider
-            var unityServiceLocator = new UnityServiceLocator(Container);
-            ServiceLocator.SetLocatorProvider(() => unityServiceLocator);
+            Container = builder.Build();
+            ServiceLocator.SetLocatorProvider(() => new AutofacServiceLocator(Container));
         }
 
         protected override async void OnStart()

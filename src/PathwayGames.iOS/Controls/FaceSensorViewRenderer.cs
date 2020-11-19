@@ -60,6 +60,7 @@ namespace PathwayGames.iOS.Controls
                     SceneView.Session.Delegate = this;
 
                     SceneView.Delegate = new EyeGazeDetectionDelegate(SceneView,
+                        e.NewElement.RecordingEnabled,
                         e.NewElement.EyeGazeVisualizationEnabled,
                         e.NewElement.ScreenPPI,
                         e.NewElement.WidthCompensation,
@@ -85,7 +86,9 @@ namespace PathwayGames.iOS.Controls
             if (this.Element == null || this.Control == null)
                 return;
 
-            if (e.PropertyName == FaceSensorView.EyeGazeVisualizationEnabledProperty.PropertyName) {
+            if (e.PropertyName == FaceSensorView.RecordingEnabledProperty.PropertyName) {
+                UpdateRecordingEnabled();
+            } else if (e.PropertyName == FaceSensorView.EyeGazeVisualizationEnabledProperty.PropertyName) {
                 UpdateEyeGazeVisualization();
             } else if (e.PropertyName == FaceSensorView.ScreenPPIProperty.PropertyName) {
                 UpdateScreenPPI();
@@ -107,6 +110,11 @@ namespace PathwayGames.iOS.Controls
                 Control.Dispose();
             }
             base.Dispose(disposing);
+        }
+
+        private void UpdateRecordingEnabled()
+        {
+            (SceneView.Delegate as EyeGazeDetectionDelegate).RecordingEnabled = sensor.RecordingEnabled;
         }
 
         private void UpdateEyeGazeVisualization()
