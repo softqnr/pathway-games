@@ -40,7 +40,7 @@
                      HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
             <Label Text="{x:Static resources:AppResources.LabelTypeAX}" VerticalOptions="End" TextColor="White" FontSize="Large" FontAttributes="Bold"/>
             <StackLayout.GestureRecognizers>
-                <TapGestureRecognizer Command="{Binding NA}"/>
+                <TapGestureRecognizer Command="{Binding TypeAX}"/>
             </StackLayout.GestureRecognizers>
         </StackLayout>
 

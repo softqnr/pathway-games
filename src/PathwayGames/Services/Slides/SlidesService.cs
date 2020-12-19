@@ -37,13 +37,13 @@ namespace PathwayGames.Services.Slides
             switch (gameType)
             {
                 case GameType.TypeX:
-                    game.Slides = GenerateTypeXSlideSequence(gameSettings, seed);
+                    game.Slides = GenerateTypeXSlideSequence(gameSettings, seed, false);
                     break;
                 case GameType.SeekX:
                     game.Slides = GenerateSeekXSlideSequence(gameSettings, seed, false);
                     break;
                 case GameType.TypeAX:
-                    game.Slides = GenerateTypeAXSlideSequence(gameSettings, seed);
+                    game.Slides = GenerateTypeXSlideSequence(gameSettings, seed, true);
                     break;
                 case GameType.SeekAX:
                     game.Slides = GenerateSeekXSlideSequence(gameSettings, seed, true);
@@ -69,7 +69,7 @@ namespace PathwayGames.Services.Slides
             return timeLeft;
         }
 
-        private List<Slide> GenerateTypeXSlideSequence(UserGameSettings gameSettings, string seed)
+        private List<Slide> GenerateTypeXSlideSequence(UserGameSettings gameSettings, string seed, bool isAX)
         {
              // Create slide collection using the 50%X and 50%Distractor 
             List<Slide> SlideCollection = new List<Slide>();
@@ -77,48 +77,23 @@ namespace PathwayGames.Services.Slides
             int typeXSlideCount = (int)(gameSettings.SlideCount * 0.5);
             for (int i = 0; i < typeXSlideCount; i++)
             {
-                SlideCollection.Add(new Slide(SlideType.X, gameSettings.SlideDisplayDuration, XSlideImage, ThreadSafeRandom.GetRandomNumber(gameSettings.BlankSlideDisplayTimes)));
+                var slide = new Slide(SlideType.X, gameSettings.SlideDisplayDuration, XSlideImage, ThreadSafeRandom.GetRandomNumber(gameSettings.BlankSlideDisplayTimes));
+                
+                if (isAX)
+                    slide.BorderColor = XSlideBorderColor;
+
+                SlideCollection.Add(slide);
             }
             // DistractorY
             for (int i = 0; i < gameSettings.SlideCount - typeXSlideCount; i++)
             {
-                SlideCollection.Add(new Slide(SlideType.Y, gameSettings.SlideDisplayDuration, YDistractorSlideImage, ThreadSafeRandom.GetRandomNumber(gameSettings.BlankSlideDisplayTimes)));
-            }
-            // Generate random number generator
-            Random random = new Random(seed.GetHashCode());
-            // Shuffle
-            return SlideCollection.OrderBy(i => random.Next()).ToList<Slide>();
-        }
+                var slide = new Slide(SlideType.Y, gameSettings.SlideDisplayDuration, YDistractorSlideImage, ThreadSafeRandom.GetRandomNumber(gameSettings.BlankSlideDisplayTimes));
+                
+                if (isAX)
+                    slide.BorderColor = GetRandomYDistractorBorderColor();
 
-        private List<Slide> GenerateTypeAXSlideSequence(UserGameSettings gameSettings, string seed)
-        {
-            // Create slide collection using the 70%AX 10%BY 10%AY 10%BX
-            List<Slide> SlideCollection = new List<Slide>();
-            // AX
-            for (int i = 0; i < (int)gameSettings.SlideCount * 0.7; i++)
-            {
-                SlideCollection.Add(new Slide(SlideType.A, gameSettings.SlideDisplayDuration, "alex_the_alien.jpg", ThreadSafeRandom.GetRandomNumber(gameSettings.BlankSlideDisplayTimes)));
-                SlideCollection.Add(new Slide(SlideType.X, gameSettings.SlideDisplayDuration, XSlideImage, ThreadSafeRandom.GetRandomNumber(gameSettings.BlankSlideDisplayTimes)));
+                SlideCollection.Add(slide);
             }
-            // BY
-            for (int i = 0; i < (int)gameSettings.SlideCount * 0.1; i++)
-            {
-                SlideCollection.Add(new Slide(SlideType.B, gameSettings.SlideDisplayDuration, "alex_the_alien.jpg", ThreadSafeRandom.GetRandomNumber(gameSettings.BlankSlideDisplayTimes)));
-                SlideCollection.Add(new Slide(SlideType.Y, gameSettings.SlideDisplayDuration, YDistractorSlideImage, ThreadSafeRandom.GetRandomNumber(gameSettings.BlankSlideDisplayTimes)));
-            }
-            // AY
-            for (int i = 0; i < (int)gameSettings.SlideCount * 0.1; i++)
-            {
-                SlideCollection.Add(new Slide(SlideType.A, gameSettings.SlideDisplayDuration, "alex_the_alien.jpg", ThreadSafeRandom.GetRandomNumber(gameSettings.BlankSlideDisplayTimes)));
-                SlideCollection.Add(new Slide(SlideType.Y, gameSettings.SlideDisplayDuration, YDistractorSlideImage, ThreadSafeRandom.GetRandomNumber(gameSettings.BlankSlideDisplayTimes)));
-            }
-            // BX
-            for (int i = 0; i < (int)gameSettings.SlideCount * 0.1; i++)
-            {
-                SlideCollection.Add(new Slide(SlideType.B, gameSettings.SlideDisplayDuration, "alex_the_alien.jpg", ThreadSafeRandom.GetRandomNumber(gameSettings.BlankSlideDisplayTimes)));
-                SlideCollection.Add(new Slide(SlideType.X, gameSettings.SlideDisplayDuration, XSlideImage, ThreadSafeRandom.GetRandomNumber(gameSettings.BlankSlideDisplayTimes)));
-            }
-
             // Generate random number generator
             Random random = new Random(seed.GetHashCode());
             // Shuffle
