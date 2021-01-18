@@ -1,14 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:resources="clr-namespace:PathwayGames.Resources"
              x:Class="PathwayGames.Views.UserFormView"
-             Title="{x:Static resources:AppResources.TitleAddUser}"
+             Title="{Binding Resources[TitleAddUser]}"
              BackgroundColor="White">
     
     <ContentPage.ToolbarItems>
-        <ToolbarItem Text="{x:Static resources:AppResources.ButtonCancel}" Command="{Binding CancelCommand}"/>
-        <ToolbarItem Text="{x:Static resources:AppResources.ButtonSave}" Command="{Binding SaveUserCommand}"/>
+        <ToolbarItem Text="{Binding Resources[ButtonCancel]}" Command="{Binding CancelCommand}"/>
+        <ToolbarItem Text="{Binding Resources[ButtonSave]}" Command="{Binding SaveUserCommand}"/>
     </ContentPage.ToolbarItems>
     
     <StackLayout Spacing="20" Padding="15" VerticalOptions="Center" HorizontalOptions="FillAndExpand">

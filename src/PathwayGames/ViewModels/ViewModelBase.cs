@@ -1,6 +1,8 @@
 ﻿using CommonServiceLocator;
 using PathwayGames.Infrastructure.Dialog;
 using PathwayGames.Infrastructure.Navigation;
+using PathwayGames.Localization;
+using PathwayGames.Resources;
 using System.Threading.Tasks;
 
 namespace PathwayGames.ViewModels
@@ -14,6 +16,7 @@ namespace PathwayGames.ViewModels
         {
             DialogService = ServiceLocator.Current.GetInstance<IDialogService>();
             NavigationService = ServiceLocator.Current.GetInstance<INavigationService>();
+            Resources = new LocalizedResources(typeof(AppResources), App.CurrentLanguage.GetShortNameText());
         }
 
         string title = string.Empty;
@@ -30,6 +33,12 @@ namespace PathwayGames.ViewModels
         {
             get { return isBusy; }
             set { SetProperty(ref isBusy, value); }
+        }
+
+        public LocalizedResources Resources
+        {
+            get;
+            private set;
         }
 
         public virtual Task InitializeAsync(object navigationData)

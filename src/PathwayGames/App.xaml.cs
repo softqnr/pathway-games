@@ -28,6 +28,11 @@ namespace PathwayGames
         public static User SelectedUser;
         public static string LocalStorageDirectory = FileSystem.AppDataDirectory;
         public static string ApplicationVersion = $"{VersionTracking.CurrentVersion}.{VersionTracking.CurrentBuild}";
+        public static Language CurrentLanguage
+        {
+            get => new Language(SelectedUser.Language);
+            set => SelectedUser.Language = value.ShortName;
+        }
 
         public static IContainer Container { get; private set; }
         public readonly static INavigationService NavigationService = new NavigationService();
@@ -41,7 +46,8 @@ namespace PathwayGames
             Device.SetFlags(new[] {
                 "StateTriggers_Experimental",
                 "Shapes_Experimental",
-                "Brush_Experimental"
+                "Brush_Experimental",
+                "RadioButton_Experimental"
             });
 
             // Init version tracking
@@ -71,6 +77,7 @@ namespace PathwayGames
             NavigationService.Configure(typeof(SensorsViewModel), typeof(SensorsView));
             NavigationService.Configure(typeof(UsersViewModel), typeof(UsersView));
             NavigationService.Configure(typeof(UserFormViewModel), typeof(UserFormView));
+            NavigationService.Configure(typeof(LanguagesViewModel), typeof(LanguagesView));
 
             await NavigationService.InitializeAsync();
         }
@@ -129,6 +136,7 @@ namespace PathwayGames
             builder.RegisterType<SensorsViewModel>();
             builder.RegisterType<UsersViewModel>();
             builder.RegisterType<UserFormViewModel>();
+            builder.RegisterType<LanguagesViewModel>();
 
             // Set as service locator provider
             Container = builder.Build();
@@ -140,7 +148,7 @@ namespace PathwayGames
             // Handle when your app starts
             // Set selected user
             SelectedUser = await ServiceLocator.Current.GetInstance<IUserService>().GetSelectedUser();
-            
+
             // Nav service configuration
             await InitializeNavigation();
         }

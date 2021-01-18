@@ -68,12 +68,12 @@ namespace PathwayGames.ViewModels
             if (!IsBusy)
             {
                 IsBusy = true;
-                DialogService.ShowLoading(Resources.AppResources.TitleGeneratingResults);
+                DialogService.ShowLoading(Resources["TitleGeneratingResults"]);
                 string fileName = await _excelService.ExportAsync(_game);
 
                 await Share.RequestAsync(new ShareFileRequest
                 {
-                    Title = Resources.AppResources.TitleShareResults,
+                    Title = Resources["TitleShareResults"],
                     File = new ShareFile(fileName),
                     PresentationSourceBounds = Device.RuntimePlatform == Device.iOS && Device.Idiom == TargetIdiom.Tablet
                                                 ? new System.Drawing.Rectangle(0, 20, 0, 0)
@@ -91,7 +91,7 @@ namespace PathwayGames.ViewModels
 
             await Share.RequestAsync(new ShareFileRequest
             {
-                Title = $"{Resources.AppResources.ApplicationName} - {Resources.AppResources.TitleTestResults}",
+                Title = $"{Resources["ApplicationName"]} - {Resources["TitleTestResults"]}",
                 File = new ShareFile(file),
                 PresentationSourceBounds = Device.RuntimePlatform == Device.iOS && Device.Idiom == TargetIdiom.Tablet
                                             ? new System.Drawing.Rectangle(0, 20, 0, 0)
@@ -101,8 +101,8 @@ namespace PathwayGames.ViewModels
 
         private async Task DeleteSession()
         {
-            bool confirmed = await DialogService.ShowConfirmAsync(Resources.AppResources.TitleCannotUndoThisAction,
-                Resources.AppResources.PromptDeleteSessionData, Resources.AppResources.Ok, Resources.AppResources.Cancel);
+            bool confirmed = await DialogService.ShowConfirmAsync(Resources["TitleCannotUndoThisAction"],
+                Resources["PromptDeleteSessionData"], Resources["Ok"], Resources["Cancel"]);
             if (confirmed)
             {
                 await _userService.DeleteGameSession(_userGameSession);

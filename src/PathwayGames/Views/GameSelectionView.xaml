@@ -1,13 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<views:ViewBase
-             xmlns:views="clr-namespace:PathwayGames.Views" 
+<views:ViewBase x:Name="root"
              xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:resources="clr-namespace:PathwayGames.Resources"
+             xmlns:views="clr-namespace:PathwayGames.Views"
              x:Class="PathwayGames.Views.GameSelectionView" 
              Visual="Material"
-             Title = "{x:Static resources:AppResources.TitleSelectGame}">
-    
+             Title="{Binding Resources[TitleSelectGame]}">
     <ContentPage.Resources>
         <ResourceDictionary>
             <Style x:Name="buttonStyles" x:Key="buttonStyles" TargetType="StackLayout">
@@ -22,7 +20,7 @@
 
         <StackLayout BackgroundColor="{StaticResource menu_green}" Style="{StaticResource buttonStyles}" 
                      HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
-            <Label Text="{x:Static resources:AppResources.LabelTypeX}" VerticalOptions="End" TextColor="White" FontSize="Large" FontAttributes="Bold"/>
+            <Label Text="{Binding Resources[LabelTypeX]}" VerticalOptions="End" TextColor="White" FontSize="Large" FontAttributes="Bold"/>
             <StackLayout.GestureRecognizers>
                 <TapGestureRecognizer Command="{Binding TypeX}"/>
             </StackLayout.GestureRecognizers>
@@ -30,7 +28,7 @@
 
         <StackLayout BackgroundColor="{StaticResource menu_blue}" Style="{StaticResource buttonStyles}"
                      HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
-            <Label Text="{x:Static resources:AppResources.LabelSeekX}" VerticalOptions="End" TextColor="White" FontSize="Large" FontAttributes="Bold"/>
+            <Label Text="{Binding Resources[LabelSeekX]}" VerticalOptions="End" TextColor="White" FontSize="Large" FontAttributes="Bold"/>
             <StackLayout.GestureRecognizers>
                 <TapGestureRecognizer Command="{Binding SeekX}"/>
             </StackLayout.GestureRecognizers>
@@ -38,15 +36,15 @@
 
         <StackLayout BackgroundColor="{StaticResource menu_pink}" Style="{StaticResource buttonStyles}"
                      HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
-            <Label Text="{x:Static resources:AppResources.LabelTypeAX}" VerticalOptions="End" TextColor="White" FontSize="Large" FontAttributes="Bold"/>
+            <Label Text="{Binding Resources[LabelTypeAX]}" VerticalOptions="End" TextColor="White" FontSize="Large" FontAttributes="Bold"/>
             <StackLayout.GestureRecognizers>
-                <TapGestureRecognizer Command="{Binding NA}"/>
+                <TapGestureRecognizer Command="{Binding TypeAX}"/>
             </StackLayout.GestureRecognizers>
         </StackLayout>
 
         <StackLayout BackgroundColor="{StaticResource menu_purple}" Style="{StaticResource buttonStyles}"
                      HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
-            <Label Text="{x:Static resources:AppResources.LabelSeekAX}" VerticalOptions="End" TextColor="White" FontSize="Large" FontAttributes="Bold"/>
+            <Label Text="{Binding Resources[LabelSeekAX]}" VerticalOptions="End" TextColor="White" FontSize="Large" FontAttributes="Bold"/>
             <StackLayout.GestureRecognizers>
                 <TapGestureRecognizer Command="{Binding SeekAX}"/>
             </StackLayout.GestureRecognizers>
@@ -54,7 +52,7 @@
 
         <StackLayout BackgroundColor="{StaticResource menu_red}" Style="{StaticResource buttonStyles}"
                      HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
-            <Label Text="{x:Static resources:AppResources.LabelSeekAXWithQuiz}" VerticalOptions="End" TextColor="White" FontSize="Large" FontAttributes="Bold"/>
+            <Label Text="{Binding Resources[LabelSeekAXWithQuiz]}" VerticalOptions="End" TextColor="White" FontSize="Large" FontAttributes="Bold"/>
             <StackLayout.GestureRecognizers>
                 <TapGestureRecognizer Command="{Binding NA}"/>
             </StackLayout.GestureRecognizers>

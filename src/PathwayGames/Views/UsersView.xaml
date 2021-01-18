@@ -2,10 +2,9 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:PathwayGames"
-             xmlns:resources="clr-namespace:PathwayGames.Resources"
              x:Class="PathwayGames.Views.UsersView"
              x:Name="self"
-             Title="Users"
+             Title="{Binding Resources[TitleUsers]}"
              Visual="Material">
     
     <ContentPage.ToolbarItems>
@@ -21,7 +20,7 @@
     
     <ContentPage.Content>
         <StackLayout Padding="10,0,10,0">
-            <SearchBar Placeholder="{x:Static resources:AppResources.PlaceholderEnterSearchTerm}" x:Name="UserSearchBar"
+            <SearchBar Placeholder="{Binding Resources[PlaceholderEnterSearchTerm]}" x:Name="UserSearchBar"
                        SearchCommand="{Binding SearchCommand}" 
                        SearchCommandParameter="{Binding Source={x:Reference UserSearchBar}, Path=Text}" />
             
@@ -29,7 +28,7 @@
                 <Label Text="User type:" VerticalOptions="Center">
                     <Label.FormattedText>
                         <FormattedString>
-                            <Span Text="{x:Static resources:AppResources.LabelUserType}"  />
+                            <Span Text="{Binding Resources[LabelUserType]}"  />
                             <Span Text=": " />
                         </FormattedString>
                     </Label.FormattedText> 
@@ -45,7 +44,7 @@
             <CollectionView ItemsSource="{Binding Users}" x:Name="collectionView"
                             VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
                 <CollectionView.EmptyView>
-                    <Label Text="{x:Static resources:AppResources.LabelNoUsersFound}"/>
+                    <Label Text="{Binding Resources[LabelNoUsersFound]}"/>
                 </CollectionView.EmptyView>
                 <CollectionView.ItemTemplate>
                     <DataTemplate>
@@ -61,7 +60,7 @@
                                     <Label Text="{Binding UserType}" TextColor="Gray"/>
                                 </StackLayout>
 
-                            <Button Grid.Row="0" Grid.Column="1" HorizontalOptions="End" Text="{x:Static resources:AppResources.ButtonSelect}"
+                            <Button Grid.Row="0" Grid.Column="1" HorizontalOptions="End" Text="{Binding Resources[ButtonSelect]}"
                                         Command="{Binding BindingContext.UserSelectedCommand, Source={x:Reference self}}" Margin="10" TextColor="Black"
                                         CommandParameter="{Binding .}"/>
 

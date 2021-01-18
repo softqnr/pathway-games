@@ -1,4 +1,5 @@
-﻿using SQLite;
+﻿using PathwayGames.Models.Enums;
+using SQLite;
 using SQLiteNetExtensions.Attributes;
 using System.Collections.Generic;
 
@@ -18,6 +19,8 @@ namespace PathwayGames.Models
         public bool IsSelected { get; set; }
 
         public string PIN { get; set; } = "";
+
+        public Languages Language { get; set; }
 
         [OneToOne(CascadeOperations = CascadeOperation.All)]
         public UserGameSettings UserSettings { get; set; }

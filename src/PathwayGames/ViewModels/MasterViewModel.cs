@@ -1,6 +1,12 @@
-﻿using PathwayGames.Models;
+﻿using PathwayGames.Extensions;
+using PathwayGames.Helpers;
+using PathwayGames.Localization;
+using PathwayGames.Models;
+using PathwayGames.Models.Enums;
 using System;
+using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Input;
 using Xamarin.Forms;
@@ -42,24 +48,39 @@ namespace PathwayGames.ViewModels
                 User = user;
             });
 
-            MenuItems = new ObservableCollection<NavMenuItem>(new[]
+            MenuItems = new ObservableCollection<NavMenuItem>(GetMenuItems());
+            Resources.PropertyChanged += ResourcesPropertyChanged;
+        }
+
+        private void ResourcesPropertyChanged(object sender, System.ComponentModel.PropertyChangedEventArgs e)
+        {
+            MenuItems.Clear();
+            MenuItems.AddRange(GetMenuItems());
+        }
+
+        private NavMenuItem[] GetMenuItems()
+        {
+            return new[]
             {
-                    new NavMenuItem { Id = 0, Title = Resources.AppResources.TitleGames,
-                        IconSource = Application.Current.Resources["IconGames"].ToString(),
-                        TargetType =typeof(GameSelectionViewModel) },
-                    new NavMenuItem { Id = 1, Title = Title = Resources.AppResources.TitleSessionData,
-                        IconSource = Application.Current.Resources["IconJson"].ToString(),
-                        TargetType =typeof(SessionDataViewModel) },
-                    new NavMenuItem { Id = 2, Title = Resources.AppResources.TitleUsers,
-                        IconSource = Application.Current.Resources["IconUser"].ToString(),
-                        TargetType =typeof(UsersViewModel) },
-                    new NavMenuItem { Id = 3, Title = Resources.AppResources.TitleSettings,
-                        IconSource = Application.Current.Resources["IconSettings"].ToString(),
-                        TargetType =typeof(SettingsViewModel) },
-                    new NavMenuItem { Id = 4, Title = Resources.AppResources.TitleLive,
-                        IconSource = Application.Current.Resources["IconLive"].ToString(),
-                        TargetType =typeof(SensorsViewModel) },
-            });
+                new NavMenuItem { Id = 0, Title = Resources["TitleGames"],
+                    IconSource = Application.Current.Resources["IconGames"].ToString(),
+                    TargetType =typeof(GameSelectionViewModel) },
+                new NavMenuItem { Id = 1, Title = Title = Resources["TitleSessionData"],
+                    IconSource = Application.Current.Resources["IconJson"].ToString(),
+                    TargetType =typeof(SessionDataViewModel) },
+                new NavMenuItem { Id = 2, Title = Resources["TitleUsers"],
+                    IconSource = Application.Current.Resources["IconUser"].ToString(),
+                    TargetType =typeof(UsersViewModel) },
+                new NavMenuItem { Id = 3, Title = Resources["TitleSettings"],
+                    IconSource = Application.Current.Resources["IconSettings"].ToString(),
+                    TargetType =typeof(SettingsViewModel) },
+                new NavMenuItem { Id = 4, Title = Resources["TitleLive"],
+                    IconSource = Application.Current.Resources["IconLive"].ToString(),
+                    TargetType =typeof(SensorsViewModel) },
+                new NavMenuItem { Id = 5, Title = Resources["TitleLanguage"],
+                    IconSource = Application.Current.Resources["IconLanguage"].ToString(),
+                    TargetType =typeof(LanguagesViewModel) }
+            };
         }
 
         public async Task NavigateTo(object sender)

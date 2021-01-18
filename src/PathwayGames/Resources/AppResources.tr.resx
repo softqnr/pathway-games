@@ -118,243 +118,243 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="All" xml:space="preserve">
-    <value>Allemaal</value>
+    <value>Hepsi</value>
   </data>
   <data name="ApplicationName" xml:space="preserve">
-    <value>Pathway+ Spellen</value>
+    <value>Pathway+ Oyunları</value>
   </data>
   <data name="ButtonCancel" xml:space="preserve">
-    <value>Annuleer</value>
+    <value>İptal</value>
   </data>
   <data name="ButtonDeleteSession" xml:space="preserve">
-    <value>Sessie verwijderen</value>
+    <value>Oturumu sil</value>
   </data>
   <data name="ButtonExportResults" xml:space="preserve">
-    <value>Resultaten exporteren</value>
+    <value>Sonuçları aktar</value>
   </data>
   <data name="ButtonGameData" xml:space="preserve">
-    <value>Spel gegevens</value>
+    <value>Oyun verisi</value>
   </data>
   <data name="ButtonPack" xml:space="preserve">
-    <value>Inpakken</value>
+    <value>Gönder</value>
   </data>
   <data name="ButtonPackAll" xml:space="preserve">
-    <value>Alles inpakken</value>
+    <value>Hepsini birden gönder</value>
   </data>
   <data name="ButtonResetDefaults" xml:space="preserve">
-    <value>Standaardinstellingen herstellen</value>
+    <value>Varsayılan olarak ayarla</value>
   </data>
   <data name="ButtonSave" xml:space="preserve">
-    <value>Opslaan</value>
+    <value>Kaydet</value>
   </data>
   <data name="ButtonSelect" xml:space="preserve">
-    <value>Selecteer</value>
+    <value>Seçin</value>
   </data>
   <data name="Cancel" xml:space="preserve">
-    <value>Annuleer</value>
+    <value>İptal</value>
   </data>
   <data name="LabelAdmin" xml:space="preserve">
-    <value>Beheerder</value>
+    <value>Admin</value>
   </data>
   <data name="LabelAverageResponseTime" xml:space="preserve">
-    <value>Gemiddelde responstijd</value>
+    <value>Ortalama yanıt süresi</value>
   </data>
   <data name="LabelBlankSlideDisplayTime" xml:space="preserve">
-    <value>Tijd voor de weergave van de lege dia's</value>
+    <value>Boş ekran görüntüleme süresi</value>
   </data>
   <data name="LabelBlankSlideVariation" xml:space="preserve">
-    <value>Blanco diavariatie (+-)</value>
+    <value>Boş ekran varyasyonu (+-)</value>
   </data>
   <data name="LabelConfusionMatrix" xml:space="preserve">
-    <value>Verwarringsmatrix</value>
+    <value>Hata matrisi</value>
   </data>
   <data name="LabelCorrectCommision" xml:space="preserve">
-    <value>Correcte commissie</value>
+    <value>Doğru işlem</value>
   </data>
   <data name="LabelCorrectOmmisions" xml:space="preserve">
-    <value>Correcte ommissies</value>
+    <value>Doğru pas geçme</value>
   </data>
   <data name="LabelEyeGazeVisualization" xml:space="preserve">
-    <value>Kijkrichting Visualisatie</value>
+    <value>Göz takibi</value>
   </data>
   <data name="LabelGyroAcceleration" xml:space="preserve">
-    <value>Gyro / Acceleratie</value>
+    <value>Dönüş hareti / İvme</value>
   </data>
   <data name="LabelHeightCompensation" xml:space="preserve">
-    <value>Hoogtecompensatie</value>
+    <value>Yükseklk dengesi</value>
   </data>
   <data name="LabelLearner" xml:space="preserve">
-    <value>Leerling</value>
+    <value>Kullanıcı</value>
   </data>
   <data name="LabelMuseEEGheadband" xml:space="preserve">
-    <value>Muze EEG-hoofdband</value>
+    <value>Muse EEG kafabandı</value>
   </data>
   <data name="LabelNoGameSessionsFound" xml:space="preserve">
-    <value>Geen spelsessies gevonden!</value>
+    <value>Kayıtlı oturum yok!</value>
   </data>
   <data name="LabelNoUsersFound" xml:space="preserve">
-    <value>Geen gebruikers gevonden!</value>
+    <value>Kayıtlı kullanıcı yok!</value>
   </data>
   <data name="LabelPoints" xml:space="preserve">
-    <value>Punten</value>
+    <value>Puan</value>
   </data>
   <data name="LabelScore" xml:space="preserve">
-    <value>Score</value>
+    <value>Skor</value>
   </data>
   <data name="LabelScreenPPI" xml:space="preserve">
-    <value>Scherm PPI</value>
+    <value>Ekran piksel hassasiyeti</value>
   </data>
   <data name="LabelSeconds" xml:space="preserve">
-    <value>seconden</value>
+    <value>saniye</value>
   </data>
   <data name="LabelSeekAX" xml:space="preserve">
-    <value>ZOEK AX</value>
+    <value>SEEK AX</value>
   </data>
   <data name="LabelSeekAXWithQuiz" xml:space="preserve">
-    <value>ZOEK AX MET QUIZ</value>
+    <value>SEEK AX ve QUIZ</value>
   </data>
   <data name="LabelSeekX" xml:space="preserve">
-    <value>ZOEK X</value>
+    <value>SEEK X</value>
   </data>
   <data name="LabelSensitivity" xml:space="preserve">
-    <value>Sensitiviteit</value>
+    <value>Duyarlılık</value>
   </data>
   <data name="LabelSlide" xml:space="preserve">
-    <value>DIA</value>
+    <value>Sayfa</value>
   </data>
   <data name="LabelSlideCount" xml:space="preserve">
-    <value>DIA aantal</value>
+    <value>Sayfa sayısı</value>
   </data>
   <data name="LabelSlideDisplayTime" xml:space="preserve">
-    <value>Diaweergave tijd</value>
+    <value>Sayfa görünme süresi</value>
   </data>
   <data name="LabelTolerance" xml:space="preserve">
-    <value>Tolerantie</value>
+    <value>Tolerans</value>
   </data>
   <data name="LabelTrueDepthcamera" xml:space="preserve">
-    <value>Ware dieptecamera</value>
+    <value>Gerçek derinlik kamerası</value>
   </data>
   <data name="LabelTypeAX" xml:space="preserve">
-    <value>SOORT AX</value>
+    <value>TYPE AX</value>
   </data>
   <data name="LabelTypeX" xml:space="preserve">
-    <value>SOORT X</value>
+    <value>TYPE X</value>
   </data>
   <data name="LabelUsername" xml:space="preserve">
-    <value>Gebruikersnaam</value>
+    <value>Kullanıcı adı</value>
   </data>
   <data name="LabelUserType" xml:space="preserve">
-    <value>Gebruikers soort</value>
+    <value>Kullanıcı tipi</value>
   </data>
   <data name="LabelWidthCompensation" xml:space="preserve">
-    <value>Breedtecompensatie</value>
+    <value>Ekran genişliği telafisi</value>
   </data>
   <data name="LabelWrongCommision" xml:space="preserve">
-    <value>Verkeerde commissie</value>
+    <value>Hatalı işlem</value>
   </data>
   <data name="LabelWrongOmmisions" xml:space="preserve">
-    <value>Verkeerde ommissies</value>
+    <value>Hatalı pas geçme</value>
   </data>
   <data name="Ok" xml:space="preserve">
-    <value>Ok</value>
+    <value>Tamam</value>
   </data>
   <data name="PlaceholderEnterSearchTerm" xml:space="preserve">
-    <value>Voer een zoekterm in</value>
+    <value>Arama</value>
   </data>
   <data name="PromptDeleteSessionData" xml:space="preserve">
-    <value>Wilt u deze sessiegegevens verwijderen?</value>
+    <value>Oturum kaydını silmek istiyor musunuz?</value>
   </data>
   <data name="PromptDeleteUser" xml:space="preserve">
-    <value>Wilt u deze gebruiker verwijderen?</value>
+    <value>Bu kullanıcının kaydını silmek istiyor musunuz?</value>
   </data>
   <data name="PromptResetDefaultSettings" xml:space="preserve">
-    <value>Wilt u de standaardinstellingen herstellen?</value>
+    <value>Ayarları sıfırmak istiyor musunuz?</value>
   </data>
   <data name="SectionGameSettings" xml:space="preserve">
-    <value>SPELINSTELLINGEN</value>
+    <value>AYARLAR</value>
   </data>
   <data name="SectionLiveSettings" xml:space="preserve">
-    <value>LIVE INSTELLINGEN</value>
+    <value>CANLI AYARLAR</value>
   </data>
   <data name="SectionSeekGameSettings" xml:space="preserve">
-    <value>ZOEK SPEL INSTELLINGEN</value>
+    <value>SEEK OYUNU AYARLARI</value>
   </data>
   <data name="SectionSensorSettings" xml:space="preserve">
-    <value>SENSORINSTELLINGEN</value>
+    <value>SENSÖR AYARLARI</value>
   </data>
   <data name="SectionVisualizationSettings" xml:space="preserve">
-    <value>VISUALISATIE-INSTELLINGEN</value>
+    <value>GÖRSEL AYARLAR</value>
   </data>
   <data name="TitleAddUser" xml:space="preserve">
-    <value>Voeg gebruiker toe</value>
+    <value>Kullanıcı ekle</value>
   </data>
   <data name="TitleCannotUndoThisAction" xml:space="preserve">
-    <value>U kunt deze actie niet ongedaan maken</value>
+    <value>Bu işlemi geri alamazsınız</value>
   </data>
   <data name="TitleGames" xml:space="preserve">
-    <value>Spellen</value>
+    <value>Oyun</value>
   </data>
   <data name="TitleGeneratingPackage" xml:space="preserve">
-    <value>Pakket genereren</value>
+    <value>Dosya oluşturuluyor</value>
   </data>
   <data name="TitleGeneratingResults" xml:space="preserve">
-    <value>Resultaten genereren</value>
+    <value>Sonuçlar oluşturuluyor</value>
   </data>
   <data name="TitleLanguage" xml:space="preserve">
-    <value>Taal</value>
+    <value>Dil</value>
   </data>
   <data name="TitleLive" xml:space="preserve">
-    <value>Live</value>
+    <value>Canlı</value>
   </data>
   <data name="TitleLoading" xml:space="preserve">
-    <value>Bezig met laden ...</value>
+    <value>Yükleniyor ...</value>
   </data>
   <data name="TitleSelectedUserChangedTo" xml:space="preserve">
-    <value>Geselecteerde gebruiker gewijzigd in {0}</value>
+    <value>Seçili kullanıcıyı değiştir {0}</value>
   </data>
   <data name="TitleSelectGame" xml:space="preserve">
-    <value>Selecteer Game</value>
+    <value>Oyun seç</value>
   </data>
   <data name="TitleSessionData" xml:space="preserve">
-    <value>Sessiegegevens</value>
+    <value>Oturum verisi</value>
   </data>
   <data name="TitleSettings" xml:space="preserve">
-    <value>Instellingen</value>
+    <value>Ayarlar</value>
   </data>
   <data name="TitleSettingsSaved" xml:space="preserve">
-    <value>Instellingen opgeslagen</value>
+    <value>Ayarlar kaydedildi</value>
   </data>
   <data name="TitleShareData" xml:space="preserve">
-    <value>Deel gegevens</value>
+    <value>Veriyi paylaş</value>
   </data>
   <data name="TitleShareResults" xml:space="preserve">
-    <value>Deel resultaten</value>
+    <value>Sonuçları paylaş</value>
   </data>
   <data name="TitleSummary" xml:space="preserve">
-    <value>Samenvatting</value>
+    <value>Özet</value>
   </data>
   <data name="TitleTestResults" xml:space="preserve">
-    <value>Test resultaten</value>
+    <value>Test sonucu</value>
   </data>
   <data name="TitleUserAdded" xml:space="preserve">
-    <value>Gebruiker toegevoegd</value>
+    <value>Kullanıcı oluşturuldu</value>
   </data>
   <data name="TitleUserAllreadySelected" xml:space="preserve">
-    <value>Gebruiker {0} al geselecteerd</value>
+    <value>Kullanıcı {0} seçildi</value>
   </data>
   <data name="TitleUserNameCannotBeEmpty" xml:space="preserve">
-    <value>Gebruikersnaam mag niet leeg zijn!</value>
+    <value>Kullanıcı adını boş bırakmayınız!</value>
   </data>
   <data name="TitleUsers" xml:space="preserve">
-    <value>Gebruikers</value>
+    <value>Kullanıcılar</value>
   </data>
   <data name="TitleYouCannotDeleteYourself" xml:space="preserve">
-    <value>U kunt uzelf niet verwijderen.</value>
+    <value>Kendinizi sistemden silemezsiniz.</value>
   </data>
   <data name="UserTypeAdmin" xml:space="preserve">
-    <value>Beheerder</value>
+    <value>Admin</value>
   </data>
   <data name="UserTypeLearner" xml:space="preserve">
-    <value>Leerling</value>
+    <value>Kullanıcı</value>
   </data>
 </root>

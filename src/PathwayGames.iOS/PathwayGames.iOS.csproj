@@ -348,4 +348,19 @@
   <ItemGroup>
     <BundleResource Include="Resources\button_pressed.png" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\language_sr.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\language_nl.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\language_bg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\language_en.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\language_tr.png" />
+  </ItemGroup>
 </Project>

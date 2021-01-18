@@ -174,7 +174,11 @@ namespace PathwayGames.Services.User
             {
                 await DeleteGameSession(gameSession);
             }
-            await _repositoryUser.DeleteAsync(user, true);
+        }
+
+        public async Task UpdateLanguage(Models.User user)
+        {
+            await _repositoryUser.UpdateAsync(user);
         }
     }
 }

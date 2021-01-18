@@ -29,9 +29,14 @@ namespace PathwayGames.Views
             // Has the device been rotated ?
             if (!Equals(DeviceOrientantion, e.DisplayInfo.Orientation))
             {
-                DeviceOrientantion = e.DisplayInfo.Orientation;
-                OnOrientationChanged.Invoke(this, new PageOrientationEventArgs(e.DisplayInfo.Orientation));
+                DeviceOrientationChange(e.DisplayInfo.Orientation);
             }
+        }
+        
+        private void DeviceOrientationChange(DisplayOrientation orientation)
+        {
+            DeviceOrientantion = orientation;
+            OnOrientationChanged.Invoke(this, new PageOrientationEventArgs(orientation));
         }
 
         protected override bool OnBackButtonPressed()

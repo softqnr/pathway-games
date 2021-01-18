@@ -3,7 +3,6 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:b="clr-namespace:PathwayGames.Behaviors"
              xmlns:c="clr-namespace:PathwayGames.Converters"
-             xmlns:resources="clr-namespace:PathwayGames.Resources"
              x:Class="PathwayGames.Views.MasterView"
              x:Name="MasterPage"
              Title="Pathway+ Games">
@@ -53,7 +52,7 @@
                       Grid.Row="2">
                             <Label.FormattedText>
                                 <FormattedString>
-                                <Span Text="{x:Static resources:AppResources.ApplicationName}" FontSize="Large" Style="{DynamicResource SubtitleStyle}"/>
+                                <Span Text="{Binding Resources[ApplicationName]}" FontSize="Large" Style="{DynamicResource SubtitleStyle}"/>
                                 <Span Text="{Binding Version}" FontSize="Small" />
                                 </FormattedString>
                             </Label.FormattedText>
@@ -87,5 +86,11 @@
         </DataTemplate>
       </ListView.ItemTemplate>
     </ListView>
-  </StackLayout>
+        <Picker BackgroundColor="Transparent"                    
+                ItemsSource="{Binding LanguagesList}"
+                ItemDisplayBinding="{Binding Name}"
+                SelectedItem="{Binding SelectedLanguage, Mode=TwoWay}"
+                HorizontalOptions="Start"
+                WidthRequest="100"/>
+    </StackLayout>
 </ContentPage>

@@ -610,6 +610,15 @@ namespace PathwayGames.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Language.
+        /// </summary>
+        internal static string TitleLanguage {
+            get {
+                return ResourceManager.GetString("TitleLanguage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Live.
         /// </summary>
         internal static string TitleLive {

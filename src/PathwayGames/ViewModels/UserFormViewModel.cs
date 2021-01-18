@@ -56,10 +56,10 @@ namespace PathwayGames.ViewModels
                     int ppi = _deviceHelper.MachineNameToPPI(DeviceInfo.Model);
                     EyeGazeCompensation compensantion = _deviceHelper.MachineNameToEyeGazeCompensation(DeviceInfo.Model);
                     await _userService.CreateUser(UserName, userType, ppi, compensantion.WidthCompensation, compensantion.HeightCompensation);
-                    DialogService.ShowToast(Resources.AppResources.TitleUserAdded);
+                    DialogService.ShowToast(Resources["TitleUserAdded"]);
                     await NavigationService.PopAsync(true);
                 } else {
-                    DialogService.ShowToast(Resources.AppResources.TitleUserNameCannotBeEmpty);
+                    DialogService.ShowToast(Resources["TitleUserNameCannotBeEmpty"]);
                 }
             }
         }

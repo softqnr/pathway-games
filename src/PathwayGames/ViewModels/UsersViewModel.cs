@@ -93,14 +93,14 @@ namespace PathwayGames.ViewModels
                     Models.User user = await _userService.SetSelectedUser(selectedUser);
                     App.SelectedUser = user;
 
-                    DialogService.ShowToast(string.Format(Resources.AppResources.TitleSelectedUserChangedTo, user.UserName));
+                    DialogService.ShowToast(string.Format(Resources["TitleSelectedUserChangedTo"], user.UserName));
                     // Notify listeners
                     MessagingCenter.Send(user, "Selected");
 
                     // Navigate back
                     await NavigationService.NavigateBackAsync();
                 } else {
-                    DialogService.ShowToast(string.Format(Resources.AppResources.TitleUserAllreadySelected, App.SelectedUser.UserName));
+                    DialogService.ShowToast(string.Format(Resources["TitleUserAllreadySelected"], App.SelectedUser.UserName));
                 }
             }
         }
@@ -115,10 +115,10 @@ namespace PathwayGames.ViewModels
             if (App.SelectedUser.IsAdmin)
             {
                 if (App.SelectedUser == selectedUser) {
-                    DialogService.ShowToast(Resources.AppResources.TitleYouCannotDeleteYourself);
+                    DialogService.ShowToast(Resources["TitleYouCannotDeleteYourself"]);
                 } else {
-                    bool confirmed = await DialogService.ShowConfirmAsync(Resources.AppResources.TitleCannotUndoThisAction,
-                       Resources.AppResources.PromptDeleteUser, Resources.AppResources.Ok, Resources.AppResources.Cancel);
+                    bool confirmed = await DialogService.ShowConfirmAsync(Resources["TitleCannotUndoThisAction"],
+                       Resources["PromptDeleteUser"], Resources["Ok"], Resources["Cancel"]);
                     if (confirmed)
                     {
                         await _userService.DeleteUser(selectedUser);

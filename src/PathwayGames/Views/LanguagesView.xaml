@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<views:ViewBase x:Name="root"
+                xmlns="http://xamarin.com/schemas/2014/forms"
+                xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                xmlns:b="clr-namespace:PathwayGames.Behaviors"
+                xmlns:c="clr-namespace:PathwayGames.Converters"
+                xmlns:views="clr-namespace:PathwayGames.Views"
+                x:Class="PathwayGames.Views.LanguagesView"
+                Title="{Binding Resources[TitleLanguage]}">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <c:CheckedChangedEventArgsConverter x:Key="CheckedChangedConverter" />
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <ListView ItemsSource="{Binding LanguagesList}">
+        <ListView.ItemTemplate>
+            <DataTemplate>
+                <ViewCell>
+                    <Grid>
+                        <StackLayout Margin="45,0,0,0" Orientation="Horizontal">
+                            <Image>
+                                <Image.Source>
+                                    <FileImageSource File="{Binding Image}"/>
+                                </Image.Source>
+                            </Image>
+                            <Label Text="{Binding Name}" Margin="5,0,0,0" VerticalOptions="Center" FontSize="Medium"/>
+                        </StackLayout>
+                        <RadioButton IsChecked="{Binding IsSelected}" GroupName="languages" WidthRequest="700" Margin="5,0,0,0" >
+                            <RadioButton.Behaviors>
+                                <b:EventToCommandBehavior Command="{Binding BindingContext.LanguageSelectedCommand, Source={x:Reference root}}"
+                                                          EventArgsConverter="{StaticResource CheckedChangedConverter}"
+                                                          EventName="CheckedChanged"/>
+                            </RadioButton.Behaviors>
+                        </RadioButton>
+                    </Grid>
+                </ViewCell>
+            </DataTemplate>
+        </ListView.ItemTemplate>        
+    </ListView>   
+</views:ViewBase>

@@ -118,94 +118,94 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="All" xml:space="preserve">
-    <value>All</value>
+    <value>Sve</value>
   </data>
   <data name="ApplicationName" xml:space="preserve">
-    <value>Pathway+ Games</value>
+    <value>Pathway+ Igrice</value>
   </data>
   <data name="ButtonCancel" xml:space="preserve">
-    <value>Cancel</value>
+    <value>Otkaži</value>
   </data>
   <data name="ButtonDeleteSession" xml:space="preserve">
-    <value>Delete session</value>
+    <value>Obriši sesiju</value>
   </data>
   <data name="ButtonExportResults" xml:space="preserve">
-    <value>Export results</value>
+    <value>Eksportuj rezultate</value>
   </data>
   <data name="ButtonGameData" xml:space="preserve">
-    <value>Game data</value>
+    <value>Podaci igrice</value>
   </data>
   <data name="ButtonPack" xml:space="preserve">
-    <value>Pack</value>
+    <value>Zapakuj</value>
   </data>
   <data name="ButtonPackAll" xml:space="preserve">
-    <value>Pack all</value>
+    <value>Zapakuj sve</value>
   </data>
   <data name="ButtonResetDefaults" xml:space="preserve">
-    <value>Reset Defaults</value>
+    <value>Resetuj</value>
   </data>
   <data name="ButtonSave" xml:space="preserve">
-    <value>Save</value>
+    <value>Sačuvaj</value>
   </data>
   <data name="ButtonSelect" xml:space="preserve">
-    <value>Select</value>
+    <value>Selektuj</value>
   </data>
   <data name="Cancel" xml:space="preserve">
-    <value>Cancel</value>
+    <value>Otkaži</value>
   </data>
   <data name="LabelAdmin" xml:space="preserve">
     <value>Admin</value>
   </data>
   <data name="LabelAverageResponseTime" xml:space="preserve">
-    <value>Average response time</value>
+    <value>Srednje vreme odgovora</value>
   </data>
   <data name="LabelBlankSlideDisplayTime" xml:space="preserve">
-    <value>Blank slide display time</value>
+    <value>Vreme za prikazivanje praznog slajda</value>
   </data>
   <data name="LabelBlankSlideVariation" xml:space="preserve">
-    <value>Blank slide variation (+-)</value>
+    <value>Varijacija za prazni slajd (+-)</value>
   </data>
   <data name="LabelConfusionMatrix" xml:space="preserve">
-    <value>Confusion Matrix</value>
+    <value>Matrica konfuzije</value>
   </data>
   <data name="LabelCorrectCommision" xml:space="preserve">
-    <value>Correct commision</value>
+    <value>Tačni pogodci</value>
   </data>
   <data name="LabelCorrectOmmisions" xml:space="preserve">
-    <value>Correct ommisions</value>
+    <value>Tačni promašaji</value>
   </data>
   <data name="LabelEyeGazeVisualization" xml:space="preserve">
-    <value>Eye Gaze Visualization</value>
+    <value>Vizualizacija pogleda očiju</value>
   </data>
   <data name="LabelGyroAcceleration" xml:space="preserve">
-    <value>Gyro / Acceleration</value>
+    <value>Žiroskop</value>
   </data>
   <data name="LabelHeightCompensation" xml:space="preserve">
-    <value>Height Compensation</value>
+    <value>Kompenzacija visine</value>
   </data>
   <data name="LabelLearner" xml:space="preserve">
-    <value>Learner</value>
+    <value>Učenik</value>
   </data>
   <data name="LabelMuseEEGheadband" xml:space="preserve">
-    <value>Muse EEG headband</value>
+    <value>Senzor EEG traka za glavu</value>
   </data>
   <data name="LabelNoGameSessionsFound" xml:space="preserve">
-    <value>No game sessions found!</value>
+    <value>Nije nađena sesija igrice!</value>
   </data>
   <data name="LabelNoUsersFound" xml:space="preserve">
-    <value>No users found!</value>
+    <value>Nije nađen nijedan korisnik!</value>
   </data>
   <data name="LabelPoints" xml:space="preserve">
-    <value>Points</value>
+    <value>Poeni</value>
   </data>
   <data name="LabelScore" xml:space="preserve">
-    <value>Score</value>
+    <value>Rezultat</value>
   </data>
   <data name="LabelScreenPPI" xml:space="preserve">
-    <value>Screen PPI</value>
+    <value>Ekran PPI</value>
   </data>
   <data name="LabelSeconds" xml:space="preserve">
-    <value>seconds</value>
+    <value>sekunde</value>
   </data>
   <data name="LabelSeekAX" xml:space="preserve">
     <value>SEEK AX</value>
@@ -217,22 +217,22 @@
     <value>SEEK X</value>
   </data>
   <data name="LabelSensitivity" xml:space="preserve">
-    <value>Window (secs)</value>
+    <value>Osetljivost</value>
   </data>
   <data name="LabelSlide" xml:space="preserve">
-    <value>Slide</value>
+    <value>Slajd</value>
   </data>
   <data name="LabelSlideCount" xml:space="preserve">
-    <value>Slide count</value>
+    <value>Broj slajdova</value>
   </data>
   <data name="LabelSlideDisplayTime" xml:space="preserve">
-    <value>Slide display time</value>
+    <value>Vreme prikaza slajda</value>
   </data>
   <data name="LabelTolerance" xml:space="preserve">
-    <value>Tolerance</value>
+    <value>Tolerancija</value>
   </data>
   <data name="LabelTrueDepthcamera" xml:space="preserve">
-    <value>True depth camera</value>
+    <value>Kamera</value>
   </data>
   <data name="LabelTypeAX" xml:space="preserve">
     <value>TYPE AX</value>
@@ -241,117 +241,120 @@
     <value>TYPE X</value>
   </data>
   <data name="LabelUsername" xml:space="preserve">
-    <value>Username</value>
+    <value>korisničko ime</value>
   </data>
   <data name="LabelUserType" xml:space="preserve">
-    <value>User type</value>
+    <value>Vrtsa usera</value>
   </data>
   <data name="LabelWidthCompensation" xml:space="preserve">
-    <value>Width Compensation</value>
+    <value>Kompenzacija širine</value>
   </data>
   <data name="LabelWrongCommision" xml:space="preserve">
-    <value>Wrong commision</value>
+    <value>Netačne pogodci</value>
   </data>
   <data name="LabelWrongOmmisions" xml:space="preserve">
-    <value>Wrong ommisions</value>
+    <value>Netačni promašaji</value>
   </data>
   <data name="Ok" xml:space="preserve">
     <value>Ok</value>
   </data>
   <data name="PlaceholderEnterSearchTerm" xml:space="preserve">
-    <value>Enter search term</value>
+    <value>Unesite pojam za pretragu</value>
   </data>
   <data name="PromptDeleteSessionData" xml:space="preserve">
-    <value>Do you want to delete this session data?</value>
+    <value>Da li želite da obrišete sesiju?</value>
   </data>
   <data name="PromptDeleteUser" xml:space="preserve">
-    <value>Do you want to delete this user</value>
+    <value>Da li želite da obrišete korisnika</value>
   </data>
   <data name="PromptResetDefaultSettings" xml:space="preserve">
-    <value>Do you want to reset to default settings?</value>
+    <value>Da li želite da resetujete podešavanja?</value>
   </data>
   <data name="SectionGameSettings" xml:space="preserve">
-    <value>GAME SETTINGS</value>
+    <value>PODEŠAVANJA IGRICE</value>
   </data>
   <data name="SectionLiveSettings" xml:space="preserve">
-    <value>LIVE SETTINGS</value>
+    <value>PODEŠAVANJA MODA UŽIVO</value>
   </data>
   <data name="SectionSeekGameSettings" xml:space="preserve">
-    <value>SEEK GAME SETTINGS</value>
+    <value>SEEK GAME PODEŠAVANJA</value>
   </data>
   <data name="SectionSensorSettings" xml:space="preserve">
-    <value>SENSOR SETTINGS</value>
+    <value>PODEŠAVANJA SENZORA</value>
   </data>
   <data name="SectionVisualizationSettings" xml:space="preserve">
-    <value>VISUALIZATION SETTINGS</value>
+    <value>PODEŠAVANJA VISUALIZACIJE</value>
   </data>
   <data name="TitleAddUser" xml:space="preserve">
-    <value>Add user</value>
+    <value>Dodaj korisnika</value>
   </data>
   <data name="TitleCannotUndoThisAction" xml:space="preserve">
-    <value>You cannot undo this action</value>
+    <value>Ne možete poništiti ovu akciju</value>
   </data>
   <data name="TitleGames" xml:space="preserve">
-    <value>Games</value>
+    <value>Igrice</value>
   </data>
   <data name="TitleGeneratingPackage" xml:space="preserve">
-    <value>Generating package</value>
+    <value>Generisanje paketa</value>
   </data>
   <data name="TitleGeneratingResults" xml:space="preserve">
-    <value>Generating results</value>
+    <value>Generisanje rezultata</value>
+  </data>
+  <data name="TitleLanguage" xml:space="preserve">
+    <value>Jezik</value>
   </data>
   <data name="TitleLive" xml:space="preserve">
-    <value>Live</value>
+    <value>Mode uživo</value>
   </data>
   <data name="TitleLoading" xml:space="preserve">
-    <value>Loading ...</value>
+    <value>Učitavanje ...</value>
   </data>
   <data name="TitleSelectedUserChangedTo" xml:space="preserve">
-    <value>Selected user changed to {0}</value>
+    <value>Selektovan korisnik pomenjen u {0}</value>
   </data>
   <data name="TitleSelectGame" xml:space="preserve">
-    <value>Select Game</value>
+    <value>Izaberite igricu</value>
   </data>
   <data name="TitleSessionData" xml:space="preserve">
-    <value>Session data</value>
+    <value>Podaci sesije</value>
   </data>
   <data name="TitleSettings" xml:space="preserve">
-    <value>Settings</value>
+    <value>Podešavanja</value>
   </data>
   <data name="TitleSettingsSaved" xml:space="preserve">
-    <value>Settings saved</value>
+    <value>Podešavanja su snimljena</value>
   </data>
   <data name="TitleShareData" xml:space="preserve">
-    <value>Share data</value>
+    <value>Podeli podatke</value>
   </data>
   <data name="TitleShareResults" xml:space="preserve">
-    <value>Share results</value>
+    <value>Podeli rezultate</value>
   </data>
   <data name="TitleSummary" xml:space="preserve">
-    <value>Summary</value>
+    <value>Rezime</value>
   </data>
   <data name="TitleTestResults" xml:space="preserve">
-    <value>Test results</value>
+    <value>Rezltati testa</value>
   </data>
   <data name="TitleUserAdded" xml:space="preserve">
-    <value>User added</value>
+    <value>Korisnik je dodat</value>
   </data>
   <data name="TitleUserAllreadySelected" xml:space="preserve">
-    <value>User {0} allready selected</value>
+    <value>Korisnik {0} je već selektovan</value>
   </data>
   <data name="TitleUserNameCannotBeEmpty" xml:space="preserve">
-    <value>User name cannot be empty!</value>
+    <value>Korisnicko ime je obavezno!</value>
   </data>
   <data name="TitleUsers" xml:space="preserve">
-    <value>Users</value>
+    <value>Korisnici</value>
   </data>
   <data name="TitleYouCannotDeleteYourself" xml:space="preserve">
-    <value>You cannot delete yourself.</value>
+    <value>Ne možete sebe obrisati.</value>
   </data>
   <data name="UserTypeAdmin" xml:space="preserve">
-    <value>Admin</value>
+    <value>Administrator</value>
   </data>
   <data name="UserTypeLearner" xml:space="preserve">
-    <value>Learner</value>
+    <value>Učenik</value>
   </data>
 </root>

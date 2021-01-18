@@ -38,5 +38,7 @@ namespace PathwayGames.Services.User
         Task DeleteGameSession(UserGameSession gameSession);
 
         Task DeleteUser(Models.User user);
+
+        Task UpdateLanguage(Models.User user);
     }
 }

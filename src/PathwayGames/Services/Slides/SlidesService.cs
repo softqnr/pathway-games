@@ -43,7 +43,7 @@ namespace PathwayGames.Services.Slides
                     game.Slides = GenerateSeekXSlideSequence(gameSettings, seed, false);
                     break;
                 case GameType.TypeAX:
-                    game.Slides = GenerateTypeAXSlideSequence(gameSettings, seed);
+                    game.Slides = GenerateTypeXSlideSequence(gameSettings, seed, true);
                     break;
                 case GameType.SeekAX:
                     game.Slides = GenerateSeekXSlideSequence(gameSettings, seed, true);
@@ -69,7 +69,7 @@ namespace PathwayGames.Services.Slides
             return timeLeft;
         }
 
-        private List<Slide> GenerateTypeXSlideSequence(UserGameSettings gameSettings, string seed)
+        private List<Slide> GenerateTypeXSlideSequence(UserGameSettings gameSettings, string seed, bool isAX = false)
         {
              // Create slide collection using the 50%X and 50%Distractor 
             List<Slide> SlideCollection = new List<Slide>();
@@ -77,12 +77,18 @@ namespace PathwayGames.Services.Slides
             int typeXSlideCount = (int)(gameSettings.SlideCount * 0.5);
             for (int i = 0; i < typeXSlideCount; i++)
             {
-                SlideCollection.Add(new Slide(SlideType.X, gameSettings.SlideDisplayDuration, XSlideImage, ThreadSafeRandom.GetRandomNumber(gameSettings.BlankSlideDisplayTimes)));
+                var slide = new Slide(SlideType.X, gameSettings.SlideDisplayDuration, XSlideImage, ThreadSafeRandom.GetRandomNumber(gameSettings.BlankSlideDisplayTimes));
+                if (isAX)
+                    slide.BorderColor = XSlideBorderColor;
+                SlideCollection.Add(slide);
             }
             // DistractorY
             for (int i = 0; i < gameSettings.SlideCount - typeXSlideCount; i++)
             {
-                SlideCollection.Add(new Slide(SlideType.Y, gameSettings.SlideDisplayDuration, YDistractorSlideImage, ThreadSafeRandom.GetRandomNumber(gameSettings.BlankSlideDisplayTimes)));
+                var slide = new Slide(SlideType.Y, gameSettings.SlideDisplayDuration, YDistractorSlideImage, ThreadSafeRandom.GetRandomNumber(gameSettings.BlankSlideDisplayTimes));
+                if (isAX)
+                    slide.BorderColor = GetRandomYDistractorBorderColor();
+                SlideCollection.Add(slide);
             }
             // Generate random number generator
             Random random = new Random(seed.GetHashCode());

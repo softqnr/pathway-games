@@ -300,6 +300,9 @@
   <data name="TitleGeneratingResults" xml:space="preserve">
     <value>Generating results</value>
   </data>
+  <data name="TitleLanguage" xml:space="preserve">
+    <value>Language</value>
+  </data>
   <data name="TitleLive" xml:space="preserve">
     <value>Live</value>
   </data>

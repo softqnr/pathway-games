@@ -43,7 +43,8 @@
             <x:String x:Key="IconUnChecked">&#xf855;</x:String>
             <x:String x:Key="IconLive">&#xf241;</x:String>
             <x:String x:Key="IconCircle">&#xf12f;</x:String>
-            
+            <x:String x:Key="IconLanguage">&#xfb57;</x:String>
+
             <!--  converters  -->
             <converters:ItemTappedEventArgsConverter x:Key="ItemTappedConverter" />
             <converters:DecimalConverter x:Key="DecimalConverter" />

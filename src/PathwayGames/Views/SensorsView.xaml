@@ -3,7 +3,6 @@
     xmlns:views="clr-namespace:PathwayGames.Views" xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:c="clr-namespace:PathwayGames.Controls"
-             xmlns:resources="clr-namespace:PathwayGames.Resources"
              xmlns:system="clr-namespace:System;assembly=mscorlib"
              x:Name="self"
              x:Class="PathwayGames.Views.SensorsView"
@@ -71,7 +70,7 @@
                            LineBreakMode="WordWrap" TextColor="White" HorizontalTextAlignment="Center">
                         <Label.FormattedText>
                             <FormattedString>
-                                <Span Text="{x:Static resources:AppResources.LabelSensitivity}" />
+                                <Span Text="{Binding Resources[LabelSensitivity]}" />
                                 <Span Text=":" />
                                 <Span Text="{x:Static system:Environment.NewLine}"/>
                                 <Span Text="{Binding UserSettings.LiveViewSensitivity, Mode=OneWay}" FontAttributes="Bold" />
@@ -94,7 +93,7 @@
                            LineBreakMode="WordWrap" TextColor="White" HorizontalTextAlignment="Center">
                         <Label.FormattedText>
                             <FormattedString>
-                                <Span Text="{x:Static resources:AppResources.LabelTolerance}" />
+                                <Span Text="{Binding Resources[LabelTolerance]}" />
                                 <Span Text=":" />
                                 <Span Text="{x:Static system:Environment.NewLine}"/>
                                 <Span Text="{Binding UserSettings.LiveViewTolerance, Mode=OneWay}" FontAttributes="Bold" />

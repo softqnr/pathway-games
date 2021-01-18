@@ -1,9 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:resources="clr-namespace:PathwayGames.Resources"
              x:Class="PathwayGames.Views.GameResultsView"
-             Title="{x:Static resources:AppResources.TitleSummary}"
+             Title="{Binding Resources[TitleSummary]}"
              Visual="Material">
     <ScrollView Padding="10">
     <StackLayout Margin="0,5,0,5">
@@ -25,11 +24,11 @@
             <Label FontSize="Large" HorizontalOptions="Center">
                 <Label.FormattedText>
                     <FormattedString>
-                        <Span Text="{x:Static resources:AppResources.LabelPoints}" />
+                        <Span Text="{Binding Resources[LabelPoints]}" />
                         <Span Text=": " />
                         <Span Text="{Binding Game.Outcome.Score, Mode=OneWay}"/>
                         <Span Text=" " />
-                        <Span Text="{x:Static resources:AppResources.LabelScore}" />
+                        <Span Text="{Binding Resources[LabelScore]}" />
                         <Span Text=": " />
                         <Span Text="{Binding Game.Outcome.ScorePercentage, Mode=OneWay, StringFormat='{}{0:0.##}'}" />
                         <Span Text="%" />
@@ -52,24 +51,24 @@
                 <RowDefinition Height="*" />
             </Grid.RowDefinitions>
 
-                <Label Text="{x:Static resources:AppResources.LabelConfusionMatrix}" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" HorizontalOptions="Center" FontSize="Title"/>
+            <Label Text="{Binding Resources[LabelConfusionMatrix]}" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" HorizontalOptions="Center" FontSize="Title"/>
 
-            <Label Text="{x:Static resources:AppResources.LabelCorrectCommision}" Grid.Row="1" Grid.Column="0" HorizontalOptions="Center"/>
+            <Label Text="{Binding Resources[LabelCorrectCommision]}" Grid.Row="1" Grid.Column="0" HorizontalOptions="Center"/>
             <Frame Grid.Row="2" Grid.Column="0" Padding="50" HasShadow="False" HorizontalOptions="Center" VerticalOptions="Center" BackgroundColor="PaleGreen">
                     <Label Text="{Binding Game.Outcome.ConfusionMatrix.CorrectCommission}" FontSize="Title"/>
             </Frame>
 
-            <Label Text="{x:Static resources:AppResources.LabelWrongCommision}" Grid.Row="1" Grid.Column="1" HorizontalOptions="Center" />
+            <Label Text="{Binding Resources[LabelWrongCommision]}" Grid.Row="1" Grid.Column="1" HorizontalOptions="Center" />
             <Frame Grid.Row="2" Grid.Column="1" Padding="50" HasShadow="False" HorizontalOptions="Center" VerticalOptions="Center" BackgroundColor="PaleVioletRed">
                     <Label Text="{Binding Game.Outcome.ConfusionMatrix.WrongCommission}" FontSize="Title"/>
             </Frame>
 
-            <Label Text="{x:Static resources:AppResources.LabelWrongOmmisions}" Grid.Row="3" Grid.Column="0" HorizontalOptions="Center" />
+            <Label Text="{Binding Resources[LabelWrongOmmisions]}" Grid.Row="3" Grid.Column="0" HorizontalOptions="Center" />
             <Frame Grid.Row="4" Grid.Column="0" Padding="50" HasShadow="False" HorizontalOptions="Center" VerticalOptions="Center" BackgroundColor="PaleVioletRed">
                     <Label Text="{Binding Game.Outcome.ConfusionMatrix.WrongOmission}" FontSize="Title"/>
             </Frame>
 
-            <Label Text="{x:Static resources:AppResources.LabelCorrectOmmisions}" Grid.Row="3" Grid.Column="1" HorizontalOptions="Center" />
+            <Label Text="{Binding Resources[LabelCorrectOmmisions]}" Grid.Row="3" Grid.Column="1" HorizontalOptions="Center" />
             <Frame Grid.Row="4" Grid.Column="1" Padding="50" HasShadow="False" HorizontalOptions="Center" VerticalOptions="Center" BackgroundColor="PaleGreen">
                     <Label Text="{Binding Game.Outcome.ConfusionMatrix.CorrectOmission}" FontSize="Title"/>
             </Frame>
@@ -79,11 +78,11 @@
                 <Label>
                     <Label.FormattedText>
                         <FormattedString>
-                            <Span Text="{x:Static resources:AppResources.LabelAverageResponseTime}" />
+                            <Span Text="{Binding Resources[LabelAverageResponseTime]}" />
                             <Span Text=": " />
                             <Span Text="{Binding Game.Outcome.AverageResponseTime, Mode=OneWay, StringFormat='{}{0:0.000}'}" />
                             <Span Text=" " />
-                            <Span Text="{x:Static resources:AppResources.LabelSeconds}" />
+                            <Span Text="{Binding Resources[LabelSeconds]}" />
                         </FormattedString>
                     </Label.FormattedText>
                 </Label>
@@ -91,18 +90,18 @@
                 <Label>
                     <Label.FormattedText>
                         <FormattedString>
-                            <Span Text="{x:Static resources:AppResources.LabelSlideDisplayTime}" />
+                            <Span Text="{Binding Resources[LabelSlideDisplayTime]}" />
                             <Span Text=": " />
                             <Span Text="{Binding Game.GameSettings.SlideDisplayDuration, Mode=OneWay}" />
                             <Span Text=" " />
-                            <Span Text="{x:Static resources:AppResources.LabelSeconds}" />
+                            <Span Text="{Binding Resources[LabelSeconds]}" />
                         </FormattedString>
                     </Label.FormattedText>
                 </Label>
             </StackLayout>
-            <Button Command="{Binding GameDataCommand}" Text="{x:Static resources:AppResources.ButtonGameData}" />
-            <Button Command="{Binding ExportButtonCommand}" Text="{x:Static resources:AppResources.ButtonExportResults}" />
-            <Button Command="{Binding DeleteSessionCommand}" Text="{x:Static resources:AppResources.ButtonDeleteSession}" BackgroundColor="Red" Margin="0,10,0,0" />
+            <Button Command="{Binding GameDataCommand}" Text="{Binding Resources[ButtonGameData]}" />
+            <Button Command="{Binding ExportButtonCommand}" Text="{Binding Resources[ButtonExportResults]}" />
+            <Button Command="{Binding DeleteSessionCommand}" Text="{Binding Resources[ButtonDeleteSession]}" BackgroundColor="Red" Margin="0,10,0,0" />
         </StackLayout>
     </ScrollView>
 </ContentPage>
